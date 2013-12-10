@@ -247,8 +247,8 @@ $$
 From this formula we shall now shew that $\besJ_n(z)$ is a solution of the
 linear differential equation
 $$
-\frac{d^2 y}{dz^2}
-+ \frac{1}{z} \frac{dy}{dz}
+\frac{\dd^2 y}{\dd z^2}
++ \frac{1}{z} \frac{\dd y}{\dd z}
 + \theparen{ 1 - \frac{n^2}{z^2}  } y
 = 0,
 $$
@@ -257,8 +257,8 @@ which is called Bessel's equation for functions of order $n$.
 For we find on performing the differentiations 
 (\hardsectionref{4}{2}) that
 \begin{align*}
-  \frac{d^2 \besJ_n(z)}{dz^2}
-  +& \frac{1}{z} \frac{d \besJ_n(z)}{dz}
+  \frac{\dd^2 \besJ_n(z)}{\dd z^2}
+  +& \frac{1}{z} \frac{\dd \besJ_n(z)}{\dd z}
   + \theparen{ 1 - \frac{n^2}{z^2}  } \besJ_n(z)
   \\
   % 
@@ -275,7 +275,7 @@ For we find on performing the differentiations
   -\frac{1}{2\pi i}
   \theparen{ \half z  }
   \int^{(0+)}
-  \frac{d}{dt} \thebrace{ t^{-n-1} \exp\theparen{ t - \frac{z^2}{4t}  }
+  \frac{\dd}{\dd t} \thebrace{ t^{-n-1} \exp\theparen{ t - \frac{z^2}{4t}  }
   }
   \dmeasure t \\
   % 
@@ -284,8 +284,8 @@ For we find on performing the differentiations
 since $t^{-n-1} \exp\theparen{ t - z^2/4t  }$ is one-valued.
 \emph{Thus we have proved that }
 $$
-\frac{d^2 \besJ_n(z)}{dz^2}
-+ \frac{1}{z} \frac{d \besJ_n(z)}{dz}
+\frac{\dd^2 \besJ_n(z)}{\dd z^2}
++ \frac{1}{z} \frac{\dd \besJ_n(z)}{\dd z}
 + \theparen{ 1 - \frac{n^2}{z^2}  } \besJ_n(z) 
 = 0.
 $$
@@ -321,8 +321,8 @@ real or complex. It appears by methods similar to those of
 \hardsubsectionref{17}{1}{1} that, for all values of $n$, the
 equation
 $$
-\frac{d^2 y}{dz^2}
-+ \frac{1}{z} \frac{dy}{dz}
+\frac{\dd^2 y}{\dd z^2}
++ \frac{1}{z} \frac{\dd y}{\dd z}
 + \theparen{ 1 - \frac{n^2}{z^2}  } y
 = 0
 $$
@@ -422,7 +422,7 @@ To establish these relations for general values of $n$, real or
 complex, we have recourse to the result of \hardsectionref{17}{2}.
 On writing the equation
 $$
-0 = \int_{-\infty}^{(0+)} \frac{d}{dt} \thebrace{ t^{-n}
+0 = \int_{-\infty}^{(0+)} \frac{\dd}{\dd t} \thebrace{ t^{-n}
   \exp\theparen{ t - \frac{z^2}{4t}  }  } \dmeasure t
 $$
 at length, we have
@@ -445,9 +445,9 @@ and so
 
 Next we have, by \hardsubsectionref{4}{4}{4},
 \begin{align*}
-  \frac{d}{dz} \thebrace{ z^{-n} \besJ_n(z)  }
+  \frac{\dd}{\dd z} \thebrace{ z^{-n} \besJ_n(z)  }
   =& \frac{1}{2^{n+1}\pi i}
-  \frac{d}{dz}
+  \frac{\dd}{\dd z}
   \int_{-\infty}^{(0+)}
   t^{-n-1}
   \exp\theparen{ t - \frac{z^2}{4t} }
@@ -488,7 +488,7 @@ and
 \begin{wandwexample}
   Shew that 
   $$
-  \frac{d}{dz} \thebrace{ z^n \besJ_n(z) } = z^n \besJ_{n-1}(z).
+  \frac{\dd}{\dd z} \thebrace{ z^n \besJ_n(z) } = z^n \besJ_{n-1}(z).
   $$
 \end{wandwexample}
 \begin{wandwexample}
@@ -524,7 +524,7 @@ $$
 z^{-n-r} \besJ_{n+r}(z) TODO: verify subscript
 =
 (-)^r
-\frac{d^r}{ (z dz)^r }
+\frac{\dd^r}{ (z \dd z)^r }
 \thebrace{ z^{-n} \besJ_n(z)  },
 $$
 where $n$ is unrestricted and $r$ is any positive integer. This result
@@ -533,7 +533,7 @@ when it is written in the form
 $$
 z^{-n-1} \besJ_{n+1}(z) 
 =
-- \frac{d}{z dz}
+- \frac{\dd}{z \dd z}
 \thebrace{ z^{-n} \besJ_n(z)  }.
 $$
 \subsubsection{The connexion between $\besJ_n(z)$ and $W_{k,m}$
@@ -541,7 +541,7 @@ $$
 The reader will verify without difficulty that, if in Bessel's
 equation we write $y = z^{-\half} v$ and then write $z = x/2i$, we get
 $$
-\frac{d^2 v}{dx^2}
+\frac{\dd^2 v}{\dd x^2}
 +
 \theparen{ -\frac{1}{4} + \frac{\frac{1}{4} - n^2}{x^2}  } v
 =
@@ -571,7 +571,7 @@ For, from relation TODO:addref when written in the form
 $$
 z^{-n} \besJ_{n+1}(z) 
 = 
-- \frac{d}{dz} \thebrace{ z^{-n} \besJ_n(z) },
+- \frac{\dd}{\dd z} \thebrace{ z^{-n} \besJ_n(z) },
 $$
 it follows from Rolle's theorem\footnote{TODO} that between each
 consecutive pair of zeros of $z^{-n}\besJ_n(z)$ there is at least one zero
@@ -581,20 +581,20 @@ Similarly, from relation TODO:addref when written in the form
 $$
 z^{n+1} \besJ_n(z) 
 = 
-\frac{d}{dz} \thebrace{ z^{n+1} \besJ_{n+1}(z) },
+\frac{\dd}{\dd z} \thebrace{ z^{n+1} \besJ_{n+1}(z) },
 $$
 it follows that between each consecutive pair of zeros of 
 $z^{n+1}\besJ_{n+1}(z)$ there is at least one zero of 
 $z^{n+1}\besJ_n(z)$.
 
 Further $z^{-n}\besJ_n(z)$ and 
-$\frac{d}{dz} \thebrace{ z^{-n} \besJ_n(z)  }$ have no common zeros; for
+$\frac{\dd}{\dd z} \thebrace{ z^{-n} \besJ_n(z)  }$ have no common zeros; for
 the former function satisfies the equation
 $$
-z \frac{d^2 y}{dz^2} + (2n+1) \frac{dy}{dz} + zy = 0,
+z \frac{\dd^2 y}{\dd z^2} + (2n+1) \frac{\dd y}{\dd z} + zy = 0,
 $$
 and it is easily verified by induction on differentiating this
-equation that if both $y$ and $\frac{dy}{dz}$ vanish for any value of
+equation that if both $y$ and $\frac{\dd y}{\dd z}$ vanish for any value of
 $z$, all differential coefficients of $y$ vanish, and $y$ is zero by 
 \hardsectionref{5}{4}.
 
@@ -687,10 +687,10 @@ which is the formula in question.
   $$
   satisfies
   $$
-  \frac{d^2 y}{dz^2}
+  \frac{\dd^2 y}{\dd z^2}
   +
   \frac{1}{z}
-  \frac{dy}{dz}
+  \frac{\dd y}{\dd z}
   +
   \theparen{ 1 - \frac{n^2}{z^2} } y
   =
@@ -705,7 +705,7 @@ which is the formula in question.
   -
   \frac{1}{\pi}
   \int_0^{\pi}
-  \frac{d}{d\theta}
+  \frac{\dd}{\dd\theta}
   \thebrace{ \theparen{ \frac{n}{z^2} + \frac{\cos\theta}{z}  }
     \sin(n\theta - z \sin\theta)}
   \dmeasure \theta
@@ -928,7 +928,7 @@ $$
 \besJ_{k+\half}(z)
 =
 \frac{(-)^k (2z)^{k+\half}}{\pi^{\half}}
-\frac{d^k}{d (z^2)^k}
+\frac{\dd^k}{\dd (z^2)^k}
 \theparen{ \frac{\sin z}{z}  }
 $$
 On differentiating out the expression on the right, we obtain the
@@ -978,14 +978,14 @@ where $P_k$, $Q_k$ are polynomials in $z^{-\half}$.
 \begin{wandwexample}
   Shew that
   $$
-  z^{k+\half} \frac{d^k}{d (z^2)^k} \theparen{\frac{\cos z}{z}}
+  z^{k+\half} \frac{\dd^k}{\dd (z^2)^k} \theparen{\frac{\cos z}{z}}
   $$
   is a solution of Bessel's equation for $\besJ_{k+\half}(z)$.
 \end{wandwexample}
 \begin{wandwexample}
   Shew that the solution of
   $
-  z^{m+\half} \frac{d^{2m+1} y}{dz^{2m+1}} + y = 0
+  z^{m+\half} \frac{\dd^{2m+1} y}{\dd z^{2m+1}} + y = 0
   $
   is
   $$
@@ -1584,9 +1584,9 @@ $(4n^2-1)/8z$ respectively.
   $$
   \hardY_n(z)
   =
-  \frac{d\besJ_n(z)}{dn}
+  \frac{\dd\besJ_n(z)}{dn}
   -
-  (-)^n \frac{d\besJ_{-n}(z)}{dn},
+  (-)^n \frac{\dd\besJ_{-n}(z)}{dn},
   $$
   where $n$ is made an integer after differentiation.
   TODO:attribution
@@ -1763,9 +1763,10 @@ The reader should have no difficulty in obtaining the following
 formulae:
 \begin{enumerate}
 \item $\besI_{n-1}(z) - \besI_{n+1}(z) = \frac{2n}{z} \besI_n(z)$.
-\item $\frac{d}{dz} \thebrace{z^n \besI_n(z)} = z^n \besI_{n-1}(z)$.
-\item $\frac{d}{dz} \thebrace{z^{-n} \besI_n(z)} = z^{-n} \besI_{n+1}(z)$.
-\item $\frac{d^2 \besI_n(z)}{dz^2} + \frac{1}{z} \frac{d \besI_n(z)}{dz} -
+\item $\frac{\dd}{\dd z} \thebrace{z^n \besI_n(z)} = z^n \besI_{n-1}(z)$.
+\item $\frac{\dd}{\dd z} \thebrace{z^{-n} \besI_n(z)} = z^{-n} \besI_{n+1}(z)$.
+\item $\frac{\dd^2 \besI_n(z)}{\dd z^2} + \frac{1}{z} \frac{\dd
+    \besI_n(z)}{\dd z} -
   \theparen{1 + \frac{n^2}{z^2}} \besI_n(z) = 0$.
 \item When $\realpart \theparen{n + \half} > 0$,
   $$
@@ -1936,7 +1937,49 @@ of degree $n$ in $1/t$.
 We shall next prove by induction that $O_n(t)$, so defined, is equal
 to
 $$
-TODO
+\half
+\int_0^{\infty}
+e^{-tu}
+\thebracket{
+  \thebrace{u + \sqrt{u^2+1}}^n
+  +
+  \thebrace{u - \sqrt{u^2+1}}^n
+}
+\dmeasure u
 $$
 when $\realpart(t) > 0$.
+For the expression is obviously equal to $O_0(t)$ and $O_1(t)$ when
+$n$ is equal to $0$ or $1$ respectively; and
+\begin{align*}
+  &
+  \half
+  \int_0^{\infty}
+  e^{-tu}
+  \thebrace{u \pm \sqrt{u^2+1}}^{n-1}
+  \dmeasure u
+  -
+  \frac{\dd}{\dd t}
+  \int_0^{\infty}
+  e^{-tu}
+  \thebrace{u \pm \sqrt{u^2+1}}^{n}
+  \dmeasure u
+  \\
+  =
+  &  
+  \half
+  \int_0^{\infty}
+  e^{-tu}
+  \thebrace{u \pm \sqrt{u^2+1}}^{n-1}
+  \thebrace{1 + 2u^2 \pm 2u \sqrt{u^2+1}}
+  \dmeasure u
+  \\
+  =
+  &
+  \half
+  \int_0^{\infty}
+  e^{-tu}
+  \thebrace{u \pm \sqrt{u^2+1}}^{n+1}
+  \dmeasure u,
+\end{align*}
+whence the induction is obvious.
 \end{document}
