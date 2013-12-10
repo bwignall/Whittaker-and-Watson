@@ -1,0 +1,56 @@
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+
+% Use (A),(B),... for equations, not (1),(2),...
+\numberwithin{equation}{subsection}
+\renewcommand{\theequation}{\Alph{equation}}
+
+\newcommand{\half}{ \frac{1}{2} }
+
+\newcommand{\realpart}{\mathrm{Re}}
+\newcommand{\imagpart}{\mathrm{Im}}
+
+\newcommand{\eps}{\epsilon}
+\newcommand{\cosec}{\mathrm{cosec}}
+%\newcommand{\cosec}{\csc}
+
+\newcommand{\hardY}{\mathsf{Y}} %TODO:improve %17.6
+
+\newcommand{\absval}[1]{\left| #1 \right|}
+\newcommand{\thebrace}[1]{\left\{ #1 \right\} }
+\newcommand{\thebracket}[1]{\left[ #1 \right] }
+\newcommand{\theparen}[1]{\left( #1 \right) }
+
+\newcommand{\wandwsectionsymbol}{\S}
+\newcommand{\wandwsubsectionsymbol}{\ensuremath{\cdot}}
+\newcommand{\hardchapterref}[1]{\wandwsectionsymbol #1}
+\newcommand{\hardsectionref}[2]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2}
+\newcommand{\hardsubsectionref}[3]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2#3}
+\newcommand{\hardsubsubsectionref}[4]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2#3#4}
+
+% Add W&W-style end-of-line example citations
+\newcommand{\addexamplecitation}[1]{#1 TODO}
+
+\newcommand{\dd}{\mathbf{d}}
+\newcommand{\dmeasure}{\, \dd}
+
+\newcommand{\corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{wandwexample}{Example}
+\numberwithin{wandwexample}{subsubsection}
+
+% Chapter 17 (Bessel functions)
+\newcommand{\besselFont}[1]{\mathscr{#1}}
+\newcommand{\besI}{\besselFont{I}}
+\newcommand{\besJ}{\besselFont{J}}
+\newcommand{\besK}{\besselFont{K}}
+\newcommand{\besY}{\besselFont{Y}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Names
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Schlafli}{Schl\"afli}
+\newcommand{\Schlomilch}{Schl\"omilch}
