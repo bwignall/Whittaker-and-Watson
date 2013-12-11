@@ -1919,6 +1919,9 @@ $$
 0.
 $$
 
+%
+% 375
+%
 \emph{Accordingly the successive functions $O_1(t), O_2(t), O_3(t),
   \ldots$ are determined by the recurrence formulae}
 $$
@@ -1982,4 +1985,179 @@ $n$ is equal to $0$ or $1$ respectively; and
   \dmeasure u,
 \end{align*}
 whence the induction is obvious.
+
+Writing $u = \sinh \theta$, we see that, according as $n$ is even or
+odd\footnote{TODO},
+\begin{align*}
+  TODO
+\end{align*}
+and hence, when $\realpart(t) > 0$, we have on integration,
+$$
+O_n(t)
+=
+\frac{2^{n-1} n!}{t^{n+1}}
+\thebrace{
+  1
+  + \frac{t^2}{2 (2n-2)}
+  + \frac{t^4}{ 2.4 (2n-2)(2n-4)}
+  + \cdots
+},
+$$
+the series terminating with the term in $t^n$ or $t^{n-1}$; now,
+whether $\realpart(t)$ be positive or not,
+$O_n(t)$ is defined as a polynomiral in $1/t$; and so the expansion
+obtained for $O_n(t)$ is the value of $O_n(t)$ for \emph{all} values
+of $t$.
+\begin{wandwexample}
+  Shew that, for all values of $t$,
+  $$
+  O_n(t)
+  =
+  \frac{1}{2 t^{n+1}}
+  \int_0^{\infty}
+  e^{-x}
+  \thebracket{
+    \thebrace{x + \sqrt{x^2 + t^2}}^n
+    +
+    \thebrace{x - \sqrt{x^2 + t^2}}^n
+  }
+  \dmeasure x,
+  $$
+  and verify that the expression on the right satisfies the recurrence
+  formulae for $O_n(t)$.
+\end{wandwexample}
+\subsection{Proof of Neumann's expansion.}
+The method of \hardsectionref{17}{8} merely determined the
+coefficients in Neumann's expansion of $1/(t-z)$, on the hypothesis
+that the expansion existed and that the rearrangements were
+legitimate.
+
+To obtain a proof of the validity of the expansion, we observe that
+$$
+\besJ_n(z)
+=
+\frac{(\half z)^n}{n!} 
+\thebrace{1 + \theta_n},
+\quad
+O_n(t)
+=
+\frac{2^{n-1} n!}{t^{n+1}}
+\thebrace{ 1 + \phi_n},
+$$
+%
+% 376
+%
+where $\theta_n \rightarrow 0$, $\phi_n \rightarrow 0$ as $n
+\rightarrow \infty$, when $z$ and $t$ are fixed. Hence the series
+$$
+O_0(t) \besJ_n(z)
++
+2
+\sum_{n=1}^{\infty}
+O_n(t) \besJ_n(z)
+\equiv
+F(z,t)
+$$
+is comparable with the geometrical progression whose general term is
+$z^n / t^{n+1}$, and this progression is absolutely convergenet when
+$\absval{z} < \absval{t}$, and so the expansion for $F(z,t)$ is
+absolutely convergent (\hardsubsectionref{2}{3}{4}) in the same
+circumstances.
+
+Again if $\absval{z} \leq r$, $\absval{t} \geq R$, where $r < R$, the
+series is comparable with the geometrical progression whose general
+term is $r^n / R^{n+1}$, and so the expansion for $F(z,t)$ converges
+uniformly throughout the domains $\absval{z} \leq r$ and $\absval{t}
+\geq R$ by \hardsubsectionref{3}{3}{4}. Hence, by
+\hardsectionref{5}{3}, term-by-term differentiations are permissible,
+and so
+\begin{align*}
+  \theparen{ \frac{\partial}{\partial t} + \frac{\partial}{\partial z}
+  }
+  F(z,t)
+  =&
+  O_0'(t) \besJ_0(z)
+  + 2 \sum_{n=1}^{\infty} O_n'(t) \besJ_n(z)
+  \\
+  &
+  + O_0(t) \besJ'_0(z)
+  + 2 \sum_{n=1}^{\infty}
+  O_n(t) \besJ'_n(z)
+  \\
+  =&
+  \thebrace{ O_0'(t) + O_1(t)} \besJ_0(z)
+  + \sum_{n=1}^{\infty} \thebrace{
+    2 O_n'(t) + O_{n+1}(t) - O_{n-1}(t)
+  }
+  \besJ_n(z)
+  \\
+  =&
+  0,
+\end{align*}
+by the recurrence formulae.
+
+Since
+$$
+\theparen{ \frac{\partial}{\partial t} + \frac{\partial}{\partial z}
+}
+F(z,t)
+=
+0,
+$$
+it follows that $F(z,t)$ is expressible as a function of $t-z$; and
+since
+$$
+F(0,t) = O_0(t) = 1/t,
+$$
+it is clear that $F(z,t) = 1/(t-z)$.
+
+It is therefore proved that
+$$
+\frac{1}{t-z}
+=
+O_0(t) \besJ_0(z)
++ 2 \sum_{n=1}^{\infty}
+O_n(t) \besJ_n(z),
+$$
+provided that $\absval{z} < \absval{t}$.
+
+Hence, if $f(z)$ be analytic when $\absval{z} \leq r$, we have, when
+$\absval{z} < r$,
+\begin{align*}
+  TODO
+\end{align*}
+by \hardsectionref{4}{7}, the paths of integration being the circle
+$\absval{t}=r$; and this establishes the validity of Neumann's
+expansion when $\absval{z} < r$ and $f(z)$ is analytic when
+$\absval{z}\leq r$.
+
+% 
+% 377
+%
+\begin{wandwexample}
+  Shew that
+  \begin{align*}
+    \cos z =& \besJ_0(z) - 2\besJ_2(z) + 2\besJ_4(z) - \cdots, \\
+    \sin z =& 2\besJ_1(z) - 2\besJ_3(z) + 2\besJ_5(z) - \cdots.
+    TODO:addattribution
+  \end{align*}
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  (\half z)^n
+  =
+  \sum_{r=0}^{\infty}
+  \frac{(n+2r)(n+r-1)!}{r!}
+  \besJ_{n+2r}(z).
+  TODO:addattribution
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that, when $\absval{z}<\absval{t}$,
+  \begin{align*}
+    TODO
+    TODO:addattribution
+  \end{align*}
+\end{wandwexample}
 \end{document}
