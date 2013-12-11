@@ -2160,4 +2160,128 @@ $\absval{z}\leq r$.
     TODO:addattribution
   \end{align*}
 \end{wandwexample}
+
+\subsection{\Schlomilch's expansion of an arbitrary function in a
+  series of Bessel coefficients of order zero.}
+\Schlomilch\footnote{TODO} has given an expansion of quite a different
+character from that of Neumann. His result may be stated thus:
+
+\emph{
+  Any function $f(x)$, which has a continuous differential coefficient
+  with limited total fluctuation for all values of $x$ in the closed
+  range $(0,\pi)$, may be expanded in the series
+  $$
+  f(x)
+  =
+  a_0 + a_1 \besJ_0(x) + a_2 \besJ_0(2x) + a_3 \besJ_0(3x) + \cdots,
+  $$
+  valid in this range; where
+  \begin{align*}
+    a_0 =& f(0)
+    +
+    \frac{1}{\pi}
+    \int_{0}^{\pi} u
+    \int_{0}^{\half\pi} f'(u\sin\theta)
+    \dmeasure\theta \dmeasure u,
+    \\
+    a_n =&
+    \frac{2}{\pi}
+    \int_{0}^{\pi} u\cos nu
+    \int_{0}^{\half\pi} f'(u\sin\theta)
+    \dmeasure\theta \dmeasure u
+    \qquad (n>0).
+  \end{align*}
+}
+\Schlomilch's proof is substantially as follows:
+
+Let $F(x)$ be the continuous solution of the integral equation
+$$
+f(x) = \frac{2}{\pi} \int_{0}^{\half \pi} F(x \sin\phi) \dmeasure \phi.
+$$
+Then (\hardsubsectionref{11}{8}{1})
+$$
+F(x) = f(0) + x \int_{0}^{\half\pi} f'(x\sin\theta) \dmeasure\theta.
+$$
+
+In order to obtain \Schlomilch's expansion, it is merely necessary to
+apply Fourier's theorem to the function $F(x\sin\phi)$. We thus have
+\begin{align*}
+  f(x)
+  =&
+  \frac{2}{\pi}
+  \int_{0}^{\half\pi}
+  \dmeasure\phi
+  \thebrace{
+    \frac{1}{\pi}
+    \int_{0}^{\pi} F(u) \dmeasure u
+    +
+    \frac{2}{\pi}
+    \sum_{n=1}^{\infty}
+    \int_{0}^{\pi} \cos nu \cos(nx\sin\phi) F(u) \dmeasure u
+  }
+  \\
+  =&
+  \frac{1}{\pi}
+  \int_{0}^{\pi}
+  F(u) \dmeasure u
+  +
+  \frac{2}{\pi}
+  \sum_{n=1}^{\infty}
+  \int_{0}^{\pi} \cos nu F(u) \besJ_0(nx) \dmeasure u,
+\end{align*}
+the interchange of summation and integration being permissible by
+TODO.
+
+In this equation, replace $F(u)$ by its value in terms of $f(u)$. Thus
+we have
+\begin{align*}
+  f(x)
+  =
+  \frac{1}{\pi}
+  \int_{0}^{\pi}
+  \thebrace{
+    f(0) + u \int_{0}^{\half\pi} f'(u\sin\theta) \dmeasure\theta
+  }
+  \dmeasure u
+  \\
+  +
+  \frac{2}{\pi}
+  \sum_{n=1}^{\infty}
+  \besJ_{0}(nx)
+  \int_{0}^{\pi}
+  \cos nu
+  \thebrace{
+    f(0) + u \int_{0}^{\half\pi} f'(u\sin\theta) \dmeasure\theta
+  }
+  \dmeasure u,
+\end{align*}
+which gives \Schlomilch's expansion.
+\begin{wandwexample}
+  Shew that, if $0 \leq x \leq pi$, the expression
+  $$
+  \frac{\pi^{2}}{4}
+  -
+  2
+  \thebrace{
+    \besJ_{0}(x)
+    + \frac{1}{9} \besJ_{0}(3x)
+    + \frac{1}{25} \besJ_{0}(5x)
+    + \cdots
+  }
+  $$
+  is equal to $x$; but that, if $\pi \leq x \leq 2\pi$, its value is
+  $$
+  x
+  +
+  2\pi \arccos (\pi x^{-1})
+  -
+  2 \sqrt{x^2 - \pi^2},
+  $$
+  where $\arccos(\pi x^{-1})$ is taken between $0$ and
+  $\frac{\pi}{3}$.
+
+  Find the value of the expression when $x$ lies between $2\pi$ and
+  $3\pi$.
+  TODO:addattribution
+\end{wandwexample}
 \end{document}
