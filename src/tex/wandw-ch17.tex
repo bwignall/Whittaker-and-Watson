@@ -2372,5 +2372,73 @@ by TODO.
   (this function reduces to a Bessel coefficient when $k$ is zero and
   $m$ an integer), shew that
   TODO
+\item
+  If $v$ and $M$ are connected by the equations
+  $$
+  M = E - e \sin E,
+  \quad
+  \cos v = \frac{\cos E - e}{1 - e\cos E},
+  \quad
+  \text{where } \absval{e} < 1,
+  $$
+  shew that
+  $$
+  v
+  =
+  M
+  +
+  2 (1-e^{2})^{\half}
+  \sum_{m=1}^{\infty}
+  \sum_{k=0}^{\infty}
+  (\half e)^{k}
+  J_{m}^{\ k}(me)
+  \frac{1}{m}
+  \sin mM,
+  $$
+  where $J_{m}^{\ k]}(z)$ is defined as in example TODO.
+  TODO:addattribution
+  %
+  % 380
+  %
+\item
+  Prove that, if $m$ and $n$ are integer,
+  $$
+  P_{n}^{\ m}(\cos\theta)
+  =
+  \frac{c_{n}^{\ m}}{r^{n}}
+  \besJ_{m}
+  \theparen{ \sqrt{x^{2}+y^{2}} \frac{\partial}{\partial z}}
+  z^{n},
+  $$
+  where $z = r\cos\theta$, $x^{2} + y^{2} = r^{2} \sin^{2}\theta$, and
+  $c_{n}^{\ m}$ is independent of z.
+  TODO:addattribution
+\item
+  TODO
+\item
+  Shew that
+  $$
+  \besJ_{1}(x)
+  +
+  \besJ_{3}(x)
+  +
+  \besJ_{5}(x)
+  +
+  \cdots
+  =
+  \half
+  \thebracket{
+    \besJ_{0}(x)
+    +
+    \int_{0}^{x}
+    \thebrace{
+      \besJ_{0}(t) + \besJ_{1}(t)
+    }
+    \dmeasure t
+    -
+    1
+    }.
+  $$
+  TODO:addattribution
 \end{enumerate}
 \end{document}
