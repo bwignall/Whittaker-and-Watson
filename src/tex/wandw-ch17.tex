@@ -2312,4 +2312,65 @@ equation involving Bessel functions were computed by TODO.
 
 A number of tables with Bessel functions are given in TODO, and also
 by TODO.
+
+%
+% 379
+%
+\miscexamples
+\begin{enumerate}
+\item Shew that
+  \begin{align*}
+    \cos(z \sin\theta)
+    =& \besJ_{0}(z) + 2 \besJ_{2}(z) \cos 2\theta + 2 \besJ_{4}(z)
+    \cos 4\theta + \cdots,
+    \\
+    \sin(z\sin\theta)
+    =& 2\besJ_{1}(z) \sin\theta + 2 \besJ_{3}(z)\sin 3\theta + 2
+    \besJ_{5}(z) \sin 5\theta + \cdots
+    TODO:addattribution
+  \end{align*}
+\item
+  By expanding each side of the equations of example TODO in powers of
+  $\sin\theta$, express $z^n$ as a series of Bessel coefficients.
+\item
+  By multiplying the expansions for
+  $\exp{ \thebrace{\half z\theparen{t - \frac{1}{t}}} }$
+  and
+  $\exp{ \thebrace{-\half z\theparen{t - \frac{1}{t}}} }$
+  and considering the terms independent of $t$, shew that
+  $$
+  \thebrace{ \besJ_{0}(z) }^2
+  + 2 \thebrace{ \besJ_{1}(z) }^2
+  + 2 \thebrace{ \besJ_{2}(z) }^2
+  + 2 \thebrace{ \besJ_{3}(z) }^2
+  +
+  \cdots
+  =
+  1.
+  $$
+  Deduce that, for the Bessel coefficients,
+  $$
+  \absval{\besJ_{0}(z)} \leq 1,
+  \quad
+  \absval{\besJ_{n}(z)} \leq 2^{-\half},
+  \quad
+  (n \geq 1)
+  $$
+  when $z$ is real.
+\item
+  If
+  $$
+  J_{m}^{\ k}(z)
+  =
+  \frac{1}{\pi}
+  \int_{0}^{\pi}
+  2^{k}
+  \cos^{k} u
+  \cos (mu - z\sin u)
+  \dmeasure u
+  $$
+  (this function reduces to a Bessel coefficient when $k$ is zero and
+  $m$ an integer), shew that
+  TODO
+\end{enumerate}
 \end{document}
