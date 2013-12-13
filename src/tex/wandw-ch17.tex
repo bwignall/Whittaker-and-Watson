@@ -2440,5 +2440,78 @@ by TODO.
     }.
   $$
   TODO:addattribution
+\item
+  Shew that
+  $$
+  \besJ_{\mu}(z) \besJ_{\nu}(z)
+  =
+  \sum_{n=0}^{\infty}
+  \frac{(-)^{n} \Gamma(\mu+\nu+2n+1) (\half z)^{\mu+\nu+2n}}{
+    n! \Gamma(\mu+n+1) \Gamma(\nu+n+1) \Gamma(\mu+\nu+n+1)}
+  $$
+  for all values of $\mu$ and $\nu$.
+  TODO:addattribution
+\item
+  Shew that, if $n$ is a positive integer and $m+2n+1$ is positive,
+  $$
+  (m-1)
+  \int_{0}^{x}
+  x^{m} \besJ_{n+1}(x) \besJ_{n-1}(x)
+  \dmeasure x
+  =
+  x^{m+1}
+  \thebrace{
+    \besJ_{n+1}(x)\besJ_{n-1}(x) - \besJ_{n}^{2}(x)
+  }
+  +
+  (m+1)
+  \int_{0}^{x} x^{m} \besJ_{n}^{2}(x)
+  \dmeasure x.
+  $$
+  TODO:addattribution
+\item
+  Shew that
+  $$
+  \besJ_{3}(z)
+  +
+  3 \frac{\dd \besJ_{0}(z)}{\dd z}
+  +
+  4 \frac{\dd^{3} \besJ_{0}(z)}{\dd z^{3}}
+  =
+  0.
+  $$
+\item
+  Shew that
+  $$
+  \frac{\besJ_{n+1}(z)}{\besJ_{n}(z)}
+  =
+  \frac{ \half z }{n+1-}
+  \frac{ (\half z)^{2} }{n+2-}
+  \frac{ (\half z)^{2} }{n+3-}
+  \cdots.
+  $$
+\item
+  Shew that
+  $$
+  \besJ_{-n}(z) \besJ_{n-1}(z)
+  +
+  \besJ_{-n-1}(z) \besJ_{n}(z)
+  =
+  \frac{2 \sin n\pi}{\pi z}
+  $$
+  TODO:addattribution
+\item
+  If $\frac{\besJ_{n+1}(z)}{z \besJ_{n}(z)}$ be denoted by $Q_{n}(z)$,
+  shew that
+  $$
+  \frac{ \dd Q_{n}(z) }{\dd z}
+  =
+  \frac{1}{z}
+  -
+  \frac{2(n+1)}{z}
+  Q_{n}(z)
+  +
+  z \thebrace{ Q_{n}(z) }^{2}
+  $$
 \end{enumerate}
 \end{document}
