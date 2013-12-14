@@ -2568,9 +2568,78 @@ by TODO.
   =
   \half \thebrace{ \besJ_{n+1}(\alpha)}^{2}.
   $$
-Hence prove that, when $n > -1$, the roots of $\besJ_{n}(x)=0$, other
-than zero, are all real and unequal.
+  Hence prove that, when $n > -1$, the roots of $\besJ_{n}(x)=0$, other
+  than zero, are all real and unequal.
 
-[If $\alpha$ could be complex, take $\beta$ to be the conjugate complex.]
+  [If $\alpha$ could be complex, take $\beta$ to be the conjugate
+  complex.]
+  TODO:addattribution
+\item
+  Let $x^{\half} f(x)$ have an absolutely convergent integral in the
+  range $0 \leq x \leq 1$; let $H$ be a real constant and let $n \geq
+  0$. Then, if $k_{1}, k_{2}, \ldots$ denote the positive roots of
+  the equation
+  $$
+  k^{-n}
+  \thebrace{ k \besJ'_{n}(k) + H \besJ_{n}(k)}
+  =
+  0,
+  $$
+  shew that, at any point $x$ for which $0 < x < 1$ and $f(x)$
+  satisfies one of the conditions of \hardsubsectionref{9}{4}{3},
+  $f(x)$ can be expanded in the form
+  $$
+  f(x) = \sum_{r=1}^{infty} A_{r} \besJ_{n}(k_{r} x),
+  $$
+  where
+  $$
+  A_{r}
+  =
+  \thebracket{ \int_{0}^{1} x \thebrace{\besJ_{n}(k_{r}x)}^{2} \dmeasure x}^{-1}
+  \int_{0}^{1} x f(x) \besJ_{n}(k_{r}x) \dmeasure x.
+  $$
+
+  In the special case when $H = -n$, $k_{1}$ is to be taken to be
+  zero, the equation determining $k_{1}, k_{2}, \ldots$ being
+  $\besJ_{n+1}(k) = 0$, and the first term of the expansion is $A_{0}
+  x^{n}$ where
+  $$
+  A_{0} = (2n+2) \int_{0}^{1} x^{n+1} f(x) \dmeasure x.
+  $$
+
+  Discuss, in particular, the case when $H$ is infinite, so that
+  $\besJ_{n}(k)=0$, shewing that
+  $$
+  A_{r}
+  =
+  2 \thebrace{\besJ_{n+1}(k_{r})}^{-2}
+  \int_{0}^{1}
+  x f(x) \besJ_{n}(k_{r}x)
+  \dmeasure x.
+  $$
+
+  [This result is due to TODO; see also TODO. The formal expansion was
+  fiven with $H$ infinite (when $n=0$) by Fourier and (for general
+  values of $n$ by Lommel; proofs were given by Hankel and \Schlafli.
+  The formula when $H = -n$ was given incorrectly by TODO, the term
+  $A_{0}x^{n}$ being printed as $A_{0}$, and this error was not
+  corrected by Nielsen. See TODO. The expansion is usually called the
+  \emph{Fourier-Bessel expansion}.]
+\item
+  Prove that, if the expansion
+  $$
+  a^{2} - x^{2}
+  =
+  A_{1} \besJ_{0}(\lambda_{1} x)
+  + A_{2} \besJ_{0}(\lambda_{2} x)
+  + \cdots
+  $$
+  exists as a uniformly convergent series when
+  $ -a \leq x \leq a$, where $\lambda_{1}, \lambda_{2}, \ldots$ are
+  the positive roots of $\besJ_{0}(\lambda a)=0$, then
+  $$
+  A_{n} = 8 \thebrace{ a \lambda_{n}^{3} \besJ_{1}(\lambda_{n} a)}^{-1}
+  $$
+  TOOD:addattribution
 \end{enumerate}
 \end{document}
