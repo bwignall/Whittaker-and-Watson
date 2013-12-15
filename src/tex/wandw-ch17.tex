@@ -2646,6 +2646,59 @@ by TODO.
   % 382
   %
 \item
-  %
+  If $k_{1}, k_{2}, \ldots$ are the positive roots of
+  $\besJ_{n}(k\alpha) = 0$, and if
+  $$
+  x^{n+2} = \sum_{r=1}^{\infty} A_{r} \besJ(k_{r}x),
+  $$
+  this series converging uniformly when $0 \leq x \leq \alpha$, then
+  $$
+  A_{r}
+  =
+  \frac{2 \alpha^{n-1}}{k_{r}^{2}}
+  \left.
+    (4n + 4 - \alpha^{2}k_{r}^{2})
+  \right|
+  \frac{\dd \besJ_{n}(k_{r}\alpha)}{\dd \alpha}.
+  \addexamplecitation{Math. Trip. 1906.}
+  $$
+\item
+  Shew that
+  $$
+  \besJ_{n}(x)
+  =
+  \frac{x^{n-m}}{2^{n-m-1}\Gamma(n-m)}
+  \int_{0}^{\half \pi}
+  \besJ_{m}(x\sin\theta)
+  \cos^{2n-2m-1}\theta
+  \sin^{m+1}\theta
+  \dmeasure \theta
+  $$
+  when $n>m>-1$.
+  \addexamplecitation{TODO}
+\item
+  Shew that, if $\sigma>0$,
+  $$
+  \int_{0}^{\infty}
+  \cos(t^{3} - \sigma t) \dmeasure t
+  =
+  \frac{\pi \sigma^{\half}}{3\sqrt{e}}
+  \thebrace{
+    \besJ_{\frac{1}{3}} \theparen{\frac{2 \sigma^{3/2}}{3^{3/2}}}
+    +
+    \besJ_{-\frac{1}{3}} \theparen{\frac{2 \sigma^{3/2}}{3^{3/2}}}.
+  }
+  \addexamplecitation{TODO}
+  $$
+\item
+  If $m$ be a positive integer and $u>0$, deduce from Bessel's
+  integral formula that
+  $$
+  \int_{0}^{\infty}
+  e^{-x \sinh u} \besJ_{m}(x) \dmeasure x
+  =
+  e^{-mu} \sech u.
+  \addexamplecitation{Math. Trip. 1904.}
+  $$
 \end{enumerate}
 \end{document}
