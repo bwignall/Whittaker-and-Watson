@@ -2713,5 +2713,63 @@ by TODO.
   [Take the contour of \hardsectionref{17}{1} to be the imaginary axis
   indented at the origin and a semicircle on the left of this line.]
   \addexamplecitation{TODO}
+\item
+  TODO
+\item
+  Shew that
+  $$
+  u = \int_{0}^{\pi} e^{nr\cos\theta} \thebrace{A + B \log(r\sin^{2}\theta} \dmeasure \theta
+  $$
+  is a solution of
+  $$
+  \frac{\dd u}{\dd r^{2}} + \frac{1}{r} \frac{\dd u}{\dd r} - n^{2} u
+  = 0.
+  \addexamplecitation{TODO}
+  $$
+\item
+  Prove that no relation of the form
+  $$
+  \sum_{s=0}^{k} N_{s} \besJ_{n+s}(x) = 0
+  $$
+  can exist for rational values of $N_{s}$, $n$, and $x$ except
+  relations which are satisfied when the Bessel functions are replaced
+  by arbitrary solutions of the recurrence formula of TODO.
+  \addexamplecitation{Math. Trip. 1901.}
+
+  [Express the left-hand side in terms of $\besJ_{n}(x)$ and
+  $\besJ_{n+1}(x)$, and shew by example TODO that
+  $\besJ_{n+1}(x)/\besJ_{n}(x)$ is irrational when $n$ and $x$ are
+  rational.]
+  %
+  % 383
+  %
+\item
+  Prove that, when $\realpart(n) > -\half$,
+  \begin{align*}
+    \besJ_{n} 
+    =&
+    \frac{z^{n}}{2^{n-1}\Gamma(n+\half) \Gamma(\half)}
+    \theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}
+    \theparen{ \frac{\sin z}{z} },
+    \\
+    -\besY_{n}(z)
+    =&
+    \frac{z^{n}}{2^{n-1}\Gamma(n+\half) \Gamma(\half)}
+    \theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}
+    \theparen{ \frac{\cos z}{z} }.
+  \end{align*}
+  [
+    $\theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}$
+    means
+    $ 1
+    + \frac{n-\half}{1!} \frac{\dd^{2}}{\dd z^{2}}
+    + \frac{ (n-\half) (n- \frac{3}{2}}{2!} \frac{\dd^{4}}{\dd z^{4}}
+    + \cdots .
+    $
+    Write
+    $
+    \frac{e^{iz}}{z} = \int_{\infty i}^{1} i e^{izt} \dmeasure t.
+    $
+  ]
 \end{enumerate}
 \end{document}
