@@ -2759,17 +2759,30 @@ by TODO.
     \theparen{ \frac{\cos z}{z} }.
   \end{align*}
   [
-    $\theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}$
-    means
-    $ 1
-    + \frac{n-\half}{1!} \frac{\dd^{2}}{\dd z^{2}}
-    + \frac{ (n-\half) (n- \frac{3}{2}}{2!} \frac{\dd^{4}}{\dd z^{4}}
-    + \cdots .
-    $
-    Write
-    $
-    \frac{e^{iz}}{z} = \int_{\infty i}^{1} i e^{izt} \dmeasure t.
-    $
+  $\theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}$
+  means
+  $ 1
+  + \frac{n-\half}{1!} \frac{\dd^{2}}{\dd z^{2}}
+  + \frac{ (n-\half) (n- \frac{3}{2}}{2!} \frac{\dd^{4}}{\dd z^{4}}
+  + \cdots .
+  $
+  Write
+  $ \frac{e^{iz}}{z} = \int_{\infty i}^{1} i e^{izt} \dmeasure t. $
   ]
+  \addexamplecitation{TODO}
+\item
+  Shew that, when $\realpart(m+\half)>0$,
+  $$
+  \theparen{
+    \frac{2}{\pi}
+  }^{\half}
+  \int_{0}^{\half\pi}
+  \besJ_{m}(z \sin\theta)
+  \sin^{m+1}\theta
+  \dmeasure \theta
+  =
+  z^{-\half} \besJ_{m+\half}(z).
+  \addexamplecitation{Hobson.}
+  $$
 \end{enumerate}
 \end{document}
