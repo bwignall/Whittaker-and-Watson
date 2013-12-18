@@ -35,10 +35,16 @@
 \newcommand{\miscexamples}{\textsc{Miscellaneous Examples}}
 
 % Add W&W-style end-of-line example citations
-\newcommand{\addexamplecitation}[1]{\hfill (\textrm{#1 TODO})}
+%\newcommand{\addexamplecitation}[1]{\hfill (\textrm{#1 TODO})}
+\newcommand{\addexamplecitation}[1]{%
+  \pagebreak[0]%
+  \hfil\allowbreak\null\nobreak\hfill\nobreak\mbox{(#1)}%
+  \pagebreak[1]%
+}
 
 \newcommand{\dd}{\mathbf{d}}
 \newcommand{\dmeasure}{\, \dd}
+\newcommand{\littleo}{o}
 
 \newcommand{\corollary}{Corollary}
 
