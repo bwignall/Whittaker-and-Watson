@@ -2157,9 +2157,38 @@ $\absval{z}\leq r$.
 \begin{wandwexample}
   Shew that, when $\absval{z}<\absval{t}$,
   \begin{align*}
-    TODO
-    \addexamplecitation{Kapteyn.}
+    O_{0}(t) \besJ_{0}(z)
+    +
+    2 \sum_{n=1}^{\infty} O_{n}(t) \besJ_{n}(z)
+    =&
+    \sum_{n=-\infty}^{\infty}
+    \besJ_{n}(z)
+    \int_{0}^{\infty}
+    t^{-n-1}
+    e^{-x}
+    \thebrace{
+      x + \sqrt{x^{2} + t^{2}}
+    }^{n}
+    \dmeasure x
+    \\
+    =&
+    \int_{0}^{\infty}
+    \frac{e^{-x}}{t}
+    \sum_{n=-\infty}^{\infty}
+    \besJ_{n}(z)
+    \thebrace{
+      x + \sqrt{x^{2} + t^{2}}
+    }^{n}
+    \dmeasure x
+    \\
+    =&
+    \frac{1}{t}
+    \int_{0}^{\infty} \exp \theparen{ \frac{zx}{t} - x } \dmeasure x
+    \\
+    =&
+    \frac{1}{t-z}.
   \end{align*}
+  \addexamplecitation{Kapteyn.}
 \end{wandwexample}
 
 \subsection{\Schlomilch's expansion of an arbitrary function in a
