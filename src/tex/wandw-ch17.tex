@@ -2556,7 +2556,27 @@ by TODO.
   \addexamplecitation{Math. Trip. 1896.}
   $$
 \item
-  TODO
+  Shew that, if $\alpha \neq \beta$ and $n > -1$,
+  \begin{align*}
+    (\alpha^{2}-\beta^{2})
+    \int_{0}^{x} x \besJ_{n}(\alpha x) \besJ_{n}(\beta x) \dmeasure x
+    =&
+    x \thebrace{
+      \besJ_{n}(\alpha x) \frac{\dd}{\dd x} \besJ_{n}(\beta x)
+      - \besJ_{n}(\beta x) \frac{\dd}{\dd x} \besJ_{n}(\alpha x)
+    },
+    \\
+    2 \alpha^{2}
+    \int_{0}^{x}
+    x \thebrace{ \besJ_{n}(\alpha x) }^{2} \dmeasure x
+    =&
+    (\alpha^{2} x^{2} - n^{2})
+    \thebrace{ \besJ_{n}(\alpha x) }^{2}
+    +
+    \thebrace{
+      x \frac{\dd}{\dd x} \besJ_{n}(\alpha x)
+    }.
+  \end{align*}
 \item
   Prove that, if $n > -1$, and $\besJ_{n}(\alpha) = \besJ_{n}(\beta) =
   0$ while $\alpha \neq \beta$,
