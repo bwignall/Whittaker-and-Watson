@@ -999,8 +999,9 @@ where $P_k$, $Q_k$ are polynomials in $z^{-\half}$.
   where
   $c_0,c_1,\ldots,c_{2m}$ are arbitrary and
   $a_0,a_1,\ldots,a_{2m}$ are the roots of
-  $$a^{2m+1}=i. \addexamplecitation{Lommel.}
+  $$a^{2m+1}=i.
   $$
+  \addexamplecitation{Lommel.}
 \end{wandwexample}
 \section[Hankel's contour integral for $\besJ_n(z)$.]{Hankel's contour integral\footnote{TODO} for $\besJ_n(z)$.}
 Consider the integral
@@ -1454,7 +1455,7 @@ order is given by TODO.
 
   Further, determine $A$ and $B$ so that this may represent
   $\besJ_n(z)$.
-  TODO:attribution
+  \addexamplecitation{TODO}
 \end{wandwexample}
 
 \section{The second solution of Bessel's equation when the order
@@ -1730,8 +1731,8 @@ applications.
   -
   \int_0^{\infty}
   e^{-z \sinh\theta} \thebrace{e^{n\theta} + (-)^n e^{-n\theta}} \dmeasure\theta.
-  \addexamplecitation{TODO}
   $$
+  \addexamplecitation{TODO}
 \end{wandwexample}
 \begin{wandwexample}
   Shew that
@@ -1783,11 +1784,21 @@ formulae:
     \besI_n(z)
     \sim
     \frac{ e^z}{ (2\pi z)^{\half}}
-    \thebracket{1 + TODO}
+    \thebracket{
+      1
+      +
+      \sum_{r=1}^{\infty} (-)^{r}
+      \frac{[4n^{2}-1^{2}] [4n^{2} - 3^{2}] \cdots [4n^{2} - (2r-1)^{2}]}{r! 2^{3r} z^{r}}
+    }
     \\
     +
     \frac{ e^{-(n+\half) \pi i} e^{-z}}{ (2\pi z)^{\half} }
-    \thebracket{TODO},
+    \thebracket{
+      1
+      +
+      \sum_{r=1}^{\infty}
+      \frac{[4n^{2}-1^{2}] [4n^{2} - 3^{2}] \cdots [4n^{2} - (2r-1)^{2}]}{r! 2^{3r} z^{r}}
+    },
   \end{align*}
   the second series being negligible when $\absval{\arg z} < \half
   \pi$. The result is easily seen to be valid over the extended
@@ -1821,7 +1832,17 @@ solution of the modified Bessel equation, and when
 $\absval{\arg z} < \frac{3}{2} \pi$ it possesses the asymptotic
 expansion
 $$
-TODO
+\besK_{n}(z)
+\sim
+\theparen{ \frac{\pi}{2z} }^{\half}
+e^{-z}
+\cos (n\pi)
+\thebracket{
+  1
+  +
+  \sum_{r=1}^{\infty}
+  \frac{ [4n^{2}-1^{2}] [4n^{2}-3^{2}] \cdots [4n^{2} - (2r-1)^{2}]}{r! 2^{3r} z^{r}}
+}
 $$
 for large values of $\absval{z}$.
 
@@ -1837,10 +1858,18 @@ which gives (\emph{cf}. \hardsubsectionref{17}{6}{1})
 \begin{align*}
   \besK_n(z)
   =&
-  TODO
+  -\sum_{r=0}^{\infty}
+  \frac{(\half z)^{n+2r}}{r! (n+r)!}
+  \thebrace{
+    \log \half z + \gamma
+    - \half \sum_{m=1}^{n+r} m^{-1}
+    - \half \sum_{m=1}^{r} m^{-1}
+  }
   \\
   &
-  TODO
+  + \half \sum_{r=0}^{n-1}
+  \theparen{\half z}^{-n+2r}
+  \frac{(-)^{n-r} (n-r-1)!}{r!}
 \end{align*}
 as an ascending series.
 \begin{wandwexample}
@@ -2125,7 +2154,23 @@ provided that $\absval{z} < \absval{t}$.
 Hence, if $f(z)$ be analytic when $\absval{z} \leq r$, we have, when
 $\absval{z} < r$,
 \begin{align*}
-  TODO
+  f(z)
+  =&
+  \frac{1}{2\pi i} \int \frac{f(t)}{t-z} \dmeasure t
+  \\
+  =&
+  \frac{1}{2\pi i}
+  \int f(t)
+  \thebrace{
+    O_{0}(t) \besJ_{0}(z) + 2 \sum_{n=1}^{\infty} O_{n}(t) \besJ_{n}(z)
+  }
+  \dmeasure t
+  \\
+  =&
+  \besJ_{0}(z) f(0)
+  +
+  \sum_{n=1}^{\infty} \frac{\besJ_{n}(z)}{\pi i}
+  \int O_{n}(t)f(t) \dmeasure t,
 \end{align*}
 by \hardsectionref{4}{7}, the paths of integration being the circle
 $\absval{t}=r$; and this establishes the validity of Neumann's
@@ -2140,8 +2185,8 @@ $\absval{z}\leq r$.
   \begin{align*}
     \cos z =& \besJ_0(z) - 2\besJ_2(z) + 2\besJ_4(z) - \cdots, \\
     \sin z =& 2\besJ_1(z) - 2\besJ_3(z) + 2\besJ_5(z) - \cdots.
-    \addexamplecitation{K. Neumann.}
   \end{align*}
+  \addexamplecitation{K. Neumann.}
 \end{wandwexample}
 \begin{wandwexample}
   Shew that
@@ -2151,8 +2196,8 @@ $\absval{z}\leq r$.
   \sum_{r=0}^{\infty}
   \frac{(n+2r)(n+r-1)!}{r!}
   \besJ_{n+2r}(z).
-  \addexamplecitation{K. Neumann.}
   $$
+  \addexamplecitation{K. Neumann.}  
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, when $\absval{z}<\absval{t}$,
