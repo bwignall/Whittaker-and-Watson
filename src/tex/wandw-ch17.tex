@@ -725,7 +725,7 @@ We shall now shew that\footnote{TODO}, for general values of $n$,
   \frac{\sin n\pi}{\pi}
   \int_0^{\infty} e^{-n\theta - z\sinh\theta} \dmeasure\theta,
 \end{equation}
-when $\realpart(z) > 0$. This obviously reduces to the result of
+when $\Re(z) > 0$. This obviously reduces to the result of
 \hardsubsectionref{17}{2}{3} when $n$ is an integer.
 
 Taking the integral of \hardsectionref{17}{2}, viz,
@@ -756,12 +756,12 @@ $$
 But, if the contour be taken to be that of the figure consisting of
 the real axis from $-1$ to $-\infty$ taken twice and the circle 
 $\absval{u} = 1$, this integral represents an analytic function of $z$
-when $\realpart(zu)$ is negative as
+when $\Re(zu)$ is negative as
 $\absval{u} \rightarrow \infty$ on the path, \emph{i.e.} when 
 $\absval{ \arg z } < \half \pi$; and so, by the theory of analytic
 continuation, the formula (which has been proved by a direct
 transformation for \emph{positive} values of $z$) is true whenever 
-$\realpart(z) > 0$.
+$\Re(z) > 0$.
 
 Hence
 $$
@@ -1042,7 +1042,7 @@ $$
 
 To evaluate these integrals, we observe firstly that they are analytic
 functions of $n$ for all values of $n$, and secondly that, when
-$\realpart\theparen{n+\half} > 0$, we may deform the contour into the
+$\Re\theparen{n+\half} > 0$, we may deform the contour into the
 circles $\absval{t-1}=\delta$, $\absval{t+1}=\delta$ and the real axis
 joining the points $t = \pm (1-\delta)$ taken twice, and then we may
 make $\delta \rightarrow 0$; the integrals round the circle tend to
@@ -1087,7 +1087,7 @@ Since the initial and final expressions are analytic functions of $n$
 for all values of $n$, it follows from \hardsectionref{5}{5} that this
 equation, proved when
 $$
-\realpart \theparen{ n + \half } > 0,
+\Re \theparen{ n + \half } > 0,
 $$
 is true for all values of $n$.
 
@@ -1122,7 +1122,7 @@ $$
 \frac{ \Gamma(\half-n) (\half z)^n }{ 2\pi i \Gamma(\half)}
 $$
 
-\corollary. When $\realpart(n+\half) > 0$, we may deform the path of
+\corollary. When $\Re(n+\half) > 0$, we may deform the path of
 integration, and obtain the result
 \begin{align*}
   \besJ_n(z)
@@ -1135,7 +1135,7 @@ integration, and obtain the result
   \int_0^{\half \pi} \sin^{2n}\phi \cos(z \cos\phi) \dmeasure\phi.
 \end{align*}
 \begin{wandwexample}
-  Shew that, when $\realpart(n+\half) > 0$,
+  Shew that, when $\Re(n+\half) > 0$,
   $$
   \besJ_n(z)
   =
@@ -1151,7 +1151,7 @@ integration, and obtain the result
   \frac{ (\half z)^n }{ \Gamma(n+\half) \Gamma(\half) }
   \int_0^{\pi} \cos(z\cos\phi) \sin^{2n}\phi \dmeasure\phi,
   $$
-  when $\realpart(n) > 0$, by expanding in powers of $z$ and
+  when $\Re(n) > 0$, by expanding in powers of $z$ and
   integrating
   (\hardsectionref{4}{7}) term-by-term.
 \end{wandwexample}
@@ -1383,7 +1383,7 @@ order is given by TODO.
   By suitably modifying Hankel's contour integral
   (\hardsectionref{17}{3}), shew that, when
   $\absval{\arg z} < \half \pi$ and
-  $\realpart(n+\half) > 0$,
+  $\Re(n+\half) > 0$,
   \begin{align*}
     \besJ_n(z)
     =
@@ -1418,7 +1418,7 @@ order is given by TODO.
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, when $\absval{\arg z} < \half \pi$ and
-  $\realpart(n+\half) > 0$,
+  $\Re(n+\half) > 0$,
   $$
   \besJ_n(z)
   =
@@ -1434,7 +1434,7 @@ order is given by TODO.
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, if $\absval{\arg z} < \half \pi$ and
-  $\realpart(n+\half) > 0$, then
+  $\Re(n+\half) > 0$, then
   $$
   A e^{iz} z^n
   \int_0^{\infty}
@@ -1769,7 +1769,7 @@ formulae:
 \item $\frac{\dd^2 \besI_n(z)}{\dd z^2} + \frac{1}{z} \frac{\dd
     \besI_n(z)}{\dd z} -
   \theparen{1 + \frac{n^2}{z^2}} \besI_n(z) = 0$.
-\item When $\realpart \theparen{n + \half} > 0$,
+\item When $\Re \theparen{n + \half} > 0$,
   $$
   \besI_n(z)
   =
@@ -1951,7 +1951,7 @@ e^{-tu}
 }
 \dmeasure u
 $$
-when $\realpart(t) > 0$.
+when $\Re(t) > 0$.
 For the expression is obviously equal to $O_0(t)$ and $O_1(t)$ when
 $n$ is equal to $0$ or $1$ respectively; and
 \begin{align*}
@@ -1992,7 +1992,7 @@ odd\footnote{TODO},
 \begin{align*}
   TODO
 \end{align*}
-and hence, when $\realpart(t) > 0$, we have on integration,
+and hence, when $\Re(t) > 0$, we have on integration,
 $$
 O_n(t)
 =
@@ -2005,7 +2005,7 @@ O_n(t)
 },
 $$
 the series terminating with the term in $t^n$ or $t^{n-1}$; now,
-whether $\realpart(t)$ be positive or not,
+whether $\Re(t)$ be positive or not,
 $O_n(t)$ is defined as a polynomiral in $1/t$; and so the expansion
 obtained for $O_n(t)$ is the value of $O_n(t)$ for \emph{all} values
 of $t$.
@@ -2534,7 +2534,7 @@ by TODO.
   \end{align*}
   \addexamplecitation{K. Neumann.}
 \item
-  Shew that, if $\realpart(n+\half) > 0$,
+  Shew that, if $\Re(n+\half) > 0$,
   $$
   \int_{0}^{\half\pi}
   \besJ_{2^{n}}(2z\cos\theta) \dmeasure \theta
@@ -2714,7 +2714,27 @@ by TODO.
   indented at the origin and a semicircle on the left of this line.]
   \addexamplecitation{TODO}
 \item
-  TODO
+  Shew that
+  $$
+  \int_{0}^{\infty} x^{-1} \besJ_{0}(xt) \sin x \dmeasure x
+  =
+  \begin{cases}
+    \half\pi & 0 < t < 1
+    \\
+    \arccosec t & t > 1
+  \end{cases}
+  $$
+  and that
+  $$
+  \int_{0}^{\infty} x^{-1} \besJ_{1}(xt) \sin x \dmeasure x
+  =
+  \begin{cases}
+    t^{-1} \thebrace{ 1 - (1-t^{2})^{\half}  } & 0 < t < 1
+    \\
+    t^{-1} & t > 1
+  \end{cases}.
+  $$
+  \addexamplecitation{TODO}
 \item
   Shew that
   $$
@@ -2744,7 +2764,7 @@ by TODO.
   % 383
   %
 \item
-  Prove that, when $\realpart(n) > -\half$,
+  Prove that, when $\Re(n) > -\half$,
   \begin{align*}
     \besJ_{n} 
     =&
@@ -2771,7 +2791,7 @@ by TODO.
   ]
   \addexamplecitation{TODO}
 \item
-  Shew that, when $\realpart(m+\half)>0$,
+  Shew that, when $\Re(m+\half)>0$,
   $$
   \theparen{
     \frac{2}{\pi}
@@ -3048,8 +3068,8 @@ by TODO.
   when the series on the right converges.
   \addexamplecitation{K. Neumann TODO}
 \item
-  Shew that, if $c>0$, $\realpart(n) > -1$ and
-  $\realpart(a \pm b)^{2} > 0$, then
+  Shew that, if $c>0$, $\Re(n) > -1$ and
+  $\Re(a \pm b)^{2} > 0$, then
   $$
   \besJ_{n}(a) \besJ_{n}(b)
   =
