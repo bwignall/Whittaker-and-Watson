@@ -3036,5 +3036,43 @@ by TODO.
     C_{m}^{\ n}(\cos\theta).
   \end{align*}
   \addexamplecitation{TODO}
+\item
+  Shew that
+  $$
+  y = \int_{C} \besJ_{m}(t) \besJ_{n}(t z^{\half}) t^{k-1} \dmeasure t
+  $$
+  satisfies the equation
+  $$
+  \frac{\dd^{2} y}{\dd z^{2}}
+  +
+  \theparen{\frac{1}{z} + \frac{k}{z-1}} \frac{\dd y}{\dd z}
+  +
+  \theparen{k^{2}-m^{2}+\frac{n^{2}}{z}} \frac{y}{4z(z-1)}
+  =
+  0
+  $$
+  if
+  $$
+  k t^{k} \besJ_{m}(t) \besJ_{n}(t z^{\half})
+  -
+  t^{k+1} \besJ'_{m}(t) \besJ'_{n}(t z^{\half})
+  +
+  z^{\half} t^{k+1} \besJ_{m}(t) \besJ'_{n}(t z^{\half})
+  $$
+  resumes its initial value after describing the contour.
+
+  Deduce that, when $0<z<1$,
+  $$
+  \int_{0}^{\infty}
+  \besJ_{\alpha-\beta}(t)
+  \besJ_{\gamma-1}(t z^{\half})
+  t^{1+\beta+\gamma}
+  \dmeasure t
+  =
+  \frac{\Gamma(\alpha) z^{\half(\gamma-1)}}{ 2^{\gamma-\alpha-\beta}
+    \Gamma(1-\beta) \Gamma(\gamma)}
+  F(\alpha,\beta;\gamma;z).
+  $$
+  \addexamplecitation{TODO; Math. Trip. 1903.}
 \end{enumerate}
 \end{document}
