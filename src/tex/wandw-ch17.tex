@@ -29,7 +29,7 @@
 \section{The Bessel coefficients}
 In this chapter we shall consider a class of functions known as  \emph{Bessel functions}
 or \emph{cylindrical functions}
-which have many analogies with the Legendre functions of  Chapter XV.
+which have many analogies with the Legendre functions of  Chapter XV(TODO:ref).
 Just as the Legendre functions proved to be particular forms of the
 hypergeometric function with three regular singularities,  so the
 Bessel functions are particular forms of the  confluent
@@ -151,7 +151,7 @@ e^{\half z \theparen{u - \frac{1}{u}}}
 \sum_{n=1}^{\infty}
 e^{\half z \theparen{u - \frac{1}{u}}} A_n u^{-n-1},
 $$
-the series on the right converging uniformly on the controu; and so, 
+the series on the right converging uniformly on the contour; and so, 
 using \hardsectionref{4}{7} and replacing the integrals by Bessel
 coefficients, we have
 \begin{align*}
@@ -181,6 +181,7 @@ semiaxes $\cosh\beta$ and $\sinh\beta$ with foci at
 $-a \pm i$; then we have
 $$
 \sum_{n=1}^{\infty}
+A_{n} \besJ_{n}(z)
 =
 \frac{1}{2\pi i}
 \int
@@ -861,9 +862,32 @@ $n \rightarrow \infty$ of the equation for
 $P_n^m(1-z^2/2n^2)$.
 
 But Laplace's integral for this function is a multiple of 
-$$
-TODO
-$$
+\begin{align*}
+\int_{0}^{\pi}
+\thebracket{
+  1
+  -
+  \frac{z^{2}}{2n^{2}}
+  +
+  \thebrace{
+    \theparen{
+      1 - \frac{z^{2}}{2n^{2}}
+    }^{2}
+    -
+    1
+  }^{\half}
+  \cos \phi
+}^{n} \cos m\phi \dmeasure \phi
+\\
+=
+\int_{0}^{\pi}
+\thebrace{
+  1
+  + \frac{iz}{n} \cos\phi
+  + O(n^{-2})
+}^{n}
+\cos m\phi \dmeasure \phi.
+\end{align*}
 
 The limit of the integrand as $n \rightarrow \infty$ is 
 $e^{iz\cos\phi}\cos m\phi$, and this exhibits the similarity of
@@ -884,7 +908,7 @@ $\besJ_m(z)$.
   x^n
   \dmeasure x.
   $$
-  TODO:addattribution
+  \addexamplecitation{TODO}
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, with Ferrers' definition of $P_n^m(\cos\theta)$,
@@ -1033,7 +1057,7 @@ converges uniformly on the contour, we have (\hardsectionref{4}{7})
 $$
 y
 =
-sum_{r=0}^{\infty}
+\sum_{r=0}^{\infty}
 \frac{(-)^r z^{n+2r}}{(2r)!}
 \int_A^{(1+,-1-)}
 t^{2r}
@@ -1431,7 +1455,7 @@ order is given by TODO.
   \sin\thebrace{z - (n-\half)\phi}
   \dmeasure \phi.
   $$
-  [Write $u = 2z\cot\phi$ in the preceding example.]l
+  [Write $u = 2z\cot\phi$ in the preceding example.]
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, if $\absval{\arg z} < \half \pi$ and
