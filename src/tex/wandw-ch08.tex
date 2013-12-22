@@ -1,258 +1,287 @@
 \chapter{TODO - Asymptotic Expansions and Summable Series}
 
-8"1. Simple example of an asymptotic expansion. 
+\section{Simple example of an asymptotic expansion.}
 
-Consider the function f\{x) = \ t~\^ e*~* dt, where x is real and positive, 
-and the path of integration is the real axis. 
+Consider the function
+$f(x) = \int_{x}^{\infty} t^{-1} e^{x-t} \dmeasure t$,
+where $x$ is real and positive, and the path of integration is the
+real axis.
 
-By repeated integrations by parts, we obtain 
+By repeated integrations by parts, we obtain
+$$
+f(x)
+=
+\frac{1}{x}
+- \frac{1}{x^{2}}
++ \frac{2!}{x^{3}}
+- \cdots
++ \frac{ (-)^{n-1} (n-1)!}{x^{n}}
++ (-)^{n} n! \int_{x}^{\infty} \frac{e^{x-t} \dmeasure t}{t^{n+1}}.
+$$
 
-TODO
+In connexion with the function $f(x)$, we therefore consider the
+expression
+$$
+u_{n-1}
+=
+\frac{ (-)^{n-1} (n-1)!}{x^{n}},
+$$
+and we shall write
+$$
+\sum_{m=0}^{n}
+u_{m}
+=
+\frac{1}{x}
+- \frac{1}{x^{2}}
++ \frac{2!}{x^{3}}
+- \cdots
++ \frac{ (-)^{n} n!}{x^{n+1}}
+=
+S_{n}(x).
+$$
+Then we have $\absval{u_{m}/u_{m-1}} = mx^{-1} \rightarrow \infty$.
+\emph{The series $\sum u_{m}$ is therefore divergent for all values of
+  $x$}. 
+In spite of this, however, the series can
+be used for the calculation of $f(x)$; this can be seen in the following way.
 
-In connexion with the function /(a;), we therefore consider the expression 
+Take any fixed value for the number $n$, and calculate the value of $S_{n}$.
+We have
+$$
+f(x) - S_{n}(x)
+=
+(-)^{n+1} (n+1)! 
+\int_{x}^{\infty} \frac{e^{x-t} \dmeasure t}{t^{n+2}},
+$$
+and therefore, since $e^{x-t} \leq 1$,
+$$
+\absval{ f(x) - S_{n}(x) }
+=
+(n+1)!
+\int_{x}^{\infty}
+\frac{e^{x-t} \dmeasure t}{t^{n+2}}
+<
+(n+1)!
+\int_{x}^{\infty} \frac{\dmeasure t}{t^{n+2}}
+=
+\frac{n!}{x^{n+1}}.
+$$
+For values of $x$ which are sufficiently large, the right-hand member
+of this equation is very small. Thus, if we take $x \geq 2n$, we have
+$$
+\absval{ f(x) - S_{n}(x)}
+<
+\frac{1}{2^{n+1} n^{2}},
+$$
+which for large values of $n$ is very small. It follows therefore that
+\emph{the value of the function $f(x)$ can he calculated with great
+  accuracy for large values of $x$, by taking the sum of a suitable
+  number of terms of the series $\sum u_{m}$}.
 
-'\^n—i — z 5 
-
-X\^ \ 
-
-and we shall write 
-
-K 11,2! (-rn\ \^ , , 
-
-J\^J = (J t'--' iAj iM\^ tAj 
-
-Then we have | Um/Um-i \ = mx~\^ — > oo as m—¥cc. The series Si/m is there- 
-fore divergent for all values of x. In spite of this, however, the series can 
-be used for the calculation off(x) ; this can be seen in the following way. 
-
-Take any fixed value for the number n, and calculate the value of Sn- 
-We have 
-
-'" e\^-\^ dt 
-
-and therefore, since e\^~* \^ 1, 
-
-'"\^ e'\^-\^dt , . \_. r dt \_n\ 
-
-
-
-f\{x)-Snix) = \{-r+\^(n + l)lf 
-
-J a 
-
-le e\^-Kl, 
-
-
-
-For values of x which are sufficiently large, the right-hand member of this 
-equation is very small. Thus, if we take x \^ 2/i, we have 
-
-TODO
-
-which for large values of n is very small. It follows therefore that the value 
-of the function f \{x) can he calculated with great accuracy for large values of x, 
-by taking the sum of a suitable number of terms of the series Xum. 
-
-Taking even fairly small values of x and TODO
-
+Taking even fairly small values of $x$ and $n$
+$$
+S_{5}(10) = 0.09152,
+\quad
+0 < f(10) - S_{5}(10) < 0.00012.
+$$
 %
 % 151
 %
 
-The series is on this account said to be an asymptotic expansion of the 
-function f\{x). The precise definition of an asymptotic expansion will now 
-be given. 
+The series is on this account said to be an asymptotic expansion of the
+function $f(x)$. The precise definition of an asymptotic expansion will now
+be given.
 
-8 "2. Definition of an asymptotic expansion. 
-A divergent series 
+\section{Definition of an asymptotic expansion.}
+A divergent series
 
-z z\^ z\^'- 
+z z\^ z\^'-
 
-in which the sum of the first (n + I) terms is Sn (\^), is said to be an asymptotic 
-expansion of a function f(z) for a given range of values of arg\^;, if the 
-expression Rn (z) = z"' \{/(z) — Sn (z)] satisfies the condition 
+in which the sum of the first (n + I) terms is Sn (\^), is said to be an asymptotic
+expansion of a function f(z) for a given range of values of arg\^;, if the
+expression Rn (z) = z"' \{/(z) — Sn (z)] satisfies the condition
 
-lim Rn (2) = \{n fixed), 
-even though lim |i?„(2r)| = x (2; fixed). 
+lim Rn (2) = \{n fixed),
+even though lim |i?„(2r)| = x (2; fixed).
 
-When this is the case, we can make 
-
-TODO
-
-where e is arbitrarily small, by taking j z | sufficiently large. 
-
-We denote the fact that the series is the asymptotic expansion off\{z) by 
-writing 
+When this is the case, we can make
 
 TODO
 
-The definition which has just been given is due to Poincare*. Special 
-asymptotic expansions had, however, been discovered and used in the 
-eighteenth century by Stirling, Maclaurin and Euler. Asymptotic expan- 
-sions are of great importance in the theory of Linear Differential Equations, 
-and in Dynamical Astronomy ; some applications will be given in subsequent 
-chapters of the present work. 
+where e is arbitrarily small, by taking j z | sufficiently large.
 
-The example discussed in § 8-1 clearly satisfies the definition just 
-given : for, when x is positive, j x" \{/\{x) - Sn (x)\} | < n ! \^-\^ -> as a; — » 00 . 
-
-For the sake of simplicity, in this chapter we shall for the most part consider 
-asymptotic expansions only in connexion with real positive values of the argument. 
-The theory for complex values of the argument may be discussed by an extension of the 
-analysis. 
-
-8"21. Another example of an asymptotic expansion. 
-
-As a second example, consider the function /(.r), represented by the series 
-
-
-
-f\{x)= 2 — -,, 
-i = l x-\-h, 
-
-where x>0 and < c < 1. 
-
-* Acta Uathematica, vm. (1886), pp. 295-344. 
-
-
-
-152 THE PROCESSES OF ANALYSIS [CHAP. VIII 
-
-The ratio of the \^th term of this series to the \{k- l)th is less than c, and consequently 
-the series converges for all positive values of x. We shall confine our attention to positive 
-values of x. We have, when x > k, 
+We denote the fact that the series is the asymptotic expansion off\{z) by
+writing
 
 TODO
 
-If, therefore, it vk\^ere allowable* to expand each fraction -, in this way, and to 
+The definition which has just been given is due to Poincare*. Special
+asymptotic expansions had, however, been discovered and used in the
+eighteenth century by Stirling, Maclaurin and Euler. Asymptotic expan-
+sions are of great importance in the theory of Linear Differential Equations,
+and in Dynamical Astronomy ; some applications will be given in subsequent
+chapters of the present work.
 
-rearrange the series for / \{x) in descending powers of x, we should obtain the formal series 
+The example discussed in § 8-1 clearly satisfies the definition just
+given : for, when x is positive, j x" \{/\{x) - Sn (x)\} | < n ! \^-\^ -> as a; — » 00 .
+
+For the sake of simplicity, in this chapter we shall for the most part consider
+asymptotic expansions only in connexion with real positive values of the argument.
+The theory for complex values of the argument may be discussed by an extension of the
+analysis.
+
+\subsection{Another example of an asymptotic expansion.}
+
+As a second example, consider the function /(.r), represented by the series
+
+
+
+f(x)= 2 — -,,
+i = l x-\-h,
+
+where x>0 and < c < 1.
+
+* Acta Uathematica, vm. (1886), pp. 295-344.
+
+
+
+152 THE PROCESSES OF ANALYSIS [CHAP. VIII
+
+The ratio of the \^th term of this series to the \{k- l)th is less than c, and consequently
+the series converges for all positive values of x. We shall confine our attention to positive
+values of x. We have, when x > k,
 
 TODO
 
-where J,j = (-)»-i 2 /f-™-\^c*\^. 
+If, therefore, it vk\^ere allowable* to expand each fraction -, in this way, and to
 
-But this procedure is not legitimate, and in fact 2 \^4n-'t"~" diverges. We can, however, 
-shew that it is an asym]3totic expansion of/(.r). 
+rearrange the series for / \{x) in descending powers of x, we should obtain the formal series
+
+TODO
+
+where J,j = (-)»-i 2 /f-™-\^c*\^.
+
+But this procedure is not legitimate, and in fact 2 \^4n-'t"~" diverges. We can, however,
+shew that it is an asym]3totic expansion of/(.r).
 
 
 
-Then S\^\{x)= i ('- -\^4 + \^lf + ... + izyi\^) 
+Then S\^\{x)= i ('- -\^4 + \^lf + ... + izyi\^)
 
 
 
-k = l\ \ xj J x + k' 
+k = l\ \ xj J x + k'
 
 
 
 so that TODO
 
-Now TODO converges for any given value of n and is equal to C„, say ; and hence 
-fc=i 
+Now TODO converges for any given value of n and is equal to C„, say ; and hence
+fc=i
 
 TODO
 
 Consequently TODO
 
-Example. If TODO, where x is positive and the path of integration is the 
+Example. If TODO, where x is positive and the path of integration is the
 
-J X 
+J X
 
-real axis, prove that 
-
-TODO
-
-[In fact, it was shewn by Stokes in 1857 that 
+real axis, prove that
 
 TODO
 
-the upper or lower sign is to be taken according as TODO. ] 
+[In fact, it was shewn by Stokes in 1857 that
 
-8"3. Multiplication of asymptotic expansions. 
+TODO
 
-We shall now shew that two asymptotic expansions, valid for a common 
-range of values of arg\^', can be multiplied together in the same way as 
-ordinary series, the result being a new asymptotic expansion. 
+the upper or lower sign is to be taken according as TODO. ]
 
-OC cc 
+\section{Multiplication of asymptotic expansions.}
+
+We shall now shew that two asymptotic expansions, valid for a common
+range of values of arg\^', can be multiplied together in the same way as
+ordinary series, the result being a new asymptotic expansion.
+
+OC cc
 
 For let TODO
 
-* It is not allowable, since k>x for all terms of the series after some definite term. 
+* It is not allowable, since k>x for all terms of the series after some definite term.
 
 %
 % 153
 %
-and let Sn\{z) and Tn\{z) be the sums of their first (n + 1) terms; so that, 
-n being fixed, 
+and let Sn\{z) and Tn\{z) be the sums of their first (n + 1) terms; so that,
+n being fixed,
 
-f(z) - Sn (Z) = (Z-X <t> (Z) - Tn \{z) = (z\^). 
+f(z) - Sn (Z) = (Z-X <t> (Z) - Tn \{z) = (z\^).
 
-Then, if C\^ = \^o\^m + \^iB,n-i + . . . + \^m\^o. it is obvious that* 
+Then, if C\^ = \^o\^m + \^iB,n-i + . . . + \^m\^o. it is obvious that*
 
-SJz)Tn\{z)= i C,nZ--\^+0(z-). 
+SJz)Tn\{z)= i C,nZ--\^+0(z-).
 
-But f\{z) Cf> (Z) = \{Sn (Z) + (Z-)] [Tn \{z) + (\^-»)\} 
+But f\{z) Cf> (Z) = \{Sn (Z) + (Z-)] [Tn \{z) + (\^-»)\}
 
-= Sn \{Z) Tn (Z) + (Z-\^) 
+= Sn \{Z) Tn (Z) + (Z-\^)
 
-TO = 
+TO =
 
-This result being true for any fixed value of n, we see that 
+This result being true for any fixed value of n, we see that
 
 TODO
 
-8'31. Integration of asymptotic expansions. 
+\subsection{Integration of asymptotic expansions.}
 
-We shall now shew that it is permissible to integrate an asymptotic 
-expansion term by term, the resulting series being the asymptotic expansion 
-of the integral of the function represented by the original series. 
+We shall now shew that it is permissible to integrate an asymptotic
+expansion term by term, the resulting series being the asymptotic expansion
+of the integral of the function represented by the original series.
 
 For let TODO and let TODO.
 
 TODO
 
-Then, given any positive number e, we can find Xq such that 
-TODO when x>Xo, 
+Then, given any positive number e, we can find Xq such that
+TODO when x>Xo,
 
 
 
-and therefore 
+and therefore
 
 TODO
 
 But TODO
 and therefore TODO.
 
-On the other hand, it is not in general permissible t to diflFerentiate an asymptotic 
-expansion ; this may be seen by considering TODO. 
+On the other hand, it is not in general permissible t to diflFerentiate an asymptotic
+expansion ; this may be seen by considering TODO.
 
-8'32. Uniqueness of an asymptotic expansion. 
+\subsection{Uniqueness of an asymptotic expansion.}
 
-A question naturally suggests itself, as to whether a given series can be 
+A question naturally suggests itself, as to whether a given series can be
 
-* See § 2-11 ; we use o (2~") to denote any function i/- (z) such that 3" i/- (2) -»- as | 2 , -*- x . 
-t For a theorem concerning differentiation of asymptotic expansions representing analytic 
-functions, see Kitt, Bull. American Math. Soc. xxiv. (1918), pp. 225-227. 
+* See § 2-11 ; we use o (2~") to denote any function i/- (z) such that 3" i/- (2) -»- as | 2 , -*- x .
+t For a theorem concerning differentiation of asymptotic expansions representing analytic
+functions, see Kitt, Bull. American Math. Soc. xxiv. (1918), pp. 225-227.
 
 
 
-154 THE PROCESSES OF ANALYSIS [CHAP. VIII 
+154 THE PROCESSES OF ANALYSIS [CHAP. VIII
 
-the asymptotic expansion of several distinct functions. The answer to this 
-is in the affirmative. To shew this, we first observe that there are functions 
-L \{x) which are represented asymptotically by a series all of whose terms are 
-zero, i.e. functions such that lim x\^L \{x) = for every fixed value of n. The 
+the asymptotic expansion of several distinct functions. The answer to this
+is in the affirmative. To shew this, we first observe that there are functions
+L \{x) which are represented asymptotically by a series all of whose terms are
+zero, i.e. functions such that lim x\^L \{x) = for every fixed value of n. The
 
-a; -*• 00 
+a; -*• 00
 
-function e~\^ is such a function when x is positive. The asymptotic expansion* 
-of a function J\{x) is therefore also the asymptotic expansion of 
+function e~\^ is such a function when x is positive. The asymptotic expansion*
+of a function J\{x) is therefore also the asymptotic expansion of
 
-J\{x) + L(x). 
+J\{x) + L(x).
 
-On the other hand, a function cannot be represented by more than one distinct 
-asymptotic expansion over the whole of a given range of vabies of z ; for, if 
+On the other hand, a function cannot be represented by more than one distinct
+asymptotic expansion over the whole of a given range of vabies of z ; for, if
 
 TODO
 
@@ -260,424 +289,406 @@ then TODO
 
 which can only be if TODO,
 
-Important examples of asymptotic expansions will be discussed later, in connexion 
-with the Gamma-function (Chapter xii) and Bessel functions (Chapter xvii). 
+Important examples of asymptotic expansions will be discussed later, in connexion
+with the Gamma-function (Chapter xii) and Bessel functions (Chapter xvii).
 
-8"4. Methods of ' summing ' series. 
+\section{Methods of 'summing' series.}
 
-We have seen that it is possible to obtain a development of the form 
+We have seen that it is possible to obtain a development of the form
 
-f(x)= i A,,x~'" + R,,\{x), 
+f(x)= i A,,x~'" + R,,\{x),
 
-m = 
+m =
 
-00 
+00
 
-where Rn(x)—\^ co as ?i— > oo , and the series S) A.,nX~\^ does not converge. 
+where Rn(x)—\^ co as ?i— > oo , and the series S) A.,nX~\^ does not converge.
 
-m = 
+m =
 
-We now consider what meaning, if any, can be attached to the ' sum ' of 
-a non- convergent series. That is to say, given the numbers ao, a\^, a\^, ..., 
-we wish to formulate definite rules by which we can obtain from them a 
+We now consider what meaning, if any, can be attached to the ' sum ' of
+a non- convergent series. That is to say, given the numbers ao, a\^, a\^, ...,
+we wish to formulate definite rules by which we can obtain from them a
 
-00 00 
+00 00
 
-number 8 such that S = 'S, an if 2 a„ converges, and such that aS' exists 
+number 8 such that S = 'S, an if 2 a„ converges, and such that aS' exists
 
-«=0 )i=0 
+TODO
 
-when this series does not converge. 
+when this series does not converge.
 
-8'41. Borel'sf method of summation. 
-We have seen (§ 7-81) that 
+\subsection{Borel's method of summation.}
+We have seen (§ 7-81) that
 
-00 /"» 
+00 /"»
 
-2 anz"" = e-\^(f) (tz) dt, 
+2 anz"" = e-\^(f) (tz) dt,
 
-n=0 J 
+n=0 J
 
-where (tz) = X " , the equation certainly being true inside; the circle 
+where (tz) = X " , the equation certainly being true inside; the circle
 
-00 
+00
 
-of convergence of S a\^z'\^. If the integral exists at points z outside this 
-circle, we define the ' Borel sum ' of S a,i2" to mean the integral. 
+of convergence of S a\^z'\^. If the integral exists at points z outside this
+circle, we define the ' Borel sum ' of S a,i2" to mean the integral.
 
-* It has been shewn that when the coefficients in the expansion satisfy certain inequaUties, 
-there is only one analytic function with that asymptotic expansion. See PJiil. Trans. 213, a, 
-(1911), pp. 279-313. 
+* It has been shewn that when the coefficients in the expansion satisfy certain inequaUties,
+there is only one analytic function with that asymptotic expansion. See PJiil. Trans. 213, a,
+(1911), pp. 279-313.
 
-t Borel, Le\^o)is stir les Series Diveryentes (1901), pp. 97-115. 
-
-
-
-8-4-8-43] 
+t Borel, Le\^o)is stir les Series Diveryentes (1901), pp. 97-115.
 
 
 
-SUMMABLE SERIES 
+%
+% 155
+%
+
+
+Thus, whenever R(z)< I, the ' Bore] sum ' of the series S 2''\^ is
+
+»=o
+
+1 e-*e''dt = \{l-z)-\
+
+J
+
+If the ' Borel sum ' exists we say that the series is ' summable (B).'
+
+\subsection{Elder's* method of summation.}
+
+A method, practically due to Euler, is suggested by the theorem of § 3*7l ;
+
+00 00
+
+the ' sum ' of S a,i may be defined as lim S ctn\^'\^ when this limit exists.
+
+n=0 2:\^-1-0 n=0
+
+Thus the ' sum ' of the series 1 — 1 + 1 — 1 + ... would be
+lim (1 — X + cc- — ...) = lim (1 + x)~\^ = i.
+
+\subsection{Cesdro's-f method of summation.}
+
+Let Sn = «! + ao + . . . + «n ; then if S = lim - (s, + Sj + • • • + \^n) exists, we
+
+say that S Un is 'summable (C'l),' and that its sum (CI) is S. It is
+
+X
+
+necessary to establish the 'condition of consistency;!:,' namely that S= 2 a„
+when this series is convergent.
+
+00 n
+
+To obtain the required result, let TODO, then we have
+
+m = l m = l
+
+to prove that TODO.
 
 
 
-155 
-
-
-
-Thus, whenever R(z)< I, the ' Bore] sum ' of the series S 2''\^ is 
-
-»=o 
-
-1 e-*e''dt = \{l-z)-\ 
-
-J 
-
-If the ' Borel sum ' exists we say that the series is ' summable (B).' 
-
-8"42. Elder's* method of summation. 
-
-A method, practically due to Euler, is suggested by the theorem of § 3*7l ; 
-
-00 00 
-
-the ' sum ' of S a,i may be defined as lim S ctn\^'\^ when this limit exists. 
-
-n=0 2:\^-1-0 n=0 
-
-Thus the ' sum ' of the series 1 — 1 + 1 — 1 + ... would be 
-lim (1 — X + cc- — ...) = lim (1 + x)~\^ = i. 
-
-8'43. Cesdro's-f method of summation. 
-
-Let Sn = «! + ao + . . . + «n ; then if S = lim - (s, + Sj + • • • + \^n) exists, we 
-
-say that S Un is 'summable (C'l),' and that its sum (CI) is S. It is 
-
-X 
-
-necessary to establish the 'condition of consistency;!:,' namely that S= 2 a„ 
-when this series is convergent. 
-
-00 n 
-
-To obtain the required result, let TODO, then we have 
-
-m = l m = l 
-
-to prove that TODO. 
-
-
-
-Given e, we can choose n such that 
+Given e, we can choose n such that
 
 so TODO
 
-Then, if i\^ > n, we have 
+Then, if i\^ > n, we have
 
 
 
-n+p 
+n+p
 
-% a, 
+% a,
 
-m=n-rl 
+m=n-rl
 
 
 
-< e for all values of p, and 
+< e for all values of p, and
 
 
 
 TODO
 
-Since TODO is a positive decreasing sequence, it follows 
-from Abel's inequality (§ 2'301) that 
+Since TODO is a positive decreasing sequence, it follows
+from Abel's inequality (§ 2'301) that
 
 TODO
 
-Therefore 
+Therefore
 
 TODO
 
-* Instit. Cale. Diff. (1755). See Borel, loc. cit. Introduction, 
-t Bulletin des Sciences Math. (2), xiv. (1890), p. 114. 
-+ See the end of § 8-4. 
+* Instit. Cale. Diff. (1755). See Borel, loc. cit. Introduction,
+t Bulletin des Sciences Math. (2), xiv. (1890), p. 114.
++ See the end of § 8-4.
 
 
 
-156 THE PROCESSES OF ANALYSIS [cHAP. VIII 
+156 THE PROCESSES OF ANALYSIS [cHAP. VIII
 
-Making v—\^x, we see that, if S be any one of the limit points (§ 2'21) 
-of S\^ , then 
+Making v—\^x, we see that, if S be any one of the limit points (§ 2'21)
+of S\^ , then
 
-n I 
+n I
 
-S — % a„, \^ e. 
-Therefore, since | s — 5,1 ! < e, we have 
+S — % a„, \^ e.
+Therefore, since | s — 5,1 ! < e, we have
 
-This inequality being true for every positive value of e we infer, as in § 2"21, 
-that S =\^s; that is to say S\^ has the unique limit s ; this is the theorem which 
-had to be proved. 
+This inequality being true for every positive value of e we infer, as in § 2"21,
+that S =\^s; that is to say S\^ has the unique limit s ; this is the theorem which
+had to be proved.
 
-Example 1. Frame a definition of 'uuiforui .•summability (Cl) of a series of variable 
-terms.' 
+Example 1. Frame a definition of 'uuiforui .•summability (Cl) of a series of variable
+terms.'
 
 Example 2. TODO
 
-8"431. TODO:Cesdrds general method of summation. 
+\subsubsection{TODO:Cesdrds general method of summation.}
 
-A series TODO is said to be 'summable (Cr)' if TODO exists, where 
+A series TODO is said to be 'summable (Cr)' if TODO exists, where
 
-It follows from § 8-43 example 2 that the 'condition of consistency' is satisfied ; in 
-fact it can be proved* that if a series is summable (C/) it is also summable \{Cr) when 
-r>r'; the condition of consistency is the particular case of this result when r = 0. 
+It follows from § 8-43 example 2 that the 'condition of consistency' is satisfied ; in
+fact it can be proved* that if a series is summable (C/) it is also summable \{Cr) when
+r>r'; the condition of consistency is the particular case of this result when r = 0.
 
-8"44. The method of summation of Rieszi. 
+\subsection{The method of summation of Rieszi.}
 
-A more extended method of ' summing ' a series than the preceding is by means of 
+A more extended method of ' summing ' a series than the preceding is by means of
 
-hm 2 ( 1 - \^- cin , 
+hm 2 ( 1 - \^- cin ,
 
-in which X,i is any real function of n which tends to infinity with n. A series for which 
-this limit exists is said to be 'summable \{Rr) with sum-function X„.' 
-
-
-
-85. Hardy's:]: convergence theorem. 
-
-s summable ( 
-a,i=0(l/?i), 
+in which X,i is any real function of n which tends to infinity with n. A series for which
+this limit exists is said to be 'summable \{Rr) with sum-function X„.'
 
 
+\section{Hardy's convergence theorem.}
 
-Let S an he a series tuhick is summable \{G 1). Then if 
-
-w=l 
+s summable (
+a,i=0(l/?i),
 
 
 
-the series TODO converges. 
+Let S an he a series tuhick is summable \{G 1). Then if
 
-n=\ 
-
-* Bromwich, Infinite Series, § 122. 
-t Comptes Rendus, cxlix. (1910), pp. 18-21. 
-
-X Proc. London Math. Sac. (2), viii. (1910), pp. 302-304. For the proof here given, we are 
-indebted to Mr Littlewood. 
+w=l
 
 
 
-8-431-8'5] 
+the series TODO converges.
 
-Let Sn = a I + a.\^ + 
+n=\
 
+* Bromwich, Infinite Series, § 122.
+t Comptes Rendus, cxlix. (1910), pp. 18-21.
 
-
-SUMMABLE SERIES 
-
-
-
-157 
+X Proc. London Math. Sac. (2), viii. (1910), pp. 302-304. For the proof here given, we are
+indebted to Mr Littlewood.
 
 
+Let Sn = a I + a.\^ +. + cin ; then since S Un is summable \{G 1), we have
 
-. + cin ; then since S Un is summable \{G 1), we have 
-
-M = l 
-
-Si + So+ ... + Sn = n[s + (l)j, 
-
+%
+% 157
+%
 
 
-where s is the sum ((71) of X «». 
+M = l
+
+Si + So+ ... + Sn = n[s + (l)j,
 
 
 
-Let 
-and let 
+where s is the sum ((71) of X «».
 
 
 
-Sm-s = t,a, \{m = l, 2, ... n), 
-
-ti + to+ ... +tn = (Tn • 
-
-
-
-With this notation, it is sufficient to shew that, if j a„ | < Kn~\^, where K 
-is independent of n, and if On = n.o (1), then tn —> sis n —> cc . 
-
-Suppose first that a\^, a\^, ... are real. Then, if tn does not tend to zero, 
-there is some positive number h such that there are an unlimited number of 
-the numbers t,i which satisfy either\^ (i) t\^ > h or (ii) tn < —h. We shall shew 
-that either of these hypotheses implies a contradiction. Take the former*, 
-and choose n so that tn > h. 
+Let
+and let
 
 
 
-Then, when r = 0, 1,2, 
+Sm-s = t,a, \{m = l, 2, ... n),
+
+ti + to+ ... +tn = (Tn •
 
 
 
-< K/n. 
+With this notation, it is sufficient to shew that, if j a„ | < Kn~\^, where K
+is independent of n, and if On = n.o (1), then tn —> sis n —> cc .
+
+Suppose first that a\^, a\^, ... are real. Then, if tn does not tend to zero,
+there is some positive number h such that there are an unlimited number of
+the numbers t,i which satisfy either\^ (i) t\^ > h or (ii) tn < —h. We shall shew
+that either of these hypotheses implies a contradiction. Take the former*,
+and choose n so that tn > h.
+
+
+
+Then, when r = 0, 1,2,
+
+
+
+< K/n.
 
 
 
 
-Now plot the points P,. whose coordinates are (r, tn+r) in a Cartesian 
-diagram. Since tn\^r+i-tn+r = an+r+i, the slope of the line PrPr+i is less 
-than = arc tan (K/n). 
+Now plot the points P,. whose coordinates are (r, tn+r) in a Cartesian
+diagram. Since tn\^r+i-tn+r = an+r+i, the slope of the line PrPr+i is less
+than = arc tan (K/n).
 
-Therefore the points Pq, Pj, P.,, ... lie above the line y = h — xtan 6. 
-Let Pk be the last uf the points P„, Pj, ... which lie on the left of a;'= hcot 6, 
-so that TODO. 
+Therefore the points Pq, Pj, P.,, ... lie above the line y = h — xtan 6.
+Let Pk be the last uf the points P„, Pj, ... which lie on the left of a;'= hcot 6,
+so that TODO.
 
-Draw rectangles as shewn in the figure. The area of these rectangles 
-exceeds the area of the triangle bounded by y = h — x tan 6 and the axes ; 
-that is to say 
+Draw rectangles as shewn in the figure. The area of these rectangles
+exceeds the area of the triangle bounded by y = h — x tan 6 and the axes ;
+that is to say
 
 TODO
 
-* The reader will see that the latter hypothesis involves a contradiction by using arguments 
-of a precisely similar character to those which will be employed in dealing with the former 
-hypothesis. 
+* The reader will see that the latter hypothesis involves a contradiction by using arguments
+of a precisely similar character to those which will be employed in dealing with the former
+hypothesis.
 
 
 
-158 THE PROCESSES OF ANALYSIS [CBAP. VIII 
+158 THE PROCESSES OF ANALYSIS [CBAP. VIII
 
-But I (Tn+k — 0"7i-i ! < I 0'7i+A; ! + I \^n-i \ 
+But I (Tn+k — 0"7i-i ! < I 0'7i+A; ! + I \^n-i \
 
-= (n + k).o\{l) + \{n-l).o(l) 
-= n.o\{l), 
-since k \^ hnK~\^, and h, K are independent of n. 
+= (n + k).o\{l) + \{n-l).o(l)
+= n.o\{l),
+since k \^ hnK~\^, and h, K are independent of n.
 
-Therefore, for a set of values of n tending to infinity, 
+Therefore, for a set of values of n tending to infinity,
 
-\^h-K~\^n <n.o\{l), 
-which is impossible since \^h'-K~\^ is )iot o (1) as /i-> x . 
+\^h-K~\^n <n.o\{l),
+which is impossible since \^h'-K~\^ is )iot o (1) as /i-> x .
 
-This is the contradiction obtained on the hypothesis that lim tn> h > 0; 
-therefore Urn tn \^ 0. Similarly, by taking the corresponding case in which 
-tn\^ — h, we arrive at the result lim tn \^ 0. Therefore since lim tn > lim tn, 
+This is the contradiction obtained on the hypothesis that lim tn> h > 0;
+therefore Urn tn \^ 0. Similarly, by taking the corresponding case in which
+tn\^ — h, we arrive at the result lim tn \^ 0. Therefore since lim tn > lim tn,
 
-we have lim t\^ = lim tn = 0, 
+we have lim t\^ = lim tn = 0,
 
-and so tn — > 0. 
+and so tn — > 0.
 
-That is to say Sn —> s, and so 2 a,i is convergent and its sum is s. 
+That is to say Sn —> s, and so 2 a,i is convergent and its sum is s.
 
-If an be complex, we consider R (a„) and / (a\^) separately, and find 
+If an be complex, we consider R (a„) and / (a\^) separately, and find
 
 TODO
 
-that S R\{an) and S /(c/„) converge by the theorem just proved, and so 
+that S R\{an) and S /(c/„) converge by the theorem just proved, and so
 TODO
 
-The reader will see in Chapter ix that this result is of great importance 
-in the modern theory of Fourier series. 
+The reader will see in Chapter ix that this result is of great importance
+in the modern theory of Fourier series.
 
 Corollary. If TODO be a function of TODO such that TODO
 
-throughout a domain of values of TODO, and if TODO, where K is independent of |, 
+throughout a domain of values of TODO, and if TODO, where K is independent of |,
 
-2 a„ (\^) converges uniformly throughoxit the domain. 
-n=i 
+2 a„ (\^) converges uniformly throughoxit the domain.
+n=i
 
-For, retaining the notation of the preceding section, if \^n(\^) does not tend to zero 
+For, retaining the notation of the preceding section, if \^n(\^) does not tend to zero
 
-uniformly, we can find a positive number h independent of n and | such that an infinite 
+uniformly, we can find a positive number h independent of n and | such that an infinite
 
-sequence of values of n can be found for which t\^ (\^») > A or i„ (\^„) <-h for some point \^,j 
+sequence of values of n can be found for which t\^ (\^») > A or i„ (\^„) <-h for some point \^,j
 
-of the domain* ; the value of \^„ depends on the value of n under consideration. 
+of the domain* ; the value of \^„ depends on the value of n under consideration.
 
-We then find, as in the original theorem, 
-
-TODO
-
-for a set of values of n tending to infinity. The contradiction implied in the inequality 
-shews that h does not exist, and so \^rt(|)-9-0 uniformly. 
-
-* It is assumed that «„ (\^) is real ; the extension to complex variables cau be made as in the 
-former theorem. If no such number h existed, <„ (|) would tend to zero uniformly. 
-
-t It is essential to observe that the constants involved iu the inequality do not depend on |,j. 
-For if, say, K depended on \^„, K~\^ would really be a function of n and might be o (1) qua function 
-of n, and the inequality would not imply a contradiction. 
-
-
-
-ASYMPTOTIC EXPANSIONS AND SUMMABLE SERIES 159 
-
-REFERENCES. 
-
-H. PoiNCAR\^, Acta Mathematica, viii. (1886), pp. 295-344. 
-
-E. BoREL, Lecons sur les Series Divergentes (Paris, 1901). 
-
-T. J. Pa. Bromwich, Theory of Infinite Series (1908), Ch. xi. 
-
-E. W. Barnes, Phil. Trans, of the Royal Society, 206, a (1906), pp. 249-297. 
-
-G. H. Hardy and J. E. Littlewood, Proc. London Math. Soc. (2), xi. (1913), pp. 1-16*. 
-
-G. N. Watson, Phil. Trans, of the Royal Society, 213, a (1911), pp. 279-313. 
-
-S. Chapman +, Proc. London Math. Soc. (2), ix. (1911), pp. 369-409. 
-
-Miscellaneous Examples. 
-
-/" e~\^ 1 2 ! 4 ! 
-
-:; :idt~ - ~ + -\^ — ... 
-
-when X is real and positive. 
-
-2. Discuss the representation of the function 
-
-f\{x)=\{'' \^<\^\{t)e\^-dt 
-
-(where x is supposed real and positive, and is a function subject to certain general con- 
-ditions) by means of the series 
+We then find, as in the original theorem,
 
 TODO
 
-Shew that in certain cases (e.g. (\^(;) = e'") the series is absolutely convergent, and 
-represents TODO for large positive values of $x$ but that in certain other cases the series is 
+for a set of values of n tending to infinity. The contradiction implied in the inequality
+shews that h does not exist, and so \^rt(|)-9-0 uniformly.
+
+* It is assumed that «„ (\^) is real ; the extension to complex variables cau be made as in the
+former theorem. If no such number h existed, <„ (|) would tend to zero uniformly.
+
+t It is essential to observe that the constants involved iu the inequality do not depend on |,j.
+For if, say, K depended on \^„, K~\^ would really be a function of n and might be o (1) qua function
+of n, and the inequality would not imply a contradiction.
+
+
+
+ASYMPTOTIC EXPANSIONS AND SUMMABLE SERIES 159
+
+REFERENCES.
+
+H. PoiNCAR\^, Acta Mathematica, viii. (1886), pp. 295-344.
+
+E. BoREL, Lecons sur les Series Divergentes (Paris, 1901).
+
+T. J. Pa. Bromwich, Theory of Infinite Series (1908), Ch. xi.
+
+E. W. Barnes, Phil. Trans, of the Royal Society, 206, a (1906), pp. 249-297.
+
+G. H. Hardy and J. E. Littlewood, Proc. London Math. Soc. (2), xi. (1913), pp. 1-16*.
+
+G. N. Watson, Phil. Trans, of the Royal Society, 213, a (1911), pp. 279-313.
+
+S. Chapman +, Proc. London Math. Soc. (2), ix. (1911), pp. 369-409.
+
+Miscellaneous Examples.
+
+/" e~\^ 1 2 ! 4 !
+
+:; :idt~ - ~ + -\^ — ...
+
+when X is real and positive.
+
+2. Discuss the representation of the function
+
+f(x)=\{'' \^<\^\{t)e\^-dt
+
+(where x is supposed real and positive, and is a function subject to certain general con-
+ditions) by means of the series
+
+TODO
+
+Shew that in certain cases (e.g. (\^(;) = e'") the series is absolutely convergent, and
+represents TODO for large positive values of $x$ but that in certain other cases the series is
 the asymptotic expansion of $f(x)$.
 
 
 
-3. Shew that 
+3. Shew that
 
 
 
-for large positive values of z. 
-
-TODO
-
-(Legendre, Exerdces de Calc. Int. (1811), p. 340.) 
-4. Shew that if, when x>0, 
+for large positive values of z.
 
 TODO
 
-Shew also that/(.r) can be expanded into an absolutely convergent series of the form 
+(Legendre, Exerdces de Calc. Int. (1811), p. 340.)
+4. Shew that if, when x>0,
+
+TODO
+
+Shew also that/(.r) can be expanded into an absolutely convergent series of the form
 
 TODO
 \addexamplecitation{\Schlomilch.}
 
-•'\^ ' A.=i(\^+l)(.r-i-2)...(\^ + \^-\} 
+•'\^ ' A.=i(\^+l)(.r-i-2)...(\^ + \^-\}
 
-5. Shew that if the series 1+0 + 0-1+04-1 + + 0-1 + ..., in which two zeros 
-precede each —1 and one zero precedes each +1, be 'summed' by Ceskro's method, 
-its sum is f. (Euler, Borel.) 
+5. Shew that if the series 1+0 + 0-1+04-1 + + 0-1 + ..., in which two zeros
+precede each —1 and one zero precedes each +1, be 'summed' by Ceskro's method,
+its sum is f. (Euler, Borel.)
 
-6. Shew that the series 1-21 + 4! — ... cannot be summed by Borel's method, but the 
-series l+0-2! + + 4! + ... can be so summed. 
+6. Shew that the series 1-21 + 4! — ... cannot be summed by Borel's method, but the
+series l+0-2! + + 4! + ... can be so summed.
 
-* This paper contains many references to recent developments of the subject. 
-t A bibliography of the literature of summable series will be found on p. 372 of this 
-memoir. 
+* This paper contains many references to recent developments of the subject.
+t A bibliography of the literature of summable series will be found on p. 372 of this
+memoir.
