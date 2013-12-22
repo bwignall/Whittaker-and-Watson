@@ -1,7 +1,31 @@
+\documentclass{book}
+
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
+\usepackage{shorttoc}
+
+\usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+% \usepackage{mathpazo}
+\usepackage{courier}
+% \usepackage{cmbright}
+% \usepackage{ccfonts}
+% \usepackage{fouriernc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{titlesec}
+
+\renewcommand{\partmark}[1]{ \markboth{#1}{} }
+
+\fancyhf{}
+\fancyhead[CE]{ \nouppercase{\leftmark} }
+\fancyhead[CO]{ \nouppercase{\rightmark}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 % Use (A),(B),... for equations, not (1),(2),...
 \numberwithin{equation}{subsection}
@@ -91,5 +115,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Lame}{Lam\'e}
 \newcommand{\Schlafli}{Schl\"afli}
 \newcommand{\Schlomilch}{Schl\"omilch}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\shorttoc{Contents}{0}
+\tableofcontents
+\part{The Processes of Analysis}
+
+\chapter{Complex Numbers} TODO
+\chapter{The Theory of Convergence} TODO
+\chapter{Continuous Functions and Uniform Convergence} TODO
+\chapter{The Theory of Riemann Integration} TODO
+\chapter{The fundamental properties of Analytic Functions; Taylor's,
+Laurent's, and Liouville's Theorems} TODO
+\chapter{The Theory of Residues; application
+to the evaluation of Definite Integrals} TODO
+\chapter{The expansion of functions in Infinite Series} TODO
+\chapter{Asymptotic Expansions and Summable Series} TODO
+\chapter{Fourier Series and Trigonometrical Series} TODO
+\chapter{Linear Differential Equations} TODO
+\chapter{Integral Equations} TODO
+
+\part{The Transcendental Functions}
+\chapter{The Gamma Function} TODO
+\chapter{The Zeta Function of Riemann} TODO
+\chapter{The Hypergeometric Function} TODO
+\chapter{Legendre Functions} TODO
+\input{wandw-ch16.tex}
+\input{wandw-ch17.tex}
+\chapter{The Equations of Mathematical Physics} TODO
+\chapter{Mathieu Functions} TODO
+\chapter{Elliptic Functions. General theorems and the Weierstrassian
+Functions} TODO
+\chapter{The Theta Functions} TODO
+\chapter{The Jacobian Elliptic Functions} TODO
+\chapter{Ellipsoidal Harmonics and \Lame's Equation} TODO
+
+\end{document}
