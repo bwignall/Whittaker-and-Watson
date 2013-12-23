@@ -1,0 +1,1250 @@
+\chapter{The Equations of Mathematical Physics} 
+
+18"1. The differential equations of mathematical pliysics. 
+
+The functions which have been introduced in the preceding chapters are 
+of importance in the applications of mathematics to physical investigations. 
+Such applications are outside the province of this book ; but most of them 
+depend essentially on the fact that, by means of these functions, it is possible 
+to construct solutions of certain partial differential equations, of which the 
+following are among the most important : 
+
+(I) Laplace s equation 
+
+dx- dy'  dz  
+which was originally introduced in a memoir* on Saturn's rings. 
+
+If  x, y, z) be the rectangular coordinates of any point in space, this equation is 
+satisfied by the following functions which occur in various branches of mathematical 
+physics : 
+
+(i) The gravitational potential in regions not occupied by attractii:ig matter. 
+
+(ii) The electrostatic potential in a uniform dielectric, in the theory of electro- 
+statics. 
+
+(iii) The magnetic potential in free aether, in the theory of magnetostatics. 
+
+(iv) The electric potential, in the theory of the steady flow of electric currents in 
+solid conductoi's. 
+
+(v) The temperature, in the theory of thermal equilibrium in solids. 
+
+(vi) The velocity potential at points of a homogeneous liquid moving irrotationally, 
+in hydrodynamical problems, 
+
+Notwithstanding the physical diflferences of these theories, the mathematical investi- 
+gations are much the same for all of them : thus, the problem of thermal equilibrium in a 
+solid when the points of its surface are maintained at given temperatures is mathe- 
+matically iden.tical with the problem of determining the electric intensity in a region 
+when the points of its boundary are maintained at given potentials. 
+
+(II) The equation of ivave motions 
+
+dx  dy'  dz  C' dt- 
+This equation is of general occurrence in investigations of undidatory disturbances 
+propagated with velocity c independent of the wave length ; for example, in the theory of 
+electric waves and the electro-magnetic theory of light, it is the equation satisfied by each 
+component of the electric or magnetic vector; in the theory of elastic vibrations, it 
+is the equati<Mi satisfied by each component of the displacement ; and in the theory 
+of sound, it is the equation satisfied by the velocity potential in a perfect gas. 
+
+* Mem. de FAcad. des Sciences, 1787 (published 1789), p. 252. 
+
+
+
+18*1, 18 "2] THE EQUATIONS OF MATHEMATICAL PHYSICS 387 
+
+(III) The equation of conduction of heat 
+
+dfV dfV dfV\ ldV 
+dec- dy  dz- k dt 
+
+This is the equation satisfied by the temperature at a point of a homogeneous isotropic 
+body ; the constant k is proportional to the heat conductivity of the body and inversely 
+proportional to its specific heat and density. 
+
+(IV) A particular case of the preceding equation (II), when the variable 
+z is absent, is 
+
+dx- dy- c- dt'  
+
+This is the equation satisfied by the displacement in the theory of transverse vibrations 
+of a membrane ; the equation also occurs in the theory of wave motion in two dimensions. 
+
+(V) The equation of telegraphy 
+
+This is the equation satisfied by the potential in a telegraph cable when the inductance 
+X, the capacity K, and the resistance It per unit length are taken into account. 
+
+It would not be possible, within the limits of this chapter, to attempt 
+an exhaustive account of the theories of these and the other differential 
+equations of mathematical physics; but, by considering selected 'typical 
+cases, we shall expound some of the principal methods employed, with 
+special reference to the uses of the transcendental functions. 
+
+18'2. Boundary conditions. 
+
+A problem which arises very frequently is the determination, for one of the 
+ equations of § 18*1, of a solution which is subject to certain boundary con- 
+ditions ; thus we may desire to find the temperature at any point inside a 
+homogeneous isotropic conducting solid in thermal equilibrium when the 
+points of its outer surface are maintained at given temperatures. This 
+amounts to finding a solution of Laplace's equation at points inside a given 
+surface, when the value of the solution at points on the surface is given. 
+
+A more complicated problem of a similar nature occurs in discussing 
+small oscillations of a liquid in a basin, the liquid being exposed to the 
+atmosphere ; in this problem we are given, effectively, the velocity potential 
+at points of the free surface and the normal derivate of the velocity potential 
+where the liquid is in contact with the basin. 
+
+The nature of the boundary conditions, necessary to determine a solution 
+uniquely, varies very much with the form of differential equation considered, 
+even in the case of equations which, at first sight, seem very much alike. 
+Thus a solution of the equation 
+
+
+
+dx- dy'  
+
+
+
+25—2 
+
+
+
+388 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+(which occurs in the problem of thermal equilibrium in a conducting 
+cylinder) is uniquely determined at points inside a closed curve in the 
+x7/-ip\ a,ne by a knowledge of the value of V at points on the curve ; but 
+in the case of the equation 
+
+da;  c- dt- 
+
+(which effectively only differs from the former in a change of sign), occurring 
+
+in connexion with transverse vibrations of a stretched string, where V 
+
+denotes the displacement at time t at distance x from the end of the 
+
+string, it is physically evident that a solution is determined uniquely only if 
+
+dV 
+both V and -  are given for all values of x such that  x l, when   = 
+
+(where I denotes the length of the string). 
+
+Physical intuitions will usually indicate the nature of the boundary 
+conditions which are necessary to determine a solution of a differential 
+equation uniquely ; but the existence theorems which are necessary from 
+the point of view of the pure mathematician are usually very tedious and 
+difficult*. 
+
+18"3. A general solution of Laplace s equation . 
+
+It is possible to construct a general solution of Laplace's equation in the 
+form of a definite integral. This solution can be employed to solve various 
+problems involving boundary conditions. 
+
+Let V  x, y, z) be a solution of Laplace's equation which can be expanded 
+into a power series in three variables valid for points of  x, y, z) sufficiently 
+near a given point  Xf , yo, z ). Accordingly we write 
+
+x = Xq + X, y=zy  + Y, z = Zo+ Z; 
+
+and we assume the expansion 
+
+V = c(o + a X + biY + CiZ + a.. X- + b. Y- + c  Z  
+
++ 2cLYZ+2e,ZX + 2f,XY+..., 
+
+it being supposed that this series is absolutely convergent whenever 
+
+\ X'f+\ Yr + \ Z'  a, 
+
+where a is some positive constant :]:. If this expansion exists, V is said to 
+be analytic at (xo, yo, •S'o). It can be proved by the methods of §§ 3*7, 4'7 
+
+* See e.g. Forsyth, Theory of Functions (1918), §§ 216-220, where an apparently simple 
+problem is discussed. 
+
+t Whittaker, Math. Ann. lvii. (1902), p. 333. 
+
+* The functions of applied mathematics satisfy this condition. 
+
+
+
+18-3] THE EQUATIONS OF MATHEMATICAL PHYSICS 389 
+
+that the series converges uniformly throughout the domain indicated and 
+may be differentiated term-by-term with regard to X, Y or Z any number of 
+times at points inside the domain. 
+
+If we substitute the expansion in Laplace's equation, which may be 
+written 
+
+d'V a F d V   
+dX-' dY-' dZ-' ' 
+
+and equate to zero (§ 373) the coefficients of the various powers of X, Y 
+and Z, we get an infinite set of linear relations between the coefficients, 
+of which 
+
+a.2 4- 62 -I- c. = 
+may be taken as typical. 
+
+There are  n(n — l) of these relations* between the   n + 2) n + l) 
+coefficients of the terms of degree n in the expansion of V, so that there 
+are only  (n+2)(n + 1) - n (n - 1) = 2n -f 1 independent coefficients in 
+the terms of degree n in V. Hence the terms of degree n in V must be 
+a linear combination of 2n+l linearly independent particular solutions of 
+Laplace's equation, these solutions being each of degree n in X, Y and Z. 
+
+To find a set of such solutions, consider (Z + iX cos u 4- iFsin m)" ; it is 
+a solution of Laplace's equation which may be expanded in a series of sines 
+and cosines of multiples of u, thus : 
+
+n n 
+
+2 gm X, Y, Z) COS mu+ 2 h,, (X, Y, Z) sin. mu, 
+
+m = 111 = 1 
+
+the functions g iX, Y, Z) and h   X, Y, Z) being independent of u. The 
+highest power of Z in gm  X, Y, Z) and A,,  (X, F, Z) is Z"'"  and the former 
+function is an even function of Y, the latter an odd function; hence 
+the functions are linearly independent. They therefore form a set of 
+2?i -f- 1 functions of the type sought. 
+
+Now by Fourier's rulef (§ 9'1'2) 
+
+Trgm  X, Y, Z)= j  Z + iX cos u + i Fsin u)" cos mudu, 
+
+irhyn  X, Y, Z)= \  Z + iX cos u -H iFsin uY sin mudu, 
+
+J —77 
+
+* If a ,s,j (where r + s + t = n) be the coefficient of A''T Z' in V, and if the terms of degree 
+  . d-V d V dW   , . ., 
+
+" ~ WV "*" Wr- "*" dZ  arranged primarily in powers of X and secondarily in powers of F, 
+
+the coefficient fl .s.t <loes not occur in any term after Z'— -r Z< (or ZT*-   if r = or 1), and 
+hence the relations are all linearly independent. 
+
+t 27r must be written for tt in the coefficient of g   X, Y, Z). 
+
+
+
+390 
+
+
+
+THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+
+
+and so any linear combination of the 2/; + 1 solutions can be written in the 
+form 
+
+
+
+/: 
+
+
+
+ Z + iX COS i( + iY sin i()' fn  u) du, 
+
+where / (w) is a rational function of e*". 
+
+Now it is readily verified that, if the terms of degree n in the expression 
+assumed for V be written in this form, the series of terms under the integral 
+sign converges uniformly if \ X\ \   + \ Y Jr\ Z  be sufficiently small, and so 
+(§ 4*7) w e may write 
+
+V =\    Z+iX cos u + iY sin ?()"/  (w) du. 
+
+• -TT n-i) 
+
+But any expression of this form may be written 
+
+F = / F Z - iX cos u + i Y sin u, u) du, 
+
+J —n 
+
+where i  is a function such that differentiations with regard to X, Y or Z 
+under the sign of integration are permissible. And, conversely, if F be any 
+function of this type, V is a solution of Laplace's equation. 
+
+This result may be written 
+
+
+
+J —TT 
+
+
+
+on absorbing the terms — 2 ,1 — * o cos m — I'yo sin m into the second variable; 
+and, if differentiations under the sign of integi-ation are permissible, this 
+gives a general solution of Laplace's equation ; that is to say, every solution 
+of Laplace's equation which is analytic throughout the interior of some 
+sphere is expressible by an integral of the form given. 
+
+This result is the three-dimensional analogue of the theorem that 
+
+V=f x- iy)+g x-ii/) 
+is the general solution of 
+
+ox  oy- 
+
+[NoTE. A distinction has to be drawn between the primitive of an ordinary diflFerential 
+equation and general integrals of a i)artial differential equation of order higher than the 
+first*. 
+
+Two apparently distinct primitives are always directly transformable into one another 
+
+by means of suitable relations between the constants; thus in the case of ;T"f +y = 0, we 
+
+can obtain the primitive Csin  x + t) from A cos .r + 5 sin .r by defining C and e by the 
+equations Csin e = A, C'cos f = B. On the other hand, every solution of Laplace's equation 
+is expressible in each of the forms 
+
+
+
+/: 
+
+
+
+f x cos < +// sin   + iz, t) dt, I g (y cos ?< +    sin u + ix,  ) du ; 
+
+r ' ' — TT 
+
+
+
+* For a discussion of general integrals of such equations, see Forsyth, Theory of Differential 
+Equations, vi. (1906), Ch. xii. 
+
+
+
+18 "31] THE EQUATIONS OF MATHEMATICAL PHYSICS 391 
+
+but if these are known to be the same solution, there appears to be no general analytical 
+relation, connecting the functions / and g, which will directly transform one form of 
+the solution into the other.] 
+
+Example 1. Shew that the potential of a particle of unit mass at (a, b, c) is 
+1 [ " du 
+
+
+
+2tt J -TT  z — c) + i  x - a) cos u + i y — b) sin u 
+at all points for which z> c. 
+
+Example 2. Shew that a general solution of Laplace's equation of zero degree in 
+X, y, z is 
+
+/ log (.rcos <+j/sin il + jj)  (<)(:/i, if I g t)dt = Q. 
+
+Express the solutions -  — ; and log-; — \   in this form, where r- = x' +y' - z . 
+
+Example 3. Shew that, in the case of the equation 
+
+p  + g;  = x+y 
+
+( where jo =  , q =  ), integrals of Charpit's subsidiary equations (see Forsyth, Differential 
+
+Equations, Chap, ix.) are 
+
+(i) p --x=y-q - = a, 
+
+(ii) p = q + a?. 
+
+Deduce that the corresponding general integrals are derived from 
+
+(i) z =  , :c + af+l y-af+F a)\ 
+Q =  x + af- y-af + F'  a) j' 
+
+(ii) Az = \ (. +y)3 + 2a2  x-y)-a   x -y)-  + G a)\ 
+= Aa x-y)-Aa  x->ry)-'  + G' [a) j' 
+
+and thence obtain a diflferential equation determining the function O (a) in terms of the 
+function E a) when the two general integrals are the same. 
+
+18'31. Solutions of Laplace s equation involving Leg endive functions. 
+If an expansion for V, of the form assumed in § 18'3, exists when 
+
+Xq = y  Zq    ) , 
+we have seen that we can express F as a series of expressions of the type 
+
+I (z + ix cos u + iy sin u)"' cos mudu, (z + ix cos u + iy sin uy  sin inudu, 
+
+J —TT J -TT 
+
+where n and m are integers such that  m n. 
+
+We shall now examine these expressions more closely. 
+If we take polar coordinates, defined by the equations 
+
+x= r sin 6 cos (f), y = r sin 6 sin (/>, z = r cos 6, 
+
+
+
+392 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+we have 
+
+I  z + ix cos u + iy sin w)" cos mu du 
+
+J — ]T 
+
+= ?•" I  cos   + i sin 6 cos (  —  )j" cos mudu 
+
+rn-<t> 
+= ?'" (cos + i sin   cos yjr]" cos 7?l (</) + ylr) rf-v/r 
+
+•Z — TT — I  
+
+= ?'"  cos   + I sin   cos -v  " cos m  (p +  fr) dy\ r 
+
+J —It 
+
+= ?•" COS m(f>  cos d + i sin cos i  "  cos m'yjrd'yjr, 
+
+J -TT 
+
+since the integrand is a periodic function of -  and 
+
+(cos   + z sin 6 cos i/r)" sin  ii/r 
+
+is an odd function of yjr. Therefore (§ 15"61), with Ferrers' definition of the 
+associated Legendre function, 
+
+rir 27ri"' . n ! 
+
+1 (z + ix cos u + iy sin  )" cos ??m c?ii = 7  -;' r Pn'  (cos  ) cos md). 
+
+j -  c / (-. j + m) ! 
+
+Similarly 
+
+
+
+/: 
+
+
+
+(  + iv cos i/ + 1?/ sin k)" sin ?/it<c?w = 7  -! r Fn '  (cos  ) sin md>. 
+
+'  (71 + m) I 
+
+
+
+Thei efore 7'' P,i"  (cos 6) cos 7?i  aiic? r ''Pn'  (cos  ) sin 7/i</> are polynomials 
+in X, y, z and are particular solutions of Laplace's equation. Further, by 
+§ 18"3, every solution of Laplace's equation, which is analytic near the origin, 
+can be expr essed in the form 
+
+F = i r'  \ AnFn (cos (9) + I (yl " ' cos m<  + Bn '''  sin m ) P "  (cos 6)1 . 
+
+Any expression of the form 
+
+AnPn (cos  ) + i ( n<"" cos ? </) + 5 <'   sin m(f>) P,r (cos  ), 
+
+m = \ 
+
+where w is a positive integer, is called a surface harmonic of degree 7i ; 
+a surface harmonic of degi-ee n multiplied by ?'" is called a solid harmonic 
+(or a spherical Jiarmonic) of degree n. 
+
+The curves on a unit sphere (with centre at the origin) on which P  (cos 6) vanishes 
+are n parallels of latitude which divide the surface of the sphere into zones, and so P  (cos d) 
+
+is called (see S 15*1) a zonal harmonic ; and the curves on which . mtb . Pn"  (cos 6) vanishes 
+
+are n—7n parallels of latitude and 2m meridians, which divide the surface of the sphere 
+into quadrangles wh(> e angles are right angles, and so these functions are called tesseral 
+harmonics. 
+
+
+
+18 '4] THE EQUATIONS OF MATHEMATICAL PHYSICS 393 
+
+A solid harmonic of degree n is .evidently a homogeneous polynomial of degree n in 
+X, y, z and it satisfies Laplace's equation. 
+
+It is evident that, if a change of rectangular coordinates* is made l;)y rotating the axes 
+about the origin, a solid harmonic (or a surface harmonic) of degree n transforms into 
+a solid harmonic (or a suz'face harmonic) of degree n in the new coordinates. 
+
+Spherical harmonics were investigated with the aid of Cartesian coordinates by 
+W. Thomson in 1862, see Phil. Trans. (1863), pp. 573-582, and Thomson and Tait, 
+Treatise on Natural Philosophy i. (1879), jip. 171-218 ; they were also investigated 
+independently in the same manner at about the same time by Clebsch, Journal fur Math. 
+LXi. (1863), pp. 195-262. 
+
+Example. If coordinates r,  ,   are defined by the equations 
+
+1 1 
+
+a; = rcos , ?/ = (/'— 1)- sin   cos 0, 3 = (/'2- 1)- sin  sin( , 
+
+shew that P,/" (r) P '" (cos 6) cos wi0 satisfies Laplace's equation. 
+
+18'4. The solution of Laplace's equation which satisfies assigned boundary 
+conditions at the surface of a sphere. 
+
+We have seen (§ 18"31) that any solution of Laplace's equation which 
+is analytic near the origin can be expanded in the form 
+
+
+
+w = ( 
+
++ i (  <" ' cos m(f) + 5 " ' sin m(f>) P,,"* (cos 6) \ 
+
+m = l J 
+
+and, from § 3*7, it is evident that if it converges for a given value of r, 
+say a, for all values of 6 and (f) such that O  tt, — tt  tt, it converges 
+absolutely and uniformly when r < a. 
+
+To determine the constants, we must know the boundary conditions 
+which V must satisfy. A boundary condition of frequent occurrence is 
+that F is a given bounded integrable function of 6 and (f), say f(0, (f>), on 
+the surface of a given sphere, which we take to have radius a, and V is 
+analytic at points inside this sphere. 
+
+We then have to determine the coefficients An, -4 <'"', 5,i""* from the 
+equation 
+
+
+
+f d,( )= S a'M Pn (cos  )+ 2 (  ' ' cos ?n</) + £ " ' sin m</))P,;'  (cos 6')   
+
+rt = i m = l J 
+
+Assuming that this series converges uniformly f throughout the domain 
+
+multiplying by 
+
+P '  (cos  )  °%i<i, 
+sm   
+
+* Laplace's operator  — , + ;r— , + ; -5 is invariant for changes of rectangular axes. 
+ox  dij- oz- 
+
+t This is usually the case in physical problems. 
+
+
+
+394 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+integrating term-by-term (§ 4'7) and using the results of §§ 15'14, 1551 on 
+the integral properties of Legendre functions, we find that 
+
+fid', 4>') P,r (cos 6') cos m<f>' sin e'dd'dcf ' = 7ra  -   . )   " ', 
+
+Cn fir 9 (yx -1- 171, "  t 
+
+A 6*', 6') P '  (cos d') sin wt<i)' sin O'dO'd ' = -jra"   =- . ) ( ; 5 <' ', 
+
+f f V( '' <l>') Pn (cos  ') sin e'dB'dcf)' = lira"  5-?—.   . 
+Therefore, when r < a, 
+F(r, e,4>)=l ?  f-)" f  f7( ', f )]p,(cos )P (cos ') 
+
++ 2 i (!i:i ; p  m (cos 6) Pn'  (cos  ') COS m (6 - d)')  sin O'dO'd )'. 
+
+The series which is here integrated term-by-term converges uniformly 
+when r <a, since the expression under the integral sign is a bounded 
+function of 6, 0', (f), (f>', and so (§ 4*7 ) 
+
+47rF(r, 6*, 0) = T 1 /(0', cf>') I (2n -h 1) f-VlPn (cos  ) P  (cos  ) 
+
++ 2 i  y' —  Pn'"" (cos d)Pn''' (cos d') cos 7n(4>-(f>')\ sin e'de'd(f>'. 
+m=i(n + m)l J 
+
+Now suppose that we take the line (6, (f>) as a new polar axis and let 
+( 1'.  1') be the new coordinates of the line whose old coordinates were (6', < ') ; 
+we consequently have to replace Pn (cos 6) by 1 and P, !  (cos 6) by zero ; and 
+so we get 
+
+47rF(r, e, (f>)=r t  f(0', </)') t (2n + l)(-Y Pn(cos0,')sme,'de,'d<f>,' 
+
+J -TT J W=0 \ \  V 
+
+= r rf(0''<f>') i (2n+l)(-Y Pn(cose,')sme'dO'd(f>'. 
+
+If, in this formula, we make use of the result of example 23 of Chapter xv 
+(p. 332), we get 
+
+ ' '  J-nJo \ r'-2arcos6,'+a-)  
+and so 
+
+47r F(r, e, </)) 
+
+, r f" f(0', <i>') sin e'dd'dd)' 
+
+= a(a- — r')\ I  - — —n- 
+
+J -nJ [r- — 2ar  cos 6 cos  ' -f sin 6 sin  ' cos ((  — </>)  + a"]  
+
+In this compact formula the Legendre functions have ceased to appear 
+explicitly. 
+
+
+
+18 '5] THE EQUATIONS OF MATHEMATICAL PHYSICS 395 
+
+The last formula can be obtained by the theory of Green's functions. For properties 
+of such functions the reader is refei'red to Thomson and Tait, Natural Philosophy., 
+§§ 499-519. 
+
+[Note. From the integrals for V (r, 6, cf)) involving Legendre functions of cos  j' and 
+of cos , cos ' respectively, we can obtain a new proof of the addition theorem for the 
+Legendre polynomial. 
+
+For let 
+
+Xn  \&', (t>') =Pn (COS d ) - |P  (cos 6) P  (cOS 6')  
+
++ 2 2  — -f; P - (COS 6) P,;" (cos 6') cos ra (0 - < ') , 
+and we get, on comparing the two formulae for V  r, 6, (f)), 
+
+0= r f'/iff, < ') 2 (2 +i) (-Xxn (d\ 4>') siD e'd\&d ,'. 
+
+J -TT J n=0 \ / 
+
+If we take/( ', 0') to be a surface harmonic of degree n, the term involving r" is the only 
+one which occurs in the integrated series ; and in particular, if we take/( ', 4>') = Xn i 'i 0')> 
+we get 
+
+' Xni6',fp')   'id'de'd(t)' = 0. 
+
+
+
+-n J 
+
+Since the integrand is continuous and is not negative it must be zero ; and so 
+Xn ff, (f)') = 0; that is to say we have proved the formula 
+
+Pn (cos  i') = Pn (cos 6) Pn (COS 6') + 2 2 ) '- . Pn'" (COS 6) Pn"" (COS 6') COS 711  (j>- (f)'), 
+
+m-1  n + M) ! 
+wherein it is obvious that 
+
+cos  ]' = cos 6 cos 6' + sin 6 sin 0' cos (0 - < '), 
+from geometrical considerations. 
+
+We have thus obtained a physical proof of a theorem proved elsewhere* (§ I5"7) by 
+purely analytical reasoning.] 
+
+Example 1. Find the solution of Laplace's equation analytic inside the sphere /•=1 
+which has the value sin 36 cos <  at the surface of the sphere. 
+
+[ s r Pgi (cos 6) cos (f) - irPji (cos 0) cos 0.] 
+
+Example 2. Let fii r, 6, (f)) be equal to a homogeneous polynomial of degree n 
+in  , y, z. Shew that 
+
+l" I fnla, G, (f)) Pn  cos 6 con d' + siudamd' cos  (f) -4>')  a'  sin 6 d0dcf> 
+J -  J o' 
+
+- ; /.( . '< )- 
+
+[Take the direction (6', < ') as a new polar axis.] 
+
+18*5. Solutions of Laplace's equation luhich involve Bessel coeffi,cients. 
+A particular case of the result of § 18'3 is that 
+
+
+
+Qk(z+ixcosu+iysmu, gQg f)iuclu 
+
+is a solution of Laplace's equation, k being any constant and m being any 
+
+integer. 
+
+* The absence of the factor ( - )'"  which occurs in § 1-5-7 is due to the fact that the functions 
+now employed are Ferrers' associated functions. 
+
+
+
+396 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+Taking cylindrical-polar coordinates  p, (f), z) defined by the equations 
+.   = p cos  , y = p sin 4>, 
+the above solution becomes 
+
+ kz I gikpcos iu-4>) cos  (   dii = gkz i gikpcos V g g .   (v + (f)) . clv 
+
+J —IT J — JT 
+
+= 2e*  I 6**'" °  " cos ?HV cos m<pdv 
+
+Jo 
+
+= 2e*  cos (mcj)) j e'*'" °  " cos mvdv, 
+
+Jo 
+and so, using § 17*1 example 3, we see that 'Itti '  e''  cos (m(f)) . Jm(f 'p) is a 
+solution of Laplace's equation analytic near the origin. 
+
+Similarly, from the expression 
+
+T 
+
+where m is an integer, ive deduce that 27rz'" e*  sin (??i</)) .    (kp) is a solution 
+of Laplace's equation. 
+
+18 "SI. The periods of vibration of a uniform membrane*. 
+
+The equation satisfied by the displacement V at time t of a point  x, y) of a uniform 
+plane membrane vibrating harmonically is 
+
+'dx  cy- c- Ct- ' 
+
+where c is a constant depending on the tension and density of the membrane. The 
+equation can be reduced to Laplace's equation by the change of variable given by z = cti. 
+It follows, from § 18'5, that expressions of the form 
+
+'  sm   sin 
+satisfy the equation of motion of the membrane. 
+
+Take as a particular case a drum, that is to say a membrane with a fixed circular 
+boundary of radius R. 
+
+Then one possible type of vibration is given by the equation 
+
+r=t    kp) cos m<\ i cos ckt, 
+provided that F=0 when p = R ; so that we have to choose k to satisfy the equation 
+
+J,  kR)=0. 
+This equation to determine /  has an infinite number of real roots (§ 17'3 example 3), 
+ 1,  2j  3j ••• S3,y. A possible type of vibration is then given by 
+
+r=/ , (f-'rp) cosmcf) cos ckrt  r= 1, 2, 3, ,..). 
+
+This is a periodic motion with period 1iTJ ckj.) ; and so the calculation of the periods 
+depends essentially on calculating the zeros of Bessel coefficients (see   17'9). 
+
+• Euler, Novi Covim. Acad. Petrop. x. (1764) [published 1766], pp. 243-260; Poisson, Mem. 
+de I'Academie, viii. (1829), pp. 357-570; Bourget, Ann. de I'Ecole nvrm.sup. iii. (1866), pp. 55-95. 
+For a detailed discussion of vibrations of membranes, see also Rayleigh, Theory of Sound, 
+Chapter ix. 
+
+
+
+18 "5 1-1 8 '61] THE EQUATIONS OF MATHEMATICAL PHYSICS 397 
+
+Example. The equation of motion of air in a circular cylinder vibrating per- 
+pendicularly to the axis OZ of the cylinder is 
+
+dx  dy'  c' dt- ' 
+V denoting the velocity potential. If the cylinder have radius R, the boundary condition 
+
+dV 
+is that n— =0 when p = R. Shew that the determination of the free periods depends on 
+
+finding the zeros of J,,/ (C) == 0- 
+
+18'6. A general solution of the equation of wave motions. 
+It may be shewn* by the methods of § 183 that a general solution of 
+the equation of wave motions 
+
+dx  dy'' dz- c- di? 
+
+
+
+IS 
+
+
+
+F = I I f(x sin u cos v + y sin u sin v + z cos n + ct, u, v) dudv, 
+
+
+
+where /is a function (of three variables) of the type considered in § 18"3. 
+
+Regarding an integral as a limit of a sum, we see that a physical 
+interpretation of this equation is that the velocity potential V is produced 
+by a number of plane waves, the disturbance represented by the element 
+
+f(x sin u cos v + y sin u sin v + z cos u + ct, u, v) 8u Bv 
+being propagated in the direction (sin u cos v, sin u sin v, cos u) with velocity c. 
+The solution therefore represents an aggregate of plane waves travelling in 
+all directions with velocity c. 
+
+18'61. Solutions of the equation of wave motions which involve Bessel 
+functions. 
+
+We shall now obtain a class of particular solutions of the equation of 
+wave motions, useful for the solution of certain special problems. 
+
+In physical investigations, it is desirable to have the time occurring by 
+means of a factor sin ckt or cos ckt, where k is constant. This suggests that 
+we should consider solutions of the type 
+
+/•tt rn 
+
+y  =, \ I giA;(a;sinttcost;+2/sinMsiuv+2cosM+cti f (u i)\ dudv 
+
+J -TT J 
+
+Physically this means that we consider motions in which all the elementary waves 
+have the same period. 
+
+Now let the polar coordinates of (x, y, z) be (r, 6, (f>) and let (o), yjr) be the 
+polar coordinates of the direction (u, v) referred to new axes such that 
+the polar axis is the direction (ff, (f)), and the plane -v/r = passes through 
+OZ; so that 
+
+cos CO = cos 6 cos u + sin d sin u cos ((f) — v), 
+
+sin II sin ((f) — v) = sin w sin yjr. 
+
+* See the paper previously cited, Math. Ann. lvii. (1902), pp. 342-345, or Messenger of Mathe- 
+matics, XXXVI. (1907), pp. 98-106. 
+
+
+
+398 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+Also, take the arbitrary function /(w, y) to be ;S,j (w, y) sin i  where Sn 
+denotes a surface harmonic in u, v of degree ?i ; so that we may write 
+
+Sn(u, V) = Sn  0, 4>] CO, yjr), 
+
+where (§ 18*31) Sn is a surface harmonic in co, -sjr of degree n.   
+We thus get 
+
+V = e ' ' f r I ' e''""°"" Sn  6, < \ w, y\ r) sin a> dw df. 
+
+Now we may write (§ 18 "SI) 
+
+Sn (d, (i>; 0 ,y r) = An e,(f>). Pn (COS Oj) 
+
++ S    "'" (0, <f>) cos myfr + Bn'"'   0, (f)) sin myfr] P "' (cos co), 
+
+m = l 
+
+where An  6, </>),  n'"'*  6, <p) and 5 ""'  6, 0) are independent of yjr and co. 
+Performing the integration with respect to -yjr, we get 
+
+F= 27re'' '   An  0, 4>) f"e '*"° "P  (cos to) sin codco 
+
+Jo 
+
+= 27re' '-  A n  0,(ii)j e''"-'  P,, (/i) djM 
+
+= 27r. - '* An (  , ( ) J'  e'* '  -  (f.  - l)n d , 
+
+by Rodrigues' formula (§ loll); on integrating by parts ti times and using 
+Hankel's integral (§ 17 '3 corollary), we obtain the equation 
+
+ = o;r '"" n  0, 4>)  ikrY I e'>"-  (1 - /x )" c yu 
+
+Zi • 'It \ J 1 
+
+= (27r)  iV'* '   kr) - -J  +   (kr) An (6, c >), 
+and so F is a constant multiple of e' ' h-'   Jj \  \ i(kr) An(0, (f>). 
+
+Now the equation of wave motions is unaffected if we multiply x, y, z 
+and t by the same constant factor, i.e. if we multiply r and t by the same 
+constant factor leaving Q and   unaltered ; so that An B, <f)) may be taken 
+to be independent of the arbitrary constant k which multiplies r and t. 
+
+Hence lim e**-''' r ~ H' ~ " ~   /  , i (kr) An  0, 9) is a solution of the equation 
+
+A:-*0   
+
+of wave motions; and therefore r' An(0, <f>) is a solution (independent of t) 
+of the equation of wave motions, and is consequently a solution of Laplace's 
+equation ; it is, accordingly, permissible to take An (0, <f>) to be any surface 
+harmonic of degree n ; and so we obtain the result that 
+
+
+
+r -   Jn+r ih-) Pn''' (cos 0)   md>   ckt 
+ 2   sm   sm 
+
+is a particular solution of the equation of wave motions. 
+
+
+
+I8"61lj THE EQUATIONS OF MATHEMATICAL PHYSICS 399 
+
+18*611. Application of § 18-61 to a physical problem. 
+
+The solution just obtained for the equation of wave motions may be used in the 
+following manner to determine the periods of free vibration of air contained in a rigid 
+sphere. 
+
+The velocity potential T' satisfies the equation of wave motions and the boundary 
+
+dV 
+condition is that - =- =0 when ?  =  , where a is the radius of the sphere. Hence 
+
+or   
+
+~\ -, ,i.r, , /iv COS , COS , 
+
+Y-r *J  ,.(/-/•)  ,™ cos<9) . wd) . ckt 
+"+-   " sm   sin 
+
+gives a possible motion if Z* is so chosen that 
+
+This equation determines k; on using § 17'24, we see that it may be written in 
+the form 
+
+tan ka =    ka)  
+
+where f  (ka) is a rational function of ka. 
+
+In particular the radial vibrations, in which V is independent of 6 and < , are given by 
+taking n = 0; then the equation to determine k becomes simply 
+
+tan ka = ka ; 
+and the pitches of the fundamental radial vibrations correspond to the roots of this 
+equation. 
+
+REFERENCES. 
+
+J. Fourier, La theorie analytique de la Chaleur. (Translated by A. Freeman.) 
+
+W. Thomson and P. G. Tait, Natural Philosophy. (1879.) 
+
+Lord Rayleigh, Theory of Sound. (London, 1894-1896.) 
+
+F. PoCKELS, Uber die partielle Diferentialgleichung /\ u + khi. = 0. (Leipzig, 1891.) 
+
+H. BuRKHARDT, Eiitivickelungen nach oscillirenden Funktionen. (Leipzig, 1908.) 
+
+H. Bateman, Electrical and Optical Wave-motion. (1915.) 
+
+E. T. Whittaker, History of the Theories of Aether and Electricity. (Dublin, 1910.) 
+
+A. E. H. Love, Proc. London Math. Soc. xxx. (1899), pp. 308-321. 
+
+H. Bateman, Proc. London Math. Soc. (2), i. (1904), pp. 451-458. 
+
+L. N. G. FiLON, Philosophical Magazine (6), vi. (1903), pp. 193-213. 
+
+H. Bateman, Proc. London Math. Soc. (2), vii. (1909), pp. 70-89. 
+
+Miscellaneous Examples. 
+
+1. If V be a solution of Laplace's equation which is symmetrical with respect to OZ, 
+and if y=f z) on OZ, shew that if f  \ be a function which is analytic in a domain of 
+values (which contains the origin) of the complex variable f, then 
+
+
+
+'=i r -   + i(.r2+j/2)5cos0 rf(  
+  / 
+
+
+
+at any point of a certain three-dimensional region. 
+
+Deduce that the potential of a uniform circular ring of radius c and of mass M lying in 
+the plane XO T with its centre at the origin is 
+
+
+
+  r [  +    +   ( ' + '/)  cos (/) 2] - I d<t>. 
+
+7!" y 
+
+
+
+400 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+2. If r be a solution of Laplace's equation, which is of the form e""*jP(p, 2), where 
+
+(p, (f>, z) are cylindrical coordinates, and if this solution is approximately equal to 
+
+p"'e""*/(i) near the axis of z, where /(f) is of the character described in example 1, 
+shew that 
+
+
+
+ = r ( i+ 1 ) r (*) /  ' "   ''''  ' '"""  ' - (DougaU.) 
+
+
+
+3. If ?  be determined as a function of .r, y and z by means of the equation 
+
+A.v+By + Cz=\, 
+where A, B, C are functions of ?< such that 
+
+shew that (subject to certain general conditions) any function of   is a solution of 
+
+Laplace's equation. 
+
+(Forsyth, Messenger, xxvii. (1898), pp. 99-118.) 
+
+4. A, B are two points outside a sphere whose centre is C. A layer of attracting 
+matter on the surface of the sphere is such that its surface density (Tp at P is given by 
+the formula 
+
+apCc AP.BP)-\ 
+
+Shew that the total quantity of matter is unaffected by varying A and B so long as 
+
+CA . CB and ACB are unaltered ; and prove that this result is equivalent to the theorem 
+
+that the surface integral of two harmonics of different degrees taken over the sphere 
+
+IS zero. 
+
+(Sylvester, Phil. Mag. (5), il. (1876), pp. 291-307.) 
+
+5. Let V (.r, y, z) be the potential function defined analytically as due to particles 
+of masses X + iy., X - z/x at the points (a + ia', b + ib', c + ic') and (a — ia', b - ib', c — ic') 
+respectively. Shew that V  x, y, z) is infinite at all points of a certain real circle, and 
+if the point (.r, y, z) describes a circuit intertwined once with this circle the initial 
+and final values of V x,y, z) are numerically equal, but opposite in sign. 
+
+(Appell, Math. Ann. xxx. (1887), pp. 155-156.) 
+
+6. Find the solution of Laplace's equation analytic in the region for which a<r<iA, 
+it being given that on the spheres /•=a and r = A the solution reduces to 
+
+2 c P (cos(9), 2 C;P (cos<9), 
+respectively. 
+
+7. Let 0' have coordinates (0, 0, c), and let 
+
+Pdz=6, P0'Z=6', PO = r, PO' = r'. 
+Shew that 
+
+P  cos6') \  P  cosd ) . .s cPn i(cos ) jn + 1) Qi + 2) c'' P  +    cos d) 
+( Y" f   I (n I 1) - 1 (  " ) 1  n + l) n + 2) r 'P, oo,d) 1 
+
+"  ~  / Un + l V" / pn + 2 '  2! C""  T...|, 
+
+according as r>c or r<c. 
+
+Obtain a similar expansion for /"P ' (cos  ). (Trinity, 1893.) 
+
+8. At a point (r, 6, (p) outside a uniform oblate spheroid whose semi-axes are a, b and 
+whose density is p, shew that the potential is 
+
+
+
+)a-b 
+
+
+
+;\ \  \  m  Pj (cos 0) m  P  (cos 6) 
+
+
+
+-...]. 
+
+
+
+3/- 3.5 r  b.l r° 
+
+where ni  — a--b- and ?•>? .. Obtain the i otential at points for which r<m. 
+
+(St John's, 1899.) 
+
+
+
+THE EQUATIONS OF MATHEMATICAL PHYSICS 401 
+
+9. Shew that 
+
+eirco,e=(  )i I in [271 + 1) r-lP   cos 6) J +i(r). 
+
+n =   
+
+(Bauer, Journal fiir Math, lvi.) 
+
+10*. Shew that if x ±iy = h cosh (| + irj), the equation of two-dimensional wave motions 
+in the coordinates   and  ? is 
+
+a|7 + 5  =   (   h- 1 - cos2 rj) -  . (Lame.) 
+
+IL Let X —  c + r cos 6) cos (p, y =  c + r cos 6) sin cp, 2 = /-sin ; 
+
+shew that the surfaces for which /•, d, (f) respectively are constant form an orthogonal 
+.system; and shew that Laplace's equation in the coordinates / , \&, is 
+
+— - r(c + '/-cos )  +-;  (c + ?-cos(9)-; [+—  7., =0. 
+
+vr \   a- j r 06 \ j- ' cd \ c + rcosdd(f>- 
+
+(W. D. Xiven, J/essenger, x.) 
+
+12. Let P have Cartesian coordinates  x, ?  z) and polar coordinates (;•, 6, (f)). Let 
+the plane POZ meet the circle x'  + t/' = k-, s = in the points a, y; and let 
+
+aPy = (o, log (Pa/Py) = a. 
+Shew that Laplace's equation in the coordinates o-, a>, (p is 
+
+8 f sinho- bV] d  j sinho- \  871 1  -0- 
+
+da- [cosh o- — cos a da j ca (cosh a — cos o) 8w j sinh o- (cosh cr — cos w) 8( 2 ' 
+and shew that a solution is 
+
+V= (cosh o" — cos 0))  cos /iQ) cos ??i0 P (cosh o-). 
+
+(Hicks, Phil. Trans. CLXXii. p. 617 et seq.) 
+
+13. Shew that 
+
+00  -hn i r-j- r  
+
+ R  + p -2Rpcoscl) + c-)-h= 2 I dk I e-"" J,   I- p)e' ' ''°"' cos rauclu, 
+
+m=0   y J -T 
+
+and deduce an expression for the potential of a particle in terms of Bessel functions. 
+
+14. Shew that if a, b, c are constants and X, /x, v are confocal coordinates, defined as 
+the roots of the equation in e 
+
+a2 + e' 6-  + e'  6-2 + 6 ' 
+then Laplace's equation may be written 
+
+Ax(M-) xf  + M(-X)| A/J +A.(X-M)  A. ]=0, 
+
+where A;, = V (aHX) (i'  + X) (c-  + X) . 
+
+(Lame.) 
+
+* Examples 10, 11, 12 and 14 are most easily proved by using Lame's result (Journal de 
+VEcole Polyt. xiv. cahier 23 (1834), pp. 191-288) that if (X, /ul, v) be orthogonal coordinates for 
+which the line-element is given by the formula  dx)'' + (8yf +  5zy =(H d\ y  + (H2diM)'- +  H 5v)' , 
+Laplace's equation in these coordinates is 
+
+d fH.H cV\ 8 / H. H, dV\ 8 / H,H., dV\ \   
+
+
+
+'Hi- 
+
+
+
+d\ V Hi a,\ J dfjL\ H., d/jiJ di'\ Hs dv 
+A simple method (due to W. Thomson, Camh. Math. Journal, iv. (1845), pp. 83-42) of proving 
+this result, by means of arguments of a physical character, is reproduced by Lamb, Hydro- 
+dynamics (1916), § 111. Analytical proofs, based on Lame's proof, are given by Bertrand, 
+Traite de Calcul Differentielle (1864), pp. 181-187, and Goursat, Coiirs d'Analyse, i. (1910), 
+pp. 155-159, the last proof being appreciably the simplest. Another proof is given by Heine, 
+Theorie der Kugelfunctionen, i. (1878), pp. 303-306. 
+
+W. M. A. 26 
+
+
+
+402 THE TRANSCENDENTAL FUNCTIONS [CHAP. XVIII 
+
+15. Shew that a general solution of the equation of wave motions is 
+
+r= F  .v coH 6 +   iiin \$ + iz, >/ + iz siu 6 + ct cos B, B)dd. 
+
+J —IT 
+
+(Bateman, Proc. London Math. Soc. (2) l. (1904), p. 457.) 
+
+16. If r=/(.r, y, z, t) be a solution of 
+
+d  ct cx' cy'  dz- ' 
+prove that another solution of the equation is 
+
+17. Shew that a general solution of the equation of wave motions, when the motion is 
+independent of < , is 
+
+/ / (2 + ip cos e, ct + p sin 6) dO 
+
+f' /""   , / a -   z + ct cos d\  ,  , ,. , 
+
++ arc suih —  r—   ) F (a, 6) dBda, 
+
+J (1 .' -TT \ p sin   / ' ' 
+
+where p, (f>, z are cylindrical coordinates and a, h are arbitrary constants. 
+
+(Bateman, Proc. London Math. Soc. (2) i. (1904), p. 458.) 
+
+"  18. If r=/(.r, y, z) is a solution of Laplace's equation, shew that 
+
+Y  1  / r -a  r +gg az \ 
+
+~( \ , )i-' V2(.'--i '  i x-iyy x-iy) 
+
+is another solution.   
+
+(Bateman, Proc. London Math. Soc. (2) vii. (1909), p. 77.) 
+
+19. If U=f x, y, z, t) is a solution of the equation of wave motions, shew that 
+another solution is 
+
+rj  1 .( X y \ r2-l rHl \ 
+
+z-ct-'Xz-ct'' z-ct"   z-cty 2c z-ct))' 
+
+(Bateman, Proc. London Math. Soc. (2) vii. (1909), p. 77.) 
+
+20. If l=x-iy, m = z + hv, n = . : - + y'  + z - + iv% 
+
+\ = j:+iy, fji = z-uv, p= — \, 
+so that l\ + 7nfi + nv=0, 
+
+shew that any homogeneous solution, of degree zero, of 
+
+cHT cH[ dH/ c U Q 
+dx'  dy  cz  dw  
+
+satisfies  +Z£+ =0- 
+
+dldX dmdfi dndv ' 
+
+and obtain a solution of this equation in the form 
+
+j' , b, c \ 
+
+U',  ', y' ) 
+
+where   = ( -c) (f-a),. ? /Li = (c-a) (f-6), np = (a- b) ((-c). 
+
+(Bateman, Proc. London Math. Soc. (2) vii. (1909), pp. 78-82.) 
+
+
+
+THE EQUATIONS OF MATHEMATICAL PHYSICS 403 
+
+21*. If (r, 6, (f)) are spheroidal coordinates, defined by the equations 
+
+jr = c (r  + iy sin   cos< , y=c (r2-|-l) sin  sin( , z=crcosd, 
+
+where x, y, z are rectangular coordinates and c is a constant, shew that, when n and m are 
+integers, 
+
+('"   /.  cos  + y sin -f i2\ cos ,   (n — in)\ \   ,.     ,   cos 
+
+Pn\  —]   mtdt = 27ry—  —  P,r tr)Pn'"  cos 6) . md). 
+
+j -n- \ c /Sin  n+m)l     "   sin   
+
+(Blades, Proc. Edinburgh Math. Soc. xxxiii.) 
+22. With the notation of example 21, shew that, if 2 =t= 0, 
+
+/    /cPcos  + y sin  +i'2\ cos , ,  (n — m)l  , . s -r, /   cos 
+Qn  - — )   intdt = 277 )--— -fj § '   ir) P '  cos e) . m4>. 
+-r \ c J Sin (n+m) i  "   -' "   ' sin   
+
+(Jeffery, Proc. Edinburgh Math. Soc. xxxiil.) 
+
+* The functions introduced in examples 21 and 22 are known as internal and external 
+spheroidal harmonics respectively. 
+
+
+
+26—2 
+

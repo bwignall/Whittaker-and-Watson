@@ -1,0 +1,1387 @@
+\chapter{Continuous Functions and Uniform Convergence} 
+
+3"1. The dependence of one complex number on another. 
+
+The problems with which Analysis is mainly occupied relate to the 
+dependence of one complex number on another. If z and   are two complex 
+numbers, so connected that, if z is given any one of a certain set of values, 
+corresponding values of   can be determined, e.g. if   is the square of z, or if 
+  = 1 when z is real and   = for all other values of z, then   is said to be a 
+function of z. 
+
+This dependence must not be confused with the most important case of 
+it, which will be explained later under the title o  analytic functionality. 
+
+If f is a real function of a real variable z, then the relation between ( and 2, which 
+may be written 
+
+can be visualised by a curve in a plane, namely the locus of a point whose coordinates 
+referred to rectangular axes in the plane are (s, (). No such simple and convenient 
+geometrical method can be found for visualising an equation 
+
+considered as defining the dependence of one complex number f = | + i'7 on another 
+complex number z = x + i)/. A representation strictly analogous to the one already given 
+for real variables would require four-dimensional space, since the number of variables 
+ , fj, X, y is now four. 
+
+One suggestion (made by Lie and Weierstrass) is to use a doubly-manifold system of 
+lines in the quadruply-manifold totality of lines in three-dimensional space. 
+
+Another suggestion is to represent   and ;; separately by means of surfaces   
+
+A third suggestion, due to Heffter*, is to write 
+
+then draw the surface r = r x, y) — which may be called the modular-surface of the 
+function— and on it to express the values of 6 by surface-markings. It might be 
+possible to modify this suggestion in various ways by representing 6 by curves drawn 
+on the surface r=r (.r, y). 
+
+3'2. Continuity of functions of real variables. 
+
+The reader will have a general idea (derived from the graphical represen- 
+tation of functions of a real variable) as to what is meant by continuity. 
+
+* Zeitschrift fur Math, tind Phys. xlix. (1899), p. 235. 
+
+
+
+42 THE PROCESSES OF ANALYSIS [cHAP. Ill 
+
+We now have to give a precise definition which shall embody this vague 
+idea. 
+
+Jjetf x) be a function of x defined when a  x  b. 
+
+Let x  be such that a  x b. If there exists a number I such that, 
+corresponding to an arbitrary positive number e, we can find a positive 
+number rj such that 
+
+\ f a:)-l\ < e, 
+
+whenever \ x — Xi\ <  rj, x   x , and a   x   b, then I is called the limit of /(a;) 
+
+It may happen that we can find a number 1+ (even when I does not exist) 
+such that \ f(x) — l+\ < € when x-  < x < Xi + rj. We call Z+ the limit of f x) 
+when X approaches x-  from the right and denote it by/(a;i + 0); in a similar 
+manner we define f x  — 0) if it exists. 
+
+If f(xi + 0), f xi), f x-  — 0) all exist and are equal, we say that /(a-) is 
+continuous at x  ; so that \ if x) is continuous at x-  , then, given e, we can find 
+7] such that 
+
+\ f x) -f(x,) I < e, 
+
+whenever \ x — Xi\ <  rj and a  x  h. 
+
+If 1+ and l\  exist but are unequal, f x) is said to have an ordinary 
+discontinuity* at Xi] and if 1+ = /\  4=/( i), f  ) is said to have a removable 
+discontinuity at x- . 
+
+lif x) is a complex function of a real variable, and \ if x) = g(x) + i h (x) 
+where g (x) and h (x) are real, the continuity of f(x) at x  implies the con- 
+tinuity of g (x) and of A (x). For when \ f(x) —f x  \ < e, then | g (x) —g(xi) \ < e 
+and I h (x) — h xi)\ < e ; and the result stated is obvious. 
+
+Example. From   2*2 examples 1 and 2 deduce that if f x) and cf) (x) are con- 
+tinuous at Xi , so are f x) +  x), f x) x    x) and, if   (.rj) =t= 0, f x)/(l) (.*•). 
+
+The popular idea of continuity, so far as it relates to a i-eal variable f x) depending 
+on another real variable x, is somewhat different from that just considered, and may 
+perhaps best be expressed by the statement "The function f x) is said to depend con- 
+tinuously on X if, as x passes through the set of all values intermediate between any 
+two adjacent values Xi and X2, f x) passes through the set of all values intermediate 
+between the corresponding values /( j) and/(.r2)." 
+
+The question thus arises, how far this popular definition is equivalent to the precise 
+definition given above. 
+
+Cauchy shewed that if a real function f x), of a real variable . •, satisfies the precise 
+definition, then it also satisfies what we have called the popular definition ; this result 
+
+* If a function is said to have ordinary discontinuities at certain points of an interval it 
+is implied that it is continuous at all other points of the interval. 
+
+
+
+3*2 1] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 43 
+
+vill be proved in   3"63. But the converse is not true, as was shewn by Darboux. This 
+fact may be iUustrated by the following example*. 
+
+Between x= — I and x= +1 (except at x=0), let f x) = sin — ; and let/(0)=0. 
+
+It can then be proved that/ .r) depends continuously on x near .r=0, in the sense of 
+the popular definition, but is not continuous at a; = in the sense of the precise definition. 
+
+Example. If f x) be defined and be an increasing function in the range (a, b), the 
+limits /(.r + 0) exist at all points in the interior of the range. 
+
+[If f x) be an increasing function, a section of rational numbers can be found such 
+that, if a, A be any members of its Z-cla.ss and its  -clas.s, a<f x + h) for evei-y positive 
+value of h and A ' f x- h) for some po.sitive value of h. The number defined by this 
+section is/(a; + 0).] 
+
+3"21. Simple curves. Continua. 
+
+Let X and y be two real functions of a real variable t which are continuous 
+for every value of t such that a- t %h. We denote the dependence of x and y 
+on t by writing 
+
+.'  =  •(0. 3/ = i/(0-  a. t%h) 
+
+The functions x (t), y (t) are supposed to be such that they do not assume the 
+same pair of values for any two different values of t in the range a < t < b. 
+
+Then the set of points with coordinates (x, y) corresponding to these values 
+of t is called a simple curve. If 
+
+X (a) = X  h), y (a) = y (b), 
+the simple curve is said to be closed. 
+
+Example. The circle x  + 7/-= 1 is a simple closed curve ; for we may write t 
+
+x=coiit, y = smt. (0  27r) 
+
+A two-dimensional continuum is a set of points in a plane possessing the 
+following two properties : 
+
+(i) If (x, y) be the Cartesian coordinates of any point of it, a positive 
+number 8 (depending on x and y) can be found such that every point whose 
+distance from  x, y) is less than S belongs to the set. 
+
+(ii) Any two points of the set can be joined by a simple curve consisting 
+entirel '' of points of the set. 
+
+Example. The points for which .r-+3/-<l form a continuum. For if P be any 
+point inside the unit circle such that OP=r<\, we may take 8=1-?-; and any two 
+points inside the circle may be joined by a straight line lying wholly inside the circle. 
+
+The following two theorems | will be assumed in this work ; simple cases 
+of them appear ob\ dous from geometrical intuitions and, generally, theorems 
+of a similar nature will be taken for granted, as formal proofs are usually 
+extremely long and difficult. 
+
+* Due to Mansion, Mathesis, (2) xix. (1899), pp. 129-131. 
+
+t For a proof that the sine and cosine are continuous functions, see the Appendix, § A-41. 
++ Formal proofs will be found in Watson's Complex Integration and Cauchy's Theorem. 
+(Cambridge Math. Tracts, No. 15.) 
+
+
+
+44 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+(I) A simple closed curve divides the plane into two continua (the 
+' interior ' and the ' exterior '). ' 
+
+(II) If P be a point on the curve and Q be a point not on the curve, 
+the angle between QP and Ox increases by + 27r or by zero, as P describes 
+the curve, according as Q is an interior point or an exterior point. If the 
+increase is + 27r, P is said to describe the curve ' counterclockwise.' 
+
+A continuum formed by the interior of a simple curve is sometimes called 
+an open two-dimensional region, or briefly an open region, and the curve is 
+called its boundary; such a continuum with its boundary is then called a 
+closed two-dimensional region, or briefly a closed region or domain. 
+
+A simple curve is sometimes called a closed one-dimensional region; a 
+simple curve with its end-points omitted is then called an open one-dimensional 
+region. 
+
+3"22. Continuous functions of complex variables. 
+
+Lety"( ) be a function of   defined at all points of a closed region (one- or 
+two-dimensional) in the Argand diagram, and let z  be a point of the region. 
+
+Then f z) is said to be continuous at z  , if given any positive number e, 
+we can find a corresponding positive number 77 such that 
+
+\ f z)-f z,)\ < e, 
+whenever \ z — Zx\ < r) and 2- is a point of the region. 
+
+3'3. Series of variable tei-ms. Uniformity of convergence. 
+Consider the series 
+
+  1 + a;2 (1+ ieO' (1 +  T 
+
+This series converges absolutely (§ 2*33) for all real values of x. 
+If 8n ( ) be the sum of n terms, then ' >• 
+
+' " ">= +" -(TT '  / 
+
+and so lim Sn  x) = \ \  x' ;  xrf 0) 
+
+but Sn 0) = 0, and therefore lim Sn (0) = 0. 
+
+M-*-00 
+
+Consequently, although the series is an absolutely convergent series of 
+continuous functions of x, the sum is a discontinuous function of x. We 
+naturally enquire the reason of this rather remarkable phenomenon, which 
+was investigated in 1841-1848 by Stokes*, Seidelf and Weierstrassj, who 
+shewed that it cannot occur except in connexion with another phenomenon, 
+that of non-uniform convergence, which will now be explained. 
+
+* Cnmb. Phil. Trans, viii. (1847), pp. 533-583. [Collected Papers, i. pp. 236-313.] 
+t Mi'mchener Abhandlungen, v. (1848), p. 381. 
+X Ges. Math. U'erke, i. pp. 67, 75. 
+
+
+
+3-22-3'3l] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 45 
+
+Let the functions u  (z), Wg (z), ... be defined at all points of a closed region 
+of the Argand diagram. Let 
+
+Sn (z) = U, (z) + M2 (2) + ...+ tin  Z). ' 
+
+oc 
+
+The condition that the series 2 Un  z) should converge for any particular 
+
+n = l 
+
+value of z is that, given e, a number n should exist such that 
+
+I  n+p  z) — Sn (z)\ < € 
+
+for all positive values of jo, the value of 7i of course depending on e. 
+
+Let n have the smallest integer value for which the condition is satisfied. 
+This integer will in general depend on the particular value of z which has 
+been selected for consideration. We denote this dependence by writing 
+n (z) in place of ?i. Now it mag happen that we can find a number N, 
+
+INDEPENDENT OF Z, SUch that 
+
+n z)<N "'  '"  
+
+for all values of z in the region under consideration. 
+
+If this number N exists, the series is said to converge uniformly 
+throughout the region. 
+
+If no such number iV exists, the convergence is said to be non-uniform*. 
+
+Uniformity of convergence is thus a property depending on a whole set of 
+values of z, whereas previously we have considered the convergence of a series 
+for various particular values of z, the convergence for each value being con- 
+sidered without reference to the other values. 
+
+We define the phrase ' uniformity of convergence near a point z ' to mean 
+that there is a definite positive number 8 such that the series converges 
+uniformly in the domain common to the circle \ z — z \ \  h and the region in 
+which the series converges. 
+
+3'31. On the condition for uniformity of convergence' . 
+
+If Rn,p  z) = Un+i  z) + iin+2 (z) + ... + Un+p (z), WO have Seen that the 
+
+necessary and sufficient condition that S Un (z) should converge uniformly 
+
+in a region is that, given any positive number e, it should be possible to 
+choose N INDEPENDENT OF z (but depending on e) such that 
+
+I Rn, p(z)\ < € 
+
+for ALL positive integral values of p. 
+
+* The reader who is unacquainted with the concept of uniformity of convergence will find it 
+made much clearer by consultinf; Bromwich, Iiijinite Series, Ch. vii, where an illuminating 
+account of Osgood's graphical investigation is given. 
+
+t This section shews that it is indifferent whether uniformity of convergence is defined by 
+means of the partial remainder Rj p(z) or by iJ (2). Writers differ in the definition taken 
+as fundamental. 
+
+
+
+46 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+If the condition is satisfied, by § 2-22, 8n z) tends to a limit, S z), say for 
+each value of   under consideration; and then, since e is independent of p, 
+
+and therefore, when n > iV, 
+
+S (2) - Sn (Z) = I lim i v, p  2)  - E v. n-N (z), / 
+
+and so \ S(z)-S iz)\ < 2€. 
+
+Thus (writing  e for e) a necessary condition for uniformity of convergence 
+is that \ S z) — Sn (z) \ < e, whenever n>N and N is independent of z ; the 
+condition is also sufficient ; for if it is satisfied it follows as in § 2-22 (I) 
+that I R rp z) 1 < 2e, which, by definition, is the condition for uniformity. 
+
+Example 1. Shew that, if x be real, the sum of the series 
+
+X X X 
+
+TODO
+
+is discontinuous at .r=0 and the series is non-uniformly convergent near  ' = 0. 
+
+The sum of the first n terms is easily seen to be 1 ; so when x — Q the 
+
+nx+i 
+
+sum is ; when a* 4=0, the sum is 1. 
+
+1 ' 
+The value of RnXx) = S x)-Sn x) is — -- if x O; so when x is small, say 
+
+:r=one-hundred-milliouth, the remainder after a million terms is — or l-TTyTj   
+
+100 + 1 
+the first million terms of the series do not contribute one per cent, of the sum. And in 
+
+general, to make < e, it is necessary to take 
+
+° nx + 1 
+
+7i>-(--l 
+
+X \ e 
+
+Corresponding to a given e, no number N exists, independent of x, such that n<N for 
+all values of x in any interval including x = ; for by taking x sufficiently small we can 
+make n greater than any number N which is independent of x. There is therefore non- 
+uniform convergence near ,r = 0. 
+
+Example 2. Discuss the series 
+
+x n. n±V)x'''-\ ]  
+
+
+
+nZx   + n x   \ +  7i- \ fx y 
+in which x is real. 
+
+r. , ,  ,   . nx (n-  )  X  , . X , 
+
+The 7ith term can be written , 5—5 - , — ; , .  — q , so o (x) = n , and 
+
+l+n\ v  l +  n + \ y X'' l+x'' 
+
+  W ] +(,i + 1)2 2 • 
+
+[Note. In this example the sum of the series is not discontinuous at   = 0.] 
+But (taking 6<i, and  4=0), \ Rn x)\ < e if e-i(?i + l) \ x\ < l-ir n+\ f x  ; i.e. if 
+?i+l>| €-i + Ve-2-4 |.T|-l or ?t + l<J e-i-v'e = 3-4 |:p|- . 
+
+
+
+3*32] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 47 
+
+Now it is not the case that the second inequality is satisfied for all values of n greater 
+than a certain value and for all values of x ; and the first inequality gives a value of 
+n(x) which tends to infinity as x- 0 ; so that, corresponding to any interval containing the 
+point  =0, there is no number N' independent of x. The series, therefore, is non-uniformly 
+convergent near :i, = 0. 
+
+The reader will observe that n x) is discontinuous at .r = 0; for n x)- 'x> as .r-  -0, 
+but n(0) = 0. 
+
+3'32. Connexion of discontinuity luith non-uniform convergence. 
+
+We shall now shew that if a semes of continuous functions of z is uniformly 
+convergent for all values of z in a given closed domain, the sum is a continuous 
+function of z at all points of the domain. 
+
+For let the series be f z) = it,  z) + Wo (2 ) + • . . + Un  z)+ ...— Sn (z) + Rn  z), 
+where Rn (z) is the remainder after n terms. 
+
+Since the series is uniformly convergent, given any positive number e, we 
+
+can find a corresponding integer n independent of z, such that | R  ( ) | <   e 
+
+for all values of z within the domain. 
+
+Now n and e being thus fixed, we can, on account of the continuity of 
+Sn (•2 ), find a positive number rj such that 
+
+\ Sn(z)-S  z')\ < l€, 
+
+whenever \ z — z' \ < r . 
+We have then 
+
+l/( ) -/V) I = 1 [Sni ) - Sn z')] \ + lRn(2)- Rn  ) \ 
+< ! Sn z) - Sn(z') I + I Rniz) \ + | Rn z') | 
+
+' < 6, 
+
+which is the condition for continuity at z. 
+Example 1. Shew that near x = the series 
+
+Ui  x) + U<i  x) + M3 ( 0 + • • • , 
+
+1 1 
+
+where  i(vP)=a;,   (a;) = ;p "~* — :p "~ , 
+
+and real values of x are concerned, is discontinuous and non-uniformly convergent. 
+
+In this example it is convenient to take a slightly different form of the test ; we shall 
+shew that, given an arbitrarily small number f, it is possible to choose values of x, as 
+small as we please, depending on n in such a way that | R  [x) \ is not less than e for any 
+value of n, no matter how large. The reader will easily see that the existence of such 
+values of x is inconsistent with the condition for uniformity of convergence. 
+i\    
+
+The value of S ix) is .r" "-i ; as n tends to infinity, S   x) tends to 1, 0, or - 1, accord- 
+ing as x is positive, zero, or negative. The series is therefore absolutely convergent for all 
+values of or, and has a discontinuity at .t' = 0. 
+
+
+
+48 THE PROCESSES OF ANALYSIS [cHAP. Ill 
+
+1 
+
+In this series R   x) = l-x ''-\  x > 0) ; however great n may be, by taking* x = e- (2" - 1) 
+we can cause this remainder to take the value l-e'  which is not arbitrarily small. The 
+series is therefore non-uniformly convergent near .r = 0. 
+
+Example 2. Shew that near z = the series 
+
+ il  H-(l+2) -l  l+(l + 2)"  
+
+is non-uniformly convergent and its sum is discontinuous. 
+The nth term can be written 
+
+l-(l+3)" 1-(1+Z)"-  
+
+l + (H-3)  H-(l+z) -i' 
+so the sum of the first n terms is  , — — . Thus, considering real values of z greater 
+
+than - 1, it is seen that the sum to infinity is 1, 0, or — 1, according as z is negative, zero, 
+
+or positive. There is thus a discontinuity at 2 = 0. This discontinuity is explained by the 
+
+fact that the series is non-uniformly convergent near 2=0 ; for the remainder after n terms 
+
+in the series when z is positive is 
+
+-2 
+
+r+rr+2)"' 
+
+and, however great n may be, by taking z = ~, this can be made numerically greater 
+
+2 
+
+than -  , which is not arbitrarilv small. The series is therefore non-uniformlv con- 
+1-1-e' 
+
+vergent near 2 = 0. 
+
+3'33. The distinction between absolute and uyiiform convergence. 
+
+The uniform convergence of a series in a domain does not necessitate 
+its absolute convergence at any points of the domain, nor conversely. Thus 
+
+the series S vz  r converges absolutely, but (near z = 0) not uniformly ; 
+
+(1 +  ")" 
+
+while in the case of the series 
+
+ =i z  + n ' 
+the series of moduli is 
+
+1 
+
+5", = 
+
+
+
+ =i \ n + Z'\ \   
+which is divergent, so the series is only conditionally convergent; but for all 
+real values of z, the terms of the series are alternately positive and negative 
+and numerically decreasing, so the sum of the series lies between the sum of 
+its first n terms and of its first (n -f 1) terms, and so the remainder after 
+n terms is numerically less than the nth. term. Thus we only need take a 
+finite number (independent of z) of terms in order to ensure that for all real 
+values of z the remainder is less than any assigned number e, and so the 
+series is uniformly convergent. 
+
+Absolutely convergent series behave like series with a finite number of 
+terms in that we can multiply them together and transpose their terms. 
+
+* This value of x satisfies the condition i a; | < 5 whenever 2rt - 1 > log 5~i. 
+
+
+
+3'33-3"341] CONTINUOUS functions and uniform convergence 49 
+
+Uniformly convergent series behave like series with a finite number of 
+terms in that they are continuous if each term in the series is continuous 
+and (as we shall see) the series can then be integrated term by term. 
+
+334. A condition, due to Weierstrass* , for uniform convergence. 
+
+A sufficient, though not necessary, condition for the uniform convergence 
+of a series may be enunciated as follows : — 
+
+If, for all values of z within a domain, the moduli of the terms of a series 
+*S' = Ui (z) + i<2 ( ) + W3 ( ) + • • • 
+are respectively less than the corresponding terms in a convergent series 
+of positive terms 
+
+where M  is independent of z, then the series S is uniformly convergent in 
+this region. This follows from the fact that, the series T being convergent, 
+it is always possible to choose n so that the remainder after the first n terms 
+of T, and therefore the modulus of the remainder after the first n terms 
+of *Si, is less than an assigned positive number e ; and since the value of n 
+thus found is independent of z, it follows (§ 3-31) that the series S is uni- 
+formly convergent ; by § 234, the series S also converges absolutely. 
+
+Example. The .scries 
+
+1 ., 1 , 
+
+cos Z +  , CO.S- 2+57, CO.S-* Z-  ... 
+
+is uniformly convergent for all re<il values of r, because the moduli of its terms are not 
+greater than the corresi)onding terms of the convergent series 
+
+I i 
+whose terms are positive constants. 
+
+3 •341 . Uniformity of convergence of infinite products t. 
+
+A convergent product n  1 + ?<  (z)  is said to converge uniformly in a domain of values 
+
+M=l 
+
+of z if, given e, we can tind m independent of z such that 
+
+n  1 +   (z)  - n  i+u  z)  \ < € 
+
+for all positive integral values of p. 
+
+The only condition for imiformity of convergence which will be used in this work 
+is that the product converges uniformly if | m (s) | < J/  where J/  is independent of 2 and 
+
+2 J/  convei-ges. 
+
+n = l 
+
+* Abhandlungen aus der Funktionenlehre, p. 70. The test given by this condition is usually 
+described (e.g. by Osgood, Annals of Mathematics, iii. j[1889), p. 130) as the M-test. 
+
+t The definition is, effectively, that given by Osgood, Funktionentheorie, p. 462. The 
+condition here given for uuiformity of convergence is also established in that work. 
+
+W. M. A. 4 
+
+
+
+50 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+To prove the validity of the condition we observe that n (l + J/ ) converges (§ 2-7), 
+
+M = l 
+
+and so we can choose m such that 
+
+Vl+p VI 
+
+n  l + M,, - n  l + M  <€; 
+
+n = l )( = 1 
+
+and then we have 
+
+m+p m I I m p ni+p ~] I 
+
+n  l+un (.-)  - n  1 +t<  (s)  =1 n  1 +   (z)  n  i +u  (z)  - 1 
+
+11=1 M=l I I n=l \ \  n=m+i J I 
+
+m r ni+2> ~] 
+
+ n(i + 14) n  i+i/  -i 
+
+m=l L n = m+l J 
+
+and the choice of ?h is independent of z. 
+
+3 "35. Hardy's tests for uniform convergence*. 
+
+
+
+The reader will see, from § 2-31, that if, in a given domain. 
+
+
+
+p 
+
+
+
+2 a   z)   k where a  (2) is 
+
+
+
+real and k is finite and independent of   and 2, and if / (2)   t + i (s) and fn  )-  
+
+uniformly as w - - oo , then 2 a   z) f   £) converges uniformly. 
+ t=i 
+
+Also that if 
+where k is independent of 2 and 2 a  (2) converges uniformly, then 2 a,j  £) w  (s) con- 
+
+Ii = l M = l 
+
+verges uniformly. [To prove the latter, observe that m can be found such that 
+
+ 7n + l(2),  m + l(2)+ 7  + 2(2), •••,  m + 1 ( ) +  m + 2 ( )+ • •   +  m + p (2) 
+
+are numerically less than e\ k ; and therefore (§ 2-301) 
+
+2 a  (2) M  (s) < e <,n+i (2)//(-< e, 
+n=jn+l I 
+
+and the choice of e and hi is independent of 2.] 
+
+
+
+°  cos nQ "" sin %  
+2 , 2 
+
+7t=l '* n = l 'i 
+
+
+
+Example 1. Shew that, if S>0, the series 
+
+converge uniformly in the range 
+
+S   (9   27r - S. 
+
+Obtain the corresponding result for the series 
+
+  (-)"cos?i<9 '  ( - )  sin n6 
+
+2i , 2 , 
+
+n=l n n=\ n 
+
+by writing O + n for  . 
+
+Example 2. If, when a a,' 6, | co,i (.1;) | <  -j and 2 | <   + i (.r) — co  (.r) | <j('2, where 
+
+)(=i 
+
+ •1, k.> are independent of n and .r, and if 2 a  is a convergent series independent of x, 
+
+n=i 
+
+then 2 a,tC > (:*;) converges uniformly when a  .r  / . (Hardy.) 
+
+n = l 
+
+* Proc. London Math. Soc. (2) iv. (1907), pp. 247-265. These results, which are generalisa- 
+tions of Abel's theorem (§ 3-71, below), though well known, do not appear to have been published 
+before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, 
+Bromwich proposes to call them Dirichlet's and Abel's tests respectively. 
+
+
+
+3"35, 3"4] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 51 
+
+[For we can choose m, independent of .v, such that 
+corollary, we have 
+
+
+
+m+p I 
+
+2 a  < e, and then, l)y § 2-301 
+
+n=m+l I 
+
+
+
+m+p I 
+
+2 ttnOin (  •) I < ( 'l + ' '2) f •] 
+
+
+
+n=m+l I 
+
+3 "4. Discussion of a particular double senes. 
+
+Let (1)1 and w.  be any constants whose ratio is not purely real ; and let 
+a be positive. 
+
+The series 2 ;   r- , in which the summation extends over 
+
+all positive and negative integral and zero values of in and n, is of great 
+importance in the theory of Elliptic Functions. At each of the points 
+z = — 2mcoi — 2/10)2 the series does not exist. It can be shewn that the series 
+converges absolutely for all other values of   if a > 2, and the convergence is 
+uniform for those values of z such that ; 2 + 2niQ)i + 2nco2     8 for all integral 
+values of m and n, where 8 is an arbitrary positive number. 
+
+Let S' denote a summation for all integral values of m and n, the term for 
+which 7n = n = being omitted. 
+
+Now, if ni and n are not both zero, and if \ z + 2m(o  + 2nco.2\ "  8 > for 
+all integral values of m and n, then we can find a positive number C. de- 
+pending on B but not on 2, such that 
+
+I 1 ! 
+
+
+
+(z + 2w\&)i + 2 a)a)'' 
+
+
+
+ 2m(Oi + 2710)2)" 
+
+
+
+Consequently, by § 3"34, the given series is absolutely and uniformly* 
+convergent in the domain considered if 
+
+2' 1 
+
+I mcoi + no)2 1 " 
+converges. 
+
+To discuss the convergence of the latter series, let 
+
+0), = CTj 4- 1/3, , 0)0 = Qfo + z'/So , 
+
+where a , a.,, /3i, /Sa are real. Since co../ coi is not real, a /S. — ou/3i 4= 0. Then 
+the series is 
+
+2'   
+
+ (a,m + aojiy- +  /3,m + /SoTi)   * 
+
+This converges (§ 2"5 corollary) if the series 
+
+S =  ' i — - 
+
+(m-+n2)   
+
+converges ; for the quotient of corresponding terms is 
+
+The reader will easily define uniformity of convergence of double series (see § 3-5). 
+
+4—2 
+
+
+
+52 THE PROCESSES OF ANALYSIS [cHAP. Ill 
+
+where /z = njm. This expression, qua function of a continuous real variable jx, 
+can be proved to have a positive minimum* (not zero) since ofi/3o — ao/3i =|= ; 
+and so the quotient is always greater than a positive number K (independent 
+of/x). 
+
+We have therefore only to study the convergence of the series S. Let 
+
+PI 1 
+
+V   V S' 
+
+
+
+ 'p,q 
+
+
+
+00 00 1 
+
+ 4 S S' - , . 
+
+m = n=0 (m  + 71 )2 * 
+
+Separating Sp g into the terms for which m = n, m > n, and m < n, re- 
+spectively, we have 
+
+pi p m-l 1 q n-1 1 
+
+IS.   = S - I- s S - + s s . 
+
+'%  1 ml 
+
+But S r- < 
+
+
+
+n=o  ni" + n ) "- (m ) " 
+
+
+
+m° 
+
+
+
+Therefore IS   t -J— + S — + i  . 
+
+But these last series are known to be convergent if a — 1 > 1. So the series S 
+is convergent if a > 2. The original series is therefore absolutely and uni- 
+formly convergent, when a > 2, for the specified range of values of z. 
+
+Example. Prove that the series 
+
+1 
+
+2 
+
+
+
+(mj  + 7112  + . . . + my?y  
+
+in which the summation extends over all positive and negative integral values and zero 
+values of mj, m2, ... wi , except the set of simultaneous zero values, is absolutely convergent 
+if fi>ir. (Eisenstein, Journal fur Math, xxxv.) 
+
+3'5. The concept of uniformity. 
+
+There are processes other than that of summing a series in which the idea 
+of uniformity is of importance. 
+
+Let e be an arbitrary positive number; and let f z,  ) be a function of 
+two variables z and  , which, for each point z oi a, closed region, satisfies the 
+inequality \ f z,  ) | < 6 when t, is given any one of a certain set of values 
+which will be denoted by (  z) ; the particular set of values of course depends 
+on the particular value of z under consideration. If a set ( )o can be found 
+such that every member of the set ( )o is a member of all the sets ( j), the 
+function f z,  ) is said to satisfy the inequality uniformly for all points z of 
+
+* The reader will find no difficulty in verifying this statement ; the minimum value in 
+question is given by 
+
+K "' = h W + a  +  .  +  r-  (a,-/3,r-+(a2 + ,3i)=l   (ai + /32)2+ (a  - iP  ]- 
+
+
+
+3"5, 3'6] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 53 
+
+the region. And if a function (f>  z) possesses some property, for every positive 
+value of e, in virtue of the inequality \ f z, ):<e,(f) (z) is then said to possess 
+the property uniformly. 
+
+In addition to the uniformity of convergence of series and products, we shall have 
+to consider uniformity of convergence of integrals and also uniformity of continuity ; thus 
+a series is uniformly convergent when \ R,  z)\ <e, t( =  0 assuming integer values in- 
+dependent of z only. 
+
+Further, a function f z) is continuous in a closed region if, given e, we can find a 
+I ositive number r/  such that 1/(2 +  2) —fi ) \ <   whenever 
+
+0<\ C \ < r   
+and 2 + f is a point of the region. 
+
+The function will be uniformly continuous if we can find a positive number  ; inde- 
+pendent of z, such that rjKr   and \ f z + C)~f  ) i <  whenever 
+
+0<UI<'7 
+and 2 + f is a point of the region, (in this case the set (f)o is the set of points whose 
+moduli are less than r)). 
+
+We shall find later (§ 3-61) that continuity involves uniformity of continuity; this is 
+in marked contradistinction to the fact that convergence does not involve uniformity 
+of convergence. 
+
+36. The modified Heine-Borel theorem. 
+
+The following theorem is of great importance in connexion with properties 
+of uniformity ; we give a proof for a one-dimensional closed region*. 
+
+Given (i) a straight line CD and (ii) a latv by which, corresponding to 
+each point f P of CD, we can determine a closed interval I P) of CD, P being 
+an interior  point of I (P). 
+
+Tlien the line CD can be divided into a finite number of closed intervals 
+Ji, Jo, ... Jk, such that each interval Jr contains at least one point  not an end 
+point) Pr, such that no point of Jr lies outside the interval I (Pr) associated 
+(by means of the given law) luitli that point Pr§. 
+
+A closed interval of the nature just described will be called a suitable 
+interval, and will be said to satisfy condition  A). 
+
+If CD satisfies condition  A ), what is required is proved. If not, bisect CD ; 
+if either or both of the intervals into which CD is divided is not- suitable, 
+bisect it or them||. 
+
+* A formal proof of the tlieorem for a two-dimensional region will be found in Watson's 
+Complex Integration and Cauchy s Theorem (Camb. Math. Tracts, No. 15). 
+
+t Examples of such laws associating intervals with points will be found in §§ 3'61, 5'13. 
+
+t Except when P is at C or D, when it is an end point. 
+
+§ This statement of the Heine-Borel theorem (which is sometimes called the Borel-Lebesgue 
+theorem) is due to Baker, Proc. London Math. Soc. (2) i. (1904), p. 24. Hobson, The Theonj of 
+Functions of a Real Variable (1907), p. 87, points out that the theorem is practically given in 
+Goursat's proof of Cauchy's theorem  Trans. American Math. Soc. i. (1900), j). 14) ; the ordinary 
+form of the Heine-Borel theorem will be found in the treatise cited. 
+
+II A suitable interval is not to be bisected ; for one of the parts into which it is divided 
+might not be suitable. 
+
+
+
+54 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+This process of bisecting intervals which are not suitable either will 
+terminate or it will not. If it does terminate, the theorem is proved, for CD 
+will have been divided into suitable intervals. 
+
+Suppose that the process does not terminate ; and let an interval, which 
+can be divided into suitable intervals by the process of bisection just described, 
+be said to satisfy condition (B). 
+
+Then, by hypothesis, CD does not satisfy condition  B) ; therefore at least 
+one of the bisected portions of CD does not satisfy condition  B). Take that 
+one which does not (if neither satisfies condition  B) take the left-hand one) ; 
+bisect it and select that bisected part which does not satisfy condition  B). 
+This process of bisection and selection gives an unending sequence of intervals 
+5o, Si, S2, ... such that : 
+
+(i) The length of s  is 2-" Ci). 
+
+(ii) No point of s,i+i is outside Sn- 
+
+(iii) The interval s  does not satisfy condition (-4). 
+
+Let the distances of the end points of s  from G be Xn, yn\ then 
+Xn < a? +i < 2 i+i   Hn- Therefore, by § 2*2, x  and yn have limits ; and, by the 
+condition (i) above, these limits are the same, say   ; let Q be the point whose 
+distance from C is  . But, by hypothesis, there is a number hq such that 
+every point of CD, whose distance from Q is less than 5q, is a point of the 
+associated interval /(Q). Choose n so large that  t CDk 8q ; then Q is an 
+internal point or end point of Sn and the distance of every point of Sn from 
+Q is less than Sq. And therefore the interval 5  satisfies condition (A), which 
+is contrary to condition (iii) above. The hypothesis that the process of 
+bisecting intervals does not terminate therefore involves a contradiction ; 
+therefore the process does terminate and the theorem is proved. 
+
+In the two-dimensional form of the theorem* the interval CD is replaced by a closed 
+two-dimensional region, the interval I P) by a circlet with centre P, and the interval 
+Jj. by a square with sides parallel to the axes. 
+
+3'61. Uniformity of continuity. 
+
+From the theorem just proved, it follows without difficulty that if a 
+function f(x) of a real variable x is continuous when a x b, then f(x) 
+is unifurmly continuous  throughout the range a x  b. 
+
+For let e be an arbitrary positive number ; then, in virtue of the con- 
+tinuity of f x), corresponding to any value of x, we can find a positive 
+number S , depending on x, such that 
+
+1/( 0 -/( O I < e 
+
+for all values of x' such that \ x' — x\ < Sx- 
+
+* The reader will see that a proof may be constructed on similar lines by drawing a square 
+circumscribing the region and carrying out a process of dividing squares into four equal squares. 
+
+t Or the portion of the circle which lies inside the region. 
+
+:J: This result is due to Heine; see Journal fiir Math. lxxi. (1870), p. 361, and lxxiv. (1872), 
+p. 188. 
+
+
+
+3'61, 3'62] CONTINUOUS functions and uniform convergence 55 
+
+Then by § 3"G we can divide the range (a, b) into a finite number of closed 
+intervals with the property that in each interval there is a number Xi such 
+
+that \ fioc') — f xx) \ < -€, whenever x lies in the interval in which a;, lies. 
+
+Let So be the length of the smallest of these intervals ; and let f , |' be 
+any two numbers in the closed range (a, 6) such that |   —  ' | <  o- Then 
+ , f ' lie in the same or in adjacent intervals ; if they lie in adjacent intervals 
+let  , be the common end point. Then we can find numbers x , Xo, one in 
+each interval, such that 
+
+\ f  )-f  .)\ < \ e, ,/(?o)-/(- 0 < f> 
+
+' /(r ) -/( e) \ < \ \  , fit) -fu  i < 5 6, 
+
+so that 
+
+i/(i) -/(r) = ,  /(B -fM] - [fit) -fM] 
+
+- /(r)-/( -.)  +  /( o)-/( .) i 
+
+< 6. 
+
+If  ,  ' lie in the same interval, we can prove similarly that 
+
+i/( )-/(r)i<2 - 
+
+In either case we have shewn that, for (iny number   in the range, 
+we have 
+
+\ f( )-f  +0 <e 
+whenever  +   is in the range and —Bo<  < Bq, where So is independent of  . 
+The uniformity of the continuity is therefore established. 
+
+Corollary (i). From the two-dimensional form of the theorem of § 3"6 we can prove 
+that a function of a complex variable, continuous at all jwints of a closed region of the 
+Argand diagram, is uniformly continuous throughout that region. 
+
+Corollary (ii). A function f  x) which is continuous throughout the range a x b is 
+hounded in the range ; that is to say we can find a number k independent of x such that 
+\ f x) ! <K for all points x in the range. 
+
+[Let n be the number of parts into which the range is divided. 
+
+Let  ,  i,  2> ••• In-ij   be their end points ] then if x be any point of the rth interval 
+we can find numbers Xi, x-i, ... Xn such that 
+
+l/( )-/(- 'i)|< , l/(.i-i)-/'(li)|<i , l/( i)-/(' 2)|<ie, l/(. 2)-/( 2)|<if,... 
+
+••• \ f  ryi)-f x)\ < h. 
+Therefore \ f a)-f x) |< ire, and so 
+
+which is the required result, since the right-hand side is independent of x."] 
+
+The corresponding theorem for functions of complex variables is left to the reader. 
+
+3'62. A real function, of a real variable, continuous in a closed interval, 
+attains its upper bound. 
+
+Let f x) be a real continuous function of x when a x b. Form a 
+section in which the i?-class consists of those numbers r such that r >f x) 
+
+
+
+56 THE PROCESSES OF ANALYSIS [cHAP. Ill 
+
+for all values of x in the range (a, h), and the X-class of all other numbers. 
+This section defines a number a such that f x) a., but, if h be any positive 
+number, values of x in the range exist such that f(x)>a — 8. Then a is 
+called the upper bound oi f x); and the theorem states that a number x' 
+in the range can be found such thai f x) = a. 
+
+For, no matter how small h may be, we can find values of x for which 
+|/( ) — aj"  >'8~ ; therefore |  /(. ) - a| |~  is not bounded in the range; 
+therefore (§ 3'61 cor. (ii)) it is not continuous at some point or points of the 
+range ; but since | f x) — a | is continuous at all points of the range, its re- 
+ciprocal is continuous at all points of the range (§ 3*2 example) except 
+those points at which f(x) = a', therefore f x) = a at some point of the 
+range ; the theorem is therefore proved. 
+
+Corollary (i). The lower bound of a continuous function may be defined 
+in a similar manner; and a continuous function attains its lower bound. 
+
+Corollary (ii). If /( ) be a function of a complex variable continuous in 
+a closed region, | f z) \ attains its upper bound. 
+
+3'63. A real function, of a. real variable, continuous in a closed interval, 
+attains all values between its upper and loiuer bounds. 
+
+Let 31, m be the upper and lower bounds off x) ; then we can find numbers 
+X, -v, by § 362, such that/( ) = M,f x) = m; let //. be any number such that 
+m< fjb< M. Given any positive number e, we can (by § 3-61) divide the range 
+(x, x) into 'A finite number, r, of closed intervals such that 
+
+l/(.r,'-')-/(*2' ')|<6, 
+
+where a i""*, iCjC* are any points of the rth interval; take  -i**"', x./'' to be 
+the end points of the interval ; then there is at least one of the intervals 
+for which /(*'!<' ') - f ,f(x.J ) — /x have opposite signs ; and since 
+
+|[/( ,<'-')-/z - /( ,"-))- j|<6, 
+
+it follows that j /(aa""') — /ii\ <  e. 
+
+Since we can find a number  i'''* to satisfy this inequality for all values 
+of 6, no matter how small, the lower bound of the function \ f(x)-fA,\ is 
+zero ; since this is a continuous function of x, it follows from § 3-62 cor. (i) 
+that/( ) — yLt vanishes for some value of . . 
+
+3'64. The fluctuation of a function of a real variable*. 
+
+Let/( ;) be a real bounded function, defined when a x b. Let 
+
+a Xi X2  ... : Xn b. 
+Then I /(a) -f(x,) \ + \ f(x,) -f(x,) | + ... + l/C J -f(b) | is called the 
+fluctuation oi f x) in the range (a, b) for the set of subdivisions x , X2, ... Xn. 
+
+The terminology of tliis section is partly that of Hobson, The Theory of Functions of a Real 
+Variable (1907) and partly that of Young, The Theory of Sets of Points (190(5). 
+
+
+
+3'63-37l] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 57 
+
+If the fluctuation have an upper bound FJ*, independent of n, for all choices of 
+iCi, j-o, ... Xn, then f x) is said to have limited total fluctuation in the range 
+(a, h). Fa!' is called the total fluctuation in the range. 
+
+Example 1. If f x) be monotonic* in the range (a, b), its total fluctnation in the range 
+is|/(a)-/(6)|. '>i    
+
+Example 2. A fimction with limited total fluctuation can be expressed as the differ- 
+ence of two positive increasing monotonic functions. 
+
+[These function.s may be taken to be |  Fa' +fix) , h  Fa'-f x) .] 
+
+Example 3. If f x) have limited total fluctuation in the range  a, b), then the limits 
+f x±0) exist at all points in the interior of the range. [See § 3*2 example.] 
+
+Example 4. li f x\ g x) have limited total fluctuation in the range (a, b) so has 
+f x)g x). 
+
+[For \ f x')g x')-f x)g x)\ \  \ f :>f). \ g x')-g x)\ + \ g  ) \ f  ')-fi. )l 
+and so the total fluctuation of f x) g  x) cannot exceed g . FJ'+f. G K where   g are the 
+upper bounds of |/( ) |, \ g (x) \ .] 
+
+- 3'7. Uniformity of convergence of power series. 
+Let the power .series 
+
+ao + tti ;-!- ... +an2"+ ••• ' 
+
+converge absolutely when z = Zo. 
+
+Then, if |   |   |  'o | , , a " |   | a Zo" | . 
+
+00 CO 
+
+But since S | anZj" ' converges, it follows, by § 3-34, that S ttn " converges 
+
+w = ' 71 = 
+
+uniformly with regard to the variable z when \ z  \ Zq.  
+
+Hence, by § 3"32, a power series is a continuous function of the variable 
+throughout the closed region formed by the interior and boundary of any 
+circle concentric with the circle of convergence and of smaller radius (§ 2"6). 
+
+  3'71. Abel's theoreni-'r on continuity up to the circle of convergence. 
+
+00 
+
+Let S a,j " be a po ver series, whose radius of convergence is unity, and 
+
+M = 
+
+cc 
+
+let it be such that S a  converges ; and let   a;   1 ; then Abel's theorem 
+
+>i = 
+
+(OC \ 00 
+
+S    '*] = S an. 
+. n=0 J M=0 
+
+For, with the notation of § 3-35, the function x  satisfies the conditions 
+
+00 
+
+laid on u,  x), when 0 a; l; consequently /(a:;) = 2 On " converges uni- 
+
+M = 
+
+* The function is monotonic if  f x)-f x')\ \  x-x') is one-signed or zero for all pairs of 
+different values of .r and x' . 
+
+t Journal fiir Math. i. (1826), pp. 311-339, Theorem iv. Abel's proof employs directlj' the 
+arguments by which the theorems of § 3-32 and § 3-35 are proved. In the case when S | a  I 
+converges, the theorem is obvious from § 3-7. 
+
+
+
+58 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+formly throughout the range  a;:  1 ; it is therefore, by § 3"32, a continuous 
+function of x throughout the range, and so lim f x)=f l), which is the 
+
+a;-*l-0 
+
+theorem stated. 
+
+3'72. Abel's theorem* on multiplication of series. 
+
+This is a modification of the theorem of § 2"53 for absolutely convergent 
+series. 
+
+Let Cn = ttohn +  i \& \ i + . . . + an  0 • 
+
+Then the convergence of "  an, S bn and 2 c  is a sufficient condition that 
+
+M=0 n=0 w=0 
+
+ 00 \ / 00 \ 00 
+
+For, let , 
+
+ (a;)= 2 an   B(x)= 2 6na ", C(a.')-= i CnX''. 
+n=0 n=0 M=0 
+
+Then the series for A (x), B x), C(x) are absolutely convergent when 
+I   I < 1, (§ 2-6) ; and consequently, by § 2-53, 
+
+A(x)B(x)=C x) 
+when <  < 1 ; therefore, by § 2-2 example 2, 
+
+  lim A x)]  lim B(x)  =   lim C(x)\ 
+
+a; .l-0 a;- -l-0 x -l-O 
+
+provided that these three limits exist; but, by § 3-71, these three limits are 
+
+00 00 30 
+
+2 a , 'Z bn, % Cn', and the theorem is proved. 
+
+n=0 w = w=0 
+
+3'73. Power series which vanish identically. 
+
+If a convergent poiver seynes vanishes for all values of z such that \ z\  r- , 
+where r  > 0, then all the coefficients in the power series vanish. 
+
+For, if not, let a  be the first coefficient which does not vanish. 
+
+Then am +  '7/t+i  +  m+2' "+ ... vanishes for all values of z (zero excepted) 
+and converges absolutely when \ z\ \  r<r ; hence, if s = a +i + a,n+2Z + . . ., we 
+have 
+
+00 
+
+I S I   Z, I (ljn-|-7i I T , 
+>j = l 
+
+and so we can findf a positive number S r such that, whenever |   |   S, 
+
+I , 2 \ L I 1 ' I 
+
+I ( m+i   + ( f"m+2  + • • • 1 2'  '" I ' 
+
+and then | a  + s |   |  m | - ! •' ' >   i a.m\, and so   a,  + s =f when \ z \ < S. 
+
+* Journal filr Math. i. (1826), pp. ;:ili-339, Theorem vi. This is Abel's original proof. In 
+some text-books a more elaborate proof, by the use of Cesaro's sums (§ 8-43), is given. 
+
+
+
+372,373] CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE 59 
+
+We have therefore arrived at a contradiction by supposing that some 
+coefficient does not vanish. Therefore all the coefficients vanish. 
+
+Corollary 1. "We may 'equate corresponding coefficients' in two power series whose 
+sums are equal throughout the region 1  |<S, where 8>0. 
+
+Corollary 2. We may also equate coefficients in two power series which are proved 
+equal only when z is real. 
+
+
+
+REFERENCES. 
+
+T. J. 1'a. Bromwich, Theory of Infinite Series (1908), Ch. vii. 
+
+E. GouRSAT, Cours d'Analyse (Paris, 1910, 1911), Chs. i, xiv. 
+
+C J. DE LA Vall e Poussin (Louvain and Paris, 1914), Cours d  Analyse Infinitesimale, 
+Introduction and Ch. viii. 
+
+G. H. Hardy, A course of Pure Mathematics (1914), Ch. v. 
+
+VV. F. Osgood, Lehrbiich der Funktionentheorie (Leipzig, 1912), Chs. ii, iii. 
+
+G. N. Watson, Complex Integration and Cauchy's Theorem (Camb. Math. Tracts, 
+No. 15), (1914), Chs. I, II. 
+
+
+
+Miscellaneous Examples. 
+
+1. Shew that the series 
+
+
+
+ =l(l-2 )(l-2  l) 
+
+is equal to ,-, —. when 1 2 I < 1 and is equal to ,, -, when 1 2 1 > 1. 
+
+  zy   z  z)- 
+
+Is this fact connected with the theory of uniform convergence ? 
+
+2. Shew that the series 
+
+2sini + 4sinl + ... + 2"sin  + ... 
+
+converges absolutely for all values of z  z = excepted), but does not converge uniformly 
+near 2=0. 
+
+3. If Un  x)=-2 n-\ f .re-'"-''' ' +  n xe''' '''', 
+
+shew that 2 ?<   x) does not converge uniformly near x=0. (Math. Trip., 1907.) 
+
+n = \ 
+
+4. Shew that the series —pr j- + —r —... is convergent, but that its square (formed 
+
+by Abel's rule) 
+
+T  2+1,73 + 2; U'4' vW - 
+
+is divergent. 
+
+5. If the convergent series 5=— — — +—-—+... (r>0) be multiplied by itsel, 
+
+the teiTus of the product being arranged as in Abel's result, shew that the resulting series 
+diverges if r  | but converges to the sum s  \ i r>.  (Cauchy and Cajori.) 
+
+
+
+60 THE PROCESSES OF ANALYSIS [CHAP. Ill 
+
+6. If the two conditionally convergent series 
+
+2   -   and 2     
+
+
+
+n=i W   =i n' 
+
+where r and s lie between and 1, be multiplied together, and the product an-anged as in 
+Abel's result, shew that the necessary and sufficient condition for the convergence of the 
+resulting series is r + s >1. (Cajori.) 
+
+7. Shew that if the series 1 - 3 + 5 - t + • • • 
+
+be multiplied by itself any number of times, the terms of the product being arranged as 
+in Abel's result, the resulting series converges. (Cajori.) 
+
+8. Shew that the qth. power of the series 
+
+ ! sin d+a  sin 2  + ... +a,i sin n6 + ... 
+is convergent whenever 5- (1 - r)< 1, r being the greatest number satisfying the relation 
+
+for all values of n. 
+
+9. Shew that if 6 is not equal to or a multiple of 2n, and if %0) Ui, u , ...he a 
+sequence such that u - O steadily, then the series 2i/  cos  nd + a) is convergent. 
+
+Shew also that, if the limit of t<  is not zero, but ?i  is still monotonic, the sum of the 
+
+S 
+
+series is oscillatory if - is rational, but that, if - is irrational, the sum may have any value 
+
+TT TT 
+
+between certain bounds whose difference is a cosec  6, where a= lim u - 
+
+(Math. Trip., 1896.) 
+

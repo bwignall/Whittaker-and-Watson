@@ -1,0 +1,2289 @@
+\chapter{The Expansion of Functions in Infinite Series} 
+
+7"1. A formula due to Darhoux* . 
+
+Let f z) be analytic at all points of the straight line joining a to z, and 
+let (   t) be any polynomial of degree n in t. 
+Then if     1, we have by differentiation 
+
+2 (\ )m (2 \  rt)'  (  ( -" ) ( ) /' ' ' (a +   (2 - a)) 
+
+dt ,n = l . " 
+
+= - z-a) (f)"'> (t)/' (a + t(z- a)) + (-)   z -  )"+' </> (0/"'" "'  a + t z- a)). 
+Noting that < "" (t) is constant = </>'"' (0), and integrating between the 
+limits and 1 of t, we get 
+
+< ' )(0) /( ) -/( )] 
+
+= t (-)' -n2- r < "'""''(i)/"'"( ) -</>'"""'' (0)/ <' '( )  
+
++ (-)" (z - a)"+' I </) (0/*" " (  +   (  - a)) c , 
+
+which is the formula in question. 
+
+Taylor's series may be obtained as a special case of this by writing 
+4> t) = (t— 1 )" and making  — >ao . 
+
+Example. By sub.stitutiug 2?i for n in the formula of Darboux, aud taking (  (0 = t  t— 1)", 
+obtain the expansion (supposed convergent) 
+
+f z)-f a)= l  -  ''~' -   1"  /(") (.) + (- ) -!/('-) (a) , 
+
+and tind the expression for the remainder after n terms in this series. 
+
+7'2. The Bej'noidlian number's and the Bernoullian polynomials. 
+
+The function   z cot   z is analytic when \ z\ <  27r, and, since it is an even 
+function of z, it can be expanded into a Maclaurin series, thus 
+
+
+
+1 ,1 T r> Z' p 2-'      
+
+-zcot  j =1 - B,   ~ B.~- B,- - 
+
+
+
+2! -4! '61 
+then Bn is called the /ith Bernoullian numbevf. It is found that J 
+
+-Si = g ,  2 = 30 >  3 = 42 '   = 30 ' - 5 = 6g , • • • • 
+
+* Journal de Math. (3), ii. (1876), p. 271. 
+
+t These numbers were introduced by Jakob BernouUi in bis Ars Conjectandi, p. 97 (published 
+posthumously, 1713). 
+
+X Tables of the first sixty-two Bernoullian numbers have been given by Adams, Brit. A.is. 
+ReiJorts, 1877. 
+
+
+
+126 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+These numbers can be expressed as definite integi'als as follows : 
+
+We have, by example 2 (p. 122) of Chapter VI, 
+
+l" "  sin pxdx 1 i , . 
+
+J; -. = -   +   cot tp 
+
+
+
+( 
+
+
+
+Since 
+
+
+
+a.'" sin  px- - mT\ 
+
+dx 
+
+e'  - 1 
+
+
+
+converges uniformly (by de la Vallee Poussin's tegt) near jo = we may, by 
+§ 444 corollary, differentiate both sides of this equation any number of 
+times and then put p = 0\ doing so and writing 2t for x, we obtain 
+
+
+
+f"'*-i dt 
+
+
+
+
+
+
+A proof of this result, depending on contour integration, is given by Carda, Monatshefte 
+fur Math, v.nd Phys. v. (1894), pp. 321-4. 
+
+Example. Shew that 
+
+"~7! 2,i— 1) jp sinh.r     
+
+e * — 1 . 
+
+Now consider the function t —  — ~ , which may be expanded mto a 
+
+Maclaurin series in powers of t valid when |   j < lir. 
+
+The Bernoullian polynomial* of order v is defined to be the coefficient of 
+
+
+
+in this expansion. It is denoted by <   (z), so that 
+
+t , - V — -i , 
+
+
+
+ot\ l 
+
+
+
+n = l 
+
+
+
+This polynomial possesses several important properties. Writing z+1 
+for z in the preceding equation and subtracting, we find that 
+
+te '= i .[,  (  + l)-0,( )  ,. 
+On equating coefficients of t" on both sides of this equation we obtain 
+
+which is a difference-equation satisfied by the function (pn (z)- 
+
+* The name was given by Raabe, Journal filr Math. xlii. (1851), p. 348. 
+
+
+
+7 '21] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 127 
+
+An explicit expression for the Bernoullian polynomials can be obtained 
+as follows. We have 
+
+t t t t   t Bjt- B t* 
+
+Hence 
+
+From this, by equating coefficients of P (§ 3'73), we have 
+
+</)   z) = z''-\ nz''-' + nG,B, z' -- - nC,B,z -' + nCeB,z"-' -..., 
+
+the last term being that in z or z- and ,162, n( \, • • being the binomial 
+coefficients ; this is the Maclaurin series for the nth Bernoullian polynomial. 
+
+When z is an integer, it may be seen from the difference-equation that 
+
+ /  (0)/ =l -' + 2"-' + ...+(2-l)"--. 
+The Maclaurin series for the expression on the right was given by Bernoulli. 
+Example. Shew that, when n>\, 
+
+7"21. The Euler-Maclaurin expansion. 
+
+In the formula of Darboux (§ 7'1) write </>n(0   ' 4'  )> where (f>n t) is the 
+?ith Bernoullian polynomial. 
+
+Differentiating the equation 
+
+n — k times, we have 
+
+</)n'"  *- ' (  + 1) - </>u'""*'  t) = n  n - 1 ) . . . kt''-\ 
+Putting   = in this, we have (  '"-*' (1) = 0 "'"*' (0). 
+Now, from the Maclaurin series for  ,1 (z), we have if k > 
+
+< n<"- *- ' (0) = 0, </),<"- ) (0) =   (-)'-'B,, 
+
+ , (n-i)(0) = -l.n:, < ,< ' (0) = ; !. 
+
+Substituting these values of  n*"~*' (1) and  ,i'"~** (0) in Darboux's result, 
+we obtain the Euler-Maclaurin sum formula* , 
+
+* A history of the formula is given by Barnes, Proc. London Math. Soc. (2), iii. (1905), p. 253. 
+It was discovered by Euler (1732), but was not published at the time. Euler communicated 
+it (June 9, 1730) to Stirling who replied (April 16, 1738) that it included his own theorem (see 
+§ 1233) as a particular case, and also that the more general theorem had been discovered by 
+Maclaurin ; and Euler, in a lengthy reply, waived his claims to priority. The theorem was 
+published by Euler, Comm. Acad. Imp. Petrop. vi. (1732), [Published 1738], pp. 68-97, and by 
+Maclaurin in 1742, Treatise on Fluxions, p. 672. For information concerning the correspondence 
+between Euler and Stirling, we are indebted to Mr C. Tweedie. 
+
+
+
+128 THE PROCESSES OF ANALYSIS [cHAP. VII 
+
+
+
+(z - a)f (a)=f(z) -f(a) -    /' (z) -f  a)] 
+
+tu=\   ni)i 
+
+(z — dV* "*"' i  
+~ (271)! " Jo ' '''  )/'" " [a +  z- a) t] dt. 
+
+In certain cases the last term tends to zero as n—  oo , and we can thus 
+obtain an infinite series ior f  z) — f  a). 
+
+If we write w for z — a and F a;) for/' (x), the last formula becomes 
+" F a;) dx = l(o  F a) + F a + o))] 
+
+
+
+f 
+
+J a 
+
+
+
+2 
+
++ i 
+
+
+
+
+
+
+
+
+
+Writing a + (o, a + 2co, ...   + (r — 1) co for a in this result and adding up, 
+we get 
+
+r "  F x) dx=oj i  F a) + F a + w) + F a- 2co)+ ... \ F(u + rco)i 
+
+m-l \ \  in)\ 
+
+where E  = -—- < , (t) \ X F'-">  a + mco + wt) \ dt. 
+
+This last formula is of the utmost importance in connexion with the 
+numerical evaluation of definite integrals. It is valid if  (a;) is analytic at 
+all points of the straight line joining a to a + rco. 
+
+Example 1. Iif z) be an odd function of z, shew that 
+
+Example 2. Shew, by integrating by parts, that the remainder after n terms of the 
+expansion of - s cot - 2 may be written in the form 
+
+( \  )n + 1 22ft + 1 fl 
+/o"\ I   / 02 i (0 COS (zO < - 
+
+(2 ) ! sm2 /o   
+
+(Math. Trip. 1904.) 
+
+7*3. Burmanns theoi em*. 
+
+We shall next consider several theorems which have for their object the 
+expansion of one function in powers of another function. 
+
+* Memoires de VInstitut, ii. (1799), p. 13. See also Dixon, Proc. London Math. Soc. xxxiv. 
+(1902), pp. 151-153. 
+
+
+
+7-3] 
+
+
+
+THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 
+
+
+
+129 
+
+
+
+Let (f) (z) be a function of z which is analytic in a closed region S of which 
+a is an interior point ; and let 
+
+Suppose also that cf)' (a) 4= 0. Then Taylor's theorem furnishes the 
+expansion 
+
+<l, z)-b = cf ' a)(z-a)+' (z-ay + ..., 
+and if it is legitimate to revert this series we obtain 
+
+which expresses z as an analytic function of the variable [(j> z)—b], for 
+sufficiently small values of |  — a . If then /(2:) be analytic near z = a, it 
+follows that/(2 ) is an analytic function of [<  (z) — b] when \ z — a\ is sufficiently 
+small, and so there will be an expansion of the form 
+
+f z) =/ a) + a,  </) (z) - 6  + 1   0 (z) -  -J  + |   </>  z)-bY+.... 
+
+The actual coefficients in the expansion are given by the following 
+theorem, which is generally known as Bilrmanns theorem. 
+
+Let " (z) be afunctiGn of z defined by the equation • 
+
+z - a 
+
+tlien an analytic function f z) can, in a certain domain of values of z, be 
+expanded in the form 
+
+f(z) =f(a) + 'X\ i % " 1  [/' (a)   t (a)l-] + R>., 
+
+
+
+where 
+
+
+
+Rn = 
+
+
+
+1 
+
+27ri 
+
+
+
+m \ 
+'4> z)-b 
+
+
+
+''-' f (t) (f>' ( z) dtdz 
+<  t)-f(z) ' 
+
+
+
+l<l> t)-b\  
+
+and 7 is a contour in the t-plane, enclosing the points a and z and such that, if 
+  be any point inside it, the equation (f)(t)=: (f) ( ) has no roots on or inside the 
+contour except* a simple root t =  . 
+
+To prove this, we have 
+
+1 p f f'(t)<f>'(Odtd  
+
+
+
+f z)-f a)= f' K)d  = 
+
+
+
+27ri 
+
+
+
+a J y 
+
+
+
++ 
+
+
+
+f' t)   )dtd  
+
+cf> t)-b 
+
+
+
+-2 (0(0-6 
+
+
+
+\ m = I 0(0-6 
+
+
+
+ 0(o-6r-M (o-0(r)]j 
+
+
+
+It is assumed that such a contour can be chosen ii \ z - a\ be sufficiently small; see § 7'31. 
+W. M. A. 9 
+
+
+
+130 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+But, by § 4-3, 
+
+-cf>( )-by\ f'(t)<t>'(Odtd \  < > z)-bY-  f f' t)dt 
+
+
+
+— r 
+
+
+
+(f)  t) - 6J (l) t)-b 27ri 
+
+
+
+ m+ 1) ly 
+
+
+
+ (f) (t) - b]' +' 
+
+
+
+- 27ri(m + l) jy (t-ar  " ~(mTl)r 5   L/ ( ) It W( 1- 
+Therefore, writing m — 1 for ??i, 
+
+/ .) =/( ) + "i' '"  <!;'''"' 1  [/  ( ) It ( ))•"] 
+
+
+
+m=l 
+
+
+
++ 
+
+
+
+m ! 
+1 
+
+
+
+XO-6" 
+
+
+
+- f'(t)cf>\ Odtd  
+
+
+
+cj> t)-b] </)(0-< (r) 
+
+
+
+27ri J   , y 
+
+If the last integral tends to zero as n— cc, we may  VTite the right-hand 
+side of this equation as an infinite series. 
+
+
+
+Example 1. Prove that 
+
+
+
+where 
+
+
+
+z = a+ 2 
+
+n=l 
+
+
+
+n ! 
+
+
+
+To obtain this expausiou, write 
+
+f z)=z, cf>(z)-b =  z-a)e '- -\   r z) = e' - ', 
+in the above expression of Biirmann's theorem ; we thus have 
+
+But, putting s = a-|-<, 
+
+= (7i - 1) ! X the coefficient of i"" ' in the expansion of (i~"'C "*') 
+= (  - 1) ! X the coefficient of t--  in 2 (-)''' '' ''P  + 0" 
+
+= (n-l)!x 2   '   ' 
+
+
+
+The highest vahie of r which gives a term in the summation is /• =  -!. Arranging 
+therefore the summation in descending indices r, beginning with r — n- 1, we have 
+
+which gives the required result. 
+
+Example 2. Obtain the expansion 
+
+
+
+, . , 2 1.. 2.41 
+
+
+
+SUl''0+ .... 
+
+
+
+7 SI] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 131 
+
+Example 3. Let a line p be drawn through the origin in the  -plane, perpendicular to 
+the line which joins the origin to any point a. If z be any point on the 3-plane which is 
+on the same side of the line p as the point a is, shew that 
+
+logs = loga + 2 2   I 
+
+7'31. Teixeira's extended form of Biirmanns theorem. 
+
+In the last section we have not investigated closely the conditions of 
+convergence of Bilrmann's series, for the reason that a much more general 
+form of the theorem will next be stated ; this generalisation bears the same 
+relation to the theorem just given that Laurent's theorem bears to Taylor's 
+theorem : viz., in the last paragraph we were concerned only with the 
+expansion of a function in 'positive powers of smother function, whereas we 
+shall now discuss the expansion of a function in positive and negative powers 
+of the second function. 
+
+The general statement of the theorem is due to Teixeira*, whose exposi- 
+tion we shall follow in this section. 
+
+Suppose (i) i\ in,t f z) is a function of z analytic in a ring-shaped region A, 
+bounded by an outer curve G and an inner curve c ; (ii) that 6  z) is a function 
+analytic on and inside G, and has only one zero a within this contour, the zero 
+being a simple one ; (iii) that a; is a given point within A ; (iv) that for all 
+points   of C we have 
+
+and for all points z oi c we have 
+
+\ e x)\ >\ e z).  
+
+T h e equation e(z)-d cv)=0 
+
+has, in this case, a single root z = x in the interior of G, as is seen from the 
+equation f 
+
+j\ r e'(z)dz 1 rr  ).  ... f e'( ) . , 
+
+1 r d'(z)dz 
+
+
+
+27riJc 9 z) ' 
+
+of which the left-hand and right-hand members represent respectively the 
+number of roots of the equation considered (§ 6 "31) and the number of the 
+roots of the equation 6  z) = contained within G. 
+
+Cauchy's theorem therefore gives 
+
+I f z)\& z)dz f f z) ' z)dz- 
+
+
+
+f -L 
+
+
+
+ cd(z)-d(x) Jc 
+
+
+
+e z)-d x) Jo e z)-d x)\  " 
+
+* Journal fiir Math, cxxii. (1900), pp. 97-123. 
+
+t The expansion is justified by § 4-7, since S -! —   j- converges uniformly when z is on C. 
+
+H=l . o[z)) 
+
+
+
+9—2 
+
+
+
+132 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+The integrals in this formula can be expanded, as in Laurent's theorem, 
+in powers of 6 (x), by the formulae 
+
+
+
+i f z)d' z)dz \  - r f z)e  
+
+]cd z)-d x)  ro    ic [d z)\ 
+
+L 
+
+
+
+n+i 
+
+
+
+We thus have the formula 
+Avhere 
+
+Integrating by j arts, we get, if rt=t=0, 
+
+This gives a development of f x) in positive and negative powers of 
+6 a;), valid for all points a; within the ring-shaped space A. 
+
+If the zeros and poles off(z) and d z) inside C are known, A  and 5,i can 
+be evaluated by § 5'22 or by § 61. 
+
+Example 1. Shew that, if j a' | < 1, then 
+
+\ 1 / 2  \ 1 / 2.y Y 1.3 / 2x y 
+ '~2 V1+W' 2T4 U+W " 2.4.6 \ l+xy  •••' 
+
+Shew that, when j .r | > 1, the second member represents .r~i. 
+
+Example 2. If S" denote the sum of all combinations of the numbers 
+
+£2, 42, G ... 2n-2)% 
+taken ni at a time, shew that 
+
+. (1) / \ n C<('0 
+
+
+
+2 sin2 ,ito (27i + 2j! \ 2?i + 3 2?H-1 ""'  3 /  
+
+
+
+the expansion being valid for all values of z represented by points within the oval whose 
+equation is j sin 2 j = l and which contains the point 2 = 0. (Teixeira.) 
+
+7'32. Lagrange's theorem. 
+
+Suppose now that the function f z) of § 7 '31 is analytic at all points in 
+the interior of C, and let B  x) = (x — a) 6   x). Then 6   x) is analytic and 
+not zero on or inside G and the contour c can be dispensed with ; therefore 
+the formulae which give An and Bn now become, by § 5'22 and § 01, 
+
+\ i\ r f' z)dz  1 c -  |/>)| 
+
+liTi J c di z) z — a -   " 
+
+Bn=0. 
+
+
+
+7*32] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 133 
+
+The theorem of the last section accordingly takes the following form, if 
+we write di (z) = l/<  (z) : 
+
+Let f(z) and (f) (z) he functions of z analytic on and inside a contour G 
+surrounding a point a, and let t be such that the inequality 
+
+\ t  z)\ <  \ z — a\ 
+is satisfied at all points z on the perimeter of G ; tJien the equation 
+
+ =a + t<f> a 
+regarded as an equation in  , has one root in the interior of G ; and further 
+any function of   analytic on and inside G can he expanded as a power series 
+in t hy the formula 
+
+This result was published by Lagrange* in 1770. 
+
+Example 1. Within the contour surrounding a defined by the inequality \ z (z — a) \ a\, 
+where | a | <   | a | , the equation 
+
+z — a — = 
+
+z 
+
+has one root f, the expansion of which is given by Lagrange's theorem in the form 
+
+C =  + 2  -4 ,, , J , a". 
+
+Now, from the elementary theory of quadratic equations, we know that the equation 
+
+z — a — = 
+
+z 
+
+has two roots, namely 9]l + A/(l + - )f  i  % l  ~ /. /(  "  ' /l '  > d our expansion 
+
+represents the former \ of these only — an example of the need for care in the discussion of 
+these series. 
+
+Example 2. If y be that one of the roots of the equation 
+which tends to 1 when z~ 0, shew that 
+
+
+
+ (n + 3) 2 , w(n+4),(?i + 5) 3 
+
+
+
+n(n + 5) n + 6) n + 7) , , ?i (;i + 6) (m + 7) (n + 8) (h + 9) , 
+ ] — j z*+ —. z +.. 
+
+
+
+2/ =l+nz+  , ' z + g, 
+
+'n + 6) n- 
+
+4 ! " ' 5 ! 
+
+so long as j   | < j. 
+
+Example 3. If x be that one of the roots of the equation 
+
+x=l +yx"' 
+
+which tends to 1 when 3/- -0, shew that 
+
+2a -1 , (3a -1) (3a -2)   . 
+log.  =3/ + — 2- 2/2 +    '3/'+-> 
+
+the expansion being vahd so long as 
+
+I y j < 1 (a - l) -i  -  I . (McClintock.) 
+
+* Mem. de VAcad. de Berlin, xxiv.; Oeuvres, ii. p. 25. 
+t The latter is outside the given contour. 
+
+
+
+V 
+
+
+
+134 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+  7'4. The expansion of a class of functions in rational fractions*' . 
+
+  Consider a function f z), whose only singularities in the finite part 
+
+of the plane are simple poles a   , a.,, fts, . . ., where | aj |   | fig I =\$ I Os I   •   • : let 
+bi, l>2, bs, ••• be the residues at these poles, and let it be possible to choose a 
+sequence of circles C i (the radius of C i being R,n) vvith centre at 0, not 
+passing through any poles, such that \ f(z)\ is bounded on C j. (The function 
+cosec z may be cited as an example of the class of functions considered, and 
+we take Rm =  m +  ) tt.) Suppose further that Rm— oc as m— >oo and that 
+the upper boundf of \ f(z) \ on Cm is itself bounded as| 7n — >oo ; so that, for all 
+points on the circle C , \ f z)\ <  M, where M is independent of m. 
+
+Then, if a; be not a pole oi f z), since the only poles of the integrand are 
+the poles off z) and the point z = x, we have, by § 6'1, 
+
+1 r f(z) , / / X V  r 
+
+where the summation extends over all poles in the interior of C, . 
+
+But — f f( dz = ~! fi± ' + JL[  fi dz 
+2-771] c z-x  TriJcm   27riJ c z(z-x) 
+
+  '' 7a,. 2'jri]c z z-x)' 
+
+if we suppose the function f z) to be analytic at the origin. 
+
+r f(z)dz 
+Now as w— > 00 , ' - -  — r is (Rm~ ), and so tends to zero as m tends 
+J Cm   (  - *•) 
+to infinity. 
+
+Therefore, making m—>ao, we have 
+
+=/(.) -/(O) + I 6  ( ~ - i) - Urn  . f =f  , 
+
+-  n=l W-iC a J m oo TTl JCmZ(z-x) 
+
+i.e. f(x) =/(0) + i bn  -  + -1 , 
+
+which is an expansion of f(x) in rational fractions of x ; and the summation 
+extends over all the poles of f x). 
+
+If a |<| n + i| this series converges uniformly throughout the region given by 
+I A' I   a, where a is any constant (except near the points   ). For if R,  be the radius 
+of the circle which encloses the points | ai'\, ... | a  |, the modulus of the remainder of the 
+terms of the series after the first ?i is 
+
+I •*' /" /   )   I • '* 
+\ 2iri J Cm   (z —  ') \ Rm-(  
+by § 4'62 ; and, given t, we can choose n independent of a; such that Maj Rm — CL) < e. 
+
+* Mittag-Leffler, Acta Soc. Scient. Fennicae, xi. (1880), pp. 273-293. See also Acta Math. iv. 
+(1884), pp. 1-79. 
+
+t Which is a function of m. 
+
+X Of course 2?  need not (and frequently must not) tend to infinity continuously; e.g. in the 
+example taken i?OT = ("  + i)  > where m assumes only integer values. 
+
+
+
+7 '4] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 135 
+
+The convergence is obviously still uniform even if !    I < |    + 1 1 provided the terms of 
+the series are grouped so as to combine the terms corresponding to poles of equal moduli. 
+
+If, instead of the condition \ f z) \ < M, we have the condition | z~'>f z) | < M, where M is 
+independent of ra when z is on (7 ,, and   is a positive integer, then we should have to 
+
+
+
+expand / —  — by writnig 
+
+
+
+1 I .V XP" 
+
+= - + -, + ...+- 
+
+
+
+z-x z  z '"  zJ'+ iz-xy 
+
+and should obtain a similar but somewhat more complicated expansion. 
+
+Example 1. Prove that 
+
+cosec2=- + 2(-)"( H ), 
+
+z \ \  ~ "   1 '  / 
+
+the summation extending to all positive and negative values of n. 
+
+To obtain this result, let cosec z -- = f z). The singularities of this function are at the 
+
+z •'   ' 
+
+points z=nir, where Ji is any positive or negative integer. 
+
+The residue of f z) at the singularity rnr is therefore (-)", and the reader will easily 
+see that \ f z) | is bounded on the circle \ z\ =  n +  ) ir as  - -x . 
+
+Applying now the general theorem 
+
+/W=/(0)+.o,.[ -L.+l], 
+
+where c  is the residue at the singularity a  , we have 
+
+
+
+f( )-m+ (-r 7  + i]- 
+
+
+
+But /(0)= lim 14 - =0. 
+
+Therefore cosec s = - + 2 ( - )  + — , 
+
+z \ \  z—mr nnj 
+
+which is the required result. 
+
+Example 2. If < a < 1 , shew that 
+
+e"  1  22 cos 27iair — 4n7r sin 2na7r 
+
+
+
+Example 3. Prove that 
+
+1 111 
+
+
+
+27r;j;2 (cosh  - cos .<••) 27r.t'  e' -e-'  Tr +i r*   e -e-- ""   nY+ x* 
+
+3 1 
+
+
+
+e37r\  6-3 (3 )4 + 1-  
+
+The general term of the series on the right is 
+
+(grTT \  e-rTT) 1( )4 + 1 .4  ' 
+
+which is the residue at each of the four singularities r, -r, ri, - ri of the function 
+
+
+
+(ttV+j ) (e'  - e-'"2) sin nz 
+
+
+
+136 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+The singularities of this latter function which are not of the type r, — r, ri, — 7-i are 
+at the five points 
+
+ ±l±i)a: 
+
+2 
+
+At 2 = the residue is — j : 
+
+at each of the four points 2= ~ , the residue is 
+
+ 27r 2 (cos  . \  cosh .r)  ~ '. 
+Therefore 
+
+  (-l)*-?- 12 2 
+
+
+
+ j grn- \  g-rn- (;. )4 +  \  4   jr\  .2 (cOsh .V - COS  ) 
+
+
+
+1 ,. /" nzdz 
+
+hm 
+
+
+
+Stti ,;J  J c (7rV + J *) (e'  - e-' ) sin tt  ' 
+
+where Cis the circle whose radius is   + -, (?i an integer), and whose centre is the origin. 
+
+But, at points on C, this integrand is 0 \ z \~ ) ; the limit of the integi'al round C is there- 
+fore zero. 
+
+From the last equation the required result is now obvious. 
+
+Ea:ample 4. Prove that sec.r=4. (  - -A  +  J- - .. j . 
+
+Example 5. Prove that cosech x = — 2.v ( -  —   - -—5 — <, + tt-s —   — ...). 
+
+Example 6. Prove that seeh .v=47r ( —. — --  —  r-  — —5 + — r—   — - ,-...). 
+  Vtt +4.t-2 Q-n-  + ix  257r2 + 4A-2 / 
+
+Example 7. Prove that coth x = - + 2x( -x 5 +  -   + \  -  5 + .••). 
+
+Example 8. Prove that 2 2 -. — 5  , ,   — rirr = -7 coth tto coth nb. 
+
+ m  + a ) [n  + 0 ) ao 
+
+
+
+m=-x )! = -cc 
+
+
+
+(Math. Trip. 1899.) 
+7"5. jTAe expansion of a class of functions as infinite products. 
+
+The theorem of the last article can be applied to the expansion of a certain 
+class of functions as infinite products. 
+
+For let f z) be a function which has simple zeros at the points* 
+Oi, tts.  3, •••> where lim | an I is infinite ; and let/(2') be analytic for all values 
+
+of z. 
+
+f'iz) 
+Then /' (z) is analytic for all values of z (§ 5*22), and so "   ,. , can have 
+
+singularities only at the points a , a , a , — 
+
+Consequently, by Taylor's theorem, 
+
+f z) = z- ar)f' ( .) +  - V" M + • • • 
+
+and /'  z) = /'  a.r) +  z - a,) /" (a,) + . . . . 
+
+* These being the only zeros oif(z) ; and a 4=0. 
+
+/ 
+/ 
+
+
+
+7'5, V'G] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 137 
+
+It follows immediately that at each of the points a , the function . 
+has a simple pole, with residue + 1. 
+
+If then we can find a sequence of circles C\ n of the nature described in 
+
+f (z) 
+% 7"4, such that  ; is bounded on C  as ni—>cc, it follows, from the 
+
+expansion given in § 7 '4, that 
+
+f( )\ f'(0)   I [1,1 
+
+
+
+f z) f 0) n = \ [Z - an Clr. 
+
+Since this series converges uniformly when the terms are suitably grouped 
+(§ 7*4), we may integrate term-by-term (§ 4-7). Doing so, and taking the 
+exponential of each side, we get 
+
+/( ) = ce/( ) " n (1 e 4, 
+
+where c is independent of z. 
+
+Putting z = 0, we see that /(O) = c, and thus the general result becomes 
+
+This furnishes the expansion, in the form of an infinite product, of any 
+function /( ) which fulfils the conditions stated. 
+
+Example 1. Consider the function f z) = , which has simple zeros at the points 
+
+rrr, where r is any positive or negative integer. 
+
+In this case we have / (0) = 1 , /' (0) = 0, 
+
+and so the theorem gives immediately 
+sins 
+
+
+
+
+
+
+1-1 ]e  '' 
+
+Z n-l IV mr J I IV  iTT 
+
+
+
+for it is easily seen that the condition concerning the behaviour of -fFS   '   1"*"°°  '  
+fulfilled. 
+
+Example 2. Prove that 
+
+H )  -G.- J  H r\ H )) H )) 
+
+\  cosh k — cos X 
+
+1 — cos X 
+
+(Trinity, 1899.) 
+
+7"6. The factor theorem of W eierstrass* . 
+
+The theorem of § 7"5 is very similar to a more general theorem in which 
+the character of the function f z), as j   j— >x , is not so narrowly restricted, 
+
+* Berliner Alh. (1876), pp. 11-60 ; Math. Werke, 11. (1895), pp. 77-124. 
+
+
+
+138 
+
+
+
+THE PROCESSES OF ANALYSIS 
+
+
+
+[CHLAP. VII 
+
+
+
+Let f z) be a function of z with no essential singularities (except at ' the 
+point infinity'); and let the zeros and pol6s oi f z) be at aj, ag, as, ....where 
+
+< I ai I   1 a.2 ]   i  3 1 Let the zero* at    be of (integer) order ?? .ft. 
+
+If the number of zeros and poles is unlimited, it is necessary that 
+ja,i — >X), as ?i— >oo; for, if not, the points a  would have a limit point i*, 
+which would be an essential singularity oi f z). 
+
+We proceed to shew first of all that it is possible to find polynomials 
+gn z) such that 
+
+
+
+00 
+
+n 
+
+
+'h-~\ 
+
+
+eoAz) 
+
+
+nin 
+
+
+n=\ 
+
+
+\ \  aj 
+
+
+
+
+' . 
+
+
+
+converges for all J finite values of z. 
+
+Let K be any constant, and let \ z\ < K; then, since |a l— >oo, we can 
+find N such that, when n> N, \ cin \ >  K. 
+
+The first N factors of the product do not affect its convergence :j: ; consider 
+any value of ?i greater than N, and let 
+
+
+
+
+
+
+1 /   
+
+
+
++ ... + 
+
+
+
+kn — 1 \ ttn 
+
+
+
+An-1 
+
+
+
+Then 
+
+
+
+zy 
+
+
+
+- t - (— ) +gn( )\ = 
+
+
+
+= 
+
+
+1 1 fzy 
+
+
+< 
+
+
+
+
+
+<2\ \ {Kan-')''"\, 
+
+
+
+since U a,ri \ < k 
+
+
+
+Hence 
+
+
+
+z \ ) '**  
+
+1 e5 (-) i = e" (   
+
+aJ J 
+
+
+
+where 
+
+
+
+I Un ( ) I   2 ] nin (Kan- fn |. 
+
+Now Mn and a  are given, but k  is at our disposal ; since Kan'  <  , we 
+choose kn to be the smallest number such that 2 | vin  Kan~' y"' 1 < bn, where 
+
+00 
+
+S bn is any convergent series§ of positive terms. 
+
+
+
+Hence 
+
+
+
+n 
+
+n = N+l 
+
+
+
+ ( l - — le H' ) I'"'" 
+
+
+
+
+
+
+where \ Un z)\ <  bn', and therefore, since b  is independent of z, the product 
+converges absolutely and uniformly when 1   j < K, except near the points a . 
+
+
+
+* We here regard a pole as being a zero of negative order. 
+
+t From the two-dimensional analogue of § 2-21. 
+
+X Provided that z is not at one of the points    for which m  is negative. 
+
+§ E.g. we might take 6 =2-". 
+
+
+
+77] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 139 
+
+Now let F(2)= U  ( l-—) eOn i ) 
+
+Then, ii f z)   F  z) = Gi z), Gi z) is an integral function (§ 5*64) of z 
+and has no zeros. 
+
+It follows that p ,   -J- G   z) is analytic for all finite values of z ; and 
+
+\ Ti \ Z J ctz 
+
+00 
+
+so, by Taylor's theorem, this function can be expressed as a series S nbnZ ''~  
+converging everywhere ; integrating, it follows that 
+
+where G z)= S 6,1 " and c is a constant ; this series converges everywhere, 
+
+M = l 
+
+and so G (z) is an integral function. 
+Therefore, finally, 
+
+/( )=/(0)e '-) n r|(i\ f),.n..) 
+
+where G (z) is some integral function such that G (0) = 0. 
+
+[Note. The presence of the arbitrary element G (2) which occurs in this formula for 
+f(z) is due to the lack of conditions as to the behaviour of /(s) as ' s |-9-oo .] 
+Corollary. If wi =l, it is sufficient to take k  — n, by § 2"36. 
+
+7'7. The expansion of a class of periodic functions in a series of 
+cotangents. 
+
+Let f z) be a periodic function of z, analytic except at a certain number 
+of simple poles; for convenience, let tt be the period of f z) so that 
+f z)=f(z + 'rr). 
+
+Let z = x + iy and let f z)—>l uniformly with respect to x as y—>+ x , 
+when O x tt; similarly let/( )—   uniformly as  — > — x . 
+
+Let the poles of f(z) in the strip < x  tt he nt a , a. , ... an', and let the 
+residues at them be Ci, Cj, ... c,i. 
+
+Further, let ABGD be a rectangle whose corners are* —ip, ir — ip, 
+IT + ip and ip in order. 
+
+Consider   — . I f t) cot  t - z) dt 
+
+ZlTl J 
+
+taken round this rectangle ; the residue of the integrand at a,, is c,. cot (a,. — z), 
+and the residue at z is f z). 
+
+Also the integrals along DA and CB cancel on account of the periodicity 
+of the integrand; and as p—>y:>, the integrand on AB tends uniformly to I'i, 
+while as p'—>oo the integrand on CD tends uniformly to —li; therefore 
+
+Ul'-l)=f z)+i c, cot (a, -4 
+
+r=l 
+
+* If any of the poles are on x = 7r, shift the rectangle slightly to the right; p, p' are to be 
+taken so large that ai, a-i, ... a  are inside the rectangle. 
+
+
+
+140 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+That is to say, we have the expansion 
+
+f z) = \  V -0+1 c, cot  z - ar). 
+
+  r=l 
+
+Example 1. 
+
+n , 
+
+cot  x - ftj) cot  x — a.,) . . . cot  x — aj = 2 cot (a  — ai) . . .*. . . cot (a  — a ) cot (a; — a ) + ( - )  , 
+
+r=l 
+n 
+
+or =2 cot (c?  — ai)...*...cot ( ,. -a )cot (.V — a,.), 
+
+r=l 
+
+according as n is even or odd ; the * means that the factor cot (a  — a,) is omitted. 
+Example 2. Prove that 
+
+sin  x — bi) sin  x -h.  ... sin  x — 6 ) \  sin ( ! — 6i) . . . sin (ai — 6 ) 
+
+
+
+sin  x — a-i) sin (0  — 02) ... sin (a' — a ) sin (aj —  2) ••• sin ( ! — a ) 
+
+sin (q.2 -  1) • • • sin  a  - \& ) 
+sin (a2 -  i) ••• sin (a2 - a ) 
+
+
+
+cot (a;-ai) 
+cot (.r - 02) 
+
+
+
++ 
+
+
+
++ cos (ai + a2 + ...+a -6i-62- ... - n)- 
+7"8. BoreVs theorem- . 
+
+Let/(2-) = S ttji " be analytic when \ z\ \  r, so that, by § -5"23, | awr** | < M, 
+
+ =o 
+
+where If is independent of n. 
+
+
+
+CtnZ" 
+
+
+
+Hence, if <  z)= S   , <  z) is an integral function, and 
+
+and similarly | </)<' '  z) \ < il/el l/''/r  
+
+Now consider f   z) =1 e~   zt) dt ; this integral is an analytic function 
+
+Jo 
+
+of z when \ z\ < r, by § 5'32. 
+
+Also, if we integrate by parts, 
+
+/  z) = -e-'(f> (zt) +z e-' 4>'  zt) dt 
+
+JO 
+
+
+
+= 2 2 
+
+ t=0 
+
+
+
+
+
+
++  "+1 e-  (f> ''+'  (zt) dt. 
+
+
+
+But lim  -< </)" > ( ) = a i ; and, when \ z\ < r, lim e"' </>'*"' (zt) = 0. 
+
+
+
+f,(z)= t a.nZ'  + Rn, 
+m=0 
+
+
+
+Therefore 
+
+t Lemons sur les series divergentes (1901), p. 94. See also the memoirs there cited. 
+
+
+
+7"8, 7'81] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 141 
+
+/•no 
+
+where \ Rn\ < \  ""  I e'K Me\ '  ' '' *  r-""-  dt 
+
+Jo 
+
+= ! zr-' I"+iif  1 - I   I r-i -i->0, as n->oD. 
+Consequently, when \ 2\ <  r, 
+
+
+
+ancZ 50 
+
+
+
+m = 
+
+f z)=\ e- 4> zt)dt, 
+
+
+
+where <  z)= 2 -  ; < (2 ) is called Borel' s function associated with S an :**. 
+
+ l =  * • M = 
+
+
+
+If *S'= 2    and (f) z)= 2 -  and if we can establish the relation S= I e~'0 ( ) o? , 
+n=0 re=0 ''  • Jo 
+
+the series <S is said (§ 8-41) to be ' summable (BY; so that the theorem just proved 
+shews that a Taylor's series representing an analytic function is summable (B). 
+
+7'81. BoreVs integral and analytic continuation. 
+
+We next obtain Borel's result that his integral represents an analytic function in 
+a more extended region than the interior of the circle \ z\ = r. 
+
+
+
+
+This extended region is obtained as follows : take the singularities a,b,c,... of f z) and 
+through each of them draw a line perpendicular to the line joining that singularity to the 
+origin. The lines so drawn will divide the plane into regions of which one is a polygon 
+with the origin inside it. 
+
+Then Borel's integral represents an analytic function (which, by § 5*5 and § 7'8, is 
+obviously that defined by f z) and its continuations) throughout the interior of this 
+polygon. The reader will observe that this is the first actual formula obtained for the 
+analytic continuation of a function, except the trivial one of § 5 '5, example. 
+
+For, take any point P with affix ( inside the polygon; then the circle on GF as 
+diameter has no singularity on or inside it*; and consequently we can draw a slightly 
+
+* The reader will see this from the figure ; for if there were such a singularity the correspond- 
+ing side of the polygon would pass between and P ; i.e. P would be outside the polygon. 
+
+
+
+142 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+larger concentric circle* € with no singularity on or inside it. Then, by § 5-4, 
+
+" 2771 J CZ"*  
+
+but 2 C -Llf  converges imiformly (§ 3-34) on C since f z) is bounded and l 2 j   8 > 0, 
+where S is independent of z ; therefore, by § 4-7, 
+
+c  (C0 = 2 - I  -\ f .z) exp  Ctz-') dz, 
+
+and so, when t is real, |   (CO i <   (0 <   where F (0 is bounded in any closed region lying 
+wholly inside the polygon and is independent of t ; and \ is the greatest value of the 
+real part of (jz on C. 
+
+If we draw the circle traced out l)y the point 2/ , we see that the real part of f/2 is 
+gi-eatest when z is at the extremity of the diameter through (, and so the value of X is 
+
+1C|. ICI + S - <1. 
+
+We can get a similar inequality for ( ' (CO and hence, by § 5-32, | e~' (CO  t is 
+
+.' 
+analytic at ( and is obviously a one-valued function of C- 
+
+This is the result stated above. 
+7"82. Expansions in series of inverse factorials. 
+
+A mode of development of functions, which, after being used by Nicole f 
+and Stirling:]: in the eighteenth century, was systematically investigated by 
+Schlomilch§ in 1863, is that of expansion in a series of inverse factorials. 
+
+To obtain such an expansion of a function analytic when \ z  r, we let 
+
+the function he f z)= X "h "", and use the formula /( ) = I ze~   t)dt, 
+ =o •'0 
+
+00 
+
+where (f> t)= S anV j n !) ; this result may be obtained in the same way as 
+
+ =o 
+that of § 7-8. Modify this by writing e"' = 1 - f , </> (0 = F ( ) ; then 
+
+Jo 
+
+Now if t = u + iv and if t be confined to the strip — 7r<w<7r, Hsa one- 
+valued function of | and F    is an analytic function of  ; and | is restricted 
+so that — TT < arg (1 — |) < w. Also the interior of the circle |   | = 1 corresponds 
+
+* The difforeuce of the radii of the circles beioR, say, 5. 
+
+t Mem de VAcad. des Sci. (Paris, 1717); see Tweedie, Proc. Edin. Math. Soc. xxxvi. (1918). 
+
+J Methodus Dijferentialis (Londou, 1730). 
+
+§ Compendium der h'dheren AnalysU. More recent investigations are due to Kluyver, Nielsen 
+and Pincherle. See Comptes liendiis, cxxxiii. (1901), cxxxiv. (1902), Annales de I'Ecole norm, 
+sup. (3), XIX., XIII., xxiii., JRendiconti del Lincei, (5), xi. (1902), and Palermo Rendiconti, xxxiv. 
+(1912). Properties of functions defined by series of inverse factorials have been studied in an 
+important memoir by Norlund, Acta Math, xxxvii. (1914), pp. 327-H87. 
+
+
+
+7 "8 2] THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 143 
+
+
+
+to the interior of the curve traced out by the point t = — log (2 cos  6) +   id, 
+(writing   = exp [i (6 + ir) ) ; and inside this curve 
+
+\ t R(t) [ R (t)Y + TT'f - R (0- 0, 
+as R ( )— >oc . 
+
+It follows that, when || 1   1, | i ( ) | < Me"" *  < M, | e*-* |, where J/j is in- 
+dependent of t ; and so F i) < M  \ (1 -  l 
+
+Now suppose that   < 1 ; then, by § 5-23, | F"*' (|) | < ifa . n\ p-'\ where 
+M2 is the upper bound of \ F z)\ on a circle with centre   and radius 
+P<l-l 
+
+Taking p = =-(1 —  ) and observing that* (1 4- ;i~ )'  < e we find that 
+
+1 n + 1 
+
+
+
+i- f+ Tlf 
+
+
+
+<M,e n + iy .111(1-  )->-'\ 
+Remembering that, by § 4*5, means lim , we have, by repeated 
+
+Jo e +O J 
+
+integrations by parts, 
+
+\  .'0 
+1 
+
+
+
+f z)  lim 
+
+
+
+''  r\ \  - y '( )d  
+
+
+
+= lim 
+
+e +O 
+
+
+
+-(i- y iD 
+
+
+
+" +1 
+
+
+
+=  0 + 
+
+
+
+h 
+
+
+
++ 
+
+
+
++ ...+ 
+
+
+
+b  
+
+
+
+where 
+
+
+
++ 1  z + l)(z + 2)      z + l)(z+2)... z + n) 
+
+= F ""  (0), 
+if the real part of   + w — 7' — n > 0, i.e. if R (z) > r ; further 
+
+
+
++ Rn, 
+
+
+
+bn = lim 
+
+
+
+l-e 
+
+
+
+
+Rn\ \   
+
+
+
+< 
+
+
+
+< 
+
+
+
+(2 + l)(z + 2)...(z + n) 
+
+M,e(n + 2y.n\ 
+
+\ \ {z+l) z + 2)...(z + n). R z-r) 
+
+M,e(7i + 2y.nl 
+
+
+
+lim f '|(l- y+ i <"+i'(| )|cZ  
+
+e O J 
+
+
+
+(r+l + B) r + 2 + 8)... r + n + 8).S' 
+where 8 = R z — r). 
+
+* (l + x-i)  increases with x; for :; >ey, when ?/<l, and so log ( :, )>'/• That is to 
+
+say, putting y-'  — l + x, — a; log (l + a;~ ) = ]og (l+a;~ ) -z >0. 
+
+
+
+144 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+
+
+Now n (i + '- le 
+
+
+
+n|(i 
+
+
+
+>•+  
+
+
+
+tends to a limit (§ 2-71) as n->oo , and so | Rn >0 if (n + 2ye  '"  ' "' tends 
+to zero ; but 
+
+1 l/m>   = log(n + l), 
+
+
+
+• +i dx 
+[/m > I 
+
+by §4-43 (II), and (n + '2y(n+ l)-'- -*0 when 8 >0; therefore K->0 as 
+n— x , and so, when R (z) > r, we have the convergent expansion 
+
+
+
+Example 1. Obtain the same expansion by using the results 
+
+
+
+[ fi =.[ dt j f t) i-uy-'- du. 
+
+
+
+Example 2. Obtain the expansion 
+
+
+
+iog(i+J)=!--"' 
+
+
+
+z z+l) z 2 + l) z + 2) ' 
+
+where  u= I t  I- t)  2-t) ... n-l-t) dt, 
+
+J 
+
+and discuss the region in which it converges. (Schlomilch.) 
+
+REFERENCES. 
+E. GouRSAT, Cours d' Analyse (Paris, 1911), Chs. xv, xvi. 
+E. BoREL, Lecons sur les series divergentes (Paris, 1901). 
+T. J. I'a. Bromwich* Theory of Infinite Series (1908), Chs. viii, x, xi. 
+0. Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874). 
+
+Miscellaneous Examples. 
+
+1. If y -x — (i> y) = 0, where is a given function of its argument, obtain the 
+expansion 
+
+/(,)-/(.) + 1 ± H wr (i  1,)7(. ), 
+
+where / denotes any analytic function of its argument, and discuss the range of its 
+validity. (Levi-Civitk, Bertd. dei Lincei, (5), xvl (1907), p. 3.) 
+
+2. Obtain (from the formula of Darboux or otherwise) the expansion 
+
+/(.) -/( )= J /~J;" jy"  /"' (2) - '•"/<"> ( )  ; 
+
+find the remainder after n terms, and discuss the convergence of the series. 
+
+* The expansions considered by Eromwich are obtained by elementary methods, i.e. without 
+the use of Cauchy's theorem. 
+
+
+
+THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 145 
+
+3. Shew thcat 
+
+n 13 5 (2m —  )  h  
+
+OT=1 V"'  )   
+
+
+
+where 
+
+
+
+J 
+
+
+
+and shew that y  ( ) is the coefficient of ?i ! P in the expansion of  (1 - t.v) (1+   - Lv)  2 [ i 
+ascending jiowers of t. 
+
+4. By taking 
+
+
+
+< (  + l) = ,-  
+
+
+
+' d"- f(l-r)e ' 
+(  1 l-re-  
+
+
+
+in the formula of Darboux, shew that 
+
+/(  + A)-/(.r)=- I  ,  ;|/(-)(,; + A)-l/M(4 
+m=l Vl. [ r ) 
+
+\ i.(\ ) A"+i r (ji(t)f(n+ (x+ht)dt, 
+
+J 
+
+where . \  -—=i-a, ~ + a,~-asy, + .... 
+
+5. Shew that 
+
+/(.)-/•( ) = J  (-)—! -   2 !  /'"""" ( )+/<''"- ' ( )  
+
+6. Prove that 
+
+/( 2) -/(--l) =  l ( 2 - --1)/'  Z2) + C2 iZ2-Ziyf" ( l) - C3  Z2 "  OV" ( 2) 
+
+-< 4( 2- l)V*M2l) + --- + (-)M 2---l)  / ' | (e'''SechH)| \  /(  + l)(2l + to.- .-l) ; 
+
+in the series phis signs and minus signs occur in pairs, and the last term l)efore the 
+integral is that involving  Z'>-h)"", also Cn is the coefficient of 5" in the expansion of 
+
+cot ( T — o ) '" ascending powers of z. (Trinity, 1899.) 
+
+7. If Xi and x  are integers, and <f) (z) is a function which is analytic and'bounded for 
+all values of z such that x R (z)  X2, shew (by integrating 
+
+f <t>( )dz 
+
+je= 27r  \ l 
+
+round indented rectangles whose corners are Xi,  2?  2± <  i, Xi±co i) that 
+i( (a-i) + < (*-i + l) + ( ( i + 2)+... + 0( 2-l) + 2< (. 2) 
+
+'"'  A. i~\  ,  1 /'" (/) ( 2 +  3/) - (- 1 +iy)-(i> ( 2 -  y) + <  (A i - iy) 
+
+
+
+1 I (   x  +iy)-(pi-vi+iy)-(p ( 2 -  .y) + <?> ( i -  y)  .. 
+
+Mo e2f i/ - 1 • " 
+
+Hence, by applying the theorem 
+
+/• '  ,2n-l 
+
+4?i -1  - du = Bn, 
+
+W. M. A. 10 
+
+
+
+146 THE PROCESSES OF ANALYSIS [CHAP. VII 
+
+where Bi, B. , ... are Bernoulli's numbers, shew that 
+
+(where C is a constant not involving w), provided that the last series converges. 
+
+(This important formula is due to Plana, Mem. della R, Accad. di Torino, xxv. (1820), 
+pp. 403-418 ; a proof by means of contour integration was published by Kronecker, 
+Journal fur Math. cv. (1889), pp. 345-348. For a detailed history, see Lindelof, Le Calcul 
+des Residus. Some applications of the formula are given in Chapter xii.) 
+
+8. Obtain the expansion 
+
+X "" , , , 1.3...(2;i-3) .r  
+
+"=2+ !.(->"~  n\ 2  
+
+for one root of the equation x = 2u + u\ and shew that it converges so long as | jp | < 1. 
+
+' all combinations of th 
+12, 32, 5%... 2n-ir, 
+
+
+
+9. If .S'™' , denote the smii of all combinations of the numbers 
+
+2n.+l 
+
+
+
+taken m at a time, shew that 
+
+1 oc (\ )  + ] 
+
+sins  =o(2?i + 2) 
+
+
+
+cos.\  1 |\ (-) |2 (  )\  U, \   +r-)n < )  -Isin -i. 
+
+
+
+(Teixeira.) 
+
+10. If the function f(z) is analytic in the interior of that one of the ovals whose 
+equation is | sin s | = C (where C< 1), which includes the origin, shew that f z) can, for all 
+points z within this oval, be expanded in the form 
+
+0. /(2 )(o)+Mi'/C'  -2)(o)+...+>s ;'"V'(o) ' 
+
+/(.)=/(0)+ S-   " -  sin z 
+
+I /' "- ' (0) +4;; /(2n-i) (0)+ ... +<v, /' (0) 
+
+where *S'  is the sum of all combinations of the numbers 
+
+2n 
+
+22, 42, 62, ... (2/i-2)2, 
+taken m at a time, and *S " , , denotes the sum of all combinations of the numbers 
+
+' 2(1 + 1 
+
+12, 32, 52,...(2;i-l)2, 
+taken mi at a time. (Teixeira.) 
+
+11. Shew that the two series 
+
+2z  1z  
+2 +32" + "52 +•••' 
+
+2z 2\  / 2z Y 2  / 2z 
+
+ "  r  1.32 1- 2; +3.52V1-1 
+
+represent the same function in a certain region of the z plane, and can be transformed 
+into each other by Biirmaun's theorem. 
+
+(Kapteyn, Nieuw Archief, (2), iii. (1897), p. 225.) 
+
+12. If a function f z) is periodic, of period 27r, and is analytic at all points in the 
+infinite strip of the plane, included between the two branches of the curve jsin2| = C 
+(where C> 1), shew that at all points in the strip it can be exjianded in an infinite series 
+of the form 
+
+/(2) =  o + ylisin2+...+  sin"2 + 
+
++ cos2(5i + 52sin2+... +   sin"-is + ...) ; 
+and find the coefl\&cients -4  and B . * 
+
+
+
+THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 
+
+
+
+147 
+
+
+
+13. If (  and /are connected bj the equation 
+of which one root is a, shew that 
+
+
+
+ (   )= -T '/ '+i 3 
+
+
+
+0"  PP') I 1! 2! 3 
+X"' 
+
+
+
+j< ' (( 2)' (/3/") 
+ "  ct>T ipF')" 
+
+
+
++ ..., 
+
+
+
+the general term being ( — )'" , , ", ( f\ imim + i) iiaultiplied by a determinant in which 
+
+the elements of the first row are  ',  ( )',  (f) )', ..., (< '"~ )',  /'"  P') and each row is the 
+diflferential coefficient of the jjreceding one with respect to a; and P, /", P', ... denote 
+F a),f a\ P' a) 
+
+(Wronski, Philosophie de la Technie, Section ii. p. 381. For proofs of the theorem 
+see Cayley, Quarterly Journal, xil. (1873), Transon, Nouv. Ann. de Math. xill. (1874j, and 
+C Lagrange, Brux. Mem. Couronnes, 4", xlvii. (1886), no. 2.) 
+
+14. If the function W a, b, x) be defined by the series 
+
+T.r / 7 N a-b   (a — b)(a~2b) , 
+W a, b, x) = x +  j-x  +   a- +..., 
+
+
+
+which converges so long as 
+
+
+
+x\ <  
+
+
+
+w 
+
+
+
+d 
+
+
+
+-p W (a, b, x) = l+ a- b) W  a - b, b, .v) ; 
+
+
+
+shew that 
+
+and shew that if y= W  a, b, .r), 
+
+then x= yV  b, a, y). 
+
+Examples of this function are 
+
+Jr(l,0, A-) = e*-l, 
+lf(0, 1, .r) = log(l+.r), 
+  + xY-\ 
+
+
+
+15. Prove that 
+
+
+
+W'(a, \,x) = 
+
+
+
+1 \  1 ;  -Yx  
+
+
+
+(Jezek.) 
+
+
+
+2 a :ir" 
+
+n=0 
+
+
+
+where 
+
+
+
+Gn = 
+
+
+
+2ai 
+4a2 
+Gag 
+
+
+
+3ai 
+
+5ao 
+
+
+
+
+
+2ao 
+4ai 
+
+
+
+
+
+
+
+3ao 
+
+
+
+(2 -2)a \ i ( -l)ao 
+
+nan (?i - 1 ) a \ x a  
+
+and obtain a similar expression for 
+
+h 
+
+
+
+I 2 a .xA' 
+U=o I 
+
+(Mangeot, Ann. de VEcole norm. sup. (3), xiv. 
+
+
+
+16. Shew that 
+
+
+
+2 a x"  
+
+r=0 
+
+
+
+- 2 
+
+
+
+1\  cSr i 
+
+=o?'+l cai 
+
+
+
+10—2 
+
+
+
+148 
+
+
+
+THE PROCESSES OF ANALYSIS [cHAP. VII 
+
+
+
+where Sr is the sum of the rth powers of the reciprocals of the roots of the equation 
+
+r=0 
+
+(Gambioli, Bologna Memorie, 1892.) 
+
+17. If /  (z) denote the nth derivate of f z), and if /\   (z) denote that one of the nth 
+integrals oif z) which has an w-ple zero at 2 = 0, shew that if the series 
+
+  = — X 
+
+is convergent it represents a function oi z + x ; and if the domain of convergence includes 
+the origin in the .r-plane, the series is equal to 
+
+
+
+(Guichard.) 
+
+
+
+2 /\  (2 + .t-)5r (0). 
+
+n = 
+
+Obtain Taylor's series from this result, by putting g z) = 1. 
+
+18. Shew that, if jr be not an integer, 
+
+, =-;, n=-v x-¥mf x + nf 
+
+as 1/ -  QC , provided that all terms for which in = n are omitted from the summation. 
+
+(Math. Trip. 1895.) 
+
+19. Sum the series 
+
+  / 1 1' 
+
+
+
+n -q \ \ {-Yx-a-n n) ' 
+where the value n = is omitted, a ud p, q are positive integers to be increased without 
+
+limit. 
+
+(Math. Trip. 1896.) 
+
+20. If i (.r) = Jo*" °*( ")'' , shew that 
+
+F x)=< :t iJ  L, 
+
+and that the function thus defined satisfies the relations 
+
+F -x) =  , F(x)F l-x) = 2sm.V7r. 
+
+Further, if     =  +  2 +   ' + -= - \ logC -Oy, 
+
+
+
+shew that 
+when 
+
+21. Shew that 
+
+
+
+ll-e-2' ' Kl. 
+
+
+
+(Trinity, 1898.) 
+
+
+
+where 
+and 
+
+
+
+[-©i-( -.)i-(i .)"][-( -...)i'-G,y"] 
+
+n  l-2e- aCOs(a; + /3 ) + e-2  p   l-2e-a(,cos( -i3 )+e-2 (,   
+  g=i , 
+
+2*'*(l-cos.r)* e-' ''''*'''" 
+
+,20-1   , 2af-l 
+ag=k?,\ r   — TT, Pg=KCoa-  tt, 
+
+0<a.'<27r. 
+
+
+
+(Mildner.) 
+
+
+
+THE EXPANSION OF FUNCTIONS IN INFINITE SERIES 149 
+
+22. If I 0.' I < 1 and a is not a positive integer, shew that 
+
+ =i n~a ~ 1 - e2 ' ' 1 - e2a7r/ j  ~ J ' 
+
+where C is a contour in the  plane enclosing the points 0, x. 
+
+(Lerch, Casopis, xxi. (1892), pp. 65-68.) 
+
+23. If ( 1(2), < 2 ( 2), •.. are any polynomials in z, and if F z) be any integrable 
+function, and if yj i (z), yjr  (z), ... be polynomials defined by the equations 
+
+J a Z — X 
+
+f F( ) c i (x) <i>, (x) ... (  ,\ , ( 0 'l> - z)-<  (x)        
+
+J a Z X 
+
+Shew that r  (f )  = Ml) + J2j  + V-3( ) 
+
+
+
+2 (2)  1 (2) ( 2 (2)  3 (2) 
+
+
+
+dx 
+
+z — x' 
+
+
+
+24. A system of functions p , (z), pi (2), po (z), ... is defined by the equations 
+
+ 0 (S) = 1 , Pn + l z) = (2- +  n2 + K) Pn  z\ 
+
+where a  and 6  are given functions of n, which tend respectively to the limits and — 1 
+
+as 71-*- cx) . 
+
+Shew that the region of convergence of a series of the form 2e pn z), where ej, 621 ••• 
+are independent of 2, is a Cassini's oval with the foci +1, — 1. 
+
+Shew that every function / (2), which is analytic on and inside the oval, can, for points 
+inside the oval, be expanded in a series 
+
+/(2)=2(c  + 20f'n(2), 
+
+
+
+where 
+
+
+
+Cn = 27 . j (   + 2) ?  (2) f (2) dz, Cn' =  . j qn  z)f z) dz. 
+
+
+
+the integrals being taken round the boundary of the region, and the functions q  (2) being 
+defined by the equations 
+
+?0 ( ) = yl n  A-h '  " + I  ")   XTT TTT 2'n ( )- 
+
+2  + ao2 + Oo 2'' + rt +i   + 0  + l 
+
+(Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.) 
+
+\ 25. Let C be a contour enclosing the point a, and let (f) z) and/ (2) be analytic when 
+z is on or inside C. Let | < | be so small that 
+
+\ t(f) z) \ < .\ z — a\ 
+when 2 is on the periphery of C. 
+By expanding 
+
+± [ f(.) l- < (2)  . 
+
+Stti j c 2 - a -  0 (2) 
+
+in ascending powers of <, shew that it is equal to 
+
+f a)+ I  [/'(a)(0(a)  ]. 
+
+Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem. 
+
