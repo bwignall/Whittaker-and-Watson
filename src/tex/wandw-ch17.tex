@@ -1,6 +1,6 @@
 % 355
 \chapter{Bessel Functions}
-\section{The Bessel coefficients}
+\Section{17}{1}{The Bessel coefficients}
 In this chapter we shall consider a class of functions known as  \emph{Bessel functions}
 or \emph{cylindrical functions}
 which have many analogies with the Legendre functions of  Chapter XV(TODO:ref).
@@ -19,7 +19,8 @@ e^{ \frac{1}{2} z \left( t - \frac{1}{t} \right)}
 $$
 can be expanded by Laurent's theorem in a series of positive and
 negative powers of $t$. If the coefficient of $t^n$, where $n$ is any
-integer positive or negative, be denoted by $\besJ_n(z)$, it follows, from 
+integer positive or negative, be denoted by
+$\besJ_{n}(z)$\index{Bessel coefficients [$\besJ_{n}(z)$]}, it follows, from 
 \hardsectionref{5}{6}, that 
 $$
 \besJ_n(z) = \frac{1}{2\pi i} \int^{(0+)} u^{-n-1} e^{\half z \theparen{u
@@ -205,7 +206,7 @@ $$
   \addexamplecitation{K. Neumann and Lommel.}
 \end{wandwexample}
 
-\subsection{Bessel's differential equation}
+\Subsection{Bessel's differential equation}
 We have seen that, when $n$ is an integer, the Bessel coefficient of
 order $n$ is given by the formula
 $$
@@ -288,7 +289,7 @@ points of this equation.
   shew that $\besJ_m(z)$ satisfies the confluent form of this equation
   obtained by making $n \rightarrow \infty$.
 \end{wandwexample}
-\section{The solution of Bessel's equation when $n$ is not necessarily
+\Section{17}{2}{The solution of Bessel's equation when $n$ is not necessarily
   an integer.}
 We now proceed, after the manner of \hardsectionref{15}{2}, to
 extend the definition of $\besJ_n(z)$ to the case when $n$ is any number,
@@ -387,7 +388,7 @@ independent. With this exception, \emph{the general solution of
 A second solution of Bessel's equation when $n$ is an integer will be
 given later (\hardsectionref{17}{6}).
 
-\subsection{The recurrence formulae for the Bessel functions.}
+\Subsection{The recurrence formulae for the Bessel functions.}
 As the Bessel function satisfies a confluent form of the
 hypergeometric equation, it is to be expected that recurrence formulae
 will exist, corresponding to the relations between contiguous
@@ -491,7 +492,7 @@ and
   $$
 \end{wandwexample}
 
-\subsubsection{Relation between two Bessel functions whose orders
+\Subsubsection{Relation between two Bessel functions whose orders
   differ by an integer.}
 From the last article can be deduced an equation connecting any two
 Bessel functions whose orders differ by an integer, namely
@@ -511,7 +512,7 @@ z^{-n-1} \besJ_{n+1}(z)
 - \frac{\dd}{z \dd z}
 \thebrace{ z^{-n} \besJ_n(z)  }.
 $$
-\subsubsection{The connexion between $\besJ_n(z)$ and $W_{k,m}$
+\Subsubsection{The connexion between $\besJ_n(z)$ and $W_{k,m}$
   functions.}
 The reader will verify without difficulty that, if in Bessel's
 equation we write $y = z^{-\half} v$ and then write $z = x/2i$, we get
@@ -536,7 +537,7 @@ $$
 except in the critical cases when $2n$ is a negative integer; 
 when $n$ is half of a negative integer, the result follows from
 Kummer's second formula (\hardsubsectionref{16}{1}{1}).
-\subsection{The zeros of Bessel functions whose order $n$ is real.}
+\Subsection{The zeros of Bessel functions whose order $n$ is real.}
 The relations of \hardsubsectionref{17}{2}{1} enable us to deduce the
 interesting theorem that \emph{between any two consecutive real zeros
   of $z^{-n}\besJ_n(z)$, there lies one and only one zero\footnote{TODO}
@@ -591,7 +592,7 @@ TODO at the end of the chapter.]
 % 
 % 362
 % 
-\subsection{Bessel's integral for the Bessel coefficients.}
+\Subsection{Bessel's integral for the Bessel coefficients.}
 We shall next obtain an integral first given by Bessel in the
 particular case of the Bessel functions for which $n$ is a positive
 integer; in some respects the result resembles Laplace's integrals
@@ -688,7 +689,7 @@ which is the formula in question.
   $$
 \end{wandwexample}
 % 
-\subsubsection{The modification of Bessel's integral when $n$ is not
+\Subsubsection{The modification of Bessel's integral when $n$ is not
   an integer.}
 We shall now shew that\footnote{TODO}, for general values of $n$,
 \begin{equation}
@@ -900,7 +901,7 @@ $\besJ_m(z)$.
   $\cos\theta > 0$.
   \addexamplecitation{TODO}
 \end{wandwexample}
-\subsection{Bessel functions whose order is half an odd integer.}
+\Subsection{Bessel functions whose order is half an odd integer.}
 We have seen (\hardsectionref{17}{2}) that when the order $n$ of a
 Bessel function $\besJ_n(z)$ is half an odd integer, the difference of the
 roots of the indicial equation at $z=0$ is $2n$, which is an integer.
@@ -1001,7 +1002,8 @@ where $P_k$, $Q_k$ are polynomials in $z^{-\half}$.
   $$
   \addexamplecitation{Lommel.}
 \end{wandwexample}
-\section[Hankel's contour integral for $\besJ_n(z)$.]{Hankel's contour integral\footnote{TODO} for $\besJ_n(z)$.}
+%TODO:get the Section output working correctly
+\Section{Hankel's contour integral for $\besJ_n(z)$.}{17}{3}{Hankel's contour integral\footnote{TODO} for $\besJ_n(z)$.}
 Consider the integral
 $$
 y = z^n \int_A^{(1+,-1-)} (t^2-1)^{n-\half} \cos(zt) \dmeasure t,
@@ -1197,7 +1199,7 @@ integration, and obtain the result
   [Use example TODO combined with \hardsubsectionref{17}{2}{2}.]
 \end{wandwexample}
 
-\section{Connexion between Bessel coefficients and Legendre
+\Section{17}{4}{Connexion between Bessel coefficients and Legendre
   functions.}
 We shall now establish a result due to Heine\footnote{TODO} which
 renders precise the statement of \hardsubsectionref{17}{1}{1} example
@@ -1280,7 +1282,7 @@ which is the relation required.
   the confluence being obtained by making $c \rightarrow \infty$.
 \end{wandwexample}
 
-\section{Asymptotic series for $\besJ_n(z)$ when $\absval{z}$ is large.}
+\Section{17}{5}{Asymptotic series for $\besJ_n(z)$ when $\absval{z}$ is large.}
 When have seen (\hardsubsubsectionref{17}{2}{1}{2}) that
 $$
 \besJ_n(z)
@@ -1456,7 +1458,7 @@ order is given by TODO.
   \addexamplecitation{TODO}
 \end{wandwexample}
 
-\section{The second solution of Bessel's equation when the order
+\Section{17}{6}{The second solution of Bessel's equation when the order
   is an integer.}
 We have seen in \hardsectionref{17}{2} that, when the order $n$ of
 Bessel's differential equation is not an integer, the general
@@ -1595,7 +1597,7 @@ $(4n^2-1)/8z$ respectively.
   Shew that if $\hardY_n(z)$ be defined by the equation of example
   TODO, it is a solution of Bessel's equation when $n$ is an integer.
 \end{wandwexample}
-\subsection{The ascending series for $\hardY_n(z)$.}
+\Subsection{The ascending series for $\hardY_n(z)$.}
 The series of \hardsectionref{17}{6} is convenient for calculating
 $\hardY_n(z)$ when $\absval{z}$ is large. To obtain a convenient
 series for small values of $\absval{z}$, we observe that, since
@@ -1742,7 +1744,7 @@ applications.
   $$
 \end{wandwexample}
 
-\section{Bessel functions with purely imaginary argument.}
+\Section{17}{7}{Bessel functions with purely imaginary argument.}
 The function\footnote{TODO}
 $$
 \besI_n(z)
@@ -1805,7 +1807,7 @@ formulae:
   lower sign being taken according as $\arg z$ is positive or negative.
 \end{enumerate}
 
-\subsection{Modified Bessel functions of the second kind.}
+\Subsection{Modified Bessel functions of the second kind.}
 When $n$ is a positive integer or zero, $\besI_n(z) = \besI_n(z)$;
 to obtain a second solution of the modified Bessel equation TODO
 of \hardsectionref{17}{7}, we define\footnote{TODO} the function
@@ -1875,10 +1877,12 @@ as an ascending series.
   $\besI_n(z)$. 
 \end{wandwexample}
 
-\section[Neumann's expansion of an analytic
-function in a series of Bessel coefficients.]{Neumann's
+% TODO: get this working correctly
+\Section{TMP}{17}{7p9}{Temporary name}
+\Section[Neumann's expansion of an analytic function in a series of
+  Bessel coefficients]{17}{8}{Neumann's
   expansion\footnote{TODO} of an analytic function in a series
-  of Bessel coefficients.}
+  of Bessel coefficients}
 We shall now consider the expansion of an arbitrary function
 $f(z)$, analytic in a domain including the origin, in a series
 of Bessel coefficients, in the form
@@ -1886,7 +1890,7 @@ $$
 f(z) = \alpha_0 \besJ_0(z) + \alpha_1 \besJ_1(z) + \alpha_2
 \besJ_2(z) + \cdots,
 $$
-where $\alpha_0, \alpha_1, \alpha_2,\ldots$ are independent of
+where $\alpha_0, \alpha_1, \alpha_2,\ldots$ aref independent of
 $z$.
 
 %\begin{smallfont}
@@ -2054,7 +2058,7 @@ of $t$.
   and verify that the expression on the right satisfies the recurrence
   formulae for $O_n(t)$.
 \end{wandwexample}
-\subsection{Proof of Neumann's expansion.}
+\Subsection{Proof of Neumann's expansion.}
 The method of \hardsectionref{17}{8} merely determined the
 coefficients in Neumann's expansion of $1/(t-z)$, on the hypothesis
 that the expansion existed and that the rearrangements were
@@ -2234,7 +2238,7 @@ $\absval{z}\leq r$.
   \addexamplecitation{Kapteyn.}
 \end{wandwexample}
 
-\subsection{\Schlomilch's expansion of an arbitrary function in a
+\Subsection{\Schlomilch's expansion of an arbitrary function in a
   series of Bessel coefficients of order zero.}
 \Schlomilch\footnote{TODO} has given an expansion of quite a different
 character from that of Neumann. His result may be stated thus:
@@ -2358,7 +2362,7 @@ which gives \Schlomilch's expansion.
   \addexamplecitation{Math. Trip. 1895.}
 \end{wandwexample}
 
-\section{Tabulation of Bessel functions.}
+\Section{17}{9}{Tabulation of Bessel functions.}
 Hansen used the asymptotic expansion (\hardsectionref{17}{5}) to
 calculate tables of $\besJ_n(x)$ which are given in TODOl
 Meissel tabulated $\besJ_0(x)$ and $\besJ_1(x)$ to 12 places of

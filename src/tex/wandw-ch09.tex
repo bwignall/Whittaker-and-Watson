@@ -1,1525 +1,1567 @@
 \chapter{Fourier Series and Trigonometrical Series} 
 
-91. Definition of Fourier series*. 
-Series of the type 
+91. Definition of Fourier series*. Series of the type
 
- Oo + (o i cos X + b  sin x) +  a.2 cos 2x + 62 sin 2ic) + . . . 
+ Oo + (o i cos X + b sin x) + a.2 cos 2x + 62 sin 2ic) + . . .
 
-= i (7o + S (   cos Via; + bn sin w ), 
+= i (7o + S ( cos Via; + bn sin w ),
 
-where an, bn are independent of x, are of great importance in many investi- 
-gations. They are called trigonometrical series. 
+where an, bn are independent of x, are of great importance in many
+investi- gations. They are called trigonometrical series.
 
-If there is a function/( .) such that I f t) dt exists as a Riemann integral 
+If there is a function/( .) such that I f t) dt exists as a Riemann
+integral
 
-J —IT 
+J —IT
 
-or as an improper integral which converges absolutely, and such that 
-iTan=\ f(t) COS ntdt, 7r6  = I f(t) sin ntdt, 
+or as an improper integral which converges absolutely, and such that
+iTan=\ f(t) COS ntdt, 7r6 = I f(t) sin ntdt,
 
-then the trigonometrical series is called a Fourier series. 
+then the trigonometrical series is called a Fourier series.
 
-Trigonometrical series first appeared in analysis in connexion with the investigations 
-of Daniel Bernoulli on vibrating strings ; d'Alembert had previously solved the equation of 
+Trigonometrical series first appeared in analysis in connexion with
+the investigations of Daniel Bernoulli on vibrating strings ;
+d'Alembert had previously solved the equation of
 
-motion y = a  -r in the form y=   f  x- at)- f  x -at) , where 3/=/ (a-) is the initial shape 
+motion y = a -r in the form y= f x- at)- f x -at) , where 3/=/ (a-) is
+the initial shape
 
-of the string starting from rest ; and Bernoulli shewed that a formal solution is 
+of the string starting from rest ; and Bernoulli shewed that a formal
+solution is
 
-  , . niTX nnat 
-?/= 2 bn sui -J- cos —  — , 
+  , . niTX nnat ?/= 2 bn sui -J- cos — — ,
 
-the fixed ends of the string being (0, 0) and  I, 0) ; and he asserted that this was the most 
-general solution of the problem. This appeared to d'Alembert and Euler to be impossible, 
-since such a series, having period 2 , could not possibly represent such a function ast 
-cx l — x) when t = 0. A controversy arose between these mathematicians, of which an 
-account is given in Hobson's Functions of a Real Variable. 
+the fixed ends of the string being (0, 0) and I, 0) ; and he asserted
+that this was the most general solution of the problem. This appeared
+to d'Alembert and Euler to be impossible, since such a series, having
+period 2 , could not possibly represent such a function ast cx l — x)
+when t = 0. A controversy arose between these mathematicians, of which
+an account is given in Hobson's Functions of a Real Variable.
 
-Fourier, in his Theorie de la Chaleur, investigated a number of trigonometrical series 
-and shewed that, in a large number of particular cases, a Fourier series actually converged 
-to the sum f x). Poisson attempted a general proof of this theorem. Journal de VEcole 
-poly technique, xil. (1823), pp. 404-509. Two proofs were given by Cauchy, Men. de 
-VAcad. R. des Sci. vi. (1823, publi-hed 1826), pp. 603-612  Oeuvres, (1), n. pp. 12-19) 
-and Exercices de Math. 11. (1827), pp. 341-376 (Oeuvres, (2), vil. pp. 393-430) ; these proofs, 
-which are based on the theory of contour integration, arQ concerned with rather particular 
-classes of functions and one is invalid. The second proof has been investigated by 
-Harnack, Math. Ann. xxxii. (1888), pp. 175-202. 
+Fourier, in his Theorie de la Chaleur, investigated a number of
+trigonometrical series and shewed that, in a large number of
+particular cases, a Fourier series actually converged to the sum f x).
+Poisson attempted a general proof of this theorem. Journal de VEcole
+poly technique, xil. (1823), pp. 404-509. Two proofs were given by
+Cauchy, Men. de VAcad. R. des Sci. vi. (1823, publi-hed 1826), pp.
+603-612 Oeuvres, (1), n. pp. 12-19) and Exercices de Math. 11. (1827),
+pp. 341-376 (Oeuvres, (2), vil. pp. 393-430) ; these proofs, which are
+based on the theory of contour integration, arQ concerned with rather
+particular classes of functions and one is invalid. The second proof
+has been investigated by Harnack, Math. Ann. xxxii. (1888), pp.
+175-202.
 
-* Throughout this chapter (except in § 9-11) it is supposed that all the numbers involved are 
-real. 
+* Throughout this chapter (except in § 9-11) it is supposed that all
+the numbers involved are real.
 
-t This function gives a simple form to the initial shape of the string. 
+t This function gives a simple form to the initial shape of the
+string.
 
 
 
-9"1, 911] FOURIER SERIES 161 
+9"1, 911] FOURIER SERIES 161
 
-In 1829, Dirichlet gave the first rigorous proof* that, for a general class of functions, 
-the Fourier series, defined as above, does converge to the sum/(j;). A modification of this 
- proof was given later by Bonnet +. 
+In 1829, Dirichlet gave the first rigorous proof* that, for a general
+class of functions, the Fourier series, defined as above, does
+converge to the sum/(j;). A modification of this proof was given later
+by Bonnet +.
 
-The result of -Dirichlet is that| if/(0 is defined and bounded in the range ( - tt, tt) and 
-if f t) has only a finite number of maxima and minima and a finite number of dis- 
-continuities in this range and, further, iff i) is defined by the equation 
+The result of -Dirichlet is that| if/(0 is defined and bounded in the
+range ( - tt, tt) and if f t) has only a finite number of maxima and
+minima and a finite number of dis- continuities in this range and,
+further, iff i) is defined by the equation
 
-outside the range ( — tt, tt), then, provided that 
+outside the range ( — tt, tt), then, provided that
 
-7ra,j= / f t) cos ntdt, Trh = j f t) sin ntdt, 
+7ra,j= / f t) cos ntdt, Trh = j f t) sin ntdt,
 
-the series ! (,+ 2 (Un cos 7uv + b  niu no;) converges to the sum    /(  + 0)+/(  — 0) . 
+the series ! (,+ 2 (Un cos 7uv + b niu no;) converges to the sum /( +
+0)+/( — 0) .
 
-Later, Rieraann and Cantor developed the theory of trigonometrical series generally, 
-while still more recently Hurwitz, Fejer and others have investigated properties of Fourier 
-series when the series does not necessarily converge. Thus Fejdr has proved the re- 
-markable theorem that a Fourier series (even if not convergent) is 'summable (Cl)' 
-kjat all points at which f x±0) exist, and its sum (C 1) is h  f x + 0)+f x — 0) , 
+Later, Rieraann and Cantor developed the theory of trigonometrical
+series generally, while still more recently Hurwitz, Fejer and others
+have investigated properties of Fourier series when the series does
+not necessarily converge. Thus Fejdr has proved the re- markable
+theorem that a Fourier series (even if not convergent) is 'summable
+(Cl)' kjat all points at which f x±0) exist, and its sum (C 1) is h f
+x + 0)+f x — 0) ,
 
-provided that I f t) dt is an absolutely convergent integral. One of the investigations 
+provided that I f t) dt is an absolutely convergent integral. One of
+the investigations
 
-of the convergence of Fourier series which we shall give later (§ 9 "42) is based on this result. 
+of the convergence of Fourier series which we shall give later (§ 9
+"42) is based on this result.
 
-For a fuller account of investigations subsequent to Riemann, the reader is referred to 
-Hobson's Functions of a Real Variable, and to de la Vallee Poussin's Cours dWnalyse 
-Infinitesimale. 
+For a fuller account of investigations subsequent to Riemann, the
+reader is referred to Hobson's Functions of a Real Variable, and to de
+la Vallee Poussin's Cours dWnalyse Infinitesimale.
 
-911. Nature of the region within which a trigonometrical series converges. 
+911. Nature of the region within which a trigonometrical series
+converges.
 
-Consider the series 
+Consider the series
 
-1 * 
+1 *
 
-- ao + 2 (a  cos nz -J- b,, sin nz), 
+- ao + 2 (a cos nz -J- b,, sin nz),
 
-where z may be complex. If we write e'  = f, the series becomes 
+where z may be complex. If we write e' = f, the series becomes
 
-1 =  (1 1 1 
+1 = (1 1 1
 
-2  o +  2  I2 ("n - ib ) f " + 2 ("  + *'    7 • 
+2 o + 2 I2 ("n - ib ) f " + 2 (" + *' 7 •
 
-This Laurent series will converge, if it converges at all, in a region in which a   | f [  b, 
-where a, b are positive constants. 
+This Laurent series will converge, if it converges at all, in a region
+in which a | f [ b, where a, b are positive constants.
 
-But, if z = x- iy, | C = ~''i  'i*  so we get, as the region of convergence of the trigono- 
-metrical series, the strip in the z plane defined by the inequality 
+But, if z = x- iy, | C = ~''i 'i* so we get, as the region of
+convergence of the trigono- metrical series, the strip in the z plane
+defined by the inequality
 
-log a - y   log b. 
+log a - y log b.
 
-The case which is of the greatest importance in practice is that in which a=b = \, and 
-the strip consists of a single line, namely tlie real axis. 
+The case which is of the greatest importance in practice is that in
+which a=b = \, and the strip consists of a single line, namely tlie
+real axis.
 
-Example 1. Let 
+Example 1. Let
 
 
 
-where z= x- iy. 
+where z= x- iy.
 
 
 
-fiz) = sin z — - sin 2z + - sin Sz - - sin 4z -f- , 
-•    2 3 4 
+fiz) = sin z — - sin 2z + - sin Sz - - sin 4z -f- , • 2 3 4
 
 
 
-* Journal J iir Math. iv. (1829), pp. 157-169. 
+* Journal J iir Math. iv. (1829), pp. 157-169.
 
-t Meiuoires des Savants etramjers of the Belgian Academy, xxiii. (1848-1850). Bonnet em- 
-ploys the second mean value theorem directly, while Dirichlet's original proof makes use of 
-arguments precisely similar to those by which that theorem is proved. See § 9"43. 
+t Meiuoires des Savants etramjers of the Belgian Academy, xxiii.
+(1848-1850). Bonnet em- ploys the second mean value theorem directly,
+while Dirichlet's original proof makes use of arguments precisely
+similar to those by which that theorem is proved. See § 9"43.
 
-X The conditions postulated tov f[t) are known as Dirichlet's conditions; as will be seen in 
-§§ 9-2, 9 •42, they are unnecessarily stringent. 
+X The conditions postulated tov f[t) are known as Dirichlet's
+conditions; as will be seen in §§ 9-2, 9 •42, they are unnecessarily
+stringent.
 
-w. M. A. 11 
+w. M. A. 11
 
 
 
-162 THE PROCESSES OF ANALYSIS [CHAP. IX 
+162 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-Writing this in the form 
+Writing this in the form
 
-we notice that the first series converges* only if 3  0, and the second only if  0. 
-"Writing .v in place of z (x being real), we see that by Abel's theorem (§ 3'7l), 
+we notice that the first series converges* only if 3 0, and the second
+only if 0. "Writing .v in place of z (x being real), we see that by
+Abel's theorem (§ 3'7l),
 
-fix)= lim (rsin.r — -T-  sin2.r + -?'3sin 3,f— ... ) 
-= lim  -iir\&='--r e 'i  + -)' ( ''-...\ 
+fix)= lim (rsin.r — -T- sin2.r + -?'3sin 3,f— ... ) = lim -iir\&='--r
+e 'i + -)' ( ''-...\
 
-+   i (>-e- -| ?-2e-2' +i 7-36-3' - ...U . 
++ i (>-e- -| ?-2e-2' +i 7-36-3' - ...U .
 
-This is the limit of one of the values of 
+This is the limit of one of the values of
 
-- U log ( 1 + >-e' ) +\ i log (1 + /-e-* ), 
-and as r- \ (if -tt <x<it), this tends to \ x + kn, where k is some integer. 
+- U log ( 1 + >-e' ) +\ i log (1 + /-e-* ), and as r- \ (if -tt
+<x<it), this tends to \ x + kn, where k is some integer.
 
-  / Nil— 1 yju nx 
+  / Nil— 1 yju nx
 
-Xow 2   —   converges uniformly (§ 3'35 example 1) and is therefore con- 
+Xow 2 — converges uniformly (§ 3'35 example 1) and is therefore con-
 
-tinuous in the range — tt + 8   a'   tt — S, where S is any positive constant. 
+tinuous in the range — tt + 8 a' tt — S, where S is any positive
+constant.
 
-Since \ x is continuous, k has the same value wherever x lies in the range ; and putting 
-A' = 0, we see that   = 0. 
+Since \ x is continuous, k has the same value wherever x lies in the
+range ; and putting A' = 0, we see that = 0.
 
-Therefore, v)heii —Tr<x< it, f x) =  x. 
+Therefore, v)heii —Tr<x< it, f x) = x.
 
-But, when n < x < Stt, 
+But, when n < x < Stt,
 
-f x)=f x-2Tr) =   (a-— 27r)=-i.f- 77, 
-and generally, if  2n — 1) tt < a' <  2n + 1) tt, 
+f x)=f x-2Tr) = (a-— 27r)=-i.f- 77, and generally, if 2n — 1) tt < a'
+< 2n + 1) tt,
 
-f x)=- x-n7r. 
+f x)=- x-n7r.
 
-We have thus arrived at an example in which / (,/-) is not represented by a single 
-analytical expression. 
+We have thus arrived at an example in which / (,/-) is not represented
+by a single analytical expression.
 
-It must be observed that this phenomenon can only occur when the strip in which the 
-Fourier series converges is a single line. For if the strip is not of zero breadth, the 
-associated Laurent series converges in an annulus of non-zero breadth and represents an 
-analytic function of f in that annulus ; and, since  " is an analytic function of z, the Fourier 
-series represents an analytic function of z ; such a series is given by 
-r sin X —  r  sin 2x + J?'  sin 3.>; — . . . , 
+It must be observed that this phenomenon can only occur when the strip
+in which the Fourier series converges is a single line. For if the
+strip is not of zero breadth, the associated Laurent series converges
+in an annulus of non-zero breadth and represents an analytic function
+of f in that annulus ; and, since " is an analytic function of z, the
+Fourier series represents an analytic function of z ; such a series is
+given by r sin X — r sin 2x + J?' sin 3.>; — . . . ,
 
-where < r < 1 ; its sum is arc tan — , the arc tan always representing an angle 
+where < r < 1 ; its sum is arc tan — , the arc tan always representing
+an angle
 
-l+/'COSA- J f a i, 
+l+/'COSA- J f a i,
 
-between ±|7r. 
+between ±|7r.
 
-Example 2. When — tt  x rr, 
+Example 2. When — tt x rr,
 
-=  (-) -! cos  . ; I ., 1 ., 
-n=i n- 12 4 
+= (-) -! cos . ; I ., 1 ., n=i n- 12 4
 
-The series converges only when x is real ; by § 3*34 the convergence is then absolute 
-and uniform. 
+The series converges only when x is real ; by § 3*34 the convergence
+is then absolute and uniform.
 
-Since |.i- = sin x -   sin 2x + 1 sin 3.-/; - . . . ( - tt + S   x   tt - 8, S > 0), 
+Since |.i- = sin x - sin 2x + 1 sin 3.-/; - . . . ( - tt + S x tt - 8,
+S > 0),
 
-and this series converges uniformly, we may integrate term-bv-term from to x (§ 4"7), 
-and consequently 
+and this series converges uniformly, we may integrate term-bv-term
+from to x (§ 4"7), and consequently
 
-1 2 I (-)"- (l-C0Sn.r) ,;i ,,  ;5N 
+1 2 I (-)"- (l-C0Sn.r) ,;i ,, ;5N
 
-2 -= 2 -2  -71 + 8 x 77 -d). 
+2 -= 2 -2 -71 + 8 x 77 -d).
 
-* The series do converge if y — 0, see § 2'31 example 2. 
+* The series do converge if y — 0, see § 2'31 example 2.
 
 
 
-9-12, 9*2] FOURIER SERIES 163 
+9-12, 9*2] FOURIER SERIES 163
 
-That is to say, when -tt + S x tt-S, 
+That is to say, when -tt + S x tt-S,
 
-  1   S ( - )"~  cos nx 
+  1 S ( - )"~ cos nx
 
-where C is a constant, at present undetermined. 
+where C is a constant, at present undetermined.
 
-But since the series on the right converges uniformly throughout the range - tt   :r \$ tt, 
-its sum is a continuous function of x in this extended range ; and so, proceeding to the 
-limit when x-  ±7r, we see that the last equation is still true when x= + it. 
+But since the series on the right converges uniformly throughout the
+range - tt :r \$ tt, its sum is a continuous function of x in this
+extended range ; and so, proceeding to the limit when x- ±7r, we see
+that the last equation is still true when x= + it.
 
-To determine C, integrate each side of the equation (§ 4"7) between the limits — tt, rr ; 
-and we get 
+To determine C, integrate each side of the equation (§ 4"7) between
+the limits — tt, rr ; and we get
 
-D 
+D
 
-Consequently 7r --:F''= 2   —   ( — tt a' tt). 
+Consequently 7r --:F''= 2 — ( — tt a' tt).
 
-i   t: ?l. =: 1 '*' 
+i t: ?l. =: 1 '*'
 
-Example 3. By writing tt— 2.>; for .r in example 2, shew that 
+Example 3. By writing tt— 2.>; for .r in example 2, shew that
 
-  sin  no; r =   (tt — d?) (O a' tt), 
+  sin no; r = (tt — d?) (O a' tt),
 
-71=1 /i  | = -i  tt I A'l -A-  (-TT .r Tr). 
+71=1 /i | = -i tt I A'l -A- (-TT .r Tr).
 
-9'12. Values of tJie coejjicients in terms of the sum of a trigonometrical   
-seines. 
+9'12. Values of tJie coejjicients in terms of the sum of a
+trigonometrical seines.
 
-00 
+00
 
-Let the trigonometrical series  Co+ S (c  cos ?? a; + c?,j sin n ) be uniformly 
+Let the trigonometrical series Co+ S (c cos ?? a; + c?,j sin n ) be
+uniformly
 
-n = l 
+n = l
 
-convergent in the range (— tt, tt) and let its sum be f x). Using the obvious 
+convergent in the range (— tt, tt) and let its sum be f x). Using the
+obvious
 
-results 
+results
 
-.!\   [=7r  m = ni O), 
+.!\ [=7r m = ni O),
 
-f • •  1=0  m n), |- , .  
+f • • 1=0 m n), |- , .
 
-sin 7/ia; sin nxax   , \  , aa; = ztt, 
+sin 7/ia; sin nxax , \ , aa; = ztt,
 
-we find, on multiplying the equation  Co + 2 (c,iCos?ia  + C' nsinna;) =/(a;) 
+we find, on multiplying the equation Co + 2 (c,iCos?ia + C' nsinna;)
+=/(a;)
 
-n = l 
+n = l
 
-by* cos nx or by sin nx and integrating term -by-term i* (§ 4*7), 
-7rc,i= I f (x)cosnxdx, irdn— I f x) sin nxdx. 
+by* cos nx or by sin nx and integrating term -by-term i* (§ 4*7),
+7rc,i= I f (x)cosnxdx, irdn— I f x) sin nxdx.
 
-J -TT J —TT 
+J -TT J —TT
 
-Corollary. A trigonometrical series uniformly convergent in the range (-tt, tt) is a 
-Fourier series. 
+Corollary. A trigonometrical series uniformly convergent in the range
+(-tt, tt) is a Fourier series.
 
-Note. Lebesgue has given a proof  Series trigonometriques, p. 124) of a theorem 
+Note. Lebesgue has given a proof Series trigonometriques, p. 124) of a
+theorem
 
-00 
+00
 
-communicated to him by Fatou that the trigonometrical series 2 sin nxllog n, which con- 
-verges for all real values of x (§ 2'31 example 1), is not a Fourier series. 
+communicated to him by Fatou that the trigonometrical series 2 sin
+nxllog n, which con- verges for all real values of x (§ 2'31 example
+1), is not a Fourier series.
 
-9"2. On Dirichlet's conditions and Fourier's theorem. 
+9"2. On Dirichlet's conditions and Fourier's theorem.
 
-A theorem, of the type described in § O'l, concerning the expansibility of 
-a function of a real variable into a trigonometrical series is usually described 
+A theorem, of the type described in § O'l, concerning the
+expansibility of a function of a real variable into a trigonometrical
+series is usually described
 
-* Multiplying by these factors does not destroy the uniformity of the convergence. 
-t These were given by Enler (with limits and 27r), Nova Acta Acad. Petrop. xi. (1793). 
+* Multiplying by these factors does not destroy the uniformity of the
+convergence. t These were given by Enler (with limits and 27r), Nova
+Acta Acad. Petrop. xi. (1793).
 
-11—2 
+11—2
 
 
 
-164 • THE PROCESSES OF ANALYSIS [CHAP. IX 
+164 • THE PROCESSES OF ANALYSIS [CHAP. IX
 
-as Fourier's theorem. On account of the length and difficulty of a formal 
-proof of the theorem (even when the function to be expanded is subjected to 
-unnecessarily stringent conditions), we defer the proof until §§ 9"42, 9"43. It is, 
-however, convenient to state here certain sufficient conditions under which 
-a function can be expanded into a trigonometrical series. 
+as Fourier's theorem. On account of the length and difficulty of a
+formal proof of the theorem (even when the function to be expanded is
+subjected to unnecessarily stringent conditions), we defer the proof
+until §§ 9"42, 9"43. It is, however, convenient to state here certain
+sufficient conditions under which a function can be expanded into a
+trigonometrical series.
 
-Let f t) he defined arbitrarily wlien — 7r < tt and defined* for all other 
-real values oft by means of the equation 
+Let f t) he defined arbitrarily wlien — 7r < tt and defined* for all
+other real values oft by means of the equation
 
-f t + 27r)=f t), 
-so thatf t) is a periodic function with period lir. 
+f t + 27r)=f t), so thatf t) is a periodic function with period lir.
 
 
 
-Let f t) be such that f t) dt exists ; and if this is an improper integral, 
+Let f t) be such that f t) dt exists ; and if this is an improper
+integral,
 
-J — IT 
+J — IT
 
-let it be absolutely convergent. 
+let it be absolutely convergent.
 
-Let a , b,i be defined by the equations  
+Let a , b,i be defined by the equations
 
-7r   = I f(t)cosntdt, 7r6 = | f(t) sin ntdt (;i = 0, 1, 2, ...). 
+7r = I f(t)cosntdt, 7r6 = | f(t) sin ntdt (;i = 0, 1, 2, ...).
 
-J -IT J —IT 
+J -IT J —IT
 
-Then, if x he an interior point of any interval (a, b) in which f t) has 
-limited total fluctuation, the series 
+Then, if x he an interior point of any interval (a, b) in which f t)
+has limited total fluctuation, the series
 
-X 
+X
 
- g-ao + 2 (a  cos nx + hn sin nx) 
+ g-ao + 2 (a cos nx + hn sin nx)
 
-n = l 
+n = l
 
-is convergent, and its sum\ is   f x + 0)- f x — 0)]. Iff(t) is continuous 
-at t — x, this sum reduces tof(x). 
+is convergent, and its sum\ is f x + 0)- f x — 0)]. Iff(t) is
+continuous at t — x, this sum reduces tof(x).
 
-This theorem will be assumed iu j\$§ 9'21-9"32; these sections deal with theorems con- 
-cerning Fom'ier series which are of some importance in practical applications. It should 
-be stated here that every function which Applied Mathematicians need to expand into 
-Fourier series satisfies the conditions just imposed on f t), so that the analysis given later 
-in this chapter establishes the validity of all the expansions into Fourier series which are 
-required in physical investigations. 
+This theorem will be assumed iu j\$§ 9'21-9"32; these sections deal
+with theorems con- cerning Fom'ier series which are of some importance
+in practical applications. It should be stated here that every
+function which Applied Mathematicians need to expand into Fourier
+series satisfies the conditions just imposed on f t), so that the
+analysis given later in this chapter establishes the validity of all
+the expansions into Fourier series which are required in physical
+investigations.
 
-The reader will observe that in the theorem just stated,/( ) is subject to less stringent 
-conditions than those contemplated by Dirichlet, and this decrease of stringency is of 
+The reader will observe that in the theorem just stated,/( ) is
+subject to less stringent conditions than those contemplated by
+Dirichlet, and this decrease of stringency is of
 
-considerable practical importance. Thus, so simple a series as 2 ( - )"~  (cos nx)ln is the 
+considerable practical importance. Thus, so simple a series as 2 ( -
+)"~ (cos nx)ln is the
 
-n=l 
+n=l
 
-expansion of the function § log | 2 cos l ;*' | ; and this function does not satisfy Dirichlet's 
-condition of boundedness at +7r. 
+expansion of the function § log | 2 cos l ;*' | ; and this function
+does not satisfy Dirichlet's condition of boundedness at +7r.
 
-QC 
+QC
 
-It is convenient to describe the series  ao+ S (on cos nx + hn sin nx) as 
+It is convenient to describe the series ao+ S (on cos nx + hn sin nx)
+as
 
-n=l 
+n=l
 
-the Fourier series associated tuith f(t). This description must, however, be 
+the Fourier series associated tuith f(t). This description must,
+however, be
 
-* This definition frequently results in f t) not being ex ressible by a single analytical ex- 
-pression for all real values of t. Cf. § 9'11 example 1. 
+* This definition frequently results in f t) not being ex ressible by
+a single analytical ex- pression for all real values of t. Cf. § 9'11
+example 1.
 
-t The numbers a, , fc  are called the Fourier constants of f(t), and the symbols a, , b  will be 
-used in this sense throughout §§ i)*2-9"5. It may be shewn that the convergence and absolute 
-convergence of the integrals defining the Fourier constants are consequences of the convergence 
+t The numbers a, , fc are called the Fourier constants of f(t), and
+the symbols a, , b will be used in this sense throughout §§ i)*2-9"5.
+It may be shewn that the convergence and absolute convergence of the
+integrals defining the Fourier constants are consequences of the
+convergence
 
-and absolute convergence of | f(t)dt. Cf. §§ 2-32, 4-5. 
+and absolute convergence of | f(t)dt. Cf. §§ 2-32, 4-5.
 
 
 
-/"-/' 
+/"-/'
 
 
 
-X The limits / (.r ± 0) exist, by § 3-64 example 3. 
-§ Cf. example 6 at the end of the chapter (p. 190). 
+X The limits / (.r ± 0) exist, by § 3-64 example 3. § Cf. example 6 at
+the end of the chapter (p. 190).
 
 
 
-9-21, 9'22] FOURIER SERIES 165 
+9-21, 9'22] FOURIER SERIES 165
 
-taken as implying nothing concerning the convergence of the series in 
-question. 
+taken as implying nothing concerning the convergence of the series in
+question.
 
-9'21. The representation of a function hy Fourier series for ranges otJter 
-than (— TT, tt). 
+9'21. The representation of a function hy Fourier series for ranges
+otJter than (— TT, tt).
 
-Consider a function f(oo) with an (absolutely) convergent integral, and 
-with limited total fluctuation in the range a os b. 
+Consider a function f(oo) with an (absolutely) convergent integral,
+and with limited total fluctuation in the range a os b.
 
-Write x = l(a + b)-l(a-b)'7r-W, f x) = F x'). 
+Write x = l(a + b)-l(a-b)'7r-W, f x) = F x').
 
-Then it is known (§ 9-2) that 
+Then it is known (§ 9-2) that
 
-\ [F  x   0) + F x' - 0)  = \ fto + t (an cos nx + b,, sin nx), 
+\ [F x 0) + F x' - 0) = \ fto + t (an cos nx + b,, sin nx),
 
-n = l 
+n = l
 
-and so 
+and so
 
-l f   + 0)+f x-0)  
+l f + 0)+f x-0)
 
-1 * f nir (2x — a—b) , . mr (2x — a — b) 
-= 5 tto + S -  a  cos r h bn sm 
+1 * f nir (2x — a—b) , . mr (2x — a — b) = 5 tto + S - a cos r h bn sm
 
 
 
-2 n=i   b — a b — a 
+2 n=i b — a b — a
 
-where by an obvious transformation 
+where by an obvious transformation
 
-1 r r/ \ nTT (2x - a - b) , 
-  b-a)an = j fi-i-) cos -jz  dx, 
+1 r r/ \ nTT (2x - a - b) , b-a)an = j fi-i-) cos -jz dx,
 
-1/7 \; f%/ \ • n7r(2x-a-b)j 
+1/7 \; f%/ \ • n7r(2x-a-b)j
 
-  (b — a) 6,1 = / (x) sm , ax. 
+  (b — a) 6,1 = / (x) sm , ax.
 
-  J a b — a 
+  J a b — a
 
-9 "22. The cosine series and the sine seines. 
+9 "22. The cosine series and the sine seines.
 
-Let f(x) be defined in the range (0, I) and let it have an (absolutely) 
-convergent integral and also let it have limited total fluctuation in that range. 
-Define f (x) in the range (0, — I) by the equation 
+Let f(x) be defined in the range (0, I) and let it have an
+(absolutely) convergent integral and also let it have limited total
+fluctuation in that range. Define f (x) in the range (0, — I) by the
+equation
 
-f(-x) f(x). 
-Then 
+f(-x) f(x). Then
 
-2 f(x + 0)+f x-0)]=-ao+ 2 ja cos-j  + 6 sin-pk 
+2 f(x + 0)+f x-0)]=-ao+ 2 ja cos-j + 6 sin-pk
 
-where, by § 9'21, 
+where, by § 9'21,
 
-la,, = r fit) cos '  dt = 2 [ /(O cos '  dt, 
+la,, = r fit) cos ' dt = 2 [ /(O cos ' dt,
 
-lbn=f f t)sm' dt = 0, 
+lbn=f f t)sm' dt = 0,
 
-so that when —l x l, 
+so that when —l x l,
 
-l fix + 0)+f x-0)] = lao+i ancos' ', 
+l fix + 0)+f x-0)] = lao+i ancos' ',
 
-this is called the cosine series. 
+this is called the cosine series.
 
-If, however, we define f(x) in the range (0, — I) by the equation 
+If, however, we define f(x) in the range (0, — I) by the equation
 
 
 
-166 THE PROCESSES OF ANALYSIS [CHAP. IX 
+166 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-we get, when — I "  cc- l, 
+we get, when — I " cc- l,
 
-f ixnrf/ 
+f ixnrf/
 
-where lhn='2 f(t) sin-.- dt; 
+where lhn='2 f(t) sin-.- dt;
 
-J I' 
+J I'
 
-this is called the sine series. 
+this is called the sine series.
 
-Thus the series 
+Thus the series
 
-1   mra; * , . nnx 
+1 mra; * , . nnx
 
-.-  o + 2 Cin cos —j- , Z On Sill —y- , 
+.- o + 2 Cin cos —j- , Z On Sill —y- ,
 
-  n=\ '  M = l '' 
+  n=\ ' M = l ''
 
-where  lan = I f t) cos -j- dt,   " = I /( )  "  /  ' 
+where lan = I f t) cos -j- dt, " = I /( ) " / '
 
-/lai'g f/ie sa ie sum ivken O x  l; but their sums are numerically equal and 
-opposite in sign when O x'  — l. 
+/lai'g f/ie sa ie sum ivken O x l; but their sums are numerically
+equal and opposite in sign when O x' — l.
 
-The cosine series was given by Clairaut, Hist, de I'Acad. R. des Sci. 1754 [published, 
-1759], in a memoir dated July 9, 1757; the sine series was obtained between 1762 and 
-1765 by Lagrange, Oeuvres, l. p. 553. 
+The cosine series was given by Clairaut, Hist, de I'Acad. R. des Sci.
+1754 [published, 1759], in a memoir dated July 9, 1757; the sine
+series was obtained between 1762 and 1765 by Lagrange, Oeuvres, l. p.
+553.
 
-Example 1. Expand h   "  —  v) sin .v in a cosine series in the range  x n. 
-[We have, by the formula just obtained, 
+Example 1. Expand h " — v) sin .v in a cosine series in the range x n.
+[We have, by the formula just obtained,
 
-  (tt —  ) sin.r = | o+ 2 a,iC0s?2 , 
+  (tt — ) sin.r = | o+ 2 a,iC0s?2 ,
 
-n=l 
+n=l
 
-where  j7ra = I   [ir —x) sin x cos nxdx. 
+where j7ra = I [ir —x) sin x cos nxdx.
 
-J 
+J
 
-But, integrating by parts, if 7i 4= 1, 
-2 '7T — x)smx cos nxdx 
+But, integrating by parts, if 7i 4= 1, 2 '7T — x)smx cos nxdx
 
-= I (tt— a;)  sin (?i + l) A'-sin(?i- 1) .a;  ( .r 
-.' 
+= I (tt— a;) sin (?i + l) A'-sin(?i- 1) .a; ( .r .'
 
-\ r , rcos(  + l)A' cos(?i — l).r"l I'T f  (cos n + l)x eos(  — l).r"i , 
+\ r , rcos( + l)A' cos(?i — l).r"l I'T f (cos n + l)x eos( — l).r"i ,
 
 
 
-/: 
+/:
 
 
 
-1 \ -27 
+1 \ -27
 
-= 7rf 
+= 7rf
 
 
 
-,  + l n-lj  n +  )  n-l)' 
+, + l n-lj n + ) n-l)'
 
-Whereas if   = 1, we get I 2 (tt - x) sin .r cos xdx= Tr. 
-J 
+Whereas if = 1, we get I 2 (tt - x) sin .r cos xdx= Tr. J
 
-Therefore the required series is 
+Therefore the required series is
 
-11 1   1 o 1 . 
+11 1 1 o 1 .
 
-- + - cos X - - — 5 COS 2x — - — - cos 3x - — — cos Ax- 
+- + - cos X - - — 5 COS 2x — - — - cos 3x - — — cos Ax-
 
-.   4 1.0   . 4 0.0 
+. 4 1.0 . 4 0.0
 
-It will be observed that it is only for values of x between and n that the sum of this 
-series is proved to be |(7r - x) sin x ; thus for instance when .v has a value between and 
-- TT, the sum of the series is not i (tt -  ) sin x, but — |  tt+x) sin x ; when x has a value 
-between tt and 277, the sum of the series happens to be again h  n — x) sin x, but this is a 
-mere coincidence arising from the special function considered, and does not follow from 
-the general theorem.] 
+It will be observed that it is only for values of x between and n that
+the sum of this series is proved to be |(7r - x) sin x ; thus for
+instance when .v has a value between and - TT, the sum of the series
+is not i (tt - ) sin x, but — | tt+x) sin x ; when x has a value
+between tt and 277, the sum of the series happens to be again h n — x)
+sin x, but this is a mere coincidence arising from the special
+function considered, and does not follow from the general theorem.]
 
-Example 2. Expand  irx (tt — x) in a sine series, valid when  .v tt. 
+Example 2. Expand irx (tt — x) in a sine series, valid when .v tt.
 
-rmi • sin Sx sin 5x , 
+rmi • sin Sx sin 5x ,
 
-I The series is sin x -\ —  . -\ -  — !-...•] 
+I The series is sin x -\ — . -\ - — !-...•]
 
 
 
-9-3] 
+9-3]
 
 
 
-FOURIER SERIES 
+FOURIER SERIES
 
 
 
-Example 3. Shew that, when   x   tt, 
+Example 3. Shew that, when x tt,
 
-1 , o \ / 2 , T T -'N COS 3  COS hx , 
+1 , o \ / 2 , T T -'N COS 3 COS hx ,
 
-— 7r(7r-2.r)(7r2 + 27r.r-2.r-) = cos.r+— p- +—   +•••• 
+— 7r(7r-2.r)(7r2 + 27r.r-2.r-) = cos.r+— p- +— +••••
 
-[Denoting the left-hand side hy f x), we have, on integi-ating by parts and observing 
-that/'(0)=/'(7r) = 0, 
+[Denoting the left-hand side hy f x), we have, on integi-ating by
+parts and observing that/'(0)=/'(7r) = 0,
 
-I fix) cos nx dx=-\ fix) sin nx \ | /' (a-) sin nx dx 
+I fix) cos nx dx=-\ fix) sin nx \ | /' (a-) sin nx dx
 
-Jo   L Jo 'iJo 
+Jo L Jo 'iJo
 
-If- "!"  1 T'' • 
+If- "!" 1 T'' •
 
-= — o / ' ( ') cos ?i. ; 5 I / " (.r) cos ? a; dx 
+= — o / ' ( ') cos ?i. ; 5 I / " (.r) cos ? a; dx
 
- 'L Jo  ';o 
+ 'L Jo ';o
 
-= 7,1 f" ix) sin nx + -  / /"'" (.f) sin nxdx 
+= 7,1 f" ix) sin nx + - / /"'" (.f) sin nxdx
 
-  L Jo  Vo 
+  L Jo Vo
 
-= — . /'" (x) cos nx = T— i (1 - cos ??7r).] 
-'/I* |\ -  ' Jo 4/i-* -  
+= — . /'" (x) cos nx = T— i (1 - cos ??7r).] '/I* |\ - ' Jo 4/i-* -
 
-Example 4. Shew that for values of x between and tt,   can be expanded in the 
-cosine series 
+Example 4. Shew that for values of x between and tt, can be expanded
+in the cosine series
 
 
 
-2s 
+2s
 
 
 
- x 
+ x
 
 
 
-+ . 
++ .
 
 
 
-, , / 1 cos 2x COS 4r \ 25 , , , /cos j; cos J 
+, , / 1 cos 2x COS 4r \ 25 , , , /cos j; cos J
 
-and draw graphs of the function e** and of the sum of the series. 
+and draw graphs of the function e** and of the sum of the series.
 
-Example 5. Shew that for values of x between and tt, the fimction  tt (n-- 2.r) can 
+Example 5. Shew that for values of x between and tt, the fimction tt
+(n-- 2.r) can
 
-be expanded in the cosine series 
+be expanded in the cosine series
 
-cos 3. ; cos "). ,• 
-COSA- + -— 5— + -,- +..., 
+cos 3. ; cos "). ,• COSA- + -— 5— + -,- +...,
 
-and draw graphs of the function  tt (tt - 2x) and of the sum of the series. 
+and draw graphs of the function tt (tt - 2x) and of the sum of the
+series.
 
-93. The nature of the coeffi cients in a Four ier series*. 
+93. The nature of the coeffi cients in a Four ier series*.
 
-Suppose that (as in the numerical examples which have been discussed) 
-the interval (— tt, tt) can bo divided into a finite number of ranges 
-(— TT, ki), (ki, ko) ... (k , tt) such that throughout each range f(x) and all its 
-differential coefiScients are continuous with limited total fluctuation and that 
-they have limits on the right and on the left (§ 3'2) at the end points of these 
-ranges. 
+Suppose that (as in the numerical examples which have been discussed)
+the interval (— tt, tt) can bo divided into a finite number of ranges
+(— TT, ki), (ki, ko) ... (k , tt) such that throughout each range f(x)
+and all its differential coefiScients are continuous with limited
+total fluctuation and that they have limits on the right and on the
+left (§ 3'2) at the end points of these ranges.
 
-Then 
+Then
 
-TTo,,, = I ' f t) cos nitdt + I f(t) cos mtdt + ...+ ( f(t) cos mtdt. 
+TTo,,, = I ' f t) cos nitdt + I f(t) cos mtdt + ...+ ( f(t) cos mtdt.
 
-Integrating by parts Ave get 
+Integrating by parts Ave get
 
 
 
-7ra,  = 
+7ra, =
 
 
 
-m~ f(t) sin mt 
+m~ f(t) sin mt
 
 
 
-+ 
++
 
 
 
-m~ f t) sin 7nt 
+m~ f t) sin 7nt
 
 
 
-*-  r . .   
+*- r . .
 
-+ ... 4- m-' f it) sm mt 
++ ... 4- m-' f it) sm mt
 
 
 
-kn 
+kn
 
 
 
-pi f 'i f"  
+pi f 'i f"
 
-— m~M f  t)Q\ nintdt—n\ r \ f (t) sin mtdt —... -m~  \ f'(t)sinmtdt, 
+— m~M f t)Q\ nintdt—n\ r \ f (t) sin mtdt —... -m~ \ f'(t)sinmtdt,
 
-J -tt' .'/I-/ '• 
+J -tt' .'/I-/ '•
 
 
 
-k  
+k
 
 
 
-SO that 
+SO that
 
 
 
- ,  = 
+ , =
 
 
 
-A h ' 
+A h '
 
-m m 
+m m
 
 
 
-* The analysis of this section and of § 9-31 is contained in Stokes' great memoir, Camb. Phil. 
-Tratis. VIII. (1849), pp. 538-583 [Math. Papers, i. pp. 236-313]. 
+* The analysis of this section and of § 9-31 is contained in Stokes'
+great memoir, Camb. Phil. Tratis. VIII. (1849), pp. 538-583 [Math.
+Papers, i. pp. 236-313].
 
 
 
-168 THE PROCESSES OF ANALYSIS [CHAP. IX 
+168 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-where 7r ) = 2 sin'nikr f k;. — O)—f(kr + 0) , 
+where 7r ) = 2 sin'nikr f k;. — O)—f(kr + 0) ,
 
-and bj is a Fourier constant of /' (x). 
+and bj is a Fourier constant of /' (x).
 
-Similarly h,  = —  + -  , 
+Similarly h, = — + - ,
 
-where 
+where
 
-n 
+n
 
-7ri?,  = - S cos mkr  f k.  - 0) - f(k, + 0)  - cos m-rr  /(tt - 0) -/(- tt + 0)|, 
-and a i' is a Fourier constant of/'' (a;). 
-Similarly, we get 
+7ri?, = - S cos mkr f k. - 0) - f(k, + 0) - cos m-rr /(tt - 0) -/(- tt
++ 0)|, and a i' is a Fourier constant of/'' (a;). Similarly, we get
 
-A ' h " Ti ' n " 
+A ' h " Ti ' n "
 
-Wjjj — , Oj)j r > 
+Wjjj — , Oj)j r >
 
-where   /', \& /' are the Fourier constants of/" (a;) and 
+where /', \& /' are the Fourier constants of/" (a;) and
 
-IT A,: = i sin 7 AV   r (kr - 0) -f (kr + 0) , 
-r=l 
+IT A,: = i sin 7 AV r (kr - 0) -f (kr + 0) , r=l
 
-7rB : = - i cosw , /'(A ,-0)-/'(Av + 0)  
+7rB : = - i cosw , /'(A ,-0)-/'(Av + 0)
 
-)• = ! 
+)• = !
 
-- cos miT  /' (tt - 0) -/' (- TT + 0) . 
-Therefore 
+- cos miT /' (tt - 0) -/' (- TT + 0) . Therefore
 
-A Ti ' n " Ti ' A ' h " 
+A Ti ' n " Ti ' A ' h "
 
-m m- nr m nv iiv 
+m m- nr m nv iiv
 
-Now as vi—¥<xi, we see that 
+Now as vi—¥<xi, we see that
 
-AJ = 0 1), a; = 0(1), 
+AJ = 0 1), a; = 0(1),
 
-and, since the integrands involved in a, " and hj' are bounded, it is evident 
-that 
+and, since the integrands involved in a, " and hj' are bounded, it is
+evident that
 
- ,/=0(l), 6,/ = 0(1). 
+ ,/=0(l), 6,/ = 0(1).
 
-Hence if   j = 0, £,  = 0, the Fourier series for f x) converges absolutely 
-and uniformly, by § 3 "34. 
+Hence if j = 0, £, = 0, the Fourier series for f x) converges
+absolutely and uniformly, by § 3 "34.
 
-The necessary and sufficient conditions that A-,n = B.,n — for all values of 
-m are that 
+The necessary and sufficient conditions that A-,n = B.,n — for all
+values of m are that
 
-f kr - 0) =f k, + 0), /(tt - 0) =/(- TT + 0), 
+f kr - 0) =f k, + 0), /(tt - 0) =/(- TT + 0),
 
-that is to say that* /(a;) should be continuous for all values oi x. 
+that is to say that* /(a;) should be continuous for all values oi x.
 
-9'31. Differentiation of Fourier series. 
+9'31. Differentiation of Fourier series.
 
-The result of differentiating 
+The result of differentiating
 
-1 " 
+1 "
 
-- tto 4- 2  am cos mx -i- hm sin mx) 
+- tto 4- 2 am cos mx -i- hm sin mx)
 
 
 
-2 
+2
 
 
 
-jn = l 
+jn = l
 
 
 
-term by term is 2  ?7i6 iCosma; — 7710  sinma; . 
+term by term is 2 ?7i6 iCosma; — 7710 sinma; .
 
-9)i = l 
+9)i = l
 
-* Of course /(x) is also subject to the conditions stated at the beginning of the section. 
+* Of course /(x) is also subject to the conditions stated at the
+beginning of the section.
 
 
 
-9 "3 1-9 '4] FOURIER SERIES 169 
+9 "3 1-9 '4] FOURIER SERIES 169
 
-With the notation of § 9"3, this is the same as 
+With the notation of § 9"3, this is the same as
 
-H  o' + S (a i cos mx + hj sm mx), 
+H o' + S (a i cos mx + hj sm mx),
 
-  m = \ 
+  m = \
 
-provided that J.,,, = i?,  = and j /' (x) dx = ; 
+provided that J.,,, = i?, = and j /' (x) dx = ;
 
-— jr 
+— jr
 
-these conditions are satisfied if f(x) is continuous for all values of a;. 
+these conditions are satisfied if f(x) is continuous for all values of
+a;.
 
-Consequently sufficient conditions for the legitimacy of differentiating 
-a Fourier series term by term are that f x) should be continuous for all 
-values of x and /' (x) should have only a finite number of points of discon- 
-tinuity in the range (— tt, tt), both functions having limited total fluctuation 
-throughout the range. 
+Consequently sufficient conditions for the legitimacy of
+differentiating a Fourier series term by term are that f x) should be
+continuous for all values of x and /' (x) should have only a finite
+number of points of discon- tinuity in the range (— tt, tt), both
+functions having limited total fluctuation throughout the range.
 
-9"32. Determination of points of discontinuity. 
+9"32. Determination of points of discontinuity.
 
-The expressions for a , and b,n which have been found in § 9-3 can frequently be applied 
-in practical examples to determine the [loints at which the sum of a given Fourier series 
-may be discontinuous. Thus, let it be required to determine the places at which the sum 
-of the series 
+The expressions for a , and b,n which have been found in § 9-3 can
+frequently be applied in practical examples to determine the [loints
+at which the sum of a given Fourier series may be discontinuous. Thus,
+let it be required to determine the places at which the sum of the
+series
 
-sin u'+ i sin 3.'; + 4 sin •")./• + . . . 
-is discontinuous. 
+sin u'+ i sin 3.'; + 4 sin •")./• + . . . is discontinuous.
 
-  Assmning that the series is a Fourier series and not <i/ij/ trigonometrical series and 
+  Assmning that the series is a Fourier series and not <i/ij/
+trigonometrical series and
 
-observing that 0 =0, b   =  2m)- '   l-coa nin), we get on considering the formula found in 
+observing that 0 =0, b = 2m)- ' l-coa nin), we get on considering the
+formula found in
 
-!  9-3, 
+! 9-3,
 
- ,,, = 0, B   =   -h cos nirr, a, ' = 6 ,' = 0. 
+ ,,, = 0, B = -h cos nirr, a, ' = 6 ,' = 0.
 
-Hence if y(-, , k. , ... are the places at which the analytic character of the sum is broken, 
-we have 
+Hence if y(-, , k. , ... are the places at which the analytic
+character of the sum is broken, we have
 
-= 7r.4,  = [sin ml'i  f(i-  - 0) -/(/(•, + 0)  +sin mk.>  / h, - 0) -f(L;, + 0)  + ...]. 
+= 7r.4, = [sin ml'i f(i- - 0) -/(/(•, + 0) +sin mk.> / h, - 0) -f(L;,
++ 0) + ...].
 
-Since this is true for all values of ? , the numbers ki, h , ... must be multiples of tt ; but 
+Since this is true for all values of ? , the numbers ki, h , ... must
+be multiples of tt ; but
 
-there is only one even multiple of it in the range — 7r<.r 7r, namely zero. So  •i = 0, 
+there is only one even multiple of it in the range — 7r<.r 7r, namely
+zero. So •i = 0,
 
-and X )  '3, ... do not exist. Substituting / •, = in the equation 5m = i-i cos mir, we have 
+and X ) '3, ... do not exist. Substituting / •, = in the equation 5m =
+i-i cos mir, we have
 
-7r( - COSJ 7r)=-[cosm7r /(7r-0)-/(-7r+0) +/(-0)-/( + 0)]. 
+7r( - COSJ 7r)=-[cosm7r /(7r-0)-/(-7r+0) +/(-0)-/( + 0)].
 
-Since this is true for all values of ?n, we have 
+Since this is true for all values of ?n, we have
 
-i7r=/( + 0)-/(-0), |7r=/(7r-0)-/(,r + 0). 
-This shews that, if the series is a Fourier series, /(.r) has discontinuities at the points 
-niT  n any integer), and since a ,' = 6m' = 0, we should expect* /( ) to be constant in the 
-open range ( - tt, 0) and to be another constant in the open range (0, tt). 
+i7r=/( + 0)-/(-0), |7r=/(7r-0)-/(,r + 0). This shews that, if the
+series is a Fourier series, /(.r) has discontinuities at the points
+niT n any integer), and since a ,' = 6m' = 0, we should expect* /( )
+to be constant in the open range ( - tt, 0) and to be another constant
+in the open range (0, tt).
 
-94. Fej r's theorem. 
+94. Fej r's theorem.
 
-We now begin the discussion of the theory of Fourier series by proving 
-the following theorem, due to Fejer+, concerning the summability of the 
-Fourier series associated with an arbitrary function, f t): 
+We now begin the discussion of the theory of Fourier series by proving
+the following theorem, due to Fejer+, concerning the summability of
+the Fourier series associated with an arbitrary function, f t):
 
-Let f t) he a function of the real variable t, defined arbitrarily luhen 
-— TT  t< TT, and defined by the equation 
+Let f t) he a function of the real variable t, defined arbitrarily
+luhen — TT t< TT, and defined by the equation
 
-f(t + 27r)=f(t) 
+f(t + 27r)=f(t)
 
-* lu point of fact f(x)=- Tr (-7r<:x<0); 
+* lu point of fact f(x)=- Tr (-7r<:x<0);
 
-f(x) =  ir (0<x<?r). 
+f(x) = ir (0<x<?r).
 
-t Math. Ann. lviii. (1904), pp. 51-69. 
+t Math. Ann. lviii. (1904), pp. 51-69.
 
 
 
-170 THE PROCESSES OF ANALYSIS [CHAP. IX 
+170 THE PROCESSES OF ANALYSIS [CHAP. IX
 
 
 
-for all other real values oft; and let I f t)dt exist and  if it is an improper 
+for all other real values oft; and let I f t)dt exist and if it is an
+improper
 
-J -n 
+J -n
 
-integral) let it he ahsolutely convergent. 
+integral) let it he ahsolutely convergent.
 
-Then the Fourier ser'ies associated with the function f (f) is summable* (CI) 
-at all points x at which the two limits f(x ± 0) exist. 
+Then the Fourier ser'ies associated with the function f (f) is
+summable* (CI) at all points x at which the two limits f(x ± 0) exist.
 
-And its sum (CI) is 
+And its sum (CI) is
 
-i /(*' + 0)+/( -0) . 
+i /(*' + 0)+/( -0) .
 
-Let an, bn, (n = 0, 1, 2, ...) denote the Fourier constants (§9*2) of /( ) 
-and let 
+Let an, bn, (n = 0, 1, 2, ...) denote the Fourier constants (§9*2) of
+/( ) and let
 
- ao = Ao, anCosnx + bnSinnx = An x), S An(x) = S ni )- 
+ ao = Ao, anCosnx + bnSinnx = An x), S An(x) = S ni )-
 
 
 
-n=0 
+n=0
 
 
 
-Then we have to prove that 
+Then we have to prove that
 
 
 
-lira -  A, + S, x) + S, x) + ... + S, \ , x)] =    f x + 0)+f x -0)], 
+lira - A, + S, x) + S, x) + ... + S, \ , x)] = f x + 0)+f x -0)],
 
-in-*-x  W 
+in-*-x W
 
-provided that the limits on the right exist. 
+provided that the limits on the right exist.
 
-If we substitute for the Fourier constants their values in the form of 
-integrals (§ 9'2), it is easy to verify thatf 
+If we substitute for the Fourier constants their values in the form of
+integrals (§ 9'2), it is easy to verify thatf
 
-j  - 1 
- 0 + 2 >S  (x) = mAo + (m -l)A (x) + (m -2) A., x) + ... + A,n-i  x) 
+j - 1 0 + 2 >S (x) = mAo + (m -l)A (x) + (m -2) A., x) + ... + A,n-i
+x)
 
-n=\ 
+n=\
 
-1 /"" 
+1 /""
 
-= - [ m +  m - 1) cos  x-t) + (m - 2) cos 2 x-t)+ ... 
+= - [ m + m - 1) cos x-t) + (m - 2) cos 2 x-t)+ ...
 
- "  j -:r 
+ "j -:r
 
-+ cos (m - l) x - 1)] fit) dt 
-- i\  r sin iM  // -x 7, 
-~27rj\ . sin  1( -0 -  
++ cos (m - l) x - 1)] fit) dt - i\ r sin iM // -x 7, ~27rj\ . sin 1(
+-0 -
 
--27rj\ .+, sin  1( -0 -   ' 
-the last step following from the periodicity of the integrand. 
+-27rj\ .+, sin 1( -0 - ' the last step following from the periodicity
+of the integrand.
 
-If now we bisect the path of integration and write a; + 2  in place of t in 
-the two parts of the path, we get 
+If now we bisect the path of integration and write a; + 2 in place of
+t in the two parts of the path, we get
 
-A + 1 Sn (x) = - - - r  f x + 2d)de + - —- r,' j oc- 26) dO. 
+A + 1 Sn (x) = - - - r f x + 2d)de + - —- r,' j oc- 26) dO.
 
-Consequently it is sufficient to prove that, as m— cc , then 
-1 r sin' wi  ,. \  . ,  , -/  x 1 f- 'sin-m  ..   , ,  , ., .. 
+Consequently it is sufficient to prove that, as m— cc , then 1 r sin'
+wi ,. \ . , , -/ x 1 f- 'sin-m .. , , , ., ..
 
 
 
-* See § 8-43. 
+* See § 8-43.
 
-t It is obvious that, if we write X for e ( -') in the second line, tlien 
+t It is obvious that, if we write X for e ( -') in the second line,
+tlien
 
-m + (m - 1) (X + X-i) + (hi - 2) (X2 + X-2) + . . . + (X' -i + Xi-' ) 
+m + (m - 1) (X + X-i) + (hi - 2) (X2 + X-2) + . . . + (X' -i + Xi-' )
 
-= (l-X)-i \ i-™ + X2-' +...+X-i + l-X--X'-i-...-X'   
-= (1 - X)-2  xi- v - 2X + X' +i  = (X '" - X~ '"f /(X  - X" )  
+= (l-X)-i \ i-™ + X2-' +...+X-i + l-X--X'-i-...-X' = (1 - X)-2 xi- v -
+2X + X' +i = (X '" - X~ '"f /(X - X" )
 
 
 
-9 4] FOURIER SERIES 171 
+9 4] FOURIER SERIES 171
 
-! the equation 
- m +  iu— l)cos2 + ... + cos 2 m — 1)6, 
+! the equation m + iu— l)cos2 + ... + cos 2 m — 1)6,
 
 
 
-Now, if we integrate the equation 
-1 sin  ni0 
+Now, if we integrate the equation 1 sin ni0
 
 
 
-2 sin- 6* 
-we find that 
+2 sin- 6* we find that
 
 
 
-' " sin m  
+' " sin m
 
-da —  TTin, 
+da — TTin,
 
 
 
-J sin 
+J sin
 
-and so we have to prove that 
+and so we have to prove that
 
-1 r ' sin m  . ,. 
+1 r ' sin m . ,.
 
-— —  /i 4>(6)(i6—>0 as m—¥x, 
+— — /i 4>(6)(i6—>0 as m—¥x,
 
-mJo siTi'd 
+mJo siTi'd
 
-where (f)(0) stands in turn for each of the two functions 
+where (f)(0) stands in turn for each of the two functions
 
-fix + 26) -fix + 0), fix - 26) -fix - 0). 
+fix + 26) -fix + 0), fix - 26) -fix - 0).
 
-Now, given an arbitrary positive number e, we can choose S so that* 
+Now, given an arbitrary positive number e, we can choose S so that*
 
-(  ( ) I < e 
+( ( ) I < e
 
-whenever 0< 6  S. This choice of B is obviously independent of m. 
+whenever 0< 6 S. This choice of B is obviously independent of m.
 
-Then 
+Then
 
-1 f  sin- m6 .   ,  1 fi' sin m  
+1 f sin- m6 . , 1 fi' sin m
 
 
 
-1 fi"" sin- m6 , , , ,  1 f sm-mO ,   ,  1 f " sm"  ni6 , , , . ,  
-- - n 4>id)de % - --- rQ- 4><6) d6+ '.-—-4>i6)\ d6 
+1 fi"" sin- m6 , , , , 1 f sm-mO , , 1 f " sm" ni6 , , , . , - - n
+4>id)de % - --- rQ- 4><6) d6+ '.-—-4>i6)\ d6
 
-mJo sin-6   ' mj  sin-6   //i'js sin f  -r \ / 
+mJo sin-6 ' mj sin-6 //i'js sin f -r \ /
 
-ri*sin-?   , , 1 [i" , -  .. 
+ri*sin-? , , 1 [i" , - ..
 
--r-r dc)+ -.-- -.  \ 4> 6) d6 
-'o sin-  msmHSJw'  
+-r-r dc)+ -.-- -. \ 4> 6) d6 'o sin- msmHSJw'
 
 
 
-e ri*sin-?   , , 1 /"i" 
+e ri*sin-? , , 1 /"i"
 
-m.'o sin-c  msm ojji 
+m.'o sin-c msm ojji
 
-6 fi'sin /  - - 1 ri" 
+6 fi'sin / - - 1 ri"
 
 
 
- -  r7 f + • ...J \ i>i6)\ d6 
- )i\ sm-6 711 sm-  6 Jo '  ' 
+ - r7 f + • ...J \ i>i6)\ d6 )i\ sm-6 711 sm- 6 Jo ' '
 
-= i7re+ - ijl" (f>(6)d6. 
+= i7re+ - ijl" (f>(6)d6.
 
 
 
-Now the convergence of I /(O f?  entails the convergence of 
+Now the convergence of I /(O f? entails the convergence of
 
-J -1T 
+J -1T
 
 
 
-<f> 6) d6, 
+<f> 6) d6,
 
-. 
-and so, given e (and therefore h), we can make 
+. and so, given e (and therefore h), we can make
 
- irem sin' lh> \'\ <  i6) dO, 
+ irem sin' lh> \'\ < i6) dO,
 
-Jo 
+Jo
 
-by taking m sufficiently large. 
+by taking m sufficiently large.
 
-Hence, by taking m sufficiently large, we can make 
+Hence, by taking m sufficiently large, we can make
 
-I 1 fi'  sin-??i  . //ix j/i 
--   4>i6)d6 <7re, 
+I 1 fi' sin-??i . //ix j/i - 4>i6)d6 <7re,
 
-\ in J Q sm- 6   
+\ in J Q sm- 6
 
-where e is an arbitrary positive number ; that is to say, from the definition of 
-a limit, 
+where e is an arbitrary positive number ; that is to say, from the
+definition of a limit,
 
-m oo m ' sm- e 
-and so Fejer's theorem is established. 
+m oo m ' sm- e and so Fejer's theorem is established.
 
-* On the assumption that/(x±0) exist. 
+* On the assumption that/(x±0) exist.
 
 
 
-172 THE PROCESSES OF ANALYSIS [CHAP. IX 
+172 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-Corollary 1. Let V and L be the upper and lower bounds o f t) in any interval  a, b) 
-whose length does not exceed £77, and let 
+Corollary 1. Let V and L be the upper and lower bounds o f t) in any
+interval a, b) whose length does not exceed £77, and let
 
-P \ f t)\ dt = nA. 
+P \ f t)\ dt = nA.
 
-Then, if a +r)  .v b-rj, where ;; is any positive number, we have 
+Then, if a +r) .v b-rj, where ;; is any positive number, we have
 
- -.- r Mx-'"  = 2T -  j-... + j.-, j..J sinH(i-0 - (    
+ -.- r Mx-'" = 2T - j-... + j.-, j..J sinH(i-0 - (
 
-  1 iP-  /•- -|- sinH> ( -0 
-r2rw7rij\  +.,. ./a;+J sin  (x -   - -  
+  1 iP- /•- -|- sinH> ( -0 r2rw7rij\ +.,. ./a;+J sin (x - - -
 
-i 1 0+" 'i' 'S'  (.x-)|  U-  \ U  + U l m sin2 i;, . 
+i 1 0+" 'i' 'S' (.x-)| U- \ U + U l m sin2 i;, .
 
 
 
-so that 
+so that
 
 
 
-Similarly 
+Similarly
 
 
 
-    o+' i ' "   ] >L- \ L'H ]l r>i sinH  . 
+    o+' i ' " ] >L- \ L'H ]l r>i sinH .
 
 
 
-Corollary 2. Let/( ) be continuous in the interval a t b. Since continuity implies 
-uniformity of continuity (§ 3-61), the choice of S corresponding to any value of x in (a, b) 
-is independent of x, and the upper bound of |/(.r±0) |, i.e. of \ f x) |, is also independent 
-of X, so that 
+Corollary 2. Let/( ) be continuous in the interval a t b. Since
+continuity implies uniformity of continuity (§ 3-61), the choice of S
+corresponding to any value of x in (a, b) is independent of x, and the
+upper bound of |/(.r±0) |, i.e. of \ f x) |, is also independent of X,
+so that
 
 
 
-/ '" j ( ( ) i d6= ['" I f x±U)-f x±Q)\ de 
-Jo Jo' 
+/ '" j ( ( ) i d6= ['" I f x±U)-f x±Q)\ de Jo Jo'
 
 
 
-and the upper bound of the last expression is independent of x. 
+and the upper bound of the last expression is independent of x.
 
-Hence the choice of ??z, which makes 
+Hence the choice of ??z, which makes
 
-"i"- sin ind , ... J- ! 
+"i"- sin ind , ... J- !
 
-  ,. (  6)d6\ <7re, 
-sm  6   I 
+  ,. ( 6)d6\ <7re, sm 6 I
 
 
 
-2 p. 
+2 p.
 
-m J 
+m J
 
 
 
-1 f "'-1 1 
+1 f "'-1 1
 
-is independent of x, and consequently — \ A( + 2 S.n x)\ tends to the limit f x), as 
+is independent of x, and consequently — \ A( + 2 S.n x)\ tends to the
+limit f x), as
 
-in \ n=\ ) 
+in \ n=\ )
 
-m- -a: , uniformly throughout the interval a  x%b. 
+m- -a: , uniformly throughout the interval a x%b.
 
-9"41. The Riemann-Lehesgue lemmas. 
+9"41. The Riemann-Lehesgue lemmas.
 
-In order to be able to apply Hardy's theorem (§ 8"5) to deduce the con- 
-vergence of Fourier series from Fejer's theorem, we need the two following 
-lemmas : 
+In order to be able to apply Hardy's theorem (§ 8"5) to deduce the
+con- vergence of Fourier series from Fejer's theorem, we need the two
+following lemmas :
 
-(I) Let ( -x   6) dd exist and  if it is an improper integral) let it he 
+(I) Let ( -x 6) dd exist and if it is an improper integral) let it he
 
-  a 
+  a
 
-absolutely convergent. Then, as X-  x> , 
+absolutely convergent. Then, as X- x> ,
 
-yl/ e)sm \ e)de is 0(1). 
+yl/ e)sm \ e)de is 0(1).
 
 
 
-(II) If, further, i/r (6) Juts limited total fluctuation in the range  a, h) then, 
-as X—><X) , 
+(II) If, further, i/r (6) Juts limited total fluctuation in the range
+a, h) then, as X—><X) ,
 
-yfr (6) sin (XO) de is 0 1/X). 
+yfr (6) sin (XO) de is 0 1/X).
 
 
 
-/ 
+/
 
-J a 
+J a
 
 
 
-9-41] 
+9-41]
 
 
 
-FOURIER SERIES 
+FOURIER SERIES
 
 
 
-173 
+173
 
 
 
-Of these results (I) was stated by W. R. Hamilton* and by Riemannt in the case of 
-bounded fiuictions. The truth of (II) seems to have been well known before its importance 
-was realised ; it is a generalisation of a result established by Dirksenf and Stokes 
-(see § 9 '3) in the case of functions with a continuous differential coefficient. 
+Of these results (I) was stated by W. R. Hamilton* and by Riemannt in
+the case of bounded fiuictions. The truth of (II) seems to have been
+well known before its importance was realised ; it is a generalisation
+of a result established by Dirksenf and Stokes (see § 9 '3) in the
+case of functions with a continuous differential coefficient.
 
-The reader should obser\'e that the analysis of this section remains valid when the 
-sines are replaced throughout by cosines. 
+The reader should obser\'e that the analysis of this section remains
+valid when the sines are replaced throughout by cosines.
 
-(I) It is convenient  to establish this lemma first in the case in which 
-yjr (0) is bounded in the range (a, b). In this case, let K be the upper bound 
-of r\ fr d)\, and let e be an arbitrary positive number. Divide the range (a, 6) 
-into n parts by the points x,, x.2, ... a'n-i, and form the sums Sn, Sn associated 
-with the function i/r (0) after the manner of § 41. Take n so large that 
- n — Sn<e; this is possible since -yjr [6) is integrable. 
+(I) It is convenient to establish this lemma first in the case in
+which yjr (0) is bounded in the range (a, b). In this case, let K be
+the upper bound of r\ fr d)\, and let e be an arbitrary positive
+number. Divide the range (a, 6) into n parts by the points x,, x.2,
+... a'n-i, and form the sums Sn, Sn associated with the function i/r
+(0) after the manner of § 41. Take n so large that n — Sn<e; this is
+possible since -yjr [6) is integrable.
 
-In the interval (a-v\ i, a ,) write 
+In the interval (a-v\ i, a ,) write
 
-y r d) = ylr,(xr-,) + co,(e), 
+y r d) = ylr,(xr-,) + co,(e),
 
-SO that    ( 0r(6)\ <z Ur — L,-, 
+SO that ( 0r(6)\ <z Ur — L,-,
 
-where Ur and Lr are the upper and lower bounds of -  6) in the interval 
-yXf—i, Xf). 
+where Ur and Lr are the upper and lower bounds of - 6) in the interval
+yXf—i, Xf).
 
-It is then clear that 
+It is then clear that
 
-•6 
+•6
 
 
 
-[ yjr (6) sin (\ d)de 
+[ yjr (6) sin (\ d)de
 
-J a 
+J a
 
 
 
-= 1 t i/r,. (av-i) 
-I r=l 
+= 1 t i/r,. (av-i) I r=l
 
-n 
+n
 
 
 
-sm \ d)(W+ :i 
+sm \ d)(W+ :i
 
 
 
-(o,  \$) sin (kO) dO 
+(o, \$) sin (kO) dO
 
 
 
-sm \ 0)dd 
+sm \ 0)dd
 
 
 
-+ S 
++ S
 
-r=l . Xr-i 
+r=l . Xr-i
 
 
 
-O)r(O)\ d0 
+O)r(O)\ d0
 
 
 
-< 2nK/X) + €. 
+< 2nK/X) + €.
 
-By taking X sufficiently large (n remaining fixed after e has been chosen), 
-the last expression may be made less than 2e, so that 
+By taking X sufficiently large (n remaining fixed after e has been
+chosen), the last expression may be made less than 2e, so that
 
 
 
-lim ylr(0)sm(xe)dd = O, 
+lim ylr(0)sm(xe)dd = O,
 
-K-*-ac J a 
+K-*-ac J a
 
-and this is the result stated. 
+and this is the result stated.
 
-When yfr 6) is unbounded, if it has an absolutely convergent integral, by 
-§ 4'5, we may enclose the points at which it is unbounded in a finite |j number 
+When yfr 6) is unbounded, if it has an absolutely convergent integral,
+by § 4'5, we may enclose the points at which it is unbounded in a
+finite |j number
 
-* Trans. Dublin Acad. xix. (1843), p. 267. 
+* Trans. Dublin Acad. xix. (1843), p. 267.
 
-t Ges. Math. IVerke, p. 241. For Lebesgue's investigation see his Series trigonometriques 
-(1906), Ch. III. 
+t Ges. Math. IVerke, p. 241. For Lebesgue's investigation see his
+Series trigonometriques (1906), Ch. III.
 
-X Journal fUr Math. iv. (1829), p. 172. 
+X Journal fUr Math. iv. (1829), p. 172.
 
-§ For this proof we are indebted to Mr Hardy ; it seems to be neater than the proofs given by 
-other writers, e.g. de la Vallee Poussin, Cours cV Analyse Infinitesiniale, ii. (1912), pp. 140-141. 
+§ For this proof we are indebted to Mr Hardy ; it seems to be neater
+than the proofs given by other writers, e.g. de la Vallee Poussin,
+Cours cV Analyse Infinitesiniale, ii. (1912), pp. 140-141.
 
-li The finiteness of the number of intervals is assumed in the definition of an improper 
-integral, § 4-5. 
+li The finiteness of the number of intervals is assumed in the
+definition of an improper integral, § 4-5.
 
 
 
-174 THE PROCESSES OF ANALYSIS [CHAP. IX 
+174 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-of intervals Sj, So, ... Bp such that 
+of intervals Sj, So, ... Bp such that
 
-d6<€. 
+d6<€.
 
 
 
 
 
 
-If K denote the upper bound of \ ylr(6)\ for values of outside these 
+If K denote the upper bound of \ ylr(6)\ for values of outside these
 
-intervals, and if 71, 70, ... 7 +1 denote the portions of the interval (a, b) which 
+intervals, and if 71, 70, ... 7 +1 denote the portions of the interval
+(a, b) which
 
-do not belong to 8 , Bo, ... 8p we may prove as before that 
+do not belong to 8 , Bo, ... 8p we may prove as before that
 
-rb I ?3+i r p r I 
+rb I ?3+i r p r I
 
-ylr e)sm \ e)de =\ t ylr(e)sm \ e)d0+ t ylr e)sm \ e)de\ 
+ylr e)sm \ e)de =\ t ylr(e)sm \ e)d0+ t ylr e)sm \ e)de\
 
-J a ' \ r=lJyr r=lJ S,- ' 
+J a ' \ r=lJyr r=lJ S,- '
 
- \ \  X I f e)sin Xe)de + S f \ ylr(d)sm \ d)ide 
+ \ \ X I f e)sin Xe)de + S f \ ylr(d)sm \ d)ide
 
-I r=l. V,. r = lJ Sr 
+I r=l. V,. r = lJ Sr
 
-<  2nKj )  + 26. 
+< 2nKj ) + 26.
 
-Now the choice of e fixes n and K, so that the last expression may be 
-made less than 3e by taking X. sufficiently large. That is to say that, even 
-if yjr (6) be unbounded, 
+Now the choice of e fixes n and K, so that the last expression may be
+made less than 3e by taking X. sufficiently large. That is to say
+that, even if yjr (6) be unbounded,
 
-lim [ f e)sm(ke)dd = 0, 
+lim [ f e)sm(ke)dd = 0,
 
-A.- .oo J a 
+A.- .oo J a
 
-provided that yjr  6  has an (improper) integral which is absolutely convergent. 
+provided that yjr 6 has an (improper) integral which is absolutely
+convergent.
 
-The first lemma is therefore completely proved. 
+The first lemma is therefore completely proved.
 
-(II) When yjr  6) has limited total fluctuation in the range (a, b), by § 3'64 
-example 2, we may write 
+(II) When yjr 6) has limited total fluctuation in the range (a, b), by
+§ 3'64 example 2, we may write
 
- W = %:( )-%2( ), 
+ W = %:( )-%2( ),
 
-where Xi ( )> %2 ( ) are positive increasing bounded functions. 
+where Xi ( )> %2 ( ) are positive increasing bounded functions.
 
-Then, by the second mean-value theorem (§ 4"14) a number   exists such 
-that a-  b and 
+Then, by the second mean-value theorem (§ 4"14) a number exists such
+that a- b and
 
-f Yi (6) sin (XO) dd\ = \ xAb)l' sin (Xd) dO , 
+f Yi (6) sin (XO) dd\ = \ xAb)l' sin (Xd) dO ,
 
- 2xAb)IX. 
-If we treat X2. ( ) in   similar manner, it follows that 
+ 2xAb)IX. If we treat X2. ( ) in similar manner, it follows that
 
 
 
-X, (0) sin (Xd) dd 
+X, (0) sin (Xd) dd
 
 
 
-+ 
++
 
 
 
-X', 0) \ n xe)dd- 
+X', 0) \ n xe)dd-
 
 
 
-yjr (d) sin (XO) d6 
+yjr (d) sin (XO) d6
 
- 2te(6) + ; ,(6) /X 
-= 0(1/X), 
-and the second lemma is established. 
+ 2te(6) + ; ,(6) /X = 0(1/X), and the second lemma is established.
 
-Corollary. If f t) lie such that I f(t) exists and is an absolutely convergent 
+Corollary. If f t) lie such that I f(t) exists and is an absolutely
+convergent
 
-integral, the Fourier constants a , bn oi f t) are o(l) as n- -oo ; and if, further, /(<) has 
-limited total fluctuation in the range (-tt, it), the Fourier constants are 0 l/n). 
+integral, the Fourier constants a , bn oi f t) are o(l) as n- -oo ;
+and if, further, /(<) has limited total fluctuation in the range (-tt,
+it), the Fourier constants are 0 l/n).
 
-[Of course these results are not sufl\&cient to ensure the convergence of the Fourier 
-series associated with/(i) ; for a series, in which the terms are of the order of magnitude 
-of the terms in the harmonic series (§ 2'3), is not necessarily convergent.] 
+[Of course these results are not sufl\&cient to ensure the convergence
+of the Fourier series associated with/(i) ; for a series, in which the
+terms are of the order of magnitude of the terms in the harmonic
+series (§ 2'3), is not necessarily convergent.]
 
 
 
-9*42] FOURIER SERIES 175 
+9*42] FOURIER SERIES 175
 
-942. The proof of Fourier's theorem. 
+942. The proof of Fourier's theorem.
 
-We shall now prove the theorem enunciated in § 9*2, namely : 
-Let f(t) be a function defined arbitrarily luhen —ir tKir, and defined by 
-the equation f t + 27r) =f t) for all other real values oft; and let 1 fit) dt 
-exist and (if it is an improper integral) let it be absolutely convergent. 
-Let an, bn be defined by the equations 
+We shall now prove the theorem enunciated in § 9*2, namely : Let f(t)
+be a function defined arbitrarily luhen —ir tKir, and defined by the
+equation f t + 27r) =f t) for all other real values oft; and let 1
+fit) dt exist and (if it is an improper integral) let it be absolutely
+convergent. Let an, bn be defined by the equations
 
-7ran= I f t) cos ntdt, 7rb,i= j f(t)sinntdt. 
+7ran= I f t) cos ntdt, 7rb,i= j f(t)sinntdt.
 
-J —n J —TT 
+J —n J —TT
 
-Then, if OS be an interior point of any interval (a, b) luithin tuhich f(t) has 
-limited total fluctuation, the series 
+Then, if OS be an interior point of any interval (a, b) luithin tuhich
+f(t) has limited total fluctuation, the series
 
-00 
+00
 
- ao+ 2 (tt,j cos n  + 6,1 sin ?ia;) 
+ ao+ 2 (tt,j cos n + 6,1 sin ?ia;)
 
-is convergent and its sum is   [f x + 0) +f x — 0) . 
+is convergent and its sum is [f x + 0) +f x — 0) .
 
-It is convenient to give two proofs, one applicable to functions for which 
-it is permissible to take the interval (o, b) to be the interval (— tt + a-, it -  x), 
-the other applicable to functions for which it is not permissible. 
+It is convenient to give two proofs, one applicable to functions for
+which it is permissible to take the interval (o, b) to be the interval
+(— tt + a-, it - x), the other applicable to functions for which it is
+not permissible.
 
-(I) When the interval (a, b) may be taken to be (— tt + a?, tt + x), it follows 
-from § 9'41 (II) that a  cos nx + bn sin nx is 0(1/??) as n— > oo . Now by Fejer's 
-theorem (§ 9"4) the series under consideration is summable (Cl) and its sum 
-(C'l) is*    /(  + 0) +f x — 0)|. Therefore., by Hardy's convergence theorem 
-(§ 8'5), the series under consideration is convergent and its sum (by § 8"43) 
-isif/(*' + 0)+/(.r-0) . 
+(I) When the interval (a, b) may be taken to be (— tt + a?, tt + x),
+it follows from § 9'41 (II) that a cos nx + bn sin nx is 0(1/??) as n—
+> oo . Now by Fejer's theorem (§ 9"4) the series under consideration
+is summable (Cl) and its sum (C'l) is* /( + 0) +f x — 0)|. Therefore.,
+by Hardy's convergence theorem (§ 8'5), the series under consideration
+is convergent and its sum (by § 8"43) isif/(*' + 0)+/(.r-0) .
 
-(II) Even if it is not permissible to take the interval (a, b) to be the 
-whole interval (— tt + o;, tt + a;), it is possible, by hypothesis, to choose a 
-positive number S, less than tt, such that/( ) has limited total fluctuation in 
-the interval  x — h, x -  h). We now define an auxiliary function g (t), which 
-is equal to f(t) when x—B%t x + 8, and which is equal to zero throughout 
-the rest of the interval  —ir + x, tt + x); and g(t + 27r) is .to be equal to g (t) 
-for all real values of t. 
+(II) Even if it is not permissible to take the interval (a, b) to be
+the whole interval (— tt + o;, tt + a;), it is possible, by
+hypothesis, to choose a positive number S, less than tt, such that/( )
+has limited total fluctuation in the interval x — h, x - h). We now
+define an auxiliary function g (t), which is equal to f(t) when x—B%t
+x + 8, and which is equal to zero throughout the rest of the interval
+—ir + x, tt + x); and g(t + 27r) is .to be equal to g (t) for all real
+values of t.
 
-Then g (t) satisfies the conditions postulated for the functions under 
-consideration in (I), namely that it has an integral which is absolutely 
-convergent and it has limited total fluctuation in the interval (—tt + x, tt + x); 
-and so, if a, "*, 6 "' denote the Fourier constants of git), the arguments used 
-in (I) prove that the Fourier series associated with g (t), namely 
+Then g (t) satisfies the conditions postulated for the functions under
+consideration in (I), namely that it has an integral which is
+absolutely convergent and it has limited total fluctuation in the
+interval (—tt + x, tt + x); and so, if a, "*, 6 "' denote the Fourier
+constants of git), the arguments used in (I) prove that the Fourier
+series associated with g (t), namely
 
-  cto"' + S (  '" COS nx + 6 * ' sin nx), 
+  cto"' + S ( '" COS nx + 6 * ' sin nx),
 
-n = l 
+n = l
 
-is convergent and has the sum   [g (x + 0) + g (x — 0) , and this is equal to 
+is convergent and has the sum [g (x + 0) + g (x — 0) , and this is
+equal to
 
-1  /(  + 0) +/(..• -0) . 
+1 /( + 0) +/(..• -0) .
 
-* The limits /(.r±0) exist, by § 3-64 example 3. 
+* The limits /(.r±0) exist, by § 3-64 example 3.
 
 
 
-176 THE PROCESSES OF ANALYSIS [cHAP. IX 
+176 THE PROCESSES OF ANALYSIS [cHAP. IX
 
-Now let Sm  ) and Sm   (x) denote the sums of the first m + 1 terms of 
-the Fourier series associated with f t) and c/ (t) respectively. Then it is 
-easily seen that 
+Now let Sm ) and Sm (x) denote the sums of the first m + 1 terms of
+the Fourier series associated with f t) and c/ (t) respectively. Then
+it is easily seen that
 
-Sm ( ) = — I  2 + cos  x-t) + cos'2 a;-t) + ... + cos vi (x - t)  f t) dt 
+Sm ( ) = — I 2 + cos x-t) + cos'2 a;-t) + ... + cos vi (x - t) f t) dt
 
-~27rJ\ /  m  x-t) -  "  
-\ 1\  /•-+- sm(m +  )(x-t) 
+~27rJ\ / m x-t) - " \ 1\ /•-+- sm(m + )(x-t)
 
-IT Jo sm  *    IT Jo sm   -    
+IT Jo sm * IT Jo sm -
 
-by steps analogous to those given in § d'4>. 
-In like manner 
+by steps analogous to those given in § d'4>. In like manner
 
-e (1)/ \ 1 /• " sin(2 t + l)   1 |"i' sin(2m + 1)  , om /a 
+e (1)/ \ 1 /• " sin(2 t + l) 1 |"i' sin(2m + 1) , om /a
 
-'Sfm'''( ) = - -3—  g x+2e)d6 + - — W-5 g x-2e)dd, 
+'Sfm'''( ) = - -3— g x+2e)d6 + - — W-5 g x-2e)dd,
 
-TT J sm 17 TT j Sin t/ 
+TT J sm 17 TT j Sin t/
 
-and so, using the definition of g  t), we have 
+and so, using the definition of g t), we have
 
-S>n (x) - S , > (x) =- r sin (2m + 1)6' M  dd 
-TTJjs smt/ 
+S>n (x) - S , > (x) =- r sin (2m + 1)6' M dd TTJjs smt/
 
-+ - \'\ m 2m+ ) d-  ''~l '> dd. 
++ - \'\ m 2m+ ) d- ''~l '> dd.
 
-TT J ks smu 
+TT J ks smu
 
 
 
-Since cosec   is a continuous function in the range   8,  tt), it follows that 
-f x ± 20) cosec 6 are integrable functions with absolutely convergent integrals; 
-and so, by the Riemann-Lebesgue lemma of §9*41 (I), both the integrals on the 
-right in the last equation tend to zero as m— >oo . 
+Since cosec is a continuous function in the range 8, tt), it follows
+that f x ± 20) cosec 6 are integrable functions with absolutely
+convergent integrals; and so, by the Riemann-Lebesgue lemma of §9*41
+(I), both the integrals on the right in the last equation tend to zero
+as m— >oo .
 
-That is to say lim  >S   x) - S,J'  (x)] = 0. 
+That is to say lim >S x) - S,J' (x)] = 0.
 
-Hence, since lim S   (x) =    f(x + 0) +f(x — 0)|, 
+Hence, since lim S (x) = f(x + 0) +f(x — 0)|,
 
-it follows also that 
+it follows also that
 
-lim>Sf ( ) =l /(  + 0)+/(. '-0)|. 
+lim>Sf ( ) =l /( + 0)+/(. '-0)|.
 
-We have therefore proved that the Fourier series associated luith f t), 
-namely  a  + 2 (a,iCos nx + 6  sin nx), is convergent and its sum is 
+We have therefore proved that the Fourier series associated luith f
+t), namely a + 2 (a,iCos nx + 6 sin nx), is convergent and its sum is
 
-i /( - + 0)+/( -0) . 
+i /( - + 0)+/( -0) .
 
-9"43. The DiricJdet- Bonnet proof of Fourier s theorem. 
+9"43. The DiricJdet- Bonnet proof of Fourier s theorem.
 
-It is of some interest to prove directly the theorem of § 9*42, without 
-making use of the theory of summability ; accordingly we now give a proof 
-which is on the same general lines as the proofs due to Dirichlet and Bonnet. 
+It is of some interest to prove directly the theorem of § 9*42,
+without making use of the theory of summability ; accordingly we now
+give a proof which is on the same general lines as the proofs due to
+Dirichlet and Bonnet.
 
 
 
-9-43] FOURIER SERIES 177 
+9-43] FOURIER SERIES 177
 
-As usual we denote the sum of the first m + 1 terms of the Fourier series 
-by Sm  (jc), and then, by the analysis of § 9'42, we have 
+As usual we denote the sum of the first m + 1 terms of the Fourier
+series by Sm (jc), and then, by the analysis of § 9'42, we have
 
-., . , 1 ri''sin(2Hi + l)6  . 1 r ' sin(2m + l)6' . om  zj 
+., . , 1 ri''sin(2Hi + l)6 . 1 r ' sin(2m + l)6' . om zj
 
-TT j Sin f TT J sm (7 
+TT j Sin f TT J sm (7
 
-Again, on integrating the equation 
+Again, on integrating the equation
 
-sin (2m + ) 6 
+sin (2m + ) 6
 
 
 
-sin 6 
+sin 6
 
 
 
-= 1 + 2 cos 2  + 2 cos 4  + . . . + 2 cos 2 i 6, 
+= 1 + 2 cos 2 + 2 cos 4 + . . . + 2 cos 2 i 6,
 
 
 
-we have 1     — -x — —dd = l'n-, 
+we have 1 — -x — —dd = l'n-,
 
-\ sin  
+\ sin
 
 
 
-•5''siu(2m + l)  
+•5''siu(2m + l)
 
-J 
-so that 
+J so that
 
-1 ri' sin(2m + l)  
+1 ri' sin(2m + l)
 
 
 
->S; ( )-H/(-  + 0)+/( --0) =i/ '    
+>S; ( )-H/(- + 0)+/( --0) =i/ '
 
 
 
-  1 1*'  sin(2m + l)  J . \  2  \   , . \   y  
+  1 1*' sin(2m + l) J . \ 2 \ , . \ y
 
 
 
-In order to prove that 
+In order to prove that
 
-lim <S' , (.r) = \  /(./  + 0)  f x - 0)), 
+lim <S' , (.r) = \ /(./ + 0) f x - 0)),
 
-it is therefore sufficient to prove that 
+it is therefore sufficient to prove that
 
-where   ( ) stands in turn for each of the functions 
+where ( ) stands in turn for each of the functions
 
-f x + 20) -fix + 0), f x - 26) -fix - 0). 
+f x + 20) -fix + 0), f x - 26) -fix - 0).
 
-Now, by §3"64 example 4, 6 <t) (6) cosec 6 is a func on with limited total 
-fluctuation in an interval of which   = is an end-point*; and so we may 
-write 
+Now, by §3"64 example 4, 6 <t) (6) cosec 6 is a func on with limited
+total fluctuation in an interval of which = is an end-point*; and so
+we may write
 
-  < ( ) cosec   = Xi( )-X.( ), 
-where Xi C )- %2 (6) are bounded positive increasing functions of 6 such that 
+  < ( ) cosec = Xi( )-X.( ), where Xi C )- %2 (6) are bounded positive
+increasing functions of 6 such that
 
-X (+0) = xA+0) = 0. 
+X (+0) = xA+0) = 0.
 
-Hence, given an arbitrary positive number e, we can choose a positive 
-number 5 such that 
+Hence, given an arbitrary positive number e, we can choose a positive
+number 5 such that
 
-whenever %   h8. 
+whenever % h8.
 
-We now obtain inequalities satisfied by the three integrals on the right 
-of the obvious equation 
+We now obtain inequalities satisfied by the three integrals on the
+right of the obvious equation
 
-r ' sin(2m + l)  , ..  ,. f  • /  . i x zj < ( ) jzj 
+r ' sin(2m + l) , .. ,. f • / . i x zj < ( ) jzj
 
- -  — -, — —6(6) (16=1 sm(2 i + l)6 .—. a6 
+ - — -, — —6(6) (16=1 sm(2 i + l)6 .—. a6
 
-Jo sm6   .' ks sin r> 
+Jo sm6 .' ks sin r>
 
-( 'sm 2m + l)6 ,, ,  psin(2m + l)  , ,,. 
-+ 1 —  '—xA dd-j — g X2( )d6. 
+( 'sm 2m + l)6 ,, , psin(2m + l) , ,,. + 1 — '—xA dd-j — g X2( )d6.
 
-* The other end-point is d —  (b-x) or d —  (x -a), according as (p (0) represents one or 
-other of the two functions. 
+* The other end-point is d — (b-x) or d — (x -a), according as (p (0)
+represents one or other of the two functions.
 
-W. M. A. 12 
+W. M. A. 12
 
 
 
-178 THE PROCESSES OF ANALYSIS [CHAP. IX 
+178 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-The modulus of the first integral can be made less than e by taking 
-m sufficiently large ; this follows from § 9*41 (i) since </> (6) cosec 6 has an 
-integral which converges absolutely in the interval  hS, Itt). 
+The modulus of the first integral can be made less than e by taking m
+sufficiently large ; this follows from § 9*41 (i) since </> (6) cosec
+6 has an integral which converges absolutely in the interval hS, Itt).
 
-Next, from the second mean-value theorem, it follows that there is a 
-number   between and S such that 
+Next, from the second mean-value theorem, it follows that there is a
+number between and S such that
 
 
 
-•i sin(2 i + l)6' 
+•i sin(2 i + l)6'
 
 
 
@@ -1527,586 +1569,633 @@ number   between and S such that
 
 
 
-d 
+d
 
 
 
-i sin(2m + l)  
+i sin(2m + l)
 
 
 
-X, (0) dd = N:i (i S) .   ' dd 
+X, (0) dd = N:i (i S) . ' dd
 
-  / (' + ) sinw , 
+  / (' + ) sinw ,
 
 
 
-Since I 
+Since I
 
 
 
-sin   , . ,-,,.,, ,, , P sin u 
+sin , . ,-,,.,, ,, , P sin u
 
 
 
-dt is convergent, it follows that I du has an upper 
+dt is convergent, it follows that I du has an upper
 
 
 
-f 
+f
 
-Jo 
+Jo
 
 
 
-lim |-*'' in(2m + l)  p 
+lim |-*'' in(2m + l) p
 
-...     '   sm f/ r V / 
+... ' sm f/ r V /
 
 
 
-bound* B which is independent of /3, and it is then clear that 
+bound* B which is independent of /3, and it is then clear that
 
-I [i  sin (2m + 1)6   
+I [i sin (2m + 1)6
 
-N —  —  '—xi(0)d£  2Bxi(i8)<2B6. 
+N — — '—xi(0)d£ 2Bxi(i8)<2B6.
 
-On treating the third integral in a similar manner, we see that we can 
+On treating the third integral in a similar manner, we see that we can
 
-make 
+make
 
-  ' sin(2??i + l)  , 
+  ' sin(2??i + l) ,
 
-.  j  — . .( ) c  <(4B 4- 1). 
+. j — . .( ) c <(4B 4- 1).
 
-by taking m sufficiently large ; and so ive have proved that 
+by taking m sufficiently large ; and so ive have proved that
 
-sin (2m + 1)  
+sin (2m + 1)
 
-... .00-0 sin 
+... .00-0 sin
 
-But it has been seen that this is a sufficient condition for the limit of Sm (oc) 
-to be i  f(oo + 0) + f(x — 0)] ; and we have therefore established the con- 
-vergence of a Fourier series in the circumstances enunciated in § 9'42. 
+But it has been seen that this is a sufficient condition for the limit
+of Sm (oc) to be i f(oo + 0) + f(x — 0)] ; and we have therefore
+established the con- vergence of a Fourier series in the circumstances
+enunciated in § 9'42.
 
-NoTK. The reader should observe that in either proof of the convergence of a Fourier 
-series the second mean-value theorem is required ; but to prove the summability of the 
-series, the first mean -value theorem is adequate. It should also be observed that, while 
-restrictions are laid upon / () throughout the range ( — tt, tt) in establishing the summability/ 
-at any point .r, the only additional restriction necessary to ensure convergence is a re- 
-striction on the behaviour of the function in the immediate neighbourhood of the point x. 
-The fact that the convergence depends only on the behaviour of the function in the 
-immediate neighbourhood of x (provided that the function has an integral which is 
-absolutely convergent) was noticed by Riemann and has been emphasised by Lebesgue, 
-Series Trigonometriques  p: 60. 
+NoTK. The reader should observe that in either proof of the
+convergence of a Fourier series the second mean-value theorem is
+required ; but to prove the summability of the series, the first mean
+-value theorem is adequate. It should also be observed that, while
+restrictions are laid upon / () throughout the range ( — tt, tt) in
+establishing the summability/ at any point .r, the only additional
+restriction necessary to ensure convergence is a re- striction on the
+behaviour of the function in the immediate neighbourhood of the point
+x. The fact that the convergence depends only on the behaviour of the
+function in the immediate neighbourhood of x (provided that the
+function has an integral which is absolutely convergent) was noticed
+by Riemann and has been emphasised by Lebesgue, Series
+Trigonometriques p: 60.
 
-It is obvious that the condition t that x should be an interior point of an interval 
-in which f t) has limited total fluctuation is merely a sufficient condition for the con- 
-vergence of the Fourier series ; and it may be replaced by any condition which makes 
+It is obvious that the condition t that x should be an interior point
+of an interval in which f t) has limited total fluctuation is merely a
+sufficient condition for the con- vergence of the Fourier series ; and
+it may be replaced by any condition which makes
 
-,. /'i'  sin(2TO-f 1)(9 , ... ,- ,, 
+,. /'i' sin(2TO-f 1)(9 , ... ,- ,,
 
-lim I   — ;r— —(b(d)dd=0. 
+lim I — ;r— —(b(d)dd=0.
 
-m xjo sm(9 
+m xjo sm(9
 
-* The reader will find it interesting to prove that B= | du = hTr. 
+* The reader will find it interesting to prove that B= | du = hTr.
 
-J u 
+J u
 
-t Due to Jordan, Comptes Rendus, xcii. (1881), p. 228. 
+t Due to Jordan, Comptes Rendus, xcii. (1881), p. 228.
 
 
 
-9*44] FOURIER SERIES 179 
+9*44] FOURIER SERIES 179
 
-Jordan's condition is, however, a natural modification of the Dirichlet condition that 
-the function /( ) should have only a finite number of maxima and minima, and it does 
-not increase the difficulty of the proof. 
+Jordan's condition is, however, a natural modification of the
+Dirichlet condition that the function /( ) should have only a finite
+number of maxima and minima, and it does not increase the difficulty
+of the proof.
 
-Another condition with the same efifect is due to Dini, Sopra le Serie di Foiirier 
-(Pisa, 1880), namely that, if 
+Another condition with the same efifect is due to Dini, Sopra le Serie
+di Foiirier (Pisa, 1880), namely that, if
 
-*( ) =  /(:p + 2 )+/(.r-2 )-/(ar + 0)-/(a.'-0) / , 
+*( ) = /(:p + 2 )+/(.r-2 )-/(ar + 0)-/(a.'-0) / ,
 
-then / *  \&)dQ should converge absolutely for some positive value of a. 
+then / * \&)dQ should converge absolutely for some positive value of
+a.
 
-[If the condition is satisfied, given e we can find S so that 
+[If the condition is satisfied, given e we can find S so that
 
 
 
-/ 
+/
 
 
 
-and then 
+and then
 
 
 
-<\ fTi ; 
+<\ fTi ;
 
 
 
-Jo sni   
+Jo sni
 
-the proof that I  -  —   (f)(6) dBl < t for sufficiently large values of m follows 
+the proof that I - — (f)(6) dBl < t for sufficiently large values of m
+follows
 
-from the Riemann-Lebesgue lemma.] 
+from the Riemann-Lebesgue lemma.]
 
-A more stringent condition than Dini's is due to Lipschitz, Journal f>ir Math. LXiil. 
-(1864), p. 296, namely \ (f)  B)\ <  06", where C and k are positive and independent of 6. 
+A more stringent condition than Dini's is due to Lipschitz, Journal
+f>ir Math. LXiil. (1864), p. 296, namely \ (f) B)\ < 06", where C and
+k are positive and independent of 6.
 
-For other conditions due to Lebesgue and to de la Vallee Poussin, see the latter's 
-Cours d' Analyse In/lnitesimale, ii. (1912), pp. 149-150. It should be noticed that Jordan's 
-condition differs in character from Dini's condition ; the latter is a condition that the 
-series may converge at a point, the former that the .series may converge throughout an 
-interval. 
+For other conditions due to Lebesgue and to de la Vallee Poussin, see
+the latter's Cours d' Analyse In/lnitesimale, ii. (1912), pp. 149-150.
+It should be noticed that Jordan's condition differs in character from
+Dini's condition ; the latter is a condition that the series may
+converge at a point, the former that the .series may converge
+throughout an interval.
 
-9'44. The xmiformity of the convergence of Fourier series. 
+9'44. The xmiformity of the convergence of Fourier series.
 
-Let f t) satisfy the conditions enunciated in !  9'42, and further let it be continuous 
-(in addition to having limited total fluctuation) in an interval (a, b). Then the Fourier 
-series associated with f (t) convei'ges uniformly to the sum f x) at all points .v for which 
-a + b x  b — b., where 8 is any positive number. 
+Let f t) satisfy the conditions enunciated in ! 9'42, and further let
+it be continuous (in addition to having limited total fluctuation) in
+an interval (a, b). Then the Fourier series associated with f (t)
+convei'ges uniformly to the sum f x) at all points .v for which a + b
+x b — b., where 8 is any positive number.
 
-Let h  t) be an auxiliary function defined to be equal to/( ) when a t  b and equal 
-to zero for other values of t in the range (-tt, tt), and let a , /3,i denote the Fourier 
-constants oi hit). Also let S i.v) denote the sum of the first m + 1 terms of the Fourier 
+Let h t) be an auxiliary function defined to be equal to/( ) when a t
+b and equal to zero for other values of t in the range (-tt, tt), and
+let a , /3,i denote the Fourier constants oi hit). Also let S i.v)
+denote the sum of the first m + 1 terms of the Fourier
 
-  ' TO   ' 
+  ' TO '
 
-series associated with h  t). 
+series associated with h t).
 
-Then, by § 9"4 corollary 2, it follows that \ af -  2 (a  cos ; .i' + /3,i sin  j7) is xmiformly 
-summable throughout the interval (o +S, b-h) ; and since 
+Then, by § 9"4 corollary 2, it follows that \ af - 2 (a cos ; .i' +
+/3,i sin j7) is xmiformly summable throughout the interval (o +S, b-h)
+; and since
 
-i a  cos 1lX-  n sin nx \ \$  an- n'r-, 
+i a cos 1lX- n sin nx \ \$ an- n'r-,
 
-which is independent of x and which, by § 9*41 (ii), is  1/n), it follows from § 8-5 
-corollary that 
+which is independent of x and which, by § 9*41 (ii), is 1/n), it
+follows from § 8-5 corollary that
 
- ao+ 2 (an cos nx +  n sin n.v) 
-n-l 
+ ao+ 2 (an cos nx + n sin n.v) n-l
 
-converges uniformly to the sum h x), which is equal to/(.i'). 
-Now, as in § 9'42, 
+converges uniformly to the sum h x), which is equal to/(.i'). Now, as
+in § 9'42,
 
-   J hib-x) smO  ' ' 7rj ( \ a) sm   ' "  ' 
+   J hib-x) smO ' ' 7rj ( \ a) sm ' " '
 
-12—2 
+12—2
 
 
 
-180 THE PROCESSES OF ANALYSIS [CHAP. IX 
+180 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-As in § 9'41 we choose an arbitrary positive number e and then enclose the points at 
+As in § 9'41 we choose an arbitrary positive number e and then enclose
+the points at
 
-p f 
-which f t) is unbounded in a set of intervals Sj, 80, ... 8,, such that 2 I \ f i) \ dt <e. 
+p f which f t) is unbounded in a set of intervals Sj, 80, ... 8,, such
+that 2 I \ f i) \ dt <e.
 
-r = l J Sr 
+r = l J Sr
 
-If K be the upper bound of >f t) \ outside these intervtils, we then have, as in § 9-41, 
+If K be the upper bound of >f t) \ outside these intervtils, we then
+have, as in § 9-41,
 
-i S ,   ) - S[ l   ) I < ( 1   + 2e) cosec 8, 
+i S , ) - S[ l ) I < ( 1 + 2e) cosec 8,
 
-where the choice of n depends only on a and b and the form of the function /(<). Hence, 
-by a choice of m mdependent of x we can make 
+where the choice of n depends only on a and b and the form of the
+function /(<). Hence, by a choice of m mdependent of x we can make
 
-arbitrarily small; so that S  x) — S '  x) tends uniformly to zero. Since Sj x)- f(x) 
-uniformly, it is then obvious that S  x)-*~f x) uniformly; and this is the result to be 
-proved. 
+arbitrarily small; so that S x) — S ' x) tends uniformly to zero.
+Since Sj x)- f(x) uniformly, it is then obvious that S x)-*~f x)
+uniformly; and this is the result to be proved.
 
-Note. It must be observed that no general statement can be made about uniformity 
-or absoluteness of convergence of Fourier series. Thus the series of § 9* 11 example 1 
-converges uniformly except near .r = (2  + l) n but converges absolutely only when x=nir, 
-whereas the series of § 9'11 example 2 converges uniformly and absolutely for all real 
-values of x. 
+Note. It must be observed that no general statement can be made about
+uniformity or absoluteness of convergence of Fourier series. Thus the
+series of § 9* 11 example 1 converges uniformly except near .r = (2 +
+l) n but converges absolutely only when x=nir, whereas the series of §
+9'11 example 2 converges uniformly and absolutely for all real values
+of x.
 
-Example 1. If  6) satisfies suitable conditions in the range (0, tt), shew that 
+Example 1. If 6) satisfies suitable conditions in the range (0, tt),
+shew that
 
-+ lim [''''2 L( : <i.in-e)d0 
++ lim [''''2 L( : <i.in-e)d0
 
-Example 2. Prove that, if   > 0, 
+Example 2. Prove that, if > 0,
 
-' . ;'" Siu(2 +1)  a 7A   . .  
+' . ;'" Siu(2 +1) a 7A . .
 
-hm / -a e- ae de = \ Tr coth hair. 
+hm / -a e- ae de = \ Tr coth hair.
 
-(Math. Trip. 1894.) 
-[Shew that 
+(Math. Trip. 1894.) [Shew that
 
 
 
-  .   e~  d6= hm .], e-a dd 
+  . e~ d6= hm .], e-a dd
 
-J SI" d ,n -  J sm 
+J SI" d ,n - J sm
 
 
 
-w-*-* J sm 6 
+w-*-* J sm 6
 
-  sin(27i+l)  e-a\&dd 
+  sin(27i+l) e-a\&dd
 
 
 
-sin 6 1 — e-af' 
-and use example l.J 
+sin 6 1 — e-af' and use example l.J
 
-Example 3. Discuss the uniformity of the convergence of Fourier series by means of 
-the Dirichlet-Bonnct integrals, without making use of the theory of summability. 
+Example 3. Discuss the uniformity of the convergence of Fourier series
+by means of the Dirichlet-Bonnct integrals, without making use of the
+theory of summability.
 
-9"5. The Hurwitz-Liajjonnoff* tlieorein concerning Fourier constants. 
-Let f dc) he hounded in the interval (— tt, tt) and let I f x) dx exist, so 
+9"5. The Hurwitz-Liajjonnoff* tlieorein concerning Fourier constants.
+Let f dc) he hounded in the interval (— tt, tt) and let I f x) dx
+exist, so
 
-• —n 
+• —n
 
-* Math. Ann. lvii. (1903), p. 429. Liapounoff discovered the theorem in 1896 and published 
-it in the Proceedings of the Math. Soc. of the Univ. of Kharkov. See Comptes Rendw, cxxvi. 
-(1898), p. 1024. 
+* Math. Ann. lvii. (1903), p. 429. Liapounoff discovered the theorem
+in 1896 and published it in the Proceedings of the Math. Soc. of the
+Univ. of Kharkov. See Comptes Rendw, cxxvi. (1898), p. 1024.
 
 
 
-9-5] FOURIER SERIES 181 
+9-5] FOURIER SERIES 181
 
-that the Fourier constants   ,  n off x) exist. Then the series 
+that the Fourier constants , n off x) exist. Then the series
 
- a + i  an  + h, ) 
+ a + i an + h, )
 
-n = l 
-1 t" 
+n = l 1 t"
 
-is convergent and its sum is* - I   fix)Ydx. 
+is convergent and its sum is* - I fix)Ydx.
 
-It will first be she m that, with the notation of S 9"4, 
+It will first be she m that, with the notation of S 9"4,
 
 
 
-lim \ f x)-- 1 Sn(x)\ dx = 0. 
+lim \ f x)-- 1 Sn(x)\ dx = 0.
 
 
 
-Divide the interval ( — tt, tt) into 4r parts, each of length 8 ; let the upper and lower 
-bounds of /(.v) in the interval   2p~l) 8-it, (2p + 'S)8 — 7r  be Up, Lp, and let the upper 
-bound of \ f x)\ in the interval ( - tt, tt) be K. Then, by § 94 corollary 1, 
+Divide the interval ( — tt, tt) into 4r parts, each of length 8 ; let
+the upper and lower bounds of /(.v) in the interval 2p~l) 8-it, (2p +
+'S)8 — 7r be Up, Lp, and let the upper bound of \ f x)\ in the
+interval ( - tt, tt) be K. Then, by § 94 corollary 1,
 
 
 
-I 1 "t-i 
+I 1 "t-i
 
-\ f x)-- 2 S  x) 
-I ">  n=0 
+\ f x)-- 2 S x) I "> n=0
 
 
 
-<   -Zp + 2 / OTsin2 8  
+< -Zp + 2 / OTsin2 8
 
-< 2A'[l + l/ wsin2 S ], 
+< 2A'[l + l/ wsin2 S ],
 
 
 
-when X lies between 2pb and (2/? + 2) S. 
+when X lies between 2pb and (2/? + 2) S.
 
-Consequently, by the first mean-value theorem, 
+Consequently, by the first mean-value theorem,
 
-fir   1 w-l 12 C 1 1 f 2r-l 4/f;. \ 
+fir 1 w-l 12 C 1 1 f 2r-l 4/f;. \
 
-\ f  )-- 2 >% x)\ dx<2K\ \  + r! T-.N2a 2  Up-Lp) ~ \ 
+\ f )-- 2 >% x)\ dx<2K\ \ + r! T-.N2a 2 Up-Lp) ~ \
 
-Since /(j;) satisfies the Rieraann condition of integrability (§ 4'12), it follows that both 
+Since /(j;) satisfies the Rieraann condition of integrability (§
+4'12), it follows that both
 
-r-l r-l 
+r-l r-l
 
-48 2  U2p-L2p) and 48 2 ((7.,p+i~   2iJ + i) can be made arbitrarily small by giving ?• a 
+48 2 U2p-L2p) and 48 2 ((7.,p+i~ 2iJ + i) can be made arbitrarily
+small by giving ?• a
 
-sufficiently large value. When r (and therefore also 8) has been given such a value, we 
-may choose mj so large that ?•/ ) ! sin 8  is arbitrarily small. That is to say, we can 
-make the expression on the right of the last iiiecpiality arbitrarily small by giving m any 
-value greater than a determinate value nti. Hence the expression on the left of the 
-inequality tends to zero as wi-s-jo. 
+sufficiently large value. When r (and therefore also 8) has been given
+such a value, we may choose mj so large that ?•/ ) ! sin 8 is
+arbitrarily small. That is to say, we can make the expression on the
+right of the last iiiecpiality arbitrarily small by giving m any value
+greater than a determinate value nti. Hence the expression on the left
+of the inequality tends to zero as wi-s-jo.
 
-But evidently 
+But evidently
 
-/( )-- % Sn(x)\ dx 
+/( )-- % Sn(x)\ dx
 
-= r \ f x)-t'' A,, x)Xdx 
+= r \ f x)-t'' A,, x)Xdx
 
-m — 1 ni - 1 )j Vj 
+m — 1 ni - 1 )j Vj
 
-/( )- S 4 ( )+ S -  ( ) dx 
+/( )- S 4 ( )+ S - ( ) dx
 
-\ f(x)- X An x)\ dx+ 1 -An(x)\ dx 
+\ f(x)- X An x)\ dx+ 1 -An(x)\ dx
 
-1 JJ = j .' -TT [n = ofn   
+1 JJ = j .' -TT [n = ofn
 
-/•it ( m-l ) (m-l ) 
+/•it ( m-l ) (m-l )
 
-+ 2 f(x) - S An (x)\ At A,, x)\ dx 
++ 2 f(x) - S An (x)\ At A,, x)\ dx
 
-J -n ( n=0 J  n=--0 ) 
+J -n ( n=0 J n=--0 )
 
-= \ f x) - 1 An  x)\ dx +  t n  (an' + K  
+= \ f x) - 1 An x)\ dx + t n (an' + K
 
-/ I *. — A \ ill,  -t \  A 
+/ I *. — A \ ill, -t \ A
 
 
 
-H = 
+H =
 
 
 
-* This integral exists by § 4-12 example 1. A proof of the theorem has been given by de la 
-Valine Poussin, in which the sole restrictions on /(.r) are that the (improper) integrals of f  x) 
-and  f(x) '  exist in the interval  -ir, tt). See his Cours d' Analyse Infinitesimale, ii. (1912), 
-pp. 165-166. 
+* This integral exists by § 4-12 example 1. A proof of the theorem has
+been given by de la Valine Poussin, in which the sole restrictions on
+/(.r) are that the (improper) integrals of f x) and f(x) ' exist in
+the interval -ir, tt). See his Cours d' Analyse Infinitesimale, ii.
+(1912), pp. 165-166.
 
 
 
-182 THE PROCESSES OF ANALYSIS [CHAP. IX 
+182 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-,'n /"T hn-l "I 
+,'n /"T hn-l "I
 
-since I f w)Ar(x)dx=\ ] S An (i 'n A , (x) dx 
+since I f w)Ar(x)dx=\ ] S An (i 'n A , (x) dx
 
-J -n J -n (.  = J 
+J -n J -n (. = J
 
-when r = 0, 1, 2, ... m—1. 
+when r = 0, 1, 2, ... m—1.
 
-Since the original integral tends to zero and since it has been proved 
-equal to the sura of two positive expressions, it follows that each of these 
-expressions tends to zero ; that is to say 
+Since the original integral tends to zero and since it has been proved
+equal to the sura of two positive expressions, it follows that each of
+these expressions tends to zero ; that is to say
 
-\ f x)- 2 An x)\ dx-*0. 
+\ f x)- 2 An x)\ dx-*0.
 
-Now the expression on the left is equal to 
+Now the expression on the left is equal to
 
-r  f x)Ydx-2r \ f(x)-'''SA,,,  A.\'''i'A,, x)\ dx 
+r f x)Ydx-2r \ f(x)-'''SA,,, A.\'''i'A,, x)\ dx
 
-rn- im-l "la 
+rn- im-l "la
 
-- 2   ( )  c?  
+- 2 ( ) c?
 
-J -TT in=0 J 
+J -TT in=0 J
 
-/'tt r TT I'm— 1 ") 2 
+/'tt r TT I'm— 1 ") 2
 
-• = \ f(x)Ydx- \ 2  ,i(*')t d  
+• = \ f(x)Ydx- \ 2 ,i(*')t d
 
-J -n ' .' -TT [h = ) 
+J -n ' .' -TT [h = )
 
-rir (  W-1 ) 
+rir ( W-1 )
 
-=   /( )P dx-irl- tto" + 2 (a,r + h,i) \ , 
+= /( )P dx-irl- tto" + 2 (a,r + h,i) \ ,
 
-J -n (."' n = \ ) 
+J -n (."' n = \ )
 
-so that, as m— >oo , 
+so that, as m— >oo ,
 
-This is the theorem stated. 
+This is the theorem stated.
 
-Corollary. ParsevaVs theorem*. l f(x), F x) both satisfy the conditions laid on/(.r) 
-at the beginning of this section, and if   , B  be the Fourier constants of F x), it follows 
-by subtracting the pair of equations which may be combined in the one form 
+Corollary. ParsevaVs theorem*. l f(x), F x) both satisfy the
+conditions laid on/(.r) at the beginning of this section, and if , B
+be the Fourier constants of F x), it follows by subtracting the pair
+of equations which may be combined in the one form
 
-f"  f x)±F x)  dx = n\ \  a,±A,f+ I   a,,±A,,f +  K±B,,)  \ 
+f" f x)±F x) dx = n\ \ a,±A,f+ I a,,±A,,f + K±B,,) \
 
-J -TT L  =1 J 
+J -TT L =1 J
 
-that I /  x) F  x) rfx = TT j  ao J +   (a     + 6  5,0 \ . 
+that I / x) F x) rfx = TT j ao J + (a + 6 5,0 \ .
 
-9"6. Riemann's theory of trigonometrical series. 
+9"6. Riemann's theory of trigonometrical series.
 
-The theory of Dirichlet concerning Fourier series is devoted to series 
-which represent given functions. Important advances in the theory were 
-made by Riemarin, who considered properties of functions defined by a series 
+The theory of Dirichlet concerning Fourier series is devoted to series
+which represent given functions. Important advances in the theory were
+made by Riemarin, who considered properties of functions defined by a
+series
 
-of the typef  o+ S (a,i cos wa' + 6  sin /ia-), where it is assumed that 
+of the typef o+ S (a,i cos wa' + 6 sin /ia-), where it is assumed that
 
-lim  (In cos nx + 6  sin nx) = 0. We shall give the propositions leading up to 
+lim (In cos nx + 6 sin nx) = 0. We shall give the propositions leading
+up to
 
-Riemann's theorem ; : that if two trigonometrical series converge and are equal 
+Riemann's theorem ; : that if two trigonometrical series converge and
+are equal
 
-* Mem. par divers senium, i. (1805), pp. 639-648. Parseval, of course, assumed the permissi- 
-bility of integrating the trigonometrical series term-by-term. 
+* Mem. par divers senium, i. (1805), pp. 639-648. Parseval, of course,
+assumed the permissi- bility of integrating the trigonometrical series
+term-by-term.
 
-t Throughout §§ 9-6-9-6i52 the letters   , 6  do not necessarily denote Fourier constants. 
-X The proof given is due to G. Cantor, Journal fiir Math, lxxii. (1870), pp. 130-142. 
+t Throughout §§ 9-6-9-6i52 the letters , 6 do not necessarily denote
+Fourier constants. X The proof given is due to G. Cantor, Journal fiir
+Math, lxxii. (1870), pp. 130-142.
 
 
 
-9-6, 9 '61] TRIGONOMETRICAL SERIES 183 
+9-6, 9 '61] TRIGONOMETRICAL SERIES 183
 
-at all points of the range (— tt, tt) with the possible exception of a finite 
-number of points, corresponding coefficients in the two series are equal. 
+at all points of the range (— tt, tt) with the possible exception of a
+finite number of points, corresponding coefficients in the two series
+are equal.
 
-9'61. Rieinanns associated function. 
+9'61. Rieinanns associated function.
 
-Let the sum of the series rrOa + 2 (a,i cos nx + hn sin nx) = A -  S An  x), 
+Let the sum of the series rrOa + 2 (a,i cos nx + hn sin nx) = A - S An
+x),
 
-  n-\ n=l 
+  n-\ n=l
 
-at any point x where it converges, be denoted by /(a;). 
+at any point x where it converges, be denoted by /(a;).
 
-Let F x) = \ a,x'- i n- An x). 
+Let F x) = \ a,x'- i n- An x).
 
-Then, if the series defining f x) converges at all points of any finite interval, 
-the series defining F x) converges for all real values of x. 
+Then, if the series defining f x) converges at all points of any
+finite interval, the series defining F x) converges for all real
+values of x.
 
-To obtain this result we need the following Lemma due to Cantor : 
+To obtain this result we need the following Lemma due to Cantor :
 
-Cantor's lemma*. If lim J   x) = for all values of x such that a  x  b, then o  -0, 
+Cantor's lemma*. If lim J x) = for all values of x such that a x b,
+then o -0,
 
- .— 0. 
+ .— 0.
 
-For take two points x, x-i-8 of the interval. Then, given e, we can find ?io such thatt, 
+For take two points x, x-i-8 of the interval. Then, given e, we can
+find ?io such thatt,
 
-when n> n  
+when n> n
 
-j a  cos nx + b  sin nx < e, \ a  cos n  x + 8) + 6  sin n  x + S) | < e. 
+j a cos nx + b sin nx < e, \ a cos n x + 8) + 6 sin n x + S) | < e.
 
-Therefore 
+Therefore
 
-I cos nb (a  cos ax + 6  sin nx) + sin n8 ( —    sin nx + 6  cos nx) \ < e. 
-Since 1 cos n8 (a  cos ? ; + b  sin nx) \ < 6, 
+I cos nb (a cos ax + 6 sin nx) + sin n8 ( — sin nx + 6 cos nx) \ < e.
+Since 1 cos n8 (a cos ? ; + b sin nx) \ < 6,
 
-it follows that | .sin n8 ( — a  sin nx + bn cos nx) i < 2f, 
+it follows that | .sin n8 ( — a sin nx + bn cos nx) i < 2f,
 
-and it is obvious that ] sin 7i8 (a  cos nx + bn sin nx) j < 2c. 
-Therefore, squaring and adding, 
+and it is obvious that ] sin 7i8 (a cos nx + bn sin nx) j < 2c.
+Therefore, squaring and adding,
 
-(  H6 2)*! siii 8! <2ev'2. 
+( H6 2)*! siii 8! <2ev'2.
 
-Now suppose that   ,, b  have not the unique limit ; it will be shewn that this 
-hypothesis involves a contradiction. For, by this hypothesis, sotne positive number e  
-exists such that there is an unending increasing sequence /ii, n.,, ... of values of n, for 
-which 
+Now suppose that ,, b have not the unique limit ; it will be shewn
+that this hypothesis involves a contradiction. For, by this
+hypothesis, sotne positive number e exists such that there is an
+unending increasing sequence /ii, n.,, ... of values of n, for which
 
-Now let the range of values of S be called the interval /j of length L  on the real axis. 
+Now let the range of values of S be called the interval /j of length L
+on the real axis.
 
-Take n  the smallest of the integers ?v s ch that Hi Zi > 27r ; then sin /i/// goes through 
-all its phases in the interval I  ; call I., that sub-interval; of /j in which .sin  j'y > 1 V2; 
-its length is 7r/(2H/) = Zo. Next take iio the smallest of the integers nr >)ii) such that 
-n 'Zo >27r, so that sin n 'i/ goes through all its phases in the interval I2; call I3 that .sub- 
-interval + of L in which sin ?j2'y > l/\ \  2; its length is 7r/(2n2') = - 3. We thus get a 
-sequence of decreasing intervals Zj, /.,, ... each contained in all the previous ones. It is 
-obvious from the definition of an irrational number that there is a certain point a which 
-is not outside any of these intervals, and sin  a l/ /2 when w=    2', ... ( .'r + i> ' /)- 
-For these values of n,  a,'  + b,c)   sin na > 2€q  1%. But it has been shewn that corresponding 
+Take n the smallest of the integers ?v s ch that Hi Zi > 27r ; then
+sin /i/// goes through all its phases in the interval I ; call I.,
+that sub-interval; of /j in which .sin j'y > 1 V2; its length is
+7r/(2H/) = Zo. Next take iio the smallest of the integers nr >)ii)
+such that n 'Zo >27r, so that sin n 'i/ goes through all its phases in
+the interval I2; call I3 that .sub- interval + of L in which sin ?j2'y
+> l/\ \ 2; its length is 7r/(2n2') = - 3. We thus get a sequence of
+decreasing intervals Zj, /.,, ... each contained in all the previous
+ones. It is obvious from the definition of an irrational number that
+there is a certain point a which is not outside any of these
+intervals, and sin a l/ /2 when w= 2', ... ( .'r + i> ' /)- For these
+values of n, a,' + b,c) sin na > 2€q 1%. But it has been shewn that
+corresponding
 
-* Riemann appears to have regarded this result as obvious. The proof here given is a 
-modification of Cantor's proof, Math. Ann. iv. (1871), pp. 139-143, and Journal fiir Math, lxxii. 
-(1870), pp. 130-138. 
+* Riemann appears to have regarded this result as obvious. The proof
+here given is a modification of Cantor's proof, Math. Ann. iv. (1871),
+pp. 139-143, and Journal fiir Math, lxxii. (1870), pp. 130-138.
 
-t The value of /(  depends on .r and on 5. 
+t The value of /( depends on .r and on 5.
 
-X If there is more than one such sub-interval, take that which lies on the left. 
+X If there is more than one such sub-interval, take that which lies on
+the left.
 
 
 
-184 THE PROCESSES OF ANALYSIS [CHAP. IX 
+184 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-to given numbers a and e we can find ?Jo such that when n >  .o,  a J + 6  )   (sin na) < 2e  f2 ; 
-since some values of  / are greater than n , the required contradiction has been obtained, 
-because we may take e< e,, ; therefore Un- O, 5 -*-0. 
+to given numbers a and e we can find ?Jo such that when n > .o, a J +
+6 ) (sin na) < 2e f2 ; since some values of / are greater than n , the
+required contradiction has been obtained, because we may take e< e,, ;
+therefore Un- O, 5 -*-0.
 
-Assuming that the series defining /(a:) converges at all points of a certain 
-interval of the real axis, we have just seen that a,i— >0, 6 ,— >0. Then, for all 
-real values of x, \ an cos nx + hn sin nx \   (a,/ + 6,f)2- 0, and so, by § 3"84<, the 
+Assuming that the series defining /(a:) converges at all points of a
+certain interval of the real axis, we have just seen that a,i— >0, 6
+,— >0. Then, for all real values of x, \ an cos nx + hn sin nx \ (a,/
++ 6,f)2- 0, and so, by § 3"84<, the
 
-00 
+00
 
-series  A x-— S n~-An x) = F x) converges absolutely and uniformly for all 
-real values oi x ; therefore, (§ 3"32), F x) is continuous for all real values of  c. 
+series A x-— S n~-An x) = F x) converges absolutely and uniformly for
+all real values oi x ; therefore, (§ 3"32), F x) is continuous for all
+real values of c.
 
-9'62. Properties of Rienianns associated function; Rieiiianns first lemma. 
+9'62. Properties of Rienianns associated function; Rieiiianns first
+lemma.
 
-It is now possible to prove Riemann's first lemma that if 
-F x- '2a) + F x- 2a) - 2F  x) 
+It is now possible to prove Riemann's first lemma that if F x- '2a) +
+F x- 2a) - 2F x)
 
 
 
-G  x, a) = 
+G x, a) =
 
 
 
-4a  
+4a
 
 
 
-then limG(*', a.)=f(x), provided that S An x) converges for the value of x 
+then limG(*', a.)=f(x), provided that S An x) converges for the value
+of x
 
-o-*-0   = 
+o-*-0 =
 
-under consideration. 
+under consideration.
 
-Since the series defining F x), F x ± 2a) converge absolutely, we may 
-rearrange them ; and, observing that 
+Since the series defining F x), F x ± 2a) converge absolutely, we may
+rearrange them ; and, observing that
 
-cos n (x + 2a) + cos n (x — 2a) — 2 cos nx = — 4 sin  na cos nx, 
+cos n (x + 2a) + cos n (x — 2a) — 2 cos nx = — 4 sin na cos nx,
 
-sin n  x + 2a) + sin n (x — 2a) — 2 sin nx = — 4 sin  na sin nx, 
+sin n x + 2a) + sin n (x — 2a) — 2 sin nx = — 4 sin na sin nx,
 
-it is evident that 
+it is evident that
 
-/-, / \ A V /sinna\''  . , , 
+/-, / \ A V /sinna\'' . , ,
 
-G(x,a) = Ao+ 1 An x). 
+G(x,a) = Ao+ 1 An x).
 
-M=i \ na J 
+M=i \ na J
 
-It will now be shewn that this series converges uniformly with regard to 
+It will now be shewn that this series converges uniformly with regard
+to
 
-00 
+00
 
-a for all values of a, provided that S An x) converges. The result required 
+a for all values of a, provided that S An x) converges. The result
+required
 
-is then an immediate consequence of § 3'32 : for, if f  (a) = (   j , (a   0), 
+is then an immediate consequence of § 3'32 : for, if f (a) = ( j , (a
+0),
 
-and/  (0) = 1, then /" ( ) is continuous for all values of a, and so G x, a) is a 
-continuous function of a, and therefore, by § 3*2, G (x, 0) = lim G (x, a). 
+and/ (0) = 1, then /" ( ) is continuous for all values of a, and so G
+x, a) is a continuous function of a, and therefore, by § 3*2, G (x, 0)
+= lim G (x, a).
 
-To prove that the series defining G (x, a) converges uniformly, we employ 
-the test given in § 3"35 example 2. The expression corresponding to \&>  (x) 
-is fn oi), a-nd it is obvious that |/n(a)j  1 ; it is therefore sufficient to shew 
+To prove that the series defining G (x, a) converges uniformly, we
+employ the test given in § 3"35 example 2. The expression
+corresponding to \&> (x) is fn oi), a-nd it is obvious that |/n(a)j 1
+; it is therefore sufficient to shew
 
-that X fn+\ (a) — A( ) < i , where K is independent of a. 
+that X fn+\ (a) — A( ) < i , where K is independent of a.
 
-n = \ ' 
+n = \ '
 
-In fact*, if s be the integer such that s j a j    • <(*• + 1) i a , when o=t=0 we have 
+In fact*, if s be the integer such that s j a j • <(*• + 1) i a , when
+o=t=0 we have
 
 
 
-s-l s-l si i2 
+s-l s-l si i2
 
 
 
-SUi  a Sin-. a 
+SUi a Sin-. a
 
 
 
-2 I /  + 1 (a) -/. (a) ! = 2 (/  (a) -/   . , (a)) =   
+2 I / + 1 (a) -/. (a) ! = 2 (/ (a) -/ . , (a)) =
 
-* Since x~  sin x decreases as .r increases from to w. 
+* Since x~ sin x decreases as .r increases from to w.
 
 
 
-9-62, 
+9-62,
 
 
-9-62i; 
+9-62i;
 
 
 
 
 
 
-TRIGONOMETRICAL SERIES 
+TRIGONOMETRICAL SERIES
 
 
 
 
-Also 
+Also
 
 
 
@@ -2123,35 +2212,35 @@ Also
 
 
 
-2 
+2
 
-=s+l 
+=s+l
 
 
-l/ +l 
+l/ +l
 
 
-(a)- 
+(a)-
 
 
--fn a) 
+-fn a)
 
 
-,   /sin2 
+, /sin2
 
 
-na (\ 1 M sin2 
+na (\ 1 M sin2
 
 
 
 
-n 
+n
 
 
-'  =?+! 1 a' 
+'=?+! 1 a'
 
 
-W (  + i)VJ 
+W ( + i)VJ
 
 
 
@@ -2164,21 +2253,20 @@ W (  + i)VJ
 
 
 
-- 1/1 
+- 1/1
 
-1 
+1
 
 
-1   sin  nn - 
-* 1 sin a sin (271 + 1) a 1 
+1 sin nn - * 1 sin a sin (271 + 1) a 1
 
 
--siii2(n+l)a 1 
+-siii2(n+l)a 1
 
 
 
 
-  s  + lYa \ 
+  s + lYa \
 
 
 
@@ -2193,10 +2281,10 @@ W (  + i)VJ
 
 
 
- (s2+l)2a "'" 
+ (s2+l)2a "'"
 
 
-1 sin a 1   1 
+1 sin a 1 1
 
 
 
@@ -2211,14 +2299,14 @@ W (  + i)VJ
 
 
 
-1 1 sin a 1 
+1 1 sin a 1
 
-TT- a- 
+TT- a-
 
 
-f'  dx 
+f' dx
 
-Is (-v + lY 
+Is (-v + lY
 
 
 
@@ -2233,7 +2321,7 @@ Is (-v + lY
 
 
 
-1 1 
+1 1
 
 
 
@@ -2250,7 +2338,7 @@ Is (-v + lY
 
 
 
--r- 1 
+-r- 1
 
 
 
@@ -2259,865 +2347,892 @@ Is (-v + lY
 
 
 
- TT-  (S+l) 
+ TT- (S+l)
 
 
-a 
+a
 
 
 
 
 
-185 
+185
 
 
 
-Therefore 
+Therefore
 
 
 
-* ,  , , J. , , ,  sin a sin sa /aui sa sin  s + l) a\ 11 
+* , , , J. , , , sin a sin sa /aui sa sin s + l) a\ 11
 
 
 
 
 
 
-Since this expression is independent of a, the result required has been obtained*. 
+Since this expression is independent of a, the result required has
+been obtained*.
 
-00 
+00
 
-Hence, if S A   x) converges, the series defining G  x, a) converges 
-uniformly with respect to a for all values of a, and, as stated above, 
-\ \ {mG x,a)=Gix,0) = A,+ S Ar, x)=f x). 
+Hence, if S A x) converges, the series defining G x, a) converges
+uniformly with respect to a for all values of a, and, as stated above,
+\ \ {mG x,a)=Gix,0) = A,+ S Ar, x)=f x).
 
-a-J-O M = l 
+a-J-O M = l
 
-Example. If H (..,  .  ) = ' '(  a m-Fi'c+a-t -F(.-a SHFi.-.-       
+Example. If H (.., . ) = ' '( a m-Fi'c+a-t -F(.-a SHFi.-.-
 
-that 5(.r, a, /3) -/( ) when /(a-) converges if n, /3- -0 in such a way that a//3 and  /a 
-remain finite. (Riemann.) 
+that 5(.r, a, /3) -/( ) when /(a-) converges if n, /3- -0 in such a
+way that a//3 and /a remain finite. (Riemann.)
 
-9 621. Riemanns second lemma. With the notation of §§ 9'6-9'62, if 
+9 621. Riemanns second lemma. With the notation of §§ 9'6-9'62, if
 
-dn, t>ji— >0,  /;en Inn ~  -  = for all values of x. 
+dn, t>ji— >0, /;en Inn ~ - = for all values of x.
 
-a u 'la 
+a u 'la
 
-For  a->;/ '(- '+2 ) + i (;r-2a)-2/ (a;) =Aa+ S  - An x); but 
+For a->;/ '(- '+2 ) + i (;r-2a)-2/ (a;) =Aa+ S - An x); but
 
-  = 1 '' '  
+  = 1 '' '
 
-  sin" ?jft 
-by § 9'11 example 3, if a > 0,   —   — = h (tt - a) : and so, since 
+  sin" ?jft by § 9'11 example 3, if a > 0, — — = h (tt - a) : and so,
+since
 
-/j=i n ot 
+/j=i n ot
 
-. , ,  , sin wa . , . 
+. , , , sin wa . , .
 
-M=i " a 
+M=i " a
 
-  = 1 (. m = l W Of ) 
+  = 1 (. m = l W Of )
 
-it follows from § 3"35 example 2, that this series converges uniformly with 
-regard to a for all values of a greater than, or equal to, zerof. 
+it follows from § 3"35 example 2, that this series converges uniformly
+with regard to a for all values of a greater than, or equal to, zerof.
 
 
 
-* This inequality is obviously true when a = 0. 
-t If we define g  (a) by the equations ( j (a) = 
-then (7,j (a) is continuous when a   0, and g, \  .l (a)   <;  (a) 
+* This inequality is obviously true when a = 0. t If we define g (a)
+by the equations ( j (a) = then (7,j (a) is continuous when a 0, and
+g, \ .l (a) <; (a)
 
 
 
-t If we define fif  (a) by the equations n ,  (a) =   (ir - a) - 2 —   — , (a + 0), and ,9,((0) = i7r, 
+t If we define fif (a) by the equations n , (a) = (ir - a) - 2 — — ,
+(a + 0), and ,9,((0) = i7r,
 
-m=l '"' * 
+m=l '"' *
 
 
 
-186 THE PROCESSES OF ANALYSIS [CHAP. IX 
+186 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-But lim la-i [F x - 2a) + F x - 2a) - 2F(.x)] 
+But lim la-i [F x - 2a) + F x - 2a) - 2F(.x)]
 
 
 
-= lim 
+= lim
 
 
 
-.4o (x)a +   7r-a.)A, (x) + 2 g  (a) [An+i (x) - An ix)  
+.4o (x)a + 7r-a.)A, (x) + 2 g (a) [An+i (x) - An ix)
 
 
 
-w = l 
+w = l
 
 
 
-and this limit is the value of the function when a = 0, by | 3"32 ; and this 
-value is zero since lim An(x) = 0. By symmetry we see that lim = lim. 
+and this limit is the value of the function when a = 0, by | 3"32 ;
+and this value is zero since lim An(x) = 0. By symmetry we see that
+lim = lim.
 
-9'63. Riemanns theorem* on trigonometrical series. 
+9'63. Riemanns theorem* on trigonometrical series.
 
-Two trigonometrical series which converge and are equal at all j oints of 
-the range (— tt, tt), witli the possible exception of a finite number of points, 
-must have corresponding coefficients equal. 
+Two trigonometrical series which converge and are equal at all j oints
+of the range (— tt, tt), witli the possible exception of a finite
+number of points, must have corresponding coefficients equal.
 
-An immediate deduction from this theorem is that a function of the type considered 
-in § 9'42 cannot be represented bv auy trigonometrical series in the range (— tt, tt) other 
-than the Fourier series. This fact was first noticed by Du Bois Reymond. 
+An immediate deduction from this theorem is that a function of the
+type considered in § 9'42 cannot be represented bv auy trigonometrical
+series in the range (— tt, tt) other than the Fourier series. This
+fact was first noticed by Du Bois Reymond.
 
-We observe that it is certainly possible to have other expansions of (say) the form 
-oq + 2 (a,  cos i rax + /3,  sin   rax), 
+We observe that it is certainly possible to have other expansions of
+(say) the form oq + 2 (a, cos i rax + /3, sin rax),
 
-which represent /(a-) between - tt and tt ; for write .r=2 , and consider a function c  ( ), 
-which is such that (  ( ) =/(2|) when -\ ir < <\ tv, and (|) =g (|) when - tt < | < -  tt, 
-and when  tt <   < tt, where g ( ) is any function satisfying the conditions of § 9-43. 
-Then if we expand (  (|) in a Fourier series of the form 
+which represent /(a-) between - tt and tt ; for write .r=2 , and
+consider a function c ( ), which is such that ( ( ) =/(2|) when -\ ir
+< <\ tv, and (|) =g (|) when - tt < | < - tt, and when tt < < tt,
+where g ( ) is any function satisfying the conditions of § 9-43. Then
+if we expand ( (|) in a Fourier series of the form
 
-0,1 + 2 (a  cos m  + /3 i cos m ), 
+0,1 + 2 (a cos m + /3 i cos m ),
 
-this expansion represents /(.r) when - Tr<x<ir ; and clearly by choosing the function g (|) 
-in different ways an unlimited number of such expansions can be obtained. 
+this expansion represents /(.r) when - Tr<x<ir ; and clearly by
+choosing the function g (|) in different ways an unlimited number of
+such expansions can be obtained.
 
-The question now at issue is, whether other series- proceeding in sines and cosines of 
-integral multiples of x exist, which differ from Fourier's expansion and yet represent / (.r) 
-between — tt and tt. 
+The question now at issue is, whether other series- proceeding in
+sines and cosines of integral multiples of x exist, which differ from
+Fourier's expansion and yet represent / (.r) between — tt and tt.
 
-If possible, let there be two trigonometrical series satisfying the given 
-conditions, and let their difference be the trigonometrical series 
+If possible, let there be two trigonometrical series satisfying the
+given conditions, and let their difference be the trigonometrical
+series
 
-Ao+ t An x)=f(x). 
- =1 
+Ao+ t An x)=f(x). =1
 
-Then f(x) = at all points of the range (— tt, tt) w th a finite number of 
+Then f(x) = at all points of the range (— tt, tt) w th a finite number
+of
 
-exceptions ; let  i ,  o be a consecutive pair of these exceptional points, and 
+exceptions ; let i , o be a consecutive pair of these exceptional
+points, and
 
-let F (x) be Riemann's associated functiou. We proceed to establish a 
+let F (x) be Riemann's associated functiou. We proceed to establish a
 
-lemma concerning the value of F x) when  j< x< fo- 
+lemma concerning the value of F x) when j< x< fo-
 
-9"631. Schwartz' lemma f. In the range  i<x< . , F x) is a linear function of x, 
-if f (x) = in this range. 
+9"631. Schwartz' lemma f. In the range i<x< . , F x) is a linear
+function of x, if f (x) = in this range.
 
-For if   = 1 or if <9= -1 
+For if = 1 or if <9= -1
 
-cl>  ) = e F x)-Fi ,)-l  F i,)-F(i,) y ,hHx- ,)  ,-x) 
-is a continuous function of x in the range  i  j;   ,,  nd ( i) = (  ( 2) = 0. 
+cl> ) = e F x)-Fi ,)-l F i,)-F(i,) y ,hHx- ,) ,-x) is a continuous
+function of x in the range i j; ,, nd ( i) = ( ( 2) = 0.
 
-* The proof we give is due to Gr. Cantor, Journal fit r Math, lxxii. (1870), pp. 139-142. 
-+ Quoted by G. Cantor, Journal filr Math, i.xxii. (1870). 
+* The proof we give is due to Gr. Cantor, Journal fit r Math, lxxii.
+(1870), pp. 139-142. + Quoted by G. Cantor, Journal filr Math, i.xxii.
+(1870).
 
 
 
-9 63-9 '632] trigonometrical series 187 
+9 63-9 '632] trigonometrical series 187
 
-If the first term of (f) (x) is not zero throughout the range* there will be some point 
-x=c at which it is not zero. Choose the sign of \$ so that the first term is positive at c, 
-and then choose h so small that (f) (c) is still positive. 
+If the first term of (f) (x) is not zero throughout the range* there
+will be some point x=c at which it is not zero. Choose the sign of \$
+so that the first term is positive at c, and then choose h so small
+that (f) (c) is still positive.
 
-Since cf) (x) is continuous it "attains its upper bound (§ 3"62), and this upper bound is 
-positive since (f> (c) > 0. Let (x) attain its upper bound at Cj, so that Ci + |i , Ci4= 2 • 
-Then, by Riemanifs first lemma, 
+Since cf) (x) is continuous it "attains its upper bound (§ 3"62), and
+this upper bound is positive since (f> (c) > 0. Let (x) attain its
+upper bound at Cj, so that Ci + |i , Ci4= 2 • Then, by Riemanifs first
+lemma,
 
-lini </'(gi + °) + < (gi- )-20(<  i)\  . 
+lini </'(gi + °) + < (gi- )-20(< i)\ .
 
-But (c'l + a)   (f) (c']), (f> (ci-a) - (p (0|), SO this limit must be negative or zero. 
+But (c'l + a) (f) (c']), (f> (ci-a) - (p (0|), SO this limit must be
+negative or zero.
 
-Hence, by supposing that the first term of (x) is not everywhere zero in the range 
-( j,  2)5 we have arrived at a contradiction. Therefore it is zero ; and consequently F x) is 
-a linear function of x in the range  1 < x <  2-   li J lemma is therefore proved. 
+Hence, by supposing that the first term of (x) is not everywhere zero
+in the range ( j, 2)5 we have arrived at a contradiction. Therefore it
+is zero ; and consequently F x) is a linear function of x in the range
+1 < x < 2- li J lemma is therefore proved.
 
-9632. Proof of Rieiiianns Theorem. 
+9632. Proof of Rieiiianns Theorem.
 
-We see that, in the circumstances under consideration, the curve y = F  x) 
-represents a series of segments of straight lines, the beginning and end of 
-each line corresponding to an exceptional point ; and as F x), being uniformly 
-convergent, is a continuous function of x, these lines must be connected. 
+We see that, in the circumstances under consideration, the curve y = F
+x) represents a series of segments of straight lines, the beginning
+and end of each line corresponding to an exceptional point ; and as F
+x), being uniformly convergent, is a continuous function of x, these
+lines must be connected.
 
-But, by Riemann's second lemma, even if   be an exceptional point, 
+But, by Riemann's second lemma, even if be an exceptional point,
 
-a a a 
+a a a
 
-Now the fraction involved in this limit is the difference of the slopes of 
-the two segments which meet at that point whose abscissa is   ; therefore the 
-two segments are continuous in direction, so the equation y = F x) represents 
-a single line. If then we write F x) = cx- c, it follows that c and c' have 
-the same values for all values of  •. Thus 
+Now the fraction involved in this limit is the difference of the
+slopes of the two segments which meet at that point whose abscissa is
+; therefore the two segments are continuous in direction, so the
+equation y = F x) represents a single line. If then we write F x) =
+cx- c, it follows that c and c' have the same values for all values of
+•. Thus
 
-X 
+X
 
- A x" — ex — c' = S n~-A n (x), 
- =i 
+ A x" — ex — c' = S n~-A n (x), =i
 
-the right-hand side of this equation being periodic, with period 27r. 
+the right-hand side of this equation being periodic, with period 27r.
 
-The left-hand side of this equation must therefore be periodic, with period 
+The left-hand side of this equation must therefore be periodic, with
+period
 
-27r. Hence 
+27r. Hence
 
- 4,, = (), c = 0, 
+ 4,, = (), c = 0,
 
-and — c' = — ir'-A,i(x). 
+and — c' = — ir'-A,i(x).
 
->i = \ 
+>i = \
 
-Now the right-hand side of this equation converges uniformly, so we can 
-multiply by cos nx or by sin nx and integrate. 
+Now the right-hand side of this equation converges uniformly, so we
+can multiply by cos nx or by sin nx and integrate.
 
-This process gives 
+This process gives
 
-7rn~-a,i = — cj cos nxdx = 0, 
+7rn~-a,i = — cj cos nxdx = 0,
 
-7rn~ bn= — c j sin nxdx = 0. 
-* If it is zero throughout the range, F (x) is a linear function of z. 
+7rn~ bn= — c j sin nxdx = 0. * If it is zero throughout the range, F
+(x) is a linear function of z.
 
 
 
-188 THE PROCESSES OF ANALYSIS [CHAP. IX 
+188 THE PROCESSES OF ANALYSIS [CHAP. IX
 
-Therefore all the coefficients vanish, and therefore the two trigonometrical 
-series whose difference is J.o+ S An(x) have corresponding coefficients equal. 
-This is the result stated in § 9"63. 
+Therefore all the coefficients vanish, and therefore the two
+trigonometrical series whose difference is J.o+ S An(x) have
+corresponding coefficients equal. This is the result stated in § 9"63.
 
-9'7. Fourier s representation of a function hy an integral*. 
+9'7. Fourier s representation of a function hy an integral*.
 
-It follows from § 9 "43 that, if /  ai) be continuous except at a finite 
-number of discontinuities and if it have limited total fluctuation in the 
-range (— x , x ), then, if x be any internal point of the range (— a, /3), 
+It follows from § 9 "43 that, if / ai) be continuous except at a
+finite number of discontinuities and if it have limited total
+fluctuation in the range (— x , x ), then, if x be any internal point
+of the range (— a, /3),
 
-lim' r siii(   + l)( - ) y( )    11  iTT - sin 6 [f x + 26) +/(  - W)]. 
+lim' r siii( + l)( - ) y( ) 11 iTT - sin 6 [f x + 26) +/( - W)].
 
-Now let X be any real number, and choose the integer m so that 
-\ = 27n + 1 + 277 where   t; < 1. 
+Now let X be any real number, and choose the integer m so that \ = 27n
++ 1 + 277 where t; < 1.
 
-Then  sin X t- x) - sin  2m + 1 ) (  - x)] (t - x)-' f (t) dt 
+Then sin X t- x) - sin 2m + 1 ) ( - x)] (t - x)-' f (t) dt
 
-J —a. 
+J —a.
 
-= I 2  cos (2 i + 1 + t;) (  - x)] .  sin rj  t - x)]  t - x)-'f t) dt 
+= I 2 cos (2 i + 1 + t;) ( - x)] . sin rj t - x)] t - x)-'f t) dt
 
-. —a 
+. —a
 
-as ??i— >x by § 9"41 (ii), since (t — x)~'  f (t) sin 7   t — x) has limited total 
-fluctuation. 
+as ??i— >x by § 9"41 (ii), since (t — x)~' f (t) sin 7 t — x) has
+limited total fluctuation.
 
-Consequently, fi'om the proof of the Riemann-Lebesgue lemma of § 9"41, 
+Consequently, fi'om the proof of the Riemann-Lebesgue lemma of § 9"41,
 
-it is obvious that if I \ f t)' dt and | 1/(0 i   converge, thenf 
+it is obvious that if I \ f t)' dt and | 1/(0 i converge, thenf
 
-Jo . -00 
+Jo . -00
 
 
 
-1"  r   f(t)di = h  f(  +  )+f( - )]> 
+1" r f(t)di = h f( + )+f( - )]>
 
 
 
-A-*-x J -X 
+A-*-x J -X
 
 
 
- t-x) 
+ t-x)
 
 
 
-and so 
+and so
 
 
 
-lim r \ I cos u (t - x) du\ f(t) dt =  tt  f x + 0) +f(x - 0) . 
+lim r \ I cos u (t - x) du\ f(t) dt = tt f x + 0) +f(x - 0) .
 
-To obtain Fourier's result, we must reverse the order of integration in 
-this repeated integral. 
+To obtain Fourier's result, we must reverse the order of integration
+in this repeated integral.
 
-For any given value of \ and any arbitrary value of e, there exists a 
-number   such that 
+For any given value of \ and any arbitrary value of e, there exists a
+number such that
 
-r\ f(t)idt< el  
-J p 
+r\ f(t)idt< el J p
 
-* La Theorie Analytique de la Chaleur, Cb. ix. 
+* La Theorie Analytique de la Chaleur, Cb. ix.
 
-t r°° . . . ("  
+t r°° . . . ("
 
-I means the double limit lim I . If this limit exists, it is of course equal 
+I means the double limit lim I . If this limit exists, it is of course
+equal
 
-J -X p - • X , cr -*  X J —p 
+J -X p - • X , cr -* X J —p
 
-I'- 
+I'-
 
 
 
-to lim 
+to lim
 
-p x J -p 
+p x J -p
 
 
 
-97] FOURIER SERIES . 189 
+97] FOURIER SERIES . 189
 
-writing cos u(t— ir) .f(t) = (f> (t, u), we have* 
+writing cos u(t— ir) .f(t) = (f> (t, u), we have*
 
-\ r\ I (f>(t, a) dul dt-l \ I (f> t, u) dt] du ! 
+\ r\ I (f>(t, a) dul dt-l \ I (f> t, u) dt] du !
 
-I ' (   J 7 ( . ) ' 
+I ' ( J 7 ( . ) '
 
-= j \ t (f) t, a) duldt+ j   I (f>  t, u)dul dt 
+= j \ t (f) t, a) duldt+ j I (f> t, u)dul dt
 
--[ \ j <f)  t, u) dt\ du - j \ j (f> t,ii)dtldu\ 
-= j \ l 4>(t, u) dul dt-\ \ I (fi  t, u) dt\ du 
+-[ \ j <f) t, u) dt\ du - j \ j (f> t,ii)dtldu\ = j \ l 4>(t, u) dul
+dt-\ \ I (fi t, u) dt\ du
 
-  P [J ) .   fi ) 
+  P [J ) . fi )
 
-< r \ i''\ < t>(t, u)\ duldt+i'' j'  (t>(t, u)[dtdu 
+< r \ i''\ < t>(t, u)\ duldt+i'' j' (t>(t, u)[dtdu
 
-< 2\ I  \ f t)\ dt<€. 
+< 2\ I \ f t)\ dt<€.
 
-Since this is true for all values of e, no matter how small, we infer that 
-/•oo rk r\ foD /•— Qo r\ r\ r— x 
+Since this is true for all values of e, no matter how small, we infer
+that /•oo rk r\ foD /•— Qo r\ r\ r— x
 
-= ; similarly = . 
+= ; similarly = .
 
-J a J J J I) J i) Jo J .  ) 
+J a J J J I) J i) Jo J . )
 
-Hence | ir [f x + 0) +/(./; - 0)  = lim | cos u (t - oc)f t) dtdu 
+Hence | ir [f x + 0) +/(./; - 0) = lim | cos u (t - oc)f t) dtdu
 
 
 
-=   
+=
 
 
 
-A- .  JO. -00 
+A- . JO. -00
 
-00 ;" 00 
+00 ;" 00
 
 
 
-COS u  t — oe)f t) dtdu. 
-.' -  
+COS u t — oe)f t) dtdu. .' -
 
 
 
-This result is known as Fourier s integral tlieorem.  
-Example. Verify Fourier's integral theorem dinx-tlj (i) fur the function 
+This result is known as Fourier s integral tlieorem. Example. Verify
+Fourier's integral theorem dinx-tlj (i) fur the function
 
-(ii) for the function defined by the equations 
+(ii) for the function defined by the equations
 
-/•(.r)=l,  -\ < x< ) ; fix) = 0, (|x|>l). (Rayleigh.j 
+/•(.r)=l, -\ < x< ) ; fix) = 0, (|x|>l). (Rayleigh.j
 
-REFERENCES. 
-G. F. B. RiEMANN, Ges. Math. Werke, pp. 213-250. 
-E. W. HoBSON, Functions of a Real Variable (1907), Ch. vii. 
-H. Lebesgde, Lemons sur les Series Trigonometriques. (Paris, 1906.) 
-C. J. DE LA VallJ e Poussix, Cours d: Analyse Infinitesimale, ir. (Louvain and Paris, 
+REFERENCES. G. F. B. RiEMANN, Ges. Math. Werke, pp. 213-250. E. W.
+HoBSON, Functions of a Real Variable (1907), Ch. vii. H. Lebesgde,
+Lemons sur les Series Trigonometriques. (Paris, 1906.) C. J. DE LA
+VallJ e Poussix, Cours d: Analyse Infinitesimale, ir. (Louvain and
+Paris,
 
-1912), Ch. IV. 
+1912), Ch. IV.
 
-H. Burkhardt, Ena/clopddie der Math. WUg. ii. 1 (7). (Leipzig, 1914.) 
+H. Burkhardt, Ena/clopddie der Math. WUg. ii. 1 (7). (Leipzig, 1914.)
 
-G. A. Carse and G. Shearer, A course in Fourier's analysis and periodogram analysis 
+G. A. Carse and G. Shearer, A course in Fourier's analysis and
+periodogram analysis
 
-(Edinburgh Math. Tracts, No. 4, 1915). 
+(Edinburgh Math. Tracts, No. 4, 1915).
 
-* The equation I / = I I is easilj' justified by § 4-.3, by considering the ranges within 
+* The equation I / = I I is easilj' justified by § 4-.3, by
+considering the ranges within
 
-which /(x) is continuous. 
+which /(x) is continuous.
 
-t For a proof of the theorem when f(x] is subject to less stringent restrictions, see 
-Hobson, Functions of a Real Variable, %% 492-493. The reader should observe that, although 
+t For a proof of the theorem when f(x] is subject to less stringent
+restrictions, see Hobson, Functions of a Real Variable, %% 492-493.
+The reader should observe that, although
 
-Um I I exists, the repeated integral I \ I sin m (( -x) duj- /(<) dt does not, 
+Um I I exists, the repeated integral I \ I sin m (( -x) duj- /(<) dt
+does not,
 
-A-*oo y -00 7 7 -00 U J 
+A-*oo y -00 7 7 -00 U J
 
 
 
-190 the processes of analysis [chap. ix 
+190 the processes of analysis [chap. ix
 
-Miscellaneous Examples. 
+Miscellaneous Examples.
 
-1. Obtain the expansions 
+1. Obtain the expansions
 
-  ' l-2rcos2 + r2 
+  ' l-2rcos2 + r2
 
-(6) - log ( 1 - 2r cos z + r ) = — r cos J -   ''  cos 2  — - r  cos 3  — . . . , 
+(6) - log ( 1 - 2r cos z + r ) = — r cos J - '' cos 2 — - r cos 3 — .
+. . ,
 
-, , , ?'sinz . 1   .   1   . \  , 
+, , , ?'sinz . 1 . 1 . \ ,
 
-(c) arc tan , = rsins + -?' sin 22 + ?: /'  sin 3s + ..., 
+(c) arc tan , = rsins + -?' sin 22 + ?: /' sin 3s + ...,
 
-   r cos 2 2 3 
+   r cos 2 2 3
 
-,   , 2rsin2 . I , •   1 c •   
+, , 2rsin2 . I , • 1 c •
 
-(a) arc tan 3- = r sin z- -r  sin 3  + - r° sm 02 + . . . , 
+(a) arc tan 3- = r sin z- -r sin 3 + - r° sm 02 + . . . ,
 
-1 — r'' 3 5 
+1 — r'' 3 5
 
-and shew that, when | r | < 1, thej- are convergent for all values of z in certain strips 
-parallel to the real axis in the  -plane. 
+and shew that, when | r | < 1, thej- are convergent for all values of
+z in certain strips parallel to the real axis in the -plane.
 
-2. Expand x  and x in Fourier sine series valid when - tt < .r < tt ; and hence find 
-the value of the sum of the series 
+2. Expand x and x in Fourier sine series valid when - tt < .r < tt ;
+and hence find the value of the sum of the series
 
-sin X —   sin 2.r + -3 sin 3*' — -  sin 4.r + . . . , 
-for all values of a.-. (Jesus, 1902.) 
+sin X — sin 2.r + -3 sin 3*' — - sin 4.r + . . . , for all values of
+a.-. (Jesus, 1902.)
 
-3. Shew that the function of x I'epresented by 2  ~i sin    sin  /2a, is constant 
+3. Shew that the function of x I'epresented by 2 ~i sin sin /2a, is
+constant
 
-n = \ 
+n = \
 
-(0 < X < 2a) and zero (2a < x < tt), and draw a graph of the function. 
+(0 < X < 2a) and zero (2a < x < tt), and draw a graph of the function.
 
-(Pembroke, 1907.) 
+(Pembroke, 1907.)
 
-4. Find the cosine series representing /(.r) where 
+4. Find the cosine series representing /(.r) where
 
-/ (x) = sin X + cos X (0 < . '  tt ), 
+/ (x) = sin X + cos X (0 < . ' tt ),
 
-/(.r) = sin.r-cos.r (in-   .r < tt). (Peterhouse, 1906.) 
+/(.r) = sin.r-cos.r (in- .r < tt). (Peterhouse, 1906.)
 
-5. Shew that 
+5. Shew that
 
-sin 3n-  sinSjTA' sin Ttt.  , r -, 
+sin 3n- sinSjTA' sin Ttt. , r -,
 
-sin TTX + —   — + —   — + — - — + ... = Jtt [x], 
+sin TTX + — — + — — + — - — + ... = Jtt [x],
 
-where [x] denotes 4-1 or — 1 according as the integer next inferior to x is even or uneven, 
-and is zero if x is an integer. (Trinity, 1895.) 
+where [x] denotes 4-1 or — 1 according as the integer next inferior to
+x is even or uneven, and is zero if x is an integer. (Trinity, 1895.)
 
-6. Shew that the expansions 
+6. Shew that the expansions
 
 
 
-log 
-and 
+log and
 
 
 
-1 
+1
 
-2 cos - X 
-2 
+2 cos - X 2
 
 
 
-log 2 .sin - X 
+log 2 .sin - X
 
 
 
-= cos X—- cos 2x + - cos 3x 
+= cos X—- cos 2x + - cos 3x
 
 
 
-— COS X — - COS 2x — - cos 3x 
+— COS X — - COS 2x — - cos 3x
 
 
 
-are valid for all real A'alues of x, except multiples of tt. 
+are valid for all real A'alues of x, except multiples of tt.
 
-7. Obtain the expansion 
+7. Obtain the expansion
 
-"(-)"* cos m.r , o M /  1 \ 1 / • T • \ 
+"(-)"* cos m.r , o M / 1 \ 1 / • T • \
 
-2 ~ — -yT-.   = (cos X + cos 2x) log ( 2 cos -x\ +-,:?; (sin zx + sin x) — cos x, 
+2 ~ — -yT-. = (cos X + cos 2x) log ( 2 cos -x\ +-,:?; (sin zx + sin x)
+— cos x,
 
-and find the range of values of . ' for which it is applicable. (Trinity, 1898.) 
+and find the range of values of . ' for which it is applicable.
+(Trinity, 1898.)
 
-8. Prove that, if < a- < 27r, then 
+8. Prove that, if < a- < 27r, then
 
 
 
-sin X 2 sin 2x Z sin 3.:*; \  tt sinh a (tt - x) 
-a'  + Y' "  a +2-  "a T  + ' ' " " 2 ' sinh aTr ' 
+sin X 2 sin 2x Z sin 3.:*; \ tt sinh a (tt - x) a' + Y' " a +2- "a T +
+' ' " " 2 ' sinh aTr '
 
 
 
-(Trinity, 1895.) 
+(Trinity, 1895.)
 
 
 
-FOURIER SERIES 
+FOURIER SERIES
 
 
 
-191 
+191
 
 
 
-9. Shew that between the values -tt and +n o( x the following expansions hold 
+9. Shew that between the values -tt and +n o( x the following
+expansions hold
 
-2 . / sin   2 sin 2x 3 sin Zx 
+2 . / sin 2 sin 2x 3 sin Zx
 
-sin in.v = - sin ran —. r — —, —   + —= -  — ... 
+sin in.v = - sin ran —. r — —, — + —= - — ...
 
-IT \ V-m'' -l -m  32-7 2 
+IT \ V-m'' -l -m 32-7 2
 
-2 . ( \ m cos X m cos 2.r m cos 3 ' 
-cos mx = - sin ??l7r ;;— + —  - -r  + — 5 -  
+2 . ( \ m cos X m cos 2.r m cos 3 ' cos mx = - sin ??l7r ;;— + — - -r
++ — 5 -
 
-TT \ 2m P — 7rt- 22-77l2 32-J/l2 
+TT \ 2m P — 7rt- 22-77l2 32-J/l2
 
-e-mx g-mx  2 / 1 ??IC0S.¥ ?/l COS 2.r 7?2C0S3.1- \ 
+e-mx g-mx 2 / 1 ??IC0S.¥ ?/l COS 2.r 7?2C0S3.1- \
 
-10. Let X be a real variable V)etween and 1, and let n be an odd number   3. 
-Shew that 
+10. Let X be a real variable V)etween and 1, and let n be an odd
+number 3. Shew that
 
-(—1)* = - + - 2 —tan — cos2OTn-:r, 
-if   is not a multiple of -, where s is the gi-eatest integer contained in nx; but 
+(—1)* = - + - 2 —tan — cos2OTn-:r, if is not a multiple of -, where s
+is the gi-eatest integer contained in nx; but
 
- 1 2 1 WITT 
+ 1 2 1 WITT
 
-0= - + - 2 — tan — cos 2m7rx, 
-n 7r, =i i n 
+0= - + - 2 — tan — cos 2m7rx, n 7r, =i i n
 
-if jp is an integer multiple of 1/n. (Berger.) 
+if jp is an integer multiple of 1/n. (Berger.)
 
-11. Shew that the sum of the series 
+11. Shew that the sum of the series
 
-X 
+X
 
- 5 + 47r ~   2 m~  sin  mn cos 2m7rx 
+ 5 + 47r ~ 2 m~ sin mn cos 2m7rx
 
-m = 1 
+m = 1
 
-is 1 when 0<x<l, and when fj<A'<l, and is -1 when l<.r<|. (Trinity, 1901.) 
+is 1 when 0<x<l, and when fj<A'<l, and is -1 when l<.r<|. (Trinity,
+1901.)
 
 
 
-12. If 
+12. If
 
 
 
-shew that, when — 1 <x <\, 
+shew that, when — 1 <x <\,
 
 
 
-a" V  (x) 
+a" V (x)
 
 
 
-ae"' 
+ae"'
 
 
 
-e" - 1  =o n 
+e" - 1 =o n
 
 
 
-cos 2irx+ 
+cos 2irx+
 
 
 
-s47r.r cosBttj: \  \ -i 2" ""*' " i- 
+s47r.r cosBttj: \ \ -i 2" ""*' " i-
 
 
 
-22" 
+22"
 
 
 
-32 
+32
 
 
 
-2/i ! 
+2/i !
 
 
 
-sin 47ra; sin 6nx 
-"2-" + 1 "*" "32 
+sin 47ra; sin 6nx "2-" + 1 "*" "32
 
 
 
-. -, 8IU 'iTTX Sin OTTX- , .   , , - ,. ., , . 
+. -, 8IU 'iTTX Sin OTTX- , . , , - ,. ., , .
 
-sm27ra;+-j ; +- ; +. .. = (-)"+!  \ \ ,, V, ,, x). 
+sm27ra;+-j ; +- ; +. .. = (-)"+! \ \ ,, V, ,, x).
 
 
 
-22" 2  + l   
+22" 2 + l
 
-2  + 1 : 
+2 + 1 :
 
 
 
-(Math. Trip. 1896.) 
+(Math. Trip. 1896.)
 
 
 
-13. If 7?i is an integer, shew that, for all real values of .v, 
+13. If 7?i is an integer, shew that, for all real values of .v,
 
 
 
-cos2' a;=2 
+cos2' a;=2
 
 
 
-1.3.5...(2m- 
+1.3.5...(2m-
 
 
 
-2.4.6 ...2m 
+2.4.6 ...2m
 
 
 
-1) fl , r,i 
-(2  i + l 
+1) fl , r,i (2 i + l
 
 
 
-m m- )  
+m m- )
 
-cos 2x + — -  ~ cos 4x 
+cos 2x + — - ~ cos 4x
 
-(ot4-1)(7  + 2) 
+(ot4-1)(7 + 2)
 
-m m-l) m - 2) 
- *  (m + l)(?tt + 2)(w+3) 
+m m-l) m - 2) * (m + l)(?tt + 2)(w+3)
 
 
 
-cos 6.r + ...V , 
+cos 6.r + ...V ,
 
 
 
-  \ . , 4 2.4.6...(27ft-2) (1 2w-l . f2m-l)(27n-3) , , 
+  \ . , 4 2.4.6...(27ft-2) (1 2w-l . f2m-l)(27n-3) , ,
 
-r.ns2m-l\ ;p|\ \    — \   — \  \ \  \  J  -! ;; +   . , COS 2x+— , ,, ,  -; C0S4a-+. 
+r.ns2m-l\ ;p|\ \ — \ — \ \ \ \ J -! ;; + . , COS 2x+— , ,, , -;
+C0S4a-+.
 
 
 
-1.3.5 ...(2 i-l) (2 2/u + l 
+1.3.5 ...(2 i-l) (2 2/u + l
 
 
 
-(2to + 1)(2 h-3) 
+(2to + 1)(2 h-3)
 
 
 
-•/ 
+•/
 
 
 
-14. A point moves in a straight line with a velocity which is initially u, and which 
-receives constant increments, each equal to u, at equal intervals r. Prove that the velocity 
-at any time t after the beginning of the motion is 
+14. A point moves in a straight line with a velocity which is
+initially u, and which receives constant increments, each equal to u,
+at equal intervals r. Prove that the velocity at any time t after the
+beginning of the motion is
 
 
 
-u ut V-   1 . 2miit 
-77 + — + - 2 - sin , 
+u ut V- 1 . 2miit 77 + — + - 2 - sin ,
 
 
 
-and that the di-stance traversed is 
+and that the di-stance traversed is
 
 
 
-lit 
+lit
 
 
 
-(  +  ) + T7>-o32 2 -2 cos 
+( + ) + T7>-o32 2 -2 cos
 
 
 
-2mTTt 
+2mTTt
 
 
 
-(Trinity, 1894.) 
+(Trinity, 1894.)
 
 
 
-192 THE PROCESSES OF ANALYSIS [cHAP. IX 
+192 THE PROCESSES OF ANALYSIS [cHAP. IX
 
-15. If 
+15. If
 
-X 2  = 1 
+X 2 = 1
 
-f x)= 2 sin (6?i - 3) j; - 2 2 -sm 2n-l)x 
+f x)= 2 sin (6?i - 3) j; - 2 2 -sm 2n-l)x
 
-ji=i '2n - 1 71=1 zn — i 
+ji=i '2n - 1 71=1 zn — i
 
-3 v'3 f . sin 5.r sin 7.r sin ll r ] 
+3 v'3 f . sin 5.r sin 7.r sin ll r ]
 
-shew that / ( + 0) =/ (tt - 0) = -  tt, 
+shew that / ( + 0) =/ (tt - 0) = - tt,
 
-and /G +0)-/(i7r-0)=-i7r, /(;:|7r+0)-/(37r-0)=*7r. 
+and /G +0)-/(i7r-0)=-i7r, /(;:|7r+0)-/(37r-0)=*7r.
 
-Observing that the last series is 
+Observing that the last series is
 
-6   sin   (2ft- 1 ) TTsin  2n-l)x 
+6 sin (2ft- 1 ) TTsin 2n-l)x
 
-draw the graph of /(•* )  (Math. Trip. 1893.) 
+draw the graph of /(•* ) (Math. Trip. 1893.)
 
-16. Shew that, when <.r < n, 
+16. Shew that, when <.r < n,
 
- / N 2 /3/ 1 .1   1 Ti , \ 
+ / N 2 /3/ 1 .1 1 Ti , \
 
-f(,v) = '- I cos .r-- cos 0. '+- cos /.<•——- cos 11. r,'-f... 
- '   '  3 \ / 11 / 
+f(,v) = '- I cos .r-- cos 0. '+- cos /.<•——- cos 11. r,'-f... ' ' 3 \
+/ 11 /
 
-= sin 2x' + - sin 4.f + - sin 8.v + r sin lO.r + . . . 
-2 4 5 
+= sin 2x' + - sin 4.f + - sin 8.v + r sin lO.r + . . . 2 4 5
 
-where /  ) = i  (0< < 7r), 
+where / ) = i (0< < 7r),
 
-f x) = (l7r<.r<g7r), 
+f x) = (l7r<.r<g7r),
 
-f x)=-\ v  %7T<X<1t). 
+f x)=-\ v %7T<X<1t).
 
-Find the sum of each series when .r = 0, \ ir, qtt, n, and for all other values of x. 
+Find the sum of each series when .r = 0, \ ir, qtt, n, and for all
+other values of x.
 
-(Trinity, 1908.) 
+(Trinity, 1908.)
 
-17. Prove that the locus represented by 
+17. Prove that the locus represented by
 
-2   2 — '' " '*•''    ny = 
+2 2 — '' " '*•'' ny =
 
-n=l "• 
+n=l "•
 
-is two systems of lines at right angles, dividing the coordinate plane into squares of 
-area tt'\ (Math. Trip. 1895.) 
+is two systems of lines at right angles, dividing the coordinate plane
+into squares of area tt'\ (Math. Trip. 1895.)
 
-18. Shew that the equation 
+18. Shew that the equation
 
-" ( - )" ~   sin ny cos nx \  
+" ( - )" ~ sin ny cos nx \
 
-n=i n  ~ 
+n=i n ~
 
-represents the lines i/= ±mir, (wi = 0, 1, 2, ...) together with a set of arcs of ellipses whose 
+represents the lines i/= ±mir, (wi = 0, 1, 2, ...) together with a set
+of arcs of ellipses whose
 
-semi-axes are tt and nlslZ, the arcs being placed in squares of area 27r" . Draw a diagram 
+semi-axes are tt and nlslZ, the arcs being placed in squares of area
+27r" . Draw a diagram
 
-of the locus. (Trinity, 1903.) 
+of the locus. (Trinity, 1903.)
 
-19. Shew that, if tlie point  x,y, z) lies inside the octahedron bounded by the planes 
+19. Shew that, if tlie point x,y, z) lies inside the octahedron
+bounded by the planes
 
-±x±y±z = Tr, then 
+±x±y±z = Tr, then
 
-"  , , , sin 7ia;sin 7jwsin wj 1 
+", , , sin 7ia;sin 7jwsin wj 1
 
- j-Y-  -  =2-y- 
+ j-Y- - =2-y-
 
-(Math. Trip. 1904.) 
+(Math. Trip. 1904.)
 
-20. Circles of radius a are diawn having their centres at the alternate angular jjoints 
-of a regular hexagon of side a. Sliew that the equation of the trefoil formed by the outer 
-arcs of the circles can be put in the form 
+20. Circles of radius a are diawn having their centres at the
+alternate angular jjoints of a regular hexagon of side a. Sliew that
+the equation of the trefoil formed by the outer arcs of the circles
+can be put in the form
 
-—nr- = -; +   -  cos 3(9- -—= cos 6 + -— - cos9 - ..., 
-6s'3a 22.4 5.7 8. 10 
+—nr- = -; + - cos 3(9- -—= cos 6 + -— - cos9 - ..., 6s'3a 22.4 5.7 8.
+10
 
-the initial line being taken to pass through the centre of one of the circles. 
+the initial line being taken to pass through the centre of one of the
+circles.
 
-(Pembroke, 1902.) 
+(Pembroke, 1902.)
 
 
 
-2m . 
-= 1 H sm 
+2m . = 1 H sm
 
 
 
-FOURIER SERIES 193 
+FOURIER SERIES 193
 
-21. Draw the graph represented by 
+21. Draw the graph represented by
 
-rr J 1   ( - )" COS nm6\ 
-m [2 a=i 1 -  nm)-  J ' 
-where m is an integer. (Jesus, 1908.) 
+rr J 1 ( - )" COS nm6\ m [2 a=i 1 - nm)- J ' where m is an integer.
+(Jesus, 1908.)
 
-22. With each vertex of a regular hexagon of side 2a as centre the arc of a circle of 
-radius 2a lying within the hexagon is drawn. Shew that the equation of the figure 
-formed by the six arcs is 
+22. With each vertex of a regular hexagon of side 2a as centre the arc
+of a circle of radius 2a lying within the hexagon is drawn. Shew that
+the equation of the figure formed by the six arcs is
 
-f-=6-3,.i + 2Si< -)-' j-  f co.6 <>, 
+f-=6-3,.i + 2Si< -)-' j- f co.6 <>,
 
-4a   a=i  6n-l) bn+l) 
+4a a=i 6n-l) bn+l)
 
-the prime vector bisecting a petal. (Trinity, 1905.) 
+the prime vector bisecting a petal. (Trinity, 1905.)
 
-23. Shew that, if c> 0, 
+23. Shew that, if c> 0,
 
 
 
-lim f 
+lim f
 
 
 
-e '  cot A" sin  2ii + l)x . dx=- n tanh -ctt. 
+e ' cot A" sin 2ii + l)x . dx=- n tanh -ctt.
 
 
 
-(Trinity, 1894.) 
+(Trinity, 1894.)
 
 
 
-24. Shew that 
+24. Shew that
 
-sin(2  + l)  dx 1 
+sin(2 + l) dx 1
 
 
 
-lim r 
+lim r
 
 
 
-IT O 
+IT O
 
 
 
-oth 1. 
+oth 1.
 
 
 
-(King's, 1901.) 
+(King's, 1901.)
 
 
 
-sin X l+x'  2 
+sin X l+x' 2
 
-25. Shew that, when — 1 < .r < 1 and a is real, 
+25. Shew that, when — 1 < .r < 1 and a is real,
 
-/ '°sin(2n + l) sin(H-.r)(9 ,  1 sinha.r 
+/ '°sin(2n + l) sin(H-.r)(9 , 1 sinha.r
 
-hm I   -. ;;   5 -r, d6= --TT .—, . 
+hm I -. ;; 5 -r, d6= --TT .—, .
 
-  .xjo sm  a  + 6- 2 smh a 
+  .xjo sm a + 6- 2 smh a
 
-(Math. Trip. 1905.) 
+(Math. Trip. 1905.)
 
-26. Assuming the possibility of expanding f(x) in a uniformly convergent series of 
+26. Assuming the possibility of expanding f(x) in a uniformly
+convergent series of
 
-the form  A -ainkx, where   is a root of the equation /-cosa/t-Hft sin a - = and the 
+the form A -ainkx, where is a root of the equation /-cosa/t-Hft sin a
+- = and the
 
-  . . . * 
+  . . . *
 
-summation is extended to all positive roots of this equation, determine the constants Jj.. 
+summation is extended to all positive roots of this equation,
+determine the constants Jj..
 
-(Math. Trip. 1898.) 
+(Math. Trip. 1898.)
 
-1 "" 
+1 ""
 
-27. If f x) = -a + 2  a cosnx + b,t>im nx) 
+27. If f x) = -a + 2 a cosnx + b,t>im nx)
 
-2 ,(=1 
+2 ,(=1
 
-is a Fourier series, shew that, iif x) satisfies certain general conditions, 
+is a Fourier series, shew that, iif x) satisfies certain general
+conditions,
 
-a  = - P i f (t) cos nt ta.n - t -- , 6  = — / f t)smnttn,n-t — . 
+a = - P i f (t) cos nt ta.n - t -- , 6 = — / f t)smnttn,n-t — .
 
-7T J ' 'It ""yO 'It 
+7T J ' 'It ""yO 'It
 
-(Beau.) 
+(Beau.)
 
 
 
-W. M. A. 13 
+W. M. A. 13
 

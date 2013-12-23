@@ -1,1594 +1,1648 @@
 \chapter{Integral Equations} 
 
-11"1. Definition of an integral equation. 
+11"1. Definition of an integral equation.
 
-An integral equation is one which involves an unknown function under 
-the sign of integration ; and the process of determining the unknown function 
-is called solving the equation*. 
+An integral equation is one which involves an unknown function under
+the sign of integration ; and the process of determining the unknown
+function is called solving the equation*.
 
-The introduction of integral equations into analysis is due to Laplace 
-(1782) who considered the equations 
+The introduction of integral equations into analysis is due to Laplace
+(1782) who considered the equations
 
-f x) = [e f (f) (t) dt, g  x) = [ -  4> (t) dt 
+f x) = [e f (f) (t) dt, g x) = [ - 4> (t) dt
 
-(where in each case (f) represents the unknown function), in connexion with 
-the solution of differential equations. The first integral equation of which 
-a solution was obtained, was Fourier's equation 
+(where in each case (f) represents the unknown function), in connexion
+with the solution of differential equations. The first integral
+equation of which a solution was obtained, was Fourier's equation
 
-f(.v) = l cos (xt) (f> (t) dt, 
+f(.v) = l cos (xt) (f> (t) dt,
 
-of which, in certain circumstances, a solution isf 
+of which, in certain circumstances, a solution isf
 
-2 f  
+2 f
 
-(f)( x) = - I cos (ux)f(u) du, 
+(f)( x) = - I cos (ux)f(u) du,
 
-TTJo 
+TTJo
 
-f x) being an even function of a;, since cos  xt) is an even function. 
+f x) being an even function of a;, since cos xt) is an even function.
 
-Later, Abel+ was led to an integral equation in connexion with a mechanical 
-problem and obtained two solutions of it ; after this, Liouville investigated an 
-integral equation which arose in the course of his researches on differential 
-equations and discovered an important method for solving integral equations §, 
-which will be discussed in § 11 '4. 
+Later, Abel+ was led to an integral equation in connexion with a
+mechanical problem and obtained two solutions of it ; after this,
+Liouville investigated an integral equation which arose in the course
+of his researches on differential equations and discovered an
+important method for solving integral equations §, which will be
+discussed in § 11 '4.
 
-In recent years, the subject of integral equations has become of some 
-importance in various branches of Mathematics ; such equations (in physical 
-problems) frequently involve repeated integrals and the investigation of them 
-naturally presents greater difficulties than do those elementary equations 
-which will be treated in this chapter. 
+In recent years, the subject of integral equations has become of some
+importance in various branches of Mathematics ; such equations (in
+physical problems) frequently involve repeated integrals and the
+investigation of them naturally presents greater difficulties than do
+those elementary equations which will be treated in this chapter.
 
-To render the analysis as easy as possible, we shall suppose throughout 
-that the constants a, h and the variables x, y,   are real and further that 
+To render the analysis as easy as possible, we shall suppose
+throughout that the constants a, h and the variables x, y, are real
+and further that
 
-* Except in the case of Fourier's integral (§ 9'7) we practically always need continuom 
-solutions of integral equations. 
+* Except in the case of Fourier's integral (§ 9'7) we practically
+always need continuom solutions of integral equations.
 
-t If this value of (p be substituted in the equation we obtain a result which is, effectively, that 
-of §9-7. 
+t If this value of (p be substituted in the equation we obtain a
+result which is, effectively, that of §9-7.
 
-+ Solution de quelques problemes a Vaide d'integrales definies (1823). See Oeuvres, i. pp. 11, 97. 
++ Solution de quelques problemes a Vaide d'integrales definies (1823).
+See Oeuvres, i. pp. 11, 97.
 
-§ The numerical computation of solutions of integral equations has been investigated recently 
-by Whittaker, Proc. Roijal Soc. xciv. (A), (1918), pp. 367-383. 
+§ The numerical computation of solutions of integral equations has
+been investigated recently by Whittaker, Proc. Roijal Soc. xciv. (A),
+(1918), pp. 367-383.
 
-U—2 
+U—2
 
 
 
-212 THE PROCESSES OF ANALYSIS [CHAP. XI 
+212 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-O' , y,  i>'  also that the given function* K (x, y), which occurs under the 
-integral sign in the majority of equations considered, is a real function of 
-a; and y and either (i) it is a continuous function of both variables in the 
-range (a  x b, a i/  b), or (ii) it is a continuous function of both variables 
-in the range a y  x b and K (x, y) = when y > x; in the latter case 
-K x, y) has its discontinuities regularly distributed, and in either case it is 
+O' , y, i>' also that the given function* K (x, y), which occurs under
+the integral sign in the majority of equations considered, is a real
+function of a; and y and either (i) it is a continuous function of
+both variables in the range (a x b, a i/ b), or (ii) it is a
+continuous function of both variables in the range a y x b and K (x,
+y) = when y > x; in the latter case K x, y) has its discontinuities
+regularly distributed, and in either case it is
 
-easily proved that, iff(y) is continuous when a y b, f y) K x, y) dy is a 
+easily proved that, iff(y) is continuous when a y b, f y) K x, y) dy
+is a
 
-J a 
+J a
 
-continuous function of x when a x b. 
+continuous function of x when a x b.
 
-11 'll. An algebraical lemma. 
+11 'll. An algebraical lemma.
 
-The algebraical result which will now be obtained is of great importance in Fredholm's 
-theory of integral equations. 
+The algebraical result which will now be obtained is of great
+importance in Fredholm's theory of integral equations.
 
-Let (a'i, 3/1, Zy),  .V2, i/2, 22)) (• '35  3)   3) be three points at unit distance from the origin. 
-The greatest (numerical) value of the volume of the parallelepiped, of which the lines 
-joining the origin to these points are conterminous edges, is +1, the edges then being 
-perpendicular. Therefore, if Xr  + 7/  + Zr  = l  r = l, 2, 3), the upper and lower bounds of 
-the determinant 
+Let (a'i, 3/1, Zy), .V2, i/2, 22)) (• '35 3) 3) be three points at
+unit distance from the origin. The greatest (numerical) value of the
+volume of the parallelepiped, of which the lines joining the origin to
+these points are conterminous edges, is +1, the edges then being
+perpendicular. Therefore, if Xr + 7/ + Zr = l r = l, 2, 3), the upper
+and lower bounds of the determinant
 
- 2 2/2 22 I 
+ 2 2/2 22 I
 
-•  3  3 23 I 
+• 3 3 23 I
 
-are ±1. 
+are ±1.
 
-A lemma due to Hadamardt generalises this result. 
+A lemma due to Hadamardt generalises this result.
 
 
 
-Let 
+Let
 
 
 
- 21? 0 22, ... a n 
+ 21? 0 22, ... a n
 
 
 
-A 
+A
 
 
 
- nl)  )!2' ••• < n 
+ nl) )!2' ••• < n
 
-n 
+n
 
-where a ,. is real and 2 a" r = l ( i = l, 2, ... n); let A  j. be the cofactor of a r in D and 
-let A be the determinant whose elements are A  j., so that, by a well-known theorem |, 
+where a ,. is real and 2 a" r = l ( i = l, 2, ... n); let A j. be the
+cofactor of a r in D and let A be the determinant whose elements are A
+j., so that, by a well-known theorem |,
 
-Since Z) is a continuous function of its elements, and is obviously bounded, the 
-ordinary theory of maxima and minima is applicable, and if we consider variations in 
+Since Z) is a continuous function of its elements, and is obviously
+bounded, the ordinary theory of maxima and minima is applicable, and
+if we consider variations in
 
-" dD 
+" dD
 
-air ( '=!) 2, ... n) only, D is stationary for such variations if 2   — 8aij. = 0, where Saj ,... 
+air ( '=!) 2, ... n) only, D is stationary for such variations if 2 —
+8aij. = 0, where Saj ,...
 
-r=l VOlir 
+r=l VOlir
 
-n 
+n
 
-are variations subject to the sole condition 2 a.ir8air=0 ; therefore § 
+are variations subject to the sole condition 2 a.ir8air=0 ; therefore
+§
 
-r = l 
+r = l
 
-n 
+n
 
-but 2 airAir=I), and so X'2a\ r = D ; therefore Air = Da.ir- 
+but 2 airAir=I), and so X'2a\ r = D ; therefore Air = Da.ir-
 
-r=l 
+r=l
 
-* Bocher in his important work on integral equations (Camb. Math. Tracts, No. 10), always 
-considers the more general case in which A' (x, y) has discontinuities regularly distributed, 
-i.e. the discontinuities are of the nature described in Chapter iv, example 10. The reader will 
-see from that example that the results of this chapter can almost all be generalised in this 
-way. To make this chapter more simple we shall not consider such generalisations. 
+* Bocher in his important work on integral equations (Camb. Math.
+Tracts, No. 10), always considers the more general case in which A'
+(x, y) has discontinuities regularly distributed, i.e. the
+discontinuities are of the nature described in Chapter iv, example 10.
+The reader will see from that example that the results of this chapter
+can almost all be generalised in this way. To make this chapter more
+simple we shall not consider such generalisations.
 
-+ Bulletin des Sci. Math. (2), xvii. (1893), p. 240. 
++ Bulletin des Sci. Math. (2), xvii. (1893), p. 240.
 
-J Burnside and Panton, Theory of Equations, ii. p. 40. 
+J Burnside and Panton, Theory of Equations, ii. p. 40.
 
-§ By the ordinary theory of undetermined multipliers. 
+§ By the ordinary theory of undetermined multipliers.
 
 
 
-11-11, 11-2] INTEGRAL EQUATIONS 213 
+11-11, 11-2] INTEGRAL EQUATIONS 213
 
-Considering variations in the other elements of D, we see that D is stationary for 
-variations in all elements when Amr=Damj. (m=l, 2, ... n ; r=l, 2, ... n). Consequently 
-A = D". D, and so I)' '  — D ~ . Hence the maximum and minimum values of I) are +1. 
+Considering variations in the other elements of D, we see that D is
+stationary for variations in all elements when Amr=Damj. (m=l, 2, ...
+n ; r=l, 2, ... n). Consequently A = D". D, and so I)' ' — D ~ . Hence
+the maximum and minimum values of I) are +1.
 
-Corollary. If a r be real and subject only to the condition | a  I <  j since 
+Corollary. If a r be real and subject only to the condition | a I < j
+since
 
-2  a, ,/( ii/) 2 1, 
+2 a, ,/( ii/) 2 1,
 
-r=l 
+r=l
 
-we easily see that the maximum value of | i9 | is (/i  J/)" = ?i "i/". 
+we easily see that the maximum value of | i9 | is (/i J/)" = ?i "i/".
 
-11'2. Fredholms* equation and its tentative solution. 
-An important integral equation of a general type is 
+11'2. Fredholms* equation and its tentative solution. An important
+integral equation of a general type is
 
-J a 
+J a
 
-where f(x) is a given continuous function, X is a parameter (in general 
-complex) and K (oo,  ) is subject to the conditions f laid down in § ll'l. 
-K (x,  ) is called the nucleusX of the equation. 
+where f(x) is a given continuous function, X is a parameter (in
+general complex) and K (oo, ) is subject to the conditions f laid down
+in § ll'l. K (x, ) is called the nucleusX of the equation.
 
-This integral equation is known as Fredholms equation or the integral 
-equation of the second kind (see § 11 "3). It was observed by Volterra that an 
-equation of this type could be regarded as a limiting form of a system 
-of linear equations. Fredholm's investigation involved the tentative carrying 
-out of a similar limiting process, and justifying it by the reasoning given 
-below in § 11-21. Hilbert (Gottinger Nach. 1904, pp. 49-91) justified the 
-limiting process directly. 
+This integral equation is known as Fredholms equation or the integral
+equation of the second kind (see § 11 "3). It was observed by Volterra
+that an equation of this type could be regarded as a limiting form of
+a system of linear equations. Fredholm's investigation involved the
+tentative carrying out of a similar limiting process, and justifying
+it by the reasoning given below in § 11-21. Hilbert (Gottinger Nach.
+1904, pp. 49-91) justified the limiting process directly.
 
-We now proceed to write down the system of linear equations in question, 
-and shall then investigate Fredholm's method of justifying the passage to 
-the limit. 
+We now proceed to write down the system of linear equations in
+question, and shall then investigate Fredholm's method of justifying
+the passage to the limit.
 
-The integral equation is the limiting form (when 5-*-0) of the equation 
+The integral equation is the limiting form (when 5-*-0) of the
+equation
 
-<i>  x) =f  x) + \ i K  X, X,) (t> (.r,) 8, 
-where x - Xq\ i = 8, XQ = a, .r  = b. 
+<i> x) =f x) + \ i K X, X,) (t> (.r,) 8, where x - Xq\ i = 8, XQ = a,
+.r = b.
 
-Since this equation is to be true when a  x b, it is true when x takes the values 
-Xi, Xi, ... Xni and so 
+Since this equation is to be true when a x b, it is true when x takes
+the values Xi, Xi, ... Xni and so
 
-n 
+n
 
--\ 8 2 K  x.p , x ) (.rg) + (f) (Xj,) =/ (Xj,) ip = l,2,... n). 
+-\ 8 2 K x.p , x ) (.rg) + (f) (Xj,) =/ (Xj,) ip = l,2,... n).
 
-q=l 
+q=l
 
-* Fredholm's first paper On the subject appeared in the Ofversigt af K. Vetenskaps-Akad. 
-Forhandlingar (Stockholm), lvii. (1900), pp. 39-46. His researches are also given in Acta Blath. 
-xxvii. (1903), pp. 365-390. 
+* Fredholm's first paper On the subject appeared in the Ofversigt af
+K. Vetenskaps-Akad. Forhandlingar (Stockholm), lvii. (1900), pp.
+39-46. His researches are also given in Acta Blath. xxvii. (1903), pp.
+365-390.
 
-t The reader will observe that if K  x, |) =  |>x), the equation may be written 
+t The reader will observe that if K x, |) = |>x), the equation may be
+written
 
-<p (x) =f (x) +\ Tk (x, I) ( ) d|. 
+<p (x) =f (x) +\ Tk (x, I) ( ) d|.
 
 
 
-This is called an equation with variable upper limit. 
+This is called an equation with variable upper limit.
 
-1;. Another term is kernel ; French noyau, German Kern. 
+1;. Another term is kernel ; French noyau, German Kern.
 
 
 
-214 
+214
 
 
 
-THE PROCESSES OF ANALYSIS 
+THE PROCESSES OF ANALYSIS
 
 
 
-[chap. XI 
+[chap. XI
 
 
 
-This system of equations for <  (.rp),  p=l, 2, ... 7i) has a unique solution if the 
-determinant formed by the coefficients of  x ) does not vanish. This determinant is 
+This system of equations for < (.rp), p=l, 2, ... 7i) has a unique
+solution if the determinant formed by the coefficients of x ) does not
+vanish. This determinant is
 
-Z>  (X) = 1 - X8 K (. 1 ,xi) -X8K  .vi , x. ) ... -UK  x  , .v ) 
--\ 8K  x., , A'l) 1 - XS K  x., , .r.,) ... - X S A' (.rg , .   ) 
+Z> (X) = 1 - X8 K (. 1 ,xi) -X8K .vi , x. ) ... -UK x , .v ) -\ 8K x.,
+, A'l) 1 - XS K x., , .r.,) ... - X S A' (.rg , . )
 
 
 
--\ 8K (.r  , xi) - \ 8 K  x , x.,) ... 1-X8K (x  , x ) 
-= 1 - X 2 8A'  x , .Vp) +— 2 S2 1   ''''' '    • '" " '  
+-\ 8K (.r , xi) - \ 8 K x , x.,) ... 1-X8K (x , x ) = 1 - X 2 8A' x ,
+.Vp) +— 2 S2 1 ''''' ' • '" " '
 
-p = l 2 !p, q=l I K  X , Xp) A [Xq, Xg) 
+p = l 2 !p, q=l I K X , Xp) A [Xq, Xg)
 
 
 
-X3 )i 
+X3 )i
 
-'  • ;>> <I, r=l 
+'• ;>> <I, r=l
 
 
 
-+ ... 
++ ...
 
 
 
- "  (" 'p' ' P' V" p  " '9/  '  (." p> " r) 
+ "(" 'p' ' P' V" p " '9/ ' (." p> " r)
 
-K Xq,Xp) K Xg,.Vq) K Xg,Xr) 
+K Xq,Xp) K Xg,.Vq) K Xg,Xr)
 
-lK x,.,Xp) K Xr,Xq) K  Xr  , Xr) 
+lK x,.,Xp) K Xr,Xq) K Xr , Xr)
 
-on expanding* in powers of X. 
+on expanding* in powers of X.
 
-Making S-3-O, ti-s-qo, and writing the summations a-s integrations, we are thus led to 
-consider the series 
+Making S-3-O, ti-s-qo, and writing the summations a-s integrations, we
+are thus led to consider the series
 
 
 
-/•6 x2 [  [  
+/•6 x2 [ [
 
-i)(X) = l-X|  A' (li,  0 1 + 2] /  j  
+i)(X) = l-X| A' (li, 0 1 + 2] / j
 
 
 
- ( 2, 1) />:( 2, I2) 
+ ( 2, 1) />:( 2, I2)
 
 
 
-d idi;-... 
+d idi;-...
 
 
 
-Further, if Z) (.r , x ,) is the cofactor of the term in I)n  )  which involves K  x\, x J, 
-the solution of the system of linear equations is 
+Further, if Z) (.r , x ,) is the cofactor of the term in I)n ) which
+involves K x\, x J, the solution of the system of linear equations is
 
-, , /( i)i) (.r , xi)+f x.2) Z) (av, .v.i) + ...+f xJD  x , Xn) 
+, , /( i)i) (.r , xi)+f x.2) Z) (av, .v.i) + ...+f xJD x , Xn)
 
-Now it is easily seen that the appropriate limiting form to be considered in association 
-with Da  Xf , x ) is D  )  ; also that, if /n + i', 
+Now it is easily seen that the appropriate limiting form to be
+considered in association with Da Xf , x ) is D ) ; also that, if /n +
+i',
 
 
 
-Dn (AV , -iV) = U\ K  x  , x )  - XS 2 
+Dn (AV , -iV) = U\ K x , x ) - XS 2
 
 
 
-K(x ,x )  K x ,Xp) 
+K(x ,x ) K x ,Xp)
 
-A  Xpi Xi,) A (A'p, Xp) 
+A Xpi Xi,) A (A'p, Xp)
 
 
 
-+  ,\ \  8  2 
++ ,\ \ 8 2
 
 
 
- (• A'- V)   Xf ,.Vp) K x ,Xg) 
+ (• A'- V) Xf ,.Vp) K x ,Xg)
 
-K  Xp , .r ) K (Xp , .?7p)   (Xp , ; •g) 
+K Xp , .r ) K (Xp , .?7p) (Xp , ; •g)
 
-A' (.•Pg , X )  K (Xg , Xp) K  Xg , Xg) 
+A' (.•Pg , X ) K (Xg , Xp) K Xg , Xg)
 
-So that the limiting form for 8~  I)  x ., x ) to be considered t is 
+So that the limiting form for 8~ I) x ., x ) to be considered t is
 
 
 
-D (.r  ,Xt,; X) = X A"  x  
+D (.r ,Xt,; X) = X A" x
 
 
 
->, Av)-X2 j 
+>, Av)-X2 j
 
-2! ja Ja A:( i, 
+2! ja Ja A:( i,
 
 
 
-'' I K x ,x ) A'(.r ,  1) I 
+'' I K x ,x ) A'(.r , 1) I
 
 
 
-K  2,X;) K  -2, l)  ( 2,6) 
+K 2,X;) K -2, l) ( 2,6)
 
 
 
- Il' l2----- 
+ Il' l2-----
 
 
 
-Consequently we are led to consider the possibility of the equation 
-<P(x)=f x) + J  \ [ d .x, ;  ) fii)d  
-giving the solution of the integral equation. 
+Consequently we are led to consider the possibility of the equation
+<P(x)=f x) + J \ [ d .x, ; ) fii)d giving the solution of the integral
+equation.
 
-* The factorials appear because each determinant of s rows and columns occurs s ! times as 
-p, q, ... take all the values 1, 2, ... n, whereas it appears only once in the original determinant 
-for D  (X). 
+* The factorials appear because each determinant of s rows and columns
+occurs s ! times as p, q, ... take all the values 1, 2, ... n, whereas
+it appears only once in the original determinant for D (X).
 
-t The law of formation of successive terms is obvious from those written down. 
+t The law of formation of successive terms is obvious from those
+written down.
 
 
 
-] 1 -21] INTEGRAL EQUATIONS 
+] 1 -21] INTEGRAL EQUATIONS
 
-Example 1. Shew that, in the case of the equation 
+Example 1. Shew that, in the case of the equation
 
-  x) = x->r\ \ xii(l) y)dy, 
-J 
+  x) = x->r\ \ xii(l) y)dy, J
 
-D  )  =  1\, D (.r, y; X) = \ xy 
-Zx 
+D ) = 1\, D (.r, y; X) = \ xy Zx
 
 
 
-215 
+215
 
 
 
-we have 
+we have
 
-and a solution is 
+and a solution is
 
 
 
-0( ) = 
+0( ) =
 
 
 
-3-X' 
+3-X'
 
 
 
-we have 
+we have
 
 
 
-Example 2. Shew that, in the case of the equation 
+Example 2. Shew that, in the case of the equation
 
-<j> x) = x + \ I (xy+y )<f>(i/)dy, 
+<j> x) = x + \ I (xy+y )<f>(i/)dy,
 
-J 
+J
 
-D  x, y; X) = X  xy + ?/2) +X    xy  -  ,xy - If + y\ 
-and obtain a sohition of the equation. 
+D x, y; X) = X xy + ?/2) +X xy - ,xy - If + y\ and obtain a sohition
+of the equation.
 
-11"21. Investigation of Fredholms solution. 
+11"21. Investigation of Fredholms solution.
 
-So far the construction of the solution has been purely tentative ; we now 
-start ah initio and verify that we actually do get a solution of the equation ; 
-to do this we consider the two functions D ( ) , D x, y;  )  arrived at in § 11*2. 
+So far the construction of the solution has been purely tentative ; we
+now start ah initio and verify that we actually do get a solution of
+the equation ; to do this we consider the two functions D ( ) , D x,
+y; ) arrived at in § 11*2.
 
-We write the series, by which D ( -) was defined in § 11 '2, in the form 
-1 + 2   so that 
+We write the series, by which D ( -) was defined in § 11 '2, in the
+form 1 + 2 so that
 
 
 
- =i n\ 
+ =i n\
 
 
 
-rb fb rb 
-J a -1 a J a 
+rb fb rb J a -1 a J a
 
 
 
 
 
 
-d ,d 2 ••• d n; 
+d ,d 2 ••• d n;
 
 
 
-since K  x, y) is continuous and therefore bounded, we have \ K  x,y)\ <  M, 
-where M is independent of x and y ; since K  x, y) is real, we may employ 
-Hadamard's lemma (§ 11*11) and we see at once that 
+since K x, y) is continuous and therefore bounded, we have \ K x,y)\ <
+M, where M is independent of x and y ; since K x, y) is real, we may
+employ Hadamard's lemma (§ 11*11) and we see at once that
 
-Write n 'M'' (b - a)" = n ! 6  ; then 
+Write n 'M'' (b - a)" = n ! 6 ; then
 
-lim(6.WM=lim f-" - f|(l+jYf 
+lim(6.WM=lim f-" - f|(l+jYf
 
-u oo M oo (71+1)5 (\ nj ) 
+u oo M oo (71+1)5 (\ nj )
 
 
 
-since ( 1 + 
+since ( 1 +
 
 
 
-The series 2 bnX"- is therefore absolutely convergent for all values of X, ; 
+The series 2 bnX"- is therefore absolutely convergent for all values
+of X, ;
 
-w = l 
+w = l
 
-and so (§ 2-34) the series 1+2 - ~ converges for all values of X and there- 
-fore (§ 5"64) represents an integral function of X. 
+and so (§ 2-34) the series 1+2 - ~ converges for all values of X and
+there- fore (§ 5"64) represents an integral function of X.
 
-Now Tfrite the series for D (x, y;X) in the form 2 — — '- — . 
+Now Tfrite the series for D (x, y;X) in the form 2 — — '- — .
 
 
 
-216 THE PROCESSES OF ANALYSIS [CHAP. XI 
+216 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-Then, by Hadamard's lemma  § 1111), 
+Then, by Hadamard's lemma § 1111),
 
-and hence   '   < Cn, where c  is independent of a; and y and 2 Cn>  '  is 
-n\    =o 
+and hence ' < Cn, where c is independent of a; and y and 2 Cn> ' is n\
+=o
 
-absohitely convergent. 
+absohitely convergent.
 
-Therefore D  x, y;  )  is an integral function of \ and the series for 
-D x, y\ \ )- \ K (x, y) is a uniformly convergent (§ 3-34) series of continuous* 
-functionsj|of x and y when a x b, a y b. 
+Therefore D x, y; ) is an integral function of \ and the series for D
+x, y\ \ )- \ K (x, y) is a uniformly convergent (§ 3-34) series of
+continuous* functionsj|of x and y when a x b, a y b.
 
-Now pick out the coefficient of A" (a;, y) in D(x, y;X); and we get 
+Now pick out the coefficient of A" (a;, y) in D(x, y;X); and we get
 
-D x,y;X)  \ D   ) K x, y) + 2 (-) X +'    , 
-where 
+D x,y;X) \ D ) K x, y) + 2 (-) X +' , where
 
-Expanding in minors of the first column, we g t Q   x, y) equal to the 
-integral of the sum of n determinants; writing | i,  o, ...  m-i, | ,  ,n, • •  n-\ 
-in place of fi,  o, ...    in the ??ith of them, we see that the integrals of all 
-the determinants + are equal and so 
+Expanding in minors of the first column, we g t Q x, y) equal to the
+integral of the sum of n determinants; writing | i, o, ... m-i, | ,
+,n, • • n-\ in place of fi, o, ... in the ??ith of them, we see that
+the integrals of all the determinants + are equal and so
 
-Qn  x,y) = -n\     K  x, y) Pnd d i • • • d n-i, 
+Qn x,y) = -n\ K x, y) Pnd d i • • • d n-i,
 
-J a J a J a 
+J a J a J a
 
-where 
+where
 
-Pn=\ K  X, I), K  X,  ,), ... K(x, | \ 0 
+Pn=\ K X, I), K X, ,), ... K(x, | \ 0
 
-i di.a K    A ... A-(inf -o 
+i di.a K A ... A-(inf -o
 
 
 
-It follows at once that 
+It follows at once that
 
-D(x,y\ X) = \ D(X)K(x,y)+\ ( D (x,  \ X)K ly)dl 
+D(x,y\ X) = \ D(X)K(x,y)+\ ( D (x, \ X)K ly)dl
 
-. a 
+. a
 
-Now take the equation 
+Now take the equation
 
-<i>  )=fi ) +  \' K ly)<f> y)dy, 
+<i> )=fi ) + \' K ly)<f> y)dy,
 
-J a 
+J a
 
-multiply by D (x,   ; X) and integrate, and we get 
+multiply by D (x, ; X) and integrate, and we get
 
-l'f(BD( , ; )d  
+l'f(BD( , ; )d
 
-J a 
+J a
 
-= I % (I)   0 -. ? ;  )  ? -   r ['   (•' '   ;  )   < '  )   >  y* ' 
+= I % (I) 0 -. ? ; ) ? - r [' (•' ' ; ) < ' ) > y* '
 
-.'a . a J i( 
+.'a . a J i(
 
-the integrations in the repeated integral being in either order. 
+the integrations in the repeated integral being in either order.
 
-* It is easy to verify that every term (except possibly the first) of the series for D (x, y;  )  
-is a continuous function under either hypothesis (i) or hypothesis (ii) of § 11-1.   
+* It is easy to verify that every term (except possibly the first) of
+the series for D (x, y; ) is a continuous function under either
+hypothesis (i) or hypothesis (ii) of § 11-1.
 
-h 
+h
 
 
 
-t The order of integration is immaterial (§ 4-3). 
+t The order of integration is immaterial (§ 4-3).
 
 
 
-t 
+t
 
 
 
-11-21] INTEGRAL EQUATIONS 217 
+11-21] INTEGRAL EQUATIONS 217
 
-That is to say 
+That is to say
 
-J a 
+J a
 
-= r<j>( )D(w, ; ) d -r D w,y; ) -\ D( ) K x,y)]<j>(y)dy 
+= r<j>( )D(w, ; ) d -r D w,y; ) -\ D( ) K x,y)]<j>(y)dy
 
-J a J a 
+J a J a
 
-= \ D  ) \' K x,y)<i> y)dy 
+= \ D ) \' K x,y)<i> y)dy
 
-in virtue of the given equation. 
+in virtue of the given equation.
 
-Therefore if D X) 0 and if Fredholm's equation has a solution it can be 
-none other than 
+Therefore if D X) 0 and if Fredholm's equation has a solution it can
+be none other than
 
-<   X) =f x) +jy( )    d  ; 
+< X) =f x) +jy( ) d ;
 
-and, by actual substitution of this value of <f> x  in the integral equation, 
-we see that it actually is a solution. 
+and, by actual substitution of this value of <f> x in the integral
+equation, we see that it actually is a solution.
 
-This is, therefore, the unique continuous solution of the equation if 
-i)(X)4=0. 
+This is, therefore, the unique continuous solution of the equation if
+i)(X)4=0.
 
-Corollary. If we put /( ) = 0, the ' homogeneous ' equation 
+Corollary. If we put /( ) = 0, the ' homogeneous ' equation
 
-J a 
+J a
 
-has no continuous solution except (j) (.i')=0 unless D X) = 0. 
+has no continuous solution except (j) (.i')=0 unless D X) = 0.
 
-Example 1. By expanding the determinant involved in \$  (.r, y) in minors of its first 
-row, shew that 
+Example 1. By expanding the determinant involved in \$ (.r, y) in
+minors of its first row, shew that
 
-D x,y;  )  = \ D K)K x,y) + \ \ ' K x, )D  ,y;  ) d . 
+D x,y; ) = \ D K)K x,y) + \ \ ' K x, )D ,y; ) d .
 
-J a 
+J a
 
-Example 2. By using the formulae 
+Example 2. By using the formulae
 
-2)(X) = 1+ i ""fi , D x,y;  )  = \ D  X) K(x, y)+ i ( - )"  " ' '  "/•''  \ 
-/i=i 'I   11=1 " • 
+2)(X) = 1+ i ""fi , D x,y; ) = \ D X) K(x, y)+ i ( - )" " ' ' "/•'' \
+/i=i 'I 11=1 " •
 
-shew that f " i> ( ,   ; X) f l = - X    . 
+shew that f " i> ( , ; X) f l = - X .
 
-Example 3. If K  x, y) = 1 (y  0)   i \ y) =   (y > ' )-> 
-shew that D  ) =  b- a) X. 
+Example 3. If K x, y) = 1 (y 0) i \ y) = (y > ' )-> shew that D ) = b-
+a) X.
 
-Example 4. Shew that, if K (.r, y)=fi (x) .f  [y), and if 
+Example 4. Shew that, if K (.r, y)=fi (x) .f [y), and if
 
--•6 
+-•6
 
-fi  )f2 x)dx = A, 
+fi )f2 x)dx = A,
 
 
 
-then 
+then
 
-D  )  =  A\ D x,y; )  = \ h  x)f., (y), 
+D ) = A\ D x,y; ) = \ h x)f., (y),
 
-and the solution of the corresponding integral equation is 
+and the solution of the corresponding integral equation is
 
 
 
-218 THE PROCESSES OF ANALYSIS [CHAP. XI 
+218 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-Example 5. Shew that, if 
+Example 5. Shew that, if
 
-K  x, y) =/i  x) gi  y) +f   x)  2  y), 
-then D (X) and D  x, y; X) are quadratic in X ; and, more generally, if 
+K x, y) =/i x) gi y) +f x) 2 y), then D (X) and D x, y; X) are
+quadratic in X ; and, more generally, if
 
-II 
-K x,y)= 2 f   x)g,n  ), 
+II K x,y)= 2 f x)g,n ),
 
-m = l 
+m = l
 
-then i)(X) and D x, y, X) are polynomials of degree n in X. 
+then i)(X) and D x, y, X) are polynomials of degree n in X.
 
-11*22. Volterra's reciprocal functions. 
+11*22. Volterra's reciprocal functions.
 
-Two functions K  x, y), k x, y; X) are said to be reciprocal if they are 
-bounded in the ranges a- x, y - 1),  any discontinuities they may have are 
-regularly distributed (§ ll'l, footnote), and if 
+Two functions K x, y), k x, y; X) are said to be reciprocal if they
+are bounded in the ranges a- x, y - 1), any discontinuities they may
+have are regularly distributed (§ ll'l, footnote), and if
 
-K x,y)+k x,y] )  = \ \  k x,  \ \ ) K   , y)d . 
+K x,y)+k x,y] ) = \ \ k x, \ \ ) K , y)d .
 
-J a 
+J a
 
-We observe that, since the right-hand side is continuous*, the surn of two reciprocal 
-functions is continuous. 
+We observe that, since the right-hand side is continuous*, the surn of
+two reciprocal functions is continuous.
 
-Also, a function K  x, y) can only have one reciprocal if Z) (X) 4= ; for if there were two, 
-their difference k   x, y) would be a continuous solution of the homogeneous equation 
+Also, a function K x, y) can only have one reciprocal if Z) (X) 4= ;
+for if there were two, their difference k x, y) would be a continuous
+solution of the homogeneous equation
 
-h x,y; X) = X f >(-,(.r,  )K k,y)di, 
+h x,y; X) = X f >(-,(.r, )K k,y)di,
 
-(where x is to be regarded as a parameter), and by § 11 '21 corollary, the only continuous 
-solution of this equation is zero. 
+(where x is to be regarded as a parameter), and by § 11 '21 corollary,
+the only continuous solution of this equation is zero.
 
-By the use of reciprocal functions, Volterra has obtained an elegant 
-reciprocal relation between pairs of equations of Fredholm's type. 
+By the use of reciprocal functions, Volterra has obtained an elegant
+reciprocal relation between pairs of equations of Fredholm's type.
 
-We first observe, from the relation 
+We first observe, from the relation
 
-B x,y; )  = \ D X)K x,y) + \ \  D  x,   -X) K H y) d  
+B x,y; ) = \ D X)K x,y) + \ \ D x, -X) K H y) d
 
-proved in § 11 "21, that the value of A;( , y ; X) is 
+proved in § 11 "21, that the value of A;( , y ; X) is
 
--D x,y;X)l[\ D  ) ], 
-and from § 11*21 example 1, the equation 
+-D x,y;X)l[\ D ) ], and from § 11*21 example 1, the equation
 
-k  x, y; )  + K x, y) = X f K  x,  ) k   , y;X)d  
+k x, y; ) + K x, y) = X f K x, ) k , y;X)d
 
-J a M 
+J a M
 
-is evidently true. 
+is evidently true.
 
-Then, if we take the integral equation 
+Then, if we take the integral equation
 
-< > x)=f(x) + xl'K x, )<f>( )d , 
+< > x)=f(x) + xl'K x, )<f>( )d ,
 
-J a 
+J a
 
-when a'> x h, we have, on multiplying the equation 
+when a'> x h, we have, on multiplying the equation
 
-J a 
-* By example 10 at the end of Chapter iv. 
+J a * By example 10 at the end of Chapter iv.
 
 
 
-11-22, 11 -23] INTEGRAL EQUATIONS 219 
+11-22, 11 -23] INTEGRAL EQUATIONS 219
 
-by k (x,   ;  )  and integrating, 
+by k (x, ; ) and integrating,
 
-J a 
+J a
 
-= r k(x,  : ) f( )d  + xf' I' k(x,  : )  K 1  ,)<f>( ,)d ,dl 
+= r k(x, : ) f( )d + xf' I' k(x, : ) K 1 ,)<f>( ,)d ,dl
 
-J a J II J a 
+J a J II J a
 
-Reversing the order of integration* in the repeated integral and making 
-use of the relation defining reciprocal functions, we get 
+Reversing the order of integration* in the repeated integral and
+making use of the relation defining reciprocal functions, we get
 
-\ \  x, : ) 4>( )di 
+\ \ x, : ) 4>( )di
 
-J a 
+J a
 
-= !'k(w,  : ) f( )d +r K(x,  ,) + k w,  ,;X) < (|0 i, 
+= !'k(w, : ) f( )d +r K(x, ,) + k w, ,;X) < (|0 i,
 
-J a J a 
+J a J a
 
-and so X f  '( ,  X)/( )fZ  = -X l  K (x,  ) <f> ( ,) d , 
+and so X f '( , X)/( )fZ = -X l K (x, ) <f> ( ,) d ,
 
-J a   n 
+J a n
 
-= -<P(x)+f x). 
-Hence f(x) = ( ) + \ f  ' (a;, f ;  ) /( ) d  ; 
+= -<P(x)+f x). Hence f(x) = ( ) + \ f ' (a;, f ; ) /( ) d ;
 
-. a 
+. a
 
-similarly, from this equation we can derive the equation 
+similarly, from this equation we can derive the equation
 
-4> x)=f(x) + \ f'K(x, )4>( )d , 
+4> x)=f(x) + \ f'K(x, )4>( )d ,
 
-J II 
+J II
 
-so that either of these equations with reciprocal nuclei may be regarded as 
-the solution of the other. 
+so that either of these equations with reciprocal nuclei may be
+regarded as the solution of the other.
 
-11"23. Homogeneous integral equations. 
+11"23. Homogeneous integral equations.
 
-rb 
-The equation <   x) = X ) K  x,  ) </> ( ) d  is called a homogeneous integral 
+rb The equation < x) = X ) K x, ) </> ( ) d is called a homogeneous
+integral
 
-- n 
+- n
 
-equation. We have seen (§ 1121 corollary) that the only continuous solution 
-of the homogeneous equation, when D (X) 4= 0, is (   x) = 0. 
+equation. We have seen (§ 1121 corollary) that the only continuous
+solution of the homogeneous equation, when D (X) 4= 0, is ( x) = 0.
 
-The roots of the equation D (X) = are therefore of considerable 
-importance in the theory of the integral equation. They are called the 
-characteristic numbers  of the nucleus. 
+The roots of the equation D (X) = are therefore of considerable
+importance in the theory of the integral equation. They are called the
+characteristic numbers of the nucleus.
 
-It will now be shewn that, when D (X) = 0, a solution which is not 
-identically zero can be obtained. 
+It will now be shewn that, when D (X) = 0, a solution which is not
+identically zero can be obtained.
 
-Let+ X = Xo be a root m times repeated of the equation D (X) = 0. 
+Let+ X = Xo be a root m times repeated of the equation D (X) = 0.
 
-Since D (X) is an integral function, we may expand it into the convergent 
-series 
+Since D (X) is an integral function, we may expand it into the
+convergent series
 
-D (X) = Cm (X - Xo)"  + c,n , (X - Xor +1 + . . . (m > 0, c,  + 0). 
+D (X) = Cm (X - Xo)" + c,n , (X - Xor +1 + . . . (m > 0, c, + 0).
 
-* The reader will have no diflSculty in extending the result of § 4-3 to the integral under 
-consideration. 
+* The reader will have no diflSculty in extending the result of § 4-3
+to the integral under consideration.
 
-t French valeurs caracteristiques, German Eigenicerthe. 
+t French valeurs caracteristiques, German Eigenicerthe.
 
-J It will be proved in § 11-51 that, if K (x, ij) = K y, x), the equation D (X) = has at least one 
-root. 
+J It will be proved in § 11-51 that, if K (x, ij) = K y, x), the
+equation D (X) = has at least one root.
 
 
 
-220 THE PROCESSES OF ANALYSIS [CHAP. XI 
+220 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-Similarly, since D  x, y ; X) is an integral function of \, there exists 
-a Taylor series of the form 
+Similarly, since D x, y ; X) is an integral function of \, there
+exists a Taylor series of the form
 
-by § 3'34 it is easily verified that the series defining g  (cc, y), (n = 1, 1 + 1, ...) 
-converges absolutely and uniformly when a x b, a y - b, and thence that 
-the series for D (x, y ;  )  converges absolutely and uniformly in the same 
-domain of values of x and y. 
+by § 3'34 it is easily verified that the series defining g (cc, y), (n
+= 1, 1 + 1, ...) converges absolutely and uniformly when a x b, a y -
+b, and thence that the series for D (x, y ; ) converges absolutely and
+uniformly in the same domain of values of x and y.
 
-But, by § 11-21 example 2, 
+But, by § 11-21 example 2,
 
 
 
-L 
+L
 
 
 
-i)(f.f;X)df=-X > 
+i)(f.f;X)df=-X >
 
 
 
-now the right-hand side has a zero of order m — 1 at A,o, while the left-hand 
-side has a zero of order at least I, and so we have m—\'  I. 
+now the right-hand side has a zero of order m — 1 at A,o, while the
+left-hand side has a zero of order at least I, and so we have m—\' I.
 
-Substituting the series just given for D ( )  and D  x,y\ X) in the result of 
-§ 11'21 example 2, viz. 
+Substituting the series just given for D ( ) and D x,y\ X) in the
+result of § 11'21 example 2, viz.
 
-D x,y- )  = XD (X) K  x, y) + \ \ ''K  x,  ) D  I y ;  )  d  
+D x,y- ) = XD (X) K x, y) + \ \ ''K x, ) D I y ; ) d
 
-J a 
+J a
 
-dividing by (X, — XoY and making X -* X,o. we get 
+dividing by (X, — XoY and making X -* X,o. we get
 
-9i   , y) = \ K  x, I) gi ( , y) d . 
+9i , y) = \ K x, I) gi ( , y) d .
 
-J a 
+J a
 
-Hence if y have any constant value, gi x, y) satisfies the homogeneous 
-integral equation, and any linear combination of such solutions, obtained by 
-giving y various values, is a solution. 
+Hence if y have any constant value, gi x, y) satisfies the homogeneous
+integral equation, and any linear combination of such solutions,
+obtained by giving y various values, is a solution.
 
-Corollary. The equation 
+Corollary. The equation
 
-<l> G ) =/(. -) + Xo f ' iT (.r,  ) <  ( ) d  
+<l> G ) =/(. -) + Xo f ' iT (.r, ) < ( ) d
 
-J a 
+J a
 
-has no solution or an infinite number. For, if (   x) is a solution, so is  x) +  c gi (x, y), 
+has no solution or an infinite number. For, if ( x) is a solution, so
+is x) + c gi (x, y),
 
-y 
-where Cy may be any function of y. 
+y where Cy may be any function of y.
 
-Example 1. Shew that solutions of 
+Example 1. Shew that solutions of
 
-<  x) = \ I cos'<(.r-|)( ( )c/  
+< x) = \ I cos'<(.r-|)( ( )c/
 
-are </> (.r) = cos (?i - 2r) .r, and (  (.r) = sin (% - 2?-) .r ; where r assumes all positive integral 
-values (zero included) not exceeding hi. 
+are </> (.r) = cos (?i - 2r) .r, and ( (.r) = sin (% - 2?-) .r ; where
+r assumes all positive integral values (zero included) not exceeding
+hi.
 
-Example 2. Shew that 
+Example 2. Shew that
 
-  x) = \ y cos'' (.r-h I) (  ( ) o?| 
+  x) = \ y cos'' (.r-h I) ( ( ) o?|
 
-has the same solutions as those given in example 1, and shew that the corresponding 
-values of X give all the roots of D (X) = 0. 
+has the same solutions as those given in example 1, and shew that the
+corresponding values of X give all the roots of D (X) = 0.
 
 
 
-ir3-ir4] INTEGRAL EQUATIONS 221 
+ir3-ir4] INTEGRAL EQUATIONS 221
 
-11*3. Integral equations of the first and second kinds. 
-Fredholra's equation is sometimes called an integral equation of the second 
-kind; while the equation 
+11*3. Integral equations of the first and second kinds. Fredholra's
+equation is sometimes called an integral equation of the second kind;
+while the equation
 
-f x) = \ \  \ \  {x, ),   )d  
+f x) = \ \ \ \ {x, ), )d
 
-J a 
+J a
 
-is called the integral equation of the first kind. 
+is called the integral equation of the first kind.
 
-In the case when K  x,  ) = Q ii   > x, we may write the equations of the 
-first and second kinds in the respective forms 
+In the case when K x, ) = Q ii > x, we may write the equations of the
+first and second kinds in the respective forms
 
-f x) = \ [  K x, )   )dl 
+f x) = \ [ K x, ) )dl
 
-J a 
+J a
 
-4> a )=f x) + xrK x, )cf>( )d . 
+4> a )=f x) + xrK x, )cf>( )d .
 
-J a 
+J a
 
-These are described as equations with variable upper limits. 
+These are described as equations with variable upper limits.
 
-11"31. Volterra's equation. 
+11"31. Volterra's equation.
 
-The equation of the first kind with variable upper limit is frequently 
-known as Volterra's equation. The problem of solving it has been reduced 
-by that writer to the solution of Fredholm's equation. 
+The equation of the first kind with variable upper limit is frequently
+known as Volterra's equation. The problem of solving it has been
+reduced by that writer to the solution of Fredholm's equation.
 
-Assuming that K  x,  ) is a continuous function of both variables when 
-  \$ X, we have 
+Assuming that K x, ) is a continuous function of both variables when
+\$ X, we have
 
-f x) = \ \  K x, )<   )dl 
+f x) = \ \ K x, )< )dl
 
-J a 
+J a
 
-The right-hand side has a differential coefficient (§ 4*2 example 1) if 
--T— exists and is continuous, and so 
+The right-hand side has a differential coefficient (§ 4*2 example 1)
+if -T— exists and is continuous, and so
 
-ox 
+ox
 
-f (x) = \ K (x, x) <p  X) + Xj —cf>  ) dl 
+f (x) = \ K (x, x) <p X) + Xj —cf> ) dl
 
-This is an equation of Fredholm's type. If we denote its solution by 
- x), we get on integrating ft-om a to x, 
+This is an equation of Fredholm's type. If we denote its solution by
+x), we get on integrating ft-om a to x,
 
-f x)-f a)=\ \   K x, )<l>  )dl 
+f x)-f a)=\ \ K x, )<l> )dl
 
-J a 
+J a
 
-and so the solution of the Fredholm equation gives a solution of Volterra's 
-equation if /(a) = 0. 
+and so the solution of the Fredholm equation gives a solution of
+Volterra's equation if /(a) = 0.
 
-The solution of the equation of the first kind with constant upper limit 
-can frequently be obtained in the form of a series *. 
+The solution of the equation of the first kind with constant upper
+limit can frequently be obtained in the form of a series *.
 
-11"4. The Liouville- Neumann method of successive substitutions "f. 
-A method of solving the equation 
+11"4. The Liouville- Neumann method of successive substitutions "f. A
+method of solving the equation
 
-cf> x)=f(x) + \ \ ' K(x, )cf ( )d , 
+cf> x)=f(x) + \ \ ' K(x, )cf ( )d ,
 
-J a 
+J a
 
-which is of historical importance, is due to Liouville. 
+which is of historical importance, is due to Liouville.
 
-* See example 7, p. 231 ; a solution valid under fewer restrictions is given by Bocher. 
-t Journal de Math. ii. (1837), iii. (1838). K. Neumann's investigations were later (1870) ; 
-see his Untersuchungen ilber das logarithmische und Newton'sche Potential. 
+* See example 7, p. 231 ; a solution valid under fewer restrictions is
+given by Bocher. t Journal de Math. ii. (1837), iii. (1838). K.
+Neumann's investigations were later (1870) ; see his Untersuchungen
+ilber das logarithmische und Newton'sche Potential.
 
 
 
-222 THE PROCESSES OF ANALYSIS [CHAP. XI 
+222 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-It consists in continually substituting the value of 4) oo) given by the 
-right-hand side in the expression <  ( ) which occurs on the right-hand side. 
+It consists in continually substituting the value of 4) oo) given by
+the right-hand side in the expression < ( ) which occurs on the
+right-hand side.
 
-This procedure gives the series 
-S x)=f x) + \ \ ' K x, aA?) + S X- f K x,  0 [* K    I,) 
+This procedure gives the series S x)=f x) + \ \ ' K x, aA?) + S X- f K
+x, 0 [* K I,)
 
-J a m = 2 J a J a 
+J a m = 2 J a J a
 
-J a 
+J a
 
-Since | K x, y) \ and \ f x) \ are bounded, let their upper bounds be M, M'. 
-Then the modulus of the general term of the series does not exceed 
+Since | K x, y) \ and \ f x) \ are bounded, let their upper bounds be
+M, M'. Then the modulus of the general term of the series does not
+exceed
 
-|\ [ ' l/' ir(6-a)'". 
-The series for S  x) therefore converges uniformly when 
+|\ [ ' l/' ir(6-a)'". The series for S x) therefore converges
+uniformly when
 
-\ \ \ < M-' h-a)- ; 
-and, by actual substitution, it satisfies the integral equation. 
+\ \ \ < M-' h-a)- ; and, by actual substitution, it satisfies the
+integral equation.
 
-If Kix, y) = when y>x\ we find by induction that the modukis of the general 
-term in the series for S  x) does not exceed 
+If Kix, y) = when y>x\ we find by induction that the modukis of the
+general term in the series for S x) does not exceed
 
-X I  * Jf'" M'  x - a)>"l m l) \ X\'>' i/'  M' (6 - ay>'jm ! , 
+X I * Jf'" M' x - a)>"l m l) \ X\'>' i/' M' (6 - ay>'jm ! ,
 
-and so the series converges uniformly for all values of X ; and we infer that in this case 
-Fredholm's solution is an integral function of X. 
+and so the series converges uniformly for all values of X ; and we
+infer that in this case Fredholm's solution is an integral function of
+X.
 
-It is obvious from the form of the solution that when | X. | < M~  (b — a)~\ 
-the reciprocal function k (x,   ; X) may be written in the form 
+It is obvious from the form of the solution that when | X. | < M~ (b —
+a)~\ the reciprocal function k (x, ; X) may be written in the form
 
-k x,   X)=.-K x,  )- t X-- f' K(x,  0 f /l (I,, eO 
+k x, X)=.-K x, )- t X-- f' K(x, 0 f /l (I,, eO
 
-m=2 J a J a 
+m=2 J a J a
 
-for with this definitipn of k  x,   ; A,), we see that 
+for with this definitipn of k x, ; A,), we see that
 
-S x)=f x)-\ \ ' k(x, ; ) f( )d , 
+S x)=f x)-\ \ ' k(x, ; ) f( )d ,
 
-J a 
+J a
 
-so that k  x, |;X) is a reciprocal function, and by § 11"22 there is only one 
-reciprocal function. 
+so that k x, |;X) is a reciprocal function, and by § 11"22 there is
+only one reciprocal function.
 
-Write 
+Write
 
-K (X, I) = K,  X,  ), f K  X, r) Kn (r, B  r - J n+r ( ,  ), 
+K (X, I) = K, X, ), f K X, r) Kn (r, B r - J n+r ( , ),
 
-and then we have 
+and then we have
 
--k x, ;X)= S V K, +,(x, ), 
+-k x, ;X)= S V K, +,(x, ),
 
-m = 
+m =
 
-while f K  (x, r ) Kn (r, e  r = A .+  (*'.  )> 
+while f K (x, r ) Kn (r, e r = A .+ (*'. )>
 
-J a 
+J a
 
-as may be seen at once on writing each side as an (m + n — l)-tuple integral. 
-The functions K , (x, f) are called iterated functions. 
+as may be seen at once on writing each side as an (m + n — l)-tuple
+integral. The functions K , (x, f) are called iterated functions.
 
 
 
-J a 
+J a
 
 
 
-ITO, ll'olj INTEGRAL EQUATIONS 223 
+ITO, ll'olj INTEGRAL EQUATIONS 223
 
-11*5. Symmetric nuclei. 
+11*5. Symmetric nuclei.
 
-Let Ki  x, y) = K  (y, x); then the nucleus K x, y) is said to be symmetric. 
-The iterated functions of such a nucleus are also symmetric, i.e. 
-Kn   , y) = Kn (y, x) for all values of n ; for, if Kn  x, y) is symmetric, then 
+Let Ki x, y) = K (y, x); then the nucleus K x, y) is said to be
+symmetric. The iterated functions of such a nucleus are also
+symmetric, i.e. Kn , y) = Kn (y, x) for all values of n ; for, if Kn
+x, y) is symmetric, then
 
-Kn+r ( , y) = f K,   ,  ) Kn  I y) d  = j  K, (|, o:) K,  y,  ) d  
+Kn+r ( , y) = f K, , ) Kn I y) d = j K, (|, o:) K, y, ) d
 
-J a  'a 
+J a 'a
 
-= Kn(y, )K,i ,x)d  = Kn , y,x), 
+= Kn(y, )K,i ,x)d = Kn , y,x),
 
-J a 
+J a
 
-and the required result follows by induction. 
+and the required result follows by induction.
 
-Also, none of the iterated functions are identically zero ; for, if possible, let 
-Kp (x, y) = 0; let n be chosen so that 2""  <]) -  2", and, since Kp (x, y) = 0, it 
-follows that K n  x, y) = 0. from the recurrence formula. 
+Also, none of the iterated functions are identically zero ; for, if
+possible, let Kp (x, y) = 0; let n be chosen so that 2"" <]) - 2",
+and, since Kp (x, y) = 0, it follows that K n x, y) = 0. from the
+recurrence formula.
 
-But then = K n  x, x) = I  , \ i  x,  ) K -i ( ,  ) d  
+But then = K n x, x) = I , \ i x, ) K -i ( , ) d
 
-J a 
+J a
 
-= f [Kn-.i . rr-d , 
+= f [Kn-.i . rr-d ,
 
-J a 
+J a
 
-and so K n-i i ,  ) -   j continuing this argument, we find ultimately that 
-Ki (x, y) = 0, and the integral equation is trivial. 
+and so K n-i i , ) - j continuing this argument, we find ultimately
+that Ki (x, y) = 0, and the integral equation is trivial.
 
-11"51. Schmidt's* theorem that, if tfoe nucleus is symmetric, the equation 
-J) ( )  = has at least one root. 
+11"51. Schmidt's* theorem that, if tfoe nucleus is symmetric, the
+equation J) ( ) = has at least one root.
 
-To prove this theorem, let 
+To prove this theorem, let
 
-Un = Kn (X, X) dx, 
+Un = Kn (X, X) dx,
 
-J a 
+J a
 
-SO that, when \ \ \ <  M~  (b — a)~\ we have, by § 11-21 example 2 and § 114, 
+SO that, when \ \ \ < M~ (b — a)~\ we have, by § 11-21 example 2 and §
+114,
 
-\  1 dDiX)  
+\ 1 dDiX)
 
-D  )  dx  ri " • 
+D ) dx ri " •
 
-Now since I I  fjLKn+i (x, |) +  ,i\ i (x,  )]- d dx   
+Now since I I fjLKn+i (x, |) + ,i\ i (x, )]- d dx
 
-J a J a 
+J a J a
 
-for all real values of fi, we have 
+for all real values of fi, we have
 
-tl'U . + 2/JLU.>n + U,n-, > 0, 
-and so U n+i U.n--   U n-, Uon-1 > 0. 
+tl'U . + 2/JLU.>n + U,n-, > 0, and so U n+i U.n-- U n-, Uon-1 > 0.
 
-Therefore U.,, Ui, ... are all positive, and if- JZ /C , = i , it follows, by in- 
-duction from the inequality ?7o +2 C/2,1-2   C 2 i'. that Unn+n/U.n > v - 
+Therefore U.,, Ui, ... are all positive, and if- JZ /C , = i , it
+follows, by in- duction from the inequality ?7o +2 C/2,1-2 C 2 i'.
+that Unn+n/U.n > v -
 
-X 
+X
 
-Therefore when j X-   v~\ the terms of S Un'. ' ~  do not tend to zero ; 
+Therefore when j X- v~\ the terms of S Un'. ' ~ do not tend to zero ;
 
-and so, by § 5'4, the function   , — -7-  — has a singularity inside or on the 
+and so, by § 5'4, the function , — -7- — has a singularity inside or
+on the
 
-* The proof given is due to Kneser, Palermo Bendiconti, xxii. (1906), p. 236. 
+* The proof given is due to Kneser, Palermo Bendiconti, xxii. (1906),
+p. 236.
 
 
 
-224 THE PROCESSES OF ANALYSIS [CHAP. XI 
+224 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-circle •\ \   = v~ \ but since D( )  is an integral function, the only possible 
+circle •\ \ = v~ \ but since D( ) is an integral function, the only
+possible
 
-sinerularities of -r. , . — j-  are at zeros of D(X); therefore D (X) has a zero 
-° 1) (X,) d\ 
+sinerularities of -r. , . — j- are at zeros of D(X); therefore D (X)
+has a zero ° 1) (X,) d\
 
-inside or on the circle \ \ \ = v~  . 
+inside or on the circle \ \ \ = v~ .
 
-[Note. By § 11-21, Z> (X) is either an integral function or else a mere polynomial ; in 
-the latter case, it has a zero by § 6"31 example 1 ; the point of the theorem is that in 
-the former case D (X) cannot be such a function as e ', which has no zeros.] 
+[Note. By § 11-21, Z> (X) is either an integral function or else a
+mere polynomial ; in the latter case, it has a zero by § 6"31 example
+1 ; the point of the theorem is that in the former case D (X) cannot
+be such a function as e ', which has no zeros.]
 
-11'6. Orthogonal functions. 
+11'6. Orthogonal functions.
 
-The real continuous functions (jj  (x), (f)o (x), . . . are said to be orthogonal 
-and normal* for the range  a, b) if 
+The real continuous functions (jj (x), (f)o (x), . . . are said to be
+orthogonal and normal* for the range a, b) if
 
-If Ave are given n real continuous linearly independent functions 
-u-  x), Uo x), ...Un(x), we can form n linear combinations of them which 
-are orthogonal. 
+If Ave are given n real continuous linearly independent functions u-
+x), Uo x), ...Un(x), we can form n linear combinations of them which
+are orthogonal.
 
-For suppose we can construct m — 1 orthogonal functions </>! , ... (f>m-i such 
-that (f>p is a linear combination of u- , ii , ... Up (where p = 1, 2, ... ni — I); 
-we shall now shew how to construct the function  ,  such that c i, <p.2, ••• (f>m 
-are all normal and orthogonal. 
+For suppose we can construct m — 1 orthogonal functions </>! , ...
+(f>m-i such that (f>p is a linear combination of u- , ii , ... Up
+(where p = 1, 2, ... ni — I); we shall now shew how to construct the
+function , such that c i, <p.2, ••• (f>m are all normal and
+orthogonal.
 
-Let  (f>m (x) = Ci, m (f>i ( ) + C2, m < 2 ( ) + ••• + Cm-i <pm-i (i ) + Urn   ), 
+Let (f>m (x) = Ci, m (f>i ( ) + C2, m < 2 ( ) + ••• + Cm-i <pm-i (i )
++ Urn ),
 
-so that i(  is a function of Mj, lu, ... w, . 
-Then, multiplying by   and integrating, 
+so that i( is a function of Mj, lu, ... w, . Then, multiplying by and
+integrating,
 
-i< ni  x) (t>p  oc) dx = Cp,  , + I Um   ) <j>p (x) dx  p < m). 
-Hence I i4>m i ) 4>p  oc) dx = 
+i< ni x) (t>p oc) dx = Cp, , + I Um ) <j>p (x) dx p < m). Hence I i4>m
+i ) 4>p oc) dx =
 
-J a 
+J a
 
-if Cp  m == — Uin (jc) <pp ( ) dx ; 
+if Cp m == — Uin (jc) <pp ( ) dx ;
 
-J a 
+J a
 
-a function i ,  (x), orthogonal to (f)  (x), (f>. (x), . . . <pm-i (x), is therefore con- 
-structed. 
+a function i , (x), orthogonal to (f) (x), (f>. (x), . . . <pm-i (x),
+is therefore con- structed.
 
-rb 
+rb
 
-Now choose a so that a- I [i(f>r,i (x)]- dx=l ; 
+Now choose a so that a- I [i(f>r,i (x)]- dx=l ;
 
-J a 
+J a
 
-and take <p,n (x) = a. i< , . (x). 
+and take <p,n (x) = a. i< , . (x).
 
-Then j  </)  (x) 4>p (x) dx |~     ' 
+Then j </) (x) 4>p (x) dx |~ '
 
-We can thus obtain the functions (/)i, c/).., ... in order. 
+We can thus obtain the functions (/)i, c/).., ... in order.
 
-* They are said to be orthogonal if the first equation only is satisfied ; the systematic study 
-of such functions is due to Murphy, Camb. Phil. Trans, iv. (1833), pp. 353-408, and v. (1835), 
-pp. 113-148, 31.5-394. 
+* They are said to be orthogonal if the first equation only is
+satisfied ; the systematic study of such functions is due to Murphy,
+Camb. Phil. Trans, iv. (1833), pp. 353-408, and v. (1835), pp.
+113-148, 31.5-394.
 
 
 
-ir6, ir6l] INTEGRAL EQUATIONS 225 
+ir6, ir6l] INTEGRAL EQUATIONS 225
 
-The members of a finite set of orthogonal functions are linear! ' inde- 
-pendent. For, if 
+The members of a finite set of orthogonal functions are linear! '
+inde- pendent. For, if
 
-a,(j), (x) + a.2(f>.  (x)+ ... + an(f>n ( v) = 0, 
+a,(j), (x) + a.2(f>. (x)+ ... + an(f>n ( v) = 0,
 
-we should get, on multiplying by (f>p (a;) and integrating, a  = ; therefore all 
-the coefficients a  vanish and the relation is nugatory. 
+we should get, on multiplying by (f>p (a;) and integrating, a = ;
+therefore all the coefficients a vanish and the relation is nugatory.
 
-It is obvious that tt ~   cost/u;, tt ~ - sin mx form a set of normal orthogonal functions 
-foifthe range ( — tt, tt). 
+It is obvious that tt ~ cost/u;, tt ~ - sin mx form a set of normal
+orthogonal functions foifthe range ( — tt, tt).
 
-Example 1. From the functions 1, .r, x-, ... construct the following set of functions 
-which are orthogonal (but not normal) for the range ( - 1, 1) : 
+Example 1. From the functions 1, .r, x-, ... construct the following
+set of functions which are orthogonal (but not normal) for the range (
+- 1, 1) :
 
-1, X,   — i, x -'jx, x* —  x- + - g, .... 
+1, X, — i, x -'jx, x* — x- + - g, ....
 
-Example 2. From the functions 1, x, x , ... construct a set of functions 
+Example 2. From the functions 1, x, x , ... construct a set of
+functions
 
-which are orthogonal (but not normal) for the range (a, h) ; where 
+which are orthogonal (but not normal) for the range (a, h) ; where
 
-[A similar investigation is given in >5 15-14.] 
+[A similar investigation is given in >5 15-14.]
 
-11 "61. The connexion of orthogonal functions with homogeneous integral 
-equations. 
+11 "61. The connexion of orthogonal functions with homogeneous
+integral equations.
 
-Consider the homogeneous equation 
+Consider the homogeneous equation
 
-<l> x) = \,\%  )K x, )dl 
+<l> x) = \,\% )K x, )dl
 
-  a 
+  a
 
-where Xq is a real* characteristic number for K(x,  ); we have already seen 
-how to construct solutions of the equation ; let n linearly independent solutions 
-be taken and construct from them n orthogonal functions (pi, < .\ ,, ... (/> . 
+where Xq is a real* characteristic number for K(x, ); we have already
+seen how to construct solutions of the equation ; let n linearly
+independent solutions be taken and construct from them n orthogonal
+functions (pi, < .\ ,, ... (/> .
 
-Then, since the functions  ,  are orthogonal, 
-rr i <l>Uy)f K x, )cf>, ( )di\'dy = i f\ < p.n(y)fK(x, )<f> ,  )Ydi  
+Then, since the functions , are orthogonal, rr i <l>Uy)f K x, )cf>, (
+)di\'dy = i f\ < p.n(y)fK(x, )<f> , )Ydi
 
-J a |\  t = 1 J a J m = lJ a [\  J a J 
+J a |\ t = 1 J a J m = lJ a [\ J a J
 
-and it is easily seen that the expression on the right may be written in the 
-form 
+and it is easily seen that the expression on the right may be written
+in the form
 
-rb 
+rb
 
 
 
-i If K(x. )4>, ( )d  
+i If K(x. )4>, ( )d
 
-H = 1 (. J a 
+H = 1 (. J a
 
 
 
->H = 1 
+>H = 1
 
-on performing the integration with regard to y; and this is the same as 
-i r K  x, y) cf>,n (y) dyi' K  x, |) , ,  ( ) rff 
+on performing the integration with regard to y; and this is the same
+as i r K x, y) cf>,n (y) dyi' K x, |) , , ( ) rff
 
-m. = \ J a J a 
+m. = \ J a J a
 
-Therefore, if we write K for K  x, y) and A for 
+Therefore, if we write K for K x, y) and A for
 
-i 4>Ay)\' K  , )<l>.nX )dl 
+i 4>Ay)\' K , )<l>.nX )dl
 
-m=\ J a 
+m=\ J a
 
 
 
-* It will be seen immediately that the characteristic numbers of a symmetric nucleus are all 
-real. 
+* It will be seen immediately that the characteristic numbers of a
+symmetric nucleus are all real.
 
-W. M. A. 15 
+W. M. A. 15
 
 
 
-Therefore 
+Therefore
 
 
 
-226 THE PROCESSES OF ANALYSIS [CHAP. XI 
+226 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-rb rb 
+rb rb
 
-we have A?dy = \ KAdy, 
+we have A?dy = \ KAdy,
 
-J a J a 
+J a J a
 
-rb rb rb 
+rb rb rb
 
-and so 1 A-dij = K'dy - (K - Kfdy. 
+and so 1 A-dij = K'dy - (K - Kfdy.
 
-•la J a J a 
+•la J a J a
 
-a \ m = \ f o ) J a 
+a \ m = \ f o ) J a
 
-and SO Xo~'    < , ( )  [ [K x,y)Ydy. 
+and SO Xo~' < , ( ) [ [K x,y)Ydy.
 
-w = 1 J a 
+w = 1 J a
 
-Integrating, we get 
+Integrating, we get
 
-n <: Xo'- I / [K x, y)Y-dydx. 
+n <: Xo'- I / [K x, y)Y-dydx.
 
-J a J a 
+J a J a
 
-This formula gives an upper limit to the number, 7i, of orthogonal functions 
-corresponding to any characteristic number Xo- 
+This formula gives an upper limit to the number, 7i, of orthogonal
+functions corresponding to any characteristic number Xo-
 
-These n orthogonal functions are called characteristic functions (or auto- 
-functions) corresponding to Xq. 
+These n orthogonal functions are called characteristic functions (or
+auto- functions) corresponding to Xq.
 
-Now let  '"* (x), < <i' (x) be characteristic functions corresponding to 
-different characteristic numbers Xq, Xj. 
+Now let '"* (x), < <i' (x) be characteristic functions corresponding
+to different characteristic numbers Xq, Xj.
 
-Then </>' > (x) </><!' (x) = xJ K  x,  ) ( c)  x) </)' '   ) d , 
+Then </>' > (x) </><!' (x) = xJ K x, ) ( c) x) </)' ' ) d ,
 
-J a 
+J a
 
-and so 
+and so
 
-[ (f> ' >(x)(f) ' (x)dx = \,\ i K(x, )4> '> (x)cf)''   )d dx ...(1), 
+[ (f> ' >(x)(f) ' (x)dx = \,\ i K(x, )4> '> (x)cf)'' )d dx ...(1),
 
-and similarly 
+and similarly
 
-[ (/)' ' (x) </) w (x) dx = \ of I K  x,  ) 0 " ( ) </)(!> (x) d dx 
+[ (/)' ' (x) </) w (x) dx = \ of I K x, ) 0 " ( ) </)(!> (x) d dx
 
-•la J a J a 
+•la J a J a
 
-= X [ [ K(lx)cf> '' ix)(f> ' ( )dxd  ...(2), 
+= X [ [ K(lx)cf> '' ix)(f> ' ( )dxd ...(2),
 
-J a •' a 
+J a •' a
 
-on interchanging x and  . 
+on interchanging x and .
 
-We infer from (1) and (2) that if \   \ and if K  x,  ) = K  , x), 
+We infer from (1) and (2) that if \ \ and if K x, ) = K , x),
 
-I 4> ' (x)(f> ' (x)dx=0, 
+I 4> ' (x)(f> ' (x)dx=0,
 
-J a 
+J a
 
-and so the functions < "'' (x),  '" (x) are mutually orthogonal. 
+and so the functions < "'' (x), '" (x) are mutually orthogonal.
 
-If therefore the nucleus be symmetric and if, corresponding to each 
-characteristic number, we construct the complete system of orthogonal 
-functions, all the functions so obtained will be orthogonal. 
+If therefore the nucleus be symmetric and if, corresponding to each
+characteristic number, we construct the complete system of orthogonal
+functions, all the functions so obtained will be orthogonal.
 
-Further, if the nucleus be symmetric all the characteristic numbers are 
-real ; for if Xq, Xj be conjugate complex roots and if* Uq  x) = v (x) + iw (x) be 
+Further, if the nucleus be symmetric all the characteristic numbers
+are real ; for if Xq, Xj be conjugate complex roots and if* Uq x) = v
+(x) + iw (x) be
 
-* V (x) and w (x) being real. 
+* V (x) and w (x) being real.
 
 
 
-117] INTEGRAL EQUATIONS 227" 
+117] INTEGRAL EQUATIONS 227"
 
-a solution for the characteristic number X , then iii (x) = v (x) — iiu (x) is 
-a solution for the characteristic number \; replacing 0*'' (x),  'i* (x) in the 
-equation 
+a solution for the characteristic number X , then iii (x) = v (x) —
+iiu (x) is a solution for the characteristic number \; replacing 0*''
+(x), 'i* (x) in the equation
 
-I ( 'o' (x) </>< ' (x) dx = 
+I ( 'o' (x) </>< ' (x) dx =
 
-J a 
+J a
 
-by V (x) + iw (x), v  x) — iw (x), (which is obviously permissible), we get 
+by V (x) + iw (x), v x) — iw (x), (which is obviously permissible), we
+get
 
-f [\ v(x)Y+ \ w x)Y]dx = 0, 
+f [\ v(x)Y+ \ w x)Y]dx = 0,
 
-J a 
+J a
 
-which implies v (x) = w (x) = 0, so that the integral equation has no solution 
-except zero corresponding to the characteristic numbers Xq.  il this is 
+which implies v (x) = w (x) = 0, so that the integral equation has no
+solution except zero corresponding to the characteristic numbers Xq.
+il this is
 
-contrary to § 11 "23; hence, if the nucleus be symmetric, the characteristic 
+contrary to § 11 "23; hence, if the nucleus be symmetric, the
+characteristic
 
-numbers are real. 
+numbers are real.
 
-11 7. The development* of a symmetric nucleus. 
+11 7. The development* of a symmetric nucleus.
 
-Let < j  x), (f)., (x),  3 (x), ... be a complete set of orthogonal functions 
-satisfying the homogeneous integral equation with symmetric nucleus 
+Let < j x), (f)., (x), 3 (x), ... be a complete set of orthogonal
+functions satisfying the homogeneous integral equation with symmetric
+nucleus
 
-cf>(x) = xfK(x, )<f>( )dl 
+cf>(x) = xfK(x, )<f>( )dl
 
-J a 
+J a
 
-the corresponding characteristic numbers beingf Xj, X , X , — 
+the corresponding characteristic numbers beingf Xj, X , X , —
 
-XT J. 1 ,   f' < n (* ) <  i(v) • -r 1 
+XT J. 1 , f' < n (* ) < i(v) • -r 1
 
-Now supposel that the series -  —  — -  is umiormly convergent 
+Now supposel that the series - — — - is umiormly convergent
 
-when a x  b, a  y %b. Then it luill he shewn that 
+when a x b, a y %b. Then it luill he shewn that
 
-K(x.y)=i M My). 
- =i   
+K(x.y)=i M My). =i
 
-For consider the symmetric nucleus 
+For consider the symmetric nucleus
 
-71 = 1 / n 
+71 = 1 / n
 
-If this nucleus is not identically zero, it will possess (§ 11 '51) at least one 
-characteristic number /j,. 
+If this nucleus is not identically zero, it will possess (§ 11 '51) at
+least one characteristic number /j,.
 
-Let ylr(x) be any solution of the equation 
+Let ylr(x) be any solution of the equation
 
- jr x)=fJ,f H(x.. )ylri )dl 
+ jr x)=fJ,f H(x.. )ylri )dl
 
-' a 
+' a
 
-which does not vanish identically. 
+which does not vanish identically.
 
-Multiply by cf)n (x) and integrate and we get 
+Multiply by cf)n (x) and integrate and we get
 
-ry!r(x)cf>,, x)dx = f,f Hxix, )- I "t if l l   ( ) cj U ) dxd ; 
+ry!r(x)cf>,, x)dx = f,f Hxix, )- I "t if l l ( ) cj U ) dxd ;
 
-J a   a ' a [ n = l  7i ) 
+J a a ' a [ n = l 7i )
 
-* This investigation is due to Schmidt, the result to Hilbert. 
+* This investigation is due to Schmidt, the result to Hilbert.
 
-t These numbers are not all different if there is more than one orthogonal function to each 
-characteristic number. 
+t These numbers are not all different if there is more than one
+orthogonal function to each characteristic number.
 
-X The supposition is, of course, a matter for verification with any particular equation. 
+X The supposition is, of course, a matter for verification with any
+particular equation.
 
-15—2 
+15—2
 
 
 
->t\ 
+>t\
 
 
 
-228 THE PROCESSES OF ANALYSIS [cHAP. XI 
+228 THE PROCESSES OF ANALYSIS [cHAP. XI
 
-since the series converges uniformly, we may integrate term by term and get 
+since the series converges uniformly, we may integrate term by term
+and get
 
-f ir (.v) 4>   x) dx =  \ \  ( ) (/>  i )d - r <   (I) f ( ) d  
+f ir (.v) 4> x) dx = \ \ ( ) (/> i )d - r < (I) f ( ) d
 
-= 0. 
+= 0.
 
-Therefore t/  (x) is orthogonal to < i (x), < 2 ( ), ••• ', and so taking the 
-equation 
+Therefore t/ (x) is orthogonal to < i (x), < 2 ( ), ••• ', and so
+taking the equation
 
-J a [ n = l  n ) 
+J a [ n = l n )
 
-rb 
+rb
 
-we have yjr (x) = y"- / K (x,  )'    ) d . 
+we have yjr (x) = y"- / K (x, )' ) d .
 
-J a 
+J a
 
-Therefore /i, is a characteristic number of K (x, y), and so -v/r  x) must be 
-a linear combination of the (finite number of) functions < n (*') corresponding 
-to this number ; let 
+Therefore /i, is a characteristic number of K (x, y), and so -v/r x)
+must be a linear combination of the (finite number of) functions < n
+(*') corresponding to this number ; let
 
-m 
+m
 
-Multiply by (j>m (x) and integrate ; then since -yfr (x) is orthogonal to all the 
-functions (j)n (x), we see that a,  = 0, so, contrary to hypothesis, yjr (x) = 0. 
+Multiply by (j>m (x) and integrate ; then since -yfr (x) is orthogonal
+to all the functions (j)n (x), we see that a, = 0, so, contrary to
+hypothesis, yjr (x) = 0.
 
-The contradiction implies that the nucleus H (x, y) must be identically 
-zero ; that is to say, K (x, y) can be expanded in the given series, if it is 
-uniformly convergent. 
+The contradiction implies that the nucleus H (x, y) must be
+identically zero ; that is to say, K (x, y) can be expanded in the
+given series, if it is uniformly convergent.
 
-Example. Shew that, if Xq be a characteristic number, the equation 
+Example. Shew that, if Xq be a characteristic number, the equation
 
-4> x)=f .v) + \ J'' E x,  )   )d  
+4> x)=f .v) + \ J'' E x, ) )d
 
-J a 
+J a
 
-certainly has no sokition . unless f x) is orthogonal to all the characteristic functions 
-corresponding to .  
+certainly has no sokition . unless f x) is orthogonal to all the
+characteristic functions corresponding to .
 
-11 "71. The solution of Fredhohns equation by a series. 
-Retaining the notation of § 11 '7, consider the integral equation 
+11 "71. The solution of Fredhohns equation by a series. Retaining the
+notation of § 11 '7, consider the integral equation
 
-   x) =f x) +\ f K (x,  )<   ) dl 
+   x) =f x) +\ f K (x, )< ) dl
 
--' a 
+-' a
 
-where K  x,  ) is symmetric. 
+where K x, ) is symmetric.
 
-If we assume that   ( ) can be expanded into a uniformly convergent 
+If we assume that ( ) can be expanded into a uniformly convergent
 
-00 
+00
 
-series 2 an4>n (1), we have 
+series 2 an4>n (1), we have
 
-00 00 A 
+00 00 A
 
-2 an(f)n x!)=f(x)+ 1 —an(f>n( ), ' 
-w = l M=l  n 
+2 an(f)n x!)=f(x)+ 1 —an(f>n( ), ' w = l M=l n
 
-SO that f x) can be expanded in the series 
+SO that f x) can be expanded in the series
 
-00 A -A 
+00 A -A
 
-S an -\ (f)n  x). 
+S an -\ (f)n x).
 
-Hence if the function f x) can be expanded into the convergent series 
+Hence if the function f x) can be expanded into the convergent series
 
-<  . "  b \ 
+< . " b \
 
-2 bn< >n(ix), then the series 2   . "  \ <f>n  ), if it converges uniformly in 
+2 bn< >n(ix), then the series 2 . " \ <f>n ), if it converges
+uniformly in
 
-n = l n-l  n   
+n = l n-l n
 
-the range  a, b), is the solution of Fredhohns equation. 
+the range a, b), is the solution of Fredhohns equation.
 
 
 
-ir71-ir8l] INTEGRAL EQUATIONS 229 
+ir71-ir8l] INTEGRAL EQUATIONS 229
 
-X 
+X
 
-To determine the coefficients 6,  we observe that S bn (f)n ( ) converges uni- 
+To determine the coefficients 6, we observe that S bn (f)n ( )
+converges uni-
 
-n=l 
+n=l
 
-formly by § 3'35*; then, multiplying by (f)n(x) and integrating, we get 
+formly by § 3'35*; then, multiplying by (f)n(x) and integrating, we
+get
 
-J a 
+J a
 
 
 
-11 "8. Solution of AbeVs integral equation. 
-This equation is of the form 
+11 "8. Solution of AbeVs integral equation. This equation is of the
+form
 
 
 
-  -llw 
+  -llw
 
 
 
-d\$  0<fi<l, a x b), 
+d\$ 0<fi<l, a x b),
 
 
 
-where/' (x) is continuous aud/(a)=0; we proceed to find a continuous solution u (x) 
+where/' (x) is continuous aud/(a)=0; we proceed to find a continuous
+solution u (x)
 
 
 
-Let (f)(x)= I u (I) o?|, and take the formula t 
+Let (f)(x)= I u (I) o?|, and take the formula t
 
-J a 
+J a
 
-7T n dx 
+7T n dx
 
-sin/iTT ~ J    z-xY~>  x —  y 
+sin/iTT ~ J z-xY~> x — y
 
 
 
-multiply by u ( ) and integrate, and we get, on using Dirichlet's formula (§ 4*51 corollary\ 
+multiply by u ( ) and integrate, and we get, on using Dirichlet's
+formula (§ 4*51 corollary\
 
-  f' f x)dx  
+  f' f x)dx
 
-Since the original expression has a continuous derivate, so has the final one ; therefore the 
-continuous solution, if it exist, can be none other than 
+Since the original expression has a continuous derivate, so has the
+final one ; therefore the continuous solution, if it exist, can be
+none other than
 
-"" '  'V~dzj  z-xy-> ' 
+"" ''V~dzj z-xy-> '
 
-and it can be verified l)y substitution J that this function actually is a solution. 
+and it can be verified l)y substitution J that this function actually
+is a solution.
 
-11 "SI. Schlomilch's  integral equation. 
+11 "SI. Schlomilch's integral equation.
 
-Let f x) have a continuous differential coefficient when — tt  .r   tt. Then the equation 
+Let f x) have a continuous differential coefficient when — tt .r tt.
+Then the equation
 
-2 /"i" 
-f x)=- (f) xsmd)de 
+2 /"i" f x)=- (f) xsmd)de
 
-  J n 
+  J n
 
-has one solution with a continuoiis differential coefficient when - it  x   it, namely 
+has one solution with a continuoiis differential coefficient when - it
+x it, namely
 
-/ in 
-<  x)=f 0) + x ' f' xsm6)d6. 
-Jo 
-From § 4-2 it follows that 
+/ in < x)=f 0) + x ' f' xsm6)d6. Jo From § 4-2 it follows that
 
-f (.v) = - sin Oct)'  x sin (9) dd 
-  j 
+f (.v) = - sin Oct)' x sin (9) dd j
 
-(so that we have (0)=/(0),  ' (0) = |7r/' (0)). 
+(so that we have (0)=/(0), ' (0) = |7r/' (0)).
 
-* Since the numbers X,  are all real we may arrange them in two sets, one negative the 
-other positive, the members in each set being in order of magnitude ; then, when ' X  ! > X, it is 
-evident that X /(X  - X) is a monotonic sequence in the case of either set. 
+* Since the numbers X, are all real we may arrange them in two sets,
+one negative the other positive, the members in each set being in
+order of magnitude ; then, when ' X ! > X, it is evident that X /(X -
+X) is a monotonic sequence in the case of either set.
 
-t This follows from § 6"24 example 1, by writing (z - x)l(x - f ) in place of x. 
+t This follows from § 6"24 example 1, by writing (z - x)l(x - f ) in
+place of x.
 
-X For the details we refer to Bocher's tract. 
+X For the details we refer to Bocher's tract.
 
-§ Zeitschrift filr Math, und Phys. ii. (1857). The reader will easily see that this is reducible 
-to a case of Volterra's equation with a discontinuous nucleus. 
+§ Zeitschrift filr Math, und Phys. ii. (1857). The reader will easily
+see that this is reducible to a case of Volterra's equation with a
+discontinuous nucleus.
 
 
 
-230 THE PROCESSES OF ANALYSIS [CHAP. XI 
+230 THE PROCESSES OF ANALYSIS [CHAP. XI
 
-Write .r sin  //  for x\ and we have on multiplying by x and integrating 
+Write .r sin // for x\ and we have on multiplying by x and integrating
 
-X j /'  x sin \//-) d\ lr — — I < I sin  ( ' (.i- sin 6 sin \//-) c?  \ dyjr. 
+X j /' x sin \//-) d\ lr — — I < I sin ( ' (.i- sin 6 sin \//-) c? \
+dyjr.
 
-Change the order of integration in the repeated integral (§ 4'3) and take a new variable x 
-in iDlace of \ f  defined by the equation sin ;  = sin 6 sin yj/. 
+Change the order of integration in the repeated integral (§ 4'3) and
+take a new variable x in iDlace of \ f defined by the equation sin ; =
+sin 6 sin yj/.
 
-rr,. fi"  ., ,   .s ,, 2.V fi  ( f   (b' (x sin v) cos Y dv] ,  
+rr,. fi" ., , .s ,, 2.V fi ( f (b' (x sin v) cos Y dv] ,
 
-Then xj f'ixsn.i.)d = j \ j  -~J -~ - \ de. 
+Then xj f'ixsn.i.)d = j \ j -~J -~ - \ de.
 
-Changing the order of integration again (§ 4'51), 
+Changing the order of integration again (§ 4'51),
 
-P" '/ • , l 2jt; H'  f /"i'r (/)'(A-sinx)cosxsin  1 
-xj f ix sn.  )   = - j J j   \/(sin ' -sin V  '/    
+P" '/ • , l 2jt; H' f /"i'r (/)'(A-sinx)cosxsin 1 xj f ix sn. ) = - j
+J j \/(sin ' -sin V '/
 
-  , /  i'  sin rf<? r . /cos Xn 'T 
-But I -77   5 N= -arc sin = 7r, 
+  , / i' sin rf<? r . /cos Xn 'T But I -77 5 N= -arc sin = 7r,
 
-Jx n/(COs2 ;  - cos-  ) |\  \ COS x/ Jx 
+Jx n/(COs2 ; - cos- ) |\ \ COS x/ Jx
 
-and so x \ f  x sin y\ r) d  = x \ </>' (.r sin x) cos ;>( o?;  
+and so x \ f x sin y\ r) d = x \ </>' (.r sin x) cos ;>( o?;
 
-Jo J 
+Jo J
 
-= 0Gt-)-( (O). 
+= 0Gt-)-( (O).
 
-Since (f) (0) =/ (0), we must have 
+Since (f) (0) =/ (0), we must have
 
-(j) (.r) =/ (0)+x ' f (x sin ;/.) c a/  ; 
+(j) (.r) =/ (0)+x ' f (x sin ;/.) c a/ ;
 
-y 
+y
 
-and it can be verified by substitution that this function actually is a solution. 
+and it can be verified by substitution that this function actually is
+a solution.
 
 
 
-REFERENCES. 
+REFERENCES.
 
-H. Bateman, Report to the British Association*, 1910. 
+H. Bateman, Report to the British Association*, 1910.
 
-M. BocHER, Introditction to Integral Equations (Cambridge Math. Tracts, No. 10, 
-1909). 
+M. BocHER, Introditction to Integral Equations (Cambridge Math.
+Tracts, No. 10, 1909).
 
-H. B. Heywood et M. Fr chet, Liquation de Fredkolm. (Paris, 1912). 
+H. B. Heywood et M. Fr chet, Liquation de Fredkolm. (Paris, 1912).
 
-V. Volte ra, Lego7is sur les equations integrales et les equations integro-differentielles 
-(Paris, 1913). 
+V. Volte ra, Lego7is sur les equations integrales et les equations
+integro-differentielles (Paris, 1913).
 
-T. Lalesco, Introduction a la the'orie des equations integrales (Paris, 1912). 
+T. Lalesco, Introduction a la the'orie des equations integrales
+(Paris, 1912).
 
-I. Fredholm, Acta Mathematica, xxvii. (1903), pp. 365-390. 
+I. Fredholm, Acta Mathematica, xxvii. (1903), pp. 365-390.
 
-D. HiLBERT, Orundzilge einer allgemeinen Theorie der linearen Integralgleichungen 
-(Leipzig, 1912). 
+D. HiLBERT, Orundzilge einer allgemeinen Theorie der linearen
+Integralgleichungen (Leipzig, 1912).
 
-E. Schmidt, Math. Ann. lxiii. (1907), pp. 433-476. 
+E. Schmidt, Math. Ann. lxiii. (1907), pp. 433-476.
 
-E. GouRSAT, Cours d' Analyse, iii. (Paris, 1915), Chs. xxx-xxxill. 
+E. GouRSAT, Cours d' Analyse, iii. (Paris, 1915), Chs. xxx-xxxill.
 
-MiSCELT.ANEOUS EXAMPLES. 
+MiSCELT.ANEOUS EXAMPLES.
 
-1. Shew that if the time of descent of a particle down a smooth curve to its lowest 
-point is independent of the starting point (the particle starting from rest) the curve is a 
-cycloid. (Abel.) 
+1. Shew that if the time of descent of a particle down a smooth curve
+to its lowest point is independent of the starting point (the particle
+starting from rest) the curve is a cycloid. (Abel.)
 
-* The reader will find a more complete bibliugrapby in this Report than it is possible to give 
-here. 
+* The reader will find a more complete bibliugrapby in this Report
+than it is possible to give here.
 
 
 
-INTEGRAL EQUATIONS 231 
+INTEGRAL EQUATIONS 231
 
-2. Shew that, if/( ) is continuous, the sohition of 
+2. Shew that, if/( ) is continuous, the sohition of
 
-(f) (x) =f  x) + \ j COS (2.rs) <f) (s) ds 
+(f) (x) =f x) + \ j COS (2.rs) <f) (s) ds
 
-/(.r) + X I f s)cos 2jcs)ds 
+/(.r) + X I f s)cos 2jcs)ds
 
-'" *( >= Hrjxv . 
+'" *( >= Hrjxv .
 
-assuming the legitimacy of a certain change of order of integration. 
+assuming the legitimacy of a certain change of order of integration.
 
-3. Shew that the Weber-Hermite functions 
+3. Shew that the Weber-Hermite functions
 
-satisfy 4> x) = \ I e  '*-  (s) ds 
+satisfy 4> x) = \ I e '*- (s) ds
 
-for the characteristic values of X. (A. Milne.) 
+for the characteristic values of X. (A. Milne.)
 
-4. Shew that even periodic solutions (with period Stt) of the diflferential equation 
+4. Shew that even periodic solutions (with period Stt) of the
+diflferential equation
 
-— -  + ( 2 + >l-2 cos2 x) cf) (.r) = 
-satisfy the integral equation 
+— - + ( 2 + >l-2 cos2 x) cf) (.r) = satisfy the integral equation
 
-<f> x) = \ j e < oo'=<  '(f, s)ds. (Whittaker; see § 19-21.) 
+<f> x) = \ j e < oo'=< '(f, s)ds. (Whittaker; see § 19-21.)
 
-5. Shew that the characteristic functions of the equation 
+5. Shew that the characteristic functions of the equation
 
-are <f  (x) = cos m.v, sin inx, 
+are <f (x) = cos m.v, sin inx,
 
-where \=m'  and m is any integer. 
+where \=m' and m is any integer.
 
-6. Shew that <p (x) = / " - -f (|) d\$ 
+6. Shew that <p (x) = / " - -f (|) d\$
 
-has the discontinuous solution <f) (x) = Lr  ~   . (Bocher.) 
+has the discontinuous solution <f) (x) = Lr ~ . (Bocher.)
 
-7. Shew that a solution of the integral equation with a symmetric nucleus 
+7. Shew that a solution of the integral equation with a symmetric
+nucleus
 
-f :v)=rK x, )<t>i\$)di 
+f :v)=rK x, )<t>i\$)di
 
-J a 
+J a
 
-is 0( )= 2 a \ \  (f) (x), 
+is 0( )= 2 a \ \ (f) (x),
 
-n=l 
+n=l
 
-provided that this series converges uniformly, where X , 0  (x) are the characteristic 
-numbers and functions of K  x, |) and 2 a 0  (x) is the expansion off(x). 
+provided that this series converges uniformly, where X , 0 (x) are the
+characteristic numbers and functions of K x, |) and 2 a 0 (x) is the
+expansion off(x).
 
-n=l 
+n=l
 
-8. Shew that, if | A ] < 1, the characteristic functions of the equation 
+8. Shew that, if | A ] < 1, the characteristic functions of the
+equation
 
 
 
-'f' '' =LI[  i-2hcL i- Hh''    "  
+'f' '' =LI[ i-2hcL i- Hh'' "
 
 
 
-are 1, cos?n.r, sin mx, the corresponding characteristic numbers being 1, l/A'", Ijh'", where 
-m takes all positive integral values. 
+are 1, cos?n.r, sin mx, the corresponding characteristic numbers being
+1, l/A'", Ijh'", where m takes all positive integral values.
