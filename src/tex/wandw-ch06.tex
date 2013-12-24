@@ -1,136 +1,145 @@
 \chapter{The Theory of Residues; Application to the Evaluation of Definite Integrals} 
 
-6"1. Residues. - '-
+\Section{6}{1}{Residues}
 
-If the function /( r) has a pole of order m at 2 = a, then, by the
+If the function $f(z)$ has a pole of order $m$ at $z=a$, then, by the
 definition of a pole, an equation of the form
+$$
+f(z)
+=
+\frac{a_{-m}}{ (z-a)^{m} }
++ \frac{ a_{-m+1} }{ (z-a)^{m-1} }
++ \cdots
++ \frac{a_{-1}}{z-a}
++ \phi(z),
+$$
+where $\phi(z)$ is analytic near and at $a$, is true near $a$.
 
-where (z) is analytic near and at a, is true near a.
+The coefficient $a_{-1}$ in this expansion is called the \emph{residue}\index{Residues!defined} of the
+function $f(z)$ relative to the pole $a$.
 
-The coefficient a i in this expansion is called the residue of the
-function f z) relative to the pole a.
+Consider now the value of the integral $\int_{\alpha} f(z) \dmeasure z$, where the path of
+integration is a circle\footnote{The existence of such a circle is
+  implied in the definition of a pole as an isolated singularity.}
+$\alpha$, whose centre is the point $a$ and whose radius $\rho$ is so small
+that $\phi(z)$ is analytic inside and on the circle.
 
-Consider now the value of the integral 1 f z)dz, where the path of
+We have
+$$
+\int_{\alpha} f(z) \dmeasure z
+=
+\sum_{r=1}^{m}
+a_{r}
+\int_{\alpha} \frac{\dmeasure z}{ (z-a)^{r}}
++
+\int_{\alpha} \phi(z) \dmeasure z.
+$$
 
-J a
+Now $\int_{\alpha} \phi(z) \dmeasure z = 0$ by \hardsectionref{5}{2};
+and (putting $z-a = \rho e^{i\theta}$) we have, if $r \neq 1$,
+$$
+\int_{\alpha} \frac{ \dmeasure z}{ (z-a)^{r} }
+=
+\int_{0}^{2\pi} \frac{\rho e^{i\theta} i \dmeasure \theta}{ \rho^{r}
+  e^{ri\theta}}
+=
+\rho^{-r+1}
+\int_{0}^{2\pi} e^{(1-r)i\theta} i \dmeasure \theta
+=
+\rho^{-r+1}
+\thebracket{ \frac{e^{(1-r) i \theta}}{1-r} }_{0}^{2\pi}
+=
+0.
+$$
 
-integration is a circle* a, whose centre is the point a and whose
-radius p is so small that z) is analytic inside and on the circle.
+But, when $r = 1$, we have
+$$
+\int_{\alpha}
+\frac{\dmeasure z}{z - a}
+=
+\int_{0}^{2\pi} i \dmeasure \theta
+=
+2\pi i.
+$$
 
-r m f dz r
+Hence finally
+$$
+\int_{\alpha} f(z) \dmeasure z = 2 \pi i a_{-1}.
+$$
 
-We have f z)dz= S a\ r , w+ z)dz.
+Now let $C$ be any contour, containing in the region interior to it a
+number of poles $a,b,c,\ldots$ of a function $f(z)$, with residues
+$a_{-1}, b_{-1}, c_{-1},\ldots$
+respectively; and suppose that the function $f(z)$ is
+analytic throughout $C$ and its interior, except at these poles.
 
-J a' r = l J a\ 2 ~ (i) J a.
+Surround the points $a,b,c,\ldots$ by circles
+$\alpha,\beta,\gamma,\ldots$
+so small that their respective centres are the only singularities
+inside or on each circle; then the function $f(z)$ is analytic in the
+closed region bounded by $C$, $\alpha,\beta,\gamma,\ldots$.
+%
+% 112
+%
 
-Now [ (f) z)dz = by § 52 ; and (putting z-a = pe' ) we have, if r l,
+Hence, by \hardsectionref{5}{2} corollary TODO,
+\begin{align*}
+  \int_{C} f(z) \dmeasure z
+  =&
+  \int_{\alpha} f(z) \dmeasure z
+  + \int_{\beta} f(z) \dmeasure z
+  + \cdots
+  \\
+  =&
+  2\pi i a_{-1} + 2\pi i b_{-1} + \cdots.
+\end{align*}
 
-gd-r) ie' 1 -r
+Thus we have the \emph{theorem of residues}, namely that
+\emph{if $f(z)$ be analytic throughout a contour $C$ and its interior
+  except at a number of poles inside the contour, then
+  $$
+  \int_{C} f(z) \dmeasure z = 2\pi i \sum R,
+  $$
+where $\sum R$ denotes the sum of the residues of the function $f(z)$ at
+those of its poles which are situated within the contour $C$.}
 
+This is an extension of the theorem of \hardsubsectionref{5}{2}{1}.
 
+%\begin{Remark} TODO:alpha or a?
+Note. If $a$ is a simple pole of $f(z)$ the residue of $f(z)$ at that pole
+is $\lim_{z\rightarrow a} (z-a) f(z)$.
+%\end{Remark}
 
-JA -aV Jo p'-e" ' Jo
+\Section{6}{2}{The evaluation of definite integrals.}
 
+We shall now apply the result of \hardsectionref{6}{1} to evaluating
+various classes of definite integrals; the methods to be employed in
+any particular case may usually be seen from the following typical
+examples.
 
-
-,, z - ay J p''e But, when ?• = 1, we have
-
-
-
-27r
-
-= 0.
-
-
-
-
-
-r \ d p"
-
-Hence finally I f(z) dz = 2
-
-
-
-idd = 27rz.
-
-
-
-Now let C be any contour, containing in the region interior to it a
-number of poles a,h,c,... of a function f z), with residues a\ i, 6\
-i, c\ i, ... respec- tively : and suppose that the function f z) is
-analytic throughout C and its interior, except at these poles.
-
-Surround the points a, b,c, ... by circles a, /3, 7, ... so small that
-their respective centres are the only singularities inside or on each
-circle ; then the function f z) is analytic in the closed region
-bounded by C, a, /3, 7, ....
-
-* The existence of such a circle is implied in the definition of a
-pole as an isolated singularity.
-
-
-
-112 THE PROCESSES OF ANALYSIS [CHAP. Yl
-
-Hence, by § 5-2 corollary 3,
-
-! f z)dz=\ f z)dz+\ f z)dz+...
-
-J C a J /3
-
-= 27rm\ i + 27n'6\ i + —
-
-Thus we have the theorem of residues, namely that if f z) he analytic
-throughout a contour C and its interior except at a number of poles
-inside the contour, then
-
-f f z)dz = 27ri R, J c
-
-where XR denotes the sum of the residues of the function f (z) at
-those of its poles which are situated within the contour G.
-
-This is an extension of the theorem of § 5*21.
-
-Note. If a is a simple pole oi f z) the residue of f z) at that pole
-is lim z-a)f z) . 6 "2. The evaluation of definite integrals.
-
-We shall now apply the result of § 6*1 to evaluating various classes
-of definite integrals ; the methods to be employed in any particular
-case may usually be seen from the following typical examples.
-
-6"21. The evaluation of the integrals of certain periodic functions
-taken between the limits and 27r.
-
-
-
+\Subsection{6}{2}{1}{The evaluation of the integrals of certain
+  periodic functions taken between the limits $0$ and
+  $2\pi$.\index{Integrals!of periodic functions}\index{Periodic
+    functions!integrals involving}
 An integral of the type
+$$
+\int_{0}^{2\pi} R(\cos \theta, \sin \theta) \dmeasure \theta,\index{Trigonometrical integrals}
+$$
+where the integrand is a rational function of $\cos\theta$ and
+$\sin\theta$ finite on the range of integration, can be evaluated by
+writing $e^{i\theta}=z$; since
+$$
+\cos\theta = \half(z+z^{-1}),
+\quad
+\sin\theta = \frac{1}{2i} (z-z^{-1}),
+$$
+the integral takes the form $\int_{C} S(z) \dmeasure z$, where $S(z)$
+is a rational function of $z$ finite on the path of integration $C$, the
+circle of radius unity whose centre is the origin.
 
-
-
-2n
-
-
-
-R (cos e, sin 6) dd,
-
-
-
-where the integrand is a rational function of cos 6 and sin 6 finite
-on the range of integration, can be evaluated by writing e' = z ;
-since
-
-cos - 1 ( + z-% sin = — . (2 - -1),
-
-the integral takes the form I S z)dz, where 8 z) is a rational
-function of z
-
-J c finite on the path of integration C, the circle of radius unity
-whose centre is
-
-the origin.
-
-Therefore, by § 61, the integral is equal to wi times the sum of the
-residues of S z) at those of its poles which are inside that circle.
+Therefore, by \hardsectionref{6}{1}, \emph{the integral is equal to
+  $2\pi i$ times the sum of the residues of $S(z)$ at those of its
+  poles which are inside that circle.}
 
 Example 1. If <p < 1,
 
