@@ -120,7 +120,7 @@ examples.
 \Subsection{6}{2}{1}{The evaluation of the integrals of certain
   periodic functions taken between the limits $0$ and
   $2\pi$.\index{Integrals!of periodic functions}\index{Periodic
-    functions!integrals involving}
+    functions!integrals involving}}
 An integral of the type
 $$
 \int_{0}^{2\pi} R(\cos \theta, \sin \theta) \dmeasure \theta,\index{Trigonometrical integrals}
@@ -141,92 +141,102 @@ Therefore, by \hardsectionref{6}{1}, \emph{the integral is equal to
   $2\pi i$ times the sum of the residues of $S(z)$ at those of its
   poles which are inside that circle.}
 
-Example 1. If <p < 1,
+\begin{wandwexample}
+  If $0 < p < 1$,
+  $$
+  \int_{0}^{2\pi}
+  \frac{\dmeasure \theta}{ 1 - 2p\cos\theta + p^{2}}
+  =
+  \int_{C} \frac{ \dmeasure z}{ i (1-pz) (z-p) }.
+  $$
+  The only pole of the integrand inside the circle is a simple pole at
+  $p$; and the residue there is
+  $$
+  \lim_{z \rightarrow p} \frac{z-p}{ i (1-pz)(z-p)}
+  =
+  \frac{1}{i (1-p^{2})}.
+  $$
+  % 
+  % 113
+  % 
+  Hence
+  $$
+  \int_{0}^{2\pi} \frac{\dmeasure\theta}{1 - 2p\cos\theta + p^{2}}
+  =
+  \frac{2\pi}{1-p^{2}}.
+  $$
+\end{wandwexample}
 
-p- de f dz
+\begin{wandwexample}
+  If $0 < p < 1$,
+  \begin{align*}
+    \int_{0}^{2\pi} \frac{ \cos^{2} 3\theta}{1-2p\cos 2\theta + p^{2}}
+    \dmeasure \theta
+    =&
+    \int_{C} \frac{\dmeasure z}{iz}
+    \theparen{ \half z^{3} + \half z^{-3}}^{2}
+    \frac{1}{ (1-pz^{2})(1-pz^{-2})}
+  \end{align*}
+  where $\sum R$ denotes the sum of the residues of
+  $ \frac{ (z^{6} + 1)^{2} }{ 4z^{5} (1-pz^{2})(z^{2}-p)} $ at its poles
+  inside $C$; these poles are $0, -p^{\half}, p^{\half}$;
+  and the residues at them are
+  $ -\frac{1+p^{2}+p^{4}}{4p^{3}},
+  \frac{(p^{3}+1)^{2}}{ 8p^{3}(1-p^{2})},
+  \frac{(p^{3}+1)^{2}}{ 8p^{3}(1-p^{2})}$; %TODO:same?
+  and hence the integral is equal to
+  $$
+  \frac{\pi (1-p+p^{2})}{1-p}.
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  If $n$ be a positive integer,
+  $$
+  \int_{0}^{2\pi} e^{\cos\theta} \cos(n\theta - \sin\theta)
+  \dmeasure \theta
+  =
+  \frac{2\pi}{n!},
+  \quad
+  \int_{0}^{2\pi}
+  e^{\cos\theta} \sin(n\theta - \sin\theta) \dmeasure \theta
+  =
+  0.
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  If $a>b>0$,
+  $$
+  \int_{0}^{2\pi}
+  \frac{\dmeasure \theta}{ (a+b\cos\theta)^{2}}
+  =
+  \frac{2\pi a}{ (a^{2}-b^{2})^{3/2} },
+  \quad
+  \int_{0}^{2\pi}
+  \frac{\dmeasure\theta}{ (a+b\cos^{2}\theta)^{2}}
+  =
+  \frac{\pi(2a+b)}{ a^{3/2} (a+b)^{3/2}}.
+  $$
+\end{wandwexample}
+\Subsection{6}{2}{2}{The evaluation of certain types of integrals
+  taken between the limits $-\infty$ and $+\infty$.}
+We shall now evaluate $\int_{-\infty}^{\infty} Q(x) \dmeasure x$,
+where $Q(z)$ is a function such that (i) it is analytic when the
+imaginary part of $z$ is positive or zero (except at a finite number
+of poles), (ii) it has no poles on the real axis and (iii) as
+$\absval{z}\rightarrow\infty$, $zQ(z) \rightarrow 0$ uniformly for all
+values of $\arg z$ such that $0 \leq \arg z \leq \pi$; provided that
+(iv) when $x$ is real, $x Q(x) \rightarrow 0$, as
+$x \rightarrow \pm\infty$, in such a way\footnote{The condition
+  $x Q(x)\rightarrow 0$ is not in itself sufficient to secure the
+  convergence of 
+  $\int^{\infty} Q(x) \dmeasure x$;
+  consider $Q(x) = (x \log x)^{-1}$.}
+that $\int_{0}^{\infty} Q(x) \dmeasure x$ and
+$\int_{-\infty}^{0} Q(x) \dmeasure x$ both converge.
 
-jo 1 -2/>cos +/>2 j f;i l-pz) z-p)'
-
-The only pole of the integrand inside the circle is a simple pole at p
-; and the residue there is
-
-lim * -r
-
-
-
-, i pz) z-p) •(l- 2)
-
-
-
-6 '2-6 -22] THE THEORY OF RESIDUES 113
-
-de 277
-
-
-
-Hence
-
-
-
-jo 1
-
-
-
-  Example 2. If <p < 1,
-
-j 1 - '2p cos 2 + 52 -J iz\ 2' ' 2' ' ) (1 -jt)22) (1 \ p5-2)
-
-= 27r2i?,
-
-(26+1)2
-
-where 2 denotes the snm of the residues of . . , sr -s at its poles
-inside C ; these
-
-4s-"' (1 — pz ) z — p)
-
-1 1 l+p + p* ( 3+l)2 ( 3+XY2
-
-poles are 0, -p , p ; and the residues at them are -o , C — , , "C,-.
-;tt ;
-
-and hence the integral is equal to
-
-Tr l-p+p )
-
-Example 3. If n be a positive integei",
-
-/ 2t 2ir /"2t
-
-I e '99cos(n -sin )o?(9= — , / e* " sin (?i<9- sin )rf = 0.
-
-Example 4. If a > 6 > 0,
-
-pT de 2na pT 0? \ 7r(2a + 6)
-
-i ( + 6cos )2 (a2\ t2)l' jo a + hcoii 6f a a + hf'
-
-622. T/ie evaluation of certain types of integrals taken between the
-limits
-
-— 00 and + 00 .
-
-We shall now evaluate I Q (x) dx, where Q z) is a function such that
-
-J — X
-
-(i) it is analytic when the imaginary part of z is positive or zero
-(except at a finite number of poles), (ii) it has no poles on the real
-axis and (iii) as | 2 |— 00 , zQ z) >Q uniformly for all values of arg
-such that O arg Tr; provided that (iv) when x is real, xQ x)—>0, as
-ic— > + x , in such a way* that
-
-I Q x) dx and 1 Q x) dx both converge.
-
-Jo J -00
-
-Given e, we can choose p (independent of arg2 ) such that \ zQ z) \ <
-ejir whenever | ; | > po and arg z ir.
+Given $\eps$, we can choose $\rho_{0}$ (independent of $\arg z$) such
+that $\absval{z Q(z)} < \eps/\pi$ whenever
+$\absval{z} > \rho_{0}$ and $0 \leq \arg z \leq \pi$.
 
 Consider I Q(z)dz taken round a contour C consisting of the part of
 the
@@ -238,21 +248,12 @@ Then, by § 6"1, I Q (z) dz — 27ri'ER, where 2i2 denotes the sum of the
 
 J c
 
-residues of Q z) at its poles above the real axisf.
+residues of $Q(z)$ at its poles above the real axis.\footnote{$Q(z)$ has
+  no poles above the real axis outside the contour.}
 
-* The condition xQ (x) is not in itself sufficient to secure the
-convergence of I Q (x) dx ;
-
-consider Q (x) = (x log .t)~i.
-
-t Q(z) has no poles above the real axis outside the contour.
-
-W. M. A. 8
-
-
-
-114 THE PROCESSES OF ANALYSIS [CHAP. VI
-
+%
+% 114
+%
 Therefore I f ' Q (z) dz - 27riSi? ' = I Q (z) dz .
 
 \ J -p \ J T
@@ -271,7 +272,7 @@ by § 4-62.
 
 Hence lim 1 Q z) dz = iri R.
 
-p- -oo J -p
+TODO
 
 But the meaning of | Q (x) da; is lim I Q (x) dx ; and since lim 1 Q
 (a;) rf and lim Q (x) dx both exist, this double limit is the
@@ -284,11 +285,9 @@ p- oo -J — p
 
 Hence we have proved that
 
-Q(x)dx= 2'7rilR.
+TODO
 
-
-
-This theorem is particularly useful in the special case when Q(x) is a
+This theorem is particularly useful in the special case when $Q(x)$ is a
 rational function.
 
 [Note. Even if condition (iv) is not satisfied, we still have
@@ -300,15 +299,11 @@ I Q x) + Q(-a;) dx=\ im T Q x)dx = 2Tri2R.]
 Exaynple 1. The only pole of z + ) ~ in the upper half plane is a pole
 at = with
 
-
-
-3
+TODO
 
 residue there - ttt i- Therefore lb
 
-
-
-/" dx \ 3
+TODO
 
 Example 2. If a > 0, 6 > 0, shew that
 
@@ -325,17 +320,9 @@ X > 0, then
 If Q(z) satisfies the conditions (i), (ii) and (iii) of § 6-22, and ni
 > 0, then Q (z) e""' also satisfies those conditions.
 
-
-
-THE THEORY OF RESIDUES
-
-
-
-115
-
-
-
-6-221, 6-222]
+%
+% 115
+%
 
 Hence I Q (a;) e' ''' + Q - x) e'"''''] dx is equal to ttiIR', where
 2E'
@@ -419,13 +406,9 @@ t This inequality appears obvious when we draw the graphs )/ = sin.r,
 y = 2xjir; it may be proved by shewing that (sin 6)1\$ decreases as 6
 increases from to iir.
 
-8—2
-
-
-
-116 THE PROCESSES OF ANALYSIS [CHAP. VI
-
-
+%
+% 116
+%
 
 Hence lim | e'"'' Q (z) dz = 0.
 
@@ -515,8 +498,9 @@ a- .0, p-*-x I./ 5 J 5c
 quadrilateral whose corners are 8, 8z, pz, p.
 
 
-
-6"23, 6*24] THE THEORY OF RESIDUES 117
+%
+% 117
+%
 
 Now I t~ e~ dt- -0 a,s, p- cc when (2)>0; and
 
@@ -587,18 +571,9 @@ Let Q x) be a rational function of x such that it has no poles on the
 positive part of the real axis and x Q x)—¥ both when a;— >0 and when
 
 
-
-118
-
-
-
-THE PROCESSES OF ANALYSIS
-
-
-
-[chap. VI
-
-
+%
+% 118
+%
 
 Consider l(— zY~' Q z)dz taken round the contour G shewn in the
 figure,
@@ -661,8 +636,9 @@ I dx=ir cosec arr, P I dx=iv cot air.
 Jii + X jn x
 
 
-
-6'3, 6*31] THE THEORY OF RESIDUES 119
+%
+% 119
+%
 
 Example 2. If < 2 < 1 and - tt < n < tt,
 
@@ -771,8 +747,9 @@ degree of multiplicity.
 * (f) ( ) must not have any zeros or poles on C.
 
 
-
-120 THE PROCESSES OF ANALYSIS • [CHAP. VI
+%
+% 120
+%
 
 Example 1, Shew that a polynomial < (2) of degree m has m roots.
 
@@ -823,16 +800,12 @@ Find how mauy I'oots of the equation
 * I C/ 1 is a continuous function of z on C, and so attains its upper
 bound (§ 3-62). Hence its upper bound a must be less than 1.
 
+%
+% 121
+%
 
-
->
-
-
-
-6 "4] THE THEORY OF RESIDUES 121
-
-6 "4. Connexion between the zeros of a function and the zeros cf its
-derivate.
+\Section{6}{4}{Connexion between the zeros of a function and the zeros of its
+derivative.}
 
 Macdonald* has shewn that if fiz) he a fvMction of z analytic
 throughout the interior of a single closed contour C, defined hy the
@@ -904,18 +877,9 @@ X For a formal proof, see Proc. London Math. Soc. (2), xv. (1916), pp.
 227-242.
 
 
-
-122
-
-
-
-THE PROCESSES OF ANALYSIS
-
-
-
-[chap. VI
-
-
+%
+% 122
+%
 
 Miscellaneous Examples.
 
@@ -951,31 +915,7 @@ shew that
 
 (Legendre.)
 
-
-
-/.
-
-
-
-sin ax , 1 e" + 1 ax = -
-
-
-
-3ttX
-
-
-
-1
-
-
-
-4 e -l
-
-
-
-1 2a
-
-
+TODO
 
 3. By integi-ating log (-2) Q z) round the contour of 6-24, where Q z)
 is a rational function such that 2 (2) 0 as ; 2 |- 0 and as ] 2 j - x
@@ -999,44 +939,17 @@ I e cos6xgii (a sin hx)- =-|7r(e -l).
 
 5. Shew that
 
-
-
-/
-
-
-
-a sin 2x
-
-
-
-- — -, xdx = - TT log (1 +0), ( - 1< a < 1;
-
-l-2acos2.r + a2 4 b\ t j, \
-
-
-
--7rlog(l + a-i), a?>r,
-
-
+TODO
 
 6. Shew that
 
-
-
 (Cauchy.)
 
-
-
-f sva.<i>iX sintboX sind) .r snia r , " . . ,
-
-/ 2\ !\ --=— ... — - -- COS ai r . . . COS a, a7 a.r = — m, (Do ... (
-,
-
-J Q X X X X '•I -
+TODO
 
 if < i) 02) •• ni oi) a-i) •••o-m be real and a be positive and
 
- >1< 1 | + |< 2i+---+l0nl + lai|+ ...+|a J.
+TODO
 
 (Stormer, Acta Math, xix.)
 
@@ -1055,55 +968,21 @@ gravity of y is the
 flz) point r, where r is the sum of the residues of • — -!- at its
 poles in the interior of C.
 
-
-
 (Amigues, Noiiv. Ann. de Math. (.3), xii. (1893), pp. 142-148.)
-
-
 
 8. Shew that
 
-
+TODO
 
 9. Shew that
 
 
 
-/
+TODO
 
-
-
-dx
-
-
-
-7r 2a + b)
-
-
-
-- (. 2 + 62) x + a2)2 <ia?h (a + 6)2 "
-
-
-
-/:
-
-
-
-dx
-
-
-
-IT 1.3...(2?i-3) 1
-
-
-
-( + 6 2) n h l.2...(H-l) a"" '
-
-
-
-THE THEORY OF RESIDUES 123
-
-
+%
+% 123
+%
 
 10. If Fn z)= n n (1 - 2' P), shew that the series
 
@@ -1157,31 +1036,12 @@ s\ nirz z — x
 
 (Kronecker, Journal fiir Math, cv.) 1 3. Shew that, if m > 0, then
 
-* sin" mt
-
-
-
-L
-
-
-
-dt
-
-
-
-1:
-
-
-
-°2 g '"--'T<"- >- "'2i '"'- >'-- ""'"3V''"" ('- ''>'- + • • Discuss
-the discontinuity of the integral at m = 0.
+TODO
+Discuss the discontinuity of the integral at m = 0.
 
 14. If A + B + C+ ...=0 and a, b, c, ... are positive, shew that
 
- cosa.r+ficos6.r+... + cos a; , ., di 7, i-i /. dx= -A log a - 5 log
-b- ,..- A log a:.
-
-'*'
+TODO
 
 (Wolstenholme.)
 
@@ -1192,47 +1052,27 @@ origin, shew
 
 that, if k > 0,
 
-I lim I -. — -T dt=ni+ lim PI — dt,
+TODO
 
-p aa J -P ' + ' p x J -p t
-
-and thence deduce, by using the contour of § 6*222 example 2, or its
+and hence deduce, by using the contour of \hardsubsubsectionref{6}{2}{2}{2} example TODO, or its
 reflexion in the real axis (according as a; or .v < 0), that
 
-
-
-1 /"p px(k + ti)
-
-Um - , . dt = 2, 1 or 0,
-
-
-
-k + ti
-
-
-
-p- .oo J -P
+TODO
 
 according as x>0, x = or x < 0. *
 
 [This integral is known as Cauchy's discontinuous factw.'] 1 6. Shew
 that, if < a < 2, 6 > 0, / > 0, then
 
-= l-, -l a—br
+TODO
 
+%
+% 124
+%
 
+17. Let TODO
 
-.r -i sin ( aTT -607) -5— - = i7rr
-
-
-
-124 THE PROCESSES OF ANALYSIS [CHAP. VI
-
-17. Let ; > and let 2 e-n-' f = ylr t).
-
- l=-oo
-
-r g-Z TTt
+TODO
 
 By considering / - — -dz round a rectangle whose corners are ± JV+
 )±i, where N is an integer, and making N-*- qo , shew that
@@ -1240,11 +1080,11 @@ By considering / - — -dz round a rectangle whose corners are ± JV+
 By expanding these integrands in powers of e~ ' , e-"" respectively
 and integrating term-by-term, deduce from § 6"22 example 3 that
 
- TTty J ---=
+TODO
 
-Hence, hy putting t = l shew that
+Hence, by putting t = l shew that
 
-v.(o= -H(i/o.
+TODO
 
 (This result is due to Poisson, Journal de VEcole foly technique, xii.
 (cahier xix), (1823), p. 420 ; see also Jacobi, Journal fiir Math,
@@ -1252,17 +1092,7 @@ xxxvi. (1848), p. 109 [Oes. Werke, ii. (1882), p. 188].) •
 
 18. Shew that, if i;>0,
 
-
-
-2 e
-
-J( = - 00
-
-
-
-- ntTTt - 2nnat = t ~ e'"''- \ \ + ll 2 c - "' W< COS 2n7ra i
-
-
+TODO
 
 (Poisson, Mem. de I'Acad. des Sci. vi. (1827), p. 592 ; Jacobi,
 Journal fur Math. ill. (1828), pp. 403-404 [Ges. Werke, i. (1881), pp.

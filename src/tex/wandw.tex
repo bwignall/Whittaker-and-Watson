@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{hyperref}
 \usepackage{ifthen}
 \usepackage{makeidx}
 \usepackage{mathrsfs}
@@ -48,7 +49,7 @@
     }{ % Use shortened title in Contents
       \section*[#1]{\centering\normalfont #4}
     }}
-\newcommand{\Subsection}[1]{\subsection*{\centering\normalfont #1}}
+\newcommand{\Subsection}[4]{\subsection*{\centering\normalfont #4}}
 \newcommand{\Subsubsection}[1]{\subsubsection*{\centering\normalfont #1}}
 
 %%%% Named Operators %%%% 
@@ -119,7 +120,7 @@
 
 \theoremstyle{remark}
 \newtheorem{wandwexample}{Example}
-\numberwithin{wandwexample}{subsubsection}
+%\numberwithin{wandwexample}{subsubsection}
 
 % Chapter 17 (Bessel functions)
 \newcommand{\besselFont}[1]{\mathscr{#1}}
