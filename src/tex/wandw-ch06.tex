@@ -238,85 +238,121 @@ Given $\eps$, we can choose $\rho_{0}$ (independent of $\arg z$) such
 that $\absval{z Q(z)} < \eps/\pi$ whenever
 $\absval{z} > \rho_{0}$ and $0 \leq \arg z \leq \pi$.
 
-Consider $\int_{C} Q(z) \dmeasure z$ taken round a contour $C$ consisting of the part of
-the real axis joining the points $\pim\rho$ (where $\rho > \rho_{0}$) and a semicircle $\Gamma$, of
-radius $\rho$, having its centre at the origin, above the real axis.
+Consider $\int_{C} Q(z) \dmeasure z$ taken round a contour $C$
+consisting of the part of the real axis joining the points $\pm\rho$
+(where $\rho > \rho_{0}$) and a semicircle $\Gamma$, of radius $\rho$,
+having its centre at the origin, above the real axis.
 
-Then, by § 6"1, I Q (z) dz — 27ri'ER, where 2i2 denotes the sum of the
-
-J c
-
-residues of $Q(z)$ at its poles above the real axis.\footnote{$Q(z)$ has
-  no poles above the real axis outside the contour.}
+Then, by \hardsectionref{6}{1}, $\int_{C} Q(z) \dmeasure z = 2 \pi i
+\sum R$, where $\sum R$ denotes the sum of the residues of $Q(z)$ at
+its poles above the real axis.\footnote{$Q(z)$ has no poles above the
+  real axis outside the contour.}
 
 %
 % 114
 %
-Therefore I f ' Q (z) dz - 27riSi? ' = I Q (z) dz .
+Therefore
+$$
+\absval{
+  \int_{-\rho}^{\rho} Q(z) \dmeasure z
+  -
+  2 \pi i \sum R
+}
+=
+\absval{
+  \int_{\Gamma} Q(z) \dmeasure z
+}.
+$$
 
-\ J -p \ J T
+In the last integral write $z = \rho e^{i\theta}$, and then
+\begin{align*}
+  \absval{ \int_{\Gamma} Q(z) \dmeasure z  }
+  &=
+  \absval{
+    \int_{0}^{\pi} Q(\rho e^{i\theta}) \rho e^{i\theta} i
+    \dmeasure\theta
+  }
+  \\
+  &<
+  \int_{0}^{\pi} (\eps / \pi) \dmeasure \theta
+  \\
+  &= \eps
+\end{align*}
+by \hardsubsectionref{4}{6}{2}.
 
-In the last integral write z = pe , and then
+Hence 
+$$
+\lim_{\rho\rightarrow\infty}
+\int_{-\rho}^{\rho} Q(z) \dmeasure z
+=
+2\pi i \sum R.
+$$
 
-11 Q(z)dz\ = \ rQ (pe* ) pe 'idd
-
-\ j r I 1 Jo
-
-< Wei'JT)de Jo
-
-= e,
-
-by § 4-62.
-
-Hence lim 1 Q z) dz = iri R.
-
-TODO
-
-But the meaning of | Q (x) da; is lim I Q (x) dx ; and since lim 1 Q
-(a;) rf and lim Q (x) dx both exist, this double limit is the
-
-(r- -oo Jo p- x> J -p
-
-same as lim Q (x) dx.
-
-p- oo -J — p
+But the meaning of $\int_{-\infty}^{\infty} Q(x) \dmeasure x$;
+is $\lim_{\rho,\sigma\rightarrow\infty}\int_{-\rho}^{\sigma} Q(x)
+\dmeasure x$;
+and since
+$\lim_{\sigma\rightarrow\infty}\int_{0}^{\sigma} Q(x) \dmeasure x$
+and
+$\lim_{\rho\rightarrow\infty}\int_{-\rho}^{0} Q(x) \dmeasure x$
+both exist, this double limit is the same as
+$\lim_{\rho\rightarrow\infty}\int_{-\rho}^{\rho} Q(x) \dmeasure x$.
 
 Hence we have proved that
-
-TODO
+$$
+\int_{-\infty}^{\infty} Q(x) \dmeasure x = 2\pi i \sum R.
+$$
 
 This theorem is particularly useful in the special case when $Q(x)$ is a
 rational function.
 
+%\begin{smallfont}
 [Note. Even if condition (iv) is not satisfied, we still have
+$$
+\int_{0}^{\infty}
+\thebrace{
+  Q(x) + Q(-x)
+} \dmeasure x
+=
+\lim_{\rho\rightarrow\infty} \int_{-\rho}^{\rho} Q(x) \dmeasure x
+= 2 \pi i \sum R.]
+$$
+%\end{smallfont}
 
-I Q x) + Q(-a;) dx=\ im T Q x)dx = 2Tri2R.]
-
-./ p f:o J —P
-
-Exaynple 1. The only pole of z + ) ~ in the upper half plane is a pole
-at = with
-
-TODO
-
-residue there - ttt i- Therefore lb
-
-TODO
-
-Example 2. If a > 0, 6 > 0, shew that
-
-r= - x*dx \ IT •'-• (a + bx ) I6aib
-
-Example 3. By integrating / e- - dz round a parallelogram whose
-corners are - R, R, R + ai, - R + ai and making R- qc , shew that, if
-X > 0, then
-
-/ e-'' ' coii 2Xax)dx = e- <>-'' I e->'x-dx = 2X-h e- < - j e-< dx.
-
-6221. Certain infinite integrals involving sines and cosines.
-
-If Q(z) satisfies the conditions (i), (ii) and (iii) of § 6-22, and ni
-> 0, then Q (z) e""' also satisfies those conditions.
+\begin{wandwexample}
+  The only pole of $(z^{2} + 1)^{-3}$ in the upper half plane is a
+  pole at $z=i$ with residue there $-\frac{3}{16} i$. Therefore
+  $$
+  \int_{-\infty}^{\infty} \frac{\dmeasure x}{ (x^{2}+1)^{3} }
+  =
+  \frac{3}{8} \pi.
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+If $a > 0, b > 0$, shew that
+$$
+\int_{-\infty}^{\infty}
+\frac{x^{4} \dmeasure x}{ (a + bx^{2})^{4} }
+=
+\frac{\pi}{ 16 a^{3/2} b^{5/2}}.
+$$
+\end{wandwexample}
+\begin{wandwexample}
+  By integrating $\int e^{-\lambda z^{2}} \dmeasure z$ round a
+parallelogram whose corners are $-R, R, R + ai, -R + ai$ and making $R
+\rightarrow \infty$, shew that, if $\lambda > 0$, then
+  $$
+  \int_{-\infty}^{\infty} e^{-\lambda x^{2}} \cos (2\lambda a x)
+\dmeasure x = e^{-\lambda a^{2}} \int_{-\infty}^{\infty} e^{-\lambda
+x^{2}} \dmeasure x = 2 \lambda^{-\half} e^{-\lambda a^{2}}
+\int_{0}^{\infty} e^{-x^{2}} \dmeasure x.
+  $$
+\end{wandwexample}
+\Subsubsection{6}{2}{2}{1}{Certain infinite integrals involving sines
+and cosines.}
+If $Q(z)$ satisfies the conditions (i), (ii) and (iii) of
+\hardsectionref{6}{2}{2}, and $m > 0$,
+then $Q(z) e^{miz}$ also satisfies those conditions.
 
 %
 % 115
