@@ -551,49 +551,83 @@ which is the result corresponding to the result of \hardsubsubsectionref{6}{2}{2
   (Take the contour of example TODO.)
 \end{wandwexample}
 \begin{wandwexample}
-Example 6. Shew that, if the real part of s be positive,
-
-[ e-*-e-'')j=\ ogz. [We have
-
-Ji> ' t s o,p [Js i Js t J
-
-lim -! I — dt— I - — du
-
-a- .0, p-*-x I./ 5 J 5c
-
-= lim I / " —-dt-] —- dt\ , since i~' e~' is analytic inside the
-quadrilateral whose corners are 8, 8z, pz, p.
+Shew that, if the real part of $z$ be positive,
+$$
+\int_{0}^{\infty} (e^{-t} - e^{-tz}) \frac{\dmeasure t}{t} = \log z.
+$$
+[We have
+\begin{align*}
+  \int_{0}^{\infty} (e^{-t} - e^{-tz}) \frac{\dmeasure t}{t} = \log z.
+  =&
+  \lim_{\delta\rightarrow 0, \rho\rightarrow\infty}
+  \thebrace{
+    \int_{\delta}^{\rho} \frac{e^{-t}}{t} \dmeasure t
+    -
+    \int_{\delta}^{\rho} \frac{e^{-tz}}{t} \dmeasure t
+  }
+  \\
+  =&
+    \thebrace{
+    \int_{\delta}^{\rho} \frac{e^{-t}}{t} \dmeasure t
+    -
+    \int_{\delta z}^{\rho z} \frac{e^{-u}}{u} \dmeasure u
+  }
+  \\
+  =&
+    \thebrace{
+    \int_{\delta}^{\delta z} \frac{e^{-t}}{t} \dmeasure t
+    -
+    \int_{\rho}^{\rho z} \frac{e^{-t}}{t} \dmeasure t,
+  }
+\end{align*}
+since $t^{-1} e^{-t}$ is analytic inside the
+quadrilateral whose corners are $\delta, \delta z, \rho z, \rho$.
 
 %
 % 117
 %
 
-Now I t~ e~ dt- -0 a,s, p- cc when (2)>0; and
-
-/ ~ t- e- dt = \ ogz- I " t- l-e-f) dt- \ ogz,
-
-since i'' 1 -e-*)- l as t- 0.]
+Now $\int_{\rho}^{\rho z} t^{-1} e^{-t} \dmeasure t \rightarrow 0$
+when $\Re(z) > 0$; and
+$$
+\int_{\delta}^{\delta z} t^{-1} e^{-t} \dmeasure t
+= \log z
+-
+\int_{\rho}^{\rho z} t^{-1} (1 - e^{-t}) \dmeasure t
+\rightarrow
+\log z,
+$$
+since $t^{-1} (1 - e^{-t}) \rightarrow 1$ as $t \rightarrow 0$.]
 \end{wandwexample}
 \Subsection{6}{2}{3}{Principal values of integrals.}
-It was assumed in §§ 6'22, 6 '221, 6*222 that the function Q x) had no
-poles on the real axis ; if the function has a finite number of simple
+It was assumed in TODO that the function $Q(x)$ had no
+poles on the real axis; if the function has a finite number of simple
 poles on the real axis, we can obtain theorems corresponding to those
 already obtained, except that the integrals are all principal values
-(§ 4'5) and 2/2 has to be replaced by S/ + S/s'q, where 2 means the
+(\hardsectionref{4}{5}) and $\sum R$ has to be replaced by
+$\sum R + \half \sum R_{0}$, where $\sum R_{0}$ means the
 sum of the residues at the poles on the real axis. To obtain this
 result we see that, instead of the former contour, we have to take as
-contour a circle of radius p and the portions of the real axis joining
+contour a circle of radius $\rho$ and the portions of the real axis joining
 the points
-
--p, a-8i; a + hi,h-b~2\ b + 8o, c-8 , ...
-
-and small semicircles above the real axis of radii Sj, So, ... witli
-centres a, b, c, ..., where a, b, c, ... are the poles of Q (2) on the
-real axis ; and then we have to make Sj, 8. , ... - 0 ; call these
-semicircles yj, y.,, Then instead of the equation
-
-I Q z)dz+ I Q (2) dz = 27ri2R,
-
+$$
+-\rho, \ a-\delta_{1};
+\quad
+a+\delta_{1}, \ b-\delta_{2};
+\quad
+b+\delta_{2}, \ c-\delta_{3},
+\ \ldots
+$$
+and small semicircles above the real axis of radii
+$\delta_{1},\delta_{2},\ldots$ with
+centres $a, b, c, \ldots$ where $a, b, c, \ldots$ are the poles of
+$Q(z)$ on the real axis; and then we have to make
+$\delta_{1}, \delta_{2}, \ldots \rightarrow 0$;
+call these semicircles $\gamma_{1},\gamma_{2},\ldots$.
+Then instead of the equation
+$$
+TODO
+$$
 we get F j Q (2) dz + -2 Ynn j Q (2) dz+ j Q (2) dz = -Irri It.
 
 Let a' be the residue of Q z) at a ; then writing z = a + 8ie' on y we
