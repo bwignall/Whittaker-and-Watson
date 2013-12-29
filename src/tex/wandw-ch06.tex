@@ -676,7 +676,7 @@ and hence, using the arguments of \hardsubsectionref{6}{2}{2}, we get
 $$
 P \int_{-\infty}^{\infty} Q(x) \dmeasure x
 =
-2 \pi i (\sum R + \half \sum R_{0}).
+2 \pi i \theparen{ \sum R + \half \sum R_{0} }.
 $$
 
 The reader will see at once that the theorems of TODO have
@@ -731,18 +731,27 @@ integral along it becomes $- \int_{-\pi}^{\pi} (-z)^{n} Q(z) i
 \dmeasure\theta$, which tends to zero as $\rho \rightarrow \infty$. 
 
 On one of the lines we write $-z = x e^{\pi i}$ on the other
-$-z = x e^{-\pi i}$ and $(-z)^{a-1}$ becomes $x^{a-1} e^{\pm (a-1 \pi i}$
+$-z = x e^{-\pi i}$ and $(-z)^{a-1}$ becomes $x^{a-1} e^{\pm (a-1 \pi i}$.
 
 Hence
 $$
-TODO
+\lim_{\delta\rightarrow 0,\ \rho\rightarrow\infty}
+\int_{\delta}^{\rho}
+\thebrace{
+  x^{a-1} e^{-(a-1)\pi i} Q(x)
+  -
+  x^{a-1} e^{(a-1)\pi i} Q(x)
+}
+\dmeasure x
+=
+2 \pi i \sum r;
 $$
-
-(S- .0, p oc ) J 5
-
-and therefore I af ~' Q (x) dx = tt cosec (air) Sr.
-
-.'0
+and therefore
+$$
+\int_{0}^{\infty} x^{a-1} Q(x) \dmeasure x
+=
+\pi \cosec (a\pi) \sum r.
+$$
 
 Corollary. If Q(x) have a number of simple poles on the positive part
 of the real axis, it may be shewn by indenting the contour that
