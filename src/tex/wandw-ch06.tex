@@ -371,7 +371,7 @@ $\sum R'$ means the sum of the residues of $Q(z) e^{mix}$ at its poles
 in the upper half plane; and so
 \begin{itemize}
 \item % (i)
-  If Q x) is an even function\index{Even functions}, i.e. if Q (— x) — Q (x),
+  If $Q(x)$ is an even function\index{Even functions}, i.e. if $Q (— x) = Q (x)$,
   $$
   \int_{0}^{\infty} Q(x) \cos(mx) \dmeasure x
   =
@@ -418,7 +418,7 @@ $$
 \absval{
   \int_{0}^{\pi}
   e^{mi (\rho \cos\theta + i\rho \sin\theta)}
-  Q(\rho e^{i\theta}
+  Q(\rho e^{i\theta})
   \rho e^{i \theta}
   i \dmeasure \theta
 }.
@@ -627,31 +627,63 @@ $\delta_{1}, \delta_{2}, \ldots \rightarrow 0$;
 call these semicircles $\gamma_{1},\gamma_{2},\ldots$.
 Then instead of the equation
 $$
-TODO
+\int_{-\rho}^{\rho} Q(z) \dmeasure z
++
+\int_{\Gamma} Q(z) \dmeasure z
+=
+2 \pi i \sum R,
 $$
-we get F j Q (2) dz + -2 Ynn j Q (2) dz+ j Q (2) dz = -Irri It.
+we get
+$$
+P \int_{-\rho}^{\rho} Q(z) \dmeasure z
++
+\sum_{n}
+\lim_{\delta_{n} \rightarrow 0}
+\int_{\gamma_{n}} Q(z) \dmeasure z
++
+\int_{\Gamma} Q(z) \dmeasure z
+=
+2 \pi i \sum R.
+$$
 
-Let a' be the residue of Q z) at a; then writing z = a + 8ie' on y we
-get
-
-j Q (2) dz= ( Q a + 8i e' ) Sj e'6 id0. But Q a + 81 6 )816' - a
-uniformly as 8,- 0; and therefore lim | Q z)dz= -iria';
-
-P y Q z)dz+( Q z)dz = 27ri2R + ni2R,,,
-
+Let $a'$ be the residue of $Q(z)$ at $a$; then writing
+$z = a + \delta_{1} e^{i\theta}$ on $\gamma_{1}$ we get
+$$
+\int_{\gamma_{1}} Q(z) \dmeasure z
+=
+\int_{\pi}^{0}
+Q(a + \delta_{1} e^{i\theta})
+\delta_{1} e^{i\theta} i \dmeasure \theta.
+$$
+But $Q(a + \delta_{1} e^{i\theta}) \rightarrow a'$ 
+uniformly as $\delta_{1} \rightarrow 0$; and therefore
+$
+\lim_{\delta_{1} \rightarrow 0} \int_{\gamma_{1}} Q(z) \dmeasure z
+=
+- \pi i a'
+$;
 we thus get
+$$
+P \int_{-\rho}^{\rho} Q(z) \dmeasure z
++
+\int_{\Gamma} Q(z) \dmeasure z
+=
+2 \pi i \sum R
++
+\pi i \sum R_{0},
+$$
+and hence, using the arguments of \hardsubsectionref{6}{2}{2}, we get
+$$
+P \int_{-\infty}^{\infty} Q(x) \dmeasure x
+=
+2 \pi i (\sum R + \half \sum R_{0}).
+$$
 
--p and hence, using the arguments of i (5-22, we get
-
-P j Q x) dx = 2m 2R + 2 /?o)
-
-UA
-
-The reader will see at once that the theorems of 6"221, 6-222 have
+The reader will see at once that the theorems of TODO have
 precisely similar generalisations.
 
 The process employed above of inserting arcs of small circles so as to
-diminish the area of the contour is called indenting the contour.
+diminish the area of the contour is called \emph{indenting} the contour.
 %\end{smallfont}
 \Subsection{6}{2}{4}{Evaluation of integrals of the form
   $\int_{0}^{\infty} x^{a-1} Q(x) \dmeasure x.$}
@@ -662,7 +694,7 @@ positive part of the real axis and x Q(x)—¥ both when a;— >0 and when
 % 118
 %
 
-Consider l(— zY~' Q z)dz taken round the contour G shewn in the
+Consider l(— zY~' Q(z)dz taken round the contour G shewn in the
 figure,
 
 consisting of the arcs of circles of radii p, S and the straight lines
@@ -675,7 +707,7 @@ log (- ) = log • ' + arg (- z),
 where — tt arg (— ) tt;
 
 with these conventions the integrand is one-valued and analytic on and
-within the contour save at the poles of Q z).
+within the contour save at the poles of Q(z).
 
 Hence, if S?' denote the sum of the residues of (— zY~' Q (z) at all
 its poles,
@@ -957,7 +989,7 @@ shew that
 
 TODO
 
-3. By integi-ating log (-2) Q z) round the contour of 6-24, where Q z)
+3. By integi-ating log (-2) Q(z) round the contour of 6-24, where Q(z)
 is a rational function such that 2 (2) 0 as; 2 |- 0 and as ] 2 j - x
 , shew that if Q (2) has no poles
 
