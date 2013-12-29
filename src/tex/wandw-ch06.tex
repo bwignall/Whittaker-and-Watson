@@ -105,7 +105,7 @@ those of its poles which are situated within the contour $C$.}
 
 This is an extension of the theorem of \hardsubsectionref{5}{2}{1}.
 
-%\begin{Remark} TODO:alpha or a?
+%\begin{Remark} TODO:\alpha or a?
 Note. If $a$ is a simple pole of $f(z)$ the residue of $f(z)$ at that pole
 is $\lim_{z\rightarrow a} (z-a) f(z)$.
 %\end{Remark}
@@ -371,7 +371,7 @@ $\sum R'$ means the sum of the residues of $Q(z) e^{mix}$ at its poles
 in the upper half plane; and so
 \begin{itemize}
 \item % (i)
-  If $Q(x)$ is an even function\index{Even functions}, i.e. if $Q (— x) = Q (x)$,
+  If $Q(x)$ is an even function\index{Even functions}, i.e. if $Q (- x) = Q (x)$,
   $$
   \int_{0}^{\infty} Q(x) \cos(mx) \dmeasure x
   =
@@ -701,28 +701,35 @@ $C$ shewn in the figure TODO, consisting of the arcs of circles of
 radii $\rho,\delta$ and the straight lines joining their end points;
 $(-z)^{a-1}$ is
 to be interpreted as
-
-exp ( a-1) log (- z)] and
-
-log (- ) = log • ' + arg (- z),
-
-where — tt arg (— ) tt;
-
+$$
+\exp \thebrace{ ( a-1) \log (- z) }
+$$
+and
+$$
+\log (-z) = \log \absval{z} + \arg (-z),
+$$
+where
+$$
+-\pi \leq \arg (-z) \leq \pi; %TODO:is overlap correct?
+$$
 with these conventions the integrand is one-valued and analytic on and
-within the contour save at the poles of Q(z).
+within the contour save at the poles of $Q(z)$.
 
-Hence, if S?' denote the sum of the residues of (— zY~' Q (z) at all
-its poles,
+Hence, if $\sum r$ denote the sum of the residues of $(-z)^{a-1} Q(z)$
+at all its poles,
+$$
+\int_{C} (-z)^{a-1} Q(z) \dmeasure z = 2 \pi i \sum r.
+$$
 
-[ (- zy-' Q (z) dz = 27ri'Zr.
+On the small circle write $-z = \delta e^{i\theta}$, and the integral
+along it becomes
+$- \int_{\pi}^{-\pi} (-z)^{a} Q(z) i \dmeasure \theta$,
+which tends to zero as $\delta \rightarrow 0$.
 
-On the small circle write — z= Se , and the integral along it becomes
-— I (— zyQ z)id6, which tends to zero as 8— >0.
+On the large semicircle write - z = pe', and the integral along it
+becomes - I - sT Q (2) idO, which tends to zero as p- > x .
 
-On the large semicircle write — z = pe' , and the integral along it
-becomes — I — sT Q (2) idO, which tends to zero as p— > x .
-
-On one of the lines we write — z = xe"\ on the other — z = xe~' ' and
+On one of the lines we write - z = xe"\ on the other - z = xe~' ' and
 (-zy~ becomes a; - e±'"-i>'''.
 
 Hence
@@ -738,7 +745,7 @@ and therefore I af ~' Q (x) dx = tt cosec (air) Sr.
 Corollary. If Q(x) have a number of simple poles on the positive part
 of the real axis, it may be shewn by indenting the contour that
 
-P j a;"~ Q (x) dx — tt cosec (citt) S?' — tt cot ((/tt) 2r', .
+P j a;"~ Q (x) dx - tt cosec (citt) S?' - tt cot ((/tt) 2r', .
 
 where 1r' is the sum of the residues of z"'- Q (z) at these poles.
 Example 1. If < a < 1,
@@ -755,9 +762,9 @@ Example 2. If < 2 < 1 and - tt < n < tt,
 
   
 
-fz-l gi(2— l)a
+fz-l gi(2- l)a
 
-, — .'di=—. . (Minding.)
+, - .'di=-. . (Minding.)
 
 Example 3. Shew that, if - 1 < s < 3, then
 
@@ -769,7 +776,7 @@ Example 3. Shew that, if - 1 < s < 3, then
 
 (Euler.)
 
-   x' 'f ' ~4cos 7r2' Example 4. Shew that, if — 1 < p < 1 and - tt <
+   x' 'f ' ~4cos 7r2' Example 4. Shew that, if - 1 < p < 1 and - tt <
 X < tt, then
 
 x~P dx \ TT sin X 1 +2x cos X + X- sin pn sin X
@@ -783,29 +790,29 @@ inside and on C. Let (2) be another function which is analytic inside
 and on G except at a finite luimber of poles; let the zeros of < z)
 in the interior* of C be a,, 02, ..., and let their degrees of
 multiplicity be rj, ro, ...; and let its poles in the interior of C
-be 6j, ho, ..., and let their degrees of multiplicity be 5, , §2) •••
+be 6j, ho, ..., and let their degrees of multiplicity be 5,, §2) •••
 
-Then, by the fundamental theorem of residues, - — . I fiz) dz is equal
+Then, by the fundamental theorem of residues, - - . I fiz) dz is equal
 to the sum
 
  2ni J c' (f> z)
 
-of the residues of--— ' at its poles inside C. <i> z)
+of the residues of--- ' at its poles inside C. <i> z)
 
-Now— —- - can have singularities only at the poles and zeros of 0(s).
+Now- -- - can have singularities only at the poles and zeros of 0(s).
 Near one
 
-of the zeros, say otj , we have
+of the zeros, say otj, we have
 
 0(2) = iI(2-ai)'-i-|-5(2-ai)'-. + i-f-.... Therefore < ' (2) = Ar z -
-a- Yi -1 + 5 (r, + 1 ) (s - ai) -i + . . . ,
+a- Yi -1 + 5 (r, + 1 ) (s - ai) -i + . . .,
 
 and /(2)=/( i) + (2- i)/'( i) + ....
 
 Therefore P - ' ] is analytic at a, .
 
-Thus the residue of j - , at the point 2 = ,, is rif ai). Similarly
-the residue at 2 = 61 is — Si/(6j); for near 2 = 61, we have
+Thus the residue of j -, at the point 2 =,, is rif ai). Similarly
+the residue at 2 = 61 is - Si/(6j); for near 2 = 61, we have
 
 ( (2) = C(2-6,j- . + Z>(2-6,)-*, + l-l-...,
 
@@ -842,13 +849,13 @@ degree of multiplicity.
 
 Example 1, Shew that a polynomial < (2) of degree m has m roots.
 
-Let ( (2) = ao2™ + ais'"~ + . .. + , , ( o=t=0)-
+Let ( (2) = ao2™ + ais'"~ + . .. +,, ( o=t=0)-
 
 rpj gj ) \ > og'"~ + •••+ -1
 
-( (2) ao2' + ...+ ,
+( (2) ao2' + ...+,
 
-Consequently, for large values of | 2 | ,
+Consequently, for large values of | 2 |,
 
 Thus, if C be a circle of radius p whose centre is at the origin, we
 have
@@ -860,16 +867,16 @@ But, as in § 6-22, j (\ \ dz O
 as p- ao; and hence as (f) z) has no poles in the interior of C, the
 total number of zeros of (f) (2) is
 
-lim -— . I - ( 2 = TO.
+lim -- . I - ( 2 = TO.
 
 Example 2. If at all points of a contour C the inequality
 
 l fcS*|>l o + i2 + ... + ai-i~ * ~ + fc+i2' i + ... + a, 2'"j is
-satisfied, then the contour contains /(• roots of the equation a , 2'"
-+ , \ ! 2' - 1 + . . . + ! 2 + o = 0. For write / (2) = a z''' + a \ 1
+satisfied, then the contour contains /(• roots of the equation a, 2'"
++, \ ! 2' - 1 + . . . + ! 2 + o = 0. For write / (2) = a z''' + a \ 1
 2"'- - 1 + . . . + ai2 + ao .
 
-Then /(2) = ,2 i -- + ...+a..,i2 -fa,-i2> -' + ...+ao\
+Then /(2) =,2 i -- + ...+a..,i2 -fa,-i2> -' + ...+ao\
 
 = a,2' (l + tO, where | f/"! a < 1 on the contour, a being
 independent* of 2. Therefore the number of roots of f z) contained in
@@ -877,7 +884,7 @@ C
 
 27 jc/(2) 2injc\ s l+U dzj
 
-But I — — 2T!-i; and, since | C/'|<1, we can expand (1 + U)~' in the
+But I - - 2T!-i; and, since | C/'|<1, we can expand (1 + U)~' in the
 uniformly cou- vergent series
 
 Therefore the number of roots contained in C is equal to i: Example 3.
@@ -914,15 +921,15 @@ number of zeros of/'(s) inside + C is
 Let s be the arc of C measured from a fixed point and let y he the
 angle the tangent to C makes with Ox; then
 
-1 f (dH /de\ , 1 r de']
+1 f (dH /de\, 1 r de']
 
 -2 ija [dJ I dz) = - 2 ?rS dz]c
 
-I r, d0 , dzl
+I r, d0, dzl
 
 = -2 ir ds- ''Sdsjc-
 
-dB Now log , is purely real and its initial value is the same as its
+dB Now log, is purely real and its initial value is the same as its
 final value; and
 
 dz log =i\ j/; hence the excess of the number of zei'os oi f z) over
@@ -954,10 +961,10 @@ E. LiNDELOF, Le Calcid des Residus (Paris, 1905), Ch. il.
 t /' ( 2) does not vanish on C unless C has a node or other singular
 point; for, if f= <p + i\ p,
 
-where <A and xL are real, since i J- - /- , it follows that if /'(2) =
+where <A and xL are real, since i J- - /-, it follows that if /'(2) =
 at any point, then ax dy
 
-  , , ~, all vanish; and these are sufficient conditions for a
+ ,, ~, all vanish; and these are sufficient conditions for a
 singular point on ox dy ox ay
 
 X For a formal proof, see Proc. London Math. Soc. (2), xv. (1916), pp.
@@ -981,10 +988,10 @@ iy), prove that if - 1 < < 1,
 
 (Trinity, 1898.)
 
-2. By integrating - — round a contour formed by the rectangle whose
-corners are e"' ' — 1
+2. By integrating - - round a contour formed by the rectangle whose
+corners are e"' ' - 1
 
-0, R, B + i, i (the rectangle being indented at and and making R- xi ,
+0, R, B + i, i (the rectangle being indented at and and making R- xi,
 shew that
 
 (Legendre.)
@@ -1035,7 +1042,7 @@ of y be attributed
 a mass proportional to the corresponding element of C, the centre of
 gravity of y is the
 
-flz) point r, where r is the sum of the residues of • — -!- at its
+flz) point r, where r is the sum of the residues of • - -!- at its
 poles in the interior of C.
 
 (Amigues, Noiiv. Ann. de Math. (.3), xii. (1893), pp. 142-148.)
@@ -1080,7 +1087,7 @@ n
 
 12. Shew that, if 0<i'<l,
 
-= s — lim 2
+= s - lim 2
 
 [Consider /
 
@@ -1088,7 +1095,7 @@ g 2v-l)ziri 2
 
 round a circle of radius + 5; and make /i- -x .]
 
-s\ nirz z — x
+s\ nirz z - x
 
 (Kronecker, Journal fiir Math, cv.) 1 3. Shew that, if m > 0, then
 
@@ -1130,10 +1137,10 @@ TODO
 
 TODO
 
-By considering / - — -dz round a rectangle whose corners are ± JV+
-)±i, where N is an integer, and making N-*- qo , shew that
+By considering / - - -dz round a rectangle whose corners are ± JV+
+)±i, where N is an integer, and making N-*- qo, shew that
 
-By expanding these integrands in powers of e~ ' , e-"" respectively
+By expanding these integrands in powers of e~ ', e-"" respectively
 and integrating term-by-term, deduce from § 6"22 example 3 that
 
 TODO
