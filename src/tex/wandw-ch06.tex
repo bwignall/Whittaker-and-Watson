@@ -753,18 +753,29 @@ $$
 \pi \cosec (a\pi) \sum r.
 $$
 
-Corollary. If Q(x) have a number of simple poles on the positive part
-of the real axis, it may be shewn by indenting the contour that
-
-P j a;"~ Q (x) dx - tt cosec (citt) S?' - tt cot ((/tt) 2r', .
-
-where 1r' is the sum of the residues of z"'- Q (z) at these poles.
-Example 1. If < a < 1,
-
-I dx=ir cosec arr, P I dx=iv cot air.
-
-Jii + X jn x
-
+%TODO: change corollary environment
+Corollary. If $Q(x)$ have a number of simple poles on the positive
+part of the real axis, it may be shewn by indenting the contour that
+$$
+P \int_{0}^{\infty} x^{a-1} Q(x) \dmeasure x
+=
+\pi \cosec (a\pi) \sum r
+-
+\pi \cot (1\pi) \sum r',
+$$
+where $\sum r'$ is the sum of the residues of $z^{a-1} Q(z)$ at these poles.
+\begin{wandwexample}
+If $0 < a < 1$,
+$$
+\int_{0}^{\infty} \frac{x^{a-1}}{1+x} \dmeasure x
+=
+\pi \cosec a\pi,
+\quad
+P \int_{0}^{\infty} \frac{x^{a-1}}{1+x} \dmeasure x
+=
+\pi \cot a\pi
+$$
+\end{wandwexample}
 %
 % 119
 %
