@@ -807,34 +807,50 @@ $$
   \addexamplecitation{Euler.}
 \end{wandwexample}
 \Section{6}{3}{Cauchy's integral.}
- We shall next discuss a class of contour-integrals which are
+We shall next discuss a class of contour-integrals which are
 sometimes found useful in analytical investigations.
 
-Let Cbe a contour in the 2-plane, and let/(s) be a function analytic
-inside and on C. Let (2) be another function which is analytic inside
-and on G except at a finite luimber of poles; let the zeros of < z)
-in the interior* of C be a,, 02, ..., and let their degrees of
-multiplicity be rj, ro, ...; and let its poles in the interior of C
-be 6j, ho, ..., and let their degrees of multiplicity be 5,, §2) •••
+Let $C$ be a contour in the $z$-plane, and let $f(z)$ be a function
+analytic inside and on $C$. Let $\phi(z)$ be another function which is
+analytic inside and on $G$ except at a finite number of poles; let the
+zeros of $\phi(z)$ in the interior\footnote{$\phi(z)$ must not have
+  any zeros or poles on $C$.} of $C$ be $a_{1},a_{2},\ldots$, and let
+their degrees of multiplicity be $r_{1},r_{2},\ldots$; and let its
+poles in the interior of $C$ be $b_{1},b_{2},\ldots$, and let their
+degrees of multiplicity be $s_{1},s_{2},\ldots$.
 
-Then, by the fundamental theorem of residues, - - . I fiz) dz is equal
-to the sum
+Then, by the fundamental theorem of residues,
+$ \frac{1}{2\pi i} \int_{C} f(z) \frac{\phi'(z)}{\phi(z)} \dmeasure z $
+is equal to the sum of the residues of
+$f(z) \frac{\phi'(z)}{\phi(z)}$
+at its poles inside $C$.
 
- 2ni J c' (f> z)
+Now
+$f(z) \frac{\phi'(z)}{\phi(z)}$
+can have singularities only at the poles and zeros of $\phi(z)$.
+Near one of the zeros, say $a_{1}$, we have
+$$
+\phi(z)
+=
+A (z-a_{1})^{r_{1}}
++ B (z-a_{1})^{r_{1}+1}
++ \cdots.
+$$
 
-of the residues of--- ' at its poles inside C. <i> z)
+Therefore
+$$
+\phi'(z)
+=
+A r_{1} (z-a_{1})^{r_{1}-1}
++ B (r_{1}+1) (z-a_{1})^{r_{1}}
++ \cdots,
+$$
+and
+$$
+f(z) = f(a_{1}) + (z-a_{1}) f'(a_{1}) + \cdots.
+$$
 
-Now- -- - can have singularities only at the poles and zeros of 0(s).
-Near one
-
-of the zeros, say otj, we have
-
-0(2) = iI(2-ai)'-i-|-5(2-ai)'-. + i-f-.... Therefore < ' (2) = Ar z -
-a- Yi -1 + 5 (r, + 1 ) (s - ai) -i + . . .,
-
-and /(2)=/( i) + (2- i)/'( i) + ....
-
-Therefore P - ' ] is analytic at a, .
+Therefore TODO is analytic at $a_{1}$.
 
 Thus the residue of j -, at the point 2 =,, is rif ai). Similarly
 the residue at 2 = 61 is - Si/(6j); for near 2 = 61, we have
@@ -865,8 +881,6 @@ of (2) contained in
 
 the interior of C, each pole and zero being reckoned according to its
 degree of multiplicity.
-
-* (f) ( ) must not have any zeros or poles on C.
 
 %
 % 120
