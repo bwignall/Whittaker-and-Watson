@@ -850,20 +850,53 @@ $$
 f(z) = f(a_{1}) + (z-a_{1}) f'(a_{1}) + \cdots.
 $$
 
-Therefore TODO is analytic at $a_{1}$.
+Therefore
+$
+\thebrace{f(z) \frac{\phi'(z)}{\phi(z)}
+  -
+  \frac{ r_{1} f(a_{1}) }{ z - a_{1} }
+}
+$ is analytic at $a_{1}$.
 
-Thus the residue of j -, at the point 2 =,, is rif ai). Similarly
-the residue at 2 = 61 is - Si/(6j); for near 2 = 61, we have
+Thus the residue of $f(z) \frac{\phi'(z)}{\phi(z)}$, at the point
+$z=a_{1}$, is $r_{1} f(a_{1})$.
 
-( (2) = C(2-6,j- . + Z>(2-6,)-*, + l-l-...,
+Similarly the residue at $z=b_{1}$ is
+$-s_{1} f(b_{1})$; for near $z=b_{1}$, we have
+$$
+\phi(z)
+=
+C (z-b_{1})^{-s_{1}}
++ D (z-b_{1})^{-s_{1} + 1}
++ \cdots,
+$$
+and
+$$
+f(z)
+=
+f(b_{1})
++ (z - b_{1}) f'(b_{1})
++ \cdots,
+$$
+so
+$
+f(z) \frac{ \phi'(z) }{\phi(z)}
++
+\frac{ s_{1} f(b_{1}) }{ z-b_{1} }
+$
+is analytic at $b_{1}$.
 
-and f z)=f bi) + z-b,)f' b,) + ...,
-
-so f!' + '- is analytic at i . 0(2) 2-61
-
-Hence i J/ ' f clz = 2r,fia,) - 2s,f b,),
-
-the summations being extended over all the zeros and poles of (f) (2).
+Hence
+$$
+\frac{1}{2\pi i}
+\int_{C} f(z) \frac{ \phi'(z) }{\phi(z)} \dmeasure z
+=
+\sum r_{1} f(a_{1})
+-
+\sum s_{1} f(b_{1}),
+$$
+the summations being extended over all the zeros and poles of
+$\phi(z)$.
 
 \Subsection{6}{3}{1}{The number of roots of an equation contained within a contour.}
 The result of the preceding paragraph can be at once applied to find
