@@ -915,29 +915,57 @@ being reckoned according to its degree of multiplicity.
 %
 % 120
 %
+\begin{wandwexample}
+Shew that a polynomial $\phi(z)$ of degree $m$ has $m$ roots.
 
-Example 1, Shew that a polynomial < (2) of degree m has m roots.
-
-Let ( (2) = ao2™ + ais'"~ + . .. +,, ( o=t=0)-
-
-rpj gj ) \ > og'"~ + •••+ -1
-
-( (2) ao2' + ...+,
-
-Consequently, for large values of | 2 |,
-
-Thus, if C be a circle of radius p whose centre is at the origin, we
+Let
+$$
+\phi(z)
+=
+a_{0} z^{m} + a_{1} z^{m-1} + \cdots + a_{m},
+\quad
+(a_{0} \neq 0).
+$$
+Then
+$$
+\frac{ \phi'(z) }{ \phi(z) }
+=
+\frac{ m a_{m}z^{m-1} + \cdots + a_{m-1} }{ a_{0}z^{m} + \cdots a_{m}}.
+$$
+Consequently, for large values of $\absval{z}$,
+$$
+\frac{ \phi'(z) }{ \phi(z) }
+=
+\frac{m}{z} + O\theparen{ \frac{1}{z^{2}} }
+$$
+Thus, if $C$ be a circle of radius $\rho$ whose centre is at the origin, we
 have
+$$
+\frac{1}{2 \pi i} \int_{C} \frac{\phi'(z)}{\phi(z)} \dmeasure z
+=
+\frac{m}{2 \pi i} \int_{C} \frac{ \dmeasure z }{z}
++
+\frac{1}{2 \pi i} \int_{C} O\theparen{ \frac{1}{z^{2}} } \dmeasure z
+=
+m + \frac{1}{2 \pi i} \int_{C} O\theparen{ \frac{1}{z^{2}} } \dmeasure z.
+$$
 
-27rt J c (p ) 27r \ / c 2 27ri / \ z / 2itI J c V J
-
-But, as in § 6-22, j (\ \ dz O
-
-as p- ao; and hence as (f) z) has no poles in the interior of C, the
-total number of zeros of (f) (2) is
-
-lim -- . I - ( 2 = TO.
-
+But, as in \hardsectionref{6}{2}{2},
+$$
+\int_{C} O\theparen{ \frac{1}{z^{2}} } \dmeasure z
+\rightarrow
+0
+$$
+as $\rho\rightarrow\infty$; and hence as $\phi(z)$ has no poles in the
+interior of $C$, the total number of zeros of $\phi(z)$ is
+$$
+\lim_{\rho\rightarrow\infty}
+\frac{1}{2\pi i}
+\int_{C} \frac{ \phi'(z) }{\phi(z)} \dmeasure z
+=
+m.
+$$
+\end{wandwexample}
 Example 2. If at all points of a contour C the inequality
 
 l fcS*|>l o + i2 + ... + ai-i~ * ~ + fc+i2' i + ... + a, 2'"j is
