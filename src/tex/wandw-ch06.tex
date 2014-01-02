@@ -966,32 +966,79 @@ $$
 m.
 $$
 \end{wandwexample}
-Example 2. If at all points of a contour C the inequality
+If at all points of a contour $C$ the inequality
+$$
+\absval{ a_{k} z^{k} }
+>
+\absval{
+  a_{0}
+  + a_{1} z
+  + \cdots
+  + a_{k-1} z^{k-1}
+  + a_{k+1} z^{k+1}
+  + \cdots
+  + a_{m} z^{m}
+}
+$$
+is satisfied, then the contour contains $k$ roots of the equation
+$$
+a_{m} z^{m} + a_{m-1} z^{m-1} + \cdots a_{1} z + a_{0} = 0.
+$$
 
-l fcS*|>l o + i2 + ... + ai-i~ * ~ + fc+i2' i + ... + a, 2'"j is
-satisfied, then the contour contains /(• roots of the equation a, 2'"
-+, \ ! 2' - 1 + . . . + ! 2 + o = 0. For write / (2) = a z''' + a \ 1
-2"'- - 1 + . . . + ai2 + ao .
+For write
+$$
+f(z)
+=
+a_{m} z^{m} + a_{m-1} z^{m-1} + \cdots a_{1} z + a_{0}.
+$$
 
-Then /(2) =,2 i -- + ...+a..,i2 -fa,-i2> -' + ...+ao\
+Then
+\begin{align*}
+  f(z)
+  &=
+  a_{k} z^{k}
+  \theparen{ 1 +
+    \frac{ a_{m}z^{m}
+      + \cdots
+      + a_{k+1}z^{k+1}
+      + a_{k-1}z^{k-1}
+      + \cdots
+      + a_{0}
+    }{ a_{k} z^{k} }
+  }
+  \\
+  &= a_{k} z^{k} (1 + U),
+\end{align*}
+where $\absval{U} \leq a \leq 1$ on the contour, $a$ being
+independent\footnote{$\absval{U}$ is a continuous function of $z$ on
+  $C$, and so \emph{attains} its upper bound
+  (\hardsubsectionref{3}{6}{2}). Hence its upper bound $a$ must be
+  less than $1$.} of $z$.
 
-= a,2' (l + tO, where | f/"! a < 1 on the contour, a being
-independent* of 2. Therefore the number of roots of f z) contained in
-C
+Therefore the number of roots of $f(z)$ contained in $C$
+$$
+= \frac{1}{2 \pi i} \int_{C} \frac{f'(z)}{f(z)} \dmeasure z
+= \frac{1}{2 \pi i}
+\int_{C} \theparen{ \frac{k}{z}
+  + \frac{1}{1+U} \frac{ \dd U }{ \dd z }
+} \dmeasure z
+$$
 
-27 jc/(2) 2injc\ s l+U dzj
-
-But I - - 2T!-i; and, since | C/'|<1, we can expand (1 + U)~' in the
-uniformly cou- vergent series
+But $\int_{C} \frac{\dd z}{z} = 2 \pi i$; and, since $\absval{U} < 1$,
+we can expand $(1 + U)^{-1}$ in the uniformly convergent series
+$$
+1 - U + U^{2} - U^{3} + \cdots,
+$$
+so
+$$
+TODO
+$$
 
 Therefore the number of roots contained in C is equal to i: Example 3.
 Find how mauy I'oots of the equation
 
 26 + 62+10=0 lie in each quadrant of the Argaud diagram. (Clare,
 1900.)
-
-* I C/ 1 is a continuous function of z on C, and so attains its upper
-bound (§ 3-62). Hence its upper bound a must be less than 1.
 
 %
 % 121
