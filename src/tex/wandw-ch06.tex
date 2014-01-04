@@ -1089,17 +1089,42 @@ inside\footnote{$f'(z)$ does not vanish on $C$ unless $C$ has a node
   on  $\phi^{2} + \psi^{2} = M^{2}$.
 } $C$ is
 $$
-TODO
+\frac{1}{2\pi i} 
+\int_{C} \frac{ f'(z) }{f(z)} \dmeasure z
+-
+\frac{1}{2\pi i}
+\int_{C} \frac{ f''(z) }{ f'(z) } \dmeasure z
+=
+-\frac{1}{2 \pi i}
+\int_{C} \theparen{
+  \left.
+    \frac{ \dd^{2} \theta }{ \dd z^{2} }
+  \right/
+  \frac{\dd\theta}{\dd z}
+  } \dmeasure z.
 $$
 Let $s$ be the arc of $C$ measured from a fixed point and let $\psi$
 be the angle the tangent to $C$ makes with $Ox$; then
 \begin{align*}
-  TODO
+-\frac{1}{2 \pi i}
+\int_{C} \theparen{
+  \left.
+    \frac{ \dd^{2} \theta }{ \dd z^{2} }
+  \right/
+  \frac{\dd\theta}{\dd z}
+  } \dmeasure z
   &=
-  TODO
+  - \frac{1}{2 \pi i}
+  \thebracket{ \log \frac{\dd\theta}{\dd z} }_{C}
   \\
   &=
-  TODO.
+  - \frac{1}{2 \pi i}
+  \thebracket{
+    \log \frac{\dd\theta}{\dd s}
+    -
+    \log \frac{\dd z}{\dd s}
+  }_{C}
+  .
 \end{align*}
 Now $\log \frac{\dd \theta}{\dd s}$ is purely real and its initial
 value is the same as its final value; and
