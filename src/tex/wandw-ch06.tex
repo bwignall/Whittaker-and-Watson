@@ -1055,52 +1055,70 @@ lie in each quadrant of the Argand diagram.
 
 \Section{6}{4}{Connexion between the zeros of a function and the zeros of its
 derivative.}
+Macdonald\footnote{TODO} has shewn that \emph{if $f(z)$ be a function of $z$
+analytic throughout the interior of a single closed contour $C$, defined
+by the equation $\absval{f(z)} = M$, where $M$ is a constant, then the
+number of zeros of $f(z)$ in this region exceeds the number of zeros of
+the derived function $f'(z)$ in the same region by unity.}
 
-Macdonald* has shewn that if fiz) he a fvMction of z analytic
-throughout the interior of a single closed contour C, defined hy the
-equation \ f z) i = 3 where M is a constant, then the number of zeros
-of f z) in this region exceeds the number of zeros of the derived
-function f z) in the same region hy unity.
-
-On C \ etf z) = 3fe'e; then at points on C
-
-/ =*'"-|- '•" = ' "" 'S-(I) -
-
-Hence, by § 6'31, the excess of the number of zeros oi f z) over the
-number of zeros of/'(s) inside + C is
-
-27 j c f z) ~ 27ri j cf (2) 27rt j c U ' / dz) ' •
-
-Let s be the arc of C measured from a fixed point and let y he the
-angle the tangent to C makes with Ox; then
-
-1 f (dH /de\, 1 r de']
-
--2 ija [dJ I dz) = - 2 ?rS dz]c
-
-I r, d0, dzl
-
-= -2 ir ds- ''Sdsjc-
-
-dB Now log, is purely real and its initial value is the same as its
-final value; and
-
-dz log =i\ j/; hence the excess of the number of zei'os oi f z) over
-the number of zeros of
-
-/' (s) is the change in y rj'iiT in describing the curve C; and it is
-obvious J that if C is any ordinary curve, >// increases by 27r as the
-point of contact of the tangent describes the curve C; this gives the
-required result.
-
-Example 1. Deduce from Macdonald's result the theorem that a
-polynomial of degree n has n zeros.
-
-Example 2. Deduce from Macdonald's result that if a function/ (2),
-analytic for real values of z, has all its coefficients real, and all
-its zeros real and different, then between two consecutive zeros oi f
-z) there is one zero and one only of/' (2).
-
+On C let $f(z) = M e^{i\theta}$; then at points on $C$
+$$
+f'(z) = M e^{i\theta} i \frac{\dd \theta}{\dd z},
+\quad
+f''(z)
+=
+M e^{i\theta}
+\thebrace{
+  i \frac{ \dd^{2} \theta }{ \dd z^{2} }
+  -
+  \theparen{ \frac{\dd \theta}{\dd z} }^{2}
+}.
+$$
+Hence, by \hardsectionref{6}{3}{1}, the excess of the number of zeros
+of $f(z)$ over the number of zeros of $f'(z)$
+inside\footnote{$f'(z)$ does not vanish on $C$ unless $C$ has a node
+  or other singular point; for, if $f = \phi + i\psi$,
+  where $\phi$ and $\psi$ are real, since
+  $i \frac{\partial f}{\partial x} = \frac{\partial f}{\partial y}$,
+  it follows that if $f'(z) = 0$ at any point, then
+  $\frac{\partial \phi}{\partial x},
+  \frac{\partial \phi}{\partial y},
+  \frac{\partial \psi}{\partial x},
+  \frac{\partial \psi}{\partial y}$
+  all vanish; and these are sufficient conditions for a singular point
+  on  $\phi^{2} + \psi^{2} = M^{2}$.
+} $C$ is
+$$
+TODO
+$$
+Let $s$ be the arc of $C$ measured from a fixed point and let $\psi$
+be the angle the tangent to $C$ makes with $Ox$; then
+\begin{align*}
+  TODO
+  &=
+  TODO
+  \\
+  &=
+  TODO.
+\end{align*}
+Now $\log \frac{\dd \theta}{\dd s}$ is purely real and its initial
+value is the same as its final value; and
+$\log \frac{\dd z}{\dd s} = i \psi$; hence the excess of the number of
+zeros of $f(z)$ over the number of zeros of
+$f'(z)$ is the change in $\psi/2\pi$ in describing the curve $C$; and it is
+obvious\footnote{For a formal proof, see TODO} that if $C$ is any
+ordinary curve, $\psi$ increases by $2\pi$ as the point of contact of
+the tangent describes the curve $C$; this gives the required result.
+\begin{wandwexample}
+  Deduce from Macdonald's result the theorem that a
+  polynomial of degree $n$ has $n$ zeros.
+\end{wandwexample}
+\begin{wandwexample}
+  Deduce from Macdonald's result that if a function $f(z)$,
+  analytic for real values of $z$, has all its coefficients real, and all
+  its zeros real and different, then between two consecutive zeros of
+  $f(z)$ there is one zero and one only of $f'(z)$.
+\end{wandwexample}
 REFERENCES.
 
 M. C. Jordan, Cours dJ Analyse, 11. (Paris, 1894), Ch. vi.
@@ -1108,20 +1126,6 @@ M. C. Jordan, Cours dJ Analyse, 11. (Paris, 1894), Ch. vi.
 E. GouRSAT, Cours d' Analyse (Paris, 1911), Ch. xiv.
 
 E. LiNDELOF, Le Calcid des Residus (Paris, 1905), Ch. il.
-
-* Froc. London Math. Soc. xxix. (1898), pp. 576, 577.
-
-t /' ( 2) does not vanish on C unless C has a node or other singular
-point; for, if f= <p + i\ p,
-
-where <A and xL are real, since i J- - /-, it follows that if /'(2) =
-at any point, then ax dy
-
- ,, ~, all vanish; and these are sufficient conditions for a
-singular point on ox dy ox ay
-
-X For a formal proof, see Proc. London Math. Soc. (2), xv. (1916), pp.
-227-242.
 
 %
 % 122
