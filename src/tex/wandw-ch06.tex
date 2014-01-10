@@ -1175,183 +1175,217 @@ Miscellaneous Examples.
   \addexamplecitation{Trinity, 1898.}
 \item
   By integrating $\frac{e^{\pm aiz}}{e^{2\pi z}-1}$ round a contour formed by the rectangle whose
-corners are $0, R, R+i, i$ (the rectangle being indented at $0$ and
-$i$) and making $R\rightarrow\infty$,
-shew that
-$$
-\int_{0}^{\infty}
-\frac{ \sin ax }{e^{2 \pi x} - 1}
-\dmeasure x
-=
-\frac{1}{4}
-\frac{ e^{a} + 1 }{ e^{a} - 1 }
--
-\frac{1}{2a}.
-$$
-\addexamplecitation{Legendre.}
+  corners are $0, R, R+i, i$ (the rectangle being indented at $0$ and
+  $i$) and making $R\rightarrow\infty$,
+  shew that
+  $$
+  \int_{0}^{\infty}
+  \frac{ \sin ax }{e^{2 \pi x} - 1}
+  \dmeasure x
+  =
+  \frac{1}{4}
+  \frac{ e^{a} + 1 }{ e^{a} - 1 }
+  -
+  \frac{1}{2a}.
+  $$
+  \addexamplecitation{Legendre.}
 
-3. By integrating $\log (-z) Q(z)$ round the contour of
-\hardsubsectionref{6}{2}{4}, where $Q(z)$ is a rational function such
-that  $z Q(z) \rightarrow 0$ as $\absval{z} \rightarrow 0$ and as
-$\absval{z} \rightarrow \infty$, shew that if $Q(z)$ has no poles 
-on the positive part of the real axis, I Q (.r) dx is equal to minus
-the sum of the
+\item
+  By integrating $\log (-z) Q(z)$ round the contour of
+  \hardsubsectionref{6}{2}{4}, where $Q(z)$ is a rational function such
+  that  $z Q(z) \rightarrow 0$ as $\absval{z} \rightarrow 0$ and as
+  $\absval{z} \rightarrow \infty$, shew that if $Q(z)$ has no poles 
+  on the positive part of the real axis,
+  $\int_{0}^{\infty} Q(x) \dmeasure x$ is equal to minus
+  the sum of the residues of $\log(-z) Q(z)$ at the poles of
+  $Q(z)$; where the imaginary part of $\log(-2)$ lies between $\pm\pi$.
 
-.' residues of log -z)Q (2) at the poles of Q (z); where the
-imaginary part of log ( - 2) lies between ± tt.
+\item
+  Shew that, if $a > 0, b > 0$,
+  $$
+  \int_{0}^{\infty}
+  e^{a \cos bx} \sin (a \sin bx) \frac{\dmeasure x}{x}
+  =
+  \half \pi \theparen{ e^{a} - 1 }.
+  $$
 
-4. Shew that, if a > 0, 6 > 0,
+\item
+  Shew that
+  $$
+  \int_{0}^{\half\pi}
+  \frac{a \sin 2x}{1 - 2a \cos 2x + a^{2}}
+  x \dmeasure x
+  =
+  \begin{cases}
+    \frac{1}{4} \pi \log (1+a), & (-1<a<1)
+    \\
+    \frac{1}{4} \pi \log (1+a^{-1}), & (a^{2} > 1).
+  \end{cases}
+  $$
+%  \addexamplecitation{Cauchy.}
+\item Shew that
+  $$
+  \int_{0}^{\infty}
+  \frac{\sin \phi_{1}x}{x}
+  \frac{\sin \phi_{2}x}{x}
+  \cdots
+  \frac{\sin \phi_{n}x}{x}
+  \cos a_{1} x
+  \cdots
+  \cos a_{m} x
+  \frac{ \sin ax }{x}
+  \dmeasure x
+  =
+  \frac{\pi}{2} \phi_{1} \phi_{2} \cdots \phi_{n},
+  $$
+  if $\phi_{1}, \phi_{2}, \ldots \phi_{n}, a_{1}, a_{2}, \ldots a_{m}$
+  be real and $a$ be positive and
+  $$
+  a
+  >
+  \absval{\phi_{1}}
+  + \absval{\phi_{2}}
+  + \cdots
+  + \absval{\phi_{n}}
+  + \absval{a_{1}}
+  + \cdots
+  + \absval{a_{m}}.
+  $$
+  \addexamplecitation{TODO Stormer, Acta Math, xix.}
+  %
+\item
+  If a point $z$ describes a circle $C$ of centre $a$, and if
+  $f(z)$ be analytic throughout $C$ and its interior except at a
+  number of poles inside $C$, then the point $u=f(z)$ will
+  describe a closed curve $\gamma$ in the $u$-plane.
+  Shew that if to each element of $\gamma$ be attributed
+  a mass proportional to the corresponding element of $C$, the centre of
+  gravity of $\gamma$ is the 
+  point $r$, where $r$ is the sum of the residues of
+  $\frac{f(z)}{z-a}$ at its poles in the interior of $C$.
+  \addexamplecitation{TODO Amigues, Noiiv. Ann. de Math. (.3), xii. (1893), pp. 142-148.}
+  % 
+\item  Shew that
 
-f dv
+  TODO
 
-I e cos6xgii (a sin hx)- =-|7r(e -l).
+\item 
+  Shew that
 
-5. Shew that
-
-TODO
-
-6. Shew that
-
-\addexamplecitation{Cauchy.}
-
-TODO
-
-if < i) 02)  ni oi) a-i) o-m be real and a be positive and
-
-TODO
-
-\addexamplecitation{Stormer, Acta Math, xix.}
-
-7. If a point 2 describes a circle C of centre a, and if /(2) be
-analytic throughout
-
-C and its interior except at a number of poles inside C, then the
-point u=f z) will
-
-describe a closed curve y in the w-plane. Shew that if to each element
-of y be attributed
-
-a mass proportional to the corresponding element of C, the centre of
-gravity of y is the
-
-flz) point r, where r is the sum of the residues of  - -!- at its
-poles in the interior of C.
-
-(Amigues, Noiiv. Ann. de Math. (.3), xii. (1893), pp. 142-148.)
-
-8. Shew that
-
-TODO
-
-9. Shew that
-
-TODO
+  TODO
 
 %
 % 123
 %
 
-10. If Fn z)= n n (1 - 2' P), shew that the series
+\item 
+  If Fn z)= n n (1 - 2' P), shew that the series
 
-m = l ]i=l
+  m = l ]i=l
 
-fiz)=- I "( '' ")
+  fiz)=- I "( '' ")
 
-1=2 (2"??~"-l)%""
+  1=2 (2"??~"-l)%""
 
-is an analytic function when z is not a root of any of the equations
-2" = %"; and that the sum of the residues of f z) contained in the
-ring-shaped space inchided between two circles whose centres are at
-the origin, one having a small radius and the other having a radius
-between n and n + 1, is equal to the number of prime numbers less than
-n + l. (Laurent, A' oiiv. Aim. de Math. (3), xviii. (1899), pp.
-234-241.)
+  is an analytic function when z is not a root of any of the equations
+  2" = %"; and that the sum of the residues of f z) contained in the
+  ring-shaped space inchided between two circles whose centres are at
+  the origin, one having a small radius and the other having a radius
+  between n and n + 1, is equal to the number of prime numbers less than
+  n + l. (Laurent, A' oiiv. Aim. de Math. (3), xviii. (1899), pp.
+  234-241.)
 
-11. If -4 and B represent on the Argand diagram two given roots (real
-or imaginary) of the equation /(j) = of degree n, with real or
-imaginary coefficients, shew that there is at least one root of the
-equation/' z) = within a circle whose centre is the middle point
+\item 
+  If -4 and B represent on the Argand diagram two given roots (real
+  or imaginary) of the equation /(j) = of degree n, with real or
+  imaginary coefficients, shew that there is at least one root of the
+  equation/' z) = within a circle whose centre is the middle point
 
-of J and whose radius is lAB cot - . (Grace, Proc. Camb. Phil. Soc.
-xi.)
+  of J and whose radius is lAB cot - . (Grace, Proc. Camb. Phil. Soc.
+  xi.)
 
-n
+  n
 
-12. Shew that, if 0<i'<l,
+\item
+  Shew that, if 0<i'<l,
 
-= s - lim 2
+  = s - lim 2
 
-[Consider /
+  [Consider /
 
-g 2v-l)ziri 2
+  g 2v-l)ziri 2
 
-round a circle of radius + 5; and make /i- -x .]
+  round a circle of radius + 5; and make /i- -x .]
 
-s\ nirz z - x
+  s\ nirz z - x
 
-\addexamplecitation{Kronecker, Journal fiir Math, cv.} 1 3. Shew that, if m > 0, then
+  \addexamplecitation{Kronecker, Journal fiir Math, cv.} 1 3. Shew that, if m > 0, then
 
-TODO
-Discuss the discontinuity of the integral at m = 0.
+  TODO
+  Discuss the discontinuity of the integral at m = 0.
 
-14. If A + B + C+ ...=0 and a, b, c, ... are positive, shew that
+\item
+  If A + B + C+ ...=0 and a, b, c, ... are positive, shew that
 
-TODO
+  TODO
 
-\addexamplecitation{Wolstenholme.}
+  \addexamplecitation{Wolstenholme.}
 
-/gX(*+ )   1
+  /gX(*+ )   1
 
-15. By considering I -j r dt taken round a rectangle indented at the
-origin, shew
+\item
+  By considering I -j r dt taken round a rectangle indented at the
+  origin, shew
 
-that, if k > 0,
+  that, if k > 0,
 
-TODO
+  TODO
 
-and hence deduce, by using the contour of \hardsubsubsectionref{6}{2}{2}{2} example TODO, or its
-reflexion in the real axis (according as a; or .v < 0), that
+  and hence deduce, by using the contour of \hardsubsubsectionref{6}{2}{2}{2} example TODO, or its
+  reflexion in the real axis (according as a; or .v < 0), that
 
-TODO
+  TODO
 
-according as x>0, x = or x < 0. *
+  according as x>0, x = or x < 0. *
 
-[This integral is known as Cauchy's discontinuous factw.'] 1 6. Shew
-that, if < a < 2, 6 > 0, / > 0, then
+  [This integral is known as Cauchy's discontinuous factw.'] 1 6. Shew
+  that, if < a < 2, 6 > 0, / > 0, then
 
-TODO
+  TODO
 
 %
 % 124
 %
 
-17. Let TODO
+\item
+  Let TODO
 
-TODO
+  TODO
 
-By considering / - - -dz round a rectangle whose corners are ± JV+
-)±i, where N is an integer, and making N-*- qo, shew that
+  By considering / - - -dz round a rectangle whose corners are ± JV+
+  )±i, where N is an integer, and making N-*- qo, shew that
 
-By expanding these integrands in powers of e~ ', e-"" respectively
-and integrating term-by-term, deduce from\hardsubsectionref{6}{2}{2} example 3 that
+  By expanding these integrands in powers of e~ ', e-"" respectively
+  and integrating term-by-term, deduce from\hardsubsectionref{6}{2}{2} example 3 that
 
-TODO
+  TODO
 
-Hence, by putting t = l shew that
+  Hence, by putting t = l shew that
 
-TODO
+  TODO
 
-(This result is due to Poisson, Journal de VEcole foly technique, xii.
-(cahier xix), (1823), p. 420; see also Jacobi, Journal fiir Math,
-xxxvi. (1848), p. 109 [Oes. Werke, ii. (1882), p. 188].) 
+  (This result is due to Poisson, Journal de VEcole foly technique, xii.
+  (cahier xix), (1823), p. 420; see also Jacobi, Journal fiir Math,
+  xxxvi. (1848), p. 109 [Oes. Werke, ii. (1882), p. 188].) 
 
-18. Shew that, if i;>0,
+\item
+  Shew that, if i;>0,
 
-TODO
+  TODO
 
-(Poisson, Mem. de I'Acad. des Sci. vi. (1827), p. 592; Jacobi,
-Journal fur Math. ill. (1828), pp. 403-404 [Ges. Werke, i. (1881), pp.
-264-265]; and Landsberg, Journal fur Math. CXI. (1893), pp. 234-253;
-see also\hardsubsectionref{21}{5}{1}.)
+  (Poisson, Mem. de I'Acad. des Sci. vi. (1827), p. 592; Jacobi,
+  Journal fur Math. ill. (1828), pp. 403-404 [Ges. Werke, i. (1881), pp.
+  264-265]; and Landsberg, Journal fur Math. CXI. (1893), pp. 234-253;
+  see also\hardsubsectionref{21}{5}{1}.)
 
 \end{enumerate}
