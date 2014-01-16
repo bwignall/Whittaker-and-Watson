@@ -1327,9 +1327,25 @@ Miscellaneous Examples.
   \addexamplecitation{TODO Kronecker, Journal fiir Math, cv.}
 \item
   Shew that, if $m > 0$, then
-
-  TODO
-  Discuss the discontinuity of the integral at m = 0.
+  \begin{align*}
+    \int_{0}^{\infty}
+    \frac{\sin^{n} mt}{t^{n}} \dmeasure t
+    \\
+    =
+    \frac{\pi m^{n-1}}{2^{n} (n-1)!}
+    \theparen{
+      n^{n-1}
+      -
+      \frac{n}{1} (n-2)^{n-1}
+      +
+      \frac{n(n-1)}{2} (n-4)^{n-1}
+      -
+      \frac{n(n-1)(n-2)}{3!} (n-6)^{n-1}
+      +
+      \cdots
+    }.
+  \end{align*}
+  Discuss the discontinuity of the integral at $m = 0$.
 
 \item
   If $A + B + C + \cdots = 0$ and $a, b, c, \ldots$ are positive, shew that
