@@ -1392,25 +1392,51 @@ Miscellaneous Examples.
 %
 
 \item
-  Let TODO
+  Let $t>0$ and let
+  $
+  \sum_{n=-\infty}^{\infty}
+  e^{-n^{2} \pi t}
+  =
+  \psi(t).
+  $
 
-  TODO
+  By considering
+  $
+  \int \frac{e^{-z^{2} \pi t}}{e^{2\pi i z} - 1} \dmeasure z
+  $
+  round a rectangle whose corners are
+  $\pm (N+\half) \pm i$, where $N$ is an integer,
+  and making $N \rightarrow \infty$, shew that
+  $$
+  \psi(t)
+  =
+  \int_{-\infty - i}^{\infty - i}
+  \frac{e^{-z^{2} \pi t}}{e^{2\pi i z} - 1} \dmeasure z
+  -
+  \int_{-\infty + i}^{\infty + i}
+  \frac{e^{-z^{2} \pi t}}{e^{2\pi i z} - 1} \dmeasure z.
+  $$
 
-  By considering / - - -dz round a rectangle whose corners are ± JV+
-  )±i, where N is an integer, and making N-*- qo, shew that
+  By expanding these integrands in powers of
+  $e^{-2\pi i z}, e^{2\pi i z}$
+  respectively
+  and integrating term-by-term, deduce from\hardsubsectionref{6}{2}{2} example TODO that
+  $$
+  \psi(t)
+  =
+  \frac{1}{ \sqrt{\pi t} }
+  \psi(1/t)
+  \int_{-\infty}^{\infty} e^{-x^{2}} \dmeasure x.
+  $$
+  
+  Hence, by putting $t = 1$ shew that
+  $$
+  \psi(t) = t^{-\half} \psi(1/t).
+  $$
 
-  By expanding these integrands in powers of e~ ', e-"" respectively
-  and integrating term-by-term, deduce from\hardsubsectionref{6}{2}{2} example 3 that
-
-  TODO
-
-  Hence, by putting t = l shew that
-
-  TODO
-
-  (This result is due to Poisson, Journal de VEcole foly technique, xii.
+  (This result is due to TODOPoisson, Journal de VEcole foly technique, xii.
   (cahier xix), (1823), p. 420; see also Jacobi, Journal fiir Math,
-  xxxvi. (1848), p. 109 [Oes. Werke, ii. (1882), p. 188].) 
+  xxxvi. (1848), p. 109 [Ges. Werke, ii. (1882), p. 188].) 
 
 \item
   Shew that, if $t>0$,
