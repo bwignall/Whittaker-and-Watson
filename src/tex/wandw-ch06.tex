@@ -1361,21 +1361,37 @@ Miscellaneous Examples.
   $$
   \addexamplecitation{Wolstenholme.}
 \item
-  By considering I -j r dt taken round a rectangle indented at the
-  origin, shew
+  By considering
+  $
+  \int \frac{e^{x(k+ti)}}{k+ti} \dmeasure t
+  $
+  taken round a rectangle indented at the origin, shew
+  that, if $k > 0$,
+  $$
+  i \lim_{\rho\rightarrow\infty}
+  \int_{-\rho}^{\rho}
+  \frac{e^{x(k+ti)}}{k+ti} \dmeasure t
+  =
+  \pi i
+  +
+  \lim_{\rho\rightarrow\infty}
+  P \int_{-\rho}^{\rho} \frac{e^{xti}}{t} \dmeasure t,
+  $$
+  and hence deduce, by using the contour of
+  \hardsubsubsectionref{6}{2}{2}{2} example 
+  TODO:citeEx2, or its reflexion in the real axis
+  (according as $x \geq 0$ or $x < 0$), that
+  $$
+  \lim_{\rho\rightarrow\infty}
+  \frac{1}{\pi}
+  \int_{-\rho}^{\rho}
+  \frac{e^{x(k+ti)}}{k+ti} \dmeasure t
+  =
+  2,\, , 1,\, \textrm{or } 0,
+  $$
+  according as $x>0$, $x = 0$, or $x < 0$.
 
-  that, if k > 0,
-
-  TODO
-
-  and hence deduce, by using the contour of \hardsubsubsectionref{6}{2}{2}{2} example TODO, or its
-  reflexion in the real axis (according as a; or .v < 0), that
-
-  TODO
-
-  according as x>0, x = or x < 0. *
-
-  [This integral is known as Cauchy's discontinuous factw.']
+  [This integral is known as Cauchy's discontinuous factor.]
 %
 \item
   Shew that, if $0 < a < 2, b > 0, r > 0$, then
