@@ -21,17 +21,23 @@ Then if $0 \leq t \leq 1$, we have by differentiation
 
 Noting that $\phi^{(n)}(t)$ is constant $= \phi^{(n)}(0)$, and integrating
 between the limits $0$ and $1$ of $t$, we get
-
-< ' )(0) /( ) -/( )]
-
-= t (-)' -n2- r < "'""''(i)/"'"( ) -</>'"""'' (0)/ <' '( )
-
-+ (-)" (z - a)"+' I </) (0/*" " ( + ( - a)) c,
-
+\begin{align*}
+  \phi^{(n)}(0) \thebrace{ f(z) - f(a) }
+  \\
+  =&
+  \sum_{m=1}^{n} (-)^{m-1} (z-a)^{m}
+  \thebrace{
+    \phi^{(n-m)}(1) f^{(m)}(z) - \phi^{(n-m)}(0) f^{(m)}(a)
+  }
+  \\
+  &
+  + (-)^{n} (z-a)^{n+1}
+  \int_{n}^{1} \phi(t) f^{(n+1)}(a + t(z-a)) \dmeasure t,
+\end{align*}
 which is the formula in question.
 
 Taylor's series may be obtained as a special case of this by writing
-4> t) = (t- 1 )" and making - >ao .
+$\phi(t) = (t-1)^{n}$ and making $n\rightarrow\infty$.
 
 Example. By sub.stitutiug 2?i for n in the formula of Darboux, aud
 taking ( (0 = t t- 1)", obtain the expansion (supposed convergent)
