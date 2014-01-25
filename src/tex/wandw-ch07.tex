@@ -93,61 +93,92 @@ $$
 These numbers can be expressed as definite integrals as follows:
 
 We have, by example TODO:2 (p. TODO:122) of Chapter TODO:VI,
-
-l" " sin pxdx 1 i, .
-
-J; -. = - + cot tp
-
-(
+\begin{align*}
+  \int_{0}^{\infty}
+  \frac{\sin px \dmeasure x}{e^{\pi x} - 1}
+  =&
+  -\frac{1}{2p} + \frac{i}{2} \cot ip
+  \\
+  =&
+  -\frac{1}{2p}
+  +
+  \frac{i}{2} \thebrace{
+    1
+    + B_{1} \frac{(2p)^{2}}{2!}
+    - B_{2} \frac{(2p)^{4}}{4!}
+    + \cdots
+    }.
+\end{align*}
 
 Since
-
-a.'" sin px- - mT\
-
-dx
-
-e' - 1
-
-converges uniformly (by de la Vallee Poussin's tegt) near jo = we may,
-by \hardsubsectionref{4}{4}{4} corollary, differentiate both sides of this equation any
-number of times and then put p = 0\ doing so and writing 2t for x, we
-obtain
-
-f"'*-i dt
-
+$$
+\int_{0}^{\infty}
+\frac{x^{n} \sin \theparen{px + \half n \pi}}{e^{\pi x} - 1}
+\dmeasure 
+$$
+converges uniformly (by de la Vall\'ee Poussin's test) near
+$p=0$ we
+may, by \hardsubsectionref{4}{4}{4} corollary, differentiate both
+sides of this equation any number of times and then put $p = 0$; doing
+so and writing $2t$ for $x$, we obtain
+$$
+B_{n}
+=
+4n
+\int_{0}^{\infty}
+\frac{t^{2n-1} \dmeasure t}{e^{2\pi t} - 1}.
+$$
+%\begin{remark}
 A proof of this result, depending on contour integration, is given by
 Carda, Monatshefte fur Math, v.nd Phys. v. (1894), pp. 321-4.
+%\end{remark}
 
+TODO:fixexample
 Example. Shew that
+$$
+B_{n}
+=
+\frac{2n}{\pi^{2n} (2^{2n}-1)}
+\int_{0}^{\infty}
+\frac{x^{2n}-1}{\sinh x}
+> 0.
+$$
 
-"~7! 2,i- 1) jp sinh.r
+Now consider the function $t \frac{e^{zt}-1}{e^{t}-1}$, which may be
+expanded into a
+Maclaurin series in powers of $t$ valid when $\absval{t} < 2\pi$.
 
-e * - 1 .
+\emph{The \Bernoulli an polynomial\footnote{TODO The name was given by
+    Raabe, Journal filr Math. xlii. (1851), p.348.} of order $n$} is
+defined to be the coefficient of $\frac{t^{n}}{n!}$
+in this expansion. It is denoted by $\phi_{n}(z)$, so that
+$$
+t \frac{e^{zt}-1}{e^{t}-1}
+=
+\sum_{n=1}^{\infty}
+\frac{\theta_{n}(z) t^{n}}{n!}.
+$$
 
-Now consider the function t - - ~, which may be expanded mto a
+This polynomial possesses several important properties. Writing $z+1$
+for $z$ in the preceding equation and subtracting, we find that
+$$
+t e^{zt}
+=
+\sum_{n=1}^{\infty}
+\thebrace{
+  \phi_{n}(z+1) - \phi_{n}(z)
+}
+\frac{t^{n}}{n!}.
+$$
 
-Maclaurin series in powers of t valid when | j < lir.
-
-The \Bernoulli an polynomial* of order v is defined to be the
-coefficient of
-
-in this expansion. It is denoted by < (z), so that
-
-t, - V - -i,
-
-ot\ l
-
-n = l
-
-This polynomial possesses several important properties. Writing z+1
-for z in the preceding equation and subtracting, we find that
-
-te '= i .[, ( + l)-0,( ),. On equating coefficients of t" on both
+On equating coefficients of $t^{n}$ on both
 sides of this equation we obtain
-
-which is a difference-equation satisfied by the function (pn (z)-
-
-* The name was given by Raabe, Journal filr Math. xlii. (1851), p.348.
+$$
+n z^{n-1}
+=
+\phi_{n}(z+1) - \phi_{n}(z),
+$$
+which is a difference-equation satisfied by the function $\phi_{n}(z)$.
 
 %
 % 127
