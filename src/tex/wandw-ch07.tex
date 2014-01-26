@@ -186,25 +186,82 @@ which is a difference-equation satisfied by the function $\phi_{n}(z)$.
 
 An explicit expression for the \Bernoulli an polynomials can be obtained
 as follows. We have
-
-t t t t t Bjt- B t*
+$$
+e^{zt} - 1
+=
+zt
++ \frac{z^{2}t^{2}}{2!}
++ \frac{z^{3}t^{3}}{3!}
++ \cdots,
+$$
+and
+$$
+\frac{t}{e^{t}-1}
+=
+\frac{t}{2i} \cot \frac{t}{2i} - \frac{t}{2}
+=
+1 
+- \frac{t}{2}
++ \frac{B_{1} t^{2}}{2!}
+- \frac{B_{2} t^{4}}{4!}
++ \cdots.
+$$
 
 Hence
+$$
+\sum_{n=1}^{\infty}
+\frac{\phi_{n}(z) t^{n}}{n!}
+=
+\thebrace{
+  zt
+  + \frac{z^{2} t^{2}}{2!}
+  + \frac{z^{3} t^{3}}{3!}
+  + \cdots
+}
+\thebrace{
+  1
+  - \frac{t}{2}
+  + \frac{B_{1} t^{2}}{2!}
+  - \frac{B_{2} t^{4}}{4!}
+  + \cdots
+}.
+$$
 
-From this, by equating coefficients of P \hardsubsectionref{3}{7}{3}), we have
-
-</) z) = z''-\ nz''-' + nG,B, z' -- - nC,B,z -' + nCeB,z"-' -...,
-
-the last term being that in z or z- and,162, n( \,   being the
-binomial coefficients; this is the Maclaurin series for the nth
+From this, by equating coefficients of $t^{n}$
+(\hardsubsectionref{3}{7}{3}), we have
+$$
+\phi_{n}(z)
+=
+z^{n}
+- \half n z^{n-1}
++ \binomialcoeff{n}{2} B_{1} z^{n-2}
+- \binomialcoeff{n}{4} B_{2} z^{n-4}
++ \binomialcoeff{n}{6} B_{3} z^{n-6}
+- \cdots,
+$$
+the last term being that in $z$ or $z^{2}$ and 
+$\binomialcoeff{n}{2}, \binomialcoeff{n}{4},\ldots$  being the
+binomial coefficients; this is the Maclaurin series for the $n$th
 \Bernoulli an polynomial.
+%\begin{Remark}
+When $z$ is an integer, it may be seen from the difference-equation that
+$$
+\phi_{n}(z)/n
+=
+1^{n-1}
++ 2^{n-1}
++ \cdots + (z-1)^{n-1}.
+$$
 
-When z is an integer, it may be seen from the difference-equation that
+The Maclaurin series for the
+expression on the right was given by \Bernoulli. 
 
- / (0)/ =l -' + 2"-' + ...+(2-l)"--. The Maclaurin series for the
-expression on the right was given by \Bernoulli. Example. Shew that,
-when n>\,
-
+TODO:example
+Example. Shew that, when $n > 1$,
+$$
+\phi_{n}(z) = (-)^{n} \phi_{n}(1-z).
+$$
+%\end{Remark}
 \Subsection{7}{2}{1}{The Euler-Maclaurin expansion.}
 
 In the formula of Darboux \hardsectionref{7}{1}) write </>n(0 ' 4' )> where (f>n t)
