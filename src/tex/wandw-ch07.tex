@@ -278,19 +278,26 @@ $$
 n (n-t) \cdots k t^{k-1}
 $$
 Putting $t=0$ in this, we have
-$\phi_{n}^{(n-k)}(1) = \phi_{n}^{(n-k)}(0).
+$\phi_{n}^{(n-k)}(1) = \phi_{n}^{(n-k)}(0).$
 
 Now, from the Maclaurin
-series for,1 (z), we have if k >
+series for $\phi_{n}(z)$, we have if $k > 0$
+\begin{align*}
+  \phi_{n}^{(n-2k-1)}(0) = 0,
+  &
+  \quad
+  \phi_{n}^{(n-2k)}(0) = \frac{n!}{(2k)!} (-)^{k-1} B_{k},
+  \\
+  \phi_{n}^{(n-1)}(0) = -\half n!,
+  &
+  \quad
+  \phi_{n}^{(n)}(0) = n!.
+\end{align*}
 
-< n<"- *- ' (0) = 0, </),<"- ) (0) = (-)'-'B,,
-
-, (n-i)(0) = -l.n:, <,< ' (0) =; !.
-
-Substituting these values of n*"~*' (1) and,i'"~** (0) in Darboux's
-result, we obtain the Euler-Maclaurin sum formula*,
-
-* A history of the formula is given by Barnes, Proc. London Math. Soc.
+Substituting these values of $\phi_{n}^{(n-k)}(1)$ and
+$\phi_{n}^{(n-k)}(0)$ in Darboux's
+result, we obtain the Euler-Maclaurin sum
+formula\footnote{TODO A history of the formula is given by Barnes, Proc. London Math. Soc.
 (2), iii. (1905), p. 253. It was discovered by Euler (1732), but was
 not published at the time. Euler communicated it (June 9, 1730) to
 Stirling who replied (April 16, 1738) that it included his own theorem
@@ -300,20 +307,30 @@ reply, waived his claims to priority. The theorem was published by
 Euler, Comm. Acad. Imp. Petrop. vi. (1732), [Published 1738], pp.
 68-97, and by Maclaurin in 1742, Treatise on Fluxions, p. 672. For
 information concerning the correspondence between Euler and Stirling,
-we are indebted to Mr C. Tweedie.
+we are indebted to Mr C. Tweedie.},
 
 %
 % 128
 %
+\begin{align*}
+(z-a) f'(a)
+=&
+f(z) - f(a)
+- \frac{z-a}{2} \thebrace{ f'(z) - f'(a) }
+\\
+&
++ \sum_{m=1}^{n-1} \frac{ (-)^{m-1} B_{m} (z-a)^{2m}}{(2m)!}
+\thebrace{f^{(2m)}(z) - f^{(2m)}(a)}
+\\
+&
+-\frac{(z-a)^{2n+1}}{(2n)!}
+\int_{0}^{1} \phi_{(2n)}(t) f^{(2n+1)}\thebrace{ a + (z-a) t }
+\dmeasure t.
+\end{align*}
 
-(z - a)f (a)=f(z) -f(a) - /' (z) -f a)]
-
-tu=\ ni)i
-
-(z - dV* "*"' i ~ (271)! " Jo ' ''' )/'" " [a + z- a) t] dt.
-
-In certain cases the last term tends to zero as n- oo, and we can
-thus obtain an infinite series ior f(z) - f a).
+In certain cases the last term tends to zero as 
+$n \rightarrow \infty$, and we can
+thus obtain an infinite series for $f(z) - f(a)$.
 
 If we write w for z - a and F a;) for/' (x), the last formula becomes
 " F a;) dx = l(o F(a) + F a + o))]
