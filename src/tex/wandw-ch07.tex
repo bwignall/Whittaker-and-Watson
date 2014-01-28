@@ -332,19 +332,25 @@ In certain cases the last term tends to zero as
 $n \rightarrow \infty$, and we can
 thus obtain an infinite series for $f(z) - f(a)$.
 
-If we write w for z - a and F a;) for/' (x), the last formula becomes
-" F a;) dx = l(o F(a) + F a + o))]
+If we write $\omega$ for $z - a$ and $F(x)$ for $f'(x)$, the last formula becomes
+\begin{align*}
+  \int_{a}^{a+\omega} F(x) \dmeasure x
+  =
+  &
+  \half \omega \thebrace{ F(a) + F(a + \omega) }
+  \\
+  &
+  + \sum_{m=1}^{n-1}
+  \frac{(-)^{m} B_{m} \omega^{2m}}{(2m)!}
+  \thebrace{F^{(2m-1)}(a+\omega) - F^{(2m-1)}(a)}
+  \\
+  &
+  + \frac{\omega^{2n+1}}{(2n)!}
+  \int_{0}^{1} \phi_{2n}(t) F^{(2n)}(a + \omega t) \dmeasure t.
+\end{align*}
 
-f
-
-J a
-
-2
-
-+ i
-
-Writing a + (o, a + 2co, ... + (r - 1) co for a in this result and
-adding up, we get
+Writing $a + \omega, a + 2\omega, \ldots, a + (r-1) \omega$
+for $a$ in this result and adding up, we get
 
 r " F(x) dx=oj i F(a) + F a + w) + F a- 2co)+ ... \ F(u + rco)i
 
