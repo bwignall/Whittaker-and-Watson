@@ -351,16 +351,40 @@ If we write $\omega$ for $z - a$ and $F(x)$ for $f'(x)$, the last formula become
 
 Writing $a + \omega, a + 2\omega, \ldots, a + (r-1) \omega$
 for $a$ in this result and adding up, we get
-
-r " F(x) dx=oj i F(a) + F a + w) + F a- 2co)+ ... \ F(u + rco)i
-
-m-l \ \ in)\
-
-where E = --- <, (t) \ X F'-"> a + mco + wt) \ dt.
+\begin{align*}
+\int_{a}^{a + r\omega} F(x) \dmeasure x
+=
+\omega
+ &
+\thebrace{
+  \half F(a) + F(a+\omega) + F(a+2\omega)
+  + \cdots + \half F(a + r\omega)
+}
+\\
+&
++ \sum_{m=1}^{n-1}
+\frac{(-)^{m} B_{m} \omega^{2m}}{(2m)!}
+\thebrace{
+  F^{(2m-1)}(a + r\omega)
+  -
+  F^{(2m-1)}(a)
+}
++ R_{n}
+\end{align*}
+where
+$$
+R_{n}
+=
+\frac{\omega^{2n+1}}{(2n)!}
+\int_{0}^{1} \phi_{2n}(t)
+\thebrace{ \sum_{m=0}^{r-1} F^{(2n)}(a + m\omega + \omega t)}
+\dmeasure t.
+$$
 
 This last formula is of the utmost importance in connexion with the
-numerical evaluation of definite integrals. It is valid if (a;) is
-analytic at all points of the straight line joining a to a + rco.
+numerical evaluation of definite integrals. It is valid if $F(x)$ is
+analytic at all points of the straight line joining 
+$a$ to $a + r \omega$.
 
 Example 1. Iif z) be an odd function of z, shew that
 
