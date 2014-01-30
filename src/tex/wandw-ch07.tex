@@ -256,11 +256,13 @@ $$
 The Maclaurin series for the
 expression on the right was given by \Bernoulli. 
 
-TODO:example
-Example. Shew that, when $n > 1$,
-$$
-\phi_{n}(z) = (-)^{n} \phi_{n}(1-z).
-$$
+%\begin{Remark}
+\begin{wandwexample}
+  Shew that, when $n > 1$,
+  $$
+  \phi_{n}(z) = (-)^{n} \phi_{n}(1-z).
+  $$
+\end{wandwexample}
 %\end{Remark}
 \Subsection{7}{2}{1}{The Euler-Maclaurin expansion.}
 
@@ -386,17 +388,36 @@ numerical evaluation of definite integrals. It is valid if $F(x)$ is
 analytic at all points of the straight line joining 
 $a$ to $a + r \omega$.
 
-Example 1. Iif z) be an odd function of z, shew that
-
-Example 2. Shew, by integrating by parts, that the remainder after n
-terms of the expansion of - s cot - 2 may be written in the form
-
-( \ )n + 1 22ft + 1 fl /o"\ I / 02 i (0 COS (zO < -
-
-(2 ) ! sm2 /o
-
+%\begin{Remark}
+\begin{wandwexample}
+  If $f(z)$ be an odd function of $z$, shew that
+  $$
+  z f'(z)
+  =
+  f(z)
+  +
+  \sum_{m=2}^{n}
+  (-)^{m}
+  \frac{B_{m-1} (2z)^{2m-2}}{(2m-2)!}
+  f^{(2m-2)}(z)
+  -
+  \frac{2^{2n} z^{2n+1}}{(2n)!}
+  \int_{0}^{1}
+  \phi_{2n}(t)
+  f^{(2n+1)}(-z + 2zt)
+  \dmeasure t.
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew, by integrating by parts, that the remainder after $n$
+  terms of the expansion of $\half z \cot \half z$ may be written in the form
+  $$
+  \frac{ (-)^{n+1} z^{2n+1} }{ (2n)! \sin z }
+  \int_{0}^{1} \phi_{2n}(t) \cos (zt) \dmeasure t.
+  $$
 \addexamplecitation{Math. Trip. 1904.}
-
+\end{wandwexample}
+%\end{Remark}
 \Section{7}{3}{Burmanns theorem*.}
 
 We shall next consider several theorems which have for their object
