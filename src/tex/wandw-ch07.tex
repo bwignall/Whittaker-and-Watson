@@ -436,20 +436,43 @@ $$
 
 Suppose also that $\phi'(a) \neq 0$. Then Taylor's theorem furnishes the
 expansion
-
-<l, z)-b = cf ' a)(z-a)+' (z-ay + ..., and if it is legitimate to
-revert this series we obtain
-
-which expresses z as an analytic function of the variable [(j> z)-b],
-for sufficiently small values of | - a . If then /(2:) be analytic
-near z = a, it follows that/(2 ) is an analytic function of [< (z) -
-b] when \ z - a\ is sufficiently small, and so there will be an
+$$
+\phi(z) - b
+=
+\phi'(a) (z-a)
++ \half \phi''(a) (z-a)^{2}
++ \cdots,
+$$
+and if it is legitimate to revert this series we obtain
+$$
+z - a
+=
+\frac{1}{\phi'(a)}
+\thebrace{ \phi(z) - b }
+-
+\half \frac{\phi''(a)}{\thebrace{\phi'(a)}^{3}}
+\thebrace{ \phi(z) - b }^{2}
++ \cdots,
+$$
+which expresses $z$ as an analytic function of the variable
+$\thebrace{ \phi(z) - b }$,
+for sufficiently small values of $\absval{z-a}$. If then $f(z)$ be
+analytic near $z = a$, it follows that $f(z)$ is an analytic function
+of $\thebrace{ \phi(z) - b }$
+when $\absval{z - a}$ is sufficiently small, and so there will be an
 expansion of the form
-
-f z) =/ a) + a, </) (z) - 6 + 1 0 (z) - -J + | </> z)-bY+....
+$$
+f(z)
+=
+f(a)
++ a_{1} \thebrace{ \phi(z) - b }
++ \frac{a_{2}}{2!} \thebrace{ \phi(z) - b }^{2}
++ \frac{a_{3}}{3!} \thebrace{ \phi(z) - b }^{3}
++ \cdots.
+$$
 
 The actual coefficients in the expansion are given by the following
-theorem, which is generally known as Bilrmanns theorem.
+theorem, which is generally known as \emph{\Burmann's theorem}.
 
 Let " (z) be afunctiGn of z defined by the equation 
 
