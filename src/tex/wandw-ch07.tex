@@ -484,13 +484,28 @@ $$
 f(z)
 =
 f(a)
-+ TODO
++
+\sum_{m=1}^{n-1}
+\frac{ \thebrace{\phi(z)-b}^{m} }{m!}
+\frac{\dd^{m-1}}{\dd a^{m-1}}
+\thebracket{
+  f'(a) \psi^{m}(a)
+}
++
+R_{n},
 $$
 where
 $$
 R_{n}
 =
-TODO
+\frac{1}{2 \pi i}
+\int_{a}^{z}
+\int_{\gamma}
+\thebracket{
+  \frac{\phi(z) - b}{\phi(t) - b}
+}^{n-1}
+\frac{ f'(t) \phi'(z) }{\phi(t) - \phi(z)}
+\dmeasure t \dmeasure z,
 $$
 and $\gamma$ is a contour in the $t$-plane, enclosing the points $a$
 and $z$ and such that, if $\zeta$ be any point inside it, the equation
@@ -501,26 +516,12 @@ except\footnote{It is assumed that such a contour can be chosen if
 }
 
 To prove this, we have
-
-1 p f f'(t)<f>'(Odtd
-
-f z)-f a)= f' K)d =
-
-27ri
-
-a J y
-
-+
-
-f' t) )dtd
-
-cf> t)-b
-
--2 (0(0-6
-
-\ m = I 0(0-6
-
- 0(o-6r-M (o-0(r)]j
+\begin{align*}
+  f(z) - f(a)
+  = &
+  \int_{a}^{z} f'(\zeta) \dmeasure \zeta
+  = \frac{1}{2 \pi i} \int_{a}^{z} \int_{\phi} TODO
+\end{align*}
 
 %
 % 130
