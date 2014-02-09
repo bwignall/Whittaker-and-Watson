@@ -529,7 +529,27 @@ To prove this, we have
 
 But, by\hardsectionref{4}{3},
 \begin{align*}
-  TODO
+  &
+  \frac{1}{1 \pi i}
+  \int_{a}^{z} \int_{\gamma}
+  \thebracket{ \frac{\phi(\zeta) - b}{\phi(t) - b} }^{m}
+  \frac{f'(t)\phi'(\zeta)}{\phi(t) - b}
+  \dmeasure t \dmeasure \zeta
+  \\
+  &=
+  \frac{ [\phi(z) - b]^{m+1}] }{2 \pi i (m+1)}
+  \int_{\gamma} \frac{f'(t)}{[\phi(t) - b]^{m+1}} \dmeasure t
+  \\
+  &=
+  \frac{ [\phi(z) - b]^{m+1}] }{2 \pi i (m+1)}
+  \int_{\gamma}
+  \frac{ f'(t) [\psi(t)]^{m+1} }{ (t-a)^{m+1} }
+  \dmeasure t
+  \\
+  &=
+  \frac{ [\phi(z) - b ]^{m+1} }{ (m+1)! }
+  \frac{ \dd^{m} }{ \dd a^{m} }
+  \thebracket{ f'(a) \thebrace{\psi(a)}^{m+1} }.
 \end{align*}
 Therefore, writing
 $m - 1$ for $m$,
@@ -537,7 +557,7 @@ $m - 1$ for $m$,
   TODO
 \end{align*}
 
-If the last integral tends to zero as n- cc, we may VTite the
+If the last integral tends to zero as $n \rightarrow \infty$, we may write the
 right-hand side of this equation as an infinite series.
 
 Example 1. Prove that
