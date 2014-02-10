@@ -554,13 +554,27 @@ But, by\hardsectionref{4}{3},
 Therefore, writing
 $m - 1$ for $m$,
 \begin{align*}
-  TODO
+  f(z) = f(a) +
+  &
+  \sum_{m=1}^{n-1}
+  \frac{ [\phi(z) - b]^{m} }{m!}
+  \frac{\dd^{m-1}}{\dd a^{m-1}}
+  [ f'(a) \thebrace{ \psi(a) }^{m} ]
+  \\
+  &
+  \frac{1}{2 \pi i}
+  \int_{a}^{z} \int_{\gamma}
+  \thebracket{
+    \frac{\phi(\zeta) - b}{\phi(t) - b}
+  }^{n-1}
+  \frac{f'(t) \phi'(\zeta)}{\phi(t) - \phi(\zeta)}
+  \dmeasure t \dmeasure \zeta.
 \end{align*}
 
 If the last integral tends to zero as $n \rightarrow \infty$, we may write the
 right-hand side of this equation as an infinite series.
-
-Example 1. Prove that
+\begin{wandwexample}
+Prove that
 
 where
 
@@ -587,13 +601,14 @@ Arranging therefore the summation in descending indices r, beginning
 with r - n- 1, we have
 
 which gives the required result.
-
-Example 2. Obtain the expansion
+\end{wandwexample}
+\begin{wandwexample}
+  Obtain the expansion
 
 , ., 2 1.. 2.41
 
 SUl''0+ ....
-
+\end{wandwexample}
 %
 % 131
 %
