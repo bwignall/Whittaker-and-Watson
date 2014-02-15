@@ -689,47 +689,66 @@ The general statement of the theorem is due to
 \Teixeira\footnote{TODO Journal f\"ur Math, cxxii. (1900), pp.
   97-123.}, whose exposition we shall follow in this section.
 
-Suppose (i) that $f(z)$ is a function of z analytic in a ring-shaped
-region A, bounded by an outer curve G and an inner curve c; (ii) that
-6 z) is a function analytic on and inside G, and has only one zero a
-within this contour, the zero being a simple one; (iii) that a; is a
-given point within A; (iv) that for all points of C we have
+Suppose (i) that $f(z)$ is a function of $z$ analytic in a ring-shaped
+region $A$, bounded by an outer curve $C$ and an inner curve $c$;
+(ii) that $\theta(z)$ is a function analytic on and inside $C$,
+and has only one zero a
+within this contour, the zero being a simple one;
+(iii) that $x$; is a given point within $A$;
+(iv) that for all points $z$ of $C$ we have
+$$
+\absval{\theta(x)} < \absval{\theta(z)},
+$$
+and for all points $z$ of $c$ we have
+$$
+\absval{\theta(x)} > \absval{\theta(z)}.
+$$
 
-and for all points z oi c we have
-
-\ e x)\ >\ e z).
-
-T h e equation e(z)-d cv)=0
-
-has, in this case, a single root z = x in the interior of G, as is
-seen from the equation f
-
-j\ r e'(z)dz 1 rr ). ... f e'( ) .,
-
-1 r d'(z)dz
-
-27riJc 9 z) '
-
+The equation 
+$$
+\theta(z) - \theta(x) = 0
+$$
+has, in this case, a single root $z = x$ in the interior of $C$, as is
+seen from the equation\footnote{The expansion is justified
+  by\hardsectionref{4}{7}, since
+  $\sum_{n=1}^{\infty} \thebrace{\theta(x)/\theta(z)}^{n}$
+  converges uniformly when $z$
+  is on $C$.}
+\begin{align*}
+  \frac{1}{2 \pi i}
+  \int_{C} \frac{\theta'(z)}{\theta(z) - \theta(x)} \dmeasure z
+  =&
+  \frac{1}{2 \pi i}
+  \thebracket{
+    \int_{C} \frac{\theta'(z)}{\theta(z)} \dmeasure z
+    +
+    \theta(x)
+    \int_{C} \frac{\theta'(z)}{ \thebrace{\theta(z)}^{2}}
+    \dmeasure z
+    + \cdots
+  }
+  \\
+  =&
+  \int{1}{2 \pi i}
+  \int_{C} \frac{\theta'(z)}{\theta(z)} \dmeasure z
+\end{align*}
 of which the left-hand and right-hand members represent respectively
-the number of roots of the equation considered (§ 6 "31) and the
-number of the roots of the equation 6 z) = contained within G.
+the number of roots of the equation considered
+(\hardsubsectionref{6}{3}{1}) and the
+number of the roots of the equation $\theta(z) = 0$ contained within
+$C$.
 
 Cauchy's theorem therefore gives
-
-I f z)\& z)dz f f(z) ' z)dz-
-
-f -L
-
- cd(z)-d(x) Jc
-
-e z)-d x) Jo e z)-d x)\ "
-
-t The expansion is justified by\hardsectionref{4}{7}, since S -! - j- converges
-uniformly when z is on C.
-
-H=l . o[z))
-
-9-2
+$$
+f(x)
+=
+\frac{1}{2 \pi i}
+\thebracket{
+  \int_{C} \frac{f(z) \theta'(z)}{\theta(z) - \theta(x)} \dmeasure z
+  -
+  \int_{c} \frac{f(z) \theta'(z)}{\theta(z) - \theta(x)} \dmeasure z
+}.
+$$
 
 % 
 % 132
