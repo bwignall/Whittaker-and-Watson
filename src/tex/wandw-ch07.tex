@@ -796,17 +796,29 @@ by \hardsectionref{6}{1}.
   
   Shew that, when $\absval{x} > 1$, the second member represents $x^{-1}$.
 \end{wandwexample}
-Example 2. If S" denote the sum of all combinations of the numbers
-
-£2, 42, G ... 2n-2)% taken ni at a time, shew that
-
-. (1) / \ n C<('0
-
-2 sin2,ito (27i + 2j! \ 2?i + 3 2?H-1 ""' 3 /
-
-the expansion being valid for all values of z represented by points
-within the oval whose equation is j sin 2 j = l and which contains the
-point 2 = 0. \addexamplecitation{Teixeira.}
+If $S^{(m)}_{2n}$ denote the sum of all combinations of the numbers
+$$
+2^{2}, 4^{2}, 6^{2}, \ldots, (2n-2)^{2},
+$$
+taken $m$ at a time, shew that
+$$
+\frac{1}{z}
+=
+\frac{1}{\sin z}
++
+\sum_{n=0}^{\infty}
+\frac{(-)^{n+1}}{ (2n+2)! }
+\theparen{
+  \frac{1}{2n+3}
+  - \frac{S^{(1)}_{2(n+1)}}{2n+1}
+  + \cdots
+  + \frac{ (-)^{n} S^{(n)}_{2(n+1)}}{3}
+}
+(\sin z)^{2n+1}
+$$
+the expansion being valid for all values of $z$ represented by points
+within the oval whose equation is $\absval{\sin z} = 1$ and which contains the
+point $z = 0$. \addexamplecitation{\Teixeira.}
 
 \Subsection{7}{3}{2}{Lagrange's theorem.}
 
