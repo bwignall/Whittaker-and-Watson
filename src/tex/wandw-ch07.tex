@@ -828,12 +828,28 @@ $\theta(x) = (x - a) \theta_{1}(x)$. Then $\theta_{1}(x)$ is
 analytic and not zero on or inside $C$ and the contour $c$ can be
 dispensed with; therefore the formulae which give $A_{n}$ and
 $B_{n}$ now become, by\hardsubsectionref{5}{2}{2} and \hardsectionref{6}{1},
-
-\ i\ r f' z)dz 1 c - |/>)|
-
-liTi J c di z) z - a - "
-
-Bn=0.
+\begin{align*} % TODO: multiline?
+  A_{n}
+  =&
+  \int_{C} \frac{f'(z)}{(z-a)^{n} \theta_{1}^{n}(z)} \dmeasure z
+  = \frac{1}{n!} \frac{\dd^{n-1}}{\dd a^{n-1}}
+  \thebrace{
+    \frac{f'(a)}{\theta_{1}^{n}(a)
+    }
+  }
+  \quad (n \geq 1),
+  \\
+  A_{0}
+  =&
+  \int_{C} \frac{f(z) \theta'(z)}{\theta_{1}(z)}
+  \frac{\dmeasure z}{z-a}
+  =
+  f(a),
+  \\
+  B_{n}
+  =&
+  0.
+\end{align*}
 
 %
 % 133
