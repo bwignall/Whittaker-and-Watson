@@ -856,18 +856,34 @@ $B_{n}$ now become, by\hardsubsectionref{5}{2}{2} and \hardsectionref{6}{1},
 %
 
 The theorem of the last section accordingly takes the following form,
-if we write di (z) = l/< (z) :
+if we write $\theta_{1}(z) = 1 / \phi(z)$:
 
-Let f(z) and (f) (z) he functions of z analytic on and inside a
-contour G surrounding a point a, and let t be such that the inequality
-
-\ t z)\ < \ z - a\ is satisfied at all points z on the perimeter of G
-; tJien the equation
-
- =a + t<f> a regarded as an equation in, has one root in the interior
-of G; and further any function of analytic on and inside G can he
-expanded as a power series in t by the formula
-
+\emph{Let $f(z)$ and $\phi(z)$ he functions of $z$ analytic on and inside a
+contour $C$ surrounding a point $a$, and let $t$ be such that the inequality
+$$
+\absval{t \phi(z) } < \absval{z - a}
+$$
+is satisfied at all points $z$ on the perimeter of $C$;
+then the equation
+$$
+\zeta = a + t \phi(\zeta),
+$$
+regarded as an equation in $\zeta$, has one root in the interior
+of $C$; and further any function of $\zeta$ analytic on and inside
+$C$ can be expanded as a power series in $t$ by the formula
+$$
+f(\zeta)
+=
+f(a)
++
+\sum_{n=1}^{\infty}
+\frac{t^{n}}{n!}
+\frac{\dd^{n-1}}{\dd a^{n-1}}
+\thebracket{
+  f'(a) \phi^{n}(a)
+}.
+$$
+}
 This result was published by Lagrange* in 1770.
 
 Example 1. Within the contour surrounding a defined by the inequality
