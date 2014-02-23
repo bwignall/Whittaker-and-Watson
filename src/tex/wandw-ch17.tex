@@ -22,8 +22,8 @@ $$
 can be expanded by Laurent's theorem in a series of positive and
 negative powers of $t$. If the coefficient of $t^{n}$, where $n$ is any
 integer positive or negative, be denoted by
-$\besJ_{n}(z)$\index{Bessel coefficients [$\besJ_{n}(z)$]}, it follows, from 
-\hardsectionref{5}{6}, that 
+$\besJ_{n}(z)$\index{Bessel coefficients [$\besJ_{n}(z)$]}, it follows, from
+\hardsectionref{5}{6}, that
 $$
 \besJ_{n}(z) = \frac{1}{2\pi i} \int^{(0+)} u^{-n-1} e^{\half z \theparen{u
     - \frac{1}{u}}} \dmeasure u.
@@ -34,36 +34,36 @@ $$
 \besJ_{n}(z) = \frac{1}{2\pi i} \theparen{\half z }^{n} \int^{(0+)} t^{-n-1}
 \exp \thebrace{ t - \frac{z^{2}}{4t}  } \dmeasure t
 $$
-since the contour is any one which encircles the origin once 
-counter-clockwise, we may take it to be the circle 
+since the contour is any one which encircles the origin once
+counter-clockwise, we may take it to be the circle
 $\absval{t}=1$; as the integrand can be expanded in a series of powers
 of $z$ uniformly convergent on this contour, it follows from
-\hardsectionref{4}{7} that 
+\hardsectionref{4}{7} that
 $$
 \besJ_{n}(z)
 =
 \frac{1}{2\pi i}
-\sum_{r=0}^{\infty} \theparen{\half z}^{n+2r} 
+\sum_{r=0}^{\infty} \theparen{\half z}^{n+2r}
 \int^{(0+)} t^{-n-r-1} e^{t} \dmeasure t.
 $$
 
-Now the residue of the integrand at $t=0$ is 
-$\thebrace{ (n+r)!  }^{-1}$ by 
-\hardsectionref{6}{1}, when $n+r$ is a positive 
-integer or zero; when $n+r$ is a negative integer 
+Now the residue of the integrand at $t=0$ is
+$\thebrace{ (n+r)!  }^{-1}$ by
+\hardsectionref{6}{1}, when $n+r$ is a positive
+integer or zero; when $n+r$ is a negative integer
 the residue is zero.
 
-Therefore, if $n$ is a positive integer or zero, 
+Therefore, if $n$ is a positive integer or zero,
 \begin{align*}
   \besJ_{n}(z) =& \sum_{r=0}^{\infty} \frac{ (-)^{r} (\half z)^{n+2r} }{
     r!(n+r)! } \\
-  =& \frac{ z^{n} }{ 2^{n} n! } 
+  =& \frac{ z^{n} }{ 2^{n} n! }
   \thebrace{ 1 - \frac{z^{2}}{2^{2}.1(n+1)} + \frac{z^{4}}{2^{4}.1.2(n+1)(n+2)}
     - \cdots };
 \end{align*}
-% 
+%
 % 356
-% 
+%
 whereas, when $n$ is a negative integer equal to $-m$,
 $$
 \besJ_{n}(z)
@@ -74,7 +74,7 @@ and so $\besJ_{n}(z) = (-)^{m} \besJ_{m}(z)$.
 
 The function $\besJ_{n}(z)$, which has now been defined for all integral
 values of $n$, positive and negative, is called the
-\emph{Bessel coefficient} of order $n$; the series defining it 
+\emph{Bessel coefficient} of order $n$; the series defining it
 converges for all values of $z$.
 
 % \begin{smalltext}
@@ -83,7 +83,7 @@ coefficients are a particular case of a class of functions known as
 \emph{Bessel functions}.
 
 The series by which $\besJ_{n}(z)$ is defined occurs in a memoir by Euler,
-on the vibrations of a stretch circular membrane, TODO, 
+on the vibrations of a stretch circular membrane, TODO,
 an investigation dealt with below in \hardsubsectionref{18}{5}{1};
 is also occurs in a memoir by Lagrange on elliptic motion, TODO.
 
@@ -101,7 +101,7 @@ remembered that the notation has changed, what was formerly called
 $\besJ_{n}(z)$ being now written $\besJ_{n}(2z)$.
 % \end{smalltext}
 \begin{wandwexample}
-  Prove that if 
+  Prove that if
   $$
   \frac{ 2b(1+\theta^{2})  }{ (1-2a\theta-\theta^{2})^{2} + 4b^{2}\theta^{2}  }
   =
@@ -109,7 +109,7 @@ $\besJ_{n}(z)$ being now written $\besJ_{n}(2z)$.
   $$
   then
   $$
-  e^{az} \sin bz 
+  e^{az} \sin bz
   =
   A_{1} \besJ_{1}(z) + A_{2} \besJ_{2}(z) + A_{3} \besJ_{3}(z) + \cdots.
   $$
@@ -120,7 +120,7 @@ $\besJ_{n}(z)$ being now written $\besJ_{n}(2z)$.
 $u=0$ and radius large enough to include the zeros of the denominator,
 we have
 $$
-e^{\half z \theparen{u - \frac{1}{u}}} 
+e^{\half z \theparen{u - \frac{1}{u}}}
 \frac{ 2b \theparen{\frac{1}{u^{2}} + \frac{1}{u^{4}} }  }{ \theparen{1 -
     \frac{2a}{u} - \frac{1}{u^{2}}}^{2}
   + \frac{4 b^{2}}{u^{2}}  }
@@ -128,7 +128,7 @@ e^{\half z \theparen{u - \frac{1}{u}}}
 \sum_{n=1}^{\infty}
 e^{\half z \theparen{u - \frac{1}{u}}} A_{n} u^{-n-1},
 $$
-the series on the right converging uniformly on the contour; and so, 
+the series on the right converging uniformly on the contour; and so,
 using \hardsectionref{4}{7} and replacing the integrals by Bessel
 coefficients, we have
 \begin{align*}
@@ -148,13 +148,13 @@ coefficients, we have
   =& A_{1} \besJ_{1}(z) + A_{2} \besJ_{2}(z) + A_{3} \besJ_{3}(z) + \cdots .
 \end{align*}
 
-% 
+%
 % 357
-% 
+%
 In the integral on the left write $\half (u - u^{-1}) - a = t$, so that as
 $u$ describes a circle of radius $e^{\beta}$, $t$ describes an ellipse
-with 
-semiaxes $\cosh\beta$ and $\sinh\beta$ with foci at 
+with
+semiaxes $\cosh\beta$ and $\sinh\beta$ with foci at
 $-a \pm i$; then we have
 $$
 \sum_{n=1}^{\infty}
@@ -165,7 +165,7 @@ A_{n} \besJ_{n}(z)
 \frac{ e^{z(t+a)}b \dmeasure t  }{ t^{2} + b^{2}  },
 $$
 the contour being the ellipse just specified, which contains the zeros
-of $t^{2} + b^{2}$. Evaluating the integral by 
+of $t^{2} + b^{2}$. Evaluating the integral by
 \hardsectionref{6}{1}, we have the required result.]
 \begin{wandwexample}
   Shew that, when $n$ is an integer,
@@ -185,10 +185,10 @@ $$
 \exp \thebrace{ \half z \theparen{t - \frac{1}{t}}  }.]
 $$
 \begin{wandwexample}
-  Shew that 
+  Shew that
   $$
   e^{i z \cos \phi}
-  = 
+  =
   \besJ_{0}(z)
   + 2 i \cos\phi \besJ_{1}(z)
   + 2 i^{2} \cos 2\phi \besJ_{2}(z)
@@ -214,7 +214,7 @@ order $n$ is given by the formula
 $$
 \besJ_{n}(z)
 =
-\frac{1}{2\pi i} 
+\frac{1}{2\pi i}
 \theparen{\half z}^{n}
 \int^{(0+)}
 t^{-n-1}
@@ -232,31 +232,31 @@ $$
 $$
 which is called Bessel's equation for functions of order $n$.
 
-For we find on performing the differentiations 
+For we find on performing the differentiations
 (\hardsectionref{4}{2}) that
 \begin{align*}
   \frac{\dd^{2} \besJ_{n}(z)}{\dd z^{2}}
   +& \frac{1}{z} \frac{\dd \besJ_{n}(z)}{\dd z}
   + \theparen{ 1 - \frac{n^{2}}{z^{2}}  } \besJ_{n}(z)
   \\
-  % 
-  =& 
-  \frac{1}{2\pi i} 
-  \theparen{ \half z  }^{n} 
+  %
+  =&
+  \frac{1}{2\pi i}
+  \theparen{ \half z  }^{n}
   \int^{(0+)}
   t^{-n-1}
   \thebrace{ 1 - \frac{n+1}{t} + \frac{z^{2}}{4t^{2}}  }
   \exp\theparen{ t - \frac{z^{2}}{4t}  }
   \dmeasure t \\
-  % 
-  =& 
+  %
+  =&
   -\frac{1}{2\pi i}
   \theparen{ \half z  }
   \int^{(0+)}
   \frac{\dd}{\dd t} \thebrace{ t^{-n-1} \exp\theparen{ t - \frac{z^{2}}{4t}  }
   }
   \dmeasure t \\
-  % 
+  %
   =& 0,
 \end{align*}
 since $t^{-n-1} \exp\theparen{ t - z^{2}/4t  }$ is one-valued.
@@ -264,15 +264,15 @@ since $t^{-n-1} \exp\theparen{ t - z^{2}/4t  }$ is one-valued.
 $$
 \frac{\dd^{2} \besJ_{n}(z)}{\dd z^{2}}
 + \frac{1}{z} \frac{\dd \besJ_{n}(z)}{\dd z}
-+ \theparen{ 1 - \frac{n^{2}}{z^{2}}  } \besJ_{n}(z) 
++ \theparen{ 1 - \frac{n^{2}}{z^{2}}  } \besJ_{n}(z)
 = 0.
 $$
-The reader will observe that $z=0$ is a regular point and 
+The reader will observe that $z=0$ is a regular point and
 $z = \infty$ an irregular point, all other points being ordinary
 points of this equation.
-% 
+%
 % 358
-% 
+%
 \begin{wandwexample}
   By differentiating the expansion
   $$
@@ -320,11 +320,11 @@ integration is justified.
 
 Accordingly, we define $\besJ_{n}(z)$ by the equation
 $$
-\besJ_{n}(z) 
-= 
+\besJ_{n}(z)
+=
 \frac{z^{n}}{2^{n+1}\pi i}
 \int_{-\infty}^{(0+)}
-t^{-n-1} 
+t^{-n-1}
 \exp\theparen{ t - \frac{z^{2}}{4t}  }
 \dmeasure t,
 $$
@@ -334,7 +334,7 @@ $\absval{ \arg t } \leq \pi$ on the contour.
 
 To express this integral as a power series, we observe that it is an
 analytic function of $z$; and we may obtain the coefficients in the
-Taylor's series in powers of $z$ by differentiating under the sign of 
+Taylor's series in powers of $z$ by differentiating under the sign of
 integration
 (\hardsectionref{5}{32} and \hardsubsectionref{4}{4}{4}
 TODO:print has two section symbols together).
@@ -348,16 +348,16 @@ Hence we deduce that
   t^{-n-r-1}
   \dmeasure t
   \\
-  % 
+  %
   =&
   \sum_{r=0}^{\infty}
   \frac{ (-)^{r} z^{n+2r}  }{ 2^{n+2r} r! \Gamma(n+r+1)  },
 \end{align*}
 by \hardsubsectionref{12}{2}{2}. This is the expansion in question.
 
-% 
+%
 % 359
-% 
+%
 \emph{Accordingly, for general values of $n$, we define the
   \emph{Bessel function} $\besJ_{n}(z)$ by the equations}
 \begin{align*}
@@ -368,7 +368,7 @@ by \hardsubsectionref{12}{2}{2}. This is the expansion in question.
   \exp\theparen{ t - \frac{z^{2}}{4t}  }
   \dmeasure t
   \\
-  % 
+  %
   =&
   \sum_{r=0}^{\infty}
   \frac{ (-)^{r} z^{n+2r}  }{ 2^{n+2r} r! \Gamma(n+r+1)  }.
@@ -408,7 +408,7 @@ at length, we have
   0 =& \int_{-\infty}^{(0+)}
   \theparen{ t^{-n} + \frac{1}{4}z^{2} t^{-n-2} - nt^{-n-1}  }
   \exp\theparen{ t - \frac{z^{2}}{4t}  }  \dmeasure t \\
-  % 
+  %
   =& 2\pi i
   \thebrace{ (2z^{-1})^{n-1} \besJ_{n-1}(z)
     + \frac{1}{4} (2z^{-1})^{n+1} \besJ_{n+1}(z)
@@ -416,7 +416,7 @@ at length, we have
 \end{align*}
 and so
 \begin{equation}
-  \besJ_{n-1}(z) + \besJ_{n+1}(z) = \frac{2n}{z} \besJ_{n}(z) 
+  \besJ_{n-1}(z) + \besJ_{n+1}(z) = \frac{2n}{z} \besJ_{n}(z)
   \label{eq:bessel:recur}
   % TODO: fill with dots?
 \end{equation}
@@ -431,19 +431,19 @@ Next we have, by \hardsubsectionref{4}{4}{4},
   \exp\theparen{ t - \frac{z^{2}}{4t} }
   \dmeasure t
   \\
-  % 
+  %
   =& - \frac{z}{2^{n+2}\pi i}
   \int_{-\infty}^{(0+)}
   t^{-n-2}
   \exp\theparen{ t - \frac{z^{2}}{4t} }
   \dmeasure t
   \\
-  % 
-  =& -z^{-n} \besJ_{n+1}(z),  
+  %
+  =& -z^{-n} \besJ_{n+1}(z),
 \end{align*}
-% 
+%
 % 360
-% 
+%
 and consequently, if primes denote differentiations with regard to
 $z$,
 \begin{equation}
@@ -464,7 +464,7 @@ and
   Obtain these results from the power series for $\besJ_{n}(z)$.
 \end{wandwexample}
 \begin{wandwexample}
-  Shew that 
+  Shew that
   $$
   \frac{\dd}{\dd z} \thebrace{ z^{n} \besJ_{n}(z) } = z^{n} \besJ_{n-1}(z).
   $$
@@ -509,7 +509,7 @@ where $n$ is unrestricted and $r$ is any positive integer. This result
 follows at once by induction from formula \eqref{eq:bessel:deriv},
 when it is written in the form
 $$
-z^{-n-1} \besJ_{n+1}(z) 
+z^{-n-1} \besJ_{n+1}(z)
 =
 - \frac{\dd}{z \dd z}
 \thebrace{ z^{-n} \besJ_{n}(z)  }.
@@ -533,10 +533,10 @@ Comparing the coefficients of $z^{\pm n}$ on each side we see that
 $$
 \besJ_{n}(z) = \frac{z^{-\half}}{2^{2n+\half} i^{n+\half} \Gamma(n+1)} M_{0,n}(2iz),
 $$
-% 
+%
 % 361
-% 
-except in the critical cases when $2n$ is a negative integer; 
+%
+except in the critical cases when $2n$ is a negative integer;
 when $n$ is half of a negative integer, the result follows from
 Kummer's second formula (\hardsubsectionref{16}{1}{1}).
 \Subsection{The zeros of Bessel functions whose order $n$ is real.}
@@ -547,8 +547,8 @@ interesting theorem that \emph{between any two consecutive real zeros
 
 For, from relation TODO:addref when written in the form
 $$
-z^{-n} \besJ_{n+1}(z) 
-= 
+z^{-n} \besJ_{n+1}(z)
+=
 - \frac{\dd}{\dd z} \thebrace{ z^{-n} \besJ_{n}(z) },
 $$
 it follows from Rolle's theorem\footnote{TODO} that between each
@@ -557,15 +557,15 @@ of $z^{-n} \besJ_{n+1}(z)$.
 
 Similarly, from relation TODO:addref when written in the form
 $$
-z^{n+1} \besJ_{n}(z) 
-= 
+z^{n+1} \besJ_{n}(z)
+=
 \frac{\dd}{\dd z} \thebrace{ z^{n+1} \besJ_{n+1}(z) },
 $$
-it follows that between each consecutive pair of zeros of 
-$z^{n+1}\besJ_{n+1}(z)$ there is at least one zero of 
+it follows that between each consecutive pair of zeros of
+$z^{n+1}\besJ_{n+1}(z)$ there is at least one zero of
 $z^{n+1}\besJ_{n}(z)$.
 
-Further $z^{-n}\besJ_{n}(z)$ and 
+Further $z^{-n}\besJ_{n}(z)$ and
 $\frac{\dd}{\dd z} \thebrace{ z^{-n} \besJ_{n}(z)  }$ have no common zeros; for
 the former function satisfies the equation
 $$
@@ -573,16 +573,16 @@ z \frac{\dd^{2} y}{\dd z^{2}} + (2n+1) \frac{\dd y}{\dd z} + zy = 0,
 $$
 and it is easily verified by induction on differentiating this
 equation that if both $y$ and $\frac{\dd y}{\dd z}$ vanish for any value of
-$z$, all differential coefficients of $y$ vanish, and $y$ is zero by 
+$z$, all differential coefficients of $y$ vanish, and $y$ is zero by
 \hardsectionref{5}{4}.
 
 The theorem required is now obvious except for the numerically
-smallest zeros $\pm \xi$ of $z^{-n}\besJ_{n}(z)$, since (except for $z=0$), 
+smallest zeros $\pm \xi$ of $z^{-n}\besJ_{n}(z)$, since (except for $z=0$),
 $z^{-n}\besJ_{n}(z)$ and $z^{n+1}\besJ_{n}(z)$ have the same zeros. But $z=0$ is a
 zero of $z^{-n}\besJ_{n+1}(z)$, and if there were any other positive zero
 of $z^{-n}\besJ_{n+1}(z)$, say $\xi_{1}$, which was less than $\xi$, then
 $z^{n+1}\besJ_{n}(z)$ would have a zero between $0$ and $\xi_{1}$, which
-contradicts the hypothesis that there were no zeros of 
+contradicts the hypothesis that there were no zeros of
 $z^{n+1}\besJ_{n}(z)$ between $0$ and $\xi$.
 
 The theorem is therefore proved.
@@ -591,9 +591,9 @@ The theorem is therefore proved.
 [See also \hardsectionref{17}{3} examples TODO and TODO, and example
 TODO at the end of the chapter.]
 % \end{smalltext}
-% 
+%
 % 362
-% 
+%
 \Subsection{Bessel's integral for the Bessel coefficients.}
 We shall next obtain an integral first given by Bessel in the
 particular case of the Bessel functions for which $n$ is a positive
@@ -601,9 +601,9 @@ integer; in some respects the result resembles Laplace's integrals
 given in \hardsubsectionref{15}{2}{3} and \hardsubsectionref{15}{3}{3}
 for the Legendre functions.
 
-In the integral of \hardsectionref{17}{1}, viz, 
+In the integral of \hardsectionref{17}{1}, viz,
 $$
-\besJ_{n}(z) 
+\besJ_{n}(z)
 =
 \frac{1}{2\pi i}
 \int^{(0+)}
@@ -611,21 +611,21 @@ u^{-n-1}
 e^{\half z \theparen{ u - \frac{1}{u} }}
 \dmeasure u,
 $$
-take the contour to be the circle $\absval{u} = 1$ and write 
+take the contour to be the circle $\absval{u} = 1$ and write
 $u = e^{i\theta}$, so that
 $$
 \besJ_{n}(z)
-= 
+=
 \frac{1}{2\pi}
 \int_{-\pi}^{\pi}
 e^{-ni\theta + iz\sin\theta}
 \dmeasure \theta
 $$
 
-Bisect the range of integration and in the former part write 
+Bisect the range of integration and in the former part write
 $-\theta$ for $\theta$; we get
 $$
-\besJ_{n}(z) 
+\besJ_{n}(z)
 =
 \frac{1}{2\pi}
 \int_{0}^{\pi}
@@ -690,12 +690,12 @@ which is the formula in question.
   .]
   $$
 \end{wandwexample}
-% 
+%
 \Subsubsection{The modification of Bessel's integral when $n$ is not
   an integer.}
 We shall now shew that\footnote{TODO}, for general values of $n$,
 \begin{equation}
-  \besJ_{n}(z) 
+  \besJ_{n}(z)
   =
   \frac{1}{\pi}
   \int_{0}^{\pi} \cos(n\theta - z\sin\theta) \dmeasure\theta
@@ -708,7 +708,7 @@ when $\Re(z) > 0$. This obviously reduces to the result of
 
 Taking the integral of \hardsectionref{17}{2}, viz,
 $$
-\besJ_{n}(z) 
+\besJ_{n}(z)
 =
 \frac{z^{n}}{2^{n+1}\pi i}
 \int_{-\infty}^{(0+)}
@@ -716,15 +716,15 @@ t^{-n-1}
 \exp\theparen{ t - \frac{z^{2}}{4t}  }
 \dmeasure t,
 $$
-% 
+%
 % 363
-% 
+%
 and supposing that $z$ is positive, we have, on writing
 $t = \half u z$,
 $$
-\besJ_{n}(z) 
-= 
-\frac{1}{2\pi i} 
+\besJ_{n}(z)
+=
+\frac{1}{2\pi i}
 \int_{-\infty}^{(0+)}
 u^{-n-1}
 \exp \thebrace{ \half z \theparen{ u - \frac{1}{u}  }  }
@@ -732,13 +732,13 @@ u^{-n-1}
 $$
 
 But, if the contour be taken to be that of the figure consisting of
-the real axis from $-1$ to $-\infty$ taken twice and the circle 
+the real axis from $-1$ to $-\infty$ taken twice and the circle
 $\absval{u} = 1$, this integral represents an analytic function of $z$
 when $\Re(zu)$ is negative as
-$\absval{u} \rightarrow \infty$ on the path, \emph{i.e.} when 
+$\absval{u} \rightarrow \infty$ on the path, \emph{i.e.} when
 $\absval{ \arg z } < \half \pi$; and so, by the theory of analytic
 continuation, the formula (which has been proved by a direct
-transformation for \emph{positive} values of $z$) is true whenever 
+transformation for \emph{positive} values of $z$) is true whenever
 $\Re(z) > 0$.
 
 Hence
@@ -757,17 +757,17 @@ u^{-n-1}
 \exp\thebrace{ \half z \theparen{ u - \frac{1}{u}  }  }
 \dmeasure u,
 $$
-where $C$ denotes the circle $\absval{u} = 1$, and 
-$\arg u = -\pi$ on the first path of integration while 
+where $C$ denotes the circle $\absval{u} = 1$, and
+$\arg u = -\pi$ on the first path of integration while
 $\arg u = +\pi$ on the third path.
 
 TODO:missingfigure
 
 Writing $u = t e^{\mp \pi i}$ in the first and third integrals
-respectively (so that in each case $\arg t = 0$), and 
+respectively (so that in each case $\arg t = 0$), and
 $u = e^{i\theta}$ in the second, we have
 $$
-\besJ_{n}(z) 
+\besJ_{n}(z)
 =
 \frac{1}{2\pi}
 \int_{-\pi}^{\pi}
@@ -786,7 +786,7 @@ e^{\half z \theparen{-t + \frac{1}{t}}}
 $$
 
 Modifying the former of these integrals as in
-\hardsubsectionref{17}{2}{3} and writing 
+\hardsubsectionref{17}{2}{3} and writing
 $e^{\theta}$ for $t$ in the latter, we have at once
 $$
 \besJ_{n}(z)
@@ -805,7 +805,7 @@ which is the required result, when
 $\absval{\arg z} < \half \pi$.
 
 % \begin{smalltext}
-When $\absval{ \arg z }$ lies between $\half \pi$ and $\pi$, since 
+When $\absval{ \arg z }$ lies between $\half \pi$ and $\pi$, since
 $\besJ_{n}(z) = e^{\pm n\pi i} \besJ_{n}(-z)$, we have
 \begin{equation}
   \besJ_{n}(z)
@@ -822,23 +822,23 @@ the upper or lower sign taken as
 $\arg z > \half \pi$ or $< -\half \pi$.
 
 When $n$ is an integer TODO:addref reduces at once to Bessels'
-integral, and TODO:addref does so when we make use of the equation 
+integral, and TODO:addref does so when we make use of the equation
 $\besJ_{n}(z) = (-)^{n} \besJ_{-n}(z)$, which is true for integer values of $n$.
 
-% 
+%
 % 364
-% 
+%
 Equation TODO:addref, as already stated, is due to TODO:addcitation,
 and equation TODO:addref was given by TODO:addcitation.
 
 These trigonometric integrals for the Bessel functions may be regarded
 as corresponding to Laplace's integrals for the Legendre functions.
 For (\hardsubsectionref{17}{1}{1} example TODO:addref)
-$\besJ_{m}(z)$ satisfies the confluent form (obtained by making 
+$\besJ_{m}(z)$ satisfies the confluent form (obtained by making
 $n \rightarrow \infty$ of the equation for
 $P_{n}^{m}(1-z^{2}/2n^{2})$.
 
-But Laplace's integral for this function is a multiple of 
+But Laplace's integral for this function is a multiple of
 \begin{align*}
 \int_{0}^{\pi}
 \thebracket{
@@ -866,9 +866,9 @@ But Laplace's integral for this function is a multiple of
 \cos m\phi \dmeasure \phi.
 \end{align*}
 
-The limit of the integrand as $n \rightarrow \infty$ is 
+The limit of the integrand as $n \rightarrow \infty$ is
 $e^{iz\cos\phi}\cos m\phi$, and this exhibits the similarity of
-Laplace's integral for $P_{n}^{m}(z)$ to the Bessel-\Schlafli\ integral for 
+Laplace's integral for $P_{n}^{m}(z)$ to the Bessel-\Schlafli\ integral for
 $\besJ_{m}(z)$.
 \begin{wandwexample}
   From the integral
@@ -910,10 +910,10 @@ roots of the indicial equation at $z=0$ is $2n$, which is an integer.
 We now shew that, in such cases, $\besJ_{n}(z)$ is expressible in terms of
 elementary functions.
 
-For 
+For
 $$
-\besJ_{\half}(z) 
-= 
+\besJ_{\half}(z)
+=
 \frac{2^{\half} z^{\half}}{\pi^{\half}}
 \thebrace{ 1
   - \frac{z^{2}}{2.3}
@@ -944,9 +944,9 @@ where $P_{k}$, $Q_{k}$ are polynomials in $z^{-\half}$.
   \besJ_{-\half}(z) = \theparen{ \frac{2}{\pi z}}^{\half} \cos z
   $$
 \end{wandwexample}
-% 
+%
 % 365
-% 
+%
 \begin{wandwexample}
   Prove by induction that if $k$ be an integer and $n = k + \half$,
   then
@@ -1050,9 +1050,9 @@ circles $\absval{t-1}=\delta$, $\absval{t+1}=\delta$ and the real axis
 joining the points $t = \pm (1-\delta)$ taken twice, and then we may
 make $\delta \rightarrow 0$; the integrals round the circle tend to
 zero and, assigning to $t-1$
-% 
+%
 % 366
-% 
+%
 and $t+1$ their appropriate arguments on the modified path of
 integration, we get, if $\arg (1-t^{2}) = 0$ and $t^{2} = u$,
 \begin{align*}
@@ -1067,7 +1067,7 @@ integration, we get, if $\arg (1-t^{2}) = 0$ and $t^{2} = u$,
   \\
   =&
   -4i
-  \sin\theparen{n-\half} 
+  \sin\theparen{n-\half}
   \pi
   \int_{0}^{1} t^{2r} (1-t^{2})^{n-\half} \dmeasure t
   \\
@@ -1158,9 +1158,9 @@ integration, and obtain the result
   integrating
   (\hardsectionref{4}{7}) term-by-term.
 \end{wandwexample}
-% 
+%
 % 367
-% 
+%
 \begin{wandwexample}
   Shew that when $-\half < n < \half$, $\besJ_{n}(z)$ has an infinite number
   of real zeros. [Let $z = (m+\half)\pi$ where $m$ is zero or a
@@ -1231,7 +1231,7 @@ F(-n+m,n+1+m;m+1; \frac{1}{4} z^{2} n^{-2}).
 $$
 
 Now make $n \rightarrow +\infty$ ($n$ being positive, but not
-necessarily integral), so that, if $\delta = n^{-1}$, 
+necessarily integral), so that, if $\delta = n^{-1}$,
 $\delta \rightarrow 0$ continuously through positive values.
 
 Then
@@ -1272,9 +1272,9 @@ which is the relation required.
   \thebracket{ n^{-m} P_{n}^{m}\theparen{\cos \frac{z}{n}}} = \besJ_{m}(z).
   $$
 \end{wandwexample}
-% 
+%
 % 368
-% 
+%
 \begin{wandwexample}
   Shew that Bessel's equation is the confluent form of the equations
   defined by the schemes
@@ -1292,7 +1292,7 @@ $$
 \frac{z^{-\half}}{2^{2n+\half} e^{\half(n+\half)\pi TODO} \Gamma(n+1)}
 M_{0,n}(2iz),
 $$
-where it is supposed that 
+where it is supposed that
 $\absval{ \arg z } < \pi$,
 $-\half\pi < \arg (2iz) < \frac{3}{2} \pi$.
 
@@ -1350,9 +1350,9 @@ The reader will observe that if $n$ is half an odd integer these
 series terminate and give the result of \hardsubsectionref{17}{2}{4}
 example TODO.
 
-% 
+%
 % 369
-% 
+%
 Even when $z$ is not very large, the value of $\besJ_{n}(z)$ can be
 computed with great accuracy from this formula. Thus, for all
 positive values of $z$ greater than $8$, the first three terms of
@@ -1470,9 +1470,9 @@ $$
 $$
 where $\alpha$ and $\beta$ are arbitrary constants.
 
-% 
+%
 % 370
-% 
+%
 When, however, $n$ is an integer, we have seen that
 $$
 \besJ_{n}(z) = (-)^{n} \besJ_{-n}(z),
@@ -1559,9 +1559,9 @@ $$
 \besY_{n}(z) = \frac{\besJ_{n}(z) \cos n\pi - \besJ_{-n}(z)}{\sin n\pi}
 = \frac{\hardY_{n}(z) \cos n\pi}{\pi e^{n\pi i}},
 $$
-% 
+%
 % 371
-% 
+%
 or by the limits of these expressions when $n$ is an integer. This
 function which exists for \emph{all} values of $n$ is taken as the
 canonical function of the second kind by TODO, and formulae
@@ -1650,9 +1650,9 @@ integer, the following expansions in powers of $\eps$ are valid:
 \end{align*}
 where $\gamma$ is Euler's constant (\hardsectionref{12}{1}).
 
-% 
+%
 % 372
-% 
+%
 Accordingly, picking out the coefficient of $\eps$, we see that
 \begin{align*}
   \hardY_{n}(z)
@@ -1757,9 +1757,9 @@ i^{-n}
 \sum_{r=0}^{\infty}
 \frac{(\half z)^{n+2r}}{r!(n+r)!}
 $$
-% 
+%
 % 373
-% 
+%
 is of frequent occurrence in various branches of applied
 mathematics; in these applications $z$ is usually positive.
 
@@ -1826,9 +1826,9 @@ $$
 \besK_{n}(z) = \half \pi \thebrace{\besI_{-n}(z) - \besI_{n}(z)} \cot n\pi.
 $$
 
-% 
+%
 % 374
-% 
+%
 \emph{Whether $n$ be an integer or not}, this function is a
 solution of the modified Bessel equation, and when
 $\absval{\arg z} < \frac{3}{2} \pi$ it possesses the asymptotic
@@ -1876,7 +1876,7 @@ which gives (\emph{cf}. \hardsubsectionref{17}{6}{1})
 as an ascending series.
 \begin{wandwexample}
   Shew that $\besK_{n}(z)$ satisfies the same recurrence formula as
-  $\besI_{n}(z)$. 
+  $\besI_{n}(z)$.
 \end{wandwexample}
 
 % TODO: get this working correctly
@@ -1921,7 +1921,7 @@ $$
 \theparen{
   \frac{\partial}{\partial t}
   +
-  \frac{\partial}{\partial z}  
+  \frac{\partial}{\partial z}
 }
 \frac{1}{t-z}
 =
@@ -2002,7 +2002,7 @@ $n$ is equal to $0$ or $1$ respectively; and
   \dmeasure u
   \\
   =
-  &  
+  &
   \half
   \int_{0}^{\infty}
   e^{-tu}
@@ -2070,7 +2070,7 @@ To obtain a proof of the validity of the expansion, we observe that
 $$
 \besJ_{n}(z)
 =
-\frac{(\half z)^{n}}{n!} 
+\frac{(\half z)^{n}}{n!}
 \thebrace{1 + \theta_{n}},
 \quad
 O_{n}(t)
@@ -2181,7 +2181,7 @@ $\absval{t}=r$; and this establishes the validity of Neumann's
 expansion when $\absval{z} < r$ and $f(z)$ is analytic when
 $\absval{z}\leq r$.
 
-% 
+%
 % 377
 %
 \begin{wandwexample}
@@ -2201,7 +2201,7 @@ $\absval{z}\leq r$.
   \frac{(n+2r)(n+r-1)!}{r!}
   \besJ_{n+2r}(z).
   $$
-  \addexamplecitation{K. Neumann.}  
+  \addexamplecitation{K. Neumann.}
 \end{wandwexample}
 \begin{wandwexample}
   Shew that, when $\absval{z}<\absval{t}$,
@@ -2891,7 +2891,7 @@ by TODO.
 \item
   Prove that, when $\Re(n) > -\half$,
   \begin{align*}
-    \besJ_{n} 
+    \besJ_{n}
     =&
     \frac{z^{n}}{2^{n-1}\Gamma(n+\half) \Gamma(\half)}
     \theparen{1 + \frac{\dd^{2}}{\dd z^{2}}}^{n-\half}
@@ -3028,7 +3028,7 @@ by TODO.
   W =
   \begin{cases}
     0
-    & 
+    &
     (a-b)^{2} > c^{2},
     \\
     (2\pi)^{-\half}
