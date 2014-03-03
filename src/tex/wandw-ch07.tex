@@ -982,12 +982,24 @@ f(x) + \sum_{r} \frac{b_{r}}{a_{r}-x}.
 $$
 where the summation extends over all poles in the interior of C, .
 
-But - f f( dz = ~! fi± ' + JL[ fi dz 2-771] c z-x TriJcm 27riJ c
-z(z-x)
-
-  '' 7a,. 2'jri]c z z-x)'
-
-if we suppose the function f(z) to be analytic at the origin.
+But
+\begin{align*}
+  \frac{1}{2 \pi i}
+  \int_{C_{m}} \frac{f(z)}{z-x} \dmeasure z
+  =&
+  \frac{1}{2 \pi i}
+  \int_{C_{m}} \frac{f(z)}{z} \dmeasure z
+  +
+  \frac{x}{2 \pi i}
+  \int_{C_{m}} \frac{f(x)}{z(z-x)} \dmeasure z
+  \\
+  =&
+  f(0) + \sum_{r} \frac{b_{r}}{a_{r}}
+  +
+  \frac{x}{2 \pi i}
+  \int_{C_{m}} \frac{f(z)}{z(z-x)} \dmeasure x
+\end{align*}
+if we suppose the function $f(z)$ to be analytic at the origin.
 
 r f(z)dz Now as w- > 00, ' - - - r is (Rm~ ), and so tends to zero as
 m tends J Cm ( - *) to infinity.
