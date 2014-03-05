@@ -1007,12 +1007,31 @@ $\bigo(R_{m}^{-1})$, and so tends to zero as
 $m$ tends to infinity.
 
 Therefore, making $m \rightarrow \infty$, we have
-
-=/(.) -/(O) + I 6 ( ~ - i) - Urn . f =f,
-
-- n=l W-iC a J m oo TTl JCmZ(z-x)
-
-i.e. f(x) =/(0) + i bn - + -1,
+$$
+0
+=
+f(x) - f(0)
++
+\sum_{n=1}^{\infty}
+b_{n} \theparen{
+  \frac{1}{a_{n}-x} - \frac{1}{a_{n}}
+}
+-
+\lim_{m\rightarrow\infty}
+\frac{x}{2 \pi i}
+\int_{C_{m}} \frac{f(z)}{z(z-x)} \dmeasure x,
+$$
+\ie
+$$
+f(x) = f(0)
++
+\sum_{n=1}^{\infty}
+b_{n}
+\thebrace{
+  \frac{1}{x-a_{n}} + \frac{1}{a_{n}}
+  %TODO:consistent with above?
+}
+$$
 
 which is an expansion of f(x) in rational fractions of x; and the
 summation extends over all the poles of f x).
