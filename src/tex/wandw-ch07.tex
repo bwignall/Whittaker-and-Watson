@@ -1032,18 +1032,25 @@ b_{n}
   %TODO:consistent with above?
 }
 $$
+which is an expansion of $f(x)$ in rational fractions of $x$; and the
+summation extends over \emph{all} the poles of $f(x)$.
 
-which is an expansion of f(x) in rational fractions of x; and the
-summation extends over all the poles of f x).
-
-If a |<| n + i| this series converges uniformly throughout the region
-given by I A' I a, where a is any constant (except near the points ).
-For if R, be the radius of the circle which encloses the points |
-ai'\, ... | a |, the modulus of the remainder of the terms of the
-series after the first ?i is
-
-I *' /" / ) I  '* \ 2iri J Cm (z - ') \ Rm-( by\hardsubsectionref{4}{6}{2}; and, given
-t, we can choose n independent of a; such that Maj Rm - CL) < e.
+%\begin{smalltext}
+If $\absval{a_{n}} < \absval{a_{n+1}}$ this series converges uniformly
+throughout the region given by $\absval{x} < a$, where $a$ is any constant
+(except near the points $a_{n}$).
+For if $R_{m}$ be the radius of the circle which encloses the points 
+$\absval{a_{1}}, \ldots, \absval{a_{n}}$,
+the modulus of the remainder of the terms of the series after the first $n$ is
+$$
+\absval{ \frac{x}{2 \pi i}
+  \int_{C_{m}} \frac{f(z)}{z(z-x)} \dmeasure z
+}
+< \frac{Ma}{R_{m}-a},
+$$
+by\hardsubsectionref{4}{6}{2}; and, given
+$\eps$, we can choose $n$ \emph{independent} of $x$
+such that $Ma/(R_{m}-a) < \eps$.
 
 * Mittag-Leffler, Acta Soc. Scient. Fennicae, xi. (1880), pp. 273-293.
 See also Acta Math. iv. (1884), pp. 1-79.
