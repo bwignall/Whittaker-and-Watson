@@ -1198,27 +1198,51 @@ $$
 $$
 
 Therefore
-
-  (-l)*-?- 12 2
-
- j grn- \ g-rn- (;. )4 + \ 4 jr\ .2 (cOsh .V - COS )
-
-1,. /" nzdz
-
-hm
-
-Stti,;J J c (7rV + J *) (e' - e-' ) sin tt '
-
-where Cis the circle whose radius is + -, (?i an integer), and whose
-centre is the origin.
-
-But, at points on C, this integrand is 0 \ z \~ ); the limit of the
-integral round C is therefore zero.
+\begin{align*}
+  4
+  \sum_{r=1}^{\infty}
+  \frac{(-)^{r} r}{e^{r\pi} - e^{-r\pi}}
+  \frac{1}{(r\pi)^{4} + \frac{1}{4} x^{4}}
+  +
+  \frac{2}{\pi x^{4}}
+  -&
+  \frac{2}{ \pi x^{2} (\cosh x - \cos x)}
+  \\
+  &
+  =
+  \frac{1}{2 \pi i}
+  \lim_{n \rightarrow \infty}
+  \int_{C}
+  \frac{\pi z}{
+    (\pi^{4}z^{4} + \frac{1}{x^{4}})
+    (e^{\pi z}-e^{-\pi z})
+    \sin \pi z
+  }
+  \dmeasure z,
+\end{align*}
+where $C$ is the circle whose radius is $n + \half$, ($n$ an integer),
+and whose centre is the origin. But, at points on $C$, this integrand is
+$\bigo( \absval{z}^{-3} )$; the limit of the integral round $C$ is
+therefore zero.
 
 From the last equation the required result is now obvious.
 \end{wandwexample}
 \begin{wandwexample}
-Prove that sec.r=4. ( - -A + J- - .. j .
+  Prove that
+  $$
+  \sec x
+  =
+  4 \pi
+  \theparen{
+    \frac{1}{\pi^{2} - 4 x^{2}}
+    -
+    \frac{3}{9 \pi^{2} - 4 x^{2}}
+    +
+    \frac{5}{25 \pi^{2} - 4 x^{2}}
+    -
+    \cdots
+  }.
+  $$
 \end{wandwexample}
 \begin{wandwexample}
 Prove that cosech x = - 2.v ( - - - --5 - <, + tt-s - -
