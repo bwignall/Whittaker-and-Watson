@@ -540,7 +540,7 @@ which is the result corresponding to the result of \hardsubsubsectionref{6}{2}{2
   $$
 \end{wandwexample}
 \begin{wandwexample}
-  Shew that, if m 0, a > 0, then
+  Shew that, if $m \geq 0$, $a > 0$, then
   $$
   \int_{0}^{\infty}
   \frac{ \sin mx }{ x (x^{2} + a^{2})^{2} }
@@ -560,9 +560,9 @@ $$
 $$
 [We have
 \begin{align*}
-  \int_{0}^{\infty} (e^{-t} - e^{-tz}) \frac{\dmeasure t}{t} = \log z.
+  \int_{0}^{\infty} (e^{-t} - e^{-tz}) \frac{\dmeasure t}{t}
   =&
-  \lim_{\delta\rightarrow 0, \rho\rightarrow\infty}
+  \lim_{\delta\rightarrow 0,\, \rho\rightarrow\infty}
   \thebrace{
     \int_{\delta}^{\rho} \frac{e^{-t}}{t} \dmeasure t
     -
@@ -570,6 +570,7 @@ $$
   }
   \\
   =&
+  \lim_{\delta\rightarrow 0,\, \rho\rightarrow\infty}  
     \thebrace{
     \int_{\delta}^{\rho} \frac{e^{-t}}{t} \dmeasure t
     -
@@ -577,11 +578,12 @@ $$
   }
   \\
   =&
+  \lim_{\delta\rightarrow 0,\, \rho\rightarrow\infty}  
     \thebrace{
     \int_{\delta}^{\delta z} \frac{e^{-t}}{t} \dmeasure t
     -
     \int_{\rho}^{\rho z} \frac{e^{-t}}{t} \dmeasure t,
-  }
+  },
 \end{align*}
 since $t^{-1} e^{-t}$ is analytic inside the
 quadrilateral whose corners are $\delta, \delta z, \rho z, \rho$.
@@ -596,7 +598,7 @@ $$
 \int_{\delta}^{\delta z} t^{-1} e^{-t} \dmeasure t
 = \log z
 -
-\int_{\rho}^{\rho z} t^{-1} (1 - e^{-t}) \dmeasure t
+\int_{\delta}^{\delta z} t^{-1} (1 - e^{-t}) \dmeasure t
 \rightarrow
 \log z,
 $$
