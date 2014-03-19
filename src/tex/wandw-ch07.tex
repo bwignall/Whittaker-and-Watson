@@ -1357,27 +1357,54 @@ $\frac{f'(z)}{f(z)}$ has a simple pole, with residue $+1$.
 
 If then we can find a sequence of circles $C_{m}$ of the nature described
 in \hardsectionref{7}{4}, such that $\frac{f'(z)}{f(z)}$ is bounded on
-$C_{m}$ as ni->cc, it follows, from the
-
-expansion given in § 7 '4, that
-
-f( )\ f'(0) I [1,1
-
-f z) f 0) n = \ [Z - an Clr.
+$C_{m}$ as $m \rightarrow \infty$, it follows, from the 
+expansion given in \hardsectionref{7}{4}, that
+$$
+\frac{f'(z)}{f(z)}
+=
+\frac{f'(0)}{f(0)}
++
+\sum_{n=1}^{\infty}
+\thebrace{
+  \frac{1}{z-a_{n}}
+  -
+  \frac{1}{a_{n}}
+}.
+$$
 
 Since this series converges uniformly when the terms are suitably
-grouped \hardsectionref{7}{4}), we may integrate term-by-term \hardsectionref{4}{7}). Doing so, and
-taking the exponential of each side, we get
+grouped (\hardsectionref{7}{4}), we may integrate term-by-term
+(\hardsectionref{4}{7}). Doing so, and taking the exponential of each
+side, we get
+$$
+f(z)
+=
+c
+e^{ z \frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\thebrace{
+  \theparen{ 1 - \frac{z}{a_{n}} }
+  e^{ \frac{z}{a_{n}} }
+},
+$$
+where $c$ is independent of $z$.
 
-/( ) = ce/( ) " n (1 e 4,
-
-where c is independent of z.
-
-Putting z = 0, we see that /(O) = c, and thus the general result
+Putting $z = 0$, we see that $f(0) = c$, and thus the general result
 becomes
+$$
+f(z)
+=
+f(0)
+e^{ z \frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\thebrace{
+  \theparen{ 1 - \frac{z}{a_{n}} }
+  e^{ \frac{z}{a_{n}} }
+}.
+$$
 
 This furnishes the expansion, in the form of an infinite product, of
-any function /( ) which fulfils the conditions stated.
+any function $f(z)$ which fulfils the conditions stated.
 
 Example 1. Consider the function f(z) =, which has simple zeros at
 the points
