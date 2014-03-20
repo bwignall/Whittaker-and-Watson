@@ -1405,23 +1405,35 @@ $$
 
 This furnishes the expansion, in the form of an infinite product, of
 any function $f(z)$ which fulfils the conditions stated.
+\begin{wandwexample}
+  Consider the function
+  $f(z) = \frac{\sin z}{z}$, which has simple zeros at
+  the points $r \pi$, where $r$ is any positive or negative integer.
 
-Example 1. Consider the function f(z) =, which has simple zeros at
-the points
-
-rrr, where r is any positive or negative integer.
-
-In this case we have / (0) = 1, /' (0) = 0,
-
-and so the theorem gives immediately sins
-
-1-1 ]e ''
-
-Z n-l IV mr J I IV iTT
-
-for it is easily seen that the condition concerning the behaviour of
--fFS ' 1"*"°° ' fulfilled.
-
+  In this case we have
+  $$
+  f(0) = 1,
+  \quad
+  f'(0) = 0,
+  $$
+  and so the theorem gives immediately
+  $$
+  \frac{\sin z}{z}
+  =
+  \prod_{n=1}^{\infty}
+  \thebrace{
+    \theparen{1 - \frac{z}{n \pi}}
+    e^{ \frac{z}{n \pi} }
+  }
+  \thebrace{
+    \theparen{1 + \frac{z}{n \pi}}
+    e^{ -\frac{z}{n \pi} }
+  };
+  $$
+  for it is easily seen that the condition concerning the behaviour of
+  $\frac{f'(z)}{f(z)}$ as $\absval{z} \rightarrow \infty$ is fulfilled.
+\end{wandwexample}
+\begin{wandwexample}
 Example 2. Prove that
 
 H ) -G.- J H r\ H )) H ))
@@ -1431,7 +1443,7 @@ H ) -G.- J H r\ H )) H ))
 1 - cos X
 
 \addexamplecitation{Trinity, 1899.}
-
+\end{wandwexample}
 \Section{7}{6}{The factor theorem of Weierstrass*.}
 
 The theorem of\hardsectionref{7}{5} is very similar to a more general theorem in
