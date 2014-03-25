@@ -1146,74 +1146,168 @@ $$
 \end{wandwexample}
 \begin{wandwexample}
 Prove that
-
-TODO
+$$
+\frac{1}{2 \pi x^{2} (\cosh x - \cos x)}
+=
+\frac{1}{2 \pi x^{4}}
+-
+\frac{1}{e^{\pi}-e^{-\pi}}
+\frac{1}{\pi^{4} + \frac{1}{4} x^{4}}
++
+\frac{2}{e^{2 \pi}-e^{-2 \pi}}
+\frac{1}{(2 \pi)^{4} + \frac{1}{4} x^{4}}
+-
+\frac{3}{e^{3 \pi}-e^{-3 \pi}}
+\frac{1}{(3 \pi)^{4} + \frac{1}{4} x^{4}}
++
+\cdots.
+$$
 
 The general term of the series on the right is
-
-(grTT \ e-rTT) 1( )4 + 1 .4 '
-
-which is the residue at each of the four singularities r, -r, ri, - ri
-of the function
-
-(ttV+j ) (e' - e-'"2) sin nz
+$$
+\frac{(-)^{r} r}{(e^{r \pi}-e^{-r \pi})
+  \thebrace{(r \pi)^{4} + \frac{1}{4} x^{4}}}
+$$
+which is the residue at each of the four singularities
+$r, -r, ri, -ri$ of the function
+$$
+\frac{\pi z}{(\pi^{4}z^{4} + \frac{1}{4} x^{4}) (e^{\pi z} - e^{-\pi
+    z}) \sin \pi z}.
+$$
 
 %
 % 136
 %
 
-The singularities of this latter function which are not of the type r,
-- r, ri, - 7-i are at the five points
+The singularities of this latter function which are not of the type
+$r, -r, ri, -ri$ are at the five points
+$$
+0,
+\frac{(\pm 1 \pm i) x}{2 \pi}.
+$$
+At $z=0$ the residue is
+$$
+\frac{2}{\pi x^{4}};
+$$
+at each of the four points
+$\frac{(\pm 1 \pm i) x}{2 \pi}$, the residue is
+$$
+\thebrace{
+  2 \pi x^{2} (\cos x - \cosh x)
+}^{-1}
+$$
 
- ±l±i)a:
-
-2
-
-At 2 = the residue is - j :
-
-at each of the four points 2= ~, the residue is
-
- 27r 2 (cos . \ cosh .r) ~ '. Therefore
-
-  (-l)*-?- 12 2
-
- j grn- \ g-rn- (;. )4 + \ 4 jr\ .2 (cOsh .V - COS )
-
-1,. /" nzdz
-
-hm
-
-Stti,;J J c (7rV + J *) (e' - e-' ) sin tt '
-
-where Cis the circle whose radius is + -, (?i an integer), and whose
-centre is the origin.
-
-But, at points on C, this integrand is 0 \ z \~ ); the limit of the
-integral round C is therefore zero.
+Therefore
+\begin{align*}
+  4
+  \sum_{r=1}^{\infty}
+  \frac{(-)^{r} r}{e^{r\pi} - e^{-r\pi}}
+  \frac{1}{(r\pi)^{4} + \frac{1}{4} x^{4}}
+  +
+  \frac{2}{\pi x^{4}}
+  -&
+  \frac{2}{ \pi x^{2} (\cosh x - \cos x)}
+  \\
+  &
+  =
+  \frac{1}{2 \pi i}
+  \lim_{n \rightarrow \infty}
+  \int_{C}
+  \frac{\pi z}{
+    (\pi^{4}z^{4} + \frac{1}{x^{4}})
+    (e^{\pi z}-e^{-\pi z})
+    \sin \pi z
+  }
+  \dmeasure z,
+\end{align*}
+where $C$ is the circle whose radius is $n + \half$, ($n$ an integer),
+and whose centre is the origin. But, at points on $C$, this integrand is
+$\bigo( \absval{z}^{-3} )$; the limit of the integral round $C$ is
+therefore zero.
 
 From the last equation the required result is now obvious.
 \end{wandwexample}
 \begin{wandwexample}
-Prove that sec.r=4. ( - -A + J- - .. j .
+  Prove that
+  $$
+  \sec x
+  =
+  4 \pi
+  \theparen{
+    \frac{1}{\pi^{2} - 4 x^{2}}
+    -
+    \frac{3}{9 \pi^{2} - 4 x^{2}}
+    +
+    \frac{5}{25 \pi^{2} - 4 x^{2}}
+    -
+    \cdots
+  }.
+  $$
 \end{wandwexample}
 \begin{wandwexample}
-Prove that cosech x = - 2.v ( - - - --5 - <, + tt-s - -
-...).
+  Prove that
+  $$
+  \cosech x
+  =
+  \frac{1}{x}
+  -
+  2x
+  \theparen{
+    \frac{1}{\pi^{2} + x^{2}}
+    -
+    \frac{1}{4\pi^{2} + x^{2}}
+    +
+    \frac{1}{9 \pi^{2} + x^{2}}
+    -
+    \cdots
+  }.
+  $$
 \end{wandwexample}
 \begin{wandwexample}
-Prove that seeh .v=47r ( -. - -- - r- - -5 + - r- - -
-,-...). Vtt +4.t-2 Q-n- + ix 257r2 + 4A-2 /
+  Prove that
+  $$
+  \sec x
+  =
+  4 \pi
+  \theparen{
+    \frac{1}{\pi^{2} + 4 x^{2}}
+    -
+    \frac{3}{9\pi^{2} + 4 x^{2}}
+    +
+    \frac{5}{25 \pi^{2} + 4 x^{2}}
+    -
+    \cdots
+  }.
+  $$
 \end{wandwexample}
 \begin{wandwexample}
-Prove that coth x = - + 2x( -x 5 + - + \ - 5 + .).
+  Prove that
+  $$
+  \coth x
+  =
+  \frac{1}{x}
+  +
+  2x
+  \theparen{
+    \frac{1}{\pi^{2} + x^{2}}
+    +
+    \frac{1}{4 \pi^{2} + x^{2}}
+    +
+    \frac{1}{9 \pi^{2} + x^{2}}
+    +
+    \cdots
+  }
+  $$
 \end{wandwexample}
 \begin{wandwexample}
-Prove that 2 2 -. - 5,, - rirr = -7 coth tto coth nb.
-
- m + a ) [n + 0 ) ao
-
-m=-x )! = -cc
-
+  Prove that
+  $$
+  \sum_{m=-\infty}^{\infty}
+  \sum_{n=-\infty}^{\infty}
+  \frac{1}{ (m^{2}+a^{2}) (n^{2}+b^{2}) }
+  =
+  \frac{\pi^{2}}{ab} \coth \pi a \coth \pi b.
+  $$
 \addexamplecitation{Math. Trip. 1899.}
 \end{wandwexample}
 \Section{7}{5}{The expansion of a class of functions as
@@ -1222,104 +1316,173 @@ infinite products.}
 The theorem of the last article can be applied to the expansion of a
 certain class of functions as infinite products.
 
-For let f(z) be a function which has simple zeros at the points* Oi,
-tts. 3, > where lim | an I is infinite; and let/(2') be analytic
-for all values
+For let $f(z)$ be a function which has simple zeros at the
+points\footnote{These being the only zeros of $f(z)$; and $a \neq 0$.}
+$a_{1}, a_{2}, a_{3}, \ldots$, where
+$\lim_{n \rightarrow \infty} \absval{a_{n}}$ is infinite; and let
+$f(z)$ be analytic for all values of $z$.
 
-of z.
-
-f'iz) Then /' (z) is analytic for all values of z \hardsubsectionref{5}{2}{2}), and so "
-,., can have
-
-singularities only at the points a, a, a, -
+Then $f'(z)$ is analytic for all values of $z$
+\hardsubsectionref{5}{2}{2}), and so $\frac{f'(z)}{f(z)}$ can have
+singularities only at the points $a_{1}, a_{2}, a_{3}, \ldots$.
 
 Consequently, by Taylor's theorem,
-
-f z) = z- ar)f' ( .) + - V" M +
-
-and /' z) = /' a.r) + z - a,) /" (a,) + . . . .
-
-* These being the only zeros oif(z); and a 4=0.
+$$
+f(z)
+=
+(z-a_{r}) f'(a_{r})
++
+\frac{ (z-a_{r})^{2} }{2} f''(a_{r})
++
+\cdots
+$$
+and
+$$
+f'(z)
+=
+f'(a_{r})
++
+(z-a_{r}) f''(a_{r})
++
+\cdots.
+$$
 
 / /
 %
 % 137
 %
-It follows immediately that at each of the points a, the function .
-has a simple pole, with residue + 1.
+It follows immediately that at each of the points $a_{r}$, the
+function
+$\frac{f'(z)}{f(z)}$ has a simple pole, with residue $+1$.
 
-If then we can find a sequence of circles C\ n of the nature described
-in
-
-f (z) % 7"4, such that; is bounded on C as ni->cc, it follows, from
-the
-
-expansion given in § 7 '4, that
-
-f( )\ f'(0) I [1,1
-
-f z) f 0) n = \ [Z - an Clr.
+If then we can find a sequence of circles $C_{m}$ of the nature described
+in \hardsectionref{7}{4}, such that $\frac{f'(z)}{f(z)}$ is bounded on
+$C_{m}$ as $m \rightarrow \infty$, it follows, from the 
+expansion given in \hardsectionref{7}{4}, that
+$$
+\frac{f'(z)}{f(z)}
+=
+\frac{f'(0)}{f(0)}
++
+\sum_{n=1}^{\infty}
+\thebrace{
+  \frac{1}{z-a_{n}}
+  -
+  \frac{1}{a_{n}}
+}.
+$$
 
 Since this series converges uniformly when the terms are suitably
-grouped \hardsectionref{7}{4}), we may integrate term-by-term \hardsectionref{4}{7}). Doing so, and
-taking the exponential of each side, we get
+grouped (\hardsectionref{7}{4}), we may integrate term-by-term
+(\hardsectionref{4}{7}). Doing so, and taking the exponential of each
+side, we get
+$$
+f(z)
+=
+c
+e^{ z \frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\thebrace{
+  \theparen{ 1 - \frac{z}{a_{n}} }
+  e^{ \frac{z}{a_{n}} }
+},
+$$
+where $c$ is independent of $z$.
 
-/( ) = ce/( ) " n (1 e 4,
-
-where c is independent of z.
-
-Putting z = 0, we see that /(O) = c, and thus the general result
+Putting $z = 0$, we see that $f(0) = c$, and thus the general result
 becomes
+$$
+f(z)
+=
+f(0)
+e^{ z \frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\thebrace{
+  \theparen{ 1 - \frac{z}{a_{n}} }
+  e^{ \frac{z}{a_{n}} }
+}.
+$$
 
 This furnishes the expansion, in the form of an infinite product, of
-any function /( ) which fulfils the conditions stated.
+any function $f(z)$ which fulfils the conditions stated.
+\begin{wandwexample}
+  Consider the function
+  $f(z) = \frac{\sin z}{z}$, which has simple zeros at
+  the points $r \pi$, where $r$ is any positive or negative integer.
 
-Example 1. Consider the function f(z) =, which has simple zeros at
-the points
-
-rrr, where r is any positive or negative integer.
-
-In this case we have / (0) = 1, /' (0) = 0,
-
-and so the theorem gives immediately sins
-
-1-1 ]e ''
-
-Z n-l IV mr J I IV iTT
-
-for it is easily seen that the condition concerning the behaviour of
--fFS ' 1"*"°° ' fulfilled.
-
-Example 2. Prove that
-
-H ) -G.- J H r\ H )) H ))
-
-\ cosh k - cos X
-
-1 - cos X
-
+  In this case we have
+  $$
+  f(0) = 1,
+  \quad
+  f'(0) = 0,
+  $$
+  and so the theorem gives immediately
+  $$
+  \frac{\sin z}{z}
+  =
+  \prod_{n=1}^{\infty}
+  \thebrace{
+    \theparen{1 - \frac{z}{n \pi}}
+    e^{ \frac{z}{n \pi} }
+  }
+  \thebrace{
+    \theparen{1 + \frac{z}{n \pi}}
+    e^{ -\frac{z}{n \pi} }
+  };
+  $$
+  for it is easily seen that the condition concerning the behaviour of
+  $\frac{f'(z)}{f(z)}$ as $\absval{z} \rightarrow \infty$ is fulfilled.
+\end{wandwexample}
+\begin{wandwexample}
+  Prove that
+  \begin{align*}
+  \thebrace{
+    1 + \theparen{ \frac{k}{x}  }^{2}
+  }
+  \thebrace{
+    1 + \theparen{ \frac{k}{2\pi - x}  }^{2}
+  }
+  &
+  \thebrace{
+    1 + \theparen{ \frac{k}{2\pi + x}  }^{2}
+  }
+  \thebrace{
+    1 + \theparen{ \frac{k}{4\pi - x}  }^{2}
+  }
+  \thebrace{
+    1 + \theparen{ \frac{k}{4\pi + x}  }^{2}
+  }
+  \\
+  =&
+  \frac{\cosh x - \cos x}{1-\cos x}.
+  \end{align*}
 \addexamplecitation{Trinity, 1899.}
-
+\end{wandwexample}
 \Section{7}{6}{The factor theorem of Weierstrass*.}
 
 The theorem of\hardsectionref{7}{5} is very similar to a more general theorem in
-which the character of the function f z), as j j- >x, is not so
-narrowly restricted,
+which the character of the function $f(z)$, as
+$\absval{z} \rightarrow \infty$, is not so
+narrowly restricted.
 
 * Berliner Alh. (1876), pp. 11-60; Math. Werke, 11. (1895), pp.
 77-124.
 %
 % 138
 %
-Let f(z) be a function of z with no essential singularities (except at
-' the point infinity'); and let the zeros and pol6s oi f(z) be at aj,
-ag, as, ....where
-
-< I ai I 1 a.2 ] i 3 1 Let the zero* at be of (integer) order ?? .ft.
+Let $f(z)$ be a function of $z$ with no essential singularities (except at
+`the point infinity'); and let the zeros and poles of $f(z)$ be at 
+$a_{1}, a_{2}, a_{3}, \ldots$, where
+$0 < \absval{a_{1}} \leq \absval{a_{2}} \leq \absval{a_{3}} \ldots$.
+Let the zero\footnote{We here regard a pole as being a zero of
+  negative order.} at $a_{n}$ be of (integer) order $m_{n}$.
 
 If the number of zeros and poles is unlimited, it is necessary that
-ja,i - >X), as ?i- >oo; for, if not, the points a would have a limit
-point i*, which would be an essential singularity oi f z).
+$\absval{a_{n}} \rightarrow \infty$, as $n \rightarrow \infty$;
+for, if not, the points $a_{n}$ would have a limit
+point\footnote{From the two-dimensional analogue
+  of\hardsubsectionref{2}{2}{1}.}, 
+which would be an essential singularity of $f(z)$.
 
 We proceed to shew first of all that it is possible to find
 polynomials gn z) such that
@@ -1390,10 +1553,6 @@ n = N+l
 where \ Un z)\ < bn', and therefore, since b is independent of z, the
 product converges absolutely and uniformly when 1 j < K, except near
 the points a .
-
-* We here regard a pole as being a zero of negative order.
-
-t From the two-dimensional analogue of\hardsubsectionref{2}{2}{1}.
 
 X Provided that z is not at one of the points for which m is negative.
 
