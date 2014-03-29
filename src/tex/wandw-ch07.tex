@@ -1523,20 +1523,37 @@ g_{n}(z)
 \theparen{ \frac{z}{a_{n}} }^{k_{n} - 1}.
 $$
 Then
-
-zy
-
-- t - (- ) +gn( )\ =
-
-=
-
-1 1 fzy
-
-<
-
-<2\ \ {Kan-')''"\,
-
-since U a,ri \ < k
+\begin{align*}
+  \absval{
+    -
+    \sum_{m=1}^{\infty}
+    \frac{1}{m}
+    \theparen{
+      \frac{z}{a_{n}}
+    }^{m}
+    +
+    g_{n}
+  }
+  =&
+  \absval{
+    \sum_{m=k_{n}}^{\infty}
+    \frac{1}{m}
+    \theparen{
+      \frac{z}{a_{n}}
+    }^{m}
+  }
+  \\
+  <&
+  \absval{ \frac{z}{a_{n}} }^{k_{n}}
+  \sum_{m=0}^{\infty}
+  \absval{ \frac{z}{a_{n}} }^{m}
+  \\
+  <&
+  2
+  \absval{ (K a_{n}^{-1})^{k_{n}}  },
+\end{align*}
+since
+$ \absval{ z_{n} a_{n}^{-1} } < \half$.
 
 Hence
 
