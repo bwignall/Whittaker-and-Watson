@@ -1588,16 +1588,27 @@ $\sum_{n=1}^{\infty} b_{n}$ is any convergent series\footnote{E.g. we
   might take $b_{n} = 2^{-n}$.} of positive terms.
 
 Hence
-
-n
-
-n = N+l
-
- ( l - - le H' ) I'"'"
-
-where \ Un z)\ < bn', and therefore, since b is independent of z, the
-product converges absolutely and uniformly when 1 j < K, except near
-the points a .
+$$
+\prod_{n = N+1}^{\infty}
+\thebracket{
+  \thebrace{
+    \theparen{
+      1
+      -
+      \frac{z}{a_{n}}
+    }
+    e^{g_{n}(z)}
+  }^{m_{n}}
+}
+=
+\prod_{n = N+1}^{\infty}
+e^{u_{n}(z)},
+$$
+where
+$ \absval{ u_{n}(z) } < b_{n} $;
+and therefore, since $b_{n}$ is independent of $z$, the
+product converges absolutely and uniformly when
+$\absval{z} < K$, except near the points $a_{n}$.
 %
 % 139
 %
