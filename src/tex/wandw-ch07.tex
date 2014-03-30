@@ -1485,62 +1485,107 @@ point\footnote{From the two-dimensional analogue
 which would be an essential singularity of $f(z)$.
 
 We proceed to shew first of all that it is possible to find
-polynomials gn z) such that
+polynomials $g(z)$ such that
 $$
-TODO
+\prod_{n=1}^{\infty}
+\thebracket{
+  \thebrace{
+    \theparen{
+      1
+      -
+      \frac{z}{a_{n}}
+    }
+    e^{a_{n}(z)}
+  }^{m_{n}}
+}
 $$
-converges for all J finite values of z.
+converges for all\footnote{Provided that z is not at one of the points
+  for which m is negative.} finite values of $z$.
 
-Let K be any constant, and let \ z\ < K; then, since |a l- >oo, we can
-find N such that, when n> N, \ cin \ > K.
+Let $K$ be any constant, and let $\absval{z} < K$; then, since
+$\absval{a_{n}} \rightarrow \infty$, we can
+find $N$ such that, when $n > N$, $\absval{a_{n}} > 2K$.
 
-The first N factors of the product do not affect its convergence :j:;
-consider any value of ?i greater than N, and let
-
-1 /
-
-+ ... +
-
-kn - 1 \ ttn
-
-An-1
-
-Then
-
-zy
-
-- t - (- ) +gn( )\ =
-
+The first $N$ factors of the product do not affect its
+convergence\footnote{Provided that z is not at one of the points
+  for which m is negative.} % TODO:duplicated-footnote
+consider any value of $n$ greater than $N$, and let
+$$
+g_{n}(z)
 =
-
-1 1 fzy
-
-<
-
-<2\ \ {Kan-')''"\,
-
-since U a,ri \ < k
+\frac{z}{a_{n}}
++
+\half \theparen{ \frac{z}{a_{n}} }^{2}
++
+\cdots
++
+\frac{1}{k_{n}-1}
+\theparen{ \frac{z}{a_{n}} }^{k_{n} - 1}.
+$$
+Then
+\begin{align*}
+  \absval{
+    -
+    \sum_{m=1}^{\infty}
+    \frac{1}{m}
+    \theparen{
+      \frac{z}{a_{n}}
+    }^{m}
+    +
+    g_{n}
+  }
+  =&
+  \absval{
+    \sum_{m=k_{n}}^{\infty}
+    \frac{1}{m}
+    \theparen{
+      \frac{z}{a_{n}}
+    }^{m}
+  }
+  \\
+  <&
+  \absval{ \frac{z}{a_{n}} }^{k_{n}}
+  \sum_{m=0}^{\infty}
+  \absval{ \frac{z}{a_{n}} }^{m}
+  \\
+  <&
+  2
+  \absval{ (K a_{n}^{-1})^{k_{n}}  },
+\end{align*}
+since
+$ \absval{ z_{n} a_{n}^{-1} } < \half$.
 
 Hence
-
-z \ ) '**
-
-1 e5 (-) i = e" (
-
-aJ J
-
+$$
+\thebrace{
+  \theparen{
+    1
+    -
+    \frac{z}{a_{n}}
+  }
+  e^{g_{n}(z)}
+}^{m_{n}}
+=
+e^{u_{n}(z)},
+$$
 where
 $$
-TODO
+\absval{ u_{n}(z) }
+\leq
+2
+\absval{
+  m_{n}
+  (K a_{n}^{-1})^{k_{n}}
+}.
 $$
 
-Now Mn and a are given, but k is at our disposal; since Kan' <, we
-choose kn to be the smallest number such that 2 | vin Kan~' y"' 1 <
-bn, where
-
-00
-
-S bn is any convergent series§ of positive terms.
+Now $m_{n}$ and $a_{n}$ are given, but $k_{n}$ is at our disposal;
+since $K a_{n}^{-1} < \half$, we
+choose $k_{n}$ to be the smallest number such that
+$2 \absval{m_{n} (K a_{n}^{-1})^{k_{n}}} < b_{n}$,
+where
+$\sum_{n=1}^{\infty} b_{n}$ is any convergent series\footnote{E.g. we
+  might take $b_{n} = 2^{-n}$.} of positive terms.
 
 Hence
 
@@ -1553,10 +1598,6 @@ n = N+l
 where \ Un z)\ < bn', and therefore, since b is independent of z, the
 product converges absolutely and uniformly when 1 j < K, except near
 the points a .
-
-X Provided that z is not at one of the points for which m is negative.
-
-§ E.g. we might take 6 =2-".
 %
 % 139
 %
