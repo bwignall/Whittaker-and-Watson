@@ -1646,16 +1646,32 @@ this series converges everywhere, and so $G(z)$ is an integral
 function.
 
 Therefore, finally,
+$$
+f(z)
+=
+f(0)
+e^{G(z)}
+\prod_{n=1}^{\infty}
+\thebracket{
+  \thebrace{
+    \theparen{
+      1
+      -
+      \frac{z}{a_{n}}
+    }
+    e^{g_{n}(z)}
+  }^{m_{n}}
+}
+$$
+where $G(z)$ is some integral function such that $G(0) = 0$.
+%\begin{smalltext}
+[Note. The presence of the arbitrary element $G(z)$ which occurs in
+this formula for $f(z)$ is due to the lack of conditions as to the
+behaviour of $f(z)$ as $\absval \rightarrow \infty$]
 
-/( )=/(0)e '-) n r|(i\ f),.n..)
-
-where G (z) is some integral function such that G (0) = 0.
-
-[Note. The presence of the arbitrary element G (2) which occurs in
-this formula for f(z) is due to the lack of conditions as to the
-behaviour of /(s) as ' s |-9-oo .] Corollary. If wi =l, it is
-sufficient to take k - n, by\hardsubsectionref{2}{3}{6}.
-
+\orollary. If $m_{n} =1$, it is
+sufficient to take $k_{n} = n$, by\hardsubsectionref{2}{3}{6}.
+%\end{smalltext}
 \Section{7}{7}{The expansion of a class of periodic functions in a series of
 cotangents.}
 
