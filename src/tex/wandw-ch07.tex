@@ -1733,9 +1733,34 @@ c_{r}
 \cot (z - a_{r}).
 $$
 \begin{wandwexample}
-TODO
-according as n is even or odd; the * means that the factor cot (a -
-a,) is omitted.
+  \begin{align*}
+    \cot (x - a_{1})
+    \cot (x - a_{2})
+    \cdots
+    \cot (x - a_{n})
+    =&
+    \sum_{r=1}^{n}
+    \cot (a_{r} - a_{1})
+    \cdots
+    *
+    \cdots
+    \cot (a_{r} - a_{n})
+    \cot (x - a_{r})
+    +
+    (-)^{\half n},
+    \\
+    \textrm{or}
+    =&
+    \sum_{r=1}^{n}
+    \cot (a_{r} - a_{1})
+    \cdots
+    *
+    \cdots
+    \cot (a_{r} - a_{n})
+    \cot (x - a_{r}),
+  \end{align*}
+according as $n$ is even or odd; the `$*$' means that the factor 
+$\cot (a_{r} - a_{r})$ is omitted.
 \end{wandwexample}
 \begin{wandwexample}
 Prove that
