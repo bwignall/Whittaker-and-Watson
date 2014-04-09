@@ -1811,26 +1811,33 @@ Prove that
   - b_{1} - b_{2} - \cdots - b_{n}).
 \end{align*}
 \end{wandwexample}
-\Section{7}{8}{Borel's theorem- .}
+\Section{7}{8}{Borel's theorem.}
+\footnote{TODO Lemons sur les series divergentes (1901), p. 94. See also the
+memoirs there cited.}
 
-Let/(2-) = S ttji " be analytic when \ z\ \ r, so that, by
+Let $f(z) = \sum_{n=0}^{\infty} a_{n} z^{n}$ be analytic when
+$\absval{z} \leq r$, so that, by
 \hardsubsectionref{5}{2}{3},
-$
-TODO
-$
-where If is independent of n.
+$\absval{ a_{n} r^{n} } < M$
+where $M$ is independent of $n$.
 
-CtnZ"
+Hence, if
+$\phi(z) = \sum_{n=0}^{\infty} \frac{a_{n} z^{n}}{n!}$,
+$\phi(z)$ is an integral function, and
+$$
+\absval{ \phi(z) }
+<
+\sum_{n=0}^{\infty} \frac{M \absval{z^{n}} }{ r^{n} \cdot n!}
+=
+M e^{\absval{z}/r},
+$$
+and similarly
+$\absval{ \phi^{(n)}(z) } < M e^{\absval{z}/r}/r^{n}$.
 
-Hence, if < z)= S, < z) is an integral function, and
-
-and similarly | </)<' ' z) \ < il/el l/''/r
-
-Now consider f(z) =1 e~ zt) dt; this integral is an analytic function
-
-Jo
-
-of z when \ z\ < r, by\hardsubsectionref{5}{3}{2}.
+Now consider
+$f_{1}(z) = \int_{0}^{\infty} e^{-t} \phi(zt) \dmeasure t$;
+this integral is an analytic function
+of $z$ when $\absval{z} < r$, by\hardsubsectionref{5}{3}{2}.
 
 Also, if we integrate by parts,
 
@@ -1850,9 +1857,6 @@ But lim -< </)" > ( ) = a i; and, when \ z\ < r, lim e"' </>'*"' (zt)
 f,(z)= t a.nZ' + Rn, m=0
 
 Therefore
-
-t Lemons sur les series divergentes (1901), p. 94. See also the
-memoirs there cited.
 %
 % 141
 %
