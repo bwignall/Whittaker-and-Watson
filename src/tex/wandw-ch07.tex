@@ -1840,16 +1840,22 @@ this integral is an analytic function
 of $z$ when $\absval{z} < r$, by\hardsubsectionref{5}{3}{2}.
 
 Also, if we integrate by parts,
-
-/ z) = -e-'(f> (zt) +z e-' 4>' zt) dt
-
-JO
-
-= 2 2
-
- t=0
-
-+ "+1 e- (f> ''+' (zt) dt.
+\begin{align*}
+  f_{1}(z)
+  =&
+  \thebracket{- e^{-t} \phi(zt) }_{0}^{\infty}
+  +
+  z \int_{0}^{\infty} e^{-t} \phi'(zt) \dmeasure t
+  \\
+  =&
+  \sum_{m=0}^{n}
+  z^{m}
+  \thebracket{ - e^{-t} \phi^{(m)}(zt) }_{0}^{\infty}
+  +
+  z^{n+1}
+  \int_{0}^{\infty}
+  e^{-t} \phi^{(n+1)}(zt) \dmeasure t.
+\end{align*}
 
 But lim -< </)" > ( ) = a i; and, when \ z\ < r, lim e"' </>'*"' (zt)
 = 0.
