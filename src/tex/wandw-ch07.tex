@@ -1942,27 +1942,41 @@ a_{n}
 $$
 and so
 $$
-TODO
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\sum_{n=0}^{\infty}
+\frac{\zeta^{n} t^{n}}{n!}
+\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z;
 $$
-but 2 C -Llf converges imiformly \hardsubsectionref{3}{3}{4}) on C since f(z) is bounded
-and l 2 j 8 > 0, where S is independent of z; therefore, by\hardsectionref{4}{7},
+but
+$\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
+converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
+$f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
+$\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
+$$
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\int_{C} z^{-1} f(z) \exp(\zeta t z^{-1}) \dmeasure z,
+$$
+and so, when $t$ is real,
+$\absval{\phi(\zeta t)} < F(\zeta) e^{\lambda t}$,
+where $F(\zeta)$ is bounded in any closed region lying wholly
+\emph{inside} the polygon and is independent of $t$;
+and $\lambda$ is the greatest value of the real part of
+$\zeta / z$ on $C$.
 
-c (C0 = 2 - I -\ f .z) exp Ctz-') dz,
+If we draw the circle traced out by the point $z/\zeta$, we see that
+the real part of $\zeta/z$ is greatest when $z$ is at the extremity of the
+diameter through $\zeta$, and so the value of $\lambda$ is
+$ \absval{\zeta} \cdot \thebrace{\absval{\zeta} + \delta}^{-1} < 1$.
 
-and so, when t is real, | (CO i < (0 < where F (0 is bounded in any
-closed region lying wholly inside the polygon and is independent of t
-; and \ is the greatest value of the real part of (jz on C.
-
-If we draw the circle traced out l)y the point 2/, we see that the
-real part of f/2 is gi-eatest when z is at the extremity of the
-diameter through (, and so the value of X is
-
-1C|. ICI + S - <1.
-
-We can get a similar inequality for ( ' (CO and hence, by\hardsubsectionref{5}{3}{2}, |
-e~' (CO t is
-
-.' analytic at ( and is obviously a one-valued function of C-
+We can get a similar inequality for $\phi'(\zeta t)$ and hence,
+by\hardsubsectionref{5}{3}{2},
+$\int_{0}^{\infty} e^{-t} \phi(\zeta t) \dmeasure t$
+is analytic at $\zeta$ and is obviously a one-valued function of
+$\zeta$.
 
 This is the result stated above.
 \Subsection{7}{8}{2}{Expansions in series of inverse factorials.}
