@@ -2052,13 +2052,47 @@ where $M_{2}$ is the upper bound of
 $\absval{F(z)}$ on a circle with centre $\xi$ and
 radius $\rho < 1 - \xi$.
 
-Taking p = =-(1 - ) and observing that* (1 4-;i~ )' < e we find that
+Taking $\rho = \frac{n}{n+1} (1-\xi)$ and observing
+that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
+  for $\frac{1}{1-y} > e^{y}$, when $y < 1$, and so
+  $\log \theparen{\frac{1}{1-y}} > y$. That is to
+  say, putting $y^{-1} = 1+x$,
+  $
+  \frac{\dd}{\dd x} x \log (1 + x^{-1})
+  =
+  \log (1 + x^{-1})
+  -
+  \frac{1}{1+x}
+  >
+  0
+  $.
+}
+$(1 + n^{-1})^{n} < e$
+we find that
+\begin{align*}
+  \absval{F^{(n)}}
+  <&
+  M_{1}
+  \thebracket{
+    1
+    -
+    \thebrace{
+      \xi
+      +
+      \frac{n}{n+1} \xi
+    }
+  }^{-r}
+  \cdot
+  n!
+  \thebrace{
+    \frac{n (1-\xi)}{n+1}
+  }^{-n}
+  \\
+  <&
+  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
+\end{align*}
 
-1 n + 1
-
-i- f+ Tlf
-
-<M,e n + iy .111(1- )->-'\ Remembering that, by\hardsectionref{4}{5}, means lim, we
+Remembering that, by\hardsectionref{4}{5}, means lim, we
 have, by repeated
 
 Jo e +O J
@@ -2101,12 +2135,6 @@ lim f '|(l- y+ i <"+i'(| )|cZ
 e O J
 
 (r+l + B) r + 2 + 8)... r + n + 8).S' where 8 = R z - r).
-
-* (l + x-i) increases with x; for :; >ey, when ?/<l, and so log ( :,
-)>'/ That is to
-
-say, putting y-' - l + x, - a; log (l + a;~ ) = ]og (l+a;~ ) -z >0.
-
 %
 % 144
 %
