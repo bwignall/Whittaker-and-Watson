@@ -2098,40 +2098,66 @@ have, by repeated integrations by parts,
 \begin{align*}
   f(z)
   =&
-  TODO
+  \lim_{\epsilon \rightarrow +0}
+  \thebracket{
+    -(1 - \xi)^{z} F(\xi)
+  }_{0}^{1-\epsilon}
+  +
+  \int_{0}^{1 - \epsilon}
+  (1 - \xi)^{z} F'(\xi) \dmeasure \xi
+  \\
+  =&
+  \thebracket{
+    -(1 - \xi)^{z} F(\xi)
+  }_{0}^{1 - \epsilon}
+  +
+  \frac{1}{z + 1}
+  \thebracket{
+    -(1 - \xi)^{z+1} F'(\xi)
+  }_{0}^{1 - \epsilon}
+  \\
+  &
+  \quad
+  \quad
+  +
+  \frac{1}{z + 1}
+  \int_{0}^{1 - \epsilon}
+  (1 - \xi)^{z+1} F''(\xi) \dmeasure \xi
+  \\
+  =&
+  \cdots
+  \\
+  =&
+  b_{0}
+  +
+  \frac{b_{1}}{z+1}
+  +
+  \frac{b_{2}}{(z+1)(z+2)}
+  +
+  \cdots
+  +
+  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
+  +
+  R_{n},
 \end{align*}
 where
-
-+ 1 z + l)(z + 2) z + l)(z+2)... z + n)
-
-= F "" (0), if the real part of + w - 7' - n > 0, i.e. if R (z) > r;
+\begin{align*}
+  b_{n}
+  =&
+  \lim_{\epsilon \rightarrow 0}
+  \thebracket{
+    -(1-\xi)^{z+n} F^{(n)}(\xi)
+  }_{0}^{1 - \epsilon}
+  \\
+  =&
+  F^{(n)}(0),
+\end{align*}
+if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
 further
-
-+ Rn,
-
-bn = lim
-
-l-e
-
-Rn\ \
-
-<
-
-<
-
-(2 + l)(z + 2)...(z + n)
-
-M,e(n + 2y.n\
-
-\ \ {z+l) z + 2)...(z + n). R z-r)
-
-M,e(7i + 2y.nl
-
-lim f '|(l- y+ i <"+i'(| )|cZ
-
-e O J
-
-(r+l + B) r + 2 + 8)... r + n + 8).S' where 8 = R z - r).
+\begin{align*}
+  TODO
+\end{align*}
+where $\delta = \Re(z - r)$.
 %
 % 144
 %
