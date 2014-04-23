@@ -2155,7 +2155,22 @@ where
 if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
 further
 \begin{align*}
-  TODO
+  \absval{R_{n}}
+  \leq &
+  \frac{1}{ \absval{ (z+1)(z+2)\cdots(z+n)  }}
+  \lim_{\epsilon \rightarrow 0}
+  \int_{0}^{1 - \epsilon}
+  \absval{ (1-\xi)^{z+n} F^{(n+1)}(\xi) }
+  \dmeasure \xi
+  \\
+  <&
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    \absval{(z+1)(z+2)\cdots(z+n)} \Re(z-r)}
+  \\
+  <&
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    \absval{ (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \delta }
+    },
 \end{align*}
 where $\delta = \Re(z - r)$.
 %
