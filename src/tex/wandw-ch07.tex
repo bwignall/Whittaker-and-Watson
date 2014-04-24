@@ -2177,21 +2177,38 @@ where $\delta = \Re(z - r)$.
 % 144
 %
 
-Now n (i + '- le
-
-n|(i
-
->+
-
-tends to a limit \hardsubsectionref{2}{7}{1}) as n->oo, and so | Rn >0 if (n + 2ye '" '
-"' tends to zero; but
-
-1 l/m> = log(n + l),
-
- +i dx [/m > I
-
-by\hardsubsectionref{4}{4}{3} (II), and (n + '2y(n+ l)-'- -*0 when 8 >0; therefore K->0 as
-n- x, and so, when R (z) > r, we have the convergent expansion
+Now
+$$
+\prod_{m=1}^{n}
+\thebrace{
+  \theparen{
+    1
+    +
+    \frac{r + \delta}{m}
+  }
+  e^{-\frac{r+\delta}{m}}
+}
+$$
+tends to a limit \hardsubsectionref{2}{7}{1}) as
+$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
+if
+$ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
+tends to zero; but
+$$
+\sum_{m=1}^{n} 1/m
+>
+\int_{1}^{n+1} \frac{\dmeasure x}{x}
+=
+\log(n+1),
+$$
+by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
+and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
+$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
+$n \rightarrow \infty$, and so, when $\Re(z) > r$,
+we have the convergent expansion
+$$
+TODO
+$$
 
 Example 1. Obtain the same expansion by using the results
 
