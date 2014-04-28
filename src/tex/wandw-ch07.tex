@@ -2267,18 +2267,29 @@ E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
 Bromwich* Theory of Infinite Series (1908), Chs. viii, x, xi. 0.
 Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
 
-Miscellaneous Examples.
-
-1. If y -x - (i> y) = 0, where is a given function of its argument,
-obtain the expansion
-
-/(,)-/(.) + 1 ± H wr (i 1,)7(. ),
-
-where / denotes any analytic function of its argument, and discuss the
-range of its validity. (Levi-Civitk, Bertd. dei Lincei, (5), xvl
-(1907), p. 3.)
-
-2. Obtain (from the formula of Darboux or otherwise) the expansion
+\miscexamples
+\begin{enumerate}
+\item If $y - x - \phi(y) = 0$, where $\phi$ is a given function of
+  its argument, obtain the expansion
+  $$
+  f(y)
+  =
+  f(x)
+  +
+  \sum_{m=1}^{\infty}
+  \frac{1}{m!}
+  \thebrace{\phi(x)}^{m}
+  \theparen{
+    \frac{1}{1-\phi'(x)}
+    \frac{\dd}{\dd x}
+  }^{m}
+  f(x)
+  $$
+  where $f$ denotes any analytic function of its argument, and discuss
+  the range of its validity.
+  \addexamplecitation{TODO:Levi-Civitk, Bertd. dei Lincei, (5), xvl
+    (1907), p. 3.}
+\item Obtain (from the formula of Darboux or otherwise) the expansion
 
 /(.) -/( )= J /~J;" jy" /"' (2) - '"/<"> ( );
 
@@ -2292,7 +2303,7 @@ methods, i.e. without the use of Cauchy's theorem.
 % 145
 %
 
-3. Shew thcat
+3. Shew that
 
 n 13 5 (2m - ) h
 
@@ -2711,3 +2722,4 @@ in ascending powers of <, shew that it is equal to
 f a)+ I [/'(a)(0(a) ].
 
 Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem.
+\end{enumerate}
