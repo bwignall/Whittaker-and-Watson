@@ -2264,7 +2264,9 @@ and discuss the region in which it converges.
 %TODO
 REFERENCES. E. Goursat, Cours d' Analyse (Paris, 1911), Chs. xv, xvi.
 E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
-Bromwich* Theory of Infinite Series (1908), Chs. viii, x, xi. 0.
+Bromwich\footnote{The expansions considered by Eromwich are obtained by elementary
+methods, i.e. without the use of Cauchy's theorem.} Theory of Infinite
+Series (1908), Chs. viii, x, xi. 0.
 Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
 
 \miscexamples
@@ -2290,20 +2292,21 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   \addexamplecitation{TODO:Levi-Civitk, Bertd. dei Lincei, (5), xvl
     (1907), p. 3.}
 \item Obtain (from the formula of Darboux or otherwise) the expansion
-
-/(.) -/( )= J /~J;" jy" /"' (2) - '"/<"> ( );
-
-find the remainder after n terms, and discuss the convergence of the
-series.
-
-* The expansions considered by Eromwich are obtained by elementary
-methods, i.e. without the use of Cauchy's theorem.
-
+  $$
+  f(z) - f(z)
+  =
+  \sum_{n=1}^{\infty}
+  \frac{(-)^{n-1} (z-a)^{n}}{n! (1-r)^{n}}
+  \thebrace{
+    f^{(n)}(z) - r^{n} f^{(n)}(a)
+  };
+  $$
+  find the remainder after $n$ terms, and discuss the
+  convergence of the series.
 %
 % 145
 %
-
-3. Shew that
+\item Shew that
 
 n 13 5 (2m - ) h
 
