@@ -2307,24 +2307,51 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
 % 145
 %
 \item Shew that
-
-n 13 5 (2m - ) h
-
-OT=1 V"' )
-
-where
-
-J
-
-and shew that y ( ) is the coefficient of ?i ! P in the expansion of
-(1 - t.v) (1+ - Lv) 2 [ i ascending jiowers of t.
-
-4. By taking
-
-< ( + l) =,-
-
-' d"- f(l-r)e ' ( 1 l-re-
-
+  \begin{align*}
+    f(x+h) - f(x)
+    =&
+    \sum_{m=1}^{n}
+    (-)^{m-1}
+    \frac{1 \cdot 3 \cdot 5 \cdots (2m-1)}{(m!)^{2}}
+    \frac{h^{m}}{2^{m}}
+    \thebrace{
+      f^{(m)}(x+h)
+      -
+      (-)^{m} f^{(m)}(x)
+    }
+    \\
+    & \quad
+    +
+    (-)^{n} h^{n+1}
+    \int_{0}^{1}
+    \gamma_{n}(t)
+    f^{(n+1)}(x + ht) \demeasure t,
+  \end{align*}
+  where
+  $$
+  \gamma_{n}(t)
+  =
+  \frac{x^{n+\half} (1-x)^{n + \half}}{(n!)^{2}}
+  \frac{\dd^{n}}{\dd x^{n}}
+  \thebrace{
+    x^{-\half} (1-x)^{-\half}
+  }
+  =
+  \frac{1}{\pi n!}
+  \int_{0}^{1}
+  (x-z)^{n}
+  z^{-\half}
+  (1-z)^{-\half}
+  \dmeasure z,
+  $$
+  and shew that $\gamma_{n}(x)$ is the coefficient of
+  $n! t^{n}$ in the expansion of
+  $\thebrace{ (1-tx)(1+t-tx) }^{-\half}$
+  in ascending powers of $t$.
+\item By taking
+  $$
+  TODO
+  $$
 in the formula of Darboux, shew that
 
 /( + A)-/(.r)=- I,;|/(-)(,; + A)-l/M(4 m=l Vl. [ r )
