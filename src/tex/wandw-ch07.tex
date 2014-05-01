@@ -2201,77 +2201,77 @@ $$
 =
 \log(n+1),
 $$
-%by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
-%and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
-%$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
-%$n \rightarrow \infty$, and so, when $\Re(z) > r$,
-%we have the convergent expansion
-%$$
-%f(z)
-%=
-%b_{0}
-%+
-%\frac{b_{1}}{z+1}
-%+
-%\frac{b_{2}}{(z+1)(z+2)}
-%+
-%\cdots
-%\frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
-%+
-%\cdots.
-%$$
-%\begin{wandwexample}
-%Obtain the same expansion by using the results
-%$$
-%\frac{1}{(z+1)(z+2)\cdots(z+n+1)}
-%=
-%\frac{1}{n!}
-%\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure z,
-%$$
-%$$
-%\int_{C}
-%\frac{ f(t) \dmeasure t }{z - t}
-%=
-%\int_{C} \dmeasure t
-%\int_{0}^{1}
-%f(t) (1-u)^{z-t-1} \dmeasure u.
-%$$
-%\end{wandwexample}
-%\begin{wandwexample}
-%Obtain the expansion
-%$$
-%\log\theparen{1 + \frac{1}{z}}
-%=
-%\frac{1}{z}
-%-
-%\frac{a_{1}}{z(z+1)}
-%-
-%\frac{a_{2}}{z(z+1)(z+2)}
-%-
-%\cdots,
-%$$
-%where
-%$$
-%a_{n}
-%=
-%\int_{0}^{1}
-%t (1-t) (2-t) \cdots (n-1-t) \dmeasure t,
-%$$
-%and discuss the region in which it converges.
-%\addexamplecitation{Schlomilch.}
-%\end{wandwexample}
-%
-%%TODO
-%REFERENCES. E. Goursat, Cours d' Analyse (Paris, 1911), Chs. xv, xvi.
-%E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
-%Bromwich\footnote{The expansions considered by Eromwich are obtained by elementary
-%methods, i.e. without the use of Cauchy's theorem.} Theory of Infinite
-%Series (1908), Chs. viii, x, xi. 0.
-%Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
-%
-%\miscexamples
-%\begin{enumerate}
-%\item If $y - x - \phi(y) = 0$, where $\phi$ is a given function of
+by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
+and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
+$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
+$n \rightarrow \infty$, and so, when $\Re(z) > r$,
+we have the convergent expansion
+$$
+f(z)
+=
+b_{0}
++
+\frac{b_{1}}{z+1}
++
+\frac{b_{2}}{(z+1)(z+2)}
++
+\cdots
+\frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
++
+\cdots.
+$$
+\begin{wandwexample}
+Obtain the same expansion by using the results
+$$
+\frac{1}{(z+1)(z+2)\cdots(z+n+1)}
+=
+\frac{1}{n!}
+\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure z,
+$$
+$$
+\int_{C}
+\frac{ f(t) \dmeasure t }{z - t}
+=
+\int_{C} \dmeasure t
+\int_{0}^{1}
+f(t) (1-u)^{z-t-1} \dmeasure u.
+$$
+\end{wandwexample}
+\begin{wandwexample}
+Obtain the expansion
+$$
+\log\theparen{1 + \frac{1}{z}}
+=
+\frac{1}{z}
+-
+\frac{a_{1}}{z(z+1)}
+-
+\frac{a_{2}}{z(z+1)(z+2)}
+-
+\cdots,
+$$
+where
+$$
+a_{n}
+=
+\int_{0}^{1}
+t (1-t) (2-t) \cdots (n-1-t) \dmeasure t,
+$$
+and discuss the region in which it converges.
+\addexamplecitation{Schlomilch.}
+\end{wandwexample}
+
+%TODO
+REFERENCES. E. Goursat, Cours d' Analyse (Paris, 1911), Chs. xv, xvi.
+E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
+Bromwich\footnote{The expansions considered by Eromwich are obtained by elementary
+methods, i.e. without the use of Cauchy's theorem.} Theory of Infinite
+Series (1908), Chs. viii, x, xi. 0.
+Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
+
+\miscexamples
+\begin{enumerate}
+\item If $y - x - \phi(y) = 0$, where $\phi$ is a given function of
 %  its argument, obtain the expansion
 %  $$
 %  f(y)
@@ -2752,4 +2752,4 @@ $$
 %f a)+ I [/'(a)(0(a) ].
 %
 %Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem.
-%\end{enumerate}
+\end{enumerate}
