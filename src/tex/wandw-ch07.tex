@@ -1903,304 +1903,304 @@ analytic function is summable (B).
 We next obtain Borel's result that his integral represents an analytic
 function in a more extended region than the interior of the circle
 $\absval{z} = r$.
+
+TODO:figure
+
+This extended region is obtained as follows: take the singularities
+$a,b,c,\ldots$ of $f(z)$ and through each of them draw a line perpendicular
+to the line joining that singularity to the origin. The lines so drawn
+will divide the plane into regions of which one is a polygon with the
+origin inside it.
+
+\emph{Then Borel's integral represents an analytic function}
+(which, by\hardsectionref{5}{5}
+and\hardsectionref{7}{8}, is obviously that defined by $f(z)$
+and its continuations)
+\emph{throughout the interior of this polygon.} The reader will observe that
+this is the first actual formula obtained for the analytic
+continuation of a function, except the trivial one of
+\hardsectionref{5}{5}, example.
+
+For, take any point $P$ with affix $\zeta$ inside the polygon; then
+the circle on $OP$ as diameter has no singularity on or inside
+it\footnote{The reader will see this from the figure; for if there were such a
+singularity the corresponding side of the polygon would pass between
+$O$ and $P$; \ie,
+ $P$ would be outside the polygon.}; and
+consequently we can draw a slightly
 %
-%TODO:figure
+% 142
 %
-%This extended region is obtained as follows: take the singularities
-%$a,b,c,\ldots$ of $f(z)$ and through each of them draw a line perpendicular
-%to the line joining that singularity to the origin. The lines so drawn
-%will divide the plane into regions of which one is a polygon with the
-%origin inside it.
+larger concentric circle\footnote{The differeuce of the radii of the
+  circles being, say, $\delta$.} $C$ with no singularity on or inside
+it. Then, by\hardsectionref{5}{4},
+$$
+a_{n}
+=
+\frac{1}{2 \pi i}
+\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z,
+$$
+and so
+$$
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\sum_{n=0}^{\infty}
+\frac{\zeta^{n} t^{n}}{n!}
+\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z;
+$$
+but
+$\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
+converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
+$f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
+$\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
+$$
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\int_{C} z^{-1} f(z) \exp(\zeta t z^{-1}) \dmeasure z,
+$$
+and so, when $t$ is real,
+$\absval{\phi(\zeta t)} < F(\zeta) e^{\lambda t}$,
+where $F(\zeta)$ is bounded in any closed region lying wholly
+\emph{inside} the polygon and is independent of $t$;
+and $\lambda$ is the greatest value of the real part of
+$\zeta / z$ on $C$.
+
+If we draw the circle traced out by the point $z/\zeta$, we see that
+the real part of $\zeta/z$ is greatest when $z$ is at the extremity of the
+diameter through $\zeta$, and so the value of $\lambda$ is
+$ \absval{\zeta} \cdot \thebrace{\absval{\zeta} + \delta}^{-1} < 1$.
+
+We can get a similar inequality for $\phi'(\zeta t)$ and hence,
+by\hardsubsectionref{5}{3}{2},
+$\int_{0}^{\infty} e^{-t} \phi(\zeta t) \dmeasure t$
+is analytic at $\zeta$ and is obviously a one-valued function of
+$\zeta$.
+
+This is the result stated above.
+
+\Subsection{7}{8}{2}{Expansions in series of inverse factorials.}
+
+A mode of development of functions, which, after being used by
+Nicole\footnote{TODO Mem de VAcad. des Sci. (Paris, 1717); see Tweedie, Proc. Edin. Math.
+  Soc. xxxvi. (1918).}
+and
+Stirling\footnote{TODO Methodus Dijferentialis (Londou, 1730).}
+in the eighteenth century, was systematically
+investigated by
+\Schlomilch\footnote{TODO Compendium der h'dheren AnalysU. More recent investigations are due
+to Kluyver, Nielsen and Pincherle. See Comptes liendiis, cxxxiii.
+(1901), cxxxiv. (1902), Annales de I'Ecole norm, sup. (3), XIX.,
+XIII., xxiii., JRendiconti del Lincei, (5), xi. (1902), and Palermo
+Rendiconti, xxxiv. (1912). Properties of functions defined by series
+of inverse factorials have been studied in an important memoir by
+Norlund, Acta Math, xxxvii. (1914), pp. 327-H87.}
+in 1863, is that of expansion in a series
+of inverse factorials.
+
+To obtain such an expansion of a function analytic when
+$\absval{z} > r$, we let
+the function be
+$f(z) = \sum_{n=0}^{\infty} a_{n} z^{-n}$, and use the formula
+$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(z) \dmeasure t$,
+where $\phi(t) = \sum_{n=0}^{\infty} a_{n} t^{n} / n!$;
+this result may be obtained in the same way as
+that of\hardsectionref{7}{8}.
+Modify this by writing
+$e^{-t} = 1 - \xi$, $\phi(t) = F(\xi)$;
+then
+$$
+f(z)
+=
+\int_{0}^{1}
+z (1 - \xi)^{z-1} F(\xi) \dmeasure \xi.
+$$
+
+Now if $t = u + iv$ and if $t$ be confined to the strip
+$-\pi < v < \pi$, $t$ is a
+one-valued function of $\xi$ and $F(\xi)$ is an analytic function of
+$\xi$; and $\xi$ is
+restricted so that $-\pi < \arg (1-\xi) < \pi$. Also the interior of the
+circle $\absval{\xi} = 1$ corresponds
 %
-%\emph{Then Borel's integral represents an analytic function}
-%(which, by\hardsectionref{5}{5}
-%and\hardsectionref{7}{8}, is obviously that defined by $f(z)$
-%and its continuations)
-%\emph{throughout the interior of this polygon.} The reader will observe that
-%this is the first actual formula obtained for the analytic
-%continuation of a function, except the trivial one of
-%\hardsectionref{5}{5}, example.
+% 143
 %
-%For, take any point $P$ with affix $\zeta$ inside the polygon; then
-%the circle on $OP$ as diameter has no singularity on or inside
-%it\footnote{The reader will see this from the figure; for if there were such a
-%singularity the corresponding side of the polygon would pass between
-%$O$ and $P$; \ie,
-% $P$ would be outside the polygon.}; and
-%consequently we can draw a slightly
-%%
-%% 142
-%%
-%larger concentric circle\footnote{The differeuce of the radii of the
-%  circles being, say, $\delta$.} $C$ with no singularity on or inside
-%it. Then, by\hardsectionref{5}{4},
-%$$
-%a_{n}
-%=
-%\frac{1}{2 \pi i}
-%\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z,
-%$$
-%and so
-%$$
-%\phi(\zeta t)
-%=
-%\frac{1}{2 \pi i}
-%\sum_{n=0}^{\infty}
-%\frac{\zeta^{n} t^{n}}{n!}
-%\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z;
-%$$
-%but
-%$\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
-%converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
-%$f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
-%$\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
-%$$
-%\phi(\zeta t)
-%=
-%\frac{1}{2 \pi i}
-%\int_{C} z^{-1} f(z) \exp(\zeta t z^{-1}) \dmeasure z,
-%$$
-%and so, when $t$ is real,
-%$\absval{\phi(\zeta t)} < F(\zeta) e^{\lambda t}$,
-%where $F(\zeta)$ is bounded in any closed region lying wholly
-%\emph{inside} the polygon and is independent of $t$;
-%and $\lambda$ is the greatest value of the real part of
-%$\zeta / z$ on $C$.
+to the interior of the curve traced out by the point
+$t = - \log \theparen{2 \cos \half \theta} + \half i \theta$,
+(writing $\xi= \exp \thebrace{i (\theta + \pi) }$ ); and inside this curve
+$$
+\absval{t} - R(t)
+\leq
+\sqrt{ \thebrace{R(t)}^{2} + \pi^{2} }
+-
+R(t)
+\rightarrow
+0,
+$$
+as $R(t) \rightarrow \infty$.
+
+It follows that, when $\absval{\xi} \leq 1$,
+$\absval{F(\xi)} < M e^{r\absval{t}} < M_{1} \absval{e^{rt}}$,
+where $M_{1}$ is independent of $t$; and so
+$F(\xi) < M_{1} \absval{(1-\xi)^{-r}}$.
+
+Now suppose that $0 \leq \xi < 1$; then, by
+\hardsubsectionref{5}{2}{3},
+$\absval{F^{(n)}(\xi)} < M_{2} n! \rho^{-n}$
+where $M_{2}$ is the upper bound of
+$\absval{F(z)}$ on a circle with centre $\xi$ and
+radius $\rho < 1 - \xi$.
+
+Taking $\rho = \frac{n}{n+1} (1-\xi)$ and observing
+that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
+  for $\frac{1}{1-y} > e^{y}$, when $y < 1$, and so
+  $\log \theparen{\frac{1}{1-y}} > y$. That is to
+  say, putting $y^{-1} = 1+x$,
+  $
+  \frac{\dd}{\dd x} x \log (1 + x^{-1})
+  =
+  \log (1 + x^{-1})
+  -
+  \frac{1}{1+x}
+  >
+  0
+  $.
+}
+$(1 + n^{-1})^{n} < e$
+we find that
+\begin{align*}
+  \absval{F^{(n)}}
+  <&
+  M_{1}
+  \thebracket{
+    1
+    -
+    \thebrace{
+      \xi
+      +
+      \frac{n}{n+1} \xi
+    }
+  }^{-r}
+  \cdot
+  n!
+  \thebrace{
+    \frac{n (1-\xi)}{n+1}
+  }^{-n}
+  \\
+  <&
+  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
+\end{align*}
+
+Remembering that, by\hardsectionref{4}{5}, $\int_{0}^{1}$ means
+$\lim_{\epsilon \rightarrow 0} \int_{0}^{1-\epsilon}$, we
+have, by repeated integrations by parts,
+\begin{align*}
+  f(z)
+  =&
+  \lim_{\epsilon \rightarrow +0}
+  \thebracket{
+    -(1 - \xi)^{z} F(\xi)
+  }_{0}^{1-\epsilon}
+  +
+  \int_{0}^{1 - \epsilon}
+  (1 - \xi)^{z} F'(\xi) \dmeasure \xi
+  \\
+  =&
+  \thebracket{
+    -(1 - \xi)^{z} F(\xi)
+  }_{0}^{1 - \epsilon}
+  +
+  \frac{1}{z + 1}
+  \thebracket{
+    -(1 - \xi)^{z+1} F'(\xi)
+  }_{0}^{1 - \epsilon}
+  \\
+  &
+  \quad
+  \quad
+  +
+  \frac{1}{z + 1}
+  \int_{0}^{1 - \epsilon}
+  (1 - \xi)^{z+1} F''(\xi) \dmeasure \xi
+  \\
+  =&
+  \cdots
+  \\
+  =&
+  b_{0}
+  +
+  \frac{b_{1}}{z+1}
+  +
+  \frac{b_{2}}{(z+1)(z+2)}
+  +
+  \cdots
+  +
+  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
+  +
+  R_{n},
+\end{align*}
+where
+\begin{align*}
+  b_{n}
+  =&
+  \lim_{\epsilon \rightarrow 0}
+  \thebracket{
+    -(1-\xi)^{z+n} F^{(n)}(\xi)
+  }_{0}^{1 - \epsilon}
+  \\
+  =&
+  F^{(n)}(0),
+\end{align*}
+if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
+further
+\begin{align*}
+  \absval{R_{n}}
+  \leq &
+  \frac{1}{ \absval{ (z+1)(z+2)\cdots(z+n)  }}
+  \lim_{\epsilon \rightarrow 0}
+  \int_{0}^{1 - \epsilon}
+  \absval{ (1-\xi)^{z+n} F^{(n+1)}(\xi) }
+  \dmeasure \xi
+  \\
+  <&
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    \absval{(z+1)(z+2)\cdots(z+n)} \Re(z-r)}
+  \\
+  <&
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    \absval{ (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \delta }
+    },
+\end{align*}
+where $\delta = \Re(z - r)$.
 %
-%If we draw the circle traced out by the point $z/\zeta$, we see that
-%the real part of $\zeta/z$ is greatest when $z$ is at the extremity of the
-%diameter through $\zeta$, and so the value of $\lambda$ is
-%$ \absval{\zeta} \cdot \thebrace{\absval{\zeta} + \delta}^{-1} < 1$.
+% 144
 %
-%We can get a similar inequality for $\phi'(\zeta t)$ and hence,
-%by\hardsubsectionref{5}{3}{2},
-%$\int_{0}^{\infty} e^{-t} \phi(\zeta t) \dmeasure t$
-%is analytic at $\zeta$ and is obviously a one-valued function of
-%$\zeta$.
-%
-%This is the result stated above.
-%
-%\Subsection{7}{8}{2}{Expansions in series of inverse factorials.}
-%
-%A mode of development of functions, which, after being used by
-%Nicole\footnote{TODO Mem de VAcad. des Sci. (Paris, 1717); see Tweedie, Proc. Edin. Math.
-%  Soc. xxxvi. (1918).}
-%and
-%Stirling\footnote{TODO Methodus Dijferentialis (Londou, 1730).}
-%in the eighteenth century, was systematically
-%investigated by
-%\Schlomilch\footnote{TODO Compendium der h'dheren AnalysU. More recent investigations are due
-%to Kluyver, Nielsen and Pincherle. See Comptes liendiis, cxxxiii.
-%(1901), cxxxiv. (1902), Annales de I'Ecole norm, sup. (3), XIX.,
-%XIII., xxiii., JRendiconti del Lincei, (5), xi. (1902), and Palermo
-%Rendiconti, xxxiv. (1912). Properties of functions defined by series
-%of inverse factorials have been studied in an important memoir by
-%Norlund, Acta Math, xxxvii. (1914), pp. 327-H87.}
-%in 1863, is that of expansion in a series
-%of inverse factorials.
-%
-%To obtain such an expansion of a function analytic when
-%$\absval{z} > r$, we let
-%the function be
-%$f(z) = \sum_{n=0}^{\infty} a_{n} z^{-n}$, and use the formula
-%$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(z) \dmeasure t$,
-%where $\phi(t) = \sum_{n=0}^{\infty} a_{n} t^{n} / n!$;
-%this result may be obtained in the same way as
-%that of\hardsectionref{7}{8}.
-%Modify this by writing
-%$e^{-t} = 1 - \xi$, $\phi(t) = F(\xi)$;
-%then
-%$$
-%f(z)
-%=
-%\int_{0}^{1}
-%z (1 - \xi)^{z-1} F(\xi) \dmeasure \xi.
-%$$
-%
-%Now if $t = u + iv$ and if $t$ be confined to the strip
-%$-\pi < v < \pi$, $t$ is a
-%one-valued function of $\xi$ and $F(\xi)$ is an analytic function of
-%$\xi$; and $\xi$ is
-%restricted so that $-\pi < \arg (1-\xi) < \pi$. Also the interior of the
-%circle $\absval{\xi} = 1$ corresponds
-%%
-%% 143
-%%
-%to the interior of the curve traced out by the point
-%$t = - \log \theparen{2 \cos \half \theta} + \half i \theta$,
-%(writing $\xi= \exp \thebrace{i (\theta + \pi) }$ ); and inside this curve
-%$$
-%\absval{t} - R(t)
-%\leq
-%\sqrt{ \thebrace{R(t)}^{2} + \pi^{2} }
-%-
-%R(t)
-%\rightarrow
-%0,
-%$$
-%as $R(t) \rightarrow \infty$.
-%
-%It follows that, when $\absval{\xi} \leq 1$,
-%$\absval{F(\xi)} < M e^{r\absval{t}} < M_{1} \absval{e^{rt}}$,
-%where $M_{1}$ is independent of $t$; and so
-%$F(\xi) < M_{1} \absval{(1-\xi)^{-r}}$.
-%
-%Now suppose that $0 \leq \xi < 1$; then, by
-%\hardsubsectionref{5}{2}{3},
-%$\absval{F^{(n)}(\xi)} < M_{2} n! \rho^{-n}$
-%where $M_{2}$ is the upper bound of
-%$\absval{F(z)}$ on a circle with centre $\xi$ and
-%radius $\rho < 1 - \xi$.
-%
-%Taking $\rho = \frac{n}{n+1} (1-\xi)$ and observing
-%that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
-%  for $\frac{1}{1-y} > e^{y}$, when $y < 1$, and so
-%  $\log \theparen{\frac{1}{1-y}} > y$. That is to
-%  say, putting $y^{-1} = 1+x$,
-%  $
-%  \frac{\dd}{\dd x} x \log (1 + x^{-1})
-%  =
-%  \log (1 + x^{-1})
-%  -
-%  \frac{1}{1+x}
-%  >
-%  0
-%  $.
-%}
-%$(1 + n^{-1})^{n} < e$
-%we find that
-%\begin{align*}
-%  \absval{F^{(n)}}
-%  <&
-%  M_{1}
-%  \thebracket{
-%    1
-%    -
-%    \thebrace{
-%      \xi
-%      +
-%      \frac{n}{n+1} \xi
-%    }
-%  }^{-r}
-%  \cdot
-%  n!
-%  \thebrace{
-%    \frac{n (1-\xi)}{n+1}
-%  }^{-n}
-%  \\
-%  <&
-%  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
-%\end{align*}
-%
-%Remembering that, by\hardsectionref{4}{5}, $\int_{0}^{1}$ means
-%$\lim_{\epsilon \rightarrow 0} \int_{0}^{1-\epsilon}$, we
-%have, by repeated integrations by parts,
-%\begin{align*}
-%  f(z)
-%  =&
-%  \lim_{\epsilon \rightarrow +0}
-%  \thebracket{
-%    -(1 - \xi)^{z} F(\xi)
-%  }_{0}^{1-\epsilon}
-%  +
-%  \int_{0}^{1 - \epsilon}
-%  (1 - \xi)^{z} F'(\xi) \dmeasure \xi
-%  \\
-%  =&
-%  \thebracket{
-%    -(1 - \xi)^{z} F(\xi)
-%  }_{0}^{1 - \epsilon}
-%  +
-%  \frac{1}{z + 1}
-%  \thebracket{
-%    -(1 - \xi)^{z+1} F'(\xi)
-%  }_{0}^{1 - \epsilon}
-%  \\
-%  &
-%  \quad
-%  \quad
-%  +
-%  \frac{1}{z + 1}
-%  \int_{0}^{1 - \epsilon}
-%  (1 - \xi)^{z+1} F''(\xi) \dmeasure \xi
-%  \\
-%  =&
-%  \cdots
-%  \\
-%  =&
-%  b_{0}
-%  +
-%  \frac{b_{1}}{z+1}
-%  +
-%  \frac{b_{2}}{(z+1)(z+2)}
-%  +
-%  \cdots
-%  +
-%  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
-%  +
-%  R_{n},
-%\end{align*}
-%where
-%\begin{align*}
-%  b_{n}
-%  =&
-%  \lim_{\epsilon \rightarrow 0}
-%  \thebracket{
-%    -(1-\xi)^{z+n} F^{(n)}(\xi)
-%  }_{0}^{1 - \epsilon}
-%  \\
-%  =&
-%  F^{(n)}(0),
-%\end{align*}
-%if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
-%further
-%\begin{align*}
-%  \absval{R_{n}}
-%  \leq &
-%  \frac{1}{ \absval{ (z+1)(z+2)\cdots(z+n)  }}
-%  \lim_{\epsilon \rightarrow 0}
-%  \int_{0}^{1 - \epsilon}
-%  \absval{ (1-\xi)^{z+n} F^{(n+1)}(\xi) }
-%  \dmeasure \xi
-%  \\
-%  <&
-%  \frac{ M_{1} e (n+2)^{r} n!}{
-%    \absval{(z+1)(z+2)\cdots(z+n)} \Re(z-r)}
-%  \\
-%  <&
-%  \frac{ M_{1} e (n+2)^{r} n!}{
-%    \absval{ (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \delta }
-%    },
-%\end{align*}
-%where $\delta = \Re(z - r)$.
-%%
-%% 144
-%%
-%
-%Now
-%$$
-%\prod_{m=1}^{n}
-%\thebrace{
-%  \theparen{
-%    1
-%    +
-%    \frac{r + \delta}{m}
-%  }
-%  e^{-\frac{r+\delta}{m}}
-%}
-%$$
-%tends to a limit \hardsubsectionref{2}{7}{1}) as
-%$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
-%if
-%$ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
-%tends to zero; but
-%$$
-%\sum_{m=1}^{n} 1/m
-%>
-%\int_{1}^{n+1} \frac{\dmeasure x}{x}
-%=
-%\log(n+1),
-%$$
+
+Now
+$$
+\prod_{m=1}^{n}
+\thebrace{
+  \theparen{
+    1
+    +
+    \frac{r + \delta}{m}
+  }
+  e^{-\frac{r+\delta}{m}}
+}
+$$
+tends to a limit \hardsubsectionref{2}{7}{1}) as
+$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
+if
+$ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
+tends to zero; but
+$$
+\sum_{m=1}^{n} 1/m
+>
+\int_{1}^{n+1} \frac{\dmeasure x}{x}
+=
+\log(n+1),
+$$
 %by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
 %and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
 %$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
