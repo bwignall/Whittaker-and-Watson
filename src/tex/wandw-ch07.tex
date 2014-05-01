@@ -1903,854 +1903,853 @@ analytic function is summable (B).
 We next obtain Borel's result that his integral represents an analytic
 function in a more extended region than the interior of the circle
 $\absval{z} = r$.
-
-TODO:figure
-
-This extended region is obtained as follows: take the singularities
-$a,b,c,\ldots$ of $f(z)$ and through each of them draw a line perpendicular
-to the line joining that singularity to the origin. The lines so drawn
-will divide the plane into regions of which one is a polygon with the
-origin inside it.
-
-\emph{Then Borel's integral represents an analytic function}
-(which, by\hardsectionref{5}{5}
-and\hardsectionref{7}{8}, is obviously that defined by $f(z)$
-and its continuations)
-\emph{throughout the interior of this polygon.} The reader will observe that
-this is the first actual formula obtained for the analytic
-continuation of a function, except the trivial one of
-\hardsectionref{5}{5}, example.
-
-For, take any point $P$ with affix $\zeta$ inside the polygon; then
-the circle on $OP$ as diameter has no singularity on or inside
-it\footnote{The reader will see this from the figure; for if there were such a
-singularity the corresponding side of the polygon would pass between
-$O$ and $P$; \ie,
- $P$ would be outside the polygon.}; and
-consequently we can draw a slightly
 %
-% 142
+%TODO:figure
 %
-larger concentric circle\footnote{The differeuce of the radii of the
-  circles being, say, $\delta$.} $C$ with no singularity on or inside
-it. Then, by\hardsectionref{5}{4},
-$$
-a_{n}
-=
-\frac{1}{2 \pi i}
-\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z,
-$$
-and so
-$$
-\phi(\zeta t)
-=
-\frac{1}{2 \pi i}
-\sum_{n=0}^{\infty}
-\frac{\zeta^{n} t^{n}}{n!}
-\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z;
-$$
-but
-$\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
-converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
-$f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
-$\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
-$$
-\phi(\zeta t)
-=
-\frac{1}{2 \pi i}
-\int_{C} z^{-1} f(z) \exp(\zeta t z^{-1}) \dmeasure z,
-$$
-and so, when $t$ is real,
-$\absval{\phi(\zeta t)} < F(\zeta) e^{\lambda t}$,
-where $F(\zeta)$ is bounded in any closed region lying wholly
-\emph{inside} the polygon and is independent of $t$;
-and $\lambda$ is the greatest value of the real part of
-$\zeta / z$ on $C$.
-
-If we draw the circle traced out by the point $z/\zeta$, we see that
-the real part of $\zeta/z$ is greatest when $z$ is at the extremity of the
-diameter through $\zeta$, and so the value of $\lambda$ is
-$ \absval{\zeta} \cdot \thebrace{\absval{\zeta} + \delta}^{-1} < 1$.
-
-We can get a similar inequality for $\phi'(\zeta t)$ and hence,
-by\hardsubsectionref{5}{3}{2},
-$\int_{0}^{\infty} e^{-t} \phi(\zeta t) \dmeasure t$
-is analytic at $\zeta$ and is obviously a one-valued function of
-$\zeta$.
-
-This is the result stated above.
-
-\Subsection{7}{8}{2}{Expansions in series of inverse factorials.}
-
-A mode of development of functions, which, after being used by
-Nicole\footnote{TODO Mem de VAcad. des Sci. (Paris, 1717); see Tweedie, Proc. Edin. Math.
-  Soc. xxxvi. (1918).}
-and
-Stirling\footnote{TODO Methodus Dijferentialis (Londou, 1730).}
-in the eighteenth century, was systematically
-investigated by
-\Schlomilch\footnote{TODO Compendium der h'dheren AnalysU. More recent investigations are due
-to Kluyver, Nielsen and Pincherle. See Comptes liendiis, cxxxiii.
-(1901), cxxxiv. (1902), Annales de I'Ecole norm, sup. (3), XIX.,
-XIII., xxiii., JRendiconti del Lincei, (5), xi. (1902), and Palermo
-Rendiconti, xxxiv. (1912). Properties of functions defined by series
-of inverse factorials have been studied in an important memoir by
-Norlund, Acta Math, xxxvii. (1914), pp. 327-H87.}
-in 1863, is that of expansion in a series
-of inverse factorials.
-
-To obtain such an expansion of a function analytic when
-$\absval{z} > r$, we let
-the function be
-$f(z) = \sum_{n=0}^{\infty} a_{n} z^{-n}$, and use the formula
-$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(z) \dmeasure t$,
-where $\phi(t) = \sum_{n=0}^{\infty} a_{n} t^{n} / n!$;
-this result may be obtained in the same way as
-that of\hardsectionref{7}{8}.
-Modify this by writing
-$e^{-t} = 1 - \xi$, $\phi(t) = F(\xi)$;
-then
-$$
-f(z)
-=
-\int_{0}^{1}
-z (1 - \xi)^{z-1} F(\xi) \dmeasure \xi.
-$$
-
-Now if $t = u + iv$ and if $t$ be confined to the strip
-$-\pi < v < \pi$, $t$ is a
-one-valued function of $\xi$ and $F(\xi)$ is an analytic function of
-$\xi$; and $\xi$ is
-restricted so that $-\pi < \arg (1-\xi) < \pi$. Also the interior of the
-circle $\absval{\xi} = 1$ corresponds
+%This extended region is obtained as follows: take the singularities
+%$a,b,c,\ldots$ of $f(z)$ and through each of them draw a line perpendicular
+%to the line joining that singularity to the origin. The lines so drawn
+%will divide the plane into regions of which one is a polygon with the
+%origin inside it.
 %
-% 143
+%\emph{Then Borel's integral represents an analytic function}
+%(which, by\hardsectionref{5}{5}
+%and\hardsectionref{7}{8}, is obviously that defined by $f(z)$
+%and its continuations)
+%\emph{throughout the interior of this polygon.} The reader will observe that
+%this is the first actual formula obtained for the analytic
+%continuation of a function, except the trivial one of
+%\hardsectionref{5}{5}, example.
 %
-to the interior of the curve traced out by the point
-$t = - \log \theparen{2 \cos \half \theta} + \half i \theta$,
-(writing $\xi= \exp \thebrace{i (\theta + \pi) }$ ); and inside this curve
-$$
-\absval{t} - R(t)
-\leq
-\sqrt{ \thebrace{R(t)}^{2} + \pi^{2} }
--
-R(t)
-\rightarrow
-0,
-$$
-as $R(t) \rightarrow \infty$.
-
-It follows that, when $\absval{\xi} \leq 1$,
-$\absval{F(\xi)} < M e^{r\absval{t}} < M_{1} \absval{e^{rt}}$,
-where $M_{1}$ is independent of $t$; and so
-$F(\xi) < M_{1} \absval{(1-\xi)^{-r}}$.
-
-Now suppose that $0 \leq \xi < 1$; then, by
-\hardsubsectionref{5}{2}{3},
-$\absval{F^{(n)}(\xi)} < M_{2} n! \rho^{-n}$
-where $M_{2}$ is the upper bound of
-$\absval{F(z)}$ on a circle with centre $\xi$ and
-radius $\rho < 1 - \xi$.
-
-Taking $\rho = \frac{n}{n+1} (1-\xi)$ and observing
-that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
-  for $\frac{1}{1-y} > e^{y}$, when $y < 1$, and so
-  $\log \theparen{\frac{1}{1-y}} > y$. That is to
-  say, putting $y^{-1} = 1+x$,
-  $
-  \frac{\dd}{\dd x} x \log (1 + x^{-1})
-  =
-  \log (1 + x^{-1})
-  -
-  \frac{1}{1+x}
-  >
-  0
-  $.
-}
-$(1 + n^{-1})^{n} < e$
-we find that
-\begin{align*}
-  \absval{F^{(n)}}
-  <&
-  M_{1}
-  \thebracket{
-    1
-    -
-    \thebrace{
-      \xi
-      +
-      \frac{n}{n+1} \xi
-    }
-  }^{-r}
-  \cdot
-  n!
-  \thebrace{
-    \frac{n (1-\xi)}{n+1}
-  }^{-n}
-  \\
-  <&
-  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
-\end{align*}
-
-Remembering that, by\hardsectionref{4}{5}, $\int_{0}^{1}$ means
-$\lim_{\epsilon \rightarrow 0} \int_{0}^{1-\epsilon}$, we
-have, by repeated integrations by parts,
-\begin{align*}
-  f(z)
-  =&
-  \lim_{\epsilon \rightarrow +0}
-  \thebracket{
-    -(1 - \xi)^{z} F(\xi)
-  }_{0}^{1-\epsilon}
-  +
-  \int_{0}^{1 - \epsilon}
-  (1 - \xi)^{z} F'(\xi) \dmeasure \xi
-  \\
-  =&
-  \thebracket{
-    -(1 - \xi)^{z} F(\xi)
-  }_{0}^{1 - \epsilon}
-  +
-  \frac{1}{z + 1}
-  \thebracket{
-    -(1 - \xi)^{z+1} F'(\xi)
-  }_{0}^{1 - \epsilon}
-  \\
-  &
-  \quad
-  \quad
-  +
-  \frac{1}{z + 1}
-  \int_{0}^{1 - \epsilon}
-  (1 - \xi)^{z+1} F''(\xi) \dmeasure \xi
-  \\
-  =&
-  \cdots
-  \\
-  =&
-  b_{0}
-  +
-  \frac{b_{1}}{z+1}
-  +
-  \frac{b_{2}}{(z+1)(z+2)}
-  +
-  \cdots
-  +
-  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
-  +
-  R_{n},
-\end{align*}
-where
-\begin{align*}
-  b_{n}
-  =&
-  \lim_{\epsilon \rightarrow 0}
-  \thebracket{
-    -(1-\xi)^{z+n} F^{(n)}(\xi)
-  }_{0}^{1 - \epsilon}
-  \\
-  =&
-  F^{(n)}(0),
-\end{align*}
-if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
-further
-\begin{align*}
-  \absval{R_{n}}
-  \leq &
-  \frac{1}{ \absval{ (z+1)(z+2)\cdots(z+n)  }}
-  \lim_{\epsilon \rightarrow 0}
-  \int_{0}^{1 - \epsilon}
-  \absval{ (1-\xi)^{z+n} F^{(n+1)}(\xi) }
-  \dmeasure \xi
-  \\
-  <&
-  \frac{ M_{1} e (n+2)^{r} n!}{
-    \absval{(z+1)(z+2)\cdots(z+n)} \Re(z-r)}
-  \\
-  <&
-  \frac{ M_{1} e (n+2)^{r} n!}{
-    \absval{ (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \delta }
-    },
-\end{align*}
-where $\delta = \Re(z - r)$.
+%For, take any point $P$ with affix $\zeta$ inside the polygon; then
+%the circle on $OP$ as diameter has no singularity on or inside
+%it\footnote{The reader will see this from the figure; for if there were such a
+%singularity the corresponding side of the polygon would pass between
+%$O$ and $P$; \ie,
+% $P$ would be outside the polygon.}; and
+%consequently we can draw a slightly
+%%
+%% 142
+%%
+%larger concentric circle\footnote{The differeuce of the radii of the
+%  circles being, say, $\delta$.} $C$ with no singularity on or inside
+%it. Then, by\hardsectionref{5}{4},
+%$$
+%a_{n}
+%=
+%\frac{1}{2 \pi i}
+%\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z,
+%$$
+%and so
+%$$
+%\phi(\zeta t)
+%=
+%\frac{1}{2 \pi i}
+%\sum_{n=0}^{\infty}
+%\frac{\zeta^{n} t^{n}}{n!}
+%\int_{C} \frac{f(z)}{z^{n+1}} \dmeasure z;
+%$$
+%but
+%$\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
+%converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
+%$f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
+%$\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
+%$$
+%\phi(\zeta t)
+%=
+%\frac{1}{2 \pi i}
+%\int_{C} z^{-1} f(z) \exp(\zeta t z^{-1}) \dmeasure z,
+%$$
+%and so, when $t$ is real,
+%$\absval{\phi(\zeta t)} < F(\zeta) e^{\lambda t}$,
+%where $F(\zeta)$ is bounded in any closed region lying wholly
+%\emph{inside} the polygon and is independent of $t$;
+%and $\lambda$ is the greatest value of the real part of
+%$\zeta / z$ on $C$.
 %
-% 144
+%If we draw the circle traced out by the point $z/\zeta$, we see that
+%the real part of $\zeta/z$ is greatest when $z$ is at the extremity of the
+%diameter through $\zeta$, and so the value of $\lambda$ is
+%$ \absval{\zeta} \cdot \thebrace{\absval{\zeta} + \delta}^{-1} < 1$.
 %
-
-Now
-$$
-\prod_{m=1}^{n}
-\thebrace{
-  \theparen{
-    1
-    +
-    \frac{r + \delta}{m}
-  }
-  e^{-\frac{r+\delta}{m}}
-}
-$$
-tends to a limit \hardsubsectionref{2}{7}{1}) as
-$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
-if
-$ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
-tends to zero; but
-$$
-\sum_{m=1}^{n} 1/m
->
-\int_{1}^{n+1} \frac{\dmeasure x}{x}
-=
-\log(n+1),
-$$
-by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
-and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
-$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
-$n \rightarrow \infty$, and so, when $\Re(z) > r$,
-we have the convergent expansion
-$$
-f(z)
-=
-b_{0}
-+
-\frac{b_{1}}{z+1}
-+
-\frac{b_{2}}{(z+1)(z+2)}
-+
-\cdots
-\frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
-+
-\cdots.
-
-$$
-\begin{wandwexample}
-Obtain the same expansion by using the results
-$$
-\frac{1}{(z+1)(z+2)\cdots(z+n+1)}
-=
-\frac{1}{n!}
-\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure z,
-$$
-$$
-\int_{C}
-\frac{ f(t) \dmeasure t }{z - t}
-=
-\int_{C} \dmeasure t
-\int_{0}^{1}
-f(t) (1-u)^{z-t-1} \dmeasure u.
-$$
-\end{wandwexample}
-\begin{wandwexample}
-Obtain the expansion
-$$
-\log\theparen{1 + \frac{1}{z}}
-=
-\frac{1}{z}
--
-\frac{a_{1}}{z(z+1)}
--
-\frac{a_{2}}{z(z+1)(z+2)}
--
-\cdots,
-$$
-where
-$$
-a_{n}
-=
-\int_{0}^{1}
-t (1-t) (2-t) \cdots (n-1-t) \dmeasure t,
-$$
-and discuss the region in which it converges.
-\addexamplecitation{Schlomilch.}
-\end{wandwexample}
-
-%TODO
-REFERENCES. E. Goursat, Cours d' Analyse (Paris, 1911), Chs. xv, xvi.
-E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
-Bromwich\footnote{The expansions considered by Eromwich are obtained by elementary
-methods, i.e. without the use of Cauchy's theorem.} Theory of Infinite
-Series (1908), Chs. viii, x, xi. 0.
-Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
-
-\miscexamples
-\begin{enumerate}
-\item If $y - x - \phi(y) = 0$, where $\phi$ is a given function of
-  its argument, obtain the expansion
-  $$
-  f(y)
-  =
-  f(x)
-  +
-  \sum_{m=1}^{\infty}
-  \frac{1}{m!}
-  \thebrace{\phi(x)}^{m}
-  \theparen{
-    \frac{1}{1-\phi'(x)}
-    \frac{\dd}{\dd x}
-  }^{m}
-  f(x)
-  $$
-  where $f$ denotes any analytic function of its argument, and discuss
-  the range of its validity.
-  \addexamplecitation{TODO:Levi-Civitk, Bertd. dei Lincei, (5), xvl
-    (1907), p. 3.}
-\item Obtain (from the formula of Darboux or otherwise) the expansion
-  $$
-  f(z) - f(z)
-  =
-  \sum_{n=1}^{\infty}
-  \frac{(-)^{n-1} (z-a)^{n}}{n! (1-r)^{n}}
-  \thebrace{
-    f^{(n)}(z) - r^{n} f^{(n)}(a)
-  };
-  $$
-  find the remainder after $n$ terms, and discuss the
-  convergence of the series.
-
-% 145
+%We can get a similar inequality for $\phi'(\zeta t)$ and hence,
+%by\hardsubsectionref{5}{3}{2},
+%$\int_{0}^{\infty} e^{-t} \phi(\zeta t) \dmeasure t$
+%is analytic at $\zeta$ and is obviously a one-valued function of
+%$\zeta$.
 %
-\item Shew that
-  \begin{align*}
-    f(x+h) - f(x)
-    =&
-    \sum_{m=1}^{n}
-    (-)^{m-1}
-    \frac{1 \cdot 3 \cdot 5 \cdots (2m-1)}{(m!)^{2}}
-    \frac{h^{m}}{2^{m}}
-    \thebrace{
-      f^{(m)}(x+h)
-      -
-      (-)^{m} f^{(m)}(x)
-    }
-    \\
-    & \quad
-    +
-    (-)^{n} h^{n+1}
-    \int_{0}^{1}
-    \gamma_{n}(t)
-    f^{(n+1)}(x + ht) \dmeasure t,
-  \end{align*}
-  where
-  $$
-  \gamma_{n}(t)
-  =
-  \frac{x^{n+\half} (1-x)^{n + \half}}{(n!)^{2}}
-  \frac{\dd^{n}}{\dd x^{n}}
-  \thebrace{
-    x^{-\half} (1-x)^{-\half}
-  }
-  =
-  \frac{1}{\pi n!}
-  \int_{0}^{1}
-  (x-z)^{n}
-  z^{-\half}
-  (1-z)^{-\half}
-  \dmeasure z,
-  $$
-  and shew that $\gamma_{n}(x)$ is the coefficient of
-  $n! t^{n}$ in the expansion of
-  $\thebrace{ (1-tx)(1+t-tx) }^{-\half}$
-  in ascending powers of $t$.
-\item By taking
-  $$
-  TODO
-  $$
-in the formula of Darboux, shew that
-
-/( + A)-/(.r)=- I,;|/(-)(,; + A)-l/M(4 m=l Vl. [ r )
-
-\ i.(\ ) A"+i r (ji(t)f(n+ (x+ht)dt,
-
-J
-
-where . \ --=i-a, ~ + a,~-asy, + ....
-
-5. Shew that
-
-/(.)-/( ) = J (-)-! - 2 ! /'"""" ( )+/<''"- ' ( )
-
-6. Prove that
-
-/( 2) -/(--l) = l ( 2 - --1)/' Z2) + C2 iZ2-Ziyf" ( l) - C3 Z2 " OV" (
-2)
-
--< 4( 2- l)V*M2l) + --- + (-)M 2---l) / ' | (e'''SechH)| \ /( + l)(2l
-+ to.- .-l);
-
-in the series phis signs and minus signs occur in pairs, and the last
-term l)efore the integral is that involving Z'>-h)"", also Cn is the
-coefficient of 5" in the expansion of
-
-cot ( T - o ) '" ascending powers of z. \addexamplecitation{Trinity, 1899.}
-
-7. If Xi and x are integers, and <f) (z) is a function which is
-analytic and'bounded for all values of z such that x R (z) X2, shew
-(by integrating
-
-f <t>( )dz
-
-je= 27r \ l
-
-round indented rectangles whose corners are Xi, 2? 2± < i, Xi±co i)
-that i( (a-i) + < (*-i + l) + ( ( i + 2)+... + 0( 2-l) + 2< (. 2)
-
-'"'A. i~\, 1 /'" (/) ( 2 + 3/) - (- 1 +iy)-(i> ( 2 - y) + < (A i -
-iy)
-
-1 I ( x +iy)-(pi-vi+iy)-(p ( 2 - .y) + <?> ( i - y) ..
-
-Mo e2f i/ - 1  "
-
-Hence, by applying the theorem
-
-/ ',2n-l
-
-4?i -1 - du = Bn,
-
-W. M. A. 10
-
+%This is the result stated above.
 %
-% 146
+%\Subsection{7}{8}{2}{Expansions in series of inverse factorials.}
 %
-
-where Bi, B., ... are \Bernoulli's numbers, shew that
-
-(where C is a constant not involving w), provided that the last series
-converges.
-
-(This important formula is due to Plana, Mem. della R, Accad. di
-Torino, xxv. (1820), pp. 403-418; a proof by means of contour
-integration was published by Kronecker, Journal fur Math. cv. (1889),
-pp. 345-348. For a detailed history, see Lindelof, Le Calcul des
-Residus. Some applications of the formula are given in Chapter xii.)
-
-8. Obtain the expansion
-
-X "",,, 1.3...(2;i-3) .r
-
-"=2+ !.(->"~ n\ 2
-
-for one root of the equation x = 2u + u\ and shew that it converges so
-long as | jp | < 1.
-
-' all combinations of th 12, 32, 5%... 2n-ir,
-
-9. If .S'™', denote the smii of all combinations of the numbers
-
-2n.+l
-
-taken m at a time, shew that
-
-1 oc (\ ) + ]
-
-sins =o(2?i + 2)
-
-cos.\ 1 |\ (-) |2 ( )\ U, \ +r-)n < ) -Isin -i.
-
-\addexamplecitation{Teixeira.}
-
-10. If the function f(z) is analytic in the interior of that one of
-the ovals whose equation is | sin s | = C (where C< 1), which includes
-the origin, shew that f(z) can, for all points z within this oval, be
-expanded in the form
-
-0. /(2 )(o)+Mi'/C' -2)(o)+...+>s;'"V'(o) '
-
-/(.)=/(0)+ S- " - sin z
-
-I /' "- ' (0) +4;; /(2n-i) (0)+ ... +<v, /' (0)
-
-where *S' is the sum of all combinations of the numbers
-
-2n
-
-22, 42, 62, ... (2/i-2)2, taken m at a time, and *S ",, denotes the
-sum of all combinations of the numbers
-
-' 2(1 + 1
-
-12, 32, 52,...(2;i-l)2, taken mi at a time. \addexamplecitation{Teixeira.}
-
-11. Shew that the two series
-
-2z 1z 2 +32" + "52 +'
-
-2z 2\ / 2z Y 2 / 2z
-
- "r 1.32 1- 2; +3.52V1-1
-
-represent the same function in a certain region of the z plane, and
-can be transformed into each other by Biirmaun's theorem.
-
-(Kapteyn, Nieuw Archief, (2), iii. (1897), p. 225.)
-
-12. If a function f(z) is periodic, of period 27r, and is analytic at
-all points in the infinite strip of the plane, included between the
-two branches of the curve jsin2| = C (where C> 1), shew that at all
-points in the strip it can be exjianded in an infinite series of the
-form
-
-/(2) = o + ylisin2+...+ sin"2 +
-
-+ cos2(5i + 52sin2+... + sin"-is + ...); and find the coefl\&cients
--4 and B . *
-
+%A mode of development of functions, which, after being used by
+%Nicole\footnote{TODO Mem de VAcad. des Sci. (Paris, 1717); see Tweedie, Proc. Edin. Math.
+%  Soc. xxxvi. (1918).}
+%and
+%Stirling\footnote{TODO Methodus Dijferentialis (Londou, 1730).}
+%in the eighteenth century, was systematically
+%investigated by
+%\Schlomilch\footnote{TODO Compendium der h'dheren AnalysU. More recent investigations are due
+%to Kluyver, Nielsen and Pincherle. See Comptes liendiis, cxxxiii.
+%(1901), cxxxiv. (1902), Annales de I'Ecole norm, sup. (3), XIX.,
+%XIII., xxiii., JRendiconti del Lincei, (5), xi. (1902), and Palermo
+%Rendiconti, xxxiv. (1912). Properties of functions defined by series
+%of inverse factorials have been studied in an important memoir by
+%Norlund, Acta Math, xxxvii. (1914), pp. 327-H87.}
+%in 1863, is that of expansion in a series
+%of inverse factorials.
 %
-% 147
+%To obtain such an expansion of a function analytic when
+%$\absval{z} > r$, we let
+%the function be
+%$f(z) = \sum_{n=0}^{\infty} a_{n} z^{-n}$, and use the formula
+%$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(z) \dmeasure t$,
+%where $\phi(t) = \sum_{n=0}^{\infty} a_{n} t^{n} / n!$;
+%this result may be obtained in the same way as
+%that of\hardsectionref{7}{8}.
+%Modify this by writing
+%$e^{-t} = 1 - \xi$, $\phi(t) = F(\xi)$;
+%then
+%$$
+%f(z)
+%=
+%\int_{0}^{1}
+%z (1 - \xi)^{z-1} F(\xi) \dmeasure \xi.
+%$$
 %
-
-13. If ( and /are connected bj the equation of which one root is a,
-shew that
-
- ( )= -T '/ '+i 3
-
-0" PP') I 1! 2! 3 X"'
-
-j< ' (( 2)' (/3/") " ct>T ipF')"
-
-+ ...,
-
-the general term being ( - )'",, ", ( f\ imim + i) iiaultiplied by a
-determinant in which
-
-the elements of the first row are ', ( )', (f) )', ..., (< '"~ )', /'"
-P') and each row is the diflferential coefficient of the jjreceding
-one with respect to a; and P, /", P', ... denote F a),f a\ P' a)
-
-(Wronski, Philosophie de la Technie, Section ii. p. 381. For proofs of
-the theorem see Cayley, Quarterly Journal, xil. (1873), Transon, Nouv.
-Ann. de Math. xill. (1874j, and C Lagrange, Brux. Mem. Couronnes, 4",
-xlvii. (1886), no. 2.)
-
-14. If the function W a, b, x) be defined by the series
-
-T.r / 7 N a-b (a - b)(a~2b), W a, b, x) = x + j-x + a- +...,
-
-which converges so long as
-
-x\ <
-
-w
-
-d
-
--p W (a, b, x) = l+ a- b) W a - b, b, .v);
-
-shew that
-
-and shew that if y= W a, b, .r),
-
-then x= yV b, a, y).
-
-Examples of this function are
-
-Jr(l,0, A-) = e*-l, lf(0, 1, .r) = log(l+.r), + xY-\
-
-15. Prove that
-
-W'(a, \,x) =
-
-1 \ 1; -Yx
-
-\addexamplecitation{Jezek.}
-
-2 a :ir"
-
-n=0
-
-where
-
-Gn =
-
-2ai 4a2 Gag
-
-3ai
-
-5ao
-
-2ao 4ai
-
-3ao
-
-(2 -2)a \ i ( -l)ao
-
-nan (?i - 1 ) a \ x a
-
-and obtain a similar expression for
-
-h
-
-I 2 a .xA' U=o I
-
-(Mangeot, Ann. de VEcole norm. sup. (3), xiv.
-
-16. Shew that
-
-2 a x"
-
-r=0
-
-- 2
-
-1\ cSr i
-
-=o?'+l cai
-
-10-2
-
+%Now if $t = u + iv$ and if $t$ be confined to the strip
+%$-\pi < v < \pi$, $t$ is a
+%one-valued function of $\xi$ and $F(\xi)$ is an analytic function of
+%$\xi$; and $\xi$ is
+%restricted so that $-\pi < \arg (1-\xi) < \pi$. Also the interior of the
+%circle $\absval{\xi} = 1$ corresponds
+%%
+%% 143
+%%
+%to the interior of the curve traced out by the point
+%$t = - \log \theparen{2 \cos \half \theta} + \half i \theta$,
+%(writing $\xi= \exp \thebrace{i (\theta + \pi) }$ ); and inside this curve
+%$$
+%\absval{t} - R(t)
+%\leq
+%\sqrt{ \thebrace{R(t)}^{2} + \pi^{2} }
+%-
+%R(t)
+%\rightarrow
+%0,
+%$$
+%as $R(t) \rightarrow \infty$.
 %
-% 148
+%It follows that, when $\absval{\xi} \leq 1$,
+%$\absval{F(\xi)} < M e^{r\absval{t}} < M_{1} \absval{e^{rt}}$,
+%where $M_{1}$ is independent of $t$; and so
+%$F(\xi) < M_{1} \absval{(1-\xi)^{-r}}$.
 %
-
-where Sr is the sum of the rth powers of the reciprocals of the roots
-of the equation
-
-r=0
-
-\addexamplecitation{Gambioli, Bologna Memorie, 1892.}
-
-17. If / (z) denote the nth derivate of f z), and if /\ (z) denote
-that one of the nth integrals oif z) which has an w-ple zero at 2 = 0,
-shew that if the series
-
-  = - X
-
-is convergent it represents a function oi z + x; and if the domain of
-convergence includes the origin in the .r-plane, the series is equal
-to
-
-\addexamplecitation{Guichard.}
-
-2 /\ (2 + .t-)5r (0).
-
-n =
-
-Obtain Taylor's series from this result, by putting g z) = 1.
-
-18. Shew that, if jr be not an integer,
-
-, =-;, n=-v x-¥mf x + nf
-
-as 1/ - QC, provided that all terms for which in = n are omitted from
-the summation.
-
-\addexamplecitation{Math. Trip. 1895.}
-
-19. Sum the series
-
-  / 1 1'
-
-n -q \ \ {-Yx-a-n n) ' where the value n = is omitted, a ud p, q are
-positive integers to be increased without
-
-limit.
-
-\addexamplecitation{Math. Trip. 1896.}
-
-20. If i (.r) = Jo*" °*( ")'', shew that
-
-F x)=< :t iJ L,
-
-and that the function thus defined satisfies the relations
-
-F -x) =, F(x)F l-x) = 2sm.V7r.
-
-Further, if = + 2 + ' + -= - \ logC -Oy,
-
-shew that when
-
-21. Shew that
-
-ll-e-2' ' Kl.
-
-\addexamplecitation{Trinity, 1898.}
-
-where and
-
-[-©i-( -.)i-(i .)"][-( -...)i'-G,y"]
-
-n l-2e- aCOs(a; + /3 ) + e-2 p l-2e-a(,cos( -i3 )+e-2 (, g=i,
-
-2*'*(l-cos.r)* e-' ''''*'''"
-
-,20-1, 2af-l ag=k?,\ r - TT, Pg=KCoa- tt,
-
-0<a.'<27r.
-
-\addexamplecitation{Mildner.}
-
+%Now suppose that $0 \leq \xi < 1$; then, by
+%\hardsubsectionref{5}{2}{3},
+%$\absval{F^{(n)}(\xi)} < M_{2} n! \rho^{-n}$
+%where $M_{2}$ is the upper bound of
+%$\absval{F(z)}$ on a circle with centre $\xi$ and
+%radius $\rho < 1 - \xi$.
 %
-% 149
+%Taking $\rho = \frac{n}{n+1} (1-\xi)$ and observing
+%that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
+%  for $\frac{1}{1-y} > e^{y}$, when $y < 1$, and so
+%  $\log \theparen{\frac{1}{1-y}} > y$. That is to
+%  say, putting $y^{-1} = 1+x$,
+%  $
+%  \frac{\dd}{\dd x} x \log (1 + x^{-1})
+%  =
+%  \log (1 + x^{-1})
+%  -
+%  \frac{1}{1+x}
+%  >
+%  0
+%  $.
+%}
+%$(1 + n^{-1})^{n} < e$
+%we find that
+%\begin{align*}
+%  \absval{F^{(n)}}
+%  <&
+%  M_{1}
+%  \thebracket{
+%    1
+%    -
+%    \thebrace{
+%      \xi
+%      +
+%      \frac{n}{n+1} \xi
+%    }
+%  }^{-r}
+%  \cdot
+%  n!
+%  \thebrace{
+%    \frac{n (1-\xi)}{n+1}
+%  }^{-n}
+%  \\
+%  <&
+%  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
+%\end{align*}
 %
-
-22. If I 0.' I < 1 and a is not a positive integer, shew that
-
- =i n~a ~ 1 - e2 ' ' 1 - e2a7r/ j ~ J '
-
-where C is a contour in the plane enclosing the points 0, x.
-
-(Lerch, Casopis, xxi. (1892), pp. 65-68.)
-
-23. If ( 1(2), < 2 ( 2), .. are any polynomials in z, and if F(z) be
-any integrable function, and if yj i (z), yjr (z), ... be polynomials
-defined by the equations
-
-J a Z - X
-
-f F( ) c i (x) <i>, (x) ... (,\, ( 0 'l> - z)-< (x)
-
-J a Z X
-
-Shew that r (f ) = Ml) + J2j + V-3( )
-
-2 (2) 1 (2) ( 2 (2) 3 (2)
-
-dx
-
-z - x'
-
-24. A system of functions p, (z), pi (2), po (z), ... is defined by
-the equations
-
- 0 (S) = 1, Pn + l z) = (2- + n2 + K) Pn z\
-
-where a and 6 are given functions of n, which tend respectively to the
-limits and - 1
-
-as 71-*- cx) .
-
-Shew that the region of convergence of a series of the form 2e pn z),
-where ej, 621  are independent of 2, is a Cassini's oval with the
-foci +1, - 1.
-
-Shew that every function / (2), which is analytic on and inside the
-oval, can, for points inside the oval, be expanded in a series
-
-/(2)=2(c + 20f'n(2),
-
-where
-
-Cn = 27 . j ( + 2) ? (2) f (2) dz, Cn' = . j qn z)f z) dz.
-
-the integrals being taken round the boundary of the region, and the
-functions q (2) being defined by the equations
-
-?0 ( ) = yl n A-h ' " + I ") XTT TTT 2'n ( )-
-
-2 + ao2 + Oo 2'' + rt +i + 0 + l
-
-(Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.)
-
-\ 25. Let C be a contour enclosing the point a, and let (f) z) and/
-(2) be analytic when z is on or inside C. Let | < | be so small that
-
-\ t(f) z) \ < .\ z - a\ when 2 is on the periphery of C. By expanding
-
-± [ f(.) l- < (2) .
-
-Stti j c 2 - a - 0 (2)
-
-in ascending powers of <, shew that it is equal to
-
-f a)+ I [/'(a)(0(a) ].
-
-Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem.
-\end{enumerate}
+%Remembering that, by\hardsectionref{4}{5}, $\int_{0}^{1}$ means
+%$\lim_{\epsilon \rightarrow 0} \int_{0}^{1-\epsilon}$, we
+%have, by repeated integrations by parts,
+%\begin{align*}
+%  f(z)
+%  =&
+%  \lim_{\epsilon \rightarrow +0}
+%  \thebracket{
+%    -(1 - \xi)^{z} F(\xi)
+%  }_{0}^{1-\epsilon}
+%  +
+%  \int_{0}^{1 - \epsilon}
+%  (1 - \xi)^{z} F'(\xi) \dmeasure \xi
+%  \\
+%  =&
+%  \thebracket{
+%    -(1 - \xi)^{z} F(\xi)
+%  }_{0}^{1 - \epsilon}
+%  +
+%  \frac{1}{z + 1}
+%  \thebracket{
+%    -(1 - \xi)^{z+1} F'(\xi)
+%  }_{0}^{1 - \epsilon}
+%  \\
+%  &
+%  \quad
+%  \quad
+%  +
+%  \frac{1}{z + 1}
+%  \int_{0}^{1 - \epsilon}
+%  (1 - \xi)^{z+1} F''(\xi) \dmeasure \xi
+%  \\
+%  =&
+%  \cdots
+%  \\
+%  =&
+%  b_{0}
+%  +
+%  \frac{b_{1}}{z+1}
+%  +
+%  \frac{b_{2}}{(z+1)(z+2)}
+%  +
+%  \cdots
+%  +
+%  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
+%  +
+%  R_{n},
+%\end{align*}
+%where
+%\begin{align*}
+%  b_{n}
+%  =&
+%  \lim_{\epsilon \rightarrow 0}
+%  \thebracket{
+%    -(1-\xi)^{z+n} F^{(n)}(\xi)
+%  }_{0}^{1 - \epsilon}
+%  \\
+%  =&
+%  F^{(n)}(0),
+%\end{align*}
+%if the real part of $z+n-r-n>0$, \ie if $\Re(z) > r$;
+%further
+%\begin{align*}
+%  \absval{R_{n}}
+%  \leq &
+%  \frac{1}{ \absval{ (z+1)(z+2)\cdots(z+n)  }}
+%  \lim_{\epsilon \rightarrow 0}
+%  \int_{0}^{1 - \epsilon}
+%  \absval{ (1-\xi)^{z+n} F^{(n+1)}(\xi) }
+%  \dmeasure \xi
+%  \\
+%  <&
+%  \frac{ M_{1} e (n+2)^{r} n!}{
+%    \absval{(z+1)(z+2)\cdots(z+n)} \Re(z-r)}
+%  \\
+%  <&
+%  \frac{ M_{1} e (n+2)^{r} n!}{
+%    \absval{ (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \delta }
+%    },
+%\end{align*}
+%where $\delta = \Re(z - r)$.
+%%
+%% 144
+%%
+%
+%Now
+%$$
+%\prod_{m=1}^{n}
+%\thebrace{
+%  \theparen{
+%    1
+%    +
+%    \frac{r + \delta}{m}
+%  }
+%  e^{-\frac{r+\delta}{m}}
+%}
+%$$
+%tends to a limit \hardsubsectionref{2}{7}{1}) as
+%$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
+%if
+%$ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
+%tends to zero; but
+%$$
+%\sum_{m=1}^{n} 1/m
+%>
+%\int_{1}^{n+1} \frac{\dmeasure x}{x}
+%=
+%\log(n+1),
+%$$
+%by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
+%and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
+%$\delta > 0$; therefore $R_{n} \rightarrow 0$ as
+%$n \rightarrow \infty$, and so, when $\Re(z) > r$,
+%we have the convergent expansion
+%$$
+%f(z)
+%=
+%b_{0}
+%+
+%\frac{b_{1}}{z+1}
+%+
+%\frac{b_{2}}{(z+1)(z+2)}
+%+
+%\cdots
+%\frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
+%+
+%\cdots.
+%$$
+%\begin{wandwexample}
+%Obtain the same expansion by using the results
+%$$
+%\frac{1}{(z+1)(z+2)\cdots(z+n+1)}
+%=
+%\frac{1}{n!}
+%\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure z,
+%$$
+%$$
+%\int_{C}
+%\frac{ f(t) \dmeasure t }{z - t}
+%=
+%\int_{C} \dmeasure t
+%\int_{0}^{1}
+%f(t) (1-u)^{z-t-1} \dmeasure u.
+%$$
+%\end{wandwexample}
+%\begin{wandwexample}
+%Obtain the expansion
+%$$
+%\log\theparen{1 + \frac{1}{z}}
+%=
+%\frac{1}{z}
+%-
+%\frac{a_{1}}{z(z+1)}
+%-
+%\frac{a_{2}}{z(z+1)(z+2)}
+%-
+%\cdots,
+%$$
+%where
+%$$
+%a_{n}
+%=
+%\int_{0}^{1}
+%t (1-t) (2-t) \cdots (n-1-t) \dmeasure t,
+%$$
+%and discuss the region in which it converges.
+%\addexamplecitation{Schlomilch.}
+%\end{wandwexample}
+%
+%%TODO
+%REFERENCES. E. Goursat, Cours d' Analyse (Paris, 1911), Chs. xv, xvi.
+%E. BoREL, Lecons sur les series divergentes (Paris, 1901). T. J. I'a.
+%Bromwich\footnote{The expansions considered by Eromwich are obtained by elementary
+%methods, i.e. without the use of Cauchy's theorem.} Theory of Infinite
+%Series (1908), Chs. viii, x, xi. 0.
+%Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
+%
+%\miscexamples
+%\begin{enumerate}
+%\item If $y - x - \phi(y) = 0$, where $\phi$ is a given function of
+%  its argument, obtain the expansion
+%  $$
+%  f(y)
+%  =
+%  f(x)
+%  +
+%  \sum_{m=1}^{\infty}
+%  \frac{1}{m!}
+%  \thebrace{\phi(x)}^{m}
+%  \theparen{
+%    \frac{1}{1-\phi'(x)}
+%    \frac{\dd}{\dd x}
+%  }^{m}
+%  f(x)
+%  $$
+%  where $f$ denotes any analytic function of its argument, and discuss
+%  the range of its validity.
+%  \addexamplecitation{TODO:Levi-Civitk, Bertd. dei Lincei, (5), xvl
+%    (1907), p. 3.}
+%\item Obtain (from the formula of Darboux or otherwise) the expansion
+%  $$
+%  f(z) - f(z)
+%  =
+%  \sum_{n=1}^{\infty}
+%  \frac{(-)^{n-1} (z-a)^{n}}{n! (1-r)^{n}}
+%  \thebrace{
+%    f^{(n)}(z) - r^{n} f^{(n)}(a)
+%  };
+%  $$
+%  find the remainder after $n$ terms, and discuss the
+%  convergence of the series.
+%
+%% 145
+%%
+%\item Shew that
+%  \begin{align*}
+%    f(x+h) - f(x)
+%    =&
+%    \sum_{m=1}^{n}
+%    (-)^{m-1}
+%    \frac{1 \cdot 3 \cdot 5 \cdots (2m-1)}{(m!)^{2}}
+%    \frac{h^{m}}{2^{m}}
+%    \thebrace{
+%      f^{(m)}(x+h)
+%      -
+%      (-)^{m} f^{(m)}(x)
+%    }
+%    \\
+%    & \quad
+%    +
+%    (-)^{n} h^{n+1}
+%    \int_{0}^{1}
+%    \gamma_{n}(t)
+%    f^{(n+1)}(x + ht) \dmeasure t,
+%  \end{align*}
+%  where
+%  $$
+%  \gamma_{n}(t)
+%  =
+%  \frac{x^{n+\half} (1-x)^{n + \half}}{(n!)^{2}}
+%  \frac{\dd^{n}}{\dd x^{n}}
+%  \thebrace{
+%    x^{-\half} (1-x)^{-\half}
+%  }
+%  =
+%  \frac{1}{\pi n!}
+%  \int_{0}^{1}
+%  (x-z)^{n}
+%  z^{-\half}
+%  (1-z)^{-\half}
+%  \dmeasure z,
+%  $$
+%  and shew that $\gamma_{n}(x)$ is the coefficient of
+%  $n! t^{n}$ in the expansion of
+%  $\thebrace{ (1-tx)(1+t-tx) }^{-\half}$
+%  in ascending powers of $t$.
+%\item By taking
+%  $$
+%  TODO
+%  $$
+%in the formula of Darboux, shew that
+%
+%/( + A)-/(.r)=- I,;|/(-)(,; + A)-l/M(4 m=l Vl. [ r )
+%
+%\ i.(\ ) A"+i r (ji(t)f(n+ (x+ht)dt,
+%
+%J
+%
+%where . \ --=i-a, ~ + a,~-asy, + ....
+%
+%5. Shew that
+%
+%/(.)-/( ) = J (-)-! - 2 ! /'"""" ( )+/<''"- ' ( )
+%
+%6. Prove that
+%
+%/( 2) -/(--l) = l ( 2 - --1)/' Z2) + C2 iZ2-Ziyf" ( l) - C3 Z2 " OV" (
+%2)
+%
+%-< 4( 2- l)V*M2l) + --- + (-)M 2---l) / ' | (e'''SechH)| \ /( + l)(2l
+%+ to.- .-l);
+%
+%in the series phis signs and minus signs occur in pairs, and the last
+%term l)efore the integral is that involving Z'>-h)"", also Cn is the
+%coefficient of 5" in the expansion of
+%
+%cot ( T - o ) '" ascending powers of z. \addexamplecitation{Trinity, 1899.}
+%
+%7. If Xi and x are integers, and <f) (z) is a function which is
+%analytic and'bounded for all values of z such that x R (z) X2, shew
+%(by integrating
+%
+%f <t>( )dz
+%
+%je= 27r \ l
+%
+%round indented rectangles whose corners are Xi, 2? 2± < i, Xi±co i)
+%that i( (a-i) + < (*-i + l) + ( ( i + 2)+... + 0( 2-l) + 2< (. 2)
+%
+%'"'A. i~\, 1 /'" (/) ( 2 + 3/) - (- 1 +iy)-(i> ( 2 - y) + < (A i -
+%iy)
+%
+%1 I ( x +iy)-(pi-vi+iy)-(p ( 2 - .y) + <?> ( i - y) ..
+%
+%Mo e2f i/ - 1  "
+%
+%Hence, by applying the theorem
+%
+%/ ',2n-l
+%
+%4?i -1 - du = Bn,
+%
+%W. M. A. 10
+%
+%%
+%% 146
+%%
+%
+%where Bi, B., ... are \Bernoulli's numbers, shew that
+%
+%(where C is a constant not involving w), provided that the last series
+%converges.
+%
+%(This important formula is due to Plana, Mem. della R, Accad. di
+%Torino, xxv. (1820), pp. 403-418; a proof by means of contour
+%integration was published by Kronecker, Journal fur Math. cv. (1889),
+%pp. 345-348. For a detailed history, see Lindelof, Le Calcul des
+%Residus. Some applications of the formula are given in Chapter xii.)
+%
+%8. Obtain the expansion
+%
+%X "",,, 1.3...(2;i-3) .r
+%
+%"=2+ !.(->"~ n\ 2
+%
+%for one root of the equation x = 2u + u\ and shew that it converges so
+%long as | jp | < 1.
+%
+%' all combinations of th 12, 32, 5%... 2n-ir,
+%
+%9. If .S'™', denote the smii of all combinations of the numbers
+%
+%2n.+l
+%
+%taken m at a time, shew that
+%
+%1 oc (\ ) + ]
+%
+%sins =o(2?i + 2)
+%
+%cos.\ 1 |\ (-) |2 ( )\ U, \ +r-)n < ) -Isin -i.
+%
+%\addexamplecitation{Teixeira.}
+%
+%10. If the function f(z) is analytic in the interior of that one of
+%the ovals whose equation is | sin s | = C (where C< 1), which includes
+%the origin, shew that f(z) can, for all points z within this oval, be
+%expanded in the form
+%
+%0. /(2 )(o)+Mi'/C' -2)(o)+...+>s;'"V'(o) '
+%
+%/(.)=/(0)+ S- " - sin z
+%
+%I /' "- ' (0) +4;; /(2n-i) (0)+ ... +<v, /' (0)
+%
+%where *S' is the sum of all combinations of the numbers
+%
+%2n
+%
+%22, 42, 62, ... (2/i-2)2, taken m at a time, and *S ",, denotes the
+%sum of all combinations of the numbers
+%
+%' 2(1 + 1
+%
+%12, 32, 52,...(2;i-l)2, taken mi at a time. \addexamplecitation{Teixeira.}
+%
+%11. Shew that the two series
+%
+%2z 1z 2 +32" + "52 +'
+%
+%2z 2\ / 2z Y 2 / 2z
+%
+% "r 1.32 1- 2; +3.52V1-1
+%
+%represent the same function in a certain region of the z plane, and
+%can be transformed into each other by Biirmaun's theorem.
+%
+%(Kapteyn, Nieuw Archief, (2), iii. (1897), p. 225.)
+%
+%12. If a function f(z) is periodic, of period 27r, and is analytic at
+%all points in the infinite strip of the plane, included between the
+%two branches of the curve jsin2| = C (where C> 1), shew that at all
+%points in the strip it can be exjianded in an infinite series of the
+%form
+%
+%/(2) = o + ylisin2+...+ sin"2 +
+%
+%+ cos2(5i + 52sin2+... + sin"-is + ...); and find the coefl\&cients
+%-4 and B . *
+%
+%%
+%% 147
+%%
+%
+%13. If ( and /are connected bj the equation of which one root is a,
+%shew that
+%
+% ( )= -T '/ '+i 3
+%
+%0" PP') I 1! 2! 3 X"'
+%
+%j< ' (( 2)' (/3/") " ct>T ipF')"
+%
+%+ ...,
+%
+%the general term being ( - )'",, ", ( f\ imim + i) iiaultiplied by a
+%determinant in which
+%
+%the elements of the first row are ', ( )', (f) )', ..., (< '"~ )', /'"
+%P') and each row is the diflferential coefficient of the jjreceding
+%one with respect to a; and P, /", P', ... denote F a),f a\ P' a)
+%
+%(Wronski, Philosophie de la Technie, Section ii. p. 381. For proofs of
+%the theorem see Cayley, Quarterly Journal, xil. (1873), Transon, Nouv.
+%Ann. de Math. xill. (1874j, and C Lagrange, Brux. Mem. Couronnes, 4",
+%xlvii. (1886), no. 2.)
+%
+%14. If the function W a, b, x) be defined by the series
+%
+%T.r / 7 N a-b (a - b)(a~2b), W a, b, x) = x + j-x + a- +...,
+%
+%which converges so long as
+%
+%x\ <
+%
+%w
+%
+%d
+%
+%-p W (a, b, x) = l+ a- b) W a - b, b, .v);
+%
+%shew that
+%
+%and shew that if y= W a, b, .r),
+%
+%then x= yV b, a, y).
+%
+%Examples of this function are
+%
+%Jr(l,0, A-) = e*-l, lf(0, 1, .r) = log(l+.r), + xY-\
+%
+%15. Prove that
+%
+%W'(a, \,x) =
+%
+%1 \ 1; -Yx
+%
+%\addexamplecitation{Jezek.}
+%
+%2 a :ir"
+%
+%n=0
+%
+%where
+%
+%Gn =
+%
+%2ai 4a2 Gag
+%
+%3ai
+%
+%5ao
+%
+%2ao 4ai
+%
+%3ao
+%
+%(2 -2)a \ i ( -l)ao
+%
+%nan (?i - 1 ) a \ x a
+%
+%and obtain a similar expression for
+%
+%h
+%
+%I 2 a .xA' U=o I
+%
+%(Mangeot, Ann. de VEcole norm. sup. (3), xiv.
+%
+%16. Shew that
+%
+%2 a x"
+%
+%r=0
+%
+%- 2
+%
+%1\ cSr i
+%
+%=o?'+l cai
+%
+%10-2
+%
+%%
+%% 148
+%%
+%
+%where Sr is the sum of the rth powers of the reciprocals of the roots
+%of the equation
+%
+%r=0
+%
+%\addexamplecitation{Gambioli, Bologna Memorie, 1892.}
+%
+%17. If / (z) denote the nth derivate of f z), and if /\ (z) denote
+%that one of the nth integrals oif z) which has an w-ple zero at 2 = 0,
+%shew that if the series
+%
+%  = - X
+%
+%is convergent it represents a function oi z + x; and if the domain of
+%convergence includes the origin in the .r-plane, the series is equal
+%to
+%
+%\addexamplecitation{Guichard.}
+%
+%2 /\ (2 + .t-)5r (0).
+%
+%n =
+%
+%Obtain Taylor's series from this result, by putting g z) = 1.
+%
+%18. Shew that, if jr be not an integer,
+%
+%, =-;, n=-v x-¥mf x + nf
+%
+%as 1/ - QC, provided that all terms for which in = n are omitted from
+%the summation.
+%
+%\addexamplecitation{Math. Trip. 1895.}
+%
+%19. Sum the series
+%
+%  / 1 1'
+%
+%n -q \ \ {-Yx-a-n n) ' where the value n = is omitted, a ud p, q are
+%positive integers to be increased without
+%
+%limit.
+%
+%\addexamplecitation{Math. Trip. 1896.}
+%
+%20. If i (.r) = Jo*" °*( ")'', shew that
+%
+%F x)=< :t iJ L,
+%
+%and that the function thus defined satisfies the relations
+%
+%F -x) =, F(x)F l-x) = 2sm.V7r.
+%
+%Further, if = + 2 + ' + -= - \ logC -Oy,
+%
+%shew that when
+%
+%21. Shew that
+%
+%ll-e-2' ' Kl.
+%
+%\addexamplecitation{Trinity, 1898.}
+%
+%where and
+%
+%[-©i-( -.)i-(i .)"][-( -...)i'-G,y"]
+%
+%n l-2e- aCOs(a; + /3 ) + e-2 p l-2e-a(,cos( -i3 )+e-2 (, g=i,
+%
+%2*'*(l-cos.r)* e-' ''''*'''"
+%
+%,20-1, 2af-l ag=k?,\ r - TT, Pg=KCoa- tt,
+%
+%0<a.'<27r.
+%
+%\addexamplecitation{Mildner.}
+%
+%%
+%% 149
+%%
+%
+%22. If I 0.' I < 1 and a is not a positive integer, shew that
+%
+% =i n~a ~ 1 - e2 ' ' 1 - e2a7r/ j ~ J '
+%
+%where C is a contour in the plane enclosing the points 0, x.
+%
+%(Lerch, Casopis, xxi. (1892), pp. 65-68.)
+%
+%23. If ( 1(2), < 2 ( 2), .. are any polynomials in z, and if F(z) be
+%any integrable function, and if yj i (z), yjr (z), ... be polynomials
+%defined by the equations
+%
+%J a Z - X
+%
+%f F( ) c i (x) <i>, (x) ... (,\, ( 0 'l> - z)-< (x)
+%
+%J a Z X
+%
+%Shew that r (f ) = Ml) + J2j + V-3( )
+%
+%2 (2) 1 (2) ( 2 (2) 3 (2)
+%
+%dx
+%
+%z - x'
+%
+%24. A system of functions p, (z), pi (2), po (z), ... is defined by
+%the equations
+%
+% 0 (S) = 1, Pn + l z) = (2- + n2 + K) Pn z\
+%
+%where a and 6 are given functions of n, which tend respectively to the
+%limits and - 1
+%
+%as 71-*- cx) .
+%
+%Shew that the region of convergence of a series of the form 2e pn z),
+%where ej, 621  are independent of 2, is a Cassini's oval with the
+%foci +1, - 1.
+%
+%Shew that every function / (2), which is analytic on and inside the
+%oval, can, for points inside the oval, be expanded in a series
+%
+%/(2)=2(c + 20f'n(2),
+%
+%where
+%
+%Cn = 27 . j ( + 2) ? (2) f (2) dz, Cn' = . j qn z)f z) dz.
+%
+%the integrals being taken round the boundary of the region, and the
+%functions q (2) being defined by the equations
+%
+%?0 ( ) = yl n A-h ' " + I ") XTT TTT 2'n ( )-
+%
+%2 + ao2 + Oo 2'' + rt +i + 0 + l
+%
+%(Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.)
+%
+%\ 25. Let C be a contour enclosing the point a, and let (f) z) and/
+%(2) be analytic when z is on or inside C. Let | < | be so small that
+%
+%\ t(f) z) \ < .\ z - a\ when 2 is on the periphery of C. By expanding
+%
+%± [ f(.) l- < (2) .
+%
+%Stti j c 2 - a - 0 (2)
+%
+%in ascending powers of <, shew that it is equal to
+%
+%f a)+ I [/'(a)(0(a) ].
+%
+%Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem.
+%\end{enumerate}
