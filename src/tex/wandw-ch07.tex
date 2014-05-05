@@ -2361,15 +2361,37 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   }_{n=0}
   $$
 in the formula of Darboux, shew that
-
-/( + A)-/(.r)=- I,;|/(-)(,; + A)-l/M(4 m=l Vl. [ r )
-
-\ i.(\ ) A"+i r (ji(t)f(n+ (x+ht)dt,
-
-J
-
-where . \ --=i-a, ~ + a,~-asy, + ....
-
+\begin{align*}
+  f(x+h) - f(x)
+  =&
+  -
+  \sum_{m=1}^{n}
+  a_{m}
+  \frac{h^{m}}{m!}
+  \thebrace{
+    f^{(m)}(x+h) - \frac{1}{r} f^{(m)}(x)
+  }
+  \\
+  & \quad
+  +
+  (-)^{n} h^{n+1}
+  \int_{0}^{1}
+  \phi(t) f^{(n+1)}(x+ht) \dmeasure t,
+\end{align*}
+where
+$$
+\frac{1-r}{1 - r e^{-u}}
+=
+1
+-
+a_{1} \frac{u}{1!}
++
+a_{2} \frac{u^{2}}{2!}
+-
+a_{3} \frac{u^{3}}{3!}
++
+\cdots.
+$$
 5. Shew that
 
 /(.)-/( ) = J (-)-! - 2 ! /'"""" ( )+/<''"- ' ( )
