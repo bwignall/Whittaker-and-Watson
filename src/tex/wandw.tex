@@ -123,7 +123,11 @@
 
 \theoremstyle{remark}
 \newtheorem{wandwexample}{Example}
-%\numberwithin{wandwexample}{subsubsection}
+% \numberwithin{wandwexample}{subsubsection}
+
+%\newenvironment{wandwmiscexamples}{\miscexamples\begin{enumerate}}{\end{enumerate}}
+\newenvironment{wandwmiscexamples}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{wandwmiscexample}{\item}{ }
 
 % Chapter 17 (Bessel functions)
 \newcommand{\besselFont}[1]{\mathscr{#1}}
