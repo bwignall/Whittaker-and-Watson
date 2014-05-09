@@ -2400,7 +2400,28 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that
-    TODO
+    \begin{align*}
+      f(z) - f(a)
+      =&
+      \sum_{m=1}^{n}
+      (-)^{m-1}
+      \frac{2 B_{m} (2^{2n} - 1)(z-a)^{2m-1}}{2m!}
+      \thebrace{
+        f^{(2m-1)}(a)
+        +
+        f^{(2m-1)}(z)
+      }
+      \\
+      &
+      \hfill
+      \frac{(z-a)^{2n+1}}{2n!}
+      \int_{0}^{1}
+      \psi_{2n}(t)
+      f^{(2n+1)}\thebrace{
+        a + t(z-a)
+      }
+      \dmeasure t,
+    \end{align*}
     where
     TODO
   \end{wandwmiscexample}
