@@ -2441,7 +2441,11 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       &
       f(z_{2}) - f(z_{1})
       =
-      TODO
+      C_{1} (z_{2} - z_{1}) f'(z_{2})
+      +
+      C_{2} (z_{2} - z_{1})^{2} f''(z_{1})
+      -
+      C_{3} (z_{2} - z_{1})^{3} f'''(z_{2})
       \\
       &
       -C_{4} (z_{2}-z_{1})^{4} f^{\textrm{iv}}(z_{1})
@@ -2451,14 +2455,20 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       (-)^{n} (z_{2} - z_{1})^{n+1}
       \int_{0}^{1}
       \thebrace{
-        TODO
+        \frac{\dd^{n}}{\dd u^{n}}
+        \theparen{
+          e^{tu} \sech u
+        }
       }_{u=0}
+      f^{(n+1)}(z_{1} + t z_{2} - t z_{1})
+      \dmeasure t;
     \end{align*}
-    in the series phis signs and minus signs occur in pairs, and the last
-    term l)efore the integral is that involving Z'>-h)"", also Cn is the
-    coefficient of 5" in the expansion of
-
-    cot ( T - o ) '" ascending powers of z. \addexamplecitation{Trinity, 1899.}
+    in the series plus signs and minus signs occur in pairs, and the last
+    term before the integral is that involving
+    $(z_{2}-z_{1})^{n}$, also $C_{n}$ is the
+    coefficient of $z^{n}$ in the expansion of
+    $\cot\theparen{\frac{\pi}{4} - \frac{z}{2}}$
+    in ascending powers of $z$. \addexamplecitation{Trinity, 1899.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     If Xi and x are integers, and <f) (z) is a function which is
