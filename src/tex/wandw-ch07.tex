@@ -2584,18 +2584,40 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     can, for all points $z$ within this oval, be
     expanded in the form
     \begin{align*}
-      TODO
+      f(z)
+      =&
+      f(0)
+      +
+      \sum_{n=1}^{\infty}
+      \frac{ f^{(2n)}(0)
+        + S^{(1)}_{2n} f^{(2n-2)}(0)
+        + \cdots
+        S^{(n-1)}_{2n} f''(0)
+      }{2n!}
+      \sin^{2n} z
+      \\
+      &
+      \quad
+      \sum_{n=0}^{\infty}
+      \frac{
+        f^{(2n+1)}(0)
+        + S^{(1)}_{2n+1} f^{(2n-1)}(0)
+        + \cdots
+        + S^{(n)}_{2n+1} f'(0)
+      }{(2n+1)!}
+      \sin^{2n+1} z,
     \end{align*}
     where $S^{(m)_{2n}}$ is the sum of all combinations of the numbers
     $$
     2^{2}, 4^{2}, 6^{2}, \ldots, (2n-2)^{2},
     $$
-    taken $m$ at a time, and *S ",, denotes the
+    taken $m$ at a time, and $S^{(m)}_{2n+1}$ denotes the
     sum of all combinations of the numbers
-
-    ' 2(1 + 1
-
-    12, 32, 52,...(2;i-l)2, taken mi at a time. \addexamplecitation{Teixeira.}
+    $$
+    1^{2}, 3^{2}, 5^{2}, \ldots, (2n-1)^{2},
+    $$
+    taken $m$ at a time.
+    \addexamplecitation{Teixeira.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that the two series
