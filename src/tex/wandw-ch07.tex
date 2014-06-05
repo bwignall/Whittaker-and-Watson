@@ -2829,7 +2829,18 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     e^{\int_{0}^{x} x \pi \cot (x \pi) \dmeasurex}
     $, shew that
     $$
-    TODO
+    F(x)
+    =
+    e^{x}
+    \frac{
+      \prod_{n=1}^{\infty} \thebrace{
+        \theparen{1 - \frac{x}{n}}^{n}
+        e^{x + \half \frac{x^{2}}{n}}
+      }
+    }{
+      \theparen{1 + \frac{x}{n}}^{n}
+      e^{-x + \half \frac{x^{2}}{n}}
+    }
     $$
     and that the function thus defined satisfies the relations
     $$
