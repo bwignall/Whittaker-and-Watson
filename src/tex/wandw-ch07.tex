@@ -2877,21 +2877,46 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that
-
-    ll-e-2' ' Kl.
-
-    where and
-
-    [-©i-( -.)i-(i .)"][-( -...)i'-G,y"]
-
-    n l-2e- aCOs(a; + /3 ) + e-2 p l-2e-a(,cos( -i3 )+e-2 (, g=i,
-
-    2*'*(l-cos.r)* e-' ''''*'''"
-
-    ,20-1, 2af-l ag=k?,\ r - TT, Pg=KCoa- tt,
-
-    0<a.'<27r.
-
+    \begin{align*}
+      &
+      \thebracket{
+        1 + \theparen{\frac{k}{x}}^{n}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{2 \pi - x}^{n}}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{2 \pi + x}}^{n}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{4 \pi - x}^{n}}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{4 \pi + x}}^{n}
+      }
+      \\
+      &
+      \hfill
+      \frac{
+        \prod_{g=1}^{\leq \half n}
+        \sqrt{1 - 2 e^{-\alpha_{g}} \cos(x + \beta_{g}) + e^{-2\alpha_{g}}}
+        \sqrt{1 - 2 e^{-\alpha_{g}} \cos(x - \beta_{g}) + e^{-2\alpha_{g}}}
+      }{
+        2^{\half n}
+        (1 - \cos x)^{\half n}
+        e^{-k \cos \pi n}
+      }
+    \end{align*}
+    where
+    $$
+    \alpha_{g} = k \sin \frac{2g-1}{n} \pi,
+    \quad
+    \beta_{b} = k \cos \frac{2g-1}{n} \pi,
+    $$
+    and
+    $$
+    0 < x < 2 \pi.
+    $$
     \addexamplecitation{Mildner.}
   \end{wandwmiscexample}
   %
