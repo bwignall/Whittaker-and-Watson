@@ -2923,13 +2923,18 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   % 149
   %
   \begin{wandwmiscexample}
-    If I 0.' I < 1 and a is not a positive integer, shew that
-
-    =i n~a ~ 1 - e2 ' ' 1 - e2a7r/ j ~ J '
-
-    where C is a contour in the plane enclosing the points 0, x.
-
-    (Lerch, Casopis, xxi. (1892), pp. 65-68.)
+    If $\absval{x} < 1$ and $a$ is not a positive integer, shew that
+    $$
+    \sum_{n=1}^{\infty}
+    \frac{x^{n}}{n - a}
+    =
+    \frac{2 \pi i x^{a}}{1 - e^{2 a \pi i}}
+    +
+    \frac{x}{1 - e^{2 a \pi i}}
+    \int_{C} \frac{t^{a-1} - x^{a-1}}{t - x} \dmeasure t,
+    $$
+    where $C$ is a contour in the plane enclosing the points $0,x$.
+    \addexamplecitation{TODO Lerch, Casopis, xxi. (1892), pp. 65-68.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     If ( 1(2), < 2 ( 2), .. are any polynomials in z, and if F(z) be
