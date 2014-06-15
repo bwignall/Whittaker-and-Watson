@@ -2501,23 +2501,32 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       \dmeasure y.
     \end{align*}
     Hence, by applying the theorem
-
-    / ',2n-l
-
-    4?i -1 - du = Bn,
-
-    W. M. A. 10
-
+    $$
+    4n
+    \int_{0}^{\infty}
+    \frac{y^{2n-1}}{e^{2 \pi y} - 1}
+    \dmeasure y
+    =
+    B_{n}
+    $$
     %
     % 146
     %
+    where $B_{1}, B_{2}, \ldots$ are \Bernoulli's numbers, shew that
+    $$
+    \phi(1) + \phi(2) + \cdots + \phi(n)
+    =
+    C
+    + \half \phi(n)
+    + \int^{n} \phi(z) \dmeasure z
+    +
+    \sum_{r=1}^{\infty}
+    \frac{(-)^{r-1} B_{r}}{2r!} \phi^{(2r-1)}(n),
+    $$
+    (where $C$ is a constant not involving $n$), provided that the
+    last series converges.
 
-    where Bi, B., ... are \Bernoulli's numbers, shew that
-
-    (where C is a constant not involving w), provided that the last series
-    converges.
-
-    (This important formula is due to Plana, Mem. della R, Accad. di
+    (This important formula is due to TODO Plana, Mem. della R, Accad. di
     Torino, xxv. (1820), pp. 403-418; a proof by means of contour
     integration was published by Kronecker, Journal fur Math. cv. (1889),
     pp. 345-348. For a detailed history, see Lindelof, Le Calcul des
@@ -2525,335 +2534,509 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Obtain the expansion
-
-    X "",,, 1.3...(2;i-3) .r
-
-    "=2+ !.(->"~ n\ 2
-
-    for one root of the equation x = 2u + u\ and shew that it converges so
-    long as | jp | < 1.
-
-    ' all combinations of th 12, 32, 5%... 2n-ir,
+    $$
+    u
+    =
+    \frac{x}{2}
+    +
+    \sum_{n=2}^{\infty}
+    (-)^{n-1}
+    \frac{1 \cdot 3 \cdots (2n-3)}{n!}
+    \frac{x^{n}}{2^{n}}
+    $$
+    for one root of the equation
+    $x = 2u + u^{2}$ and shew that it converges so
+    long as $\absval{x} < 1$.
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If .S'™', denote the smii of all combinations of the numbers
-
-    2n.+l
-
-    taken m at a time, shew that
-
-    1 oc (\ ) + ]
-
-    sins =o(2?i + 2)
-
-    cos.\ 1 |\ (-) |2 ( )\ U, \ +r-)n < ) -Isin -i.
-
+    If $S^{(m)}_{2n+1}$ denote the sum of all combinations of the numbers
+    $$
+    1^{2}, 3^{2}, 5^{2}, \ldots (2n-1)^{2},
+    $$
+    taken $m$ at a time, shew that
+    $$
+    \frac{\cos z}{z}
+    =
+    \frac{1}{\sin z}
+    +
+    \sum_{n=0}^{\infty}
+    \frac{(-)^{n+1}}{(2n+2)!}
+    \thebrace{
+      \frac{2^{2(n+1)}}{2n+3}
+      -
+      S^{(1)}_{2(n+1)}
+      \frac{2^{2n}}{2n+1}
+      +
+      \cdots
+      +
+      (-)^{n}
+      S^{(n)}_{2(n+1)}
+      \frac{2^{2}}{3}
+    }
+    \sin^{2n+1} z.
+    $$
     \addexamplecitation{Teixeira.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If the function f(z) is analytic in the interior of that one of
-    the ovals whose equation is | sin s | = C (where C< 1), which includes
-    the origin, shew that f(z) can, for all points z within this oval, be
+    If the function $f(z)$ is analytic in the interior of that one of
+    the ovals whose equation is $\absval{\sin z} = C$
+    (where $C \leq 1$), which includes the origin, shew that $f(z)$
+    can, for all points $z$ within this oval, be
     expanded in the form
-
-    0. /(2 )(o)+Mi'/C' -2)(o)+...+>s;'"V'(o) '
-
-    /(.)=/(0)+ S- " - sin z
-
-    I /' "- ' (0) +4;; /(2n-i) (0)+ ... +<v, /' (0)
-
-    where *S' is the sum of all combinations of the numbers
-
-    2n
-
-    22, 42, 62, ... (2/i-2)2, taken m at a time, and *S ",, denotes the
+    \begin{align*}
+      f(z)
+      =&
+      f(0)
+      +
+      \sum_{n=1}^{\infty}
+      \frac{ f^{(2n)}(0)
+        + S^{(1)}_{2n} f^{(2n-2)}(0)
+        + \cdots
+        S^{(n-1)}_{2n} f''(0)
+      }{2n!}
+      \sin^{2n} z
+      \\
+      &
+      \quad
+      \sum_{n=0}^{\infty}
+      \frac{
+        f^{(2n+1)}(0)
+        + S^{(1)}_{2n+1} f^{(2n-1)}(0)
+        + \cdots
+        + S^{(n)}_{2n+1} f'(0)
+      }{(2n+1)!}
+      \sin^{2n+1} z,
+    \end{align*}
+    where $S^{(m)_{2n}}$ is the sum of all combinations of the numbers
+    $$
+    2^{2}, 4^{2}, 6^{2}, \ldots, (2n-2)^{2},
+    $$
+    taken $m$ at a time, and $S^{(m)}_{2n+1}$ denotes the
     sum of all combinations of the numbers
-
-    ' 2(1 + 1
-
-    12, 32, 52,...(2;i-l)2, taken mi at a time. \addexamplecitation{Teixeira.}
+    $$
+    1^{2}, 3^{2}, 5^{2}, \ldots, (2n-1)^{2},
+    $$
+    taken $m$ at a time.
+    \addexamplecitation{Teixeira.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that the two series
+    $$
+    2z
+    + \frac{2 z^{3}}{3^{2}}
+    + \frac{2 z^{5}}{5^{2}}
+    + \cdots
+    $$
+    and
+    $$
+    \frac{2z}{1 - z^{2}}
+    -
+    \frac{2}{1 \cdot 3^{2}}
+    \theparen{
+      \frac{2z}{1 - z^{2}}
+    }^{3}
+    +
+    \frac{2 \cdot 4}{3 \cdot 5^{2}}
+    \theparen{
+      \frac{2z}{1 - z^{2}}
+    }^{5}
+    -
+    \cdots
+    $$
+    represent the same function in a certain region of the $z$ plane,
+    and can be transformed into each other by \Burmann's theorem.
 
-    2z 1z 2 +32" + "52 +'
-
-    2z 2\ / 2z Y 2 / 2z
-
-    "r 1.32 1- 2; +3.52V1-1
-
-    represent the same function in a certain region of the z plane, and
-    can be transformed into each other by Biirmaun's theorem.
-
-    (Kapteyn, Nieuw Archief, (2), iii. (1897), p. 225.)
+    \addexamplecitation{TODO Kapteyn, Nieuw Archief, (2), iii. (1897), p. 225.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If a function f(z) is periodic, of period 27r, and is analytic at
-    all points in the infinite strip of the plane, included between the
-    two branches of the curve jsin2| = C (where C> 1), shew that at all
-    points in the strip it can be exjianded in an infinite series of the
-    form
-
-    /(2) = o + ylisin2+...+ sin"2 +
-
-    + cos2(5i + 52sin2+... + sin"-is + ...); and find the coefl\&cients
-    -4 and B . *
+    If a function $f(z)$ is periodic, of period $2 \pi$, and is
+    analytic at all points in the infinite strip of the plane,
+    included between the two branches of the curve
+    $\absval{\sin z} = C$ (where $C > 1$),
+    shew that at all points in the strip it can be expanded in
+    an infinite series of the form
+    \begin{align*}
+      f(z)
+      =&
+      A_{0} + A_{1} \sin z + \cdots + A_{n} \sin^{n} z + \cdots
+      \\
+      &
+      \hfill
+      + \cos z
+      ( B_{1} + B_{2} \sin z + \cdots + B_{n} \sin^{n-1} z + \cdots );
+    \end{align*}
+    and find the coefficients
+    $A_{n}$ and $B_{n}$.
   \end{wandwmiscexample}
   %
   % 147
   %
   \begin{wandwmiscexample}
-    If ( and /are connected bj the equation of which one root is a,
+    If $\phi$ and $f$ are connected by the equation
+    $$
+    \phi(x) + \lambda f(x) = 0,
+    $$
+    of which one root is $a$,
     shew that
+    $$
+    TODO
+    $$
+    the general term being
+    $
+    (-)^{m}
+    \frac{\lambda^{m}}{1! 2! \cdots m! (\phi')^{\half m(m+1)}}
+    $
+    multiplied by a determinant in which
+    the elements of the first row are
+    $\phi', (\phi^{2})', (\phi^{3})', \ldots, (\phi^{m-1})', (f^{m} F')$
+    and each row is the differential coefficient of the preceding
+    one with respect to $a$; and
+    $F, f, F', \ldots$ denote
+    $F(a), f(a), F'(a), \ldots$.
 
-    ( )= -T '/ '+i 3
-
-    0" PP') I 1! 2! 3 X"'
-
-    j< ' (( 2)' (/3/") " ct>T ipF')"
-
-    + ...,
-
-    the general term being ( - )'",, ", ( f\ imim + i) iiaultiplied by a
-    determinant in which
-
-    the elements of the first row are ', ( )', (f) )', ..., (< '"~ )', /'"
-    P') and each row is the diflferential coefficient of the jjreceding
-    one with respect to a; and P, /", P', ... denote F a),f a\ P' a)
-
-    (Wronski, Philosophie de la Technie, Section ii. p. 381. For proofs of
+    (TODOWronski, Philosophie de la Technie, Section ii. p. 381. For proofs of
     the theorem see Cayley, Quarterly Journal, xil. (1873), Transon, Nouv.
     Ann. de Math. xill. (1874j, and C Lagrange, Brux. Mem. Couronnes, 4",
     xlvii. (1886), no. 2.)
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If the function W a, b, x) be defined by the series
-
-    T.r / 7 N a-b (a - b)(a~2b), W a, b, x) = x + j-x + a- +...,
-
+    If the function $W(a, b, x)$ be defined by the series
+    $$
+    W(a,b,x)
+    =
+    x
+    + \frac{a-b}{2!} x^{2}
+    + \frac{(a-b)(a-2b)}{3!} x^{3}
+    + \cdots,
+    $$
     which converges so long as
-
-    x\ <
-
-    w
-
-    d
-
-    -p W (a, b, x) = l+ a- b) W a - b, b, .v);
-
+    $$
+    \absval{x} < \frac{1}{\absval{b}},
+    $$
     shew that
-
-    and shew that if y= W a, b, .r),
-
-    then x= yV b, a, y).
+    $$
+    \frac{\dd}{\dd x} W(a,b,x)
+    =
+    1
+    +
+    (a-b) W(a-b,b,x);
+    $$
+    and shew that if
+    $$
+    y = W(a,b,x)
+    $$
+    then
+    $$
+    x = W(b,a,y).
+    $$
 
     Examples of this function are
-
-    Jr(l,0, A-) = e*-l, lf(0, 1, .r) = log(l+.r), + xY-\
+    \begin{align*}
+      W(1,0,x) =& e^{x} - 1, \\
+      W(0,1,x) =& \log (1+x) \\
+      W(a,1,x) =& \frac{(1+x)^{a} - 1}{a}
+    \end{align*}
+    \addexamplecitation{\Jezek}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Prove that
-
-    W'(a, \,x) =
-
-    1 \ 1; -Yx
-
-    \addexamplecitation{Jezek.}
-
-    2 a :ir"
-
-    n=0
-
+    $$
+    \frac{1}{ \sum_{n=0}^{\infty} a_{n} x^{n}}
+    =
+    \frac{1}{a_{0}}
+    +
+    \sum_{1}^{\infty}
+    \frac{ (-)^{n} x^{n} }{ n! a_{0}^{n+1} } G_{n},
+    $$
     where
-
-    Gn =
-
-    2ai 4a2 Gag
-
-    3ai
-
-    5ao
-
-    2ao 4ai
-
-    3ao
-
-    (2 -2)a \ i ( -l)ao
-
-    nan (?i - 1 ) a \ x a
-
+    $$
+    TODO
+    $$
     and obtain a similar expression for
-
-    h
-
-    I 2 a .xA' U=o I
-
-    (Mangeot, Ann. de VEcole norm. sup. (3), xiv.
+    $$
+    \thebrace{
+      \sum_{n=0}^{\infty} a_{n} x^{n}
+    }^{\half}
+    $$
+    \addexamplecitation{TODO Mangeot, Ann. de VEcole norm. sup. (3), xiv.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that
-
-    2 a x"
-
-    r=0
-
-    - 2
-
-    1\ cSr i
-
-    =o?'+l cai
-
-    10-2
-
+    $$
+    \frac{1}{ \sum_{r=0}^{n} a_{r} x^{r} }
+    =
+    -
+    \sum_{r=0}^{\infty}
+    \frac{1}{r+1}
+    \frac{\partial S_{r+1}}{\partial a_{1}} x^{r},
+    $$
     %
     % 148
     %
-
-    where Sr is the sum of the rth powers of the reciprocals of the roots
-    of the equation
-
-    r=0
-
-    \addexamplecitation{Gambioli, Bologna Memorie, 1892.}
+    where $S_{r}$ is the sum of the $r$-th powers of the reciprocals of
+    the roots of the equation
+    $$
+    \sum_{r=0}^{n} a_{r} x^{r} = 0.
+    $$
+    \addexamplecitation{TODO Gambioli, Bologna Memorie, 1892.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If / (z) denote the nth derivate of f z), and if /\ (z) denote
-    that one of the nth integrals oif z) which has an w-ple zero at 2 = 0,
+    If $f(z)$ denote the $n$th derivate of $f(z)$, and if
+    $f_{-n}(z)$ denote that one of the $n$th integrals of
+    $f(z)$ which has an $n$-ple zero at $z=0$,
     shew that if the series
-
-    = - X
-
-    is convergent it represents a function oi z + x; and if the domain of
-    convergence includes the origin in the .r-plane, the series is equal
-    to
-
+    $$
+    \sum_{n=-\infty}^{\infty} f_{n}(z) g_{-n}(x)
+    $$
+    is convergent it represents a function of $z + x$;
+    and if the domain of convergence includes the origin in the
+    $x$-plane, the series is equal to
+    $$
+    \sum_{n=0}^{\infty} f_{-n}(z+x) g_{n}(0).
+    $$
+    Obtain Taylor's series from this result, by putting $g(z) = 1$.
     \addexamplecitation{Guichard.}
-
-    2 /\ (2 + .t-)5r (0).
-
-    n =
-
-    Obtain Taylor's series from this result, by putting g z) = 1.
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    Shew that, if jr be not an integer,
-
-    , =-;, n=-v x-¥mf x + nf
-
-    as 1/ - QC, provided that all terms for which in = n are omitted from
-    the summation.
-
+    Shew that, if $x$ be not an integer,
+    $$
+    TODO
+    $$
+    as $\nu \rightarrow \infty$, provided that all terms for which
+    $m = n$ are omitted from the summation.
     \addexamplecitation{Math. Trip. 1895.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Sum the series
-    TODO
-    where the value n = is omitted, a ud p, q are
+    $$
+    \sum_{n=-q}^{p}
+    \theparen{
+      \frac{1}{(-)^{n} x-a-n}
+      +
+      \frac{1}{n}
+    },
+    $$
+    where the value $n = 0$ is omitted, and $p,q$ are
     positive integers to be increased without
     limit.
-
     \addexamplecitation{Math. Trip. 1896.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If TODO, shew that
-
-    F x)=< :t iJ L,
-
+    If
+    $
+    F(x)
+    =
+    e^{\int_{0}^{x} x \pi \cot (x \pi) \dmeasurex}
+    $, shew that
+    $$
+    F(x)
+    =
+    e^{x}
+    \frac{
+      \prod_{n=1}^{\infty} \thebrace{
+        \theparen{1 - \frac{x}{n}}^{n}
+        e^{x + \half \frac{x^{2}}{n}}
+      }
+    }{
+      \theparen{1 + \frac{x}{n}}^{n}
+      e^{-x + \half \frac{x^{2}}{n}}
+    }
+    $$
     and that the function thus defined satisfies the relations
-
-    F -x) =, F(x)F l-x) = 2sm.V7r.
-
-    Further, if TODO,
-
-    shew that when
+    $$
+    F(-x) = \frac{1}{F(x)},
+    \quad
+    F(x) F(1-x) = 2 \sin x \pi.
+    $$
+    Further, if
+    $$
+    \psi(z)
+    =
+    z
+    + \frac{z^{2}}{2^{2}}
+    + \frac{z^{3}}{3^{2}}
+    + \cdots
+    =
+    - \int_{0}^{z} \log (1-t) \frac{\dmeasure t}{t},
+    $$
+    shew that
+    $$
+    F(x)
+    =
+    e^{\half \pi i x^{2}
+      -
+      \frac{1}{2 \pi i}
+      \psi( 1 - e^{-2 \pi i x} )
+    }
+    $$
+    when
+    $$
+    \absval{ 1 - e^{-2 \pi i x} } < 1.
+    $$
+    \addexamplecitation{Trinity, 1898.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
     Shew that
-
-    ll-e-2' ' Kl.
-
-    \addexamplecitation{Trinity, 1898.}
-
-    where and
-
-    [-©i-( -.)i-(i .)"][-( -...)i'-G,y"]
-
-    n l-2e- aCOs(a; + /3 ) + e-2 p l-2e-a(,cos( -i3 )+e-2 (, g=i,
-
-    2*'*(l-cos.r)* e-' ''''*'''"
-
-    ,20-1, 2af-l ag=k?,\ r - TT, Pg=KCoa- tt,
-
-    0<a.'<27r.
-
+    \begin{align*}
+      &
+      \thebracket{
+        1 + \theparen{\frac{k}{x}}^{n}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{2 \pi - x}^{n}}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{2 \pi + x}}^{n}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{4 \pi - x}^{n}}
+      }
+      \thebracket{
+        1 + \theparen{\frac{k}{4 \pi + x}}^{n}
+      }
+      \\
+      &
+      \hfill
+      \frac{
+        \prod_{g=1}^{\leq \half n}
+        \sqrt{1 - 2 e^{-\alpha_{g}} \cos(x + \beta_{g}) + e^{-2\alpha_{g}}}
+        \sqrt{1 - 2 e^{-\alpha_{g}} \cos(x - \beta_{g}) + e^{-2\alpha_{g}}}
+      }{
+        2^{\half n}
+        (1 - \cos x)^{\half n}
+        e^{-k \cos \pi n}
+      }
+    \end{align*}
+    where
+    $$
+    \alpha_{g} = k \sin \frac{2g-1}{n} \pi,
+    \quad
+    \beta_{b} = k \cos \frac{2g-1}{n} \pi,
+    $$
+    and
+    $$
+    0 < x < 2 \pi.
+    $$
     \addexamplecitation{Mildner.}
   \end{wandwmiscexample}
   %
   % 149
   %
   \begin{wandwmiscexample}
-    If I 0.' I < 1 and a is not a positive integer, shew that
-
-    =i n~a ~ 1 - e2 ' ' 1 - e2a7r/ j ~ J '
-
-    where C is a contour in the plane enclosing the points 0, x.
-
-    (Lerch, Casopis, xxi. (1892), pp. 65-68.)
+    If $\absval{x} < 1$ and $a$ is not a positive integer, shew that
+    $$
+    \sum_{n=1}^{\infty}
+    \frac{x^{n}}{n - a}
+    =
+    \frac{2 \pi i x^{a}}{1 - e^{2 a \pi i}}
+    +
+    \frac{x}{1 - e^{2 a \pi i}}
+    \int_{C} \frac{t^{a-1} - x^{a-1}}{t - x} \dmeasure t,
+    $$
+    where $C$ is a contour in the plane enclosing the points $0,x$.
+    \addexamplecitation{TODO Lerch, Casopis, xxi. (1892), pp. 65-68.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If ( 1(2), < 2 ( 2), .. are any polynomials in z, and if F(z) be
-    any integrable function, and if yj i (z), yjr (z), ... be polynomials
+    If $\phi_{1}(z), \phi_{2}(z), \ldots$ are any polynomials in $z$,
+    and if $F(z)$ be any integrable function, and if
+    $\psi_{1}(z), \psi_{2}(z), \ldots$ be polynomials
     defined by the equations
-
-    J a Z - X
-
-    f F( ) c i (x) <i>, (x) ... (,\, ( 0 'l> - z)-< (x)
-
-    J a Z X
-
-    Shew that r (f ) = Ml) + J2j + V-3( )
-
-    2 (2) 1 (2) ( 2 (2) 3 (2)
-
-    dx
-
-    z - x'
+    \begin{align*}
+      &
+      \int_{a}^{b}
+      F(x) \frac{ \phi_{1}(z) - \phi_{TODO}(x) }{z - x}
+      \dmeasure x
+      =
+      \psi_{1}(z),
+      \\
+      &
+      \int_{a}^{b}
+      F(x) \phi_{1}(x)
+      \frac{ \phi_{2}(z) - \phi_{2}(x) }{z - x}
+      \dmeasure x
+      =
+      \psi_{2}(z),
+      \\
+      &
+      \int_{a}^{b}
+      F(x)
+      \phi_{1}(x) \phi_{2}(x) \cdots \phi_{m-1}(x)
+      \frac{\phi_{m}(z) - \phi_{m}(x)}{z-x}
+      \dmeasure x
+      =
+      \psi_{m}(z),
+    \end{align*}
+    Shew that
+    \begin{align*}
+      &
+      \hfill
+      \int_{a}^{b}
+      \frac{F(x) \dmeasure x}{z - x}
+      =
+      \frac{\psi_{1}(z)}{\phi_{1}(z)}
+      +
+      \frac{\psi_{2}(z)}{\phi_{1}(z) \phi_{2}(z)}
+      +
+      \frac{\psi_{3}(z)}{\phi_{1}(z) \phi_{2}(z) \phi_{3}(z)}
+      +
+      \cdots
+      \hfill
+      \\
+      &
+      +
+      \frac{\psi_{m}(z)}{\phi_{1}(z) \phi_{2}(z) \cdots \phi_{m}(z)}
+      +
+      \frac{1}{\phi_{1}(z) \phi_{2}(z) \cdots \phi_{m}(z)}
+      \int_{a}^{b}
+      F(x) \phi_{1}(x) \phi_{2}(x) \cdots \phi_{m}(x)
+      \frac{ \dmeasure x }{z - x}.
+    \end{align*}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    A system of functions p, (z), pi (2), po (z), ... is defined by
-    the equations
+    A system of functions $p_{0}(z), p_{1}(z), p_{2}(z), \ldots$
+    is defined by the equations
+    $$
+    p_{0}(z) = 1,
+    \quad
+    p_{n+1}(z) = (z^{2} + a_{n} z + b_{n}) p_{n}(z),
+    $$
+    where $a_{n}$ and $b_{n}$ are given functions of $n$, which tend
+    respectively to the limits $0$ and $-1$ as $n \rightarrow \infty$.
 
-    0 (S) = 1, Pn + l z) = (2- + n2 + K) Pn z\
+    Shew that the region of convergence of a series of the form
+    $\sum e_{n} p_{n}(z)$ where
+    $e_{1}, e_{2}, \ldots$ are independent of $z$, is a Cassini's oval
+    with the foci $+1, -1$.
 
-    where a and 6 are given functions of n, which tend respectively to the
-    limits and - 1
-
-    as 71-*- cx) .
-
-    Shew that the region of convergence of a series of the form 2e pn z),
-    where ej, 621  are independent of 2, is a Cassini's oval with the
-    foci +1, - 1.
-
-    Shew that every function / (2), which is analytic on and inside the
+    Shew that every function $f(z)$, which is analytic on and inside the
     oval, can, for points inside the oval, be expanded in a series
-
-    /(2)=2(c + 20f'n(2),
-
+    $$
+    f(z) = \sum (c_{n} + z c'_{n}) p_{n}(z) % TODO: verify
+    $$
     where
-
-    Cn = 27 . j ( + 2) ? (2) f (2) dz, Cn' = . j qn z)f z) dz.
-
+    $$
+    c_{n}
+    =
+    \frac{1}{2 \pi i} \int (a_{n}+z) q_{n}(z) f(x) \dmeasure z,
+    \quad
+    c'_{n}
+    =
+    \frac{1}{2 \pi i} \int q_{n}(z) f(z) \dmeasure z,
+    $$
     the integrals being taken round the boundary of the region, and the
-    functions q (2) being defined by the equations
-
-    ?0 ( ) = yl n A-h ' " + I ") XTT TTT 2'n ( )-
-
-    2 + ao2 + Oo 2'' + rt +i + 0 + l
-
-    (Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.)
+    functions $q_{n}(z)$ being defined by the equations
+    $$
+    q_{0} = \frac{1}{z^{2} + a_{0} z + b_{0}},
+    \quad
+    q_{n+1}(z)
+    =
+    \frac{1}{z^{2} + a_{n+1} z + b_{n+1}}
+    q_{n}(z).
+    $$
+    \addexamplecitation{TODO Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    Let C be a contour enclosing the point a, and let (f) z) and/
+    Let $C$ be a contour enclosing the point a, and let (f) z) and/
     (2) be analytic when z is on or inside C. Let | < | be so small that
 
     \ t(f) z) \ < .\ z - a\ when 2 is on the periphery of C. By expanding
