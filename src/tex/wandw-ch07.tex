@@ -3,7 +3,7 @@
 %
 \chapter{The Expansion of Functions in Infinite Series}
 
-\Section{7}{1}{A formula due to Darhoux*TODO.  Journal de Math. (3), ii. (1876), p. 271.}
+\Section{7}{1}{A formula due to Darboux*TODO.  Journal de Math. (3), ii. (1876), p. 271.}
 
 Let $f(z)$ be analytic at all points of the straight line joining $a$
 to $z$, and let $\phi(t)$ be any polynomial of degree $n$ in $t$.
@@ -32,7 +32,7 @@ between the limits $0$ and $1$ of $t$, we get
   \\
   &
   + (-)^{n} (z-a)^{n+1}
-  \int_{n}^{1} \phi(t) f^{(n+1)}(a + t(z-a)) \dmeasure t,
+  \int_{0}^{1} \phi(t) f^{(n+1)}(a + t(z-a)) \dmeasure t,
 \end{align*}
 which is the formula in question.
 
@@ -114,7 +114,7 @@ Since
 $$
 \int_{0}^{\infty}
 \frac{x^{n} \sin \theparen{px + \half n \pi}}{e^{\pi x} - 1}
-\dmeasure
+\dmeasure x
 $$
 converges uniformly (by de la Vall\'ee Poussin's test) near
 $p=0$ we
