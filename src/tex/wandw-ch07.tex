@@ -65,7 +65,7 @@ $$
 - B_{1} \frac{z^{2}}{2!}
 - B_{2} \frac{z^{4}}{4!}
 - B_{3} \frac{z^{6}}{6!}
-\ cdots
+\cdots
 ;
 $$
 then $B_{n}$ is called the $n$th \emph{\Bernoulli an
@@ -102,7 +102,7 @@ We have, by example TODO:2 (p. TODO:122) of Chapter TODO:VI,
   =&
   -\frac{1}{2p}
   +
-  \frac{i}{2} \thebrace{
+  \frac{1}{2p} \thebrace{
     1
     + B_{1} \frac{(2p)^{2}}{2!}
     - B_{2} \frac{(2p)^{4}}{4!}
@@ -140,7 +140,7 @@ B_{n}
 =
 \frac{2n}{\pi^{2n} (2^{2n}-1)}
 \int_{0}^{\infty}
-\frac{x^{2n}-1}{\sinh x}
+\frac{x^{2n-1} \dmeasure x}{\sinh x}
 > 0.
 $$
 
@@ -156,7 +156,7 @@ $$
 t \frac{e^{zt}-1}{e^{t}-1}
 =
 \sum_{n=1}^{\infty}
-\frac{\theta_{n}(z) t^{n}}{n!}.
+\frac{\ph1_{n}(z) t^{n}}{n!}.
 $$
 
 This polynomial possesses several important properties. Writing $z+1$
@@ -301,7 +301,7 @@ $\phi_{n}^{(n-k)}(0)$ in Darboux's
 result, we obtain the Euler-Maclaurin sum
 formula\footnote{TODO A history of the formula is given by Barnes, Proc. London Math. Soc.
 (2), iii. (1905), p. 253. It was discovered by Euler (1732), but was
-not published at the time. Euler communicated it (June 9, 1730) to
+not published at the time. Euler communicated it (June 9, 1736) to
 Stirling who replied (April 16, 1738) that it included his own theorem
 (see \hardsubsectionref{12}{3}{3}) as a particular case, and also that the more general
 theorem had been discovered by Maclaurin; and Euler, in a lengthy
@@ -326,7 +326,7 @@ f(z) - f(a)
 \\
 &
 -\frac{(z-a)^{2n+1}}{(2n)!}
-\int_{0}^{1} \phi_{(2n)}(t) f^{(2n+1)}\thebrace{ a + (z-a) t }
+\int_{0}^{1} \phi_{2n}(t) f^{(2n+1)}\thebrace{ a + (z-a) t }
 \dmeasure t.
 \end{align*}
 
@@ -371,7 +371,7 @@ for $a$ in this result and adding up, we get
   -
   F^{(2m-1)}(a)
 }
-+ R_{n}
++ R_{n} ,
 \end{align*}
 where
 $$
