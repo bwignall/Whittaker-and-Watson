@@ -2826,7 +2826,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     $
     F(x)
     =
-    e^{\int_{0}^{x} x \pi \cot (x \pi) \dmeasurex}
+    e^{\int_{0}^{x} x \pi \cot (x \pi) \dmeasure x}
     $, shew that
     $$
     F(x)
@@ -3036,19 +3036,29 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     \addexamplecitation{TODO Pincherle, Rend, dei Lincei, (4), v. (1889), p. 8.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    Let $C$ be a contour enclosing the point a, and let (f) z) and/
-    (2) be analytic when z is on or inside C. Let | < | be so small that
-
-    \ t(f) z) \ < .\ z - a\ when 2 is on the periphery of C. By expanding
-
-    ± [ f(.) l- < (2) .
-
-    Stti j c 2 - a - 0 (2)
-
-    in ascending powers of <, shew that it is equal to
-
-    f a)+ I [/'(a)(0(a) ].
-
-    Hence, by using §§ 6"3, 6"31, obtain Lagrange's theorem.
+    Let $C$ be a contour enclosing the point $a$, and let $\phi(z)$ and
+    $f(z)$ be analytic when $z$ is on or inside $C$. Let $\absval{t}$ be so small that
+    $$
+    \absval{ t \phi(z) } < \absval{ z - a }
+    $$
+    when $z$ is on the periphery of $C$. By expanding
+    $$
+    \frac{1}{2 \pi i}
+    \int_{C}
+    f(z)
+    \frac{1 - t \phi'(z)}{z - a - t \phi(z)}
+    \dmeasure z
+    $$
+    in ascending powers of $t$, shew that it is equal to
+    $$
+    f(a)
+    +
+    \sum_{n=1}^{\infty}
+    \frac{ t^{n} }{n!}
+    \frac{ \dd^{n-1} }{ \dd a^{n-1} }
+    \thebracket{ f'(a) \thebrace{\phi(a)}^{n}
+    }
+    $$
+    Hence, by using \hardsectionref{6}{3}, \hardsubsectionref{6}{3}{1}, obtain Lagrange's theorem.
   \end{wandwmiscexample}
 \end{wandwmiscexamples}
