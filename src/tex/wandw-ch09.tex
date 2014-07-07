@@ -213,7 +213,7 @@ theorem (\hardsubsectionref{3}{7}{1}),
 \begin{align*}
   f(x)
   &=
-  \lim{r \rightarrow 1} \theparen{
+  \lim_{r \rightarrow 1} \theparen{
     r \sin x
     - \half r^{2} \sin 2x
     + \frac{1}{3} r^{3} \sin 3x
@@ -221,7 +221,21 @@ theorem (\hardsubsectionref{3}{7}{1}),
   }
   \\
   &=
-  TODO
+  \lim_{r \rightarrow 1} \thebrace{
+    - \half \theparen{
+      r e^{ix}
+      - \half r^{2} e^{2ix}
+      + \frac{1}{3} r^{3} e^{3ix}
+      - \cdots
+    }
+    +
+    \half i \theparen{
+      r e^{-ix}
+      - \half r^{2} e^{-2ix}
+      + \frac{1}{3} r^{3} e^{-3ix}
+      - \cdots
+    }
+  }
 \end{align*}
 
 tinuous in the range - tt + 8 a' tt - S, where S is any positive
