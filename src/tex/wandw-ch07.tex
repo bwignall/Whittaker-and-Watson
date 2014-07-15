@@ -489,7 +489,7 @@ f(a)
 \frac{ \thebrace{\phi(z)-b}^{m} }{m!}
 \frac{\dd^{m-1}}{\dd a^{m-1}}
 \thebracket{
-  f'(a) \psi^{m}(a)
+  f'(a) \thebrace{\psi(a)}^{m}
 }
 +
 R_{n},
@@ -520,7 +520,7 @@ To prove this, we have
   f(z) - f(a)
   = &
   \int_{a}^{z} f'(\zeta) \dmeasure \zeta
-  = \frac{1}{2 \pi i} \int_{a}^{z} \int_{\phi} TODO
+  = \frac{1}{2 \pi i} \int_{a}^{z} \int_{\gamma} TODO
 \end{align*}
 
 %
@@ -537,13 +537,13 @@ But, by\hardsectionref{4}{3},
   \dmeasure t \dmeasure \zeta
   \\
   &=
-  \frac{ [\phi(z) - b]^{m+1}] }{2 \pi i (m+1)}
+  \frac{ [\phi(z) - b]^{m+1} }{2 \pi i (m+1)}
   \int_{\gamma} \frac{f'(t)}{[\phi(t) - b]^{m+1}} \dmeasure t
   \\
   &=
-  \frac{ [\phi(z) - b]^{m+1}] }{2 \pi i (m+1)}
+  \frac{ [\phi(z) - b]^{m+1} }{2 \pi i (m+1)}
   \int_{\gamma}
-  \frac{ f'(t) [\psi(t)]^{m+1} }{ (t-a)^{m+1} }
+  \frac{ f'(t) \thebrace{\psi(t)}^{m+1} }{ (t-a)^{m+1} }
   \dmeasure t
   \\
   &=
@@ -562,7 +562,7 @@ $m - 1$ for $m$,
   [ f'(a) \thebrace{ \psi(a) }^{m} ]
   \\
   &
-  \frac{1}{2 \pi i}
+ + \frac{1}{2 \pi i}
   \int_{a}^{z} \int_{\gamma}
   \thebracket{
     \frac{\phi(\zeta) - b}{\phi(t) - b}
@@ -580,7 +580,7 @@ z
 =
 a
 + \sum_{n=1}^{\infty}
-\frac{(-)^{n-1} C_{n} (z-a)^{n} e^{n (z^{2} - a^{2}}}{n!},
+\frac{(-)^{n-1} C_{n} (z-a)^{n} e^{n (z^{2} - a^{2})}}{n!},
 $$
 where
 $$
@@ -681,7 +681,7 @@ general form of the theorem will next be stated; this generalisation
 bears the same relation to the theorem just given that Laurent's
 theorem bears to Taylor's theorem: viz., in the last paragraph we
 were concerned only with the expansion of a function in \emph{positive}
-powers of smother function, whereas we shall now discuss the expansion
+powers of another function, whereas we shall now discuss the expansion
 of a function in \emph{positive and negative} powers of the second
 function.
 
@@ -694,7 +694,7 @@ region $A$, bounded by an outer curve $C$ and an inner curve $c$;
 (ii) that $\theta(z)$ is a function analytic on and inside $C$,
 and has only one zero a
 within this contour, the zero being a simple one;
-(iii) that $x$; is a given point within $A$;
+(iii) that $x$ is a given point within $A$;
 (iv) that for all points $z$ of $C$ we have
 $$
 \absval{\theta(x)} < \absval{\theta(z)},
@@ -729,7 +729,7 @@ seen from the equation\footnote{The expansion is justified
   }
   \\
   =&
-  \int{1}{2 \pi i}
+  \frac{1}{2 \pi i}
   \int_{C} \frac{\theta'(z)}{\theta(z)} \dmeasure z
 \end{align*}
 of which the left-hand and right-hand members represent respectively
@@ -796,6 +796,7 @@ by \hardsectionref{6}{1}.
 
   Shew that, when $\absval{x} > 1$, the second member represents $x^{-1}$.
 \end{wandwexample}
+\begin{wandwexample}
 If $S^{(m)}_{2n}$ denote the sum of all combinations of the numbers
 $$
 2^{2}, 4^{2}, 6^{2}, \ldots, (2n-2)^{2},
@@ -819,6 +820,7 @@ $$
 the expansion being valid for all values of $z$ represented by points
 within the oval whose equation is $\absval{\sin z} = 1$ and which contains the
 point $z = 0$. \addexamplecitation{\Teixeira.}
+\end{wandwexample}
 
 \Subsection{7}{3}{2}{Lagrange's theorem.}
 
@@ -831,6 +833,7 @@ $B_{n}$ now become, by\hardsubsectionref{5}{2}{2} and \hardsectionref{6}{1},
 \begin{align*} % TODO: multiline?
   A_{n}
   =&
+  \frac{1}{2\pi in} \!
   \int_{C} \frac{f'(z)}{(z-a)^{n} \theta_{1}^{n}(z)} \dmeasure z
   = \frac{1}{n!} \frac{\dd^{n-1}}{\dd a^{n-1}}
   \thebrace{
@@ -841,6 +844,7 @@ $B_{n}$ now become, by\hardsubsectionref{5}{2}{2} and \hardsectionref{6}{1},
   \\
   A_{0}
   =&
+  \frac{1}{2\pi i} \!
   \int_{C} \frac{f(z) \theta'(z)}{\theta_{1}(z)}
   \frac{\dmeasure z}{z-a}
   =
@@ -858,7 +862,7 @@ $B_{n}$ now become, by\hardsubsectionref{5}{2}{2} and \hardsectionref{6}{1},
 The theorem of the last section accordingly takes the following form,
 if we write $\theta_{1}(z) = 1 / \phi(z)$:
 
-\emph{Let $f(z)$ and $\phi(z)$ he functions of $z$ analytic on and inside a
+\emph{Let $f(z)$ and $\phi(z)$ be functions of $z$ analytic on and inside a
 contour $C$ surrounding a point $a$, and let $t$ be such that the inequality
 $$
 \absval{t \phi(z) } < \absval{z - a}
@@ -884,7 +888,7 @@ f(a)
 }.
 $$
 }
-This result was published by Lagrange\footnote{TODO Mem. de VAcad. de Berlin, xxiv.; Oeuvres, ii. p. 25.} in 1770.
+This result was published by Lagrange\footnote{TODO Mem. de VAcad. de Berlin, xxiv.; Oeuvres, iii. p. 25.} in 1770.
 \begin{wandwexample}
 Within the contour surrounding $a$ defined by the inequality
 $\absval{z (z - a)} > \absval{a}$, where
