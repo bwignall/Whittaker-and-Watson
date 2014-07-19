@@ -374,7 +374,7 @@ $$
 =
 \begin{cases}
   \half x (\pi - x)                         & 0 \leq x \leq \pi,   \\
-  \half \thebraces{ \pi \absval{x} - x^{2}} & -\pi \leq x \leq \pi.
+  \half \thebrace{ \pi \absval{x} - x^{2}} & -\pi \leq x \leq \pi.
 \end{cases}
 $$
 
@@ -389,18 +389,42 @@ $
 be uniformly convergent in the range $(-\pi, \pi)$ and let its sum be $f(x)$.
 Using the obvious results
 \begin{align*}
-TODO
+  \int_{-\pi}^{\pi} \cos mx \cos nx \dmeasure x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi} \sin mx \sin nx \dmeasure x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi} \dmeasure x
+  =& 2\pi,
 \end{align*}
-we find, on multiplying the equation Co + 2 (c,iCos?ia + C' nsinna;)
-=/(a;)
-
-n = l
-
-by* cos nx or by sin nx and integrating term -by-term i* \hardsectionref{4}{7}),
-7rc,i= I f (x)cosnxdx, irdn- I f(x) sin nxdx.
-
-J -TT J -TT
-
+we find, on multiplying the equation
+$
+\half c_{0}
++
+\sum_{n=1}^{\infty}
+(c_{n} \cos nx + d_{n} \sin nx)
+= f(x)
+$
+by\footnote{Multiplying by these factors does not destroy the uniformity of the
+  convergence.}
+$\cos nx$ or by $\sin nx$ and integrating
+term-by-term\footnote{These were given by TODO Euler (with limits $0$ and $2\pi$),
+  Nova Acta Acad. Petrop. xi. (1793).}
+(\hardsectionref{4}{7}),
+$$
+\pi c_{n} = \int_{-\pi}^{\pi} f(x) \cos nx \dmeasure x,
+\quad
+\pi d_{n} = \int_{-\pi}^{\pi} f(x) \sin nx \dmeasure x.
+$$
 Corollary. A trigonometrical series uniformly convergent in the range
 (-tt, tt) is a Fourier series.
 
@@ -418,16 +442,9 @@ nxllog n, which con- verges for all real values of x \hardsubsectionref{2}{3}{1}
 A theorem, of the type described in § O'l, concerning the
 expansibility of a function of a real variable into a trigonometrical
 series is usually described
-
-* Multiplying by these factors does not destroy the uniformity of the
-convergence. t These were given by Enler (with limits and 27r), Nova
-Acta Acad. Petrop. xi. (1793).
-
-11-2
 %
 % 164
 %
-
 as Fourier's theorem. On account of the length and difficulty of a
 formal proof of the theorem (even when the function to be expanded is
 subjected to unnecessarily stringent conditions), we defer the proof
