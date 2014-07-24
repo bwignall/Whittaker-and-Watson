@@ -463,23 +463,34 @@ trigonometrical series.
   $\int_{-\pi}^{\pi} f(t) \dmeasure t$ exists; and if this is an improper
   integral, let it be absolutely convergent.
 
-Let a, b,i be defined by the equations
+  Let $a_{n}, b_{n}$ be defined by the
+  equations\footnote{The numbers $a_{n}, b_{n}$ are called {the Fourier constants} of
+    $f(t)$, and the symbols $a_{n}, b_{n}$ will be used in this sense throughout
+    §§ TODO \hardsectionref{9}{2}--\hardsectionref{9}{5}.
+    It may be shewn that the convergence and absolute convergence of the
+    integrals defining the Fourier constants are consequences of the
+    convergence and absolute convergence of
+    $\int_{-\pi}^{\pi} f(t) \dmeasure t$.
+    Cf. §§ TODO \hardsubsectionref{2}{3}{2}, \hardsectionref{4}{5}.}
+  $$
+  \pi a_{n} = \int_{-\pi}^{\pi} f(t) \cos nt \dmeasure t,
+  \quad
+  \pi b_{n} = \int_{-\pi}^{\pi} f(t) \sin nt \dmeasure t
+  \quad
+  (n=0,1,2,\ldots).
+  $$
 
-7r = I f(t)cosntdt, 7r6 = | f(t) sin ntdt (;i = 0, 1, 2, ...).
-
-J -IT J -IT
-
-Then, if x he an interior point of any interval (a, b) in which f t)
-has limited total fluctuation, the series
-
-X
-
- g-ao + 2 (a cos nx + hn sin nx)
-
-n = l
-
-is convergent, and its sum\ is f x + 0)- f x - 0)]. Iff(t) is
-continuous at t - x, this sum reduces tof(x).
+  Then, if $x$ be an interior point of any interval $(a, b)$ in which
+  $f(t)$ has limited total fluctuation, the series
+  $$
+  \half a_{0}
+  +
+  \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)
+  $$
+  is convergent, and its sum\footnote{The limits $f(x \pm 0)$ exist,
+    by \hardsubsectionref{3}{6}{4} example TODO:3.}
+  is $\half \thebrace{ f(x+0) + f(x-0) }$.
+  If $f(t)$ is continuous at $t=x$, this sum reduces to $f(x)$.
 }
 
 This theorem will be assumed iu j\\hardsubsectionref{9}{2}{1}-9"32; these sections deal
@@ -513,18 +524,7 @@ n=l
 the Fourier series associated tuith f(t). This description must,
 however, be
 
-t The numbers a,, fc are called the Fourier constants of f(t), and
-the symbols a,, b will be used in this sense throughout §§ i)*2-9"5.
-It may be shewn that the convergence and absolute convergence of the
-integrals defining the Fourier constants are consequences of the
-convergence
-
-and absolute convergence of | f(t)dt. Cf. §§ 2-32, 4-5.
-
-/"-/'
-
-X The limits / (.r ± 0) exist, by\hardsubsectionref{3}{6}{4} example 3. § Cf. example 6 at
-the end of the chapter (p. 190).
+§ Cf. example 6 at the end of the chapter (p. 190).
 
 %
 % 165
