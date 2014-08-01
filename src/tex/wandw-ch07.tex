@@ -963,7 +963,7 @@ part of the plane are simple poles $a_{1},a_{2},a_{3},\ldots$, where
 $\absval{a_{1}} \leq \absval{a_{2}} \leq \absval{a_{3}} \leq \cdots$;
 let $b_{1},b_{2},b_{3},\ldots$, be the residues at these
 poles, and let it be possible to choose a sequence of circles $C_{m}$ (the
-radius of $C_{m}$ being $R_{m}$) vvith centre at $O$, not passing through any
+radius of $C_{m}$ being $R_{m}$) with centre at $O$, not passing through any
 poles, such that $\absval{f(z)}$ is bounded on $C_{m}$. (The function
 $\cosec z$ may
 be cited as an example of the class of functions considered, and we
@@ -985,7 +985,7 @@ $$
 =
 f(x) + \sum_{r} \frac{b_{r}}{a_{r}-x}.
 $$
-where the summation extends over all poles in the interior of C, .
+where the summation extends over all poles in the interior of $C_m$.
 
 But
 \begin{align*}
@@ -1002,7 +1002,7 @@ But
   f(0) + \sum_{r} \frac{b_{r}}{a_{r}}
   +
   \frac{x}{2 \pi i}
-  \int_{C_{m}} \frac{f(z)}{z(z-x)} \dmeasure x
+  \int_{C_{m}} \frac{f(z)}{z(z-x)} \dmeasure z ,
 \end{align*}
 if we suppose the function $f(z)$ to be analytic at the origin.
 
@@ -1145,7 +1145,7 @@ $$
 =
 \frac{1}{z}
 +
-\sum_{n=1}
+\sum_{n=1}^{\infty}
 \frac{2z \cos 2na\pi - 4n\pi \sin 2na\pi}{z^{2}+4n^{2}\pi^{2}}.
 $$
 \end{wandwexample}
@@ -1171,7 +1171,7 @@ $$
 The general term of the series on the right is
 $$
 \frac{(-)^{r} r}{(e^{r \pi}-e^{-r \pi})
-  \thebrace{(r \pi)^{4} + \frac{1}{4} x^{4}}}
+  \thebrace{(r \pi)^{4} + \frac{1}{4} x^{4}}},
 $$
 which is the residue at each of the four singularities
 $r, -r, ri, -ri$ of the function
@@ -1301,7 +1301,7 @@ From the last equation the required result is now obvious.
     \frac{1}{9 \pi^{2} + x^{2}}
     +
     \cdots
-  }
+  }.
   $$
 \end{wandwexample}
 \begin{wandwexample}
@@ -1322,13 +1322,13 @@ The theorem of the last article can be applied to the expansion of a
 certain class of functions as infinite products.
 
 For let $f(z)$ be a function which has simple zeros at the
-points\footnote{These being the only zeros of $f(z)$; and $a \neq 0$.}
+points\footnote{These being the only zeros of $f(z)$; and $a_{n} \neq 0$.}
 $a_{1}, a_{2}, a_{3}, \ldots$, where
 $\lim_{n \rightarrow \infty} \absval{a_{n}}$ is infinite; and let
 $f(z)$ be analytic for all values of $z$.
 
 Then $f'(z)$ is analytic for all values of $z$
-\hardsubsectionref{5}{2}{2}), and so $\frac{f'(z)}{f(z)}$ can have
+(\hardsubsectionref{5}{2}{2}), and so $\frac{f'(z)}{f(z)}$ can have
 singularities only at the points $a_{1}, a_{2}, a_{3}, \ldots$.
 
 Consequently, by Taylor's theorem,
@@ -1456,7 +1456,7 @@ any function $f(z)$ which fulfils the conditions stated.
   }
   \thebrace{
     1 + \theparen{ \frac{k}{4\pi + x}  }^{2}
-  }
+  } \cdots
   \\
   =&
   \frac{\cosh x - \cos x}{1-\cos x}.
@@ -1500,20 +1500,20 @@ $$
       -
       \frac{z}{a_{n}}
     }
-    e^{a_{n}(z)}
+    e^{g_{n}(z)}
   }^{m_{n}}
 }
 $$
-converges for all\footnote{Provided that z is not at one of the points
-  for which m is negative.} finite values of $z$.
+converges for all\footnote{Provided that $z$ is not at one of the points $a_{m}$
+  for which $m$ is negative.} finite values of $z$.
 
 Let $K$ be any constant, and let $\absval{z} < K$; then, since
 $\absval{a_{n}} \rightarrow \infty$, we can
 find $N$ such that, when $n > N$, $\absval{a_{n}} > 2K$.
 
 The first $N$ factors of the product do not affect its
-convergence\footnote{Provided that z is not at one of the points
-  for which m is negative.} % TODO:duplicated-footnote
+convergence\footnote{Provided that $z$ is not at one of the points $a_{m}$
+  for which $m$ is negative.}; % TODO:duplicated-footnote
 consider any value of $n$ greater than $N$, and let
 $$
 g_{n}(z)
@@ -1636,7 +1636,7 @@ F(z)
 $$
 
 Then, if $f(z) \div F(z) = G_{1}(z)$, $G_{1}(z)$ is an integral
-function \hardsubsectionref{5}{6}{4}) of $z$ and has no zeros.
+function (\hardsubsectionref{5}{6}{4}) of $z$ and has no zeros.
 
 It follows that
 $\frac{1}{G_{1}(z)} \frac{\dd}{\dd z} G_{1}(z)$
@@ -1666,13 +1666,13 @@ e^{G(z)}
     }
     e^{g_{n}(z)}
   }^{m_{n}}
-}
+},
 $$
 where $G(z)$ is some integral function such that $G(0) = 0$.
 %\begin{smalltext}
 [Note. The presence of the arbitrary element $G(z)$ which occurs in
 this formula for $f(z)$ is due to the lack of conditions as to the
-behaviour of $f(z)$ as $\absval \rightarrow \infty$]
+behaviour of $f(z)$ as $\absval{z} \rightarrow \infty$.]
 
 \corollary. If $m_{n} =1$, it is
 sufficient to take $k_{n} = n$, by\hardsubsectionref{2}{3}{6}.
