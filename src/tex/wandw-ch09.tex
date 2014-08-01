@@ -33,7 +33,8 @@ then the trigonometrical series is called a \emph{Fourier series}.
 
 %\begin{smalltext}
 Trigonometrical series first appeared in analysis in connexion with
-the investigations of Daniel Bernoulli on vibrating strings;
+the investigations of Daniel Bernoulli on vibrating
+strings\index{Strings, vibrations of}\index{Vibrations of!strings};
 d'Alembert had previously solved the equation of
 motion
 $ \ddot{y} = a^{2} \frac{\dd^{2} y}{\dd x^{2}}$
@@ -84,7 +85,8 @@ by Bonnet\footnote{TODO Meiuoires des Savants etramjers of the Belgian Academy, 
 while Dirichlet's original proof makes use of arguments precisely
 similar to those by which that theorem is proved. See\hardsubsectionref{9}{4}{3}.}.
 
-The result of Dirichlet is that\footnote{The conditions postulated for $f(t)$
+The result of Dirichlet\index{Statement of Fourier's theorem, \Dirichlet's}
+is that\footnote{The conditions postulated for $f(t)$
   are known as \emph{Dirichlet's conditions}; as will be seen in TODO §§ 9-2, 9 42, they are unnecessarily
   stringent.}
 if $f(t)$ is defined and bounded in the
@@ -337,221 +339,242 @@ $$
 % 163
 %
 
-That is to say, when -tt + S x tt-S,
-
-  1 S ( - )"~ cos nx
-
-where C is a constant, at present undetermined.
+That is to say, when $-\pi + \delta \leq x \leq \pi - \delta$,
+$$
+C - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty} \frac{(-)^{n-1} \cos nx}{n^{2}},
+$$
+where $C$ is a constant, at present undetermined.
 
 But since the series on the right converges uniformly throughout the
-range - tt :r \$ tt, its sum is a continuous function of x in this
-extended range; and so, proceeding to the limit when x- ±7r, we see
-that the last equation is still true when x= + it.
+range $-\pi \leq x \leq \pi$, its sum is a continuous function of $x$ in this
+extended range; and so, proceeding to the limit when
+$x \rightarrow \pm \pi$, we see
+that the last equation is still true when $x = \pm \pi$.
 
-To determine C, integrate each side of the equation \hardsectionref{4}{7}) between
-the limits - tt, rr; and we get
+To determine $C$, integrate each side of the equation \hardsectionref{4}{7} between
+the limits $-\pi, \pi$; and we get
+$$
+2 \pi C - \frac{1}{6} \pi^{3} = 0.
+$$
 
-D
+Consequently
+$$
+\frac{1}{12} \pi^{2} - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty}
+\frac{ (-)^{n-1} \cos nx }{ n^{2} }
+\quad
+(-\pi \leq x \leq \pi).
+$$
 
-Consequently 7r --:F''= 2 - ( - tt a' tt).
-
-i t: ?l. =: 1 '*'
-
-Example 3. By writing tt- 2.>; for .r in example 2, shew that
-
-  sin no; r = (tt - d?) (O a' tt),
-
-71=1 /i | = -i tt I A'l -A- (-TT .r Tr).
+Example TODO.
+By writing $\pi - 2x$ for $x$ in example TODO2, shew that
+$$
+\sum_{n=1}^{\infty} \frac{\sin^{2} nx}{n^{2}}
+=
+\begin{cases}
+  \half x (\pi - x)                         & 0 \leq x \leq \pi,   \\
+  \half \thebrace{ \pi \absval{x} - x^{2}} & -\pi \leq x \leq \pi.
+\end{cases}
+$$
 
 \Subsection{9}{1}{2}{Values of the coefficients in terms of the sum of a
 trigonometrical series.}
+Let the trigonometrical series
+$
+\half c_{0}
++
+\sum_{n=1}^{\infty} (c_{n} \cos nx + d_{n} \sin nx)
+$
+be uniformly convergent in the range $(-\pi, \pi)$ and let its sum be $f(x)$.
+Using the obvious results
+\begin{align*}
+  \int_{-\pi}^{\pi} \cos mx \cos nx \dmeasure x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi} \sin mx \sin nx \dmeasure x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi} \dmeasure x
+  =& 2\pi,
+\end{align*}
+we find, on multiplying the equation
+$
+\half c_{0}
++
+\sum_{n=1}^{\infty}
+(c_{n} \cos nx + d_{n} \sin nx)
+= f(x)
+$
+by\footnote{Multiplying by these factors does not destroy the uniformity of the
+  convergence.}
+$\cos nx$ or by $\sin nx$ and integrating
+term-by-term\footnote{These were given by TODO Euler (with limits $0$ and $2\pi$),
+  Nova Acta Acad. Petrop. xi. (1793).}
+(\hardsectionref{4}{7}),
+$$
+\pi c_{n} = \int_{-\pi}^{\pi} f(x) \cos nx \dmeasure x,
+\quad
+\pi d_{n} = \int_{-\pi}^{\pi} f(x) \sin nx \dmeasure x.
+$$
 
-Let the trigonometrical series Co+ S (c cos ?? a; + c?,j sin n ) be
-uniformly
+TODO Corollary. A trigonometrical series uniformly convergent in the range
+$(-\pi, \pi)$ is a Fourier series.
 
-n = l
+TODO Note. Lebesgue has given a proof (TODO Series trigonometriques, p. 124) of a
+theorem communicated to him by Fatou that the trigonometrical series
+$\sum_{n=2}^{\infty} \sin nx / \log n$, which converges for all real values of $x$
+(\hardsubsectionref{2}{3}{1} example TODO), is \emph{not} a Fourier series.
 
-convergent in the range (- tt, tt) and let its sum be f x). Using the
-obvious
-
-results
-
-.!\ [=7r m = ni O),
-
-f   1=0 m n), |-, .
-
-sin 7/ia; sin nxax, \, aa; = ztt,
-
-we find, on multiplying the equation Co + 2 (c,iCos?ia + C' nsinna;)
-=/(a;)
-
-n = l
-
-by* cos nx or by sin nx and integrating term -by-term i* \hardsectionref{4}{7}),
-7rc,i= I f (x)cosnxdx, irdn- I f(x) sin nxdx.
-
-J -TT J -TT
-
-Corollary. A trigonometrical series uniformly convergent in the range
-(-tt, tt) is a Fourier series.
-
-Note. Lebesgue has given a proof Series trigonometriques, p. 124) of a
-theorem
-
-00
-
-communicated to him by Fatou that the trigonometrical series 2 sin
-nxllog n, which con- verges for all real values of x \hardsubsectionref{2}{3}{1} example
-1), is not a Fourier series.
-
-\Section{9}{2}{On Dirichlet's conditions and Fourier's theorem.}
-
-A theorem, of the type described in § O'l, concerning the
+\Section{9}{2}{On Dirichlet's conditions and Fourier's theorem.
+\index{Statement of Fourier's theorem, \Dirichlet's}}
+A theorem, of the type described in \hardsectionref{9}{1}, concerning the
 expansibility of a function of a real variable into a trigonometrical
 series is usually described
-
-* Multiplying by these factors does not destroy the uniformity of the
-convergence. t These were given by Enler (with limits and 27r), Nova
-Acta Acad. Petrop. xi. (1793).
-
-11-2
 %
 % 164
 %
-
-as Fourier's theorem. On account of the length and difficulty of a
+as \emph{Fourier's theorem}. On account of the length and difficulty of a
 formal proof of the theorem (even when the function to be expanded is
 subjected to unnecessarily stringent conditions), we defer the proof
-until §§ 9"42, 9"43. It is, however, convenient to state here certain
-sufficient conditions under which a function can be expanded into a
+until TODO §§ \hardsubsectionref{9}{4}{2}, \hardsubsectionref{9}{4}{3}.
+It is, however, convenient to state here certain
+\emph{sufficient} conditions under which a function can be expanded into a
 trigonometrical series.
 
-Let f(t) he defined arbitrarily wlien - 7r < tt and defined* for all
-other real values oft by means of the equation
+\emph{Let $f(t)$ he defined arbitrarily when $-\pi \leq t \leq \pi$
+  and defined\footnote{This definition frequently results in $f(t)$ not being
+    expressible by a single analytical expression for all real values of $t$.
+    Cf.\hardsubsectionref{9}{1}{1} example TODO:1.}
+  for all other real values of $t$ by means of the equation
+  $$
+  f(t + 2\pi) = f(t),
+  $$
+  so that $f(t)$ is a periodic function with period $2\pi$.
+}
+\emph{
+  Let $f(t)$ be such that
+  $\int_{-\pi}^{\pi} f(t) \dmeasure t$ exists; and if this is an improper
+  integral, let it be absolutely convergent.
+}
 
-f t + 27r)=f t), so thatf t) is a periodic function with period lir.
+\emph{
+  Let $a_{n}, b_{n}$ be defined by the
+  equations\footnote{The numbers $a_{n}, b_{n}$ are called
+    \emph{the Fourier constants\index{Fourier constants}} of
+    $f(t)$, and the symbols $a_{n}, b_{n}$ will be used in this sense throughout
+    §§ TODO \hardsectionref{9}{2}--\hardsectionref{9}{5}.
+    It may be shewn that the convergence and absolute convergence of the
+    integrals defining the Fourier constants are consequences of the
+    convergence and absolute convergence of
+    $\int_{-\pi}^{\pi} f(t) \dmeasure t$.
+    Cf. §§ TODO \hardsubsectionref{2}{3}{2}, \hardsectionref{4}{5}.}
+  $$
+  \pi a_{n} = \int_{-\pi}^{\pi} f(t) \cos nt \dmeasure t,
+  \quad
+  \pi b_{n} = \int_{-\pi}^{\pi} f(t) \sin nt \dmeasure t
+  \quad
+  (n=0,1,2,\ldots).
+  $$
+}
 
-Let f(t) be such that f(t) dt exists; and if this is an improper
-integral,
+\emph{
+  Then, if $x$ be an interior point of any interval $(a, b)$ in which
+  $f(t)$ has limited total fluctuation, the series
+  $$
+  \half a_{0}
+  +
+  \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)
+  $$
+  is convergent, and its sum\footnote{The limits $f(x \pm 0)$ exist,
+    by \hardsubsectionref{3}{6}{4} example TODO:3.}
+  is $\half \thebrace{ f(x+0) + f(x-0) }$.
+  If $f(t)$ is continuous at $t=x$, this sum reduces to $f(x)$.
+}
 
-J - IT
-
-let it be absolutely convergent.
-
-Let a, b,i be defined by the equations
-
-7r = I f(t)cosntdt, 7r6 = | f(t) sin ntdt (;i = 0, 1, 2, ...).
-
-J -IT J -IT
-
-Then, if x he an interior point of any interval (a, b) in which f t)
-has limited total fluctuation, the series
-
-X
-
- g-ao + 2 (a cos nx + hn sin nx)
-
-n = l
-
-is convergent, and its sum\ is f x + 0)- f x - 0)]. Iff(t) is
-continuous at t - x, this sum reduces tof(x).
-
-This theorem will be assumed iu j\\hardsubsectionref{9}{2}{1}-9"32; these sections deal
-with theorems con- cerning Fom'ier series which are of some importance
+This theorem will be assumed in
+TODO\hardsubsectionref{9}{2}{1}--\hardsubsectionref{9}{3}{2};
+these sections deal with theorems concerning Fourier series which
+are of some importance
 in practical applications. It should be stated here that every
 function which Applied Mathematicians need to expand into Fourier
-series satisfies the conditions just imposed on f t), so that the
+series satisfies the conditions just imposed on $f(t)$, so that the
 analysis given later in this chapter establishes the validity of all
 the expansions into Fourier series which are required in physical
 investigations.
 
-The reader will observe that in the theorem just stated,/( ) is
-subject to less stringent conditions than those contemplated by
+The reader will observe that in the theorem just stated,
+$f(t)$ is subject to less stringent conditions than those contemplated by
 Dirichlet, and this decrease of stringency is of
+considerable practical importance. Thus, so simple a series as
+$\sum_{n=1}^{\infty} (-)^{n-1} (\cos nx) / n$
+is the
+expansion of the function\footnote{Cf. example TODO:6 at the end of the chapter (p. TODO:190).}
+$\log \absval{2 \cos \half x}$; and this function
+does not satisfy Dirichlet's condition of boundedness at $\pm \pi$.
 
-considerable practical importance. Thus, so simple a series as 2 ( -
-)"~ (cos nx)ln is the
-
-n=l
-
-expansion of the function § log | 2 cos l;*' |; and this function
-does not satisfy Dirichlet's condition of boundedness at +7r.
-
-QC
-
-It is convenient to describe the series ao+ S (on cos nx + hn sin nx)
-as
-
-n=l
-
-the Fourier series associated tuith f(t). This description must,
+It is convenient to describe the series
+$\half a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)$
+as \emph{the Fourier series associated with $f(t)$}. This description must,
 however, be
-
-* This definition frequently results in f(t) not being ex ressible by
-a single analytical ex- pression for all real values of t. Cf.\hardsubsectionref{9}{1}{1}
-example 1.
-
-t The numbers a,, fc are called the Fourier constants of f(t), and
-the symbols a,, b will be used in this sense throughout §§ i)*2-9"5.
-It may be shewn that the convergence and absolute convergence of the
-integrals defining the Fourier constants are consequences of the
-convergence
-
-and absolute convergence of | f(t)dt. Cf. §§ 2-32, 4-5.
-
-/"-/'
-
-X The limits / (.r ± 0) exist, by\hardsubsectionref{3}{6}{4} example 3. § Cf. example 6 at
-the end of the chapter (p. 190).
-
 %
 % 165
 %
-
 taken as implying nothing concerning the convergence of the series in
 question.
 
 \Subsection{9}{2}{1}{The representation of a function by Fourier series for ranges
 other than $(-\pi,\pi)$.}
 
-Consider a function f(oo) with an (absolutely) convergent integral,
-and with limited total fluctuation in the range a os b.
+Consider a function $f(x)$ with an (absolutely) convergent integral,
+and with limited total fluctuation in the range $a \leq x \leq b$.
 
-Write x = l(a + b)-l(a-b)'7r-W, f(x) = F x').
+Write
+$x = \half (a + b) - \half (a-b) \pi^{-1} x',
+\quad
+f(x) = F(x')$.
 
-Then it is known \hardsectionref{9}{2}) that
-
-\ [F x 0) + F x' - 0) = \ fto + t (an cos nx + b,, sin nx),
-
-n = l
-
+Then it is known (\hardsectionref{9}{2}) that
+$$
+\half [F(x'+0) + F(x'-0)]
+=
+\half a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx' + b_{n} \sin nx'),
+$$
 and so
-
-l f + 0)+f x-0)
-
-1 * f nir (2x - a-b), . mr (2x - a - b) = 5 tto + S - a cos r h bn sm
-
-2 n=i b - a b - a
-
+\begin{align*}
+  & \half \thebraces{ f(x+0) + f(x-0)}
+  \\
+  &
+  \hfill
+  =
+  \half a_{0}
+  +
+  \sum_{n=1}^{\infty}
+  \thebraces{
+    a_{n} \cos \frac{n \pi (2x-a-b)}{b-a}
+    +
+    b_{n} \sin \frac{n \pi (2x-a-b)}{b-a}
+  },
+\end{align*}
 where by an obvious transformation
-
-1 r r/ \ nTT (2x - a - b), b-a)an = j fi-i-) cos -jz dx,
-
-1/7 \; f%/ \  n7r(2x-a-b)j
-
-  (b - a) 6,1 = / (x) sm, ax.
-
-  J a b - a
-
+\begin{align*}
+  \half (b-a) a_{n} =& \int_{a}^{b} f(x) \cos \frac{n \pi (2x-a-b)}{b-a} \dmeasure x
+  ,
+  \\
+  \half (b-a) b_{n} =& \int_{a}^{b} f(x) \sin \frac{n \pi (2x-a-b)}{b-a} \dmeasure x
+  .
+\end{align*}
 \Subsection{9}{2}{2}{The cosine series and the sine series.}
-Let $f(x)$ be defined in the range $(0,l)$ and let it have an
-(absolutely) convergent integral and also let it have limited total
-fluctuation in that range. Define f (x) in the range (0, - I) by the
-equation
-
-f(-x) f(x). Then
-
-2 f(x + 0)+f x-0)]=-ao+ 2 ja cos-j + 6 sin-pk
 
 where, by\hardsubsectionref{9}{2}{1},
 
