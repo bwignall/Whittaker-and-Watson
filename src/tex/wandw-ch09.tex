@@ -585,17 +585,38 @@ $$
 f(-x) = f(x).
 $$
 
-where, by\hardsubsectionref{9}{2}{1},
-
-la,, = r fit) cos ' dt = 2 [ /(O cos ' dt,
-
-lbn=f f t)sm' dt = 0,
-
-so that when -l x l,
-
-l fix + 0)+f x-0)] = lao+i ancos' ',
-
-this is called the cosine series.
+Then
+$$
+\half \thebraces{ f(x+0) + f(x-0) }
+=
+\half a_{0}
++
+\sum_{n=1}^{\infty} \thebraces{
+  a_{n} \cos \frac{n \pi x}{l}
+  +
+  b_{n} \sin \frac{n \pi x}{l}
+},
+$$
+where, by \hardsubsectionref{9}{2}{1},
+\begin{align*}
+  l a_{n}
+  =&
+  \int_{-l}^{l} f(t) \cos \frac{n \pi t}{l} \dmeasure t
+  =
+  2 \int_{0}^{l} f(t) \cos \frac{n \pi t}{l} \dmeasure t,
+  \\
+  l b_{n}
+  =&
+  \int_{-l}^{l} f(t) \sin \frac{n \pi t}{l} \dmeasure t
+  = 0,
+\end{align*}
+so that when $-l \leq x \leq l$,
+$$
+\half \thebraces{ f(x+0) + f(x-0) }
+=
+\half a_{0} + \sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l};
+$$
+this is called the \emph{cosine series}.
 
 If, however, we define f(x) in the range (0, - I) by the equation
 
