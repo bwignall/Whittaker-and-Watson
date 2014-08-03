@@ -582,7 +582,7 @@ total fluctuation in that range.
 $\wandwtypo{(0,-l)}{(-l,0)}$
 by the equation
 $$
-f(-x) = f(x).
+f(-x) = f(x).\index{Even functions}
 $$
 
 Then
@@ -618,21 +618,26 @@ $$
 $$
 this is called the \emph{cosine series}.
 
-If, however, we define f(x) in the range (0, - I) by the equation
-
+If, however, we define $f(x)$ in the range $(0,-l)$ by the equation
+$$
+f(-x) = -f(\wandwtypo{-}{}x),\index{Odd functions}
+$$
 %
 % 166
 %
-
-we get, when - I " cc- l,
-
-f ixnrf/
-
-where lhn='2 f(t) sin-.- dt;
-
-J I'
-
-this is called the sine series.
+we get, when $-l \leq x \leq l$,
+$$
+\half \thebraces{ f(x+0) + f(x-0) }
+=
+\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l},
+$$
+where
+$$
+l b_{n}
+=
+2 \int_{0}^{l} f(t) \sin \frac{n \pi t}{l} \dmeasure t;
+$$
+this is called the \emph{sine series}.
 
 Thus the series
 
