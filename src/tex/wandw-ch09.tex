@@ -552,7 +552,7 @@ $$
 $$
 and so
 \begin{align*}
-  & \half \thebraces{ f(x+0) + f(x-0)}
+  & \half \thebrace{ f(x+0) + f(x-0)}
   \\
   &
   \hfill
@@ -587,11 +587,11 @@ $$
 
 Then
 $$
-\half \thebraces{ f(x+0) + f(x-0) }
+\half \thebrace{ f(x+0) + f(x-0) }
 =
 \half a_{0}
 +
-\sum_{n=1}^{\infty} \thebraces{
+\sum_{n=1}^{\infty} \thebrace{
   a_{n} \cos \frac{n \pi x}{l}
   +
   b_{n} \sin \frac{n \pi x}{l}
@@ -692,8 +692,35 @@ But, integrating by parts, if $n \neq 1$,
   & \quad
   \int__{0}^{\pi} (\pi - x) \thebraces{
     \sin (n+1) x - \sin (n-1) x
-  } \dmeasure x \\
-  TODO
+  } \dmeasure x
+  \\
+  & \quad
+  \thebrackets{
+    (x - \pi)
+    \thebraces{
+      \frac{ \cos (n+1) x }{n+1}
+      -
+      \frac{ \cos (n-1) x }{n-1}
+    }
+  }_{0}^{\pi}
+  -
+  \int_{0}^{\pi}
+  \thebrace{
+    \frac{ \cos (n+1) x }{n+1}
+    -
+    \frac{ \cos (n-1) x }{n-1}
+  }
+  \dmeasure x
+  \\
+  & \quad
+  \pi
+  \theparen{
+    \frac{1}{n+1}
+    -
+    \frac{1}{n-1}
+  }
+  =
+  \frac{-2\pi}{(n+1)(n-1)}
 \end{align*}
 Whereas if = 1, we get I 2 (tt - x) sin .r cos xdx= Tr. J
 
