@@ -671,29 +671,30 @@ series was obtained between 1762 and 1765 by Lagrange, Oeuvres, l. p.
 TODO Example 1. Expand $\half (\pi - x) \sin x$ in a cosine series in the range
 $0 \leq x \leq \pi$.
 [We have, by the formula just obtained,
+$$
+\half (\pi - x) \sin x
+=
+\half a_{0}
++ \sum_{n=1}^{\infty} a_{n} \cos nx,
+$$
+where
+$$
+\half \pi a_{n}
+=
+\int_{0}^{\pi} \half (\pi - x) \sin x \cos nx \dmeasure x.
+$$
 
-  (tt - ) sin.r = | o+ 2 a,iC0s?2,
-
-n=l
-
-where j7ra = I [ir -x) sin x cos nxdx.
-
-J
-
-But, integrating by parts, if 7i 4= 1, 2 '7T - x)smx cos nxdx
-
-= I (tt- a;) sin (?i + l) A'-sin(?i- 1) .a; ( .r .'
-
-\ r, rcos( + l)A' cos(?i - l).r"l I'T f (cos n + l)x eos( - l).r"i,
-
-/:
-
-1 \ -27
-
-= 7rf
-
-, + l n-lj n + ) n-l)'
-
+But, integrating by parts, if $n \neq 1$,
+\begin{align*}
+  &
+  \int_{0}^{\pi} 2 (\pi - x) \sin x \cos nx \dmeasure x
+  \\
+  & \quad
+  \int__{0}^{\pi} (\pi - x) \thebraces{
+    \sin (n+1) x - \sin (n-1) x
+  } \dmeasure x \\
+  TODO
+\end{align*}
 Whereas if = 1, we get I 2 (tt - x) sin .r cos xdx= Tr. J
 
 Therefore the required series is
