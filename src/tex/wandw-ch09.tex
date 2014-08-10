@@ -552,7 +552,7 @@ $$
 $$
 and so
 \begin{align*}
-  & \half \thebraces{ f(x+0) + f(x-0)}
+  & \half \thebrace{ f(x+0) + f(x-0)}
   \\
   &
   \hfill
@@ -575,94 +575,174 @@ where by an obvious transformation
   .
 \end{align*}
 \Subsection{9}{2}{2}{The cosine series and the sine series.}
+Let $f(x)$ be defined in the range $(0,l)$ and let it have an
+(absolutely) convergent integral and also let it have limited
+total fluctuation in that range.
+\emph{Define} $f(x)$ in the range
+$\wandwtypo{(0,-l)}{(-l,0)}$
+by the equation
+$$
+f(-x) = f(x).\index{Even functions}
+$$
 
-where, by\hardsubsectionref{9}{2}{1},
+Then
+$$
+\half \thebrace{ f(x+0) + f(x-0) }
+=
+\half a_{0}
++
+\sum_{n=1}^{\infty} \thebrace{
+  a_{n} \cos \frac{n \pi x}{l}
+  +
+  b_{n} \sin \frac{n \pi x}{l}
+},
+$$
+where, by \hardsubsectionref{9}{2}{1},
+\begin{align*}
+  l a_{n}
+  =&
+  \int_{-l}^{l} f(t) \cos \frac{n \pi t}{l} \dmeasure t
+  =
+  2 \int_{0}^{l} f(t) \cos \frac{n \pi t}{l} \dmeasure t,
+  \\
+  l b_{n}
+  =&
+  \int_{-l}^{l} f(t) \sin \frac{n \pi t}{l} \dmeasure t
+  = 0,
+\end{align*}
+so that when $-l \leq x \leq l$,
+$$
+\half \thebraces{ f(x+0) + f(x-0) }
+=
+\half a_{0} + \sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l};
+$$
+this is called the \emph{cosine series}.
 
-la,, = r fit) cos ' dt = 2 [ /(O cos ' dt,
-
-lbn=f f t)sm' dt = 0,
-
-so that when -l x l,
-
-l fix + 0)+f x-0)] = lao+i ancos' ',
-
-this is called the cosine series.
-
-If, however, we define f(x) in the range (0, - I) by the equation
-
+If, however, we define $f(x)$ in the range $(0,-l)$ by the equation
+$$
+f(-x) = -f(\wandwtypo{-}{}x),\index{Odd functions}
+$$
 %
 % 166
 %
-
-we get, when - I " cc- l,
-
-f ixnrf/
-
-where lhn='2 f(t) sin-.- dt;
-
-J I'
-
-this is called the sine series.
+we get, when $-l \leq x \leq l$,
+$$
+\half \thebraces{ f(x+0) + f(x-0) }
+=
+\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l},
+$$
+where
+$$
+l b_{n}
+=
+2 \int_{0}^{l} f(t) \sin \frac{n \pi t}{l} \dmeasure t;
+$$
+this is called the \emph{sine series}.
 
 Thus the series
+$$
+\half a_{0}
++
+\sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l},
+\quad
+\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l},
+$$
+where
+$$
+\half l a_{n}
+=
+\int_{0}^{l} f(t) \cos \frac{n \pi t}{l} \dmeasure t,
+\quad
+\half l b_{n}
+=
+\int_{0}^{l} f(t) \sin \frac{n \pi t}{l} \dmeasure t,
+$$
+\emph{have the same sum when $0 \leq x \leq l$;}
+but their sums are numerically
+equal and opposite in sign when $0 \geq x \geq -l$.
 
-1 mra; *, . nnx
-
-.- o + 2 Cin cos -j-, Z On Sill -y-,
-
-  n=\ ' M = l ''
-
-where lan = I f(t) cos -j- dt, " = I /( ) " / '
-
-/lai'g f/ie sa ie sum ivken O x l; but their sums are numerically
-equal and opposite in sign when O x' - l.
-
-The cosine series was given by Clairaut, Hist, de I'Acad. R. des Sci.
+%\begin{smalltext}
+The cosine series was given by Clairaut, TODO Hist, de I'Acad. R. des Sci.
 1754 [published, 1759], in a memoir dated July 9, 1757; the sine
 series was obtained between 1762 and 1765 by Lagrange, Oeuvres, l. p.
 553.
+%\end{smalltext}
 
-Example 1. Expand h " - v) sin .v in a cosine series in the range x n.
+TODO Example 1. Expand $\half (\pi - x) \sin x$ in a cosine series in the range
+$0 \leq x \leq \pi$.
 [We have, by the formula just obtained,
+$$
+\half (\pi - x) \sin x
+=
+\half a_{0}
++ \sum_{n=1}^{\infty} a_{n} \cos nx,
+$$
+where
+$$
+\half \pi a_{n}
+=
+\int_{0}^{\pi} \half (\pi - x) \sin x \cos nx \dmeasure x.
+$$
 
-  (tt - ) sin.r = | o+ 2 a,iC0s?2,
-
-n=l
-
-where j7ra = I [ir -x) sin x cos nxdx.
-
-J
-
-But, integrating by parts, if 7i 4= 1, 2 '7T - x)smx cos nxdx
-
-= I (tt- a;) sin (?i + l) A'-sin(?i- 1) .a; ( .r .'
-
-\ r, rcos( + l)A' cos(?i - l).r"l I'T f (cos n + l)x eos( - l).r"i,
-
-/:
-
-1 \ -27
-
-= 7rf
-
-, + l n-lj n + ) n-l)'
-
-Whereas if = 1, we get I 2 (tt - x) sin .r cos xdx= Tr. J
+But, integrating by parts, if $n \neq 1$,
+\begin{align*}
+  &
+  \int_{0}^{\pi} 2 (\pi - x) \sin x \cos nx \dmeasure x
+  \\
+  & \quad
+  \int__{0}^{\pi} (\pi - x) \thebraces{
+    \sin (n+1) x - \sin (n-1) x
+  } \dmeasure x
+  \\
+  & \quad
+  \thebrackets{
+    (x - \pi)
+    \thebraces{
+      \frac{ \cos (n+1) x }{n+1}
+      -
+      \frac{ \cos (n-1) x }{n-1}
+    }
+  }_{0}^{\pi}
+  -
+  \int_{0}^{\pi}
+  \thebrace{
+    \frac{ \cos (n+1) x }{n+1}
+    -
+    \frac{ \cos (n-1) x }{n-1}
+  }
+  \dmeasure x
+  \\
+  & \quad
+  \pi
+  \theparen{
+    \frac{1}{n+1}
+    -
+    \frac{1}{n-1}
+  }
+  =
+  \frac{-2\pi}{(n+1)(n-1)}
+\end{align*}
+Whereas if $n=1$, we get
+$\int_{0}^{\pi} 2 (\pi - x) \sin x \cos x \dmeasure x = \half \pi$.
 
 Therefore the required series is
+$$
+\half
++ \frac{1}{4} \cos x
+- \frac{1}{1 \cdot 3} \cos 2x
+- \frac{1}{2 \cdot 4} \cos 3x
+- \frac{1}{3 \cdot 5} \cos 4x
+- \cdots.
+$$
 
-11 1 1 o 1 .
-
-- + - cos X - - - 5 COS 2x - - - - cos 3x - - - cos Ax-
-
-. 4 1.0 . 4 0.0
-
-It will be observed that it is only for values of x between and n that
-the sum of this series is proved to be |(7r - x) sin x; thus for
-instance when .v has a value between and - TT, the sum of the series
-is not i (tt - ) sin x, but - | tt+x) sin x; when x has a value
-between tt and 277, the sum of the series happens to be again h n - x)
-sin x, but this is a mere coincidence arising from the special
+It will be observed that it is only for values of $x$ between
+$0$ and $\pi$ that the sum of this series is proved to be
+$\half (\pi - x) \sin x$; thus for
+instance when $x$ has a value between $0$ and $-\pi$,
+the sum of the series is not
+$\half (\pi - x) \sin x$, but $-\half (\pi + x) \sin x$; when $x$ has a value
+between $\pi$ and $2 \pi$, the sum of the series happens to be again
+$\half (\pi - x) \sin x$, but this is a mere coincidence arising from the special
 function considered, and does not follow from the general theorem.]
 
 Example 2. Expand irx (tt - x) in a sine series, valid when .v tt.
