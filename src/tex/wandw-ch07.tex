@@ -1711,7 +1711,7 @@ $c_{r} \cot (a_{r}-z)$, and the residue at $z$ is $f(z)$.
 Also the integrals along $DA$ and $CB$ cancel on account of the
 periodicity of the integrand; and as $\rho \rightarrow \infty$,
 the integrand on $AB$ tends
-uniformly to $l' i$, while as $\phi' \rightarrow \infty$
+uniformly to $l' i$, while as $\rho' \rightarrow \infty$
 the integrand on $CD$ tends uniformly
 to $-li$; therefore
 $$
@@ -1956,7 +1956,7 @@ $$
 $$
 but
 $\sum_{n=0}^{\infty} \frac{\zeta^{n} t^{n}}{n!} \frac{f(z)}{z^{n+1}}$
-converges uniformly \hardsubsectionref{3}{3}{4}) on $C$ since
+converges uniformly (\hardsubsectionref{3}{3}{4}) on $C$ since
 $f(z)$ is bounded and $\absval{z} \geq \delta > 0$, where
 $\delta$ is independent of $z$; therefore, by\hardsectionref{4}{7},
 $$
@@ -2008,7 +2008,7 @@ To obtain such an expansion of a function analytic when
 $\absval{z} > r$, we let
 the function be
 $f(z) = \sum_{n=0}^{\infty} a_{n} z^{-n}$, and use the formula
-$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(z) \dmeasure t$,
+$f(z) = \int_{0}^{\infty} z e^{-tz} \phi(t) \dmeasure t$,
 where $\phi(t) = \sum_{n=0}^{\infty} a_{n} t^{n} / n!$;
 this result may be obtained in the same way as
 that of\hardsectionref{7}{8}.
@@ -2035,15 +2035,15 @@ to the interior of the curve traced out by the point
 $t = - \log \theparen{2 \cos \half \theta} + \half i \theta$,
 (writing $\xi= \exp \thebrace{i (\theta + \pi) }$ ); and inside this curve
 $$
-\absval{t} - R(t)
+\absval{t} - \Re(t)
 \leq
-\sqrt{ \thebrace{R(t)}^{2} + \pi^{2} }
+\sqrt{ \thebrace{\Re(t)}^{2} + \pi^{2} }
 -
-R(t)
+\Re(t)
 \rightarrow
 0,
 $$
-as $R(t) \rightarrow \infty$.
+as $\Re(t) \rightarrow \infty$.
 
 It follows that, when $\absval{\xi} \leq 1$,
 $\absval{F(\xi)} < M e^{r\absval{t}} < M_{1} \absval{e^{rt}}$,
@@ -2075,7 +2075,7 @@ that\footnote{ $(1 + x^{-1})^{x}$ increases with $x$;
 $(1 + n^{-1})^{n} < e$
 we find that
 \begin{align*}
-  \absval{F^{(n)}}
+  \absval{F^{(n)}(\xi)}
   <&
   M_{1}
   \thebracket{
@@ -2098,7 +2098,7 @@ we find that
 \end{align*}
 
 Remembering that, by\hardsectionref{4}{5}, $\int_{0}^{1}$ means
-$\lim_{\epsilon \rightarrow 0} \int_{0}^{1-\epsilon}$, we
+$\lim_{\epsilon \rightarrow +0} \int_{0}^{1-\epsilon}$, we
 have, by repeated integrations by parts,
 \begin{align*}
   f(z)
@@ -2112,6 +2112,7 @@ have, by repeated integrations by parts,
   (1 - \xi)^{z} F'(\xi) \dmeasure \xi
   \\
   =&
+  \lim_{\epsilon \rightarrow +0}
   \thebracket{
     -(1 - \xi)^{z} F(\xi)
   }_{0}^{1 - \epsilon}
@@ -2195,7 +2196,7 @@ $$
 }
 $$
 tends to a limit \hardsubsectionref{2}{7}{1}) as
-$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow \infty$
+$n \rightarrow \infty$, and so $\absval{R_{n}} \rightarrow 0$
 if
 $ (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} 1/m} $
 tends to zero; but
@@ -2207,7 +2208,7 @@ $$
 \log(n+1),
 $$
 by\hardsubsectionref{4}{4}{3} (II), % TODO:insertref
-and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow \infty$ when
+and $(n + 2)^{r} (n+1)^{-r-\delta} \rightarrow 0$ when
 $\delta > 0$; therefore $R_{n} \rightarrow 0$ as
 $n \rightarrow \infty$, and so, when $\Re(z) > r$,
 we have the convergent expansion
@@ -2220,7 +2221,7 @@ b_{0}
 +
 \frac{b_{2}}{(z+1)(z+2)}
 +
-\cdots
+\cdots +
 \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
 +
 \cdots.
@@ -2231,7 +2232,7 @@ $$
 \frac{1}{(z+1)(z+2)\cdots(z+n+1)}
 =
 \frac{1}{n!}
-\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure z,
+\int_{0}^{1} u^{n} (1-u)^{z} \dmeasure u,
 $$
 $$
 \int_{C}
