@@ -744,52 +744,55 @@ between $\pi$ and $2 \pi$, the sum of the series happens to be again
 $\half (\pi - x) \sin x$, but this is a mere coincidence arising from the special
 function considered, and does not follow from the general theorem.]
 
-Example 2. Expand irx (tt - x) in a sine series, valid when .v tt.
+TODO Example 2. Expand $\frac{1}{8} \pi x (\pi - x)$ in a sine series,
+valid when $0 \leq x \leq \pi$.
 
-rmi  sin Sx sin 5x,
-
-I The series is sin x -\ - . -\ - - !-...]
-
+[The series is $\sin x + \frac{\sin 3x}{3^{3}} + \frac{\sin 5x}{5^{3}} + \cdots.$]
 %
 % 167
 %
 
-Example 3. Shew that, when x tt,
+TOOD Example 3. Shew that, when $0 \leq x \leq \pi$,
+$$
+\frac{1}{96}
+\pi
+(\pi - 2x)
+(\pi^{2} + 2 \pi x - 2 x^{2})
+=
+\cos x
++ \frac{\cos 3x}{3^{4}}
++ \frac{\cos 5x}{5^{4}}
++ \cdots.
+$$
 
-1, o \ / 2, T T -'N COS 3 COS hx,
-
-- 7r(7r-2.r)(7r2 + 27r.r-2.r-) = cos.r+- p- +- +
-
-[Denoting the left-hand side by $f(x)$, we have, on integi-ating by
-parts and observing that/'(0)=/'(7r) = 0,
-
-I fix) cos nx dx=-\ fix) sin nx \ | /' (a-) sin nx dx
-
-Jo L Jo 'iJo
-
-If- "!" 1 T''
-
-= - o / ' ( ') cos ?i.; 5 I / " (.r) cos ? a; dx
-
- 'L Jo ';o
-
-= 7,1 f" ix) sin nx + - / /"'" (.f) sin nxdx
-
-  L Jo Vo
-
-= - . /'" (x) cos nx = T- i (1 - cos ??7r).] '/I* |\ - ' Jo 4/i-* -
-
-Example 4. Shew that for values of x between and tt, can be expanded
-in the cosine series
-
-2s
-
- x
-
-+ .
-
-,, / 1 cos 2x COS 4r \ 25,,, /cos j; cos J
-
+[Denoting the left-hand side by $f(x)$, we have, on integrating by
+parts and observing that $f'(0) = f'(\pi) = 0$,
+\begin{align*}
+  \int_{0}^{\pi} f(x) \cos nx \dmeasure x
+  =&
+  \frac{1}{n} \thebracket{f(x) \sin nx}_{0}^{\pi}
+  -
+  \frac{1}{n} \int_{0}^{\pi} f'(x) \sin nx \dmeasure x
+  \\
+  =&
+  \frac{1}{n^{2}} \thebracket{f'(x) \cos nx}_{0}^{\pi}
+  -
+  \frac{1}{n^{2}} \int_{0}^{\pi} f''(x) \cos nx \dmeasure x
+  \\
+  =&
+  -\frac{1}{n^{3}} \thebracket{f''(x) \sin nx}_{0}^{\pi}
+  +
+  \frac{1}{n^{3}} \int_{0}^{\pi} f'''(x) \sin nx \dmeasure x
+  =&
+  -\frac{1}{n^{4}} \thebracket{f'''(x) \cos nx}_{0}^{\pi}
+  =
+  \frac{\pi}{4 n^{4}} (1 - \cos n \pi).]
+\end{align*}
+TODO Example 4. Shew that for values of $x$ between $0$ and $\pi$,
+$e^{s x}$ can be expanded in the cosine series
+$$
+TODO
+$$
 and draw graphs of the function e** and of the sum of the series.
 
 Example 5. Shew that for values of x between and tt, the fimction tt
