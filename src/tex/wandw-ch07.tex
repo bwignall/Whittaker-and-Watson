@@ -2291,7 +2291,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       \frac{1}{1-\phi'(x)}
       \frac{\dd}{\dd x}
     }^{m}
-    f(x)
+    f(x),
     $$
     where $f$ denotes any analytic function of its argument, and discuss
     the range of its validity.
@@ -2301,7 +2301,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
   \begin{wandwmiscexample}
     Obtain (from the formula of Darboux or otherwise) the expansion
     $$
-    f(z) - f(z)
+    f(z) - f(a)
     =
     \sum_{n=1}^{\infty}
     \frac{(-)^{n-1} (z-a)^{n}}{n! (1-r)^{n}}
@@ -2419,7 +2419,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       }
       \\
       &
-      \hfill
+      \hfill +
       \frac{(z-a)^{2n+1}}{2n!}
       \int_{0}^{1}
       \psi_{2n}(t)
@@ -2497,7 +2497,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       \hfill
       \\
       &
-      \hfill
+      \hfill =
       \int_{x_{1}}^{x_{2}} \phi(z) \dmeasure z
       +
       \frac{1}{i}
@@ -2513,7 +2513,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     \frac{y^{2n-1}}{e^{2 \pi y} - 1}
     \dmeasure y
     =
-    B_{n}
+    B_{n},
     $$
     %
     % 146
@@ -2603,7 +2603,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       \sin^{2n} z
       \\
       &
-      \quad
+      \quad +
       \sum_{n=0}^{\infty}
       \frac{
         f^{(2n+1)}(0)
@@ -2613,7 +2613,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       }{(2n+1)!}
       \sin^{2n+1} z,
     \end{align*}
-    where $S^{(m)_{2n}}$ is the sum of all combinations of the numbers
+    where $S^{(m)}_{2n}$ is the sum of all combinations of the numbers
     $$
     2^{2}, 4^{2}, 6^{2}, \ldots, (2n-2)^{2},
     $$
@@ -2729,7 +2729,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     $$
     and shew that if
     $$
-    y = W(a,b,x)
+    y = W(a,b,x),
     $$
     then
     $$
@@ -2739,8 +2739,8 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     Examples of this function are
     \begin{align*}
       W(1,0,x) =& e^{x} - 1, \\
-      W(0,1,x) =& \log (1+x) \\
-      W(a,1,x) =& \frac{(1+x)^{a} - 1}{a}
+      W(0,1,x) =& \log (1+x), \\
+      W(a,1,x) =& \frac{(1+x)^{a} - 1}{a}.
     \end{align*}
     \addexamplecitation{\Jezek}
   \end{wandwmiscexample}
@@ -2762,7 +2762,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     $$
     \thebrace{
       \sum_{n=0}^{\infty} a_{n} x^{n}
-    }^{\half}
+    }^{\half}.
     $$
     \addexamplecitation{TODO Mangeot, Ann. de VEcole norm. sup. (3), xiv.}
   \end{wandwmiscexample}
@@ -2787,7 +2787,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     \addexamplecitation{TODO Gambioli, Bologna Memorie, 1892.}
   \end{wandwmiscexample}
   \begin{wandwmiscexample}
-    If $f(z)$ denote the $n$th derivate of $f(z)$, and if
+    If $f_{n}(z)$ denote the $n$th derivate of $f(z)$, and if
     $f_{-n}(z)$ denote that one of the $n$th integrals of
     $f(z)$ which has an $n$-ple zero at $z=0$,
     shew that if the series
@@ -2839,14 +2839,16 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     =
     e^{x}
     \frac{
-      \prod_{n=1}^{\infty} \thebrace{
+      \prod\limits_{n=1}^{\infty} \thebrace{
         \theparen{1 - \frac{x}{n}}^{n}
         e^{x + \half \frac{x^{2}}{n}}
       }
     }{
+    \prod\limits_{n=1}^{\infty} \thebrace{
       \theparen{1 + \frac{x}{n}}^{n}
       e^{-x + \half \frac{x^{2}}{n}}
-    }
+      }
+    },
     $$
     and that the function thus defined satisfies the relations
     $$
@@ -2889,20 +2891,20 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
         1 + \theparen{\frac{k}{x}}^{n}
       }
       \thebracket{
-        1 + \theparen{\frac{k}{2 \pi - x}^{n}}
+        1 + \theparen{\frac{k}{2 \pi - x}}^{n}
       }
       \thebracket{
         1 + \theparen{\frac{k}{2 \pi + x}}^{n}
       }
       \thebracket{
-        1 + \theparen{\frac{k}{4 \pi - x}^{n}}
+        1 + \theparen{\frac{k}{4 \pi - x}}^{n}
       }
       \thebracket{
         1 + \theparen{\frac{k}{4 \pi + x}}^{n}
-      }
+      } \cdots
       \\
       &
-      \hfill
+      \hfill =
       \frac{
         \prod_{g=1}^{\leq \half n}
         \sqrt{1 - 2 e^{-\alpha_{g}} \cos(x + \beta_{g}) + e^{-2\alpha_{g}}}
@@ -2910,14 +2912,14 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
       }{
         2^{\half n}
         (1 - \cos x)^{\half n}
-        e^{-k \cos \pi n}
-      }
+        e^{-k \cos \pi / n}
+      },
     \end{align*}
     where
     $$
     \alpha_{g} = k \sin \frac{2g-1}{n} \pi,
     \quad
-    \beta_{b} = k \cos \frac{2g-1}{n} \pi,
+    \beta_{g} = k \cos \frac{2g-1}{n} \pi,
     $$
     and
     $$
@@ -3063,7 +3065,7 @@ Schlomilch, Compendium der hoheren Analysis, ii. (Dresden, 1874).
     \frac{ t^{n} }{n!}
     \frac{ \dd^{n-1} }{ \dd a^{n-1} }
     \thebracket{ f'(a) \thebrace{\phi(a)}^{n}
-    }
+    }.
     $$
     Hence, by using \hardsectionref{6}{3}, \hardsubsectionref{6}{3}{1}, obtain Lagrange's theorem.
   \end{wandwmiscexample}
