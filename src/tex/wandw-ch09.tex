@@ -846,7 +846,28 @@ $$
 
 Integrating by parts we get
 \begin{align*}
-  TODO
+  &
+  \pi a_{m}
+  =
+  \thebracket{
+    m^{-1} f(t) \sin mt
+  }_{-\pi}^{k_{1}}
+  +
+  \thebracket{
+    m^{-1} f(t) \sin mt
+  }_{k_{1}}^{k_{2}}
+  +
+  \cdots
+  +
+  \thebracket{
+    m^{-1} f(t) \sin mt
+  }_{k_{n}}^{\pi}
+  \\
+  & \hfill
+  - m^{-1} \int_{-\pi}^{k_{1}} f'(t) \sin mt \dmeasure t
+  - m^{-1} \int_{k_{1}}^{k_{2}} f'(t) \sin mt \dmeasure t
+  \cdots
+  - m^{-1} \int_{k_{n}}^{\pi} f'(t) \sin mt \dmeasure t,
 \end{align*}
 so that
 $$
@@ -855,19 +876,27 @@ $$
 %
 % 168
 %
-
-where 7r ) = 2 sin'nikr f k;. - O)-f(kr + 0),
-
-and bj is a Fourier constant of /' (x).
-
-Similarly h, = - + -,
-
 where
+$$
+\pi A_{m}
+=
+\sum_{r=1}^{n}
+\sin m k_{r}
+\thebrace{
+  f(k_{r} - 0) - f(k_{r} + 0),
+}
+$$
+and $b_{m}'$ is a Fourier constant of $f'(x)$.
 
-n
-
-7ri?, = - S cos mkr f k. - 0) - f(k, + 0) - cos m-rr /(tt - 0) -/(- tt
-+ 0)|, and a i' is a Fourier constant of/'' (a;). Similarly, we get
+Similarly
+$$
+b_{m} = \frac{B_{m}}{m} + \frac{a_{m}'}{m},
+$$
+where
+$$
+TODO,
+$$
+and a i' is a Fourier constant of/'' (a;). Similarly, we get
 
 A ' h " Ti ' n "
 
