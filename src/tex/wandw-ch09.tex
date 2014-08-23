@@ -16,7 +16,7 @@ Series of the type
   \hfill
   \half a_{0}
   +
-  \sum_{n=1}^{\infty} ( a_{n} \cos nx + b_{n} \sin nx),
+  \sum_{n=1}^{\infty} ( a_{n} \cos n x + b_{n} \sin n x),
 \end{align*}
 where $a_{n}$, $b_{n}$ are independent of $x$, are of great importance in many
 investigations. They are called \emph{trigonometrical series}.
@@ -988,31 +988,33 @@ $$
 \half a_{0}
 + \sum_{m=1}^{\infty} (a_{m} \cos mx + b_{m} \sin mx)
 $$
-term by term is 2 ?7i6 iCosma; - 7710 sinma; .
-
-9)i = l
-
+term by term is
+$$
+\sum_{m=1}^{\infty} \thebrace{
+  m b_{m} \cos mx
+  -
+  m a_{m} \sin mx
+}.
+$$
 %
 % 169
 %
 
-With the notation of\hardsectionref{9}{3}, this is the same as
-
-H o' + S (a i cos mx + hj sm mx),
-
-  m = \
-
-provided that J.,,, = i?, = and j /' (x) dx =;
-
-- jr
-
-these conditions are satisfied if f(x) is continuous for all values of
-a;.
+With the notation of \hardsectionref{9}{3}, this is the same as
+$$
+\half a_{0}'
++
+\sum_{m=1}^{\infty} ( a_{m}' \cos mx + b_{m}' \sin mx),
+$$
+provided that $A_{m} = B_{m} = 0$ and
+$\int_{-\pi}^{\pi} f'(x) \dmeasure x = 0$;
+these conditions are satisfied if $f(x)$ is continuous for all values of
+$x$.
 
 Consequently sufficient conditions for the legitimacy of
-differentiating a Fourier series term by term are that f(x) should be
-continuous for all values of x and /' (x) should have only a finite
-number of points of discon- tinuity in the range (- tt, tt), both
+differentiating a Fourier series term by term are that $f(x)$ should be
+continuous for \emph{all} values of $x$ and $f'(x)$ should have only a finite
+number of points of discontinuity in the range $(-\pi, \pi)$, both
 functions having limited total fluctuation throughout the range.
 
 \Subsection{9}{3}{2}{Determination of points of discontinuity.}
