@@ -1518,11 +1518,22 @@ $$
 Corollary 2. Let $f(t)$ be continuous in the interval $a \leq t \leq b$. Since
 continuity implies uniformity of continuity (\hardsubsectionref{3}{6}{1}), the choice of
 $\delta$ corresponding to any value of $x$ in $(a, b)$ is independent of $x$, and the
-upper bound of |/(.r±0) |, i.e. of \ f(x) |, is also independent of X,
+upper bound of $\absval{f(x \pm 0)}$, i.e. of $\absval{f(x)}$, is also independent of $x$,
 so that
-
-/ '" j ( ( ) i d6= ['" I f x±U)-f x±Q)\ de Jo Jo'
-
+\begin{align*}
+  \int_{0}^{\half \pi} \absval{\phi(\theta)} \dmeasure \theta
+  =&
+  \int_{0}^{\half \pi}
+  \absval{
+    f(x \pm 2\theta) - f(x \pm 0)
+  }
+  \dmeasure \theta
+  \\
+  \leq
+  &
+  \half \int_{-\pi}^{\pi} \absval{f(t)} \dmeasure t
+  + \half \pi \absval{f(x \pm 0)},
+\end{align*}
 and the upper bound of the last expression is independent of x.
 
 Hence the choice of ??z, which makes
