@@ -1534,19 +1534,26 @@ so that
   \half \int_{-\pi}^{\pi} \absval{f(t)} \dmeasure t
   + \half \pi \absval{f(x \pm 0)},
 \end{align*}
-and the upper bound of the last expression is independent of x.
+and the upper bound of the last expression is independent of $x$.
 
-Hence the choice of ??z, which makes
-TODO
-is independent of x, and consequently - \ A( + 2 S.n x)\ tends to the
-limit f x), as
-
-in \ n=\ )
-
-m- -a:, uniformly throughout the interval a x%b.
-
+Hence the choice of $m$, which makes
+$$
+\absval{
+  \frac{1}{m}
+  \int_{0}^{\half \pi}
+  \frac{\sin^{2} m \theta}{\sin^{2} \theta}
+  \phi(\theta)
+  \dmeasure \theta
+}
+<
+\pi \eps,
+$$
+is independent of $x$, \emph{and consequently
+  $\frac{1}{m}\thebrace{
+    A_{0} + \sum_{n=1}^{m-1} S_{n}(x)
+  }$ tends to the limit $f(x)$, as $m \rightarrow \infty$,
+  uniformly throughout the interval $a \leq x \leq b$}.
 \Subsection{9}{4}{1}{The Riemann-Lehesgue lemmas.}
-
 In order to be able to apply Hardy's theorem \hardsectionref{8}{5}) to deduce the
 con- vergence of Fourier series from \Fejer's theorem, we need the two
 following lemmas :
