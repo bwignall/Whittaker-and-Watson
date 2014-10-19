@@ -1631,9 +1631,23 @@ By taking X sufficiently large (n remaining fixed after e has been
 chosen), the last expression may be made less than 2e, so that
 %TODO:alignment
 \begin{align*}
+  &
   \absval{
     \int_{a}^{b}
     \psi(\theta) \sin(\lambda \theta) \dmeasure \theta
+  }
+  \\
+  & \quad
+  =
+  \absval{
+    \sum_{r=1}^{n}
+    \psi_{r}(x_{r-1})
+    \int_{x_{r-1}}^{x_{r}}
+    \sin (\lambda \theta) \dmeasure \theta
+    +
+    \sum_{r=1}^{n}
+    \int_{x_{r-1}}^{x_{r}}
+    \omega_{r}(\theta) \sin(\lambda \theta) \dmeasure \theta
   }
   \\
   TODO
