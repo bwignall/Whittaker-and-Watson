@@ -1650,6 +1650,22 @@ chosen), the last expression may be made less than 2e, so that
     \omega_{r}(\theta) \sin(\lambda \theta) \dmeasure \theta
   }
   \\
+  & \quad
+  \leq
+  \sum_{r=1}^{n}
+  \absval{
+    \psi_{r}(x_{r-1})
+  }
+  \cdot
+  \absval{
+    \int_{x_{r-1}}^{x_{r}}
+    \sin (\lambda \theta) \dmeasure \theta
+  }
+  +
+  \sum_{r=1}^{n}
+  \int_{x_{r-1}}^{x_{r}}
+  \absval{ \omega_{r} (\theta)} \dmeasure \theta
+  \\
   TODO
 \end{align*}
 lim ylr(0)sm(xe)dd = O,
