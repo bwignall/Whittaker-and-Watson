@@ -1714,10 +1714,18 @@ we may prove as before that
     +
     \sum_{r=1}^{p}
     \int_{\delta_{r}} \psi(\theta) \sin(\lambda \theta) \dmeasure \theta
-    \\
-    & \leq
-    TODO
   }
+  \\
+  & \leq
+  \absval{
+    \sum_{r=1}^{p+1}
+    \int_{\gamma_{r}} \psi(\theta) \sin(\lambda \theta) \dmeasure \theta
+  }
+  +
+  \sum_{r=1}^{p}
+  \int_{\delta_{r}}
+  \absval{\psi(\theta) \sin(\lambda \theta)}
+  \dmeasure \theta
 \end{align*}
 
 Now the choice of $\eps$ fixes $n$ and $K$, so that the last expression may be
