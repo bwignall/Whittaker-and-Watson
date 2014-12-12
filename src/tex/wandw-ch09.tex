@@ -2133,19 +2133,31 @@ right of the obvious equation
  \frac{\sin (2m+1)\theta}{\sin \theta}
  \phi(\theta) \dmeasure \theta
  =
-TODO
+ \int_{\half \delta}^{\half \pi}
+ \sin (2m+1)\theta
+ \frac{\phi(\theta)}{\sin \theta}
+ \dmeasure \theta
  \\
  &
  \quad
- TODO
+ \int_{0}^{\half \delta}
+ \frac{\sin (2m+1)\theta}{\theta}
+ \chi_{1}(\theta) \dmeasure \theta
+ -
+ \int_{0}^{\half \delta}
+ \frac{\sin (2m+1)\theta}{\theta}
+ \chi_{2}(\theta) \dmeasure \theta
 \end{align*}
 %
 % 178
 %
 
-The modulus of the first integral can be made less than e by taking m
-sufficiently large; this follows from\hardsubsectionref{9}{4}{1} (i) since </> (6) cosec
-6 has an integral which converges absolutely in the interval hS, Itt).
+The modulus of the first integral can be made less than $\eps$ by taking $m$
+sufficiently large; this follows from
+\hardsubsectionref{9}{4}{1} (i) %TODO:subref
+since $\phi(\theta) \cosec \theta$
+has an integral which converges absolutely in the interval
+$(\half \delta, \half \pi)$.
 
 Next, from the second mean-value theorem, it follows that there is a
 number between and S such that
