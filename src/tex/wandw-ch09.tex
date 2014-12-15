@@ -2235,23 +2235,36 @@ of an interval in which $f(t)$ has limited total fluctuation is merely a
 \emph{sufficient} condition for the convergence of the Fourier series; and
 it may be replaced by any condition which makes
 $$
-TODO
+\lim_{m \rightarrow \infty}
+\int_{0}^{\half\pi}
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\phi(\theta)
+\dmeasure \theta
+=
+0.
 $$
 %
 % 179
 %
 
 Jordan's condition is, however, a natural modification of the
-Dirichlet condition that the function /( ) should have only a finite
+Dirichlet condition that the function $f(t)$ should have only a finite
 number of maxima and minima, and it does not increase the difficulty
 of the proof.
 
-Another condition with the same efifect is due to Dini, Sopra le Serie
-di Foiirier (Pisa, 1880), namely that, if
-
-*( ) = /(:p + 2 )+/(.r-2 )-/(ar + 0)-/(a.'-0) /,
-
-then / * \&)dQ should converge absolutely for some positive value of
+Another condition with the same efifect is due to Dini,
+% TODO:ref
+Sopra le Serie di Foiirier (Pisa, 1880),
+namely that, if
+$$
+\Phi(\theta)
+=
+\thebrace{
+  f(x+2\theta) + f(x-2\theta) - f(x+0) - f(x-0)
+}
+\theta,
+$$
+then $TODO$ should converge absolutely for some positive value of
 a.
 
 [If the condition is satisfied, given e we can find S so that
