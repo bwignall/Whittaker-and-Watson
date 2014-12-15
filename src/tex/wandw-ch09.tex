@@ -2264,27 +2264,50 @@ $$
 }
 \theta,
 $$
-then $TODO$ should converge absolutely for some positive value of
-a.
+then
+$\int_{0}^{a} \Phi(\theta) \dmeasure \theta$ should converge absolutely for some positive value of
+$a$.
 
-[If the condition is satisfied, given e we can find S so that
-
-/
-
+[If the condition is satisfied, given $\eps$ we can find $\delta$ so that
+$$
+\int_{0}^{\half\delta}
+\absval{
+  \Phi(\theta)
+}
+\dmeasure \theta
+<
+\eps,
+$$
 and then
+$$
+\absval{
+  \int_{0}^{\half\delta}
+  \sin (2m+1)\theta
+  \frac{\theta}{\sin \theta}
+  \Phi(\theta)
+  \dmeasure \theta
+}
+<
+\half \pi \eps
+$$
+the proof that
+$
+\absval{
+  \int_{\half\delta}^{\half \pi}
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\theta)
+  \dmeasure \theta
+}
+<
+\eps
+$
+for sufficiently large values of $m$
+follows from the Riemann-Lebesgue lemma.]
 
-<\ fTi;
-
-Jo sni
-
-the proof that I - - (f)(6) dBl < t for sufficiently large values of m
-follows
-
-from the Riemann-Lebesgue lemma.]
-
-A more stringent condition than Dini's is due to Lipschitz, Journal
-f>ir Math. LXiil. (1864), p. 296, namely \ (f) B)\ < 06", where C and
-k are positive and independent of 6.
+A more stringent condition than Dini's is due to Lipschitz,
+Journal fuer Math. LXiil. (1864), p. 296, %TODO:ref
+namely $\absval{\phi(\theta) < C \theta^{k}}$, where $C$ and
+$k$ are positive and independent of $\theta$.
 
 For other conditions due to Lebesgue and to de la Vallee Poussin, see
 the latter's Cours d' Analyse In/lnitesimale, ii. (1912), pp. 149-150.
