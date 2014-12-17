@@ -2356,41 +2356,69 @@ $$
 converges uniformly to the sum $h(x)$, which is equal to $f(x)$.
 
 Now, as in \hardsubsectionref{9}{4}{2},
-
-   J hib-x) smO ' ' 7rj ( \ a) sm ' " '
-
-12-2
-
+$$
+S_{m}(x)
+-
+S_{m}^{(2)}(x)
+=
+\frac{1}{\pi}
+\int_{\half (b-x)}^{\half \pi}
+\frac{\sin (2m+1)\theta}{\sin \theta}
+f(x + 2\theta)
+\dmeasure \theta
++
+\frac{1}{\pi}
+\int_{\half (x-a)}^{\half \pi}
+\frac{\sin (2m+1)\theta}{\sin \theta}
+f(x - 2\theta)
+\dmeasure \theta.
+$$
 %
 % 180
 %
 
-As in \hardsubsectionref{9}{4}{1} we choose an arbitrary positive number e and then enclose
-the points at
+As in \hardsubsectionref{9}{4}{1} we choose an arbitrary positive number
+$\eps$ and then enclose the points at which $f(t)$ is unbounded in a set of intervals
+$\delta_{1}, \delta_{2}, \ldots, \delta_{p}$, such
+that
+$\sum_{r=1}^{p} \int_{\delta_{r}} \absval{f(t)} \dmeasure t < \eps$.
 
-p f which f(t) is unbounded in a set of intervals Sj, 80, ... 8,, such
-that 2 I \ f(i) \ dt <e.
-
-r = l J Sr
-
-If K be the upper bound of >f t) \ outside these intervtils, we then
+If $K$ be the upper bound of $\absval{f(t)}$ \ outside these intervals, we then
 have, as in \hardsubsectionref{9}{4}{1},
-
-i S, ) - S[ l ) I < ( 1 + 2e) cosec 8,
-
-where the choice of n depends only on a and b and the form of the
-function /(<). Hence, by a choice of m mdependent of x we can make
-
-arbitrarily small; so that S x) - S ' x) tends uniformly to zero.
-Since Sj x)- f(x) uniformly, it is then obvious that S x)-*~f x)
+$$
+\absval{
+  S_{m}(x) - S_{m}^{(2)}(x)
+}
+<
+\theparen{
+  \frac{2nK}{2m + 1} + 2\eps
+}
+\cosec \delta,
+$$
+where the choice of $n$ depends only on $a$ and $b$ and the form of the
+function $f(t)$. Hence, by a choice of $m$ \emph{independent} of $x$ we can make
+$$
+\absval{
+  S_{m}(x) - S_{m}^{(2)}(x)
+}
+$$
+arbitrarily small; so that $\absval{S_{m}(x) - S_{m}^{(2)}(x)}$
+tends uniformly to zero. Since
+$S_{m}^{(2)}(x) \rightarrow f(x)$
+uniformly, it is then obvious that
+$S_{m}(x) \rightarrow f(x)$
 uniformly; and this is the result to be proved.
 
-Note. It must be observed that no general statement can be made about
+%\begin{notefont}???
+NOTE. It must be observed that no general statement can be made about
 uniformity or absoluteness of convergence of Fourier series. Thus the
-series of § 9* 11 example 1 converges uniformly except near .r = (2 +
-l) n but converges absolutely only when x=nir, whereas the series of §
-9'11 example 2 converges uniformly and absolutely for all real values
-of x.
+series of \hardsubsectionref{9}{1}{1} example 1 %TODO:ref
+converges uniformly except near $x = (2n+1)\pi$
+but converges absolutely only when $x = n\pi$, whereas the series of
+\hardsubsectionref{9}{1}{1} example 2 %TODO:ref
+converges uniformly and absolutely for all real values
+of $x$.
+%\begin{notefont}???
 
 Example 1. If 6) satisfies suitable conditions in the range (0, \pi),
 shew that
