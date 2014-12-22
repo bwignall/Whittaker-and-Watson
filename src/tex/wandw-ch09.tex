@@ -2494,14 +2494,12 @@ shew that
 \end{wandwexample}
 %
 \Section{9}{5}{The TODO-TODO* theorem concerning Fourier constants.}
-Let $f(x)$ be bounded in the interval $(-\pi, \pi)$ and let
+\emph{Let $f(x)$ be bounded in the interval $(-\pi, \pi)$ and let
 $\int_{-\pi}^{\pi} f(x) \dmeasure x$ exist, so
-
 %TODO:move into section header
 * Math. Ann. lvii. (1903), p. 429. Liapounoff discovered the theorem
 in 1896 and published it in the Proceedings of the Math. Soc. of the
 Univ. of Kharkov. See Comptes Rendw, cxxvi. (1898), p. 1024.
-
 %
 % 181
 %
@@ -2513,7 +2511,20 @@ $$
   a_{n}^{2} + b_{n}^{2}
 }
 $$
-is convergent and its sum is* - I fix)Ydx.
+is convergent and its sum is\footnote{This integral exists by
+  \hardsubsectionref{4}{1}{2} example 1. %TODO:ref
+  A proof of the theorem has been given by de la Valine Poussin, %TODO:accent(s)
+  in which the sole restrictions on $f(x)$ are that the (improper) integrals of
+  $f(x)$ and $\thebrace{f(x)}^{2}$ exist in the interval $(-\pi, \pi)$. See his
+  Cours d' Analyse Infinitesimale, ii. (1912), pp. 165-166.}
+$$
+\frac{1}{\pi}
+\int_{-\pi}^{\pi}
+\thebrace{
+  f(x)
+}^{2}
+\dmeasure x.
+$$}.
 
 It will first be she m that, with the notation of S 9"4,
 
@@ -2580,12 +2591,6 @@ J -n ( n=0 J n=--0 )
 / I *. - A \ ill, -t \ A
 
 H =
-
-* This integral exists by \hardsubsectionref{4}{1}{2} example 1. A proof of the theorem has
-been given by de la Valine Poussin, in which the sole restrictions on
-/(.r) are that the (improper) integrals of f(x) and f(x) ' exist in
-the interval -ir, tt). See his Cours d' Analyse Infinitesimale, ii.
-(1912), pp. 165-166.
 
 %
 % 182
