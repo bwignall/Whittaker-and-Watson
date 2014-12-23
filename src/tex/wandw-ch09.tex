@@ -2610,26 +2610,113 @@ But evidently
   &
   \int_{-\pi}^{\pi}
   \thebrace{
-    TODO
+    f(x)
+    -
+    \frac{1}{m}
+    \sum_{n=0}^{m-1} S_{n}(x)
+  }^{2} \dmeasure x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    \frac{m-n}{m}
+    A_{n}(x)
+  }^{2} \dmeasure x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+    +
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
+  }^{2} \dmeasure x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }^{2} \dmeasure x
+  +
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
+  }^{2} \dmeasure x
+  \\
+  &\quad\quad
+  +
+  2
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }
+  \cdot
+  \thebrace{
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
   } \dmeasure x
   \\
   &\quad
-  TODO
+    \int_{-\pi}^{\pi}
+    \thebrace{
+      f(x)
+      -
+      \sum_{n=0}^{m-1}
+      A_{n}(x)
+    }^{2} \dmeasure x
+    +
+    \frac{\pi}{m^{2}}
+    \sum_{n=0}^{m-1}
+    n^{2} (a_{n}^{2} + b_{n}^{2}),
 \end{align*}
 %
 % 182
 %
-since I f w)Ar(x)dx=\ ] S An (i 'n A, (x) dx
-
-J -n J -n (. = J
-
-when r = 0, 1, 2, ... m-1.
+since
+$$
+\int_{-\pi}^{\pi}
+f(x) A_{r}(x) \dmeasure x
+=
+\int_{-\pi}^{\pi}
+\thebrace{
+  \sum_{n=0}^{m-1}
+  A_{n}(x)
+}
+A_{r}(x)
+\dmeasure x
+$$
+when $r = 0,1,2,\ldots,m-1$.
 
 Since the original integral tends to zero and since it has been proved
 equal to the sura of two positive expressions, it follows that each of
 these expressions tends to zero; that is to say
-
-\ f x)- 2 An x)\ dx-*0.
+$$
+\int_{-\pi}^{\pi}
+\thebrace{
+  f(x)
+  -
+  \sum_{n=0}^{m-1}
+  A_{n}(x)
+}^{2} \dmeasure x
+\rightarrow
+0.
+$$
 
 Now the expression on the left is equal to
 
