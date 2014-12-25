@@ -2724,8 +2724,31 @@ Now the expression on the left is equal to
   \thebrace{
     f(x)
   }^{2} \dmeasure x
-  -
+  -&
   2
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }
+  \cdot
+  \thebrace{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }
+  \dmeasure x
+  \\
+  &\quad\quad
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }^{2}
+  \dmeasure x
+  \\
+  &
   TODO
 \end{align*}
 so that, as m- >oo,
