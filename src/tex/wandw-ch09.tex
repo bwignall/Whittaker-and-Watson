@@ -2748,14 +2748,58 @@ Now the expression on the left is equal to
   }^{2}
   \dmeasure x
   \\
-  &
-  TODO
+  =&
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+  }^{2}
+  \dmeasure x
+  -
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  }^{2}
+  \dmeasure x
+  \\
+  =&
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+  }^{2}
+  \dmeasure x
+  -
+  \pi
+  \thebrace{
+    \half a_{0}^{2}
+    +
+    \sum_{n=1}^{m-1}
+    (a_{n}^{2} + b_{n}^{2})
+  }
+  ,
 \end{align*}
-so that, as m- >oo,
-
+so that, as $m \rightarrow \infty$,
+$$
+  \int_{-\pi}^{\pi}
+  \thebrace{
+    f(x)
+  }^{2}
+  \dmeasure x
+  -
+  \pi
+  \thebrace{
+    \half a_{0}^{2}
+    +
+    \sum_{n=1}^{m-1}
+    (a_{n}^{2} + b_{n}^{2})
+  }
+  \rightarrow
+  0.
+$$
 This is the theorem stated.
 
-Corollary. ParsevaVs theorem*. l f(x), F(x) both satisfy the
+%TODO:formatting
+Corollary. Parseval's theorem*. l f(x), F(x) both satisfy the
 conditions laid on/(.r) at the beginning of this section, and if, B
 be the Fourier constants of F x), it follows by subtracting the pair
 of equations which may be combined in the one form
