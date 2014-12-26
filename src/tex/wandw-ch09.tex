@@ -2780,36 +2780,62 @@ Now the expression on the left is equal to
 \end{align*}
 so that, as $m \rightarrow \infty$,
 $$
-  \int_{-\pi}^{\pi}
-  \thebrace{
-    f(x)
-  }^{2}
-  \dmeasure x
-  -
-  \pi
-  \thebrace{
-    \half a_{0}^{2}
-    +
-    \sum_{n=1}^{m-1}
-    (a_{n}^{2} + b_{n}^{2})
-  }
-  \rightarrow
-  0.
+\int_{-\pi}^{\pi}
+\thebrace{
+  f(x)
+}^{2}
+\dmeasure x
+-
+\pi
+\thebrace{
+  \half a_{0}^{2}
+  +
+  \sum_{n=1}^{m-1}
+  (a_{n}^{2} + b_{n}^{2})
+}
+\rightarrow
+0.
 $$
 This is the theorem stated.
 
-%TODO:formatting
-Corollary. Parseval's theorem*. l f(x), F(x) both satisfy the
-conditions laid on/(.r) at the beginning of this section, and if, B
-be the Fourier constants of F x), it follows by subtracting the pair
+% TODO:formatting
+Corollary. Parseval's theorem\footnote{Mem. par divers senium, i. (1805), pp. 639-648.%TODO:ref
+  Parseval, of course, assumed the permissibility of integrating the trigonometrical series
+  term-by-term.}. If $f(x), F(x)$ both satisfy the
+conditions laid on $f(x)$ at the beginning of this section, and if
+$A_{n}, B_{n}$ be the Fourier constants of $F(x)$, it follows by subtracting the pair
 of equations which may be combined in the one form
-
-f" f x)±F x) dx = n\ \ a,±A,f+ I a,,±A,,f + K±B,,) \
-
-J -TT L =1 J
-
-that I / x) F(x) rfx = TT j ao J + (a + 6 5,0 \ .
-
+$$
+\int_{-\pi}^{\pi}
+\thebrace{
+  f(x) \pm F(x)
+}^{2}
+\dmeasure x
+=
+\pi
+\thebrace{
+  \half (a_{0} \pm A_{0})^{2}
+  +
+  \sum_{n=1}^{\infty}
+  ((a_{n} \pm A_{n})^{2}
+  +
+  (b_{n} \pm B_{n})^{2})
+}
+$$
+that
+$$
+\int_{-\pi}^{\pi}
+f(x)F(x)
+\dmeasure x
+=
+\pi
+\thebrace{
+  \half a_{0}A_{0}
+  +
+  \sum_{n=1}^{\infty}
+  (a_{n}A_{n} + b_{n}A_{n})
+}
+$$
 \Section{9}{6}{Riemann's theory of trigonometrical series.}
 
 The theory of Dirichlet concerning Fourier series is devoted to series
@@ -2824,10 +2850,6 @@ up to
 
 Riemann's theorem; : that if two trigonometrical series converge and
 are equal
-
-* Mem. par divers senium, i. (1805), pp. 639-648. Parseval, of course,
-assumed the permissi- bility of integrating the trigonometrical series
-term-by-term.
 
 t Throughout §§ 9-6-9-6i52 the letters, 6 do not necessarily denote
 Fourier constants. X The proof given is due to G. Cantor, Journal fiir
