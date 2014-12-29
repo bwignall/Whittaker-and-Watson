@@ -3017,35 +3017,36 @@ It is now possible to prove Riemann's first lemma \emph{that if
   $\sum_{n=0}^{\infty} A_{n}(x)$ converges for the value
   of $x$ under consideration.}
 
-Since the series defining F x), F x ± 2a) converge absolutely, we may
+Since the series defining $F(x), F(x \pm 2\alpha)$ converge absolutely, we may
 rearrange them; and, observing that
-
-cos n (x + 2a) + cos n (x - 2a) - 2 cos nx = - 4 sin na cos nx,
-
-sin n x + 2a) + sin n (x - 2a) - 2 sin nx = - 4 sin na sin nx,
-
+\begin{align*}
+  \cos n(x + 2\alpha) + \cos n(x - 2\alpha) - 2 \cos nx =& -4 \sin^{2} n\alpha \cos nx,\\
+  \sin n(x + 2\alpha) + \sin n(x - 2\alpha) - 2 \sin nx =& -4 \sin^{2} n\alpha \sin nx,
+\end{align*}
 it is evident that
-
-/-, / \ A V /sinna\'' .,,
-
-G(x,a) = Ao+ 1 An x).
-
-M=i \ na J
+$$
+G(x, \alpha)
+=
+A_{0}
++
+\sum_{n=1}^{\infty}
+\theparen{
+  \frac{\sin n\alpha}{n\alpha}
+}^{2}
+A_{n}(x).
+$$
 
 It will now be shewn that this series converges uniformly with regard
-to
-
-00
-
-a for all values of a, provided that S An x) converges. The result
-required
-
-is then an immediate consequence of \hardsubsectionref{3}{3}{2} : for, if f (a) = ( j, (a
-0),
-
-and/ (0) = 1, then /" ( ) is continuous for all values of a, and so G
-x, a) is a continuous function of a, and therefore, by \hardsectionref{3}{2}, G (x, 0)
-= lim G (x, a).
+to $\alpha$ for all values of $\alpha$, provided that
+$\sum_{n=1}^{\infty} A_{n}(x)$ converges. The result
+required is then an immediate consequence of \hardsubsectionref{3}{3}{2}:
+for, if
+$f_{n}(\alpha) = \theparen{
+  \frac{\sin n\alpha}{n\alpha}
+}^{2}, (\alpha \neq 0)$
+and $f_{n}(0) = 1$, then $f_{n}(\alpha)$ is continuous for all values of $\alpha$, and so
+$G(x,\alpha)$ is a continuous function of $\alpha$, and therefore, by \hardsectionref{3}{2},
+$G(x, 0) = \lim_{\alpha \rightarrow \infty} G (x, \alpha)$.
 
 To prove that the series defining G (x, a) converges uniformly, we
 employ the test given in \hardsubsectionref{3}{3}{5} example 2. The expression
