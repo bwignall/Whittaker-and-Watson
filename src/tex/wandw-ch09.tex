@@ -3216,20 +3216,27 @@ since
   \sum_{n=1}^{\infty}
   \frac{\sin^{2} n\alpha}{n^{2} \alpha} A_{n}(x)
   \\ &
-  TODO
+  A_{0}(x) \alpha
+  +
+  \half (\pi - \alpha) A_{1}(x)
+  +
+  \sum_{n=1}^{\infty}
+  \thebrace{
+    \half (\pi - \alpha)
+    -
+    \sum_{m=1}^{n}
+    \frac{\sin^{2} m\alpha}{m^{2} \alpha}
+  } \thebrace {
+    A_{n+1}(x) - A_{n}(x)
+  },
 \end{align*}
-it follows from \hardsubsectionref{3}{3}{5} example 2, that this series converges uniformly
-with regard to a for all values of a greater than, or equal to, zerof.
-
-t If we define g (a)
-by the equations ( j (a) = then (7,j (a) is continuous when a 0, and
-g, \ .l (a) <; (a)
-
-t If we define fif (a) by the equations n, (a) = (ir - a) - 2 - -,
-(a + 0), and,9,((0) = i7r,
-
-m=l '"' *
-
+it follows from \hardsubsectionref{3}{3}{5} example 2, %TODO:ref example
+that this series converges uniformly
+with regard to $\alpha$ for all values of $\alpha$ greater than, or equal to,
+zero\footnote{If we define $g_{n}(\alpha)$ by the equations
+  $TODO$, and $TODO$, then $g_{n}(\alpha)$ is continuous when
+  $\alpha \geq 0$, and $g_{n+1}(\alpha} \leq g_{n}(\alpha).
+}
 %
 % 186
 %
