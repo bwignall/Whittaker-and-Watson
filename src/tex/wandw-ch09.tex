@@ -3275,30 +3275,49 @@ on trigonometrical series.}
 \emph{Two trigonometrical series which converge and are equal at all points
   of the range $(-\pi, \pi)$, with the possible exception of a finite
   number of points, must have corresponding coefficients equal.}
-
+%\begin{smallfont}
 An immediate deduction from this theorem is that a function of the
 type considered in \hardsubsectionref{9}{4}{2} cannot be represented
 by any trigonometrical series in the range $(-\pi, \pi)$ other than
 the Fourier series. This fact was first noticed by Du Bois Reymond.
 
 We observe that it is certainly possible to have other expansions of
-(say) the form oq + 2 (a, cos i rax + /3, sin rax),
-
-which represent /(a-) between - \pi and \pi; for write .r=2, and
-consider a function c ( ), which is such that ( ( ) =/(2|) when -\ ir
-< <\ tv, and (|) =g (|) when - \pi < | < - \pi, and when \pi < < \pi,
-where g ( ) is any function satisfying the conditions of \hardsubsectionref{9}{4}{3}. Then
-if we expand ( (|) in a Fourier series of the form
-
-0,1 + 2 (a cos m + /3 i cos m ),
-
-this expansion represents /(.r) when - Tr<x<ir; and clearly by
-choosing the function g (|) in different ways an unlimited number of
+(say) the form
+$$
+\alpha_{0}
++
+\sum_{m=1}^{\infty} \theparen{
+  \alpha_{m} \cos \half mx
+  +
+  \beta_{m} \sin \half mx
+},
+$$
+which represent $f(x)$ between $-\pi$ and $\pi$; for write
+$x = 2\xi$, and
+consider a function $\phi(\xi)$, which is such that
+$\phi(\xi) = f(2\xi)$ when $-\half\pi < \xi < \half\pi$, and
+$\phi(\xi) = g(\xi)$ when $-\pi < \xi < -\half \pi$, and when
+$\half \pi < \xi < \pi$,
+where $g(\xi)$ is any function satisfying the conditions of
+\hardsubsectionref{9}{4}{3}. Then if we expand
+$\phi(\xi)$ in a Fourier series of the form
+$$
+\alpha_{0}
++
+\sum_{m=1}^{\infty} \theparen{
+  \alpha_{m} \cos m \xi
+  +
+  \beta_{m} \sin m \xi
+},
+$$
+this expansion represents $f(x)$ when $-\pi < x < \pi$; and clearly by
+choosing the function $g(\xi)$ in different ways an unlimited number of
 such expansions can be obtained.
 
-The question now at issue is, whether other series- proceeding in
-sines and cosines of integral multiples of x exist, which differ from
-Fourier's expansion and yet represent / (.r) between - \pi and \pi.
+The question now at issue is, whether other series proceeding in
+sines and cosines of \emph{integral} multiples of $x$ exist, which differ from
+Fourier's expansion and yet represent $f(x)$ between $-\pi$ and $\pi$.
+%\end{smallfont}
 
 If possible, let there be two trigonometrical series satisfying the
 given conditions, and let their difference be the trigonometrical
