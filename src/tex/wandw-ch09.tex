@@ -3340,28 +3340,45 @@ lemma concerning the value of $F(x)$ when $\xi_{1} < x < \xi_{2}$.
 
 For if $\theta = 1$ or if $\theta = -1$
 $$
-TODO
+\phi(x)
+=
+\theta \thebracket{
+  F(x)
+  - F(\xi_{1})
+  - \frac{x - \xi_{1}}{\xi_{2} - \xi_{1}} \thebrace{
+    F(\xi_{2}) - F(\xi_{1})
+  }
+}
+-
+\half h^{2} (x - \xi_{1})(\xi_{2} - x)
 $$
-is a continuous
-function of x in the range i j;,, nd ( i) = ( ( 2) = 0.
-
+is a continuous function of $x$ in the range
+$\xi_{1} \leq x \leq \xi_{2}$ and $\phi(\xi_{1}) = \phi(\xi_{2}) = 0$.
 %
 % 187
 %
 
-If the first term of (f) (x) is not zero throughout the range* there
-will be some point x=c at which it is not zero. Choose the sign of \$
-so that the first term is positive at c, and then choose h so small
-that (f) (c) is still positive.
+If the first term of $\phi(x)$ is not zero throughout the
+range\footnote{If it is zero throughout the range, $F(x)$
+  is a linear function of $x$.}
+there will be some point $x=c$ at which it is not zero. Choose the sign of $\theta$
+so that the first term is positive at $c$, and then choose $h$ so small
+that $\phi(c)$ is still positive.
 
-Since cf) (x) is continuous it "attains its upper bound \hardsubsectionref{3}{6}{2}), and
-this upper bound is positive since (f> (c) > 0. Let (x) attain its
-upper bound at Cj, so that Ci + |i, Ci4= 2  Then, by Riemanifs first
+Since $\phi(x)$ is continuous it attains its upper bound (\hardsubsectionref{3}{6}{2}), and
+this upper bound is positive since $\phi(c) > 0$. Let $\phi(x)$ attain its
+upper bound at $c_{1}$, so that $c_{1} \neq \xi_{1}, c_{1} \neq \xi_{2}$.
+
+Then, by Riemann's first
 lemma,
+$$
+\lim_{\alpha \rightarrow 0}
+\frac{\phi(c_{1} + \alpha) + \phi(c_{1} - \alpha) - 2 \phi(c_{1})}{\alpha^{2}}
+=
+h^{2}.
+$$
 
-lini </'(gi + °) + < (gi- )-20(< i)\ .
-
-But (c'l + a) (f) (c']), (f> (ci-a) - (p (0|), SO this limit must be
+But $TODO$, so this limit must be
 negative or zero.
 
 Hence, by supposing that the first term of (x) is not everywhere zero
@@ -3411,8 +3428,7 @@ This process gives
 
 7rn~-a,i = - cj cos nxdx = 0,
 
-7rn~ bn= - c j sin nxdx = 0. * If it is zero throughout the range, F
-(x) is a linear function of z.
+7rn~ bn= - c j sin nxdx = 0.
 
 %
 % 188
