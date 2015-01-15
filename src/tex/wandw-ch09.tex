@@ -3390,47 +3390,56 @@ The lemma is therefore proved.
 \Subsubsection{9}{6}{3}{2}{Proof of Riemann's Theorem.}
 We see that, in the circumstances under consideration, the curve $y = F(x)$
 represents a series of segments of straight lines, the beginning
-and end of each line corresponding to an exceptional point; and as F
-x), being uniformly convergent, is a continuous function of x, these
+and end of each line corresponding to an exceptional point; and as $F(x)$,
+being uniformly convergent, is a continuous function of $x$, these
 lines must be connected.
 
-But, by Riemann's second lemma, even if be an exceptional point,
-
-a a a
+But, by Riemann's second lemma, even if $\xi$ be an exceptional point,
+$$
+\lim_{\alpha \rightarrow 0}
+\frac{F(\xi + \alpha) + F(\xi - \alpha) - 2F(\xi)}{\alpha}
+=
+0.
+$$
 
 Now the fraction involved in this limit is the difference of the
 slopes of the two segments which meet at that point whose abscissa is
-; therefore the two segments are continuous in direction, so the
-equation y = F(x) represents a single line. If then we write F(x) =
-cx- c, it follows that c and c' have the same values for all values of
-. Thus
-
-X
-
- A x" - ex - c' = S n~-A n (x), =i
-
-the right-hand side of this equation being periodic, with period 27r.
+$\xi$; therefore the two segments are continuous in direction, so the
+equation $y = F(x)$ represents a single line. If then we write
+$F(x) = cx + c'$, it follows that $c$ and $c'$ have the same values for
+\emph{all} values of $x$. Thus
+$$
+\half A_{0} x^{2} - cx - c'
+=
+\sum_{n=1}^{\infty} n^{-2} A_{n}(x),
+$$
+the right-hand side of this equation being periodic, with period $2\pi$.
 
 The left-hand side of this equation must therefore be periodic, with
-period
-
-27r. Hence
-
- 4,, = (), c = 0,
-
-and - c' = - ir'-A,i(x).
-
->i = \
+period $2\pi$. Hence
+$$
+A_{0} = 0,
+\quad
+c = 0,
+$$
+and
+$$
+-c' = \sum_{n=1}^{\infty} n^{-2} A_{n}(x).
+$$
 
 Now the right-hand side of this equation converges uniformly, so we
-can multiply by cos nx or by sin nx and integrate.
+can multiply by $\cos nx$ or by $\sin nx$ and integrate.
 
 This process gives
-
-7rn~-a,i = - cj cos nxdx = 0,
-
-7rn~ bn= - c j sin nxdx = 0.
-
+\begin{align*}
+  \pi n^{-2} \alpha_{n}
+  =&
+  - c' \int_{-\pi}^{\pi} \cos nx \dmeasure x = 0,
+  \\
+  \pi n^{-2} b_{n}
+  =&
+  - c' \int_{-\pi}^{\pi} \sin nx \dmeasure x = 0.
+\end{align*}
 %
 % 188
 %
