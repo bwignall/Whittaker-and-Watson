@@ -3449,17 +3449,26 @@ $A_{0} + \sum_{n=1}^{\infty} A_{n}(x)$ have
 corresponding coefficients equal.
 This is the result stated in \hardsubsectionref{9}{6}{3}.
 
-\Section{9}{7}{Fourier s representation of a function by an integral.}*
-
-It follows from § 9 "43 that, if / ai) be continuous except at a
+\Section{9}{7}{Fourier's representation of a function by an integral.}\footnote{TODO:La Theorie Analytique de la Chaleur, Cb. ix.}
+It follows from \hardsubsectionref{9}{4}{3} that, if $f(x)$ be continuous except at a
 finite number of discontinuities and if it have limited total
-fluctuation in the range (- x, x ), then, if x be any internal point
-of the range (- a, /3),
+fluctuation in the range $(-\infty, \infty)$, then, if $x$ be any
+\emph{internal} point of the range $(-\alpha, \beta)$,
+$$
+\lim_{m \rightarrow \infty}
+\int_{-\alpha}^{\beta}
+\frac{\sin (2m + 1)(t - x)}{t - x}
+f(t) \dmeasure t
+=
+\lim_{\theta \rightarrow 0}
+\half \pi \theta^{-1} \sin \theta
+\thebrace{
+  f(x + 2\theta) + f(x - 2 \theta)
+}.
+$$
 
-lim' r siii( + l)( - ) y( ) 11 iTT - sin 6 [f x + 26) +/( - W)].
-
-Now let X be any real number, and choose the integer m so that \ = 27n
-+ 1 + 277 where t; < 1.
+Now let $\lambda$ be any real number, and choose the integer $m$ so that
+$\lambda = 2m + 1 + 2\eta$ where $0 \leq \eta < 1$.
 
 Then sin X t- x) - sin 2m + 1 ) ( - x)] (t - x)-' f (t) dt
 
@@ -3495,8 +3504,6 @@ For any given value of \ and any arbitrary value of e, there exists a
 number such that
 
 r\ f(t)idt< el J p
-
-* La Theorie Analytique de la Chaleur, Cb. ix.
 
 t r°° . . . ("
 
