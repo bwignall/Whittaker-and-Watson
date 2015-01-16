@@ -3470,15 +3470,30 @@ $$
 Now let $\lambda$ be any real number, and choose the integer $m$ so that
 $\lambda = 2m + 1 + 2\eta$ where $0 \leq \eta < 1$.
 
-Then sin X t- x) - sin 2m + 1 ) ( - x)] (t - x)-' f (t) dt
-
-J -a.
-
-= I 2 cos (2 i + 1 + t;) ( - x)] . sin rj t - x)] t - x)-'f t) dt
-
-. -a
-
-as ??i- >x by \hardsubsectionref{9}{4}{1} (ii), since (t - x)~' f (t) sin 7 t - x) has
+Then
+\begin{align*}
+  &
+  \int_{-\alpha}^{\beta}
+  \thebrace{
+    \sin \lambda(t - x) - \sin (2m+1)(t-x)
+  }
+  (t - x)^{-1} f(t) \dmeasure t
+  \\
+  &\quad
+  \int_{-\alpha}^{\beta}
+  2 \thebrace{
+    \cos (2m + 1 + \eta)(t-x)
+  } \cdot \thebrace{
+    \sin \eta (t-x)
+  }
+  (t - x)^{-1} f(t) \dmeasure t
+  \\
+  &\quad
+  \rightarrow 0,
+\end{align*}
+as $m \rightarrow \infty$ by
+\hardsubsectionref{9}{4}{1} (ii), %TODO:ref
+since (t - x)~' f (t) sin 7 t - x) has
 limited total fluctuation.
 
 Consequently, fi'om the proof of the Riemann-Lebesgue lemma of \hardsubsectionref{9}{4}{1},
