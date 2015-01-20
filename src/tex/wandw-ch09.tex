@@ -3502,22 +3502,49 @@ $\int_{-\infty}^{0} \absval{f(t)} \dmeasure t$ converge, then\footnote{$\int_{-\
   $\lim_{\phi\rightarrow\infty, \sigma\rightarrow\infty} \int_{-\rho}^{\sigma}$. If this limit exists, it is of course
   equal to $\lim_{\rho\rightarrow\infty}\int_{-\rho}^{\rho}$.}
 $$
-TODO
+\lim_{\lambda\rightarrow\infty}
+\int_{-\infty}^{\infty}
+\frac{\sin \lambda(t-x)}{(t-x)}
+f(t) \dmeasure t
+=
+\half
+\pi
+\thebrace{
+  f(x+0) + f(x-0)
+},
 $$
 and so
-
-lim r \ I cos u (t - x) du\ f(t) dt = \pi f x + 0) +f(x - 0) .
+$$
+\lim_{\lambda\rightarrow\infty}
+\int_{-\infty}^{\infty}
+\thebrace{
+  \int_{0}^{\lambda}
+  \cos u(t-x) \dmeasure u
+}
+f(t) \dmeasure t
+=
+\half
+\pi
+\thebrace{
+  f(x+0) + f(x-0)
+},
+$$
 
 To obtain Fourier's result, we must reverse the order of integration
 in this repeated integral.
 
-For any given value of \ and any arbitrary value of e, there exists a
-number such that
-TODO
+For any given value of $\lambda$ and any arbitrary value of $\eps$, there exists a
+number $\beta$ such that
+$$
+\int_{\beta}^{\infty}
+\absval{f(t)}
+\dmeasure t
+<
+\half \eps / \lambda;
+$$
 %
 % 189
 %
-
 writing cos u(t- ir) .f(t) = (f> (t, u), we have*
 
 \ r\ I (f>(t, a) dul dt-l \ I (f> t, u) dt] du !
