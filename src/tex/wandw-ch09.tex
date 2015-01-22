@@ -3551,6 +3551,17 @@ have\footnote{The equation
   is easily justified by \hardsectionref{4}{3}, by considering the ranges within
   which $f(x)$ is continuous.}
 \begin{align*}
+  \absval{
+    \int_{0}^{\infty} \thebrace{
+      \int_{0}^{\lambda} \phi(t,u) \dmeasure u
+    } \dmeasure t
+    -
+    \int_{0}^{\lambda} \thebrace{
+      \int_{0}^{\infty} \phi(t,u) \dmeasure t
+    } \dmeasure u
+  }
+  \\
+  \quad &
   TODO
 \end{align*}
 
