@@ -3620,7 +3620,13 @@ Hence
     f(x+0) + f(x-0)
   }
   & =
-  TODO
+  \lim_{\lambda \rightarrow \infty}
+  \int_{0}^{\lambda} \int_{-\infty}^{\infty}
+  \cos u(t-x) f(t) \dmeasure t \dmeasure u
+  \\
+  & =
+  \int_{0}^{\infty} \int_{-\infty}^{\infty}
+  \cos u(t-x) f(t) \dmeasure t \dmeasure u.
 \end{align*}
 
 This result is known as Fourier s integral tlieorem. Example. Verify
