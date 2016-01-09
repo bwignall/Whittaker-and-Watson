@@ -5,72 +5,58 @@
 
 \Section{12}{1}{Definitions of the Gamma- function. The Weierstrassian product.}
 
-Historically, the Gamma-function* V z) was first defined by Euler as
-the limit of a product \hardsubsectionref{12}{1}{1}) from which can be derived the
-infinite integral
+Historically, the Gamma-functioni$^*$\footnote{The notation
+  $\Gamma(z)$ was introduced by Legendre in
+  1814.} % TODO symbol footnote
+$\Gamma(z)$ was first defined by Euler as the limit of a product
+(\hardsectionref{12}{11}) from which can be derived the infinite
+integral $\int_0^\infty t^{z - 1} e^{-t} \mathrm{d}t$; but in
+developing the theory of the function, it is more convenient to define
+it by means of an infinite product of Weierstrass' canonical form.
 
-1 i ~ e~ dt; but in developing the theory of the function, it is more
-con- Jo
+Consider the product
+$ze^{\gamma z} \prod_{n=1}^\infty \left{ \left(1 + \frac{z}{n} \right)
+    e^{-\frac{z}{n}}\right}$, where
+$\gamma = \lim_{m \rightarrow \infty} \left{ \frac{1}{1} + \frac{1}{2}
+    + \ldots + \frac{1}{m} - \log m \right} = 0 \cdot 5772157 \ldots$ .
 
-venient to define it by means of an infinite product of Weierstrass'
-canonical
+\begin{smalltext}
+[The constant $\gamma$ is known as Euler's or Mascheroni's constant; to
+prove that it exists we observe that, if
 
-form.
+\begin{displaymath}
+u_n = \int_0^1 \frac{t}{n (n + t)} \mathrm{d}t = \frac{1}{n} -
+log\frac{n+1}{n} ,
+\end{displaymath}
 
-Consider the product ze fl -I ( 1 -H -
 
-e
+$u_n$ Is positive and less than $\int_0^1 \frac{\mathrm{d}t}{n^2}$;
+therefore $\sum_{n=}^\infty u_n$ converges, and 
+\begin{displaymath}
+  \lim_{m \rightarrow \infty} \left{ \frac{1}{1} + \frac{1}{2}
+      + \ldots + \frac{1}{m} - \log m \right} =
+  \lim_{m \rightarrow \infty} \left{\sum_{n=}^mx u_n  - 
+      \log \frac{m+1}{m} \right} =
+  \sum_{n=}^\infty u_n .
+\end{displaymath}
 
-where 7= lim ]-+--f-...-l- log ?/i[ =0-5772157....
-
-[The constant y is known as Euler's or Mascheroni's constant; to
-prove that it exists we observe tliat, if
-
-u = I -. .a<= - log - -,
-
-[ dt \ "
-
-u IS positive and less than / -, = -,; therefore 2 w converges, and Jo
-n 'i n=l
-
-,. n 1 1, 1,. ( "', m + l\ *
-
-hm J- + -+...+ logwl= hm < 2 ?< + log \= 2 .
-
-The value of y has been calculated by J. C. Adams to 260 places of
+The value of $\gamma$ has been calculated by J.~C.~Adams to 260 places of
 decimals.]
+\end{smalltext}
 
-The product under consideration represents an analytic function of z,
-for
-
-all values of z; for, if N be an integer such that \ z\ \ iV, we
-havef, if n > N,
-
-1 2- 1 Z'
-
-1
-
-2n'-' Sn' '"
-
-
-
-z z z n- 1 n n-
-
--
-
-IN \ \ 1 1 1 1 '
-
- 4 r' 2 + 2' +---) 2 n '
-
-00
+The product under consideration represents an analytic function of $z$,
+for all values of $z$; for, if $N$ be an integer such that $|z| \le
+\frac{1}{2} N$, we have$^\dagger$\footnote{Taking the principal value
+  of $\log(1 + z/n)$.},% TODO symbol footnote
+if n > N,
+\begin{align*}
+\ %
+\end{align*}
 
 Since the series 2 [N' l 2n?)] converges, it follows that, when \ z\ \
 N,
 
 n = N+l
-
-* The notation V (z) was introduced by Legendre iu 1814. t Taking the
-principal value of log (1 + z/?().
 
 %
 % 236
@@ -79,7 +65,7 @@ principal value of log (1 + z/?().
 S ]log(l + - is an absolutely and uniformly convergent series
 
 of analytic functions, and so it is an analytic function \hardsectionref{5}{3});
-con- sequently its exponential 11 ( l+-]e~nl is an analytic function,
+consequently its exponential 11 ( l+-]e~nl is an analytic function,
 and
 
 so zey n ! ( 1 + - J e ~ [ is an analytic function when \ z\ \ N,
@@ -143,7 +129,7 @@ later \hardsectionref{12}{2} example 4) that this limit may be written
 %
 
 
-\Subsection{12}{1}{1}{Euler's TODO formula for the Gamma-function.}
+\Section{12}{11}{Euler's TODO formula for the Gamma-function.}
 
 By the definition of an
 infinite product we have
