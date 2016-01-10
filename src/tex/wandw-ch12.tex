@@ -5,23 +5,27 @@
 
 \Section{12}{1}{Definitions of the Gamma-function. The Weierstrassian product.}
 
+\index{Gamma-function}
+
 Historically, the Gamma-functioni$^*$\footnote{The notation
   $\Gamma(z)$ was introduced by Legendre in
   1814.} % TODO symbol footnote
 $\Gamma(z)$ was first defined by Euler as the limit of a product
-(\hardsectionref{12}{11}) from which can be derived the infinite
+(\hardsubsectionref{12}{1}{1}) from which can be derived the infinite
 integral $\int_0^\infty t^{z - 1} e^{-t} \dmeasure t$; but in
 developing the theory of the function, it is more convenient to define
 it by means of an infinite product of Weierstrass' canonical form.
 
 Consider the product
+\index{Weierstrassian product}\index{product for the Gamma-function}
 $ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
   \right) e^{-\frac{z}{n}}\right\}$ , where
 $\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \half 
     + \ldots + \frac{1}{m} - \log m \right\} = 0 \cdot 5772157 \ldots$ .
 
 %\begin{smalltext} % TODO 
-[The constant $\gamma$ is known as Euler's or Mascheroni's constant; to
+[The constant $\gamma$ is known as Euler's or Mascheroni's constant
+\index{Constant, Euler's or Mascheroni's}\index{Euler's constant}\index{Mascheroni's constant}; to
 prove that it exists we observe that, if
 
 \begin{displaymath}
@@ -79,23 +83,29 @@ all finite values of $z$.
 
 The Gamma-function was defined by
 Weierstrass$^*$\footnote{\emph{Journal f\"ur Math.}
-  \textsc{LI}. (1856). This formula for $\Gamma(z)$ had been
-  obtained from Euler's formula \hardsectionref{12}{11}) in 1848
-  by F. W. Newman,
-  \emph{Cambridge and Dublin Math. Journal}, \textsc{III}.
-  (1848), p. 60.} % TODO footnote/reference
+  \textsc{LI}. (1856). This formula for $\Gamma(z)$ had been obtained
+  from Euler's formula \hardsubsectionref{12}{1}{1}) in 1848 by
+  F. W. Newman, \emph{Cambridge and Dublin Math. Journal},
+  \textsc{III}.  (1848), p. 60.} % TODO footnote/reference
 by the equation
-
 \begin{displaymath}
   \frac{1}{\Gamma(z)} = ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
   \right) e^{-\frac{z}{n}}\right\} ;
 \end{displaymath}
-from this equation it is apparent that $\Gamma(z)$ \emph{is analytic except at the
-points $z=0, -1, -2, \ldots$, where it has simple poles}.
+\index{Weierstrassian product} from this equation it is apparent that
+$\Gamma(z)$ \emph{is analytic except at the points
+  $z=0, -1, -2, \ldots$, where it has simple poles}.
 
-Proofs have been published by Holder t, Moore J, and Bai-nes§ of a
-theorem known to Weierstrass that the Gamma-function does not satisfy
-any differential equation with rational coefficients.
+Proofs have been published by
+H\"older$^\dagger$\footnote{\emph{Math. Ann.}  \textsc{XXVIII.}
+  (1887), pp. 1-13.}, % TODO footnote/reference
+Moore$^\ddagger$\footnote{\emph{Math. Ann.} \textsc{XLVIII.} (1897),
+  pp. 70-74.}, % TODO footnote/reference
+and Barnes$^\S$\footnote{\emph{Messenger of Math.} \textsc{XXIX}. (1900),
+  pp. 122-128.} % TODO footnote/reference
+of a theorem known to Weierstrass \index{Weierstrass' theorem on
+  Gamma-functions} that the Gamma-function does not satisfy any
+differential equation with rational coefficients.
 
 Example 1. Prove that
 
@@ -132,16 +142,14 @@ T z-x + ) '
 
 n = \ \ \ Z + n) J
 
- t Math. Ann.
-sxvm. (1887), pp. 1-13. + Math. Ann. xlviii. (1897), pp. 70-74. §
-Messenger of Math. xxix. (1900), pp. 122-128. li The reader will see
+ li The reader will see
 later \hardsectionref{12}{2} example 4) that this limit may be written
 
 %
 % 237
 %
 
-\Section{12}{11}{Euler's formula for the Gamma-function.}
+\Subsection{12}{1}{1}{Euler's formula for the Gamma-function.}
 
 By the definition of an
 infinite product we have
