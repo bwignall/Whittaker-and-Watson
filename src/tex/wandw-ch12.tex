@@ -117,36 +117,42 @@ differential equation with rational coefficients.
 
   [Justify differentiating logarithmically the equation
   \begin{displaymath}
-    ~ = zey''n ( l+ -)e~ri\ Viz) 1 IV nJ I
+    \frac{1}{\Gamma(z)} = ze^{\gamma z} \prod_{n=1}^\infty
+    \thebrace{\theparen{1 + \frac{z}{n}}  e^{-\frac{z}{n}}} 
   \end{displaymath}
   by \hardsectionref{4}{7}, and put $z = 1$ after the differentiations
   have been performed.]
 \end{wandwexample}
 
-Example 2. Shew that
+%Example 2. 
+\begin{wandwexample}
+  Shew that
+  \begin{displaymath}
+    1 + \half + \frac{1}{3} + \ldots + \frac{1}{n} =
+    \int_0^1 \frac{1 - (1 - t)^n}{t} \dmeasure t
+  \end{displaymath}
+  and hence that Euler's constant $\gamma$ is given by$^{||}$ \footnote{The
+    reader will see later \hardsectionref{12}{2} example 4) that this
+    limit may be written 
+    \begin{displaymath}
+      \int_0^1
+    \end{displaymath}
+  } % TODO
+  \begin{displaymath}
+  \lim_{n \rightarrow \infty} \thebracket{\int_0^1 \thebrace{1 -
+      \theparen{1-\frac{t}{n}}^n}  \frac{\dmeasure t}{t} - 
+      \int_1^n \theparen{1-\frac{t}{n}}^n  \frac{\dmeasure t}{t}}  
+\end{displaymath}
+\end{wandwexample}
 
-,11 1 P 1
-
-2 3 n Jo
-
-t and hence that Euler's constant y is given by||
-
--(1-""*,
-
-lim
-
-[/: '-04)" ?-/:(-r.)"T']'
-
-Example 3. Shew that
-
-e> r(g + l)
-
-T z-x + ) '
-
-n = \ \ \ Z + n) J
-
- li The reader will see
-later \hardsectionref{12}{2} example 4) that this limit may be written
+%Example 3. 
+\begin{wandwexample}
+  Shew that
+  \begin{displaymath}
+    \prod_{n=1}^\infty \thebrace{\theparen{1 - \frac{x}{z + n}}
+      e^{\frac{x}{n}}} = \frac{e^{\gamma x}\Gamma(z + 1)}{\Gamma(z - x + 1)}    
+  \end{displaymath}
+\end{wandwexample}
 
 %
 % 237
