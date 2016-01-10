@@ -3,46 +3,45 @@
 %
 \chapter{The Gamma Function}
 
-\Section{12}{1}{Definitions of the Gamma- function. The Weierstrassian product.}
+\Section{12}{1}{Definitions of the Gamma-function. The Weierstrassian product.}
 
 Historically, the Gamma-functioni$^*$\footnote{The notation
   $\Gamma(z)$ was introduced by Legendre in
   1814.} % TODO symbol footnote
 $\Gamma(z)$ was first defined by Euler as the limit of a product
 (\hardsectionref{12}{11}) from which can be derived the infinite
-integral $\int_0^\infty t^{z - 1} e^{-t} \mathrm{d}t$; but in
+integral $\int_0^\infty t^{z - 1} e^{-t} \dd t$; but in
 developing the theory of the function, it is more convenient to define
 it by means of an infinite product of Weierstrass' canonical form.
 
 Consider the product
-$ze^{\gamma z} \prod_{n=1}^\infty \left{ \left(1 + \frac{z}{n} \right)
-    e^{-\frac{z}{n}}\right}$, where
-$\gamma = \lim_{m \rightarrow \infty} \left{ \frac{1}{1} + \frac{1}{2}
-    + \ldots + \frac{1}{m} - \log m \right} = 0 \cdot 5772157 \ldots$ .
+$ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n} \right) e^{-\frac{z}{n}}\right\}$, where
+$\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \frac{1}{2}
+    + \ldots + \frac{1}{m} - \log m \right\} = 0 \cdot 5772157 \ldots$ .
 
-\begin{smalltext}
+%\begin{smalltext} % TODO 
 [The constant $\gamma$ is known as Euler's or Mascheroni's constant; to
 prove that it exists we observe that, if
 
 \begin{displaymath}
-u_n = \int_0^1 \frac{t}{n (n + t)} \mathrm{d}t = \frac{1}{n} -
-log\frac{n+1}{n} ,
+u_n = \int_0^1 \frac{t}{n (n + t)} \dd t = \frac{1}{n} -
+\log\frac{n+1}{n} ,
 \end{displaymath}
 
 
-$u_n$ Is positive and less than $\int_0^1 \frac{\mathrm{d}t}{n^2}$;
+$u_n$ Is positive and less than $\int_0^1 \frac{\dd t}{n^2}$;
 therefore $\sum_{n=}^\infty u_n$ converges, and 
 \begin{displaymath}
-  \lim_{m \rightarrow \infty} \left{ \frac{1}{1} + \frac{1}{2}
-      + \ldots + \frac{1}{m} - \log m \right} =
-  \lim_{m \rightarrow \infty} \left{\sum_{n=}^mx u_n  - 
-      \log \frac{m+1}{m} \right} =
+  \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \frac{1}{2}
+      + \ldots + \frac{1}{m} - \log m \right\} =
+  \lim_{m \rightarrow \infty} \left\{\sum_{n=}^mx u_n  - 
+      \log \frac{m+1}{m} \right\} =
   \sum_{n=}^\infty u_n .
 \end{displaymath}
 
 The value of $\gamma$ has been calculated by J.~C.~Adams to 260 places of
 decimals.]
-\end{smalltext}
+%\end{smalltext}
 
 The product under consideration represents an analytic function of $z$,
 for all values of $z$; for, if $N$ be an integer such that $|z| \le
@@ -843,7 +842,7 @@ It follows that
 
  '=-7- I e- ? + lim S (e-""-e-(' + )')f <
 
-.0 rt\rightarrow \inftyJowi = l
+.0 rt%\rightarrow \inftyJowi = l
 
 r( )
 
