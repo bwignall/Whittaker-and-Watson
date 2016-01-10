@@ -16,31 +16,28 @@ integral $\int_0^\infty t^{z - 1} e^{-t} \dmeasure t$; but in
 developing the theory of the function, it is more convenient to define
 it by means of an infinite product of Weierstrass' canonical form.
 
-Consider the product
-\index{Weierstrassian product}\index{product for the Gamma-function}
-$ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
-  \right) e^{-\frac{z}{n}}\right\}$ , where
-$\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \half 
-    + \ldots + \frac{1}{m} - \log m \right\} = 0 \cdot 5772157 \ldots$ .
+Consider the product \index{Weierstrassian product}\index{product for
+  the Gamma-function}
+$ze^{\gamma z} \prod_{n=1}^\infty \thebrace{\theparen{1 + \frac{z}{n}}
+  e^{-\frac{z}{n}}}$ , where
+$\gamma = \lim_{m \rightarrow \infty} \thebrace{ \frac{1}{1} + \half +
+  \ldots + \frac{1}{m} - \log m} = 0 \cdot 5772157 \ldots$ .
 
 %\begin{smalltext} % TODO 
 [The constant $\gamma$ is known as Euler's or Mascheroni's constant
 \index{Constant, Euler's or Mascheroni's}\index{Euler's constant}\index{Mascheroni's constant}; to
 prove that it exists we observe that, if
-
 \begin{displaymath}
 u_n = \int_0^1 \frac{t}{n (n + t)} \dmeasure t = \frac{1}{n} -
 \log\frac{n+1}{n} ,
 \end{displaymath}
-
-
 $u_n$ Is positive and less than $\int_0^1 \frac{\dmeasure t}{n^2}$;
 therefore $\sum_{n=}^\infty u_n$ converges, and 
 \begin{displaymath}
-  \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \half 
-      + \ldots + \frac{1}{m} - \log m \right\} =
-  \lim_{m \rightarrow \infty} \left\{\sum_{n=}^mx u_n  - 
-      \log \frac{m+1}{m} \right\} =
+  \lim_{m \rightarrow \infty} \thebrace{ \frac{1}{1} + \half 
+      + \ldots + \frac{1}{m} - \log m} =
+  \lim_{m \rightarrow \infty} \thebrace{\sum_{n=}^mx u_n  - 
+      \log \frac{m+1}{m}} =
   \sum_{n=}^\infty u_n .
 \end{displaymath}
 
@@ -54,32 +51,33 @@ for all values of $z$; for, if $N$ be an integer such that $|z| \le
   of $\log(1 + z/n)$.},% TODO symbol footnote
 if n > N,
 \begin{align*}
-\left| \log \left(1 + \frac{z}{n}\right) - \frac{z}{n} \right| 
-& =   \left| -\half  \frac{z^2}{n^2} + \frac{1}{3} \frac{z^3}{n^3} \right| \\
-& \le \frac{|z|^2}{n^2} \left\{ 1 + \left|\frac{z}{n}\right| +
-      \left|\frac{z^2}{n^2}\right| + \ldots \right\} \\
-& \le \frac{1}{4} \frac{N^2}{n^2} \left\{ 1 + \half  +
-      \frac{1}{2^2} + \ldots \right\} \le \half  \frac{N^2}{n^2} .
+\absval{\log \theparen{1 + \frac{z}{n}} - \frac{z}{n}} 
+& =   \absval{ -\half  \frac{z^2}{n^2} + \frac{1}{3} \frac{z^3}{n^3} -
+  \ldots} \\
+& \le \frac{|z|^2}{n^2} \thebrace{ 1 + \absval{\frac{z}{n}} +
+      \absval{\frac{z^2}{n^2}} + \ldots} \\
+& \le \frac{1}{4} \frac{N^2}{n^2} \thebrace{ 1 + \half +
+      \frac{1}{2^2} + \ldots} \le \half  \frac{N^2}{n^2} .
 \end{align*}
 
 Since the series $\sum_{n = N+1}^\infty
-\left\{\frac{N^2}{2n^2}\right\}$ converges, it follows that,  when
+\thebrace{\frac{N^2}{2n^2}}$ converges, it follows that,  when
 $|z| \le \half N$,
+
 %
 % 236
 %
-$\sum_{n = N+1}^\infty \left| \log \left(1 + \frac{z}{n}\right) -
-  \frac{z}{n} \right|$ is an absolutely and uniformly convergent
-series of analytic functions, and so it is an analytic function
+
+$\sum_{n = N+1}^\infty \absval{\log \theparen{1 + \frac{z}{n}} -
+  \frac{z}{n}}$ is an absolutely and uniformly convergent series of
+analytic functions, and so it is an analytic function
 \hardsectionref{5}{3}); consequently its exponential
-$\prod_{n=N+1}^\infty \left\{ \left(1 + \frac{z}{n}
-  \right) e^{-\frac{z}{n}}\right\}$  is
-an analytic function, and
-so $ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
-  \right) e^{-\frac{z}{n}}\right\}$  is an analytic function when $|z|
-\le \half  N$,
-where $N$ is any integer; that is to say, the product is analytic for
-all finite values of $z$. 
+$\prod_{n=N+1}^\infty \thebrace{\theparen{1 + \frac{z}{n}}
+  e^{-\frac{z}{n}}}$ is an analytic function, and so
+$ze^{\gamma z} \prod_{n=1}^\infty \thebrace{\theparen{1 +
+    \frac{z}{n}}  e^{-\frac{z}{n}}}$ is an analytic function when
+$|z| \le \half N$, where $N$ is any integer; that is to say, the
+product is analytic for all finite values of $z$.
 
 The Gamma-function was defined by
 Weierstrass$^*$\footnote{\emph{Journal f\"ur Math.}
@@ -89,8 +87,8 @@ Weierstrass$^*$\footnote{\emph{Journal f\"ur Math.}
   \textsc{III}.  (1848), p. 60.} % TODO footnote/reference
 by the equation
 \begin{displaymath}
-  \frac{1}{\Gamma(z)} = ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
-  \right) e^{-\frac{z}{n}}\right\} ;
+  \frac{1}{\Gamma(z)} = ze^{\gamma z} \prod_{n=1}^\infty
+  \thebrace{\theparen{1 + \frac{z}{n}}  e^{-\frac{z}{n}}} ;
 \end{displaymath}
 \index{Weierstrassian product} from this equation it is apparent that
 $\Gamma(z)$ \emph{is analytic except at the points
@@ -107,18 +105,23 @@ of a theorem known to Weierstrass \index{Weierstrass' theorem on
   Gamma-functions} that the Gamma-function does not satisfy any
 differential equation with rational coefficients.
 
-Example 1. Prove that
+%Example 1.
+\begin{wandwexample}
+  Prove that
 
-r(i) = i, r'(i)=-y,
+  \begin{displaymath}
+    \Gamma(1) = 1, \qquad \Gamma'(1)=-\gamma,
+  \end{displaymath}
 
-where y is Euler's constant.
+  where $\gamma$ is Euler's constant.
 
-[Justify differentiating logarithmically the equation
-
-~ = zey''n ( l+ -)e~ri\ Viz) 1 IV nJ I
-
-by \hardsectionref{4}{7}, and put z = l after the differentiations have been
-performed.]
+  [Justify differentiating logarithmically the equation
+  \begin{displaymath}
+    ~ = zey''n ( l+ -)e~ri\ Viz) 1 IV nJ I
+  \end{displaymath}
+  by \hardsectionref{4}{7}, and put $z = 1$ after the differentiations
+  have been performed.]
+\end{wandwexample}
 
 Example 2. Shew that
 
