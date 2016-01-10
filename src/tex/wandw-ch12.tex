@@ -10,13 +10,14 @@ Historically, the Gamma-functioni$^*$\footnote{The notation
   1814.} % TODO symbol footnote
 $\Gamma(z)$ was first defined by Euler as the limit of a product
 (\hardsectionref{12}{11}) from which can be derived the infinite
-integral $\int_0^\infty t^{z - 1} e^{-t} \dd t$; but in
+integral $\int_0^\infty t^{z - 1} e^{-t} \dmeasure t$; but in
 developing the theory of the function, it is more convenient to define
 it by means of an infinite product of Weierstrass' canonical form.
 
 Consider the product
-$ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n} \right) e^{-\frac{z}{n}}\right\}$, where
-$\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \frac{1}{2}
+$ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
+  \right) e^{-\frac{z}{n}}\right\}$ , where
+$\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \half 
     + \ldots + \frac{1}{m} - \log m \right\} = 0 \cdot 5772157 \ldots$ .
 
 %\begin{smalltext} % TODO 
@@ -24,15 +25,15 @@ $\gamma = \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \frac{1}{2}
 prove that it exists we observe that, if
 
 \begin{displaymath}
-u_n = \int_0^1 \frac{t}{n (n + t)} \dd t = \frac{1}{n} -
+u_n = \int_0^1 \frac{t}{n (n + t)} \dmeasure t = \frac{1}{n} -
 \log\frac{n+1}{n} ,
 \end{displaymath}
 
 
-$u_n$ Is positive and less than $\int_0^1 \frac{\dd t}{n^2}$;
+$u_n$ Is positive and less than $\int_0^1 \frac{\dmeasure t}{n^2}$;
 therefore $\sum_{n=}^\infty u_n$ converges, and 
 \begin{displaymath}
-  \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \frac{1}{2}
+  \lim_{m \rightarrow \infty} \left\{ \frac{1}{1} + \half 
       + \ldots + \frac{1}{m} - \log m \right\} =
   \lim_{m \rightarrow \infty} \left\{\sum_{n=}^mx u_n  - 
       \log \frac{m+1}{m} \right\} =
@@ -45,37 +46,52 @@ decimals.]
 
 The product under consideration represents an analytic function of $z$,
 for all values of $z$; for, if $N$ be an integer such that $|z| \le
-\frac{1}{2} N$, we have$^\dagger$\footnote{Taking the principal value
+\half  N$, we have$^\dagger$\footnote{Taking the principal value
   of $\log(1 + z/n)$.},% TODO symbol footnote
 if n > N,
 \begin{align*}
-\ %
+\left| \log \left(1 + \frac{z}{n}\right) - \frac{z}{n} \right| 
+& =   \left| -\half  \frac{z^2}{n^2} + \frac{1}{3} \frac{z^3}{n^3} \right| \\
+& \le \frac{|z|^2}{n^2} \left\{ 1 + \left|\frac{z}{n}\right| +
+      \left|\frac{z^2}{n^2}\right| + \ldots \right\} \\
+& \le \frac{1}{4} \frac{N^2}{n^2} \left\{ 1 + \half  +
+      \frac{1}{2^2} + \ldots \right\} \le \half  \frac{N^2}{n^2} .
 \end{align*}
 
-Since the series 2 [N' l 2n?)] converges, it follows that, when \ z\ \
-N,
-
-n = N+l
-
+Since the series $\sum_{n = N+1}^\infty
+\left\{\frac{N^2}{2n^2}\right\}$ converges, it follows that,  when
+$|z| \le \half N$,
 %
 % 236
 %
+$\sum_{n = N+1}^\infty \left| \log \left(1 + \frac{z}{n}\right) -
+  \frac{z}{n} \right|$ is an absolutely and uniformly convergent
+series of analytic functions, and so it is an analytic function
+\hardsectionref{5}{3}); consequently its exponential
+$\prod_{n=N+1}^\infty \left\{ \left(1 + \frac{z}{n}
+  \right) e^{-\frac{z}{n}}\right\}$  is
+an analytic function, and
+so $ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
+  \right) e^{-\frac{z}{n}}\right\}$  is an analytic function when $|z|
+\le \half  N$,
+where $N$ is any integer; that is to say, the product is analytic for
+all finite values of $z$. 
 
-S ]log(l + - is an absolutely and uniformly convergent series
-
-of analytic functions, and so it is an analytic function \hardsectionref{5}{3});
-consequently its exponential 11 ( l+-]e~nl is an analytic function,
-and
-
-so zey n ! ( 1 + - J e ~ [ is an analytic function when \ z\ \ N,
-where N is any integer; that is to say, the product is analytic for
-all finite values of z. The Gamma-function was defined by Weierstrass*
+The Gamma-function was defined by
+Weierstrass$^*$\footnote{\emph{Journal f\"ur Math.}
+  \textsc{LI}. (1856). This formula for $\Gamma(z)$ had been
+  obtained from Euler's formula \hardsectionref{12}{11}) in 1848
+  by F. W. Newman,
+  \emph{Cambridge and Dublin Math. Journal}, \textsc{III}.
+  (1848), p. 60.} % TODO footnote/reference
 by the equation
 
-,= -T- = zey U ( l+-]e ~n[-
-
-from this equation it is apparent that T (z) is analytic except at the
-points z=0, - 1, - 2, . . ., where it has simple poles.
+\begin{displaymath}
+  \frac{1}{\Gamma(z)} = ze^{\gamma z} \prod_{n=1}^\infty \left\{ \left(1 + \frac{z}{n}
+  \right) e^{-\frac{z}{n}}\right\} ;
+\end{displaymath}
+from this equation it is apparent that $\Gamma(z)$ \emph{is analytic except at the
+points $z=0, -1, -2, \ldots$, where it has simple poles}.
 
 Proofs have been published by Holder t, Moore J, and Bai-nes§ of a
 theorem known to Weierstrass that the Gamma-function does not satisfy
@@ -116,9 +132,7 @@ T z-x + ) '
 
 n = \ \ \ Z + n) J
 
-* Journal filr Math. li. (1856). This formula for F(z) had been
-obtained from Euler's formula \hardsubsectionref{12}{1}{1}) in 1848 by F. W. Newman,
-Cambridge and Dublin Math. Journal, iii. (1848), p. 60. t Math. Ann.
+ t Math. Ann.
 sxvm. (1887), pp. 1-13. + Math. Ann. xlviii. (1897), pp. 70-74. §
 Messenger of Math. xxix. (1900), pp. 122-128. li The reader will see
 later \hardsectionref{12}{2} example 4) that this limit may be written
@@ -127,8 +141,7 @@ later \hardsectionref{12}{2} example 4) that this limit may be written
 % 237
 %
 
-
-\Section{12}{11}{Euler's TODO formula for the Gamma-function.}
+\Section{12}{11}{Euler's formula for the Gamma-function.}
 
 By the definition of an
 infinite product we have
