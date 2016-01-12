@@ -162,26 +162,61 @@ differential equation with rational coefficients.
 
 \Subsection{12}{1}{1}{Euler's formula for the Gamma-function.}
 
-By the definition of an
-infinite product we have
+By the definition of an infinite product we have
+\begin{align*}
+  \frac{1}{\Gamma(z)} 
+  &= z 
+    \thebracket{\lim_{m \rightarrow \infty} 
+    e^{\theparen{1 + \half + \ldots + \frac{1}{m} - \log m}z}
+    \vphantom{\prod_{n=1}^m}} % \vphantom is here to make the brackets
+                              % of the same size in both parts of the
+                              % formula  
+    \thebracket{\lim_{m \rightarrow \infty}
+    \prod_{n=1}^m
+    \thebrace{\theparen{1 + \frac{z}{n}}  e^{-\frac{z}{n}}}} \\
+  &=z \lim_{m \rightarrow \infty} \thebracket{
+    e^{\theparen{1 + \half + \ldots + \frac{1}{m} - \log m}z}
+    \prod_{n=1}^m
+    \thebrace{\theparen{1 + \frac{z}{n}}  e^{-\frac{z}{n}}}} \\
+  &= z \lim_{m \rightarrow \infty} \thebracket{
+    m^{-z} \prod_{n=1}^m \theparen{1 + \frac{z}{n}}} \\
+  &= z \lim_{m \rightarrow \infty} \thebracket{
+    \prod_{n=1}^{m-1} \theparen{1 + \frac{1}{n}}^{-z}
+    \prod_{n=1}^m \theparen{1 + \frac{z}{n}}} \\
+  &= z \lim_{m \rightarrow \infty} \thebracket{
+    \prod_{n=1}^{m} \thebrace{
+    \theparen{1 + \frac{z}{n}}
+    \theparen{1 + \frac{1}{n}}^{-z}
+    } \theparen{1 + \frac{1}{m}}^z} .
+\end{align*}
+Hence 
+\begin{displaymath}
+  \Gamma(z) = \frac{1}{z} \prod_{n=1}^{\infty} \thebrace{
+    \theparen{1 + \frac{1}{n}}^{z}
+    \theparen{1 + \frac{z}{n}}^{-1} }.
+\end{displaymath}
+This formula is due to Euler$^*$\footnote{It was given 
+in 1729 in a letter to Goldbacb, printed in Fuss'
+\emph{Corresp. Math.}}; % TODO footnote
+it is valid except when $z = 0, -1, -2, \ldots$. 
+\index{product for the Gamma-function}\index{Euler's product}
 
-TODO
+% Example. 
+\begin{wandwexample*}
+  Prove that
+  \begin{displaymath}
+    \Gamma(z) =
+    \lim_{n \rightarrow \infty} 
+    \frac{1 \cdot 2 \ldots % TODO if \cdot is a good choice here?
+      (n-1)}{z(z+1) \ldots(z+n-1)} n^z . 
+  \end{displaymath}
+  \addexamplecitation{Euler.}
+\end{wandwexample*}
 
-Hence T (.) = - H j(l + -j (l +,;j | .
+\Subsection{12}{1}{2}{The difference equation satisfied by the
+  Gamma-function.} 
 
-This formula is due to Euler*; it is valid except when = 0, - 1, - 2,
-....
-
-Example. Prove that
-
-,,,. 1.2...(n-l)
-
-r (2) = hm, .,. 7- - - . n\
-
-\addexamplecitation{Euler.}
-
-VlVl. The difference equation satisfied by the Gamma-function.
-
+\index{Difiference equation satisfied by the Gamma-function}
 We shall now shew that the function F (z) satisfies the difference
 equation
 
@@ -225,9 +260,6 @@ m-*---c ? =1
 This is one of the most important properties of the Gamma-function.
 Since F (1) = 1, it follows that, if 2: is a positive integer, F (2 )
 = (2 - 1) !.
-
-It was given in 1729 in a letter to Goldbacb, printed in Fuss'
-Corresp. Math.
 
 %
 % 238
