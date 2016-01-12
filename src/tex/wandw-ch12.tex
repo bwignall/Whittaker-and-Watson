@@ -31,14 +31,14 @@ prove that it exists we observe that, if
 u_n = \int_0^1 \frac{t}{n (n + t)} \dmeasure t = \frac{1}{n} -
 \log\frac{n+1}{n} ,
 \end{displaymath}
-$u_n$ Is positive and less than $\int_0^1 \frac{\dmeasure t}{n^2}$;
-therefore $\sum_{n=}^\infty u_n$ converges, and 
+$u_n$ Is positive and less than $\int_0^1 \frac{\dmeasure t}{n^2} = \frac{1}{n^2}$;
+therefore $\sum_{n=1}^\infty u_n$ converges, and 
 \begin{displaymath}
   \lim_{m \rightarrow \infty} \thebrace{ \frac{1}{1} + \half 
       + \ldots + \frac{1}{m} - \log m} =
-  \lim_{m \rightarrow \infty} \thebrace{\sum_{n=}^mx u_n  - 
+  \lim_{m \rightarrow \infty} \thebrace{\sum_{n=1}^mx u_n  - 
       \log \frac{m+1}{m}} =
-  \sum_{n=}^\infty u_n .
+  \sum_{n=1}^\infty u_n .
 \end{displaymath}
 
 The value of $\gamma$ has been calculated by J.~C.~Adams to 260 places of
@@ -46,7 +46,7 @@ decimals.]
 %\end{smalltext}
 
 The product under consideration represents an analytic function of $z$,
-for all values of $z$; for, if $N$ be an integer such that $|z| \le
+for all values of $z$; for, if $N$ be an integer such that $\absval{z} \le
 \half  N$, we have$^\dagger$\footnote{Taking the principal value
   of $\log(1 + z/n)$.},% TODO symbol footnote
 if n > N,
