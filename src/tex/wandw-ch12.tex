@@ -216,50 +216,32 @@ it is valid except when $z = 0, -1, -2, \ldots$.
 \Subsection{12}{1}{2}{The difference equation satisfied by the
   Gamma-function.} 
 
-\index{Difiference equation satisfied by the Gamma-function}
-We shall now shew that the function F (z) satisfies the difference
+\index{Difiference equation satisfied by the Gamma-function} We shall
+now shew that the function $\Gamma(z)$ satisfies the difference
 equation
-
-T z -l) = zT z). For, by Euler's formula, if z is not a negative
-integer,
-
-FU + 1)/F(.) = -
-
-lim n
-
-;h -* X = 1
-
-(1 +
-
-V n
-
-ly+r
-
-1 +
-
-z+ 1
-
-1 lim n ii
-
-m-*---c ? =1
-
-1 +
-
-1 J
-
-= - lim II,
-
-  + 1, -*x = 1 I + ?i +
-
-, . m + 1
-
-= z hm = z.
-
- i x 2: + Wi + 1
-
+\begin{displaymath}
+  \Gamma(z + 1) = z \Gamma(z) .
+\end{displaymath}
+For, by Euler's formula, if $z$ is not a negative integer,
+\begin{align*}
+\Gamma(z + 1)/\Gamma(z) 
+  &= 
+    \frac{1}{z+1} \thebracket{\lim_{m \rightarrow \infty}
+    \prod_{n=1}^{m} \frac{\theparen{1 + \frac{1}{n}}^{z+1}}{
+    1 + \frac{z+1}{n}} }
+    \div
+    \thebracket{ \frac{1}{z} \lim_{m \rightarrow \infty}
+    \prod_{n=1}^{m} \frac{\theparen{1 + \frac{1}{n}}^{z}}{
+    1 + \frac{z}{n}} } \\
+  &= 
+    \frac{z}{z+1} \lim_{m \rightarrow \infty} \prod_{n=1}^{m} 
+    \thebrace{\frac{\theparen{1 + \frac{1}{n}}(z+n)}{z + n + 1}} \\
+  &= 
+    z \lim_{m \rightarrow \infty} \frac{m+1}{z + m + 1} = z .
+\end{align*}
 This is one of the most important properties of the Gamma-function.
-Since F (1) = 1, it follows that, if 2: is a positive integer, F (2 )
-= (2 - 1) !.
+Since $\Gamma(1) = 1$, it follows that, if $z$ is a positive integer, 
+$\Gamma(z) = (z - 1)!$.
 
 %
 % 238
